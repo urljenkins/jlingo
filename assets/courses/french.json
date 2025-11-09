@@ -1,0 +1,37 @@
+{
+  "id": "french_en",
+  "name": "French for English Speakers",
+  "targetLanguage": "fr-FR",
+  "nativeLanguage": "en-US",
+  "skills": [
+    {
+      "id": "basics_1",
+      "name": "Basics 1",
+      "description": "Learn basic greetings and introductions",
+      "level": 1,
+      "exercises": [
+        {
+          "id": "ex_1",
+          "type": "translateThis",
+          "question": "Bonjour",
+          "options": [],
+          "correctAnswer": "Hello"
+        },
+        {
+          "id": "ex_2",
+          "type": "multipleChoice",
+          "question": "What does 'Merci' mean?",
+          "options": ["Thank you", "Please", "Goodbye", "Hello"],
+          "correctAnswer": "Thank you"
+        },
+        {
+          "id": "ex_3",
+          "type": "fillInBlank",
+          "question": "Au ___",
+          "options": ["revoir", "jour", "merci", "bonjour"],
+          "correctAnswer": "revoir"
+        }
+      ]
+    }
+  ]
+}

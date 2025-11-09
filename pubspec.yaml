@@ -1,0 +1,51 @@
+name: lingua_sprint
+description: A hyper-efficient language learning app for busy individuals
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.0
+
+  # Local Storage
+  shared_preferences: ^2.2.0
+  path_provider: ^2.1.0
+
+  # JSON
+  json_annotation: ^4.8.1
+
+  # Text-to-Speech
+  flutter_tts: ^3.8.0
+
+  # Speech Recognition
+  speech_to_text: ^6.5.0
+
+  # Audio
+  audioplayers: ^5.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.0
+  json_serializable: ^6.7.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/courses/
+    - assets/audio/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
