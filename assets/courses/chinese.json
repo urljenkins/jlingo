@@ -1,0 +1,196 @@
+{
+  "id": "chinese_en",
+  "name": "Chinese for English Speakers",
+  "targetLanguage": "zh-CN",
+  "nativeLanguage": "en-US",
+  "skills": [
+    {
+      "id": "basics_1",
+      "name": "Basics 1",
+      "description": "Learn basic greetings and introductions",
+      "level": 1,
+      "exercises": [
+        {
+          "id": "ex_1",
+          "type": "translateThis",
+          "question": "你好",
+          "options": [],
+          "correctAnswer": "Hello"
+        },
+        {
+          "id": "ex_2",
+          "type": "multipleChoice",
+          "question": "What does '谢谢' mean?",
+          "options": ["Thank you", "Please", "Goodbye", "Hello"],
+          "correctAnswer": "Thank you"
+        },
+        {
+          "id": "ex_3",
+          "type": "fillInBlank",
+          "question": "早上___",
+          "options": ["好", "安", "见", "谢"],
+          "correctAnswer": "好"
+        },
+        {
+          "id": "ex_4",
+          "type": "translateThis",
+          "question": "再见",
+          "options": [],
+          "correctAnswer": "Goodbye"
+        },
+        {
+          "id": "ex_5",
+          "type": "multipleChoice",
+          "question": "How do you say 'Good evening' in Chinese?",
+          "options": ["晚上好", "早上好", "下午好", "你好"],
+          "correctAnswer": "晚上好"
+        },
+        {
+          "id": "ex_6",
+          "type": "matchPairs",
+          "question": "Match the Chinese words with their English translations",
+          "options": [],
+          "correctAnswer": "",
+          "metadata": {
+            "pairs": [
+              {"target": "你好", "native": "Hello"},
+              {"target": "再见", "native": "Goodbye"},
+              {"target": "谢谢", "native": "Thank you"},
+              {"target": "请", "native": "Please"}
+            ]
+          }
+        },
+        {
+          "id": "ex_7",
+          "type": "listeningComprehension",
+          "question": "下午好",
+          "options": [],
+          "correctAnswer": "下午好"
+        },
+        {
+          "id": "ex_8",
+          "type": "speakThis",
+          "question": "你好，你好吗？",
+          "options": [],
+          "correctAnswer": "你好，你好吗？"
+        }
+      ]
+    },
+    {
+      "id": "basics_2",
+      "name": "Basics 2",
+      "description": "Learn basic phrases and common words",
+      "level": 2,
+      "exercises": [
+        {
+          "id": "ex_9",
+          "type": "translateThis",
+          "question": "你好吗？",
+          "options": [],
+          "correctAnswer": "How are you?"
+        },
+        {
+          "id": "ex_10",
+          "type": "multipleChoice",
+          "question": "What does '我' mean?",
+          "options": ["I", "You", "He", "She"],
+          "correctAnswer": "I"
+        },
+        {
+          "id": "ex_11",
+          "type": "fillInBlank",
+          "question": "我___李明",
+          "options": ["叫", "是", "有", "好"],
+          "correctAnswer": "叫"
+        },
+        {
+          "id": "ex_12",
+          "type": "translateThis",
+          "question": "很高兴认识你",
+          "options": [],
+          "correctAnswer": "Nice to meet you"
+        },
+        {
+          "id": "ex_13",
+          "type": "multipleChoice",
+          "question": "How do you say 'I am' in Chinese?",
+          "options": ["我是", "你是", "他是", "我们是"],
+          "correctAnswer": "我是"
+        },
+        {
+          "id": "ex_14",
+          "type": "matchPairs",
+          "question": "Match the pronouns",
+          "options": [],
+          "correctAnswer": "",
+          "metadata": {
+            "pairs": [
+              {"target": "我", "native": "I"},
+              {"target": "你", "native": "You"},
+              {"target": "他", "native": "He"},
+              {"target": "她", "native": "She"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "description": "Learn numbers 1-10",
+      "level": 3,
+      "exercises": [
+        {
+          "id": "ex_15",
+          "type": "translateThis",
+          "question": "一",
+          "options": [],
+          "correctAnswer": "One"
+        },
+        {
+          "id": "ex_16",
+          "type": "multipleChoice",
+          "question": "What number is '五'?",
+          "options": ["5", "3", "7", "9"],
+          "correctAnswer": "5"
+        },
+        {
+          "id": "ex_17",
+          "type": "fillInBlank",
+          "question": "二 加 二 等于 ___",
+          "options": ["四", "三", "五", "六"],
+          "correctAnswer": "四"
+        },
+        {
+          "id": "ex_18",
+          "type": "matchPairs",
+          "question": "Match the numbers",
+          "options": [],
+          "correctAnswer": "",
+          "metadata": {
+            "pairs": [
+              {"target": "一", "native": "One"},
+              {"target": "二", "native": "Two"},
+              {"target": "三", "native": "Three"},
+              {"target": "四", "native": "Four"}
+            ]
+          }
+        },
+        {
+          "id": "ex_19",
+          "type": "listeningComprehension",
+          "question": "五",
+          "options": [],
+          "correctAnswer": "五"
+        },
+        {
+          "id": "ex_20",
+          "type": "speakThis",
+          "question": "六",
+          "options": [],
+          "correctAnswer": "六"
+        }
+      ]
+    }
+  ]
+}

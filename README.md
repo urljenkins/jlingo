@@ -17,6 +17,19 @@ A hyper-efficient language learning app for busy individuals focused on rapid, e
 - **Offline-First**: All core learning available offline
 - **Open Course Content**: Easily modify courses via JSON files
 
+## Available Languages
+
+Currently, Lingua Sprint supports the following languages:
+- 🇪🇸 Spanish
+- 🇫🇷 French
+- 🇩🇪 German
+- 🇳🇱 Dutch
+- 🇵🇹 Portuguese
+- 🇯🇵 Japanese
+- 🇨🇳 Chinese
+
+Each language course includes basic greetings, common phrases, and numbers with multiple exercise types.
+
 ## Philosophy
 
 Lingua Sprint strips away all non-essential elements found in traditional language learning apps:

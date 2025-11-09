@@ -100,7 +100,10 @@ class LanguageSelectionScreen extends StatelessWidget {
       'spanish': 'Spanish',
       'french': 'French',
       'german': 'German',
+      'dutch': 'Dutch',
+      'portuguese': 'Portuguese',
       'japanese': 'Japanese',
+      'chinese': 'Chinese',
     };
     return names[code] ?? code.toUpperCase();
   }
@@ -110,7 +113,10 @@ class LanguageSelectionScreen extends StatelessWidget {
       'spanish': '🇪🇸',
       'french': '🇫🇷',
       'german': '🇩🇪',
+      'dutch': '🇳🇱',
+      'portuguese': '🇵🇹',
       'japanese': '🇯🇵',
+      'chinese': '🇨🇳',
     };
 
     return Text(

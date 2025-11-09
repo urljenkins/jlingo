@@ -13,7 +13,7 @@ class CourseProvider extends ChangeNotifier {
   Future<void> loadAvailableLanguages() async {
     // In a real app, this would scan the assets directory
     // For now, we'll hardcode available languages
-    _availableLanguages = ['spanish', 'french', 'german', 'japanese'];
+    _availableLanguages = ['spanish', 'french', 'german', 'dutch', 'portuguese', 'japanese', 'chinese'];
     notifyListeners();
   }
 
