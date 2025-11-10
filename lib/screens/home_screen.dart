@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
 import '../providers/course_provider.dart';
+import '../models/progress.dart';
 import 'language_selection_screen.dart';
 import 'lesson_screen.dart';
 
