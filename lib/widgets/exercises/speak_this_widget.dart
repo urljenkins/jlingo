@@ -219,6 +219,25 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
             ),
           ],
           const Spacer(),
+          if (!_speech.isAvailable || !_showFeedback)
+            SizedBox(
+              width: double.infinity,
+              height: 50,
+              child: ElevatedButton(
+                onPressed: () => widget.onAnswer(true),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF3A3A3A),
+                  foregroundColor: Colors.white70,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                child: const Text(
+                  'SKIP (Speech not available)',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
         ],
       ),
     );

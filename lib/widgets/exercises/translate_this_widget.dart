@@ -50,15 +50,27 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Translate this',
+            'Translate to English',
             style: TextStyle(fontSize: 14, color: Colors.white60),
           ),
           const SizedBox(height: 16),
-          Text(
-            widget.exercise.question,
-            style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: const Color(0xFF2A2A2A),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Text(
+              widget.exercise.question,
+              style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            ),
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 24),
+          const Text(
+            'Type the English translation:',
+            style: TextStyle(fontSize: 14, color: Colors.white60),
+          ),
+          const SizedBox(height: 12),
           TextField(
             controller: _controller,
             autofocus: true,

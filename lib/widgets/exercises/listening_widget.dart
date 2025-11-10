@@ -22,6 +22,7 @@ class _ListeningWidgetState extends State<ListeningWidget> {
   bool _showFeedback = false;
   bool _isCorrect = false;
   bool _isPlaying = false;
+  bool _hasPlayedOnce = false;
 
   @override
   void initState() {
@@ -44,7 +45,10 @@ class _ListeningWidgetState extends State<ListeningWidget> {
   }
 
   Future<void> _playAudio() async {
-    setState(() => _isPlaying = true);
+    setState(() {
+      _isPlaying = true;
+      _hasPlayedOnce = true;
+    });
     await _tts.speak(widget.exercise.question);
     setState(() => _isPlaying = false);
   }
@@ -73,21 +77,35 @@ class _ListeningWidgetState extends State<ListeningWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Type what you hear',
+            'Listening Exercise',
             style: TextStyle(fontSize: 14, color: Colors.white60),
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 16),
+          const Text(
+            'Click the play button to hear the phrase, then type what you hear',
+            style: TextStyle(fontSize: 14, color: Colors.white70),
+          ),
+          const SizedBox(height: 32),
           Center(
-            child: IconButton(
-              onPressed: _isPlaying ? null : _playAudio,
-              icon: Icon(
-                _isPlaying ? Icons.volume_up : Icons.play_circle_filled,
-                size: 80,
-                color: _isPlaying ? Colors.white38 : const Color(0xFF00D9FF),
-              ),
+            child: Column(
+              children: [
+                IconButton(
+                  onPressed: _isPlaying ? null : _playAudio,
+                  icon: Icon(
+                    _isPlaying ? Icons.volume_up : Icons.play_circle_filled,
+                    size: 80,
+                    color: _isPlaying ? Colors.white38 : const Color(0xFF00D9FF),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  _isPlaying ? 'Playing...' : 'Tap to play audio',
+                  style: const TextStyle(fontSize: 14, color: Colors.white60),
+                ),
+              ],
             ),
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 32),
           TextField(
             controller: _controller,
             autofocus: false,
@@ -152,6 +170,24 @@ class _ListeningWidgetState extends State<ListeningWidget> {
             ],
           ],
           const Spacer(),
+          if (_hasPlayedOnce && !_showFeedback)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 12),
+              child: SizedBox(
+                width: double.infinity,
+                height: 40,
+                child: TextButton(
+                  onPressed: () {
+                    _controller.text = widget.exercise.correctAnswer;
+                    _checkAnswer();
+                  },
+                  child: const Text(
+                    "Can't hear? Show answer",
+                    style: TextStyle(fontSize: 14, color: Colors.white60),
+                  ),
+                ),
+              ),
+            ),
           SizedBox(
             width: double.infinity,
             height: 50,
