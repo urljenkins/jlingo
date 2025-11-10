@@ -41,7 +41,6 @@ class LinguaSprintApp extends StatelessWidget {
             background: const Color(0xFF0D0D0D),
           ),
           scaffoldBackgroundColor: const Color(0xFF0D0D0D),
-          fontFamily: 'Roboto',
           textTheme: const TextTheme(
             displayLarge: TextStyle(
               fontSize: 32,
