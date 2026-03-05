@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
+import '../hover_card.dart';
 
 class MultipleChoiceWidget extends StatefulWidget {
   final Exercise exercise;
@@ -67,7 +68,7 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(24.0),
+      padding: const EdgeInsets.all(12.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -88,39 +89,36 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
   }
 
   Widget _buildOption(String option) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: Material(
-        color: _getOptionColor(option),
-        borderRadius: BorderRadius.circular(8),
-        child: InkWell(
-          onTap: () => _selectAnswer(option),
-          borderRadius: BorderRadius.circular(8),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(
-                color: _getBorderColor(option),
-                width: 2,
-              ),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: HoverCard(
+        baseColor: _getOptionColor(option),
+        hoverColor: _showFeedback ? _getOptionColor(option) : const Color(0xFF3A3A3A),
+        onTap: () => _selectAnswer(option),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: _getBorderColor(option),
+              width: 2,
             ),
-            padding: const EdgeInsets.all(16),
-            child: Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    option,
-                    style: const TextStyle(fontSize: 16),
-                  ),
+          ),
+          padding: const EdgeInsets.all(12.0),
+          child: Row(
+            children: [
+              Expanded(
+                child: Text(
+                  option,
+                  style: const TextStyle(fontSize: 16),
                 ),
-                if (_showFeedback && option == widget.exercise.correctAnswer)
-                  const Icon(Icons.check_circle, color: Color(0xFF00FF85)),
-                if (_showFeedback &&
-                    option == _selectedAnswer &&
-                    option != widget.exercise.correctAnswer)
-                  const Icon(Icons.cancel, color: Color(0xFFFF4757)),
-              ],
-            ),
+              ),
+              if (_showFeedback && option == widget.exercise.correctAnswer)
+                const Icon(Icons.check_circle, color: Color(0xFF00FF85)),
+              if (_showFeedback &&
+                  option == _selectedAnswer &&
+                  option != widget.exercise.correctAnswer)
+                const Icon(Icons.cancel, color: Color(0xFFFF4757)),
+            ],
           ),
         ),
       ),

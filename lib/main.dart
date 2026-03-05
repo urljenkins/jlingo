@@ -17,8 +17,36 @@ void main() async {
   runApp(const LinguaSprintApp());
 }
 
-class LinguaSprintApp extends StatelessWidget {
+class LinguaSprintApp extends StatefulWidget {
   const LinguaSprintApp({super.key});
+
+  @override
+  State<LinguaSprintApp> createState() => _LinguaSprintAppState();
+}
+
+class _LinguaSprintAppState extends State<LinguaSprintApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+      // Force rebuild or keep alive if needed.
+      // In Flutter desktop, simply having the observer can prevent some sleep issues,
+      // but we explicitly call setState to ensure the UI stays 'warm'.
+      setState(() {});
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +61,9 @@ class LinguaSprintApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
           brightness: Brightness.dark,
+          splashFactory: NoSplash.splashFactory,
+          highlightColor: Colors.transparent,
+          hoverColor: Colors.transparent,
           colorScheme: ColorScheme.dark(
             primary: const Color(0xFF00D9FF),
             secondary: const Color(0xFF00FF85),
@@ -43,12 +74,14 @@ class LinguaSprintApp extends StatelessWidget {
           scaffoldBackgroundColor: const Color(0xFF0D0D0D),
           textTheme: const TextTheme(
             displayLarge: TextStyle(
+              fontFamily: 'Inter',
+              letterSpacing: -0.32,
               fontSize: 32,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
-            bodyLarge: TextStyle(fontSize: 18, color: Colors.white),
-            bodyMedium: TextStyle(fontSize: 16, color: Colors.white70),
+            bodyLarge: TextStyle(fontFamily: 'Inter', letterSpacing: -0.18, fontSize: 18, color: Colors.white),
+            bodyMedium: TextStyle(fontFamily: 'Inter', letterSpacing: -0.16, fontSize: 16, color: Colors.white70),
           ),
           // Disable all animations
           pageTransitionsTheme: const PageTransitionsTheme(

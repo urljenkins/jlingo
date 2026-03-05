@@ -3,6 +3,10 @@ import 'package:provider/provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/progress_provider.dart';
 import 'home_screen.dart';
+import '../widgets/responsive/responsive_layout.dart';
+import '../widgets/responsive/desktop_scaffold.dart';
+import '../widgets/responsive/mobile_scaffold.dart';
+import '../widgets/hover_card.dart';
 
 class LanguageSelectionScreen extends StatelessWidget {
   const LanguageSelectionScreen({super.key});
@@ -11,64 +15,97 @@ class LanguageSelectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final courseProvider = context.watch<CourseProvider>();
 
-    return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(24.0),
+    final bodyContent = Padding(
+      padding: const EdgeInsets.all(12.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 40),
+          Text(
+            'Select Language',
+            style: Theme.of(context).textTheme.displayLarge,
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Choose the language you want to learn',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          const SizedBox(height: 40),
+          Expanded(
+            child: ListView.builder(
+              itemCount: courseProvider.availableLanguages.length,
+              itemBuilder: (context, index) {
+                final language = courseProvider.availableLanguages[index];
+                return _buildLanguageItem(context, language);
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+
+    return ResponsiveLayout(
+      mobileScaffold: MobileScaffold(
+        body: bodyContent,
+      ),
+      desktopScaffold: DesktopScaffold(
+        sideNav: Container(
+          color: const Color(0xFF1A1A1A),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 40),
-              Text(
-                'Select Language',
-                style: Theme.of(context).textTheme.displayLarge,
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'Choose the language you want to learn',
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
-              const SizedBox(height: 40),
-              Expanded(
-                child: ListView.builder(
-                  itemCount: courseProvider.availableLanguages.length,
-                  itemBuilder: (context, index) {
-                    final language = courseProvider.availableLanguages[index];
-                    return _buildLanguageItem(context, language);
-                  },
+              const Padding(
+                padding: EdgeInsets.all(12.0),
+                child: Text(
+                  'Lingua Sprint',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
+              ),
+              ListTile(
+                leading: const Icon(Icons.home),
+                title: const Text('Home'),
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    PageRouteBuilder(
+                      pageBuilder: (context, _, __) => const HomeScreen(),
+                      transitionDuration: Duration.zero,
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.language),
+                title: const Text('Languages'),
+                onTap: () {},
+                selected: true,
+                selectedColor: Theme.of(context).colorScheme.primary,
               ),
             ],
           ),
         ),
+        body: bodyContent,
       ),
     );
   }
 
   Widget _buildLanguageItem(BuildContext context, String language) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: Material(
-        color: const Color(0xFF1A1A1A),
-        borderRadius: BorderRadius.circular(8),
-        child: InkWell(
-          onTap: () => _selectLanguage(context, language),
-          borderRadius: BorderRadius.circular(8),
-          child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Row(
-              children: [
-                _getLanguageFlag(language),
-                const SizedBox(width: 16),
-                Text(
-                  _getLanguageName(language),
-                  style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: HoverCard(
+        onTap: () => _selectLanguage(context, language),
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Row(
+            children: [
+              _getLanguageFlag(language),
+              const SizedBox(width: 16),
+              Text(
+                _getLanguageName(language),
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
