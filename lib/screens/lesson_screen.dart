@@ -7,8 +7,12 @@ import '../widgets/exercises/translate_this_widget.dart';
 import '../widgets/exercises/match_pairs_widget.dart';
 import '../widgets/exercises/multiple_choice_widget.dart';
 import '../widgets/exercises/listening_widget.dart';
+import 'package:flutter/services.dart';
 import '../widgets/exercises/speak_this_widget.dart';
 import '../widgets/exercises/fill_blank_widget.dart';
+import '../widgets/responsive/responsive_layout.dart';
+import '../widgets/responsive/desktop_scaffold.dart';
+import '../widgets/responsive/mobile_scaffold.dart';
 
 class LessonScreen extends StatefulWidget {
   final Skill skill;
@@ -97,7 +101,7 @@ class _LessonScreenState extends State<LessonScreen> {
     return Dialog(
       backgroundColor: const Color(0xFF1A1A1A),
       child: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(12.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -120,16 +124,33 @@ class _LessonScreenState extends State<LessonScreen> {
             const SizedBox(height: 24),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pop(); // Close dialog
-                  Navigator.of(context).pop(); // Return to home
+              child: Focus(
+                autofocus: true,
+                onKeyEvent: (node, event) {
+                  if (event.logicalKey == LogicalKeyboardKey.enter ||
+                      event.logicalKey == LogicalKeyboardKey.numpadEnter) {
+                    Navigator.of(context).pop();
+                    Navigator.of(context).pop();
+                    return KeyEventResult.handled;
+                  }
+                  if (event.logicalKey == LogicalKeyboardKey.escape) {
+                    Navigator.of(context).pop();
+                    Navigator.of(context).pop();
+                    return KeyEventResult.handled;
+                  }
+                  return KeyEventResult.ignored;
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF00D9FF),
-                  foregroundColor: Colors.black,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).pop(); // Close dialog
+                    Navigator.of(context).pop(); // Return to home
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF00D9FF),
+                    foregroundColor: Colors.black,
+                  ),
+                  child: const Text('CONTINUE'),
                 ),
-                child: const Text('CONTINUE'),
               ),
             ),
           ],
@@ -155,31 +176,42 @@ class _LessonScreenState extends State<LessonScreen> {
     final exercise = _exercises[_currentExerciseIndex];
     final progress = _currentExerciseIndex / _exercises.length;
 
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.close),
-          onPressed: () => Navigator.of(context).pop(),
-        ),
-        title: LinearProgressIndicator(
-          value: progress,
-          backgroundColor: const Color(0xFF3A3A3A),
-          valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFF00D9FF)),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text(
-              '${_currentExerciseIndex + 1}/${_exercises.length}',
-              style: const TextStyle(fontSize: 16),
-            ),
-          ),
-        ],
+    final topBar = AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      leading: IconButton(
+        icon: const Icon(Icons.close),
+        onPressed: () => Navigator.of(context).pop(),
       ),
-      body: SafeArea(
-        child: _buildExerciseWidget(exercise),
+      title: LinearProgressIndicator(
+        value: progress,
+        backgroundColor: const Color(0xFF3A3A3A),
+        valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFF00D9FF)),
+      ),
+      actions: [
+        Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Text(
+            '${_currentExerciseIndex + 1}/${_exercises.length}',
+            style: const TextStyle(fontSize: 16),
+          ),
+        ),
+      ],
+    );
+
+    return ResponsiveLayout(
+      mobileScaffold: MobileScaffold(
+        topBar: topBar,
+        body: _buildExerciseWidget(exercise),
+      ),
+      desktopScaffold: DesktopScaffold(
+        topBar: topBar,
+        body: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 800),
+            child: _buildExerciseWidget(exercise),
+          ),
+        ),
       ),
     );
   }

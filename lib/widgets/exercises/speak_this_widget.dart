@@ -129,7 +129,7 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(24.0),
+      padding: const EdgeInsets.all(12.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -178,7 +178,7 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
           if (_recognizedText.isNotEmpty) ...[
             const SizedBox(height: 24),
             Container(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(12.0),
               decoration: BoxDecoration(
                 color: const Color(0xFF2A2A2A),
                 borderRadius: BorderRadius.circular(8),

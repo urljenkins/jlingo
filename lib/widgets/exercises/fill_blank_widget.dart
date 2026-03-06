@@ -67,7 +67,7 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
     final parts = widget.exercise.question.split('___');
 
     return Padding(
-      padding: const EdgeInsets.all(24.0),
+      padding: const EdgeInsets.all(12.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

@@ -5,6 +5,11 @@ import '../providers/course_provider.dart';
 import '../models/progress.dart';
 import 'language_selection_screen.dart';
 import 'lesson_screen.dart';
+import '../widgets/responsive/responsive_layout.dart';
+import '../widgets/responsive/desktop_scaffold.dart';
+import 'package:flutter/services.dart';
+import '../widgets/responsive/mobile_scaffold.dart';
+import '../widgets/hover_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -64,63 +69,118 @@ class _HomeScreenState extends State<HomeScreen> {
           progress?.skillMastery ?? {},
         );
 
-        return Scaffold(
-          body: SafeArea(
-            child: Column(
-              children: [
-                // Top Bar
-                _buildTopBar(progress),
-
-                // Continue Button
-                Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: SizedBox(
-                    width: double.infinity,
-                    height: 60,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).push(
-                          PageRouteBuilder(
-                            pageBuilder: (context, _, __) => LessonScreen(
-                              skill: course.skills[currentSkillIndex],
-                            ),
-                            transitionDuration: Duration.zero,
+        final bodyContent = Column(
+          children: [
+            // Continue Button
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: SizedBox(
+                width: double.infinity,
+                height: 60,
+                child: Focus(
+                  autofocus: true,
+                  onKeyEvent: (node, event) {
+                    if (event.logicalKey == LogicalKeyboardKey.enter ||
+                        event.logicalKey == LogicalKeyboardKey.numpadEnter) {
+                      Navigator.of(context).push(
+                        PageRouteBuilder(
+                          pageBuilder: (context, _, __) => LessonScreen(
+                            skill: course.skills[currentSkillIndex],
                           ),
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Theme.of(context).colorScheme.primary,
-                        foregroundColor: Colors.black,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                          transitionDuration: Duration.zero,
                         ),
+                      );
+                      return KeyEventResult.handled;
+                    }
+                    return KeyEventResult.ignored;
+                  },
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        PageRouteBuilder(
+                          pageBuilder: (context, _, __) => LessonScreen(
+                            skill: course.skills[currentSkillIndex],
+                          ),
+                          transitionDuration: Duration.zero,
+                        ),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Theme.of(context).colorScheme.primary,
+                      foregroundColor: Colors.black,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
                       ),
-                      child: const Text(
-                        'CONTINUE',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
+                    ),
+                    child: const Text(
+                      'CONTINUE',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ),
+              ),
+            ),
 
-                // Skills List
-                Expanded(
-                  child: ListView.builder(
-                    padding: const EdgeInsets.symmetric(horizontal: 24),
-                    itemCount: course.skills.length,
-                    itemBuilder: (context, index) {
-                      final skill = course.skills[index];
-                      final mastery = progress?.skillMastery[skill.id] ?? 0.0;
+            // Skills List
+            Expanded(
+              child: ListView.builder(
+                padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                itemCount: course.skills.length,
+                itemBuilder: (context, index) {
+                  final skill = course.skills[index];
+                  final mastery = progress?.skillMastery[skill.id] ?? 0.0;
 
-                      return _buildSkillItem(skill.name, mastery, index == currentSkillIndex);
+                  return _buildSkillItem(skill.name, mastery, index == currentSkillIndex);
+                },
+              ),
+            ),
+          ],
+        );
+
+        return ResponsiveLayout(
+          mobileScaffold: MobileScaffold(
+            topBar: _buildTopBar(progress),
+            body: bodyContent,
+          ),
+          desktopScaffold: DesktopScaffold(
+            sideNav: Container(
+              color: const Color(0xFF1A1A1A),
+              child: Column(
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      'Lingua Sprint',
+                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.home),
+                    title: const Text('Home'),
+                    onTap: () {},
+                    selected: true,
+                    selectedColor: Theme.of(context).colorScheme.primary,
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.language),
+                    title: const Text('Languages'),
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                        PageRouteBuilder(
+                          pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
+                          transitionDuration: Duration.zero,
+                        ),
+                      );
                     },
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
+            topBar: _buildTopBar(progress),
+            body: bodyContent,
           ),
         );
       },
@@ -129,7 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildTopBar(UserProgress? progress) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(12.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -162,51 +222,54 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildSkillItem(String name, double mastery, bool isCurrent) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 12),
-      decoration: BoxDecoration(
-        color: isCurrent ? const Color(0xFF2A2A2A) : const Color(0xFF1A1A1A),
-        borderRadius: BorderRadius.circular(8),
-        border: isCurrent
-            ? Border.all(color: const Color(0xFF00D9FF), width: 2)
-            : null,
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Row(
-          children: [
-            // Mastery Circle
-            SizedBox(
-              width: 48,
-              height: 48,
-              child: Stack(
-                children: [
-                  CircularProgressIndicator(
-                    value: mastery / 100,
-                    strokeWidth: 4,
-                    backgroundColor: const Color(0xFF3A3A3A),
-                    valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFF00FF85)),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Container(
+        decoration: isCurrent ? BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: const Color(0xFF00D9FF), width: 2),
+        ) : null,
+        child: HoverCard(
+          baseColor: isCurrent ? const Color(0xFF2A2A2A) : const Color(0xFF1A1A1A),
+          hoverColor: isCurrent ? const Color(0xFF3A3A3A) : const Color(0xFF2A2A2A),
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              children: [
+                // Mastery Circle
+                SizedBox(
+                  width: 48,
+                  height: 48,
+                  child: Stack(
+                    children: [
+                      CircularProgressIndicator(
+                        value: mastery / 100,
+                        strokeWidth: 4,
+                        backgroundColor: const Color(0xFF3A3A3A),
+                        valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFF00FF85)),
+                      ),
+                      Center(
+                        child: Text(
+                          '${mastery.toInt()}%',
+                          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
                   ),
-                  Center(
-                    child: Text(
-                      '${mastery.toInt()}%',
-                      style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
-                    ),
+                ),
+
+                const SizedBox(width: 16),
+
+                // Skill Name
+                Expanded(
+                  child: Text(
+                    name,
+                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-
-            const SizedBox(width: 16),
-
-            // Skill Name
-            Expanded(
-              child: Text(
-                name,
-                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );

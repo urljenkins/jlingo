@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import '../../models/exercise.dart';
+import '../hover_card.dart';
 
 class MatchPairsWidget extends StatefulWidget {
   final Exercise exercise;
@@ -104,7 +105,7 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(24.0),
+      padding: const EdgeInsets.all(12.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -151,23 +152,20 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
       borderColor = const Color(0xFF00D9FF);
     }
 
-    return Material(
-      color: backgroundColor,
-      borderRadius: BorderRadius.circular(8),
-      child: InkWell(
-        onTap: () => _onTileTap(tile),
-        borderRadius: BorderRadius.circular(8),
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: borderColor, width: 2),
-          ),
-          child: Center(
-            child: Text(
-              value,
-              textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 16),
-            ),
+    return HoverCard(
+      baseColor: backgroundColor,
+      hoverColor: isMatched || isSelected ? backgroundColor : const Color(0xFF3A3A3A),
+      onTap: () => _onTileTap(tile),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: borderColor, width: 2),
+        ),
+        child: Center(
+          child: Text(
+            value,
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontSize: 16),
           ),
         ),
       ),
