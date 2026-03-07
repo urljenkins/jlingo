@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.8.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -18,7 +18,7 @@ dependencies:
   path_provider: ^2.1.0
 
   # JSON
-  json_annotation: ^4.8.1
+  json_annotation: ^4.11.0
 
   # Text-to-Speech
   flutter_tts: ^3.8.0
