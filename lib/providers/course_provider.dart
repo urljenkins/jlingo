@@ -20,7 +20,7 @@ class CourseProvider extends ChangeNotifier {
   Future<void> loadCourse(String languageCode) async {
     try {
       final jsonString = await rootBundle.loadString('assets/courses/$languageCode.json');
-      final jsonData = jsonDecode(jsonString);
+      final jsonData = jsonDecode(jsonString) as Map<String, dynamic>;
       _currentCourse = Course.fromJson(jsonData);
       notifyListeners();
     } catch (e) {

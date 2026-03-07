@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'dart:convert';
 import '../../models/exercise.dart';
 import '../hover_card.dart';
 
 class MatchPairsWidget extends StatefulWidget {
   final Exercise exercise;
-  final Function(bool) onAnswer;
+  final void Function(bool) onAnswer;
 
   const MatchPairsWidget({
     super.key,
@@ -93,12 +92,12 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
       } else {
         Future.delayed(const Duration(milliseconds: 500), () {
           if (mounted) {
-            setState(() => _selectedTiles.clear());
+            setState(_selectedTiles.clear);
           }
         });
       }
     } else {
-      setState(() => _selectedTiles.clear());
+      setState(_selectedTiles.clear);
     }
   }
 
@@ -145,10 +144,10 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
     Color borderColor = Colors.transparent;
 
     if (isMatched) {
-      backgroundColor = const Color(0xFF00FF85).withOpacity(0.2);
+      backgroundColor = const Color(0xFF00FF85).withValues(alpha: 0.2);
       borderColor = const Color(0xFF00FF85);
     } else if (isSelected) {
-      backgroundColor = const Color(0xFF00D9FF).withOpacity(0.2);
+      backgroundColor = const Color(0xFF00D9FF).withValues(alpha: 0.2);
       borderColor = const Color(0xFF00D9FF);
     }
 

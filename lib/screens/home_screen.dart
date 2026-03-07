@@ -24,6 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+    // ignore: discarded_futures
     _initializeApp();
   }
 
@@ -37,8 +38,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
     // Navigate to language selection if no course is loaded
     if (mounted && courseProvider.currentCourse == null) {
+      // ignore: unawaited_futures
       Navigator.of(context).pushReplacement(
-        PageRouteBuilder(
+        PageRouteBuilder<void>(
           pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
           transitionDuration: Duration.zero,
         ),
@@ -83,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     if (event.logicalKey == LogicalKeyboardKey.enter ||
                         event.logicalKey == LogicalKeyboardKey.numpadEnter) {
                       Navigator.of(context).push(
-                        PageRouteBuilder(
+                        PageRouteBuilder<void>(
                           pageBuilder: (context, _, __) => LessonScreen(
                             skill: course.skills[currentSkillIndex],
                           ),
@@ -97,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        PageRouteBuilder(
+                        PageRouteBuilder<void>(
                           pageBuilder: (context, _, __) => LessonScreen(
                             skill: course.skills[currentSkillIndex],
                           ),
@@ -146,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
             body: bodyContent,
           ),
           desktopScaffold: DesktopScaffold(
-            sideNav: Container(
+            sideNav: ColoredBox(
               color: const Color(0xFF1A1A1A),
               child: Column(
                 children: [
@@ -169,7 +171,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     title: const Text('Languages'),
                     onTap: () {
                       Navigator.of(context).pushReplacement(
-                        PageRouteBuilder(
+                        PageRouteBuilder<void>(
                           pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
                           transitionDuration: Duration.zero,
                         ),
@@ -188,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildTopBar(UserProgress? progress) {
-    return Container(
+    return Padding( // Replaced Container with Padding
       padding: const EdgeInsets.all(12.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -224,11 +226,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildSkillItem(String name, double mastery, bool isCurrent) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
-      child: Container(
+      child: DecoratedBox(
         decoration: isCurrent ? BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color: const Color(0xFF00D9FF), width: 2),
-        ) : null,
+        ) : const BoxDecoration(),
         child: HoverCard(
           baseColor: isCurrent ? const Color(0xFF2A2A2A) : const Color(0xFF1A1A1A),
           hoverColor: isCurrent ? const Color(0xFF3A3A3A) : const Color(0xFF2A2A2A),

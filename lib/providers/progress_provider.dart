@@ -12,7 +12,7 @@ class ProgressProvider extends ChangeNotifier {
     final progressJson = prefs.getString('progress_$courseId');
 
     if (progressJson != null) {
-      _progress = UserProgress.fromJson(jsonDecode(progressJson));
+      _progress = UserProgress.fromJson(jsonDecode(progressJson) as Map<String, dynamic>);
     } else {
       _progress = UserProgress(courseId: courseId);
     }

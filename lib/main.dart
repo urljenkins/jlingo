@@ -64,12 +64,11 @@ class _LinguaSprintAppState extends State<LinguaSprintApp> with WidgetsBindingOb
           splashFactory: NoSplash.splashFactory,
           highlightColor: Colors.transparent,
           hoverColor: Colors.transparent,
-          colorScheme: ColorScheme.dark(
-            primary: const Color(0xFF00D9FF),
-            secondary: const Color(0xFF00FF85),
-            error: const Color(0xFFFF4757),
-            surface: const Color(0xFF1A1A1A),
-            background: const Color(0xFF0D0D0D),
+          colorScheme: const ColorScheme.dark(
+            primary: Color(0xFF00D9FF),
+            secondary: Color(0xFF00FF85),
+            error: Color(0xFFFF4757),
+            surface: Color(0xFF0D0D0D),
           ),
           scaffoldBackgroundColor: const Color(0xFF0D0D0D),
           textTheme: const TextTheme(
