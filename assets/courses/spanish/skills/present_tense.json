@@ -1,0 +1,52 @@
+{
+    "id": "present_tense",
+    "name": "Present Tense",
+    "description": "Learn regular verb conjugations in the present tense",
+    "level": 7,
+    "exercises": [
+        {
+            "id": "ex_pt_1",
+            "type": "multipleChoice",
+            "question": "What are the three verb ending groups in Spanish?",
+            "options": ["-ar, -er, -ir", "-ar, -or, -ur", "-a, -e, -i", "-er, -ir, -ur"],
+            "correctAnswer": "-ar, -er, -ir"
+        },
+        {
+            "id": "ex_pt_2",
+            "type": "matchPairs",
+            "question": "Match HABLAR (to speak) conjugations",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Yo hablo", "native": "I speak"},
+                    {"target": "Tú hablas", "native": "You speak"},
+                    {"target": "Él habla", "native": "He speaks"},
+                    {"target": "Nosotros hablamos", "native": "We speak"},
+                    {"target": "Ellos hablan", "native": "They speak"}
+                ]
+            }
+        },
+        {
+            "id": "ex_pt_3",
+            "type": "fillInBlank",
+            "question": "Ella ___ español muy bien",
+            "options": ["habla", "hablo", "hablas", "hablan"],
+            "correctAnswer": "habla"
+        },
+        {
+            "id": "ex_pt_4",
+            "type": "translateThis",
+            "question": "Nosotros comemos en casa",
+            "options": [],
+            "correctAnswer": "We eat at home"
+        },
+        {
+            "id": "ex_pt_5",
+            "type": "fillInBlank",
+            "question": "Los niños ___ en el parque",
+            "options": ["viven", "vive", "vivo", "vivimos"],
+            "correctAnswer": "viven"
+        }
+    ]
+}

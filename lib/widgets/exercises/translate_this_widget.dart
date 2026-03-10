@@ -91,7 +91,9 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757))
+                      ? (_isCorrect
+                          ? const Color(0xFF00FF85)
+                          : const Color(0xFFFF4757))
                       : Colors.transparent,
                   width: 2,
                 ),
@@ -100,7 +102,9 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757))
+                      ? (_isCorrect
+                          ? const Color(0xFF00FF85)
+                          : const Color(0xFFFF4757))
                       : const Color(0xFF00D9FF),
                   width: 2,
                 ),
@@ -114,14 +118,18 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+                  color: _isCorrect
+                      ? const Color(0xFF00FF85)
+                      : const Color(0xFFFF4757),
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _isCorrect ? 'Correct!' : 'Incorrect',
                   style: TextStyle(
                     fontSize: 16,
-                    color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+                    color: _isCorrect
+                        ? const Color(0xFF00FF85)
+                        : const Color(0xFFFF4757),
                   ),
                 ),
               ],

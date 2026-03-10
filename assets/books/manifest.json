@@ -1,0 +1,165 @@
+{
+  "books": [
+    {
+      "id": "little_prince_es",
+      "title": "The Little Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "originalLanguage": "spanish",
+      "translatedLanguage": "english",
+      "translationIds": {
+        "spanish": null,
+        "french": null,
+        "german": null,
+        "dutch": null,
+        "portuguese": null,
+        "japanese": null,
+        "chinese": null
+      },
+      "description": "A poetic tale about a young prince who visits various planets, learning about life and love.",
+      "difficulty": "beginner",
+      "totalWords": 850,
+      "chapterCount": 3
+    },
+    {
+      "id": "don_quixote_es",
+      "title": "Don Quixote",
+      "author": "Miguel de Cervantes",
+      "originalLanguage": "spanish",
+      "translatedLanguage": "english",
+      "translationIds": {
+        "spanish": null,
+        "french": null,
+        "german": null,
+        "dutch": null,
+        "portuguese": null,
+        "japanese": null,
+        "chinese": null
+      },
+      "description": "The classic tale of a Spanish gentleman who becomes a knight-errant after reading too many chivalric romances.",
+      "difficulty": "intermediate",
+      "totalWords": 1200,
+      "chapterCount": 3
+    },
+    {
+      "id": "trois_mousquetaires_fr",
+      "title": "The Three Musketeers",
+      "author": "Alexandre Dumas",
+      "originalLanguage": "french",
+      "translatedLanguage": "english",
+      "translationIds": {
+        "spanish": null,
+        "french": null,
+        "german": null,
+        "dutch": null,
+        "portuguese": null,
+        "japanese": null,
+        "chinese": null
+      },
+      "description": "The adventures of a young man named d'Artagnan who travels to Paris to join the Musketeers.",
+      "difficulty": "intermediate",
+      "totalWords": 980,
+      "chapterCount": 3
+    },
+    {
+      "id": "metamorphosis_de",
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "originalLanguage": "german",
+      "translatedLanguage": "english",
+      "translationIds": {
+        "spanish": null,
+        "french": null,
+        "german": null,
+        "dutch": null,
+        "portuguese": null,
+        "japanese": null,
+        "chinese": null
+      },
+      "description": "The story of Gregor Samsa who wakes up transformed into a giant insect.",
+      "difficulty": "advanced",
+      "totalWords": 1100,
+      "chapterCount": 3
+    },
+    {
+      "id": "alice_en",
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "originalLanguage": "english",
+      "translatedLanguage": "spanish",
+      "translationIds": {
+        "spanish": null,
+        "french": null,
+        "german": null,
+        "dutch": null,
+        "portuguese": null,
+        "japanese": null,
+        "chinese": null
+      },
+      "description": "A young girl named Alice falls through a rabbit hole into a whimsical underground world filled with peculiar creatures.",
+      "difficulty": "beginner",
+      "totalWords": 1480,
+      "chapterCount": 3
+    },
+    {
+      "id": "pride_prejudice_en",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "originalLanguage": "english",
+      "translatedLanguage": "spanish",
+      "translationIds": {
+        "spanish": null,
+        "french": null,
+        "german": null,
+        "dutch": null,
+        "portuguese": null,
+        "japanese": null,
+        "chinese": null
+      },
+      "description": "A witty tale of love and social standing in Regency-era England, following the spirited Elizabeth Bennet.",
+      "difficulty": "intermediate",
+      "totalWords": 1520,
+      "chapterCount": 3
+    },
+    {
+      "id": "sherlock_en",
+      "title": "A Study in Scarlet",
+      "author": "Arthur Conan Doyle",
+      "originalLanguage": "english",
+      "translatedLanguage": "spanish",
+      "translationIds": {
+        "spanish": null,
+        "french": null,
+        "german": null,
+        "dutch": null,
+        "portuguese": null,
+        "japanese": null,
+        "chinese": null
+      },
+      "description": "Dr. Watson meets the brilliant detective Sherlock Holmes and they investigate a mysterious murder in London.",
+      "difficulty": "intermediate",
+      "totalWords": 1510,
+      "chapterCount": 3
+    },
+    {
+      "id": "oliver_twist_en",
+      "title": "Oliver Twist",
+      "author": "Charles Dickens",
+      "originalLanguage": "english",
+      "translatedLanguage": "spanish",
+      "translationIds": {
+        "spanish": null,
+        "french": null,
+        "german": null,
+        "dutch": null,
+        "portuguese": null,
+        "japanese": null,
+        "chinese": null
+      },
+      "description": "An orphan boy named Oliver endures hardship in Victorian London before discovering kindness and his true identity.",
+      "difficulty": "intermediate",
+      "totalWords": 1540,
+      "chapterCount": 3
+    }
+  ]
+}
+

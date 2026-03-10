@@ -1,0 +1,52 @@
+{
+    "id": "past_tense_1",
+    "name": "Past Tense: Preterite",
+    "description": "Learn the simple past tense for completed actions",
+    "level": 12,
+    "exercises": [
+        {
+            "id": "ex_pret_1",
+            "type": "multipleChoice",
+            "question": "When do we use the preterite tense?",
+            "options": ["For completed actions in the past", "For ongoing past actions", "For future plans", "For habitual actions"],
+            "correctAnswer": "For completed actions in the past"
+        },
+        {
+            "id": "ex_pret_2",
+            "type": "matchPairs",
+            "question": "Match HABLAR preterite conjugations",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Yo hablé", "native": "I spoke"},
+                    {"target": "Tú hablaste", "native": "You spoke"},
+                    {"target": "Él habló", "native": "He spoke"},
+                    {"target": "Nosotros hablamos", "native": "We spoke"},
+                    {"target": "Ellos hablaron", "native": "They spoke"}
+                ]
+            }
+        },
+        {
+            "id": "ex_pret_3",
+            "type": "translateThis",
+            "question": "Ayer comí en un restaurante",
+            "options": [],
+            "correctAnswer": "Yesterday I ate at a restaurant"
+        },
+        {
+            "id": "ex_pret_4",
+            "type": "fillInBlank",
+            "question": "Ella ___ a España el año pasado",
+            "options": ["viajó", "viaja", "viajaba", "viajará"],
+            "correctAnswer": "viajó"
+        },
+        {
+            "id": "ex_pret_5",
+            "type": "multipleChoice",
+            "question": "What is the preterite of 'ir' (to go) for 'yo'?",
+            "options": ["Fui", "Iba", "Voy", "Iré"],
+            "correctAnswer": "Fui"
+        }
+    ]
+}

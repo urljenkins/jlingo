@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
@@ -12,7 +13,8 @@ class ProgressProvider extends ChangeNotifier {
     final progressJson = prefs.getString('progress_$courseId');
 
     if (progressJson != null) {
-      _progress = UserProgress.fromJson(jsonDecode(progressJson) as Map<String, dynamic>);
+      _progress = UserProgress.fromJson(
+          jsonDecode(progressJson) as Map<String, dynamic>);
     } else {
       _progress = UserProgress(courseId: courseId);
     }
@@ -57,7 +59,7 @@ class ProgressProvider extends ChangeNotifier {
       lastStudyDate: now,
     );
 
-    saveProgress();
+    unawaited(saveProgress());
     notifyListeners();
   }
 
@@ -68,7 +70,7 @@ class ProgressProvider extends ChangeNotifier {
       totalPoints: _progress!.totalPoints + points,
     );
 
-    saveProgress();
+    unawaited(saveProgress());
     notifyListeners();
   }
 
@@ -80,7 +82,7 @@ class ProgressProvider extends ChangeNotifier {
 
     _progress = _progress!.copyWith(skillMastery: newMastery);
 
-    saveProgress();
+    unawaited(saveProgress());
     notifyListeners();
   }
 
@@ -92,7 +94,7 @@ class ProgressProvider extends ChangeNotifier {
 
     _progress = _progress!.copyWith(exerciseStats: newStats);
 
-    saveProgress();
+    unawaited(saveProgress());
     notifyListeners();
   }
 
@@ -107,7 +109,7 @@ class ProgressProvider extends ChangeNotifier {
     final newAchievements = [..._progress!.achievements, achievement];
     _progress = _progress!.copyWith(achievements: newAchievements);
 
-    saveProgress();
+    unawaited(saveProgress());
     notifyListeners();
   }
 

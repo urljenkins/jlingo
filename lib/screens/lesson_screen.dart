@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/skill.dart';
 import '../models/exercise.dart';
+import '../models/gamification.dart';
 import '../providers/progress_provider.dart';
-import '../widgets/exercises/translate_this_widget.dart';
-import '../widgets/exercises/match_pairs_widget.dart';
-import '../widgets/exercises/multiple_choice_widget.dart';
-import '../widgets/exercises/listening_widget.dart';
+import '../providers/gamification_provider.dart';
+import '../providers/course_provider.dart';
 import 'package:flutter/services.dart';
-import '../widgets/exercises/speak_this_widget.dart';
-import '../widgets/exercises/fill_blank_widget.dart';
+import '../widgets/exercises/exercise_renderer_registry.dart';
 import '../widgets/responsive/responsive_layout.dart';
 import '../widgets/responsive/desktop_scaffold.dart';
 import '../widgets/responsive/mobile_scaffold.dart';
+import '../widgets/gamification/gamification_widgets.dart';
 
 class LessonScreen extends StatefulWidget {
   final Skill skill;
@@ -32,7 +31,10 @@ class _LessonScreenState extends State<LessonScreen> {
   int _currentExerciseIndex = 0;
   int _correctAnswers = 0;
   int _totalAnswers = 0;
+  int _totalXPEarned = 0;
   List<Exercise> _exercises = [];
+  XPGainResult? _lastXPResult;
+  bool _showingLevelUp = false;
 
   @override
   void initState() {
@@ -50,37 +52,114 @@ class _LessonScreenState extends State<LessonScreen> {
     }
   }
 
-  void _onAnswer(bool isCorrect) {
+  Future<void> _onAnswer(bool isCorrect) async {
+    final gamificationProvider = context.read<GamificationProvider>();
+    final courseProvider = context.read<CourseProvider>();
+    final courseId = courseProvider.currentManifest?.id ?? '';
+
     setState(() {
       _totalAnswers++;
-      if (isCorrect) {
-        _correctAnswers++;
-
-        // Award points
-        final points = 10; // Base points
-        context.read<ProgressProvider>().addPoints(points);
-
-        // Update exercise stats
-        context.read<ProgressProvider>().incrementExerciseStat(
-              _exercises[_currentExerciseIndex].type.toString(),
-            );
-      }
-
-      // Move to next exercise
-      if (_currentExerciseIndex < _exercises.length - 1) {
-        _currentExerciseIndex++;
-      } else {
-        _finishLesson();
-      }
     });
+
+    if (isCorrect) {
+      setState(() {
+        _correctAnswers++;
+      });
+
+      // Award XP through GamificationProvider
+      final result = await gamificationProvider.awardXP(
+        courseId: courseId,
+        type: 'exercise_correct',
+        baseAmount: XPRewards.exerciseCorrect,
+        description: 'Correct answer',
+      );
+
+      setState(() {
+        _totalXPEarned += result.totalXP;
+        _lastXPResult = result;
+      });
+
+      // Update legacy points for compatibility
+      context.read<ProgressProvider>().addPoints(result.totalXP);
+
+      // Update exercise stats
+      context.read<ProgressProvider>().incrementExerciseStat(
+            _exercises[_currentExerciseIndex].type.toString(),
+          );
+
+      // Check for level up
+      if (result.leveledUp) {
+        _showLevelUpCelebration(result.newLevel!);
+      }
+    }
+
+    // Move to next exercise
+    if (_currentExerciseIndex < _exercises.length - 1) {
+      setState(() {
+        _currentExerciseIndex++;
+      });
+    } else {
+      await _finishLesson();
+    }
   }
 
-  void _finishLesson() {
+  void _showLevelUpCelebration(int newLevel) {
+    setState(() {
+      _showingLevelUp = true;
+    });
+
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => LevelUpCelebration(
+        newLevel: newLevel,
+        newTitle: LevelConfig.getTitleForLevel(newLevel),
+        onDismiss: () {
+          Navigator.of(context).pop();
+          setState(() {
+            _showingLevelUp = false;
+          });
+        },
+      ),
+    );
+  }
+
+  Future<void> _finishLesson() async {
     final progressProvider = context.read<ProgressProvider>();
+    final gamificationProvider = context.read<GamificationProvider>();
+    final courseProvider = context.read<CourseProvider>();
+    final courseId = courseProvider.currentManifest?.id ?? '';
+
+    // Record study activity for streak
+    await gamificationProvider.recordStudyActivity(courseId);
+
+    // Award lesson completion bonus
+    final completionResult = await gamificationProvider.awardXP(
+      courseId: courseId,
+      type: 'lesson_complete',
+      baseAmount: XPRewards.lessonComplete,
+      description: 'Lesson completed: ${widget.skill.name}',
+    );
+
+    // Award perfect lesson bonus if applicable
+    final isPerfect = _correctAnswers == _totalAnswers && _totalAnswers > 0;
+    if (isPerfect) {
+      final perfectResult = await gamificationProvider.awardXP(
+        courseId: courseId,
+        type: 'perfect_lesson',
+        baseAmount: XPRewards.perfectLesson,
+        description: 'Perfect lesson!',
+      );
+      _totalXPEarned += perfectResult.totalXP;
+    }
+
+    _totalXPEarned += completionResult.totalXP;
 
     // Update skill mastery
-    final masteryGain = (_correctAnswers / _totalAnswers) * 20; // Up to 20% per session
-    final currentMastery = progressProvider.progress?.skillMastery[widget.skill.id] ?? 0.0;
+    final masteryGain =
+        (_correctAnswers / _totalAnswers) * 20; // Up to 20% per session
+    final currentMastery =
+        progressProvider.progress?.skillMastery[widget.skill.id] ?? 0.0;
     final newMastery = (currentMastery + masteryGain).clamp(0.0, 100.0);
 
     progressProvider.updateSkillMastery(widget.skill.id, newMastery);
@@ -88,6 +167,7 @@ class _LessonScreenState extends State<LessonScreen> {
     progressProvider.checkAndUnlockAchievements();
 
     // Show completion dialog
+    if (!mounted) return;
     showDialog(
       context: context,
       barrierDismissible: false,
@@ -97,31 +177,126 @@ class _LessonScreenState extends State<LessonScreen> {
 
   Widget _buildCompletionDialog() {
     final accuracy = (_correctAnswers / _totalAnswers * 100).round();
+    final isPerfect = _correctAnswers == _totalAnswers && _totalAnswers > 0;
+    final gamificationProvider = context.read<GamificationProvider>();
+    final userLevel = gamificationProvider.userLevel;
 
     return Dialog(
       backgroundColor: const Color(0xFF1A1A1A),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.check_circle, color: Color(0xFF00FF85), size: 64),
+            // Success icon
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: const Color(0xFF00FF85).withValues(alpha: 0.2),
+              ),
+              child: Icon(
+                isPerfect ? Icons.star : Icons.check_circle,
+                color: isPerfect
+                    ? const Color(0xFFFFD700)
+                    : const Color(0xFF00FF85),
+                size: 64,
+              ),
+            ),
             const SizedBox(height: 16),
-            const Text(
-              'Lesson Complete!',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            Text(
+              isPerfect ? 'Perfect!' : 'Lesson Complete!',
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 20),
+
+            // Stats row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _buildStatColumn(
+                  icon: Icons.check,
+                  value: '$_correctAnswers/$_totalAnswers',
+                  label: 'Correct',
+                  color: const Color(0xFF00FF85),
+                ),
+                _buildStatColumn(
+                  icon: Icons.speed,
+                  value: '$accuracy%',
+                  label: 'Accuracy',
+                  color:
+                      accuracy >= 80 ? const Color(0xFF00D9FF) : Colors.orange,
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+
+            // XP earned
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    const Color(0xFFFFD700).withValues(alpha: 0.2),
+                    const Color(0xFFFF6B35).withValues(alpha: 0.2),
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.star, color: Color(0xFFFFD700), size: 28),
+                  const SizedBox(width: 8),
+                  Text(
+                    '+$_totalXPEarned XP',
+                    style: const TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFFFFD700),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+
+            // Level progress
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Level ${userLevel.level} - ${userLevel.title}',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    Text(
+                      '${LevelConfig.getXPToNextLevel(userLevel.currentXP)} XP to next',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.white54,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                XPProgressBar(
+                  userLevel: userLevel,
+                  showLabel: false,
+                  height: 8,
+                ),
+              ],
             ),
             const SizedBox(height: 24),
-            Text(
-              '$_correctAnswers / $_totalAnswers correct',
-              style: const TextStyle(fontSize: 18),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              '$accuracy% accuracy',
-              style: const TextStyle(fontSize: 18),
-            ),
-            const SizedBox(height: 24),
+
+            // Continue button
             SizedBox(
               width: double.infinity,
               child: Focus(
@@ -148,14 +323,54 @@ class _LessonScreenState extends State<LessonScreen> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF00D9FF),
                     foregroundColor: Colors.black,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
                   ),
-                  child: const Text('CONTINUE'),
+                  child: const Text(
+                    'CONTINUE',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
                 ),
               ),
             ),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildStatColumn({
+    required IconData icon,
+    required String value,
+    required String label,
+    required Color color,
+  }) {
+    return Column(
+      children: [
+        Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: color.withValues(alpha: 0.2),
+          ),
+          child: Icon(icon, color: color, size: 20),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          value,
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: color,
+          ),
+        ),
+        Text(
+          label,
+          style: const TextStyle(
+            fontSize: 12,
+            color: Colors.white54,
+          ),
+        ),
+      ],
     );
   }
 
@@ -217,37 +432,9 @@ class _LessonScreenState extends State<LessonScreen> {
   }
 
   Widget _buildExerciseWidget(Exercise exercise) {
-    switch (exercise.type) {
-      case ExerciseType.translateThis:
-        return TranslateThisWidget(
-          exercise: exercise,
-          onAnswer: _onAnswer,
-        );
-      case ExerciseType.matchPairs:
-        return MatchPairsWidget(
-          exercise: exercise,
-          onAnswer: _onAnswer,
-        );
-      case ExerciseType.multipleChoice:
-        return MultipleChoiceWidget(
-          exercise: exercise,
-          onAnswer: _onAnswer,
-        );
-      case ExerciseType.listeningComprehension:
-        return ListeningWidget(
-          exercise: exercise,
-          onAnswer: _onAnswer,
-        );
-      case ExerciseType.speakThis:
-        return SpeakThisWidget(
-          exercise: exercise,
-          onAnswer: _onAnswer,
-        );
-      case ExerciseType.fillInBlank:
-        return FillBlankWidget(
-          exercise: exercise,
-          onAnswer: _onAnswer,
-        );
-    }
+    return ExerciseRendererRegistry.render(
+      exercise: exercise,
+      onAnswer: _onAnswer,
+    );
   }
 }

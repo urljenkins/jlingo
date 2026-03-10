@@ -1,0 +1,61 @@
+{
+    "id": "phrasal_expressions",
+    "name": "Phrasal Expressions",
+    "description": "Learn common verb + preposition combinations",
+    "level": 23,
+    "exercises": [
+        {
+            "id": "ex_phr_1",
+            "type": "matchPairs",
+            "question": "Match phrasal expressions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Acabar de", "native": "To have just"},
+                    {"target": "Dejar de", "native": "To stop (doing)"},
+                    {"target": "Empezar a", "native": "To start (doing)"},
+                    {"target": "Tratar de", "native": "To try to"},
+                    {"target": "Pensar en", "native": "To think about"}
+                ]
+            }
+        },
+        {
+            "id": "ex_phr_2",
+            "type": "translateThis",
+            "question": "Acabo de llegar",
+            "options": [],
+            "correctAnswer": "I have just arrived"
+        },
+        {
+            "id": "ex_phr_3",
+            "type": "fillInBlank",
+            "question": "Tengo que dejar ___ fumar",
+            "options": ["de", "a", "en", "con"],
+            "correctAnswer": "de"
+        },
+        {
+            "id": "ex_phr_4",
+            "type": "matchPairs",
+            "question": "Match more phrasal expressions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Soñar con", "native": "To dream about"},
+                    {"target": "Contar con", "native": "To count on"},
+                    {"target": "Fijarse en", "native": "To notice"},
+                    {"target": "Acordarse de", "native": "To remember"},
+                    {"target": "Olvidarse de", "native": "To forget"}
+                ]
+            }
+        },
+        {
+            "id": "ex_phr_5",
+            "type": "speakThis",
+            "question": "Me acuerdo de cuando éramos niños",
+            "options": [],
+            "correctAnswer": "Me acuerdo de cuando éramos niños"
+        }
+    ]
+}

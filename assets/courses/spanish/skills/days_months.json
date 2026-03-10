@@ -1,0 +1,64 @@
+{
+    "id": "days_months",
+    "name": "Days & Months",
+    "description": "Learn days of the week and months of the year",
+    "level": 4,
+    "exercises": [
+        {
+            "id": "ex_dm_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'Monday' in Spanish?",
+            "options": ["Lunes", "Martes", "Domingo", "Viernes"],
+            "correctAnswer": "Lunes"
+        },
+        {
+            "id": "ex_dm_2",
+            "type": "matchPairs",
+            "question": "Match the days of the week",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Lunes", "native": "Monday"},
+                    {"target": "Martes", "native": "Tuesday"},
+                    {"target": "Miércoles", "native": "Wednesday"},
+                    {"target": "Jueves", "native": "Thursday"},
+                    {"target": "Viernes", "native": "Friday"},
+                    {"target": "Sábado", "native": "Saturday"},
+                    {"target": "Domingo", "native": "Sunday"}
+                ]
+            }
+        },
+        {
+            "id": "ex_dm_3",
+            "type": "translateThis",
+            "question": "Enero",
+            "options": [],
+            "correctAnswer": "January"
+        },
+        {
+            "id": "ex_dm_4",
+            "type": "matchPairs",
+            "question": "Match the months",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Enero", "native": "January"},
+                    {"target": "Febrero", "native": "February"},
+                    {"target": "Marzo", "native": "March"},
+                    {"target": "Abril", "native": "April"},
+                    {"target": "Mayo", "native": "May"},
+                    {"target": "Junio", "native": "June"}
+                ]
+            }
+        },
+        {
+            "id": "ex_dm_5",
+            "type": "fillInBlank",
+            "question": "Hoy es ___ 15 de marzo",
+            "options": ["el", "la", "un", "una"],
+            "correctAnswer": "el"
+        }
+    ]
+}

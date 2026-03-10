@@ -94,7 +94,8 @@ class _ListeningWidgetState extends State<ListeningWidget> {
                   icon: Icon(
                     _isPlaying ? Icons.volume_up : Icons.play_circle_filled,
                     size: 80,
-                    color: _isPlaying ? Colors.white38 : const Color(0xFF00D9FF),
+                    color:
+                        _isPlaying ? Colors.white38 : const Color(0xFF00D9FF),
                   ),
                 ),
                 const SizedBox(height: 8),
@@ -108,7 +109,6 @@ class _ListeningWidgetState extends State<ListeningWidget> {
           const SizedBox(height: 32),
           TextField(
             controller: _controller,
-            autofocus: false,
             style: const TextStyle(fontSize: 18),
             decoration: InputDecoration(
               hintText: 'Type what you hear',
@@ -126,7 +126,9 @@ class _ListeningWidgetState extends State<ListeningWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757))
+                      ? (_isCorrect
+                          ? const Color(0xFF00FF85)
+                          : const Color(0xFFFF4757))
                       : Colors.transparent,
                   width: 2,
                 ),
@@ -135,7 +137,9 @@ class _ListeningWidgetState extends State<ListeningWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757))
+                      ? (_isCorrect
+                          ? const Color(0xFF00FF85)
+                          : const Color(0xFFFF4757))
                       : const Color(0xFF00D9FF),
                   width: 2,
                 ),
@@ -149,14 +153,18 @@ class _ListeningWidgetState extends State<ListeningWidget> {
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+                  color: _isCorrect
+                      ? const Color(0xFF00FF85)
+                      : const Color(0xFFFF4757),
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _isCorrect ? 'Correct!' : 'Incorrect',
                   style: TextStyle(
                     fontSize: 16,
-                    color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+                    color: _isCorrect
+                        ? const Color(0xFF00FF85)
+                        : const Color(0xFFFF4757),
                   ),
                 ),
               ],

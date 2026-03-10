@@ -1,0 +1,53 @@
+{
+    "id": "transportation",
+    "name": "Transportation",
+    "description": "Learn vocabulary for getting around",
+    "level": 9,
+    "exercises": [
+        {
+            "id": "ex_tr_1",
+            "type": "matchPairs",
+            "question": "Match transportation words",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "El autobús", "native": "The bus"},
+                    {"target": "El tren", "native": "The train"},
+                    {"target": "El avión", "native": "The airplane"},
+                    {"target": "El taxi", "native": "The taxi"},
+                    {"target": "El metro", "native": "The subway"},
+                    {"target": "El coche", "native": "The car"}
+                ]
+            }
+        },
+        {
+            "id": "ex_tr_2",
+            "type": "translateThis",
+            "question": "Un billete de ida y vuelta",
+            "options": [],
+            "correctAnswer": "A round-trip ticket"
+        },
+        {
+            "id": "ex_tr_3",
+            "type": "fillInBlank",
+            "question": "¿A qué hora ___ el tren?",
+            "options": ["sale", "llega", "viene", "va"],
+            "correctAnswer": "sale"
+        },
+        {
+            "id": "ex_tr_4",
+            "type": "multipleChoice",
+            "question": "How do you say 'platform' (at a train station)?",
+            "options": ["Andén", "Estación", "Parada", "Billete"],
+            "correctAnswer": "Andén"
+        },
+        {
+            "id": "ex_tr_5",
+            "type": "speakThis",
+            "question": "Quiero un billete para Madrid",
+            "options": [],
+            "correctAnswer": "Quiero un billete para Madrid"
+        }
+    ]
+}

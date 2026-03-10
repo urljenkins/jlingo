@@ -1,0 +1,52 @@
+{
+    "id": "directions",
+    "name": "Directions",
+    "description": "Learn to ask for and give directions",
+    "level": 9,
+    "exercises": [
+        {
+            "id": "ex_dir_1",
+            "type": "multipleChoice",
+            "question": "How do you ask 'Where is the bank?'",
+            "options": ["¿Dónde está el banco?", "¿Qué es el banco?", "¿Cómo es el banco?", "¿Cuál es el banco?"],
+            "correctAnswer": "¿Dónde está el banco?"
+        },
+        {
+            "id": "ex_dir_2",
+            "type": "matchPairs",
+            "question": "Match direction words",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "A la derecha", "native": "To the right"},
+                    {"target": "A la izquierda", "native": "To the left"},
+                    {"target": "Todo recto", "native": "Straight ahead"},
+                    {"target": "En la esquina", "native": "On the corner"},
+                    {"target": "Al lado de", "native": "Next to"}
+                ]
+            }
+        },
+        {
+            "id": "ex_dir_3",
+            "type": "translateThis",
+            "question": "Gira a la derecha",
+            "options": [],
+            "correctAnswer": "Turn right"
+        },
+        {
+            "id": "ex_dir_4",
+            "type": "fillInBlank",
+            "question": "El museo está ___ del parque",
+            "options": ["cerca", "lejos", "dentro", "fuera"],
+            "correctAnswer": "cerca"
+        },
+        {
+            "id": "ex_dir_5",
+            "type": "speakThis",
+            "question": "Sigue todo recto y luego gira a la izquierda",
+            "options": [],
+            "correctAnswer": "Sigue todo recto y luego gira a la izquierda"
+        }
+    ]
+}

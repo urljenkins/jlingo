@@ -1,0 +1,114 @@
+{
+  "id": "pride_prejudice_en",
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "originalLanguage": "english",
+  "translatedLanguage": "spanish",
+  "translationIds": {
+    "spanish": null,
+    "french": null,
+    "german": null,
+    "dutch": null,
+    "portuguese": null,
+    "japanese": null,
+    "chinese": null
+  },
+  "description": "A witty tale of love and social standing in Regency-era England, following the spirited Elizabeth Bennet.",
+  "difficulty": "intermediate",
+  "totalWords": 1520,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "A Single Man in Possession of a Fortune",
+      "translatedTitle": "Un hombre soltero en posesión de una fortuna",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText_english": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families.",
+          "translatedText_english": "Es una verdad universalmente reconocida que un hombre soltero en posesión de una buena fortuna debe estar necesitado de una esposa. Por poco que se conozcan los sentimientos o las opiniones de tal hombre al entrar por primera vez en un vecindario, esta verdad está tan bien fijada en las mentes de las familias circundantes.",
+          "vocabularyWords_english": ["universally", "acknowledged", "possession", "fortune", "neighbourhood", "surrounding"]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText_english": "\"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last?\" Mr. Bennet replied that he had not. \"But it is,\" returned she; \"for Mrs. Long has just been here, and she told me all about it.\"",
+          "translatedText_english": "\"Mi querido señor Bennet\", le dijo un día su esposa, \"¿ha oído usted que por fin se ha alquilado Netherfield Park?\" El señor Bennet respondió que no. \"Pues así es\", replicó ella; \"porque la señora Long acaba de estar aquí y me lo ha contado todo.\"",
+          "vocabularyWords_english": ["dear", "let", "replied", "returned", "told"]
+        },
+        {
+          "id": "ch1_p3",
+          "originalText_english": "\"Is he married or single?\" \"Oh! Single, my dear, to be sure! A single man of large fortune; four or five thousand a year. What a fine thing for our girls!\" \"How so? How can it affect them?\"",
+          "translatedText_english": "\"¿Es casado o soltero?\" \"¡Oh! ¡Soltero, querido mío, por supuesto! Un hombre soltero de gran fortuna; cuatro o cinco mil al año. ¡Qué cosa tan maravillosa para nuestras hijas!\" \"¿Cómo es eso? ¿Cómo puede afectarles?\"",
+          "vocabularyWords_english": ["married", "single", "fortune", "fine", "affect"]
+        },
+        {
+          "id": "ch1_p4",
+          "originalText_english": "Mr. Bennet was so odd a mixture of quick parts, sarcastic humour, reserve, and caprice, that the experience of three-and-twenty years had been insufficient to make his wife understand his character. Her mind was less difficult to develop. She was a woman of mean understanding, little information, and uncertain temper.",
+          "translatedText_english": "El señor Bennet era una mezcla tan extraña de ingenio rápido, humor sarcástico, reserva y capricho, que la experiencia de veintitrés años no había sido suficiente para que su esposa entendiera su carácter. La mente de ella era menos difícil de comprender. Era una mujer de entendimiento mediocre, poca información y temperamento inestable.",
+          "vocabularyWords_english": ["odd", "mixture", "sarcastic", "reserve", "caprice", "insufficient", "uncertain", "temper"]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "The Assembly Ball",
+      "translatedTitle": "El baile de la asamblea",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText_english": "Mr. Bingley was good-looking and gentlemanlike; he had a pleasant countenance, and easy, unaffected manners. His sisters were fine women, with an air of decided fashion. His friend Mr. Darcy soon drew the attention of the room by his fine, tall person and handsome features.",
+          "translatedText_english": "El señor Bingley era apuesto y caballeroso; tenía un semblante agradable y modales fáciles y naturales. Sus hermanas eran mujeres elegantes, con un aire de moda decidida. Su amigo el señor Darcy pronto atrajo la atención de la sala por su persona alta y distinguida y sus rasgos apuestos.",
+          "vocabularyWords_english": ["good-looking", "gentlemanlike", "countenance", "unaffected", "manners", "handsome", "features"]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText_english": "Mr. Darcy danced only once with Mrs. Hurst and once with Miss Bingley, declined being introduced to any other lady, and spent the rest of the evening walking about the room, speaking occasionally to one of his own party. His character was decided. He was the proudest, most disagreeable man in the world.",
+          "translatedText_english": "El señor Darcy bailó solo una vez con la señora Hurst y otra con la señorita Bingley, rechazó ser presentado a cualquier otra dama y pasó el resto de la velada paseando por la sala, hablando de vez en cuando con alguien de su grupo. Su carácter quedó decidido. Era el hombre más orgulloso y desagradable del mundo.",
+          "vocabularyWords_english": ["danced", "declined", "introduced", "occasionally", "proudest", "disagreeable"]
+        },
+        {
+          "id": "ch2_p3",
+          "originalText_english": "\"She is tolerable, but not handsome enough to tempt me; I am in no humour at present to give consequence to young ladies who are slighted by other men,\" said Mr. Darcy. Elizabeth remained with no very cordial feelings toward him.",
+          "translatedText_english": "\"Es pasable, pero no lo bastante guapa como para tentarme; no estoy de humor ahora para dar importancia a señoritas que son desairadas por otros hombres\", dijo el señor Darcy. Elizabeth no guardó sentimientos muy cordiales hacia él.",
+          "vocabularyWords_english": ["tolerable", "handsome", "tempt", "humour", "consequence", "slighted", "cordial"]
+        },
+        {
+          "id": "ch2_p4",
+          "originalText_english": "Elizabeth told the story with great spirit among her friends; for she had a lively, playful disposition, which delighted in anything ridiculous. The evening altogether passed off pleasantly for the whole family.",
+          "translatedText_english": "Elizabeth contó la historia con gran ánimo entre sus amigas; pues tenía un carácter vivaz y juguetón, que se deleitaba en todo lo ridículo. La velada en conjunto transcurrió agradablemente para toda la familia.",
+          "vocabularyWords_english": ["spirit", "lively", "playful", "disposition", "delighted", "ridiculous", "pleasantly"]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Netherfield Revisited",
+      "translatedTitle": "Regreso a Netherfield",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText_english": "When Jane and Elizabeth were alone, the former, who had been cautious in her praise of Mr. Bingley before, expressed to her sister just how very much she admired him. \"He is just what a young man ought to be,\" said she, \"sensible, good-humoured, lively.\"",
+          "translatedText_english": "Cuando Jane y Elizabeth estuvieron solas, la primera, que había sido cautelosa en sus elogios al señor Bingley antes, expresó a su hermana cuánto lo admiraba. \"Es exactamente lo que un joven debe ser\", dijo ella, \"sensato, de buen humor, vivaz.\"",
+          "vocabularyWords_english": ["cautious", "praise", "admired", "sensible", "good-humoured", "lively"]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText_english": "\"He is also handsome,\" replied Elizabeth, \"which a young man ought likewise to be, if he possibly can. His character is thereby complete.\" \"I was very much flattered by his asking me to dance a second time. I did not expect such a compliment.\"",
+          "translatedText_english": "\"También es apuesto\", respondió Elizabeth, \"lo cual un joven igualmente debería ser, si es posible. Su carácter queda así completo.\" \"Me sentí muy halagada de que me pidiera bailar una segunda vez. No esperaba semejante cumplido.\"",
+          "vocabularyWords_english": ["handsome", "likewise", "thereby", "complete", "flattered", "compliment"]
+        },
+        {
+          "id": "ch3_p3",
+          "originalText_english": "Elizabeth listened in silence, but was not convinced; for the appearance of Mr. Darcy had given her a dislike which she believed had no basis in his manners. She found him to be proud and above his company, and no amount of flattery could change her first impression.",
+          "translatedText_english": "Elizabeth escuchó en silencio, pero no se convenció; pues la apariencia del señor Darcy le había causado una antipatía que ella creía no tenía base en sus modales. Lo encontró orgulloso y por encima de su compañía, y ninguna cantidad de halagos podía cambiar su primera impresión.",
+          "vocabularyWords_english": ["silence", "convinced", "appearance", "dislike", "proud", "flattery", "impression"]
+        },
+        {
+          "id": "ch3_p4",
+          "originalText_english": "Between him and Darcy there was a very steady friendship, in spite of great opposition of character. Bingley was endeared to Darcy by the easiness, openness, and ductility of his temper, though no disposition could offer a greater contrast to his own.",
+          "translatedText_english": "Entre él y Darcy había una amistad muy firme, a pesar de la gran oposición de caracteres. Bingley se ganaba el cariño de Darcy por la facilidad, franqueza y docilidad de su temperamento, aunque ningún carácter podía ofrecer un contraste mayor con el suyo.",
+          "vocabularyWords_english": ["steady", "friendship", "opposition", "endeared", "easiness", "openness", "ductility", "contrast"]
+        }
+      ]
+    }
+  ]
+}

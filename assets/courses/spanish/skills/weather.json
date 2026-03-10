@@ -1,0 +1,53 @@
+{
+    "id": "weather",
+    "name": "Weather",
+    "description": "Learn to talk about weather and climate",
+    "level": 6,
+    "exercises": [
+        {
+            "id": "ex_we_1",
+            "type": "multipleChoice",
+            "question": "How do you ask 'What's the weather like?'",
+            "options": ["¿Qué tiempo hace?", "¿Qué hora es?", "¿Cómo estás?", "¿Dónde está?"],
+            "correctAnswer": "¿Qué tiempo hace?"
+        },
+        {
+            "id": "ex_we_2",
+            "type": "matchPairs",
+            "question": "Match the weather expressions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Hace calor", "native": "It's hot"},
+                    {"target": "Hace frío", "native": "It's cold"},
+                    {"target": "Hace sol", "native": "It's sunny"},
+                    {"target": "Llueve", "native": "It's raining"},
+                    {"target": "Nieva", "native": "It's snowing"},
+                    {"target": "Está nublado", "native": "It's cloudy"}
+                ]
+            }
+        },
+        {
+            "id": "ex_we_3",
+            "type": "translateThis",
+            "question": "Hace buen tiempo hoy",
+            "options": [],
+            "correctAnswer": "The weather is nice today"
+        },
+        {
+            "id": "ex_we_4",
+            "type": "fillInBlank",
+            "question": "Hoy ___ mucho viento",
+            "options": ["hace", "es", "está", "hay"],
+            "correctAnswer": "hace"
+        },
+        {
+            "id": "ex_we_5",
+            "type": "speakThis",
+            "question": "Mañana va a llover",
+            "options": [],
+            "correctAnswer": "Mañana va a llover"
+        }
+    ]
+}

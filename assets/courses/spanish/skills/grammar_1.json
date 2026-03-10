@@ -1,0 +1,66 @@
+{
+    "id": "grammar_1",
+    "name": "Grammar: Pronouns",
+    "description": "Learn basic pronouns and the verb 'Ser'",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "ex_g1_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'They' (masculine) in Spanish?",
+            "options": [
+                "Ellos",
+                "Ellas",
+                "Nosotros",
+                "Ustedes"
+            ],
+            "correctAnswer": "Ellos"
+        },
+        {
+            "id": "ex_g1_2",
+            "type": "translateThis",
+            "question": "Yo soy",
+            "options": [],
+            "correctAnswer": "I am"
+        },
+        {
+            "id": "ex_g1_3",
+            "type": "fillInBlank",
+            "question": "Él ___ un estudiante",
+            "options": [
+                "es",
+                "soy",
+                "eres",
+                "somos"
+            ],
+            "correctAnswer": "es"
+        },
+        {
+            "id": "ex_g1_4",
+            "type": "matchPairs",
+            "question": "Match pronouns with Ser",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Yo soy",
+                        "native": "I am"
+                    },
+                    {
+                        "target": "Tú eres",
+                        "native": "You are"
+                    },
+                    {
+                        "target": "Nosotros somos",
+                        "native": "We are"
+                    },
+                    {
+                        "target": "Ellos son",
+                        "native": "They are"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -4,6 +4,9 @@ import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
 import 'providers/progress_provider.dart';
 import 'providers/course_provider.dart';
+import 'providers/flashcard_provider.dart';
+import 'providers/vocabulary_provider.dart';
+import 'providers/gamification_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +27,8 @@ class LinguaSprintApp extends StatefulWidget {
   State<LinguaSprintApp> createState() => _LinguaSprintAppState();
 }
 
-class _LinguaSprintAppState extends State<LinguaSprintApp> with WidgetsBindingObserver {
+class _LinguaSprintAppState extends State<LinguaSprintApp>
+    with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
@@ -40,7 +44,8 @@ class _LinguaSprintAppState extends State<LinguaSprintApp> with WidgetsBindingOb
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
-    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+    if (state == AppLifecycleState.paused ||
+        state == AppLifecycleState.inactive) {
       // Force rebuild or keep alive if needed.
       // In Flutter desktop, simply having the observer can prevent some sleep issues,
       // but we explicitly call setState to ensure the UI stays 'warm'.
@@ -54,6 +59,9 @@ class _LinguaSprintAppState extends State<LinguaSprintApp> with WidgetsBindingOb
       providers: [
         ChangeNotifierProvider(create: (_) => ProgressProvider()),
         ChangeNotifierProvider(create: (_) => CourseProvider()),
+        ChangeNotifierProvider(create: (_) => FlashcardProvider()),
+        ChangeNotifierProvider(create: (_) => VocabularyProvider()),
+        ChangeNotifierProvider(create: (_) => GamificationProvider()),
       ],
       child: MaterialApp(
         title: 'Lingua Sprint',
@@ -79,8 +87,16 @@ class _LinguaSprintAppState extends State<LinguaSprintApp> with WidgetsBindingOb
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
-            bodyLarge: TextStyle(fontFamily: 'Inter', letterSpacing: -0.18, fontSize: 18, color: Colors.white),
-            bodyMedium: TextStyle(fontFamily: 'Inter', letterSpacing: -0.16, fontSize: 16, color: Colors.white70),
+            bodyLarge: TextStyle(
+                fontFamily: 'Inter',
+                letterSpacing: -0.18,
+                fontSize: 18,
+                color: Colors.white),
+            bodyMedium: TextStyle(
+                fontFamily: 'Inter',
+                letterSpacing: -0.16,
+                fontSize: 16,
+                color: Colors.white70),
           ),
           // Disable all animations
           pageTransitionsTheme: const PageTransitionsTheme(

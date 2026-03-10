@@ -32,7 +32,13 @@ class LanguageSelectionScreen extends StatelessWidget {
           ),
           const SizedBox(height: 40),
           Expanded(
-            child: ListView.builder(
+            child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 12,
+                mainAxisSpacing: 12,
+                childAspectRatio: 1.1,
+              ),
               itemCount: courseProvider.availableLanguages.length,
               itemBuilder: (context, index) {
                 final language = courseProvider.availableLanguages[index];
@@ -49,7 +55,7 @@ class LanguageSelectionScreen extends StatelessWidget {
         body: bodyContent,
       ),
       desktopScaffold: DesktopScaffold(
-        sideNav: Container(
+        sideNav: ColoredBox(
           color: const Color(0xFF1A1A1A),
           child: Column(
             children: [
@@ -88,25 +94,45 @@ class LanguageSelectionScreen extends StatelessWidget {
   }
 
   Widget _buildLanguageItem(BuildContext context, String language) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
-      child: HoverCard(
-        onTap: () => _selectLanguage(context, language),
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Row(
-            children: [
-              _getLanguageFlag(language),
-              const SizedBox(width: 16),
-              Text(
-                _getLanguageName(language),
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w500,
+    return HoverCard(
+      onTap: () => _selectLanguage(context, language),
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Stack(
+              alignment: Alignment.bottomRight,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color:
+                        Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    _getLanguageIcon(language),
+                    size: 40,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
                 ),
+                Text(
+                  _getLanguageFlag(language),
+                  style: const TextStyle(fontSize: 20),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            Text(
+              _getLanguageName(language),
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
               ),
-            ],
-          ),
+              textAlign: TextAlign.center,
+            ),
+          ],
         ),
       ),
     );
@@ -118,8 +144,8 @@ class LanguageSelectionScreen extends StatelessWidget {
 
     await courseProvider.loadCourse(language);
 
-    if (courseProvider.currentCourse != null) {
-      await progressProvider.loadProgress(courseProvider.currentCourse!.id);
+    if (courseProvider.currentManifest != null) {
+      await progressProvider.loadProgress(courseProvider.currentManifest!.id);
 
       if (context.mounted) {
         Navigator.of(context).pushReplacement(
@@ -145,7 +171,20 @@ class LanguageSelectionScreen extends StatelessWidget {
     return names[code] ?? code.toUpperCase();
   }
 
-  Widget _getLanguageFlag(String code) {
+  IconData _getLanguageIcon(String code) {
+    final icons = {
+      'spanish': Icons.restaurant, // Tapas/Food
+      'french': Icons.palette, // Art/Eiffel (Palette for art)
+      'german': Icons.directions_car, // Engineering/Cars
+      'dutch': Icons.wb_sunny, // Windmills (Sun for fields)
+      'portuguese': Icons.beach_access, // Beaches
+      'japanese': Icons.architecture, // Temples
+      'chinese': Icons.translate, // Calligraphy
+    };
+    return icons[code] ?? Icons.language;
+  }
+
+  String _getLanguageFlag(String code) {
     final flags = {
       'spanish': '🇪🇸',
       'french': '🇫🇷',
@@ -156,9 +195,6 @@ class LanguageSelectionScreen extends StatelessWidget {
       'chinese': '🇨🇳',
     };
 
-    return Text(
-      flags[code] ?? '🌍',
-      style: const TextStyle(fontSize: 32),
-    );
+    return flags[code] ?? '🌍';
   }
 }

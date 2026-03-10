@@ -1,0 +1,66 @@
+{
+    "id": "family_1",
+    "name": "Family",
+    "description": "Learn words for family members",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "ex_fam_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'Mother' in Spanish?",
+            "options": [
+                "Madre",
+                "Padre",
+                "Hermano",
+                "Abuela"
+            ],
+            "correctAnswer": "Madre"
+        },
+        {
+            "id": "ex_fam_2",
+            "type": "translateThis",
+            "question": "Padre",
+            "options": [],
+            "correctAnswer": "Father"
+        },
+        {
+            "id": "ex_fam_3",
+            "type": "fillInBlank",
+            "question": "Mi ___ se llama María",
+            "options": [
+                "hermana",
+                "hermano",
+                "madre",
+                "padre"
+            ],
+            "correctAnswer": "hermana"
+        },
+        {
+            "id": "ex_fam_4",
+            "type": "matchPairs",
+            "question": "Match family members",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Hijo",
+                        "native": "Son"
+                    },
+                    {
+                        "target": "Hija",
+                        "native": "Daughter"
+                    },
+                    {
+                        "target": "Abuelo",
+                        "native": "Grandfather"
+                    },
+                    {
+                        "target": "Abuela",
+                        "native": "Grandmother"
+                    }
+                ]
+            }
+        }
+    ]
+}

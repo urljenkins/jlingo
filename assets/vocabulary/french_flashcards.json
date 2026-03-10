@@ -1,0 +1,209 @@
+{
+  "id": "french_flashcards",
+  "name": "French Core Vocabulary",
+  "description": "Essential French words and phrases with spaced repetition",
+  "targetLanguage": "fr-FR",
+  "nativeLanguage": "en-US",
+  "cards": [
+    {
+      "id": "fc_greet_1",
+      "front": "Bonjour",
+      "back": "Hello / Good day",
+      "pronunciation": "/bɔ̃.ʒuʁ/",
+      "exampleSentence": "Bonjour, comment allez-vous ?",
+      "exampleTranslation": "Hello, how are you?",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_greet_2",
+      "front": "Bonsoir",
+      "back": "Good evening",
+      "pronunciation": "/bɔ̃.swaʁ/",
+      "exampleSentence": "Bonsoir, madame.",
+      "exampleTranslation": "Good evening, madam.",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_greet_3",
+      "front": "Merci beaucoup",
+      "back": "Thank you very much",
+      "pronunciation": "/mɛʁ.si bo.ku/",
+      "exampleSentence": "Merci beaucoup pour votre aide.",
+      "exampleTranslation": "Thank you very much for your help.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_greet_4",
+      "front": "De rien",
+      "back": "You're welcome",
+      "pronunciation": "/də ʁjɛ̃/",
+      "exampleSentence": "De rien, c'est normal.",
+      "exampleTranslation": "You're welcome, it's normal.",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_greet_5",
+      "front": "S'il vous plaît",
+      "back": "Please (formal)",
+      "pronunciation": "/sil vu plɛ/",
+      "exampleSentence": "Un café, s'il vous plaît.",
+      "exampleTranslation": "A coffee, please.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "formal", "essential"]
+    },
+    {
+      "id": "fc_intro_1",
+      "front": "Je m'appelle",
+      "back": "My name is",
+      "pronunciation": "/ʒə ma.pɛl/",
+      "exampleSentence": "Je m'appelle Marie.",
+      "exampleTranslation": "My name is Marie.",
+      "category": "Introduction",
+      "tags": ["basic", "introduction", "essential"]
+    },
+    {
+      "id": "fc_intro_2",
+      "front": "Enchanté(e)",
+      "back": "Nice to meet you",
+      "pronunciation": "/ɑ̃.ʃɑ̃.te/",
+      "exampleSentence": "Enchanté de faire votre connaissance.",
+      "exampleTranslation": "Nice to meet you.",
+      "category": "Introduction",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_basic_1",
+      "front": "Oui",
+      "back": "Yes",
+      "pronunciation": "/wi/",
+      "exampleSentence": "Oui, je comprends.",
+      "exampleTranslation": "Yes, I understand.",
+      "category": "Basics",
+      "tags": ["basic", "essential"]
+    },
+    {
+      "id": "fc_basic_2",
+      "front": "Non",
+      "back": "No",
+      "pronunciation": "/nɔ̃/",
+      "exampleSentence": "Non, merci.",
+      "exampleTranslation": "No, thank you.",
+      "category": "Basics",
+      "tags": ["basic", "essential"]
+    },
+    {
+      "id": "fc_basic_3",
+      "front": "Peut-être",
+      "back": "Maybe / Perhaps",
+      "pronunciation": "/pø.tɛtʁ/",
+      "exampleSentence": "Peut-être demain.",
+      "exampleTranslation": "Maybe tomorrow.",
+      "category": "Basics",
+      "tags": ["basic", "useful"]
+    },
+    {
+      "id": "fc_comm_1",
+      "front": "Je ne comprends pas",
+      "back": "I don't understand",
+      "pronunciation": "/ʒə nə kɔ̃.pʁɑ̃ pa/",
+      "exampleSentence": "Désolé, je ne comprends pas.",
+      "exampleTranslation": "Sorry, I don't understand.",
+      "category": "Communication",
+      "tags": ["basic", "useful", "essential"]
+    },
+    {
+      "id": "fc_comm_2",
+      "front": "Parlez-vous anglais ?",
+      "back": "Do you speak English?",
+      "pronunciation": "/paʁ.le vu ɑ̃.ɡlɛ/",
+      "exampleSentence": "Parlez-vous anglais, s'il vous plaît ?",
+      "exampleTranslation": "Do you speak English, please?",
+      "category": "Communication",
+      "tags": ["useful", "travel"]
+    },
+    {
+      "id": "fc_comm_3",
+      "front": "Comment dit-on ... ?",
+      "back": "How do you say ... ?",
+      "pronunciation": "/kɔ.mɑ̃ di tɔ̃/",
+      "exampleSentence": "Comment dit-on 'hello' en français ?",
+      "exampleTranslation": "How do you say 'hello' in French?",
+      "category": "Communication",
+      "tags": ["useful", "learning"]
+    },
+    {
+      "id": "fc_num_1",
+      "front": "Un",
+      "back": "One",
+      "pronunciation": "/œ̃/",
+      "exampleSentence": "J'ai un frère.",
+      "exampleTranslation": "I have one brother.",
+      "category": "Numbers",
+      "tags": ["basic", "numbers"]
+    },
+    {
+      "id": "fc_num_2",
+      "front": "Deux",
+      "back": "Two",
+      "pronunciation": "/dø/",
+      "exampleSentence": "Deux cafés, s'il vous plaît.",
+      "exampleTranslation": "Two coffees, please.",
+      "category": "Numbers",
+      "tags": ["basic", "numbers"]
+    },
+    {
+      "id": "fc_food_1",
+      "front": "Le pain",
+      "back": "Bread",
+      "pronunciation": "/lə pɛ̃/",
+      "exampleSentence": "Je voudrais du pain, s'il vous plaît.",
+      "exampleTranslation": "I would like some bread, please.",
+      "category": "Food",
+      "tags": ["food", "essential"]
+    },
+    {
+      "id": "fc_food_2",
+      "front": "L'eau",
+      "back": "Water",
+      "pronunciation": "/lo/",
+      "exampleSentence": "Une bouteille d'eau, s'il vous plaît.",
+      "exampleTranslation": "A bottle of water, please.",
+      "category": "Food",
+      "tags": ["food", "essential", "travel"]
+    },
+    {
+      "id": "fc_food_3",
+      "front": "Le vin",
+      "back": "Wine",
+      "pronunciation": "/lə vɛ̃/",
+      "exampleSentence": "Un verre de vin rouge, s'il vous plaît.",
+      "exampleTranslation": "A glass of red wine, please.",
+      "category": "Food",
+      "tags": ["food", "drink"]
+    },
+    {
+      "id": "fc_travel_1",
+      "front": "Où est ... ?",
+      "back": "Where is ... ?",
+      "pronunciation": "/u ɛ/",
+      "exampleSentence": "Où est la gare ?",
+      "exampleTranslation": "Where is the train station?",
+      "category": "Travel",
+      "tags": ["travel", "essential", "useful"]
+    },
+    {
+      "id": "fc_travel_2",
+      "front": "La gare",
+      "back": "Train station",
+      "pronunciation": "/la ɡaʁ/",
+      "exampleSentence": "Je vais à la gare.",
+      "exampleTranslation": "I'm going to the train station.",
+      "category": "Travel",
+      "tags": ["travel", "transport"]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+    "id": "numbers",
+    "name": "Numbers",
+    "description": "Learn numbers 1-10",
+    "level": 3,
+    "exercises": [
+        {
+            "id": "ex_14",
+            "type": "translateThis",
+            "question": "Uno",
+            "options": [],
+            "correctAnswer": "One"
+        },
+        {
+            "id": "ex_15",
+            "type": "multipleChoice",
+            "question": "What number is 'Cinco'?",
+            "options": [
+                "5",
+                "3",
+                "7",
+                "9"
+            ],
+            "correctAnswer": "5"
+        },
+        {
+            "id": "ex_16",
+            "type": "fillInBlank",
+            "question": "Dos más dos es ___",
+            "options": [
+                "cuatro",
+                "tres",
+                "cinco",
+                "seis"
+            ],
+            "correctAnswer": "cuatro"
+        },
+        {
+            "id": "ex_17",
+            "type": "matchPairs",
+            "question": "Match the numbers",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Uno",
+                        "native": "One"
+                    },
+                    {
+                        "target": "Dos",
+                        "native": "Two"
+                    },
+                    {
+                        "target": "Tres",
+                        "native": "Three"
+                    },
+                    {
+                        "target": "Cuatro",
+                        "native": "Four"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_n_18",
+            "type": "translateThis",
+            "question": "Siete",
+            "options": [],
+            "correctAnswer": "Seven"
+        },
+        {
+            "id": "ex_n_19",
+            "type": "multipleChoice",
+            "question": "What number is 'Diez'?",
+            "options": [
+                "10",
+                "8",
+                "6",
+                "2"
+            ],
+            "correctAnswer": "10"
+        },
+        {
+            "id": "ex_n_20",
+            "type": "listeningComprehension",
+            "question": "Ocho",
+            "options": [],
+            "correctAnswer": "Ocho"
+        },
+        {
+            "id": "ex_n_21",
+            "type": "speakThis",
+            "question": "Nueve",
+            "options": [],
+            "correctAnswer": "Nueve"
+        }
+    ]
+}

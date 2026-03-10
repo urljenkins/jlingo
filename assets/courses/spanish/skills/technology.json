@@ -1,0 +1,53 @@
+{
+    "id": "technology",
+    "name": "Technology",
+    "description": "Learn vocabulary for technology and devices",
+    "level": 20,
+    "exercises": [
+        {
+            "id": "ex_tech_1",
+            "type": "matchPairs",
+            "question": "Match technology vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "El teléfono móvil", "native": "Cell phone"},
+                    {"target": "La computadora", "native": "Computer"},
+                    {"target": "La tableta", "native": "Tablet"},
+                    {"target": "La pantalla", "native": "Screen"},
+                    {"target": "El teclado", "native": "Keyboard"},
+                    {"target": "El ratón", "native": "Mouse"}
+                ]
+            }
+        },
+        {
+            "id": "ex_tech_2",
+            "type": "translateThis",
+            "question": "Mi teléfono no tiene batería",
+            "options": [],
+            "correctAnswer": "My phone has no battery"
+        },
+        {
+            "id": "ex_tech_3",
+            "type": "fillInBlank",
+            "question": "Necesito ___ la aplicación",
+            "options": ["descargar", "comer", "beber", "leer"],
+            "correctAnswer": "descargar"
+        },
+        {
+            "id": "ex_tech_4",
+            "type": "multipleChoice",
+            "question": "How do you say 'to turn on'?",
+            "options": ["Encender", "Apagar", "Cargar", "Descargar"],
+            "correctAnswer": "Encender"
+        },
+        {
+            "id": "ex_tech_5",
+            "type": "speakThis",
+            "question": "¿Cuál es la contraseña del wifi?",
+            "options": [],
+            "correctAnswer": "¿Cuál es la contraseña del wifi?"
+        }
+    ]
+}

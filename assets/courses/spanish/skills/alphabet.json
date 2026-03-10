@@ -1,0 +1,53 @@
+{
+    "id": "alphabet",
+    "name": "Alphabet & Sounds",
+    "description": "Learn the basics of Spanish pronunciation and vowels",
+    "level": 1,
+    "exercises": [
+        {
+            "id": "ex_alp_1",
+            "type": "multipleChoice",
+            "question": "Which letter makes the 'ny' sound (like in canyon)?",
+            "options": [
+                "Ñ",
+                "N",
+                "RR",
+                "LL"
+            ],
+            "correctAnswer": "Ñ"
+        },
+        {
+            "id": "ex_alp_2",
+            "type": "listeningComprehension",
+            "question": "A",
+            "options": [],
+            "correctAnswer": "A"
+        },
+        {
+            "id": "ex_alp_3",
+            "type": "listeningComprehension",
+            "question": "E",
+            "options": [],
+            "correctAnswer": "E"
+        },
+        {
+            "id": "ex_alp_4",
+            "type": "multipleChoice",
+            "question": "How do you pronounce double 'L' (LL)?",
+            "options": [
+                "Y sound",
+                "L sound",
+                "R sound",
+                "S sound"
+            ],
+            "correctAnswer": "Y sound"
+        },
+        {
+            "id": "ex_alp_5",
+            "type": "translateThis",
+            "question": "El niño",
+            "options": [],
+            "correctAnswer": "The boy"
+        }
+    ]
+}

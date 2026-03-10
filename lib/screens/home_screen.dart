@@ -2,9 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
 import '../providers/course_provider.dart';
-import '../models/progress.dart';
+import '../providers/flashcard_provider.dart';
+import '../providers/vocabulary_provider.dart';
+import '../providers/gamification_provider.dart';
+import '../models/exercise.dart';
+import '../models/course_manifest.dart';
+import '../models/gamification.dart';
+import '../widgets/gamification/xp_widgets.dart'; // For XPProgressBar
 import 'language_selection_screen.dart';
 import 'lesson_screen.dart';
+import 'vocabulary_screen.dart';
 import '../widgets/responsive/responsive_layout.dart';
 import '../widgets/responsive/desktop_scaffold.dart';
 import 'package:flutter/services.dart';
@@ -20,6 +27,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   bool _isLoading = true;
+  ExerciseType? _selectedFilter;
 
   @override
   void initState() {
@@ -30,14 +38,34 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _initializeApp() async {
     final courseProvider = context.read<CourseProvider>();
+    final progressProvider = context.read<ProgressProvider>();
+    final flashcardProvider = context.read<FlashcardProvider>();
+    final vocabularyProvider = context.read<VocabularyProvider>();
+    final gamificationProvider = context.read<GamificationProvider>();
     await courseProvider.loadAvailableLanguages();
 
-    // Check if user has a selected language
-    // For now, navigate to language selection
+    if (courseProvider.currentManifest == null) {
+      final savedLanguage = await courseProvider.getSavedLanguage();
+      if (savedLanguage != null) {
+        await courseProvider.loadCourse(savedLanguage);
+        if (courseProvider.currentManifest != null) {
+          await progressProvider
+              .loadProgress(courseProvider.currentManifest!.id);
+          // Load gamification data
+          await gamificationProvider
+              .loadGamificationData(courseProvider.currentManifest!.id);
+          // Load vocabulary data
+          await flashcardProvider.loadDecks(courseProvider.currentManifest!.id);
+          await vocabularyProvider
+              .loadVocabularyData(courseProvider.currentManifest!.id);
+        }
+      }
+    }
+
     setState(() => _isLoading = false);
 
     // Navigate to language selection if no course is loaded
-    if (mounted && courseProvider.currentCourse == null) {
+    if (mounted && courseProvider.currentManifest == null) {
       // ignore: unawaited_futures
       Navigator.of(context).pushReplacement(
         PageRouteBuilder<void>(
@@ -45,6 +73,103 @@ class _HomeScreenState extends State<HomeScreen> {
           transitionDuration: Duration.zero,
         ),
       );
+    }
+  }
+
+  Future<void> _startLesson(String skillId) async {
+    setState(() => _isLoading = true);
+    final skill = await context.read<CourseProvider>().loadSkill(skillId);
+    setState(() => _isLoading = false);
+
+    if (mounted && skill != null) {
+      Navigator.of(context).push(
+        PageRouteBuilder<void>(
+          pageBuilder: (context, _, __) => LessonScreen(
+            skill: skill,
+            filterType: _selectedFilter,
+          ),
+          transitionDuration: Duration.zero,
+        ),
+      );
+    } else if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Error loading lesson content')),
+      );
+    }
+  }
+
+  Widget _buildFilterBar() {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+      child: Row(
+        children: [
+          FilterChip(
+            label: const Text('All'),
+            selected: _selectedFilter == null,
+            onSelected: (selected) {
+              setState(() {
+                _selectedFilter = null;
+              });
+            },
+            selectedColor: const Color(0xFF00D9FF),
+            labelStyle: TextStyle(
+              color: _selectedFilter == null ? Colors.black : Colors.white,
+            ),
+          ),
+          ...ExerciseType.values.map((type) {
+            return Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: FilterChip(
+                label: Text(_formatExerciseType(type)),
+                selected: _selectedFilter == type,
+                onSelected: (selected) {
+                  setState(() {
+                    _selectedFilter = selected ? type : null;
+                  });
+                },
+                selectedColor: const Color(0xFF00D9FF),
+                labelStyle: TextStyle(
+                  color: _selectedFilter == type ? Colors.black : Colors.white,
+                ),
+              ),
+            );
+          }),
+        ],
+      ),
+    );
+  }
+
+  String _formatExerciseType(ExerciseType type) {
+    switch (type) {
+      case ExerciseType.translateThis:
+        return 'Translate';
+      case ExerciseType.matchPairs:
+        return 'Match';
+      case ExerciseType.multipleChoice:
+        return 'Multiple Choice';
+      case ExerciseType.listeningComprehension:
+        return 'Listening';
+      case ExerciseType.speakThis:
+        return 'Speaking';
+      case ExerciseType.fillInBlank:
+        return 'Fill Blank';
+      case ExerciseType.nativeAudio:
+        return 'Native Audio';
+      case ExerciseType.pronunciationPractice:
+        return 'Pronunciation';
+      case ExerciseType.dialogueListening:
+        return 'Dialogue';
+      case ExerciseType.songFill:
+        return 'Song Fill';
+      case ExerciseType.interactiveDialogue:
+        return 'Interactive';
+      case ExerciseType.storyLesson:
+        return 'Story';
+      case ExerciseType.translationExercise:
+        return 'Translation';
+      case ExerciseType.clozeTest:
+        return 'Cloze Test';
     }
   }
 
@@ -56,12 +181,16 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
 
-    return Consumer2<ProgressProvider, CourseProvider>(
-      builder: (context, progressProvider, courseProvider, _) {
+    return Consumer3<ProgressProvider, CourseProvider, GamificationProvider>(
+      builder:
+          (context, progressProvider, courseProvider, gamificationProvider, _) {
         final progress = progressProvider.progress;
-        final course = courseProvider.currentCourse;
+        final manifest = courseProvider.currentManifest;
+        final userLevel = gamificationProvider.userLevel;
+        final streakInfo = gamificationProvider.streakInfo;
+        final dailyGoal = gamificationProvider.dailyGoal;
 
-        if (course == null) {
+        if (manifest == null) {
           return const Scaffold(
             body: Center(child: Text('No course loaded')),
           );
@@ -73,6 +202,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
         final bodyContent = Column(
           children: [
+            // XP Progress and Daily Goal
+            _buildHomeGamificationHeader(userLevel, dailyGoal),
+
+            // Filter Bar
+            _buildFilterBar(),
+
             // Continue Button
             Padding(
               padding: const EdgeInsets.all(12.0),
@@ -84,29 +219,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   onKeyEvent: (node, event) {
                     if (event.logicalKey == LogicalKeyboardKey.enter ||
                         event.logicalKey == LogicalKeyboardKey.numpadEnter) {
-                      Navigator.of(context).push(
-                        PageRouteBuilder<void>(
-                          pageBuilder: (context, _, __) => LessonScreen(
-                            skill: course.skills[currentSkillIndex],
-                          ),
-                          transitionDuration: Duration.zero,
-                        ),
-                      );
+                      _startLesson(manifest.skills[currentSkillIndex].id);
                       return KeyEventResult.handled;
                     }
                     return KeyEventResult.ignored;
                   },
                   child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        PageRouteBuilder<void>(
-                          pageBuilder: (context, _, __) => LessonScreen(
-                            skill: course.skills[currentSkillIndex],
-                          ),
-                          transitionDuration: Duration.zero,
-                        ),
-                      );
-                    },
+                    onPressed: () =>
+                        _startLesson(manifest.skills[currentSkillIndex].id),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Theme.of(context).colorScheme.primary,
                       foregroundColor: Colors.black,
@@ -128,23 +248,14 @@ class _HomeScreenState extends State<HomeScreen> {
 
             // Skills List
             Expanded(
-              child: ListView.builder(
-                padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                itemCount: course.skills.length,
-                itemBuilder: (context, index) {
-                  final skill = course.skills[index];
-                  final mastery = progress?.skillMastery[skill.id] ?? 0.0;
-
-                  return _buildSkillItem(skill.name, mastery, index == currentSkillIndex);
-                },
-              ),
+              child: _buildSkillList(manifest, progressProvider),
             ),
           ],
         );
 
         return ResponsiveLayout(
           mobileScaffold: MobileScaffold(
-            topBar: _buildTopBar(progress),
+            topBar: _buildHomeTopBar(userLevel, streakInfo),
             body: bodyContent,
           ),
           desktopScaffold: DesktopScaffold(
@@ -156,7 +267,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       'Lingua Sprint',
-                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     ),
                   ),
                   ListTile(
@@ -167,21 +279,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     selectedColor: Theme.of(context).colorScheme.primary,
                   ),
                   ListTile(
+                    leading: const Icon(Icons.library_books),
+                    title: const Text('Vocabulary'),
+                    onTap: _navigateToVocabulary,
+                  ),
+                  ListTile(
                     leading: const Icon(Icons.language),
                     title: const Text('Languages'),
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(
-                        PageRouteBuilder<void>(
-                          pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
-                          transitionDuration: Duration.zero,
-                        ),
-                      );
-                    },
+                    onTap: _navigateToLanguageSelection,
                   ),
                 ],
               ),
             ),
-            topBar: _buildTopBar(progress),
+            topBar: _buildHomeTopBar(userLevel, streakInfo),
             body: bodyContent,
           ),
         );
@@ -189,8 +299,40 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildTopBar(UserProgress? progress) {
-    return Padding( // Replaced Container with Padding
+  void _navigateToLanguageSelection() {
+    Navigator.of(context).pushReplacement(
+      PageRouteBuilder<void>(
+        pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
+        transitionDuration: Duration.zero,
+      ),
+    );
+  }
+
+  void _navigateToVocabulary() {
+    Navigator.of(context).push(
+      PageRouteBuilder<void>(
+        pageBuilder: (context, _, __) => const VocabularyScreen(),
+        transitionDuration: Duration.zero,
+      ),
+    );
+  }
+
+  Widget _buildHomeGamificationHeader(
+      UserLevel userLevel, DailyGoal dailyGoal) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+      child: Column(
+        children: [
+          XPProgressBar(userLevel: userLevel),
+          const SizedBox(height: 8),
+          DailyGoalWidget(dailyGoal: dailyGoal),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildHomeTopBar(UserLevel userLevel, StreakInfo streakInfo) {
+    return Padding(
       padding: const EdgeInsets.all(12.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -198,23 +340,38 @@ class _HomeScreenState extends State<HomeScreen> {
           // Streak
           Row(
             children: [
-              const Icon(Icons.local_fire_department, color: Color(0xFFFF6B35), size: 28),
+              const Icon(Icons.local_fire_department,
+                  color: Color(0xFFFF6B35), size: 28),
               const SizedBox(width: 8),
               Text(
-                'Day ${progress?.currentStreak ?? 0}',
-                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                'Day ${streakInfo.currentStreak}',
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
             ],
           ),
 
-          // Points
+          // XP + vocabulary + language switch
           Row(
             children: [
               const Icon(Icons.star, color: Color(0xFFFFD700), size: 28),
               const SizedBox(width: 8),
               Text(
-                '${progress?.totalPoints ?? 0}',
-                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                '${userLevel.currentXP}',
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(width: 12),
+              IconButton(
+                icon: const Icon(Icons.library_books),
+                tooltip: 'Vocabulary',
+                onPressed: _navigateToVocabulary,
+              ),
+              const SizedBox(width: 4),
+              IconButton(
+                icon: const Icon(Icons.language),
+                tooltip: 'Change language',
+                onPressed: _navigateToLanguageSelection,
               ),
             ],
           ),
@@ -223,17 +380,96 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildSkillItem(String name, double mastery, bool isCurrent) {
+  Widget _buildSkillList(
+      CourseManifest manifest, ProgressProvider progressProvider) {
+    final progress = progressProvider.progress;
+    final Map<int, List<SkillHeader>> groupedSkills = {};
+    for (final skill in manifest.skills) {
+      groupedSkills.putIfAbsent(skill.level, () => []).add(skill);
+    }
+
+    final sortedLevels = groupedSkills.keys.toList()..sort();
+    final currentSkillIndex =
+        context.read<CourseProvider>().getCurrentSkillIndex(
+              progress?.skillMastery ?? {},
+            );
+    final currentSkillId = currentSkillIndex < manifest.skills.length
+        ? manifest.skills[currentSkillIndex].id
+        : null;
+
+    return ListView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+      itemCount: sortedLevels.length,
+      itemBuilder: (context, index) {
+        final level = sortedLevels[index];
+        final levelSkills = groupedSkills[level]!;
+
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 16.0, horizontal: 8.0),
+              child: Text(
+                _getLevelTitle(level),
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF00D9FF),
+                ),
+              ),
+            ),
+            ...levelSkills.map((skill) {
+              final mastery = progress?.skillMastery[skill.id] ?? 0.0;
+              return _buildSkillItem(
+                skill.name,
+                mastery,
+                skill.id == currentSkillId,
+                onTap: () => _startLesson(skill.id),
+              );
+            }),
+          ],
+        );
+      },
+    );
+  }
+
+  String _getLevelTitle(int level) {
+    switch (level) {
+      case 1:
+        return 'Foundational Building Blocks';
+      case 2:
+        return 'Intermediate Communication';
+      case 3:
+        return 'Numbers & Counting';
+      case 4:
+        return 'Food & Drink';
+      case 5:
+        return 'Daily Routine';
+      case 6:
+        return 'Getting Around';
+      default:
+        return 'Level $level';
+    }
+  }
+
+  Widget _buildSkillItem(String name, double mastery, bool isCurrent,
+      {VoidCallback? onTap}) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: DecoratedBox(
-        decoration: isCurrent ? BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: const Color(0xFF00D9FF), width: 2),
-        ) : const BoxDecoration(),
+        decoration: isCurrent
+            ? BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: const Color(0xFF00D9FF), width: 2),
+              )
+            : const BoxDecoration(),
         child: HoverCard(
-          baseColor: isCurrent ? const Color(0xFF2A2A2A) : const Color(0xFF1A1A1A),
-          hoverColor: isCurrent ? const Color(0xFF3A3A3A) : const Color(0xFF2A2A2A),
+          onTap: onTap,
+          baseColor:
+              isCurrent ? const Color(0xFF2A2A2A) : const Color(0xFF1A1A1A),
+          hoverColor:
+              isCurrent ? const Color(0xFF3A3A3A) : const Color(0xFF2A2A2A),
           child: Padding(
             padding: const EdgeInsets.all(12.0),
             child: Row(
@@ -248,12 +484,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         value: mastery / 100,
                         strokeWidth: 4,
                         backgroundColor: const Color(0xFF3A3A3A),
-                        valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFF00FF85)),
+                        valueColor: const AlwaysStoppedAnimation<Color>(
+                            Color(0xFF00FF85)),
                       ),
                       Center(
                         child: Text(
                           '${mastery.toInt()}%',
-                          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
+                          style: const TextStyle(
+                              fontSize: 11, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ],
@@ -266,7 +504,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 Expanded(
                   child: Text(
                     name,
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    style: const TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.w500),
                   ),
                 ),
               ],

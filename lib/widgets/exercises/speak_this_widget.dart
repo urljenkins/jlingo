@@ -156,14 +156,18 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
                       : const Color(0xFF00D9FF).withOpacity(0.2),
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: _isListening ? const Color(0xFFFF4757) : const Color(0xFF00D9FF),
+                    color: _isListening
+                        ? const Color(0xFFFF4757)
+                        : const Color(0xFF00D9FF),
                     width: 3,
                   ),
                 ),
                 child: Icon(
                   _isListening ? Icons.mic : Icons.mic_none,
                   size: 50,
-                  color: _isListening ? const Color(0xFFFF4757) : const Color(0xFF00D9FF),
+                  color: _isListening
+                      ? const Color(0xFFFF4757)
+                      : const Color(0xFF00D9FF),
                 ),
               ),
             ),
@@ -205,14 +209,18 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+                  color: _isCorrect
+                      ? const Color(0xFF00FF85)
+                      : const Color(0xFFFF4757),
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _isCorrect ? 'Good!' : 'Try again',
                   style: TextStyle(
                     fontSize: 16,
-                    color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+                    color: _isCorrect
+                        ? const Color(0xFF00FF85)
+                        : const Color(0xFFFF4757),
                   ),
                 ),
               ],

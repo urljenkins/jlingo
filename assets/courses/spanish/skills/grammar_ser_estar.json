@@ -1,0 +1,59 @@
+{
+    "id": "grammar_ser_estar",
+    "name": "Grammar: Ser & Estar",
+    "description": "Learn the two Spanish verbs for 'to be'",
+    "level": 7,
+    "exercises": [
+        {
+            "id": "ex_se_1",
+            "type": "multipleChoice",
+            "question": "Which verb do you use for permanent characteristics?",
+            "options": ["Ser", "Estar", "Tener", "Haber"],
+            "correctAnswer": "Ser"
+        },
+        {
+            "id": "ex_se_2",
+            "type": "fillInBlank",
+            "question": "Yo ___ español",
+            "options": ["soy", "estoy", "tengo", "hay"],
+            "correctAnswer": "soy"
+        },
+        {
+            "id": "ex_se_3",
+            "type": "fillInBlank",
+            "question": "María ___ cansada",
+            "options": ["está", "es", "tiene", "hay"],
+            "correctAnswer": "está"
+        },
+        {
+            "id": "ex_se_4",
+            "type": "matchPairs",
+            "question": "Match SER conjugations",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Yo soy", "native": "I am"},
+                    {"target": "Tú eres", "native": "You are"},
+                    {"target": "Él/Ella es", "native": "He/She is"},
+                    {"target": "Nosotros somos", "native": "We are"},
+                    {"target": "Ellos son", "native": "They are"}
+                ]
+            }
+        },
+        {
+            "id": "ex_se_5",
+            "type": "multipleChoice",
+            "question": "La fiesta ___ en mi casa (location)",
+            "options": ["está", "es", "son", "están"],
+            "correctAnswer": "es"
+        },
+        {
+            "id": "ex_se_6",
+            "type": "translateThis",
+            "question": "Estoy en la oficina",
+            "options": [],
+            "correctAnswer": "I am at the office"
+        }
+    ]
+}

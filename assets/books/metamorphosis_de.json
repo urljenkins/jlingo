@@ -1,0 +1,114 @@
+{
+  "id": "metamorphosis_de",
+  "title": "Die Verwandlung",
+  "author": "Franz Kafka",
+  "originalLanguage": "german",
+  "translatedLanguage": "english",
+  "translationIds": {
+    "spanish": null,
+    "french": null,
+    "german": null,
+    "dutch": null,
+    "portuguese": null,
+    "japanese": null,
+    "chinese": null
+  },
+  "description": "The story of Gregor Samsa who wakes up transformed into a giant insect.",
+  "difficulty": "advanced",
+  "totalWords": 1100,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Teil I",
+      "translatedTitle": "Part I",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText_german": "Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.",
+          "translatedText_german": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.",
+          "vocabularyWords_german": ["Morgens", "unruhigen", "Träumen", "erwachte", "Bett", "ungeheueren", "Ungeziefer", "verwandelt"]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText_german": "Er lag auf seinem panzerartig harten Rücken und sah, wenn er den Kopf ein wenig hob, seinen gewölbten, braunen, von bogenförmigen Versteifungen geteilten Bauch.",
+          "translatedText_german": "He lay on his armor-like hard back and saw, when he lifted his head a little, his dome-shaped brown belly divided by arched stiffenings.",
+          "vocabularyWords_german": ["lag", "panzerartig", "harten", "Rücken", "sah", "Kopf", "hob", "gewölbten", "braunen", "Bauch"]
+        },
+        {
+          "id": "ch1_p3",
+          "originalText_german": "\"Was ist mit mir geschehen?\", dachte er. Es war kein Traum. Sein Zimmer, ein richtiges, nur etwas zu kleines Menschenzimmer, lag ruhig zwischen den vier wohlbekannten Wänden.",
+          "translatedText_german": "\"What's happened to me?\" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.",
+          "vocabularyWords_german": ["geschehen", "dachte", "Traum", "Zimmer", "richtiges", "kleines", "Menschenzimmer", "ruhig", "Wänden"]
+        },
+        {
+          "id": "ch1_p4",
+          "originalText_german": "Über dem Tisch hing das Bild, das er vor kurzem aus einer illustrierten Zeitschrift ausgeschnitten und in einem hübschen, vergoldeten Rahmen untergebracht hatte.",
+          "translatedText_german": "Above the table hung a picture that he had recently cut out of an illustrated magazine and put into a pretty gilded frame.",
+          "vocabularyWords_german": ["Tisch", "hing", "Bild", "kurzem", "illustrierten", "Zeitschrift", "ausgeschnitten", "hübschen", "vergoldeten", "Rahmen"]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "Teil II",
+      "translatedTitle": "Part II",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText_german": "Erst in der Abenddämmerung erwachte Gregor aus seinem schweren, ohnmachtähnlichen Schlaf. Er wäre gewiß nicht viel später auch ohne Störung erwacht.",
+          "translatedText_german": "It was not until twilight that Gregor woke from his deep, comatose sleep. He certainly would not have woken much later even without being disturbed.",
+          "vocabularyWords_german": ["Abenddämmerung", "erwachte", "schweren", "ohnmachtähnlichen", "Schlaf", "gewiß", "später", "Störung"]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText_german": "Denn er fühlte sich genügend ausgeruht und ausgeschlafen, doch schien es ihm, als sei er durch einen hastigen Schlummer geweckt worden.",
+          "translatedText_german": "For he felt well rested and slept out, yet it seemed to him as if he had been awakened by a hurried slumber.",
+          "vocabularyWords_german": ["fühlte", "genügend", "ausgeruht", "ausgeschlafen", "schien", "hastigen", "Schlummer", "geweckt"]
+        },
+        {
+          "id": "ch2_p3",
+          "originalText_german": "Seine Schwester bemerkte sofort die neue Unterhaltung, die Gregor für sich entdeckt hatte — er hatte ja beim Umherkriechen hier und da Spuren hinterlassen.",
+          "translatedText_german": "His sister immediately noticed the new amusement that Gregor had discovered for himself — he had, after all, left traces here and there while crawling around.",
+          "vocabularyWords_german": ["Schwester", "bemerkte", "sofort", "neue", "Unterhaltung", "entdeckt", "Umherkriechen", "Spuren", "hinterlassen"]
+        },
+        {
+          "id": "ch2_p4",
+          "originalText_german": "Sie geriet auf den Gedanken, Gregor das Kriechen in größtem Ausmaße zu ermöglichen und die Möbel, die es verhinderten, hinauszuschaffen.",
+          "translatedText_german": "She got the idea to make it possible for Gregor to crawl around as much as possible by removing the furniture that hindered it.",
+          "vocabularyWords_german": ["geriet", "Gedanken", "Kriechen", "größtem", "Ausmaße", "ermöglichen", "Möbel", "verhinderten", "hinauszuschaffen"]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Teil III",
+      "translatedTitle": "Part III",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText_german": "Die schwere Verwundung Gregors, an der er über einen Monat litt — der Apfel blieb als sichtbares Andenken im Fleische sitzen — schien selbst den Vater daran erinnert zu haben.",
+          "translatedText_german": "The serious wound to Gregor, which he suffered for over a month — the apple remained lodged in his flesh as a visible souvenir — seemed to have reminded even his father.",
+          "vocabularyWords_german": ["schwere", "Verwundung", "Monat", "litt", "Apfel", "sichtbares", "Andenken", "Fleische", "sitzen", "Vater", "erinnert"]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText_german": "Daß Gregor trotz seiner gegenwärtigen traurigen und ekelhaften Gestalt ein Familienmitglied war, das man nicht wie einen Feind behandeln durfte.",
+          "translatedText_german": "That Gregor, despite his present sad and repulsive form, was a member of the family who should not be treated like an enemy.",
+          "vocabularyWords_german": ["trotz", "gegenwärtigen", "traurigen", "ekelhaften", "Gestalt", "Familienmitglied", "Feind", "behandeln", "durfte"]
+        },
+        {
+          "id": "ch3_p3",
+          "originalText_german": "Sondern daß es das Gebot der Familienpflicht war, den Widerwillen hinunterzuschlucken und zu dulden, nichts als zu dulden.",
+          "translatedText_german": "But rather that it was the commandment of family duty to swallow down any disgust and to tolerate, simply tolerate.",
+          "vocabularyWords_german": ["sondern", "Gebot", "Familienpflicht", "Widerwillen", "hinunterzuschlucken", "dulden", "nichts"]
+        },
+        {
+          "id": "ch3_p4",
+          "originalText_german": "Und wenn Gregor nun auch durch seine Wunde an Beweglichkeit wahrscheinlich für immer verloren hatte, so genügte ihm doch jetzt für seine traurigen Spaziergänge sein Zimmer.",
+          "translatedText_german": "And even if Gregor had now probably lost mobility forever through his wound, his room was now enough for his sad walks.",
+          "vocabularyWords_german": ["Wunde", "Beweglichkeit", "wahrscheinlich", "immer", "verloren", "genügte", "traurigen", "Spaziergänge", "Zimmer"]
+        }
+      ]
+    }
+  ]
+}

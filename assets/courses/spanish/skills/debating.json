@@ -1,0 +1,61 @@
+{
+    "id": "debating",
+    "name": "Debating",
+    "description": "Learn to agree, disagree, and debate politely",
+    "level": 21,
+    "exercises": [
+        {
+            "id": "ex_deb_1",
+            "type": "matchPairs",
+            "question": "Match agreement/disagreement phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Estoy de acuerdo", "native": "I agree"},
+                    {"target": "No estoy de acuerdo", "native": "I disagree"},
+                    {"target": "Tienes razón", "native": "You're right"},
+                    {"target": "No creo que sea así", "native": "I don't think so"},
+                    {"target": "Depende", "native": "It depends"}
+                ]
+            }
+        },
+        {
+            "id": "ex_deb_2",
+            "type": "translateThis",
+            "question": "Respeto tu opinión, pero no estoy de acuerdo",
+            "options": [],
+            "correctAnswer": "I respect your opinion, but I disagree"
+        },
+        {
+            "id": "ex_deb_3",
+            "type": "fillInBlank",
+            "question": "Por un lado... por ___ lado...",
+            "options": ["otro", "un", "el", "este"],
+            "correctAnswer": "otro"
+        },
+        {
+            "id": "ex_deb_4",
+            "type": "matchPairs",
+            "question": "Match debate connectors",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Sin embargo", "native": "However"},
+                    {"target": "Aunque", "native": "Although"},
+                    {"target": "Por lo tanto", "native": "Therefore"},
+                    {"target": "En cambio", "native": "On the other hand"},
+                    {"target": "No obstante", "native": "Nevertheless"}
+                ]
+            }
+        },
+        {
+            "id": "ex_deb_5",
+            "type": "speakThis",
+            "question": "Entiendo tu punto de vista, sin embargo...",
+            "options": [],
+            "correctAnswer": "Entiendo tu punto de vista, sin embargo..."
+        }
+    ]
+}

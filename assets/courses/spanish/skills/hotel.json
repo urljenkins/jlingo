@@ -1,0 +1,52 @@
+{
+    "id": "hotel",
+    "name": "At the Hotel",
+    "description": "Learn vocabulary for hotel stays",
+    "level": 17,
+    "exercises": [
+        {
+            "id": "ex_hot_1",
+            "type": "matchPairs",
+            "question": "Match hotel vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "La habitación", "native": "The room"},
+                    {"target": "La recepción", "native": "The reception"},
+                    {"target": "La llave", "native": "The key"},
+                    {"target": "El ascensor", "native": "The elevator"},
+                    {"target": "El desayuno incluido", "native": "Breakfast included"}
+                ]
+            }
+        },
+        {
+            "id": "ex_hot_2",
+            "type": "translateThis",
+            "question": "Tengo una reserva a nombre de García",
+            "options": [],
+            "correctAnswer": "I have a reservation under the name García"
+        },
+        {
+            "id": "ex_hot_3",
+            "type": "fillInBlank",
+            "question": "Quisiera una habitación ___ para dos noches",
+            "options": ["doble", "dos", "par", "grande"],
+            "correctAnswer": "doble"
+        },
+        {
+            "id": "ex_hot_4",
+            "type": "multipleChoice",
+            "question": "How do you ask 'What time is checkout?'",
+            "options": ["¿A qué hora es la salida?", "¿Cuándo puedo entrar?", "¿Dónde está la llave?", "¿Cuánto cuesta?"],
+            "correctAnswer": "¿A qué hora es la salida?"
+        },
+        {
+            "id": "ex_hot_5",
+            "type": "speakThis",
+            "question": "¿Tiene habitaciones disponibles?",
+            "options": [],
+            "correctAnswer": "¿Tiene habitaciones disponibles?"
+        }
+    ]
+}

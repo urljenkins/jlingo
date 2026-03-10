@@ -80,12 +80,15 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
           // Show sentence with blank
           Wrap(
             children: [
-              if (parts.isNotEmpty) Text(
-                parts[0],
-                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
+              if (parts.isNotEmpty)
+                Text(
+                  parts[0],
+                  style: const TextStyle(
+                      fontSize: 24, fontWeight: FontWeight.bold),
+                ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 margin: const EdgeInsets.symmetric(horizontal: 8),
                 decoration: BoxDecoration(
                   color: _showFeedback
@@ -96,7 +99,9 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
                   borderRadius: BorderRadius.circular(4),
                   border: Border.all(
                     color: _showFeedback
-                        ? (_isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757))
+                        ? (_isCorrect
+                            ? const Color(0xFF00FF85)
+                            : const Color(0xFFFF4757))
                         : const Color(0xFF00D9FF),
                     width: 2,
                   ),
@@ -105,13 +110,16 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
                   _useWordBank
                       ? (_selectedWord ?? '____')
                       : (_controller.text.isEmpty ? '____' : _controller.text),
-                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 24, fontWeight: FontWeight.bold),
                 ),
               ),
-              if (parts.length > 1) Text(
-                parts[1],
-                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
+              if (parts.length > 1)
+                Text(
+                  parts[1],
+                  style: const TextStyle(
+                      fontSize: 24, fontWeight: FontWeight.bold),
+                ),
             ],
           ),
 
@@ -153,7 +161,8 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(color: borderColor, width: 2),
                       ),
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 12),
                       child: Text(word, style: const TextStyle(fontSize: 16)),
                     ),
                   ),
@@ -185,14 +194,18 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+                  color: _isCorrect
+                      ? const Color(0xFF00FF85)
+                      : const Color(0xFFFF4757),
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _isCorrect ? 'Correct!' : 'Incorrect',
                   style: TextStyle(
                     fontSize: 16,
-                    color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+                    color: _isCorrect
+                        ? const Color(0xFF00FF85)
+                        : const Color(0xFFFF4757),
                   ),
                 ),
               ],
@@ -211,9 +224,10 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
             width: double.infinity,
             height: 50,
             child: ElevatedButton(
-              onPressed: _showFeedback || (_useWordBank && _selectedWord == null)
-                  ? null
-                  : _checkAnswer,
+              onPressed:
+                  _showFeedback || (_useWordBank && _selectedWord == null)
+                      ? null
+                      : _checkAnswer,
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF00D9FF),
                 foregroundColor: Colors.black,

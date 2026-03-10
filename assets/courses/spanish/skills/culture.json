@@ -1,0 +1,61 @@
+{
+    "id": "culture",
+    "name": "Culture & Traditions",
+    "description": "Learn about Spanish-speaking cultures and traditions",
+    "level": 25,
+    "exercises": [
+        {
+            "id": "ex_cult_1",
+            "type": "matchPairs",
+            "question": "Match cultural celebrations",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "La Tomatina", "native": "Tomato throwing festival (Spain)"},
+                    {"target": "Día de los Muertos", "native": "Day of the Dead (Mexico)"},
+                    {"target": "Las Fallas", "native": "Fire festival (Valencia)"},
+                    {"target": "Semana Santa", "native": "Holy Week"},
+                    {"target": "San Fermín", "native": "Running of the bulls (Pamplona)"}
+                ]
+            }
+        },
+        {
+            "id": "ex_cult_2",
+            "type": "translateThis",
+            "question": "La siesta es una tradición española",
+            "options": [],
+            "correctAnswer": "The siesta is a Spanish tradition"
+        },
+        {
+            "id": "ex_cult_3",
+            "type": "multipleChoice",
+            "question": "What is 'sobremesa'?",
+            "options": ["Time spent chatting after a meal", "A type of food", "A Spanish dance", "A greeting"],
+            "correctAnswer": "Time spent chatting after a meal"
+        },
+        {
+            "id": "ex_cult_4",
+            "type": "matchPairs",
+            "question": "Match cultural elements",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Flamenco", "native": "Traditional Spanish dance"},
+                    {"target": "Tapas", "native": "Small shared dishes"},
+                    {"target": "Mate", "native": "South American tea drink"},
+                    {"target": "Quinceanera", "native": "15th birthday celebration"},
+                    {"target": "Tango", "native": "Argentine dance"}
+                ]
+            }
+        },
+        {
+            "id": "ex_cult_5",
+            "type": "speakThis",
+            "question": "Me encanta la cultura hispana",
+            "options": [],
+            "correctAnswer": "Me encanta la cultura hispana"
+        }
+    ]
+}

@@ -24,7 +24,7 @@ dependencies:
   flutter_tts: ^3.8.0
 
   # Speech Recognition
-  speech_to_text: ^6.5.0
+  speech_to_text: ^7.0.0
 
   # Audio
   audioplayers: ^5.2.0
@@ -41,3 +41,13 @@ flutter:
 
   assets:
     - assets/courses/
+    - assets/courses/spanish/
+    - assets/courses/spanish/skills/
+    - assets/courses/french/
+    - assets/courses/french/skills/
+    - assets/courses/chinese/
+    - assets/courses/dutch/
+    - assets/courses/japanese/
+    - assets/courses/portuguese/
+    - assets/vocabulary/
+    - assets/books/

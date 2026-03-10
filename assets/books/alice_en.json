@@ -1,0 +1,114 @@
+{
+  "id": "alice_en",
+  "title": "Alice's Adventures in Wonderland",
+  "author": "Lewis Carroll",
+  "originalLanguage": "english",
+  "translatedLanguage": "spanish",
+  "translationIds": {
+    "spanish": null,
+    "french": null,
+    "german": null,
+    "dutch": null,
+    "portuguese": null,
+    "japanese": null,
+    "chinese": null
+  },
+  "description": "A young girl named Alice falls through a rabbit hole into a whimsical underground world filled with peculiar creatures.",
+  "difficulty": "beginner",
+  "totalWords": 1480,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Down the Rabbit-Hole",
+      "translatedTitle": "Por la madriguera del conejo",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText_english": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it.",
+          "translatedText_english": "Alicia estaba empezando a cansarse mucho de estar sentada junto a su hermana en la orilla, y de no tener nada que hacer: una o dos veces había mirado el libro que su hermana estaba leyendo, pero no tenía ni ilustraciones ni diálogos.",
+          "vocabularyWords_english": ["tired", "sitting", "bank", "peeped", "pictures", "conversations"]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText_english": "\"And what is the use of a book,\" thought Alice, \"without pictures or conversations?\" So she was considering in her own mind whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies.",
+          "translatedText_english": "\"¿Y de qué sirve un libro\", pensó Alicia, \"sin ilustraciones ni diálogos?\" Así que estaba considerando en su mente si el placer de hacer una cadena de margaritas valdría la pena de levantarse y recoger las margaritas.",
+          "vocabularyWords_english": ["considering", "pleasure", "daisy-chain", "worth", "trouble", "picking"]
+        },
+        {
+          "id": "ch1_p3",
+          "originalText_english": "When suddenly a White Rabbit with pink eyes ran close by her. There was nothing so very remarkable in that; nor did Alice think it so very much out of the way to hear the Rabbit say to itself, \"Oh dear! Oh dear! I shall be late!\"",
+          "translatedText_english": "Cuando de repente un Conejo Blanco con ojos rosados pasó corriendo cerca de ella. No había nada tan extraordinario en eso; ni a Alicia le pareció tan raro oír al Conejo decirse a sí mismo: \"¡Ay, Dios mío! ¡Ay, Dios mío! ¡Voy a llegar tarde!\"",
+          "vocabularyWords_english": ["suddenly", "remarkable", "out of the way", "Rabbit", "late"]
+        },
+        {
+          "id": "ch1_p4",
+          "originalText_english": "But when the Rabbit actually took a watch out of its waistcoat-pocket, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it.",
+          "translatedText_english": "Pero cuando el Conejo sacó un reloj del bolsillo de su chaleco, lo miró y luego se apresuró, Alicia se puso de pie de un salto, pues le vino a la mente que nunca antes había visto un conejo con un bolsillo de chaleco, ni con un reloj que sacar de él.",
+          "vocabularyWords_english": ["actually", "watch", "waistcoat-pocket", "hurried", "flashed", "mind"]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "The Pool of Tears",
+      "translatedTitle": "El charco de lágrimas",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText_english": "\"Curiouser and curiouser!\" cried Alice. She was so much surprised that for the moment she quite forgot how to speak good English. \"Now I'm opening out like the largest telescope that ever was! Good-bye, feet!\"",
+          "translatedText_english": "\"¡Curiosísimo y más curiosísimo!\" exclamó Alicia. Estaba tan sorprendida que por el momento olvidó por completo cómo hablar buen inglés. \"¡Ahora me estoy estirando como el telescopio más grande que haya existido! ¡Adiós, pies!\"",
+          "vocabularyWords_english": ["curiouser", "surprised", "forgot", "telescope", "good-bye"]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText_english": "So many out-of-the-way things had happened lately that Alice had begun to think that very few things were really impossible. And she went on growing, and growing, and very soon had to kneel down on the floor.",
+          "translatedText_english": "Habían sucedido tantas cosas extraordinarias últimamente que Alicia había empezado a pensar que muy pocas cosas eran realmente imposibles. Y siguió creciendo, y creciendo, y muy pronto tuvo que arrodillarse en el suelo.",
+          "vocabularyWords_english": ["out-of-the-way", "lately", "impossible", "growing", "kneel", "floor"]
+        },
+        {
+          "id": "ch2_p3",
+          "originalText_english": "In another moment she had to crouch down even further: her head was pressing against the ceiling, and she had to stoop to save her neck from being broken. She was now more than nine feet high, and she at once took up the little golden key.",
+          "translatedText_english": "En otro momento tuvo que agacharse aún más: su cabeza presionaba contra el techo, y tuvo que encogerse para evitar que se le rompiera el cuello. Ahora medía más de nueve pies de alto, y enseguida tomó la pequeña llave dorada.",
+          "vocabularyWords_english": ["crouch", "pressing", "ceiling", "stoop", "neck", "golden key"]
+        },
+        {
+          "id": "ch2_p4",
+          "originalText_english": "\"I wish I hadn't cried so much!\" said Alice, as she swam about, trying to find her way out. \"I shall be punished for it now, I suppose, by being drowned in my own tears! That will be a queer thing, to be sure!\"",
+          "translatedText_english": "\"¡Ojalá no hubiera llorado tanto!\" dijo Alicia, mientras nadaba de un lado a otro, tratando de encontrar la salida. \"¡Supongo que ahora seré castigada por ello, ahogándome en mis propias lágrimas! ¡Eso sería algo muy extraño, sin duda!\"",
+          "vocabularyWords_english": ["wish", "cried", "swam", "punished", "drowned", "tears", "queer"]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "A Mad Tea-Party",
+      "translatedTitle": "Una merienda de locos",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText_english": "There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion.",
+          "translatedText_english": "Había una mesa puesta bajo un árbol frente a la casa, y la Liebre de Marzo y el Sombrerero estaban tomando té: un Lirón estaba sentado entre ellos, profundamente dormido, y los otros dos lo usaban como cojín.",
+          "vocabularyWords_english": ["table", "set out", "March Hare", "Hatter", "Dormouse", "asleep", "cushion"]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText_english": "\"No room! No room!\" they cried out when they saw Alice coming. \"There's plenty of room!\" said Alice indignantly, and she sat down in a large arm-chair at one end of the table.",
+          "translatedText_english": "\"¡No hay sitio! ¡No hay sitio!\" gritaron cuando vieron a Alicia acercarse. \"¡Hay sitio de sobra!\" dijo Alicia indignada, y se sentó en un gran sillón en un extremo de la mesa.",
+          "vocabularyWords_english": ["room", "cried out", "plenty", "indignantly", "arm-chair"]
+        },
+        {
+          "id": "ch3_p3",
+          "originalText_english": "\"Have some wine,\" the March Hare said in an encouraging tone. Alice looked all round the table, but there was nothing on it but tea. \"I don't see any wine,\" she remarked. \"There isn't any,\" said the March Hare.",
+          "translatedText_english": "\"Toma un poco de vino\", dijo la Liebre de Marzo en tono animado. Alicia miró por toda la mesa, pero no había nada más que té. \"No veo ningún vino\", observó ella. \"No hay ninguno\", dijo la Liebre de Marzo.",
+          "vocabularyWords_english": ["wine", "encouraging", "round", "remarked"]
+        },
+        {
+          "id": "ch3_p4",
+          "originalText_english": "\"Why is a raven like a writing-desk?\" asked the Hatter. \"Come, we shall have some fun now!\" thought Alice. \"I'm glad they've begun asking riddles.\" \"I believe I can guess that,\" she added aloud. \"Do you mean that you think you can find out the answer to it?\" said the March Hare.",
+          "translatedText_english": "\"¿Por qué un cuervo se parece a un escritorio?\" preguntó el Sombrerero. \"¡Vamos, ahora nos vamos a divertir!\" pensó Alicia. \"Me alegro de que hayan empezado con las adivinanzas.\" \"Creo que puedo adivinar eso\", añadió en voz alta. \"¿Quieres decir que crees que puedes encontrar la respuesta?\" dijo la Liebre de Marzo.",
+          "vocabularyWords_english": ["raven", "writing-desk", "riddles", "guess", "aloud", "find out", "answer"]
+        }
+      ]
+    }
+  ]
+}

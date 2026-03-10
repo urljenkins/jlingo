@@ -1,0 +1,53 @@
+{
+    "id": "drinks",
+    "name": "Drinks",
+    "description": "Learn vocabulary for beverages",
+    "level": 5,
+    "exercises": [
+        {
+            "id": "ex_dr_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'water' in Spanish?",
+            "options": ["Agua", "Leche", "Café", "Jugo"],
+            "correctAnswer": "Agua"
+        },
+        {
+            "id": "ex_dr_2",
+            "type": "matchPairs",
+            "question": "Match the drinks",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Agua", "native": "Water"},
+                    {"target": "Leche", "native": "Milk"},
+                    {"target": "Café", "native": "Coffee"},
+                    {"target": "Té", "native": "Tea"},
+                    {"target": "Jugo", "native": "Juice"},
+                    {"target": "Cerveza", "native": "Beer"}
+                ]
+            }
+        },
+        {
+            "id": "ex_dr_3",
+            "type": "translateThis",
+            "question": "Un vaso de vino tinto",
+            "options": [],
+            "correctAnswer": "A glass of red wine"
+        },
+        {
+            "id": "ex_dr_4",
+            "type": "fillInBlank",
+            "question": "Quiero un ___ de naranja",
+            "options": ["jugo", "agua", "leche", "café"],
+            "correctAnswer": "jugo"
+        },
+        {
+            "id": "ex_dr_5",
+            "type": "speakThis",
+            "question": "Un café con leche, por favor",
+            "options": [],
+            "correctAnswer": "Un café con leche, por favor"
+        }
+    ]
+}

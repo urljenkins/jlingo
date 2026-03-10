@@ -1,0 +1,61 @@
+{
+    "id": "idioms",
+    "name": "Idioms",
+    "description": "Learn common Spanish idiomatic expressions",
+    "level": 24,
+    "exercises": [
+        {
+            "id": "ex_id_1",
+            "type": "matchPairs",
+            "question": "Match idioms with meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Estar en las nubes", "native": "To be daydreaming"},
+                    {"target": "Costar un ojo de la cara", "native": "To cost an arm and a leg"},
+                    {"target": "Meter la pata", "native": "To put your foot in it"},
+                    {"target": "Tomar el pelo", "native": "To pull someone's leg"},
+                    {"target": "Ser pan comido", "native": "To be a piece of cake"}
+                ]
+            }
+        },
+        {
+            "id": "ex_id_2",
+            "type": "translateThis",
+            "question": "No es mi taza de té",
+            "options": [],
+            "correctAnswer": "It's not my cup of tea"
+        },
+        {
+            "id": "ex_id_3",
+            "type": "multipleChoice",
+            "question": "What does 'Llueve sobre mojado' mean?",
+            "options": ["It never rains but it pours", "It's raining cats and dogs", "After the storm comes the calm", "Every cloud has a silver lining"],
+            "correctAnswer": "It never rains but it pours"
+        },
+        {
+            "id": "ex_id_4",
+            "type": "matchPairs",
+            "question": "Match more idioms",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Tirar la toalla", "native": "To throw in the towel"},
+                    {"target": "Estar hasta las narices", "native": "To be fed up"},
+                    {"target": "Quedarse en blanco", "native": "To go blank"},
+                    {"target": "No tener pelos en la lengua", "native": "To be outspoken"},
+                    {"target": "Dar en el clavo", "native": "To hit the nail on the head"}
+                ]
+            }
+        },
+        {
+            "id": "ex_id_5",
+            "type": "speakThis",
+            "question": "Esto me suena a chino",
+            "options": [],
+            "correctAnswer": "Esto me suena a chino"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "don_quixote_es",
+  "title": "Don Quijote de la Mancha",
+  "author": "Miguel de Cervantes",
+  "originalLanguage": "spanish",
+  "translatedLanguage": "english",
+  "translationIds": {
+    "spanish": null,
+    "french": null,
+    "german": null,
+    "dutch": null,
+    "portuguese": null,
+    "japanese": null,
+    "chinese": null
+  },
+  "description": "The classic tale of a Spanish gentleman who becomes a knight-errant after reading too many chivalric romances.",
+  "difficulty": "intermediate",
+  "totalWords": 1200,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Capítulo I - Que trata de la condición y ejercicio del famoso hidalgo",
+      "translatedTitle": "Chapter I - Which treats of the character and pursuits of the famous gentleman",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText_spanish": "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.",
+          "translatedText_spanish": "In a village of La Mancha, the name of which I have no desire to recall, there lived not long ago one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing.",
+          "vocabularyWords_spanish": ["lugar", "acordarme", "hidalgo", "lanza", "astillero", "adarga", "rocín", "galgo"]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText_spanish": "Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lentejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda.",
+          "translatedText_spanish": "A stew of rather more beef than mutton, hash most nights, bacon and eggs on Saturdays, lentils on Fridays, and a pigeon or so extra on Sundays, made away with three-quarters of his income.",
+          "vocabularyWords_spanish": ["olla", "vaca", "carnero", "salpicón", "sábados", "lentejas", "viernes", "domingos", "hacienda"]
+        },
+        {
+          "id": "ch1_p3",
+          "originalText_spanish": "El resto de ella concluían sayo de velarte, calzas de velludo para las fiestas con sus pantuflos de lo mismo, y los días de entre semana se honraba con su vellorí de lo más fino.",
+          "translatedText_spanish": "The rest of it went for a doublet of fine cloth, velvet breeches for holidays with their stockings to match, while on weekdays he honored himself with his best homespun.",
+          "vocabularyWords_spanish": ["resto", "sayo", "calzas", "fiestas", "pantuflos", "semana", "honraba"]
+        },
+        {
+          "id": "ch1_p4",
+          "originalText_spanish": "Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera.",
+          "translatedText_spanish": "He had in his house a housekeeper past forty, a niece under twenty, and a lad for the field and marketplace, who used to saddle the hack as well as handle the pruning-knife.",
+          "vocabularyWords_spanish": ["ama", "cuarenta", "sobrina", "veinte", "mozo", "campo", "plaza", "ensillaba", "podadera"]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "Capítulo II - Que trata de la primera salida",
+      "translatedTitle": "Chapter II - Which treats of the first sally",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText_spanish": "Hechas, pues, estas prevenciones, no quiso aguardar más tiempo a poner en efecto su pensamiento, apretándole a ello la falta que él pensaba que hacía en el mundo su tardanza.",
+          "translatedText_spanish": "These preparations made, he did not care to put off any longer the execution of his design, urged on to it by the thought of all the world was losing by his delay.",
+          "vocabularyWords_spanish": ["prevenciones", "aguardar", "tiempo", "pensamiento", "falta", "mundo", "tardanza"]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText_spanish": "Y así, sin dar parte a persona alguna de su intención, y sin que nadie le viese, una mañana, antes del día, uno de los del mes de julio, que era uno de los más calurosos del año, se armó de todas sus armas.",
+          "translatedText_spanish": "And so, without giving notice of his intention to anyone, and without anybody seeing him, one morning before dawn, one of the hottest of the month of July, he armed himself with all his armor.",
+          "vocabularyWords_spanish": ["intención", "nadie", "viese", "mañana", "antes", "julio", "calurosos", "armó", "armas"]
+        },
+        {
+          "id": "ch2_p3",
+          "originalText_spanish": "Subió sobre Rocinante, puesta su mal compuesta celada, embrazó su adarga, tomó su lanza, y por la puerta falsa de un corral salió al campo.",
+          "translatedText_spanish": "He mounted Rocinante, placed his patched helmet on his head, braced his buckler, took his lance, and by the back door of the yard sallied forth upon the plain.",
+          "vocabularyWords_spanish": ["subió", "celada", "embrazó", "tomó", "puerta", "corral", "salió", "campo"]
+        },
+        {
+          "id": "ch2_p4",
+          "originalText_spanish": "Grandísimo contento y gusto llevaba el novel caballero viéndose ya puesto en camino y comenzada su empresa. Mas apenas se vio en el campo, cuando le asaltó un pensamiento terrible.",
+          "translatedText_spanish": "Great was the joy the novice knight felt to see himself started upon his enterprise. But hardly had he arrived in the open field when a terrible thought struck him.",
+          "vocabularyWords_spanish": ["contento", "gusto", "caballero", "camino", "empresa", "apenas", "asaltó", "pensamiento"]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Capítulo III - De los molinos de viento",
+      "translatedTitle": "Chapter III - Of the windmills",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText_spanish": "En esto, descubrieron treinta o cuarenta molinos de viento que hay en aquel campo, y así como don Quijote los vio, dijo a su escudero: \"La aventura va guiando nuestras cosas mejor de lo que acertáramos a desear.\"",
+          "translatedText_spanish": "At this point they came in sight of thirty or forty windmills that are on that plain, and as soon as Don Quixote saw them he said to his squire: \"Fortune is guiding our affairs better than we ourselves could have wished.\"",
+          "vocabularyWords_spanish": ["descubrieron", "molinos", "viento", "escudero", "aventura", "guiando", "desear"]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText_spanish": "\"Mira, amigo Sancho Panza, donde se descubren treinta, o pocos más, desaforados gigantes, con quien pienso hacer batalla y quitarles a todos las vidas.\"",
+          "translatedText_spanish": "\"Look, friend Sancho Panza, where thirty or more monstrous giants appear, with whom I intend to do battle and slay them all.\"",
+          "vocabularyWords_spanish": ["mira", "amigo", "descubren", "desaforados", "gigantes", "batalla", "quitarles", "vidas"]
+        },
+        {
+          "id": "ch3_p3",
+          "originalText_spanish": "\"¿Qué gigantes?\" dijo Sancho Panza. \"Aquellos que allí ves,\" respondió su amo, \"de los brazos largos, que los suelen tener algunos de casi dos leguas.\"",
+          "translatedText_spanish": "\"What giants?\" said Sancho Panza. \"Those you see over there,\" replied his master, \"with their long arms. Some of them have arms almost two leagues long.\"",
+          "vocabularyWords_spanish": ["gigantes", "aquellos", "allí", "ves", "respondió", "amo", "brazos", "largos", "leguas"]
+        },
+        {
+          "id": "ch3_p4",
+          "originalText_spanish": "\"Mire vuestra merced,\" respondió Sancho, \"que aquellos que allí se parecen no son gigantes, sino molinos de viento, y lo que en ellos parecen brazos son las aspas, que, volteadas del viento, hacen andar la piedra del molino.\"",
+          "translatedText_spanish": "\"Take care, your worship,\" said Sancho, \"those over there are not giants but windmills, and what seem to be arms are the sails that turn the millstone when they are driven by the wind.\"",
+          "vocabularyWords_spanish": ["mire", "merced", "parecen", "molinos", "aspas", "volteadas", "andar", "piedra"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": "at_the_doctor",
+    "name": "At the Doctor",
+    "description": "Learn vocabulary for medical visits",
+    "level": 16,
+    "exercises": [
+        {
+            "id": "ex_doc_1",
+            "type": "matchPairs",
+            "question": "Match medical vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "El médico", "native": "The doctor"},
+                    {"target": "La receta", "native": "The prescription"},
+                    {"target": "La medicina", "native": "The medicine"},
+                    {"target": "La cita médica", "native": "The medical appointment"},
+                    {"target": "El seguro médico", "native": "Health insurance"}
+                ]
+            }
+        },
+        {
+            "id": "ex_doc_2",
+            "type": "translateThis",
+            "question": "¿Qué síntomas tiene?",
+            "options": [],
+            "correctAnswer": "What symptoms do you have?"
+        },
+        {
+            "id": "ex_doc_3",
+            "type": "fillInBlank",
+            "question": "Necesito una ___ para estas pastillas",
+            "options": ["receta", "cita", "medicina", "farmacia"],
+            "correctAnswer": "receta"
+        },
+        {
+            "id": "ex_doc_4",
+            "type": "multipleChoice",
+            "question": "How do you say 'I'm allergic to penicillin'?",
+            "options": ["Soy alérgico a la penicilina", "Tengo alergia penicilina", "Me gusta la penicilina", "Quiero la penicilina"],
+            "correctAnswer": "Soy alérgico a la penicilina"
+        },
+        {
+            "id": "ex_doc_5",
+            "type": "speakThis",
+            "question": "Necesito ver a un médico",
+            "options": [],
+            "correctAnswer": "Necesito ver a un médico"
+        }
+    ]
+}

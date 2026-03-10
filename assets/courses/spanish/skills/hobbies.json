@@ -1,0 +1,53 @@
+{
+    "id": "hobbies",
+    "name": "Hobbies",
+    "description": "Learn to talk about hobbies and free time activities",
+    "level": 18,
+    "exercises": [
+        {
+            "id": "ex_hob_1",
+            "type": "multipleChoice",
+            "question": "How do you ask 'What are your hobbies?'",
+            "options": ["¿Cuáles son tus pasatiempos?", "¿Qué trabajas?", "¿Dónde vives?", "¿Cómo estás?"],
+            "correctAnswer": "¿Cuáles son tus pasatiempos?"
+        },
+        {
+            "id": "ex_hob_2",
+            "type": "matchPairs",
+            "question": "Match hobbies",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Leer", "native": "Reading"},
+                    {"target": "Cocinar", "native": "Cooking"},
+                    {"target": "Pintar", "native": "Painting"},
+                    {"target": "Bailar", "native": "Dancing"},
+                    {"target": "Viajar", "native": "Traveling"},
+                    {"target": "Fotografía", "native": "Photography"}
+                ]
+            }
+        },
+        {
+            "id": "ex_hob_3",
+            "type": "translateThis",
+            "question": "En mi tiempo libre me gusta leer",
+            "options": [],
+            "correctAnswer": "In my free time I like to read"
+        },
+        {
+            "id": "ex_hob_4",
+            "type": "fillInBlank",
+            "question": "Me ___ tocar la guitarra",
+            "options": ["encanta", "encanto", "encantas", "encantamos"],
+            "correctAnswer": "encanta"
+        },
+        {
+            "id": "ex_hob_5",
+            "type": "speakThis",
+            "question": "Mi pasatiempo favorito es jugar videojuegos",
+            "options": [],
+            "correctAnswer": "Mi pasatiempo favorito es jugar videojuegos"
+        }
+    ]
+}

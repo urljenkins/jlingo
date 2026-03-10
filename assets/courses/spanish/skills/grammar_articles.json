@@ -1,0 +1,51 @@
+{
+    "id": "grammar_articles",
+    "name": "Grammar: Articles",
+    "description": "Learn definite and indefinite articles in Spanish",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "ex_art_1",
+            "type": "multipleChoice",
+            "question": "Which is the definite article for 'the book' (masculine)?",
+            "options": ["El libro", "La libro", "Un libro", "Una libro"],
+            "correctAnswer": "El libro"
+        },
+        {
+            "id": "ex_art_2",
+            "type": "fillInBlank",
+            "question": "___ casa es grande",
+            "options": ["La", "El", "Un", "Los"],
+            "correctAnswer": "La"
+        },
+        {
+            "id": "ex_art_3",
+            "type": "matchPairs",
+            "question": "Match the articles",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "El", "native": "The (masc. sing.)"},
+                    {"target": "La", "native": "The (fem. sing.)"},
+                    {"target": "Los", "native": "The (masc. pl.)"},
+                    {"target": "Las", "native": "The (fem. pl.)"}
+                ]
+            }
+        },
+        {
+            "id": "ex_art_4",
+            "type": "multipleChoice",
+            "question": "How do you say 'a woman'?",
+            "options": ["Una mujer", "Un mujer", "La mujer", "El mujer"],
+            "correctAnswer": "Una mujer"
+        },
+        {
+            "id": "ex_art_5",
+            "type": "translateThis",
+            "question": "Unos libros",
+            "options": [],
+            "correctAnswer": "Some books"
+        }
+    ]
+}

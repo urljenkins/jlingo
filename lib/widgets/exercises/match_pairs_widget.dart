@@ -30,8 +30,11 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
 
   void _initializePairs() {
     // Parse pairs from metadata
-    final pairsData = widget.exercise.metadata?['pairs'] as List<dynamic>? ?? [];
-    _pairs = pairsData.map((p) => MatchPair.fromJson(p as Map<String, dynamic>)).toList();
+    final pairsData =
+        widget.exercise.metadata?['pairs'] as List<dynamic>? ?? [];
+    _pairs = pairsData
+        .map((p) => MatchPair.fromJson(p as Map<String, dynamic>))
+        .toList();
 
     // Create shuffled list of all tiles
     _allTiles = [];
@@ -153,9 +156,10 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
 
     return HoverCard(
       baseColor: backgroundColor,
-      hoverColor: isMatched || isSelected ? backgroundColor : const Color(0xFF3A3A3A),
+      hoverColor:
+          isMatched || isSelected ? backgroundColor : const Color(0xFF3A3A3A),
       onTap: () => _onTileTap(tile),
-      child: Container(
+      child: DecoratedBox(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color: borderColor, width: 2),

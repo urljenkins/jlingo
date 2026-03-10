@@ -30,7 +30,8 @@ class _HoverCardState extends State<HoverCard> {
     final showHoverColor = _isHovering || _isFocused;
 
     return FocusableActionDetector(
-      mouseCursor: widget.onTap != null ? SystemMouseCursors.click : MouseCursor.defer,
+      mouseCursor:
+          widget.onTap != null ? SystemMouseCursors.click : MouseCursor.defer,
       onShowHoverHighlight: (isHovering) {
         setState(() => _isHovering = isHovering);
       },

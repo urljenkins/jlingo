@@ -1,0 +1,52 @@
+{
+    "id": "opinions",
+    "name": "Giving Opinions",
+    "description": "Learn to express and ask for opinions",
+    "level": 21,
+    "exercises": [
+        {
+            "id": "ex_op_1",
+            "type": "matchPairs",
+            "question": "Match opinion phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Creo que...", "native": "I believe that..."},
+                    {"target": "En mi opinión...", "native": "In my opinion..."},
+                    {"target": "Me parece que...", "native": "It seems to me that..."},
+                    {"target": "Pienso que...", "native": "I think that..."},
+                    {"target": "Desde mi punto de vista...", "native": "From my point of view..."}
+                ]
+            }
+        },
+        {
+            "id": "ex_op_2",
+            "type": "translateThis",
+            "question": "¿Qué opinas de esta idea?",
+            "options": [],
+            "correctAnswer": "What do you think of this idea?"
+        },
+        {
+            "id": "ex_op_3",
+            "type": "fillInBlank",
+            "question": "En mi ___, es una buena decisión",
+            "options": ["opinión", "opinar", "opino", "opinando"],
+            "correctAnswer": "opinión"
+        },
+        {
+            "id": "ex_op_4",
+            "type": "multipleChoice",
+            "question": "How do you say 'I agree'?",
+            "options": ["Estoy de acuerdo", "No estoy de acuerdo", "No sé", "Tal vez"],
+            "correctAnswer": "Estoy de acuerdo"
+        },
+        {
+            "id": "ex_op_5",
+            "type": "speakThis",
+            "question": "Personalmente, creo que tienes razón",
+            "options": [],
+            "correctAnswer": "Personalmente, creo que tienes razón"
+        }
+    ]
+}

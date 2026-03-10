@@ -1,0 +1,123 @@
+{
+    "id": "basics_2",
+    "name": "Basics 2",
+    "description": "Learn basic phrases and common words",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "ex_9",
+            "type": "translateThis",
+            "question": "¿Cómo estás?",
+            "options": [],
+            "correctAnswer": "How are you?"
+        },
+        {
+            "id": "ex_10",
+            "type": "multipleChoice",
+            "question": "What does 'Yo' mean?",
+            "options": [
+                "I",
+                "You",
+                "He",
+                "She"
+            ],
+            "correctAnswer": "I"
+        },
+        {
+            "id": "ex_11",
+            "type": "fillInBlank",
+            "question": "Me ___ Juan",
+            "options": [
+                "llamo",
+                "como",
+                "soy",
+                "estoy"
+            ],
+            "correctAnswer": "llamo"
+        },
+        {
+            "id": "ex_12",
+            "type": "translateThis",
+            "question": "Mucho gusto",
+            "options": [],
+            "correctAnswer": "Nice to meet you"
+        },
+        {
+            "id": "ex_13",
+            "type": "multipleChoice",
+            "question": "How do you say 'I am' in Spanish?",
+            "options": [
+                "Yo soy",
+                "Tú eres",
+                "Él es",
+                "Nosotros somos"
+            ],
+            "correctAnswer": "Yo soy"
+        },
+        {
+            "id": "ex_b2_14",
+            "type": "speakThis",
+            "question": "Yo soy de España",
+            "options": [],
+            "correctAnswer": "Yo soy de España"
+        },
+        {
+            "id": "ex_b2_15",
+            "type": "matchPairs",
+            "question": "Match the pronouns",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Yo",
+                        "native": "I"
+                    },
+                    {
+                        "target": "Tú",
+                        "native": "You"
+                    },
+                    {
+                        "target": "Él",
+                        "native": "He"
+                    },
+                    {
+                        "target": "Ella",
+                        "native": "She"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_b2_16",
+            "type": "translateThis",
+            "question": "Lo siento",
+            "options": [],
+            "correctAnswer": "I'm sorry"
+        },
+        {
+            "id": "ex_b2_17",
+            "type": "multipleChoice",
+            "question": "What does '¿De dónde eres?' mean?",
+            "options": [
+                "Where are you from?",
+                "How are you?",
+                "What is your name?",
+                "Where is the bathroom?"
+            ],
+            "correctAnswer": "Where are you from?"
+        },
+        {
+            "id": "ex_b2_18",
+            "type": "fillInBlank",
+            "question": "Soy ___ Estados Unidos",
+            "options": [
+                "de",
+                "en",
+                "por",
+                "para"
+            ],
+            "correctAnswer": "de"
+        }
+    ]
+}

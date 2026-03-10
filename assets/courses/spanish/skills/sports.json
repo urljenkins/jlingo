@@ -1,0 +1,53 @@
+{
+    "id": "sports",
+    "name": "Sports",
+    "description": "Learn vocabulary for sports and exercise",
+    "level": 18,
+    "exercises": [
+        {
+            "id": "ex_sp_1",
+            "type": "matchPairs",
+            "question": "Match sports",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "El fútbol", "native": "Soccer/Football"},
+                    {"target": "El baloncesto", "native": "Basketball"},
+                    {"target": "El tenis", "native": "Tennis"},
+                    {"target": "La natación", "native": "Swimming"},
+                    {"target": "El ciclismo", "native": "Cycling"},
+                    {"target": "El yoga", "native": "Yoga"}
+                ]
+            }
+        },
+        {
+            "id": "ex_sp_2",
+            "type": "translateThis",
+            "question": "Juego al fútbol los sábados",
+            "options": [],
+            "correctAnswer": "I play soccer on Saturdays"
+        },
+        {
+            "id": "ex_sp_3",
+            "type": "fillInBlank",
+            "question": "Voy al ___ tres veces a la semana",
+            "options": ["gimnasio", "cine", "restaurante", "banco"],
+            "correctAnswer": "gimnasio"
+        },
+        {
+            "id": "ex_sp_4",
+            "type": "multipleChoice",
+            "question": "How do you say 'to win'?",
+            "options": ["Ganar", "Perder", "Jugar", "Correr"],
+            "correctAnswer": "Ganar"
+        },
+        {
+            "id": "ex_sp_5",
+            "type": "speakThis",
+            "question": "Mi equipo favorito es el Real Madrid",
+            "options": [],
+            "correctAnswer": "Mi equipo favorito es el Real Madrid"
+        }
+    ]
+}

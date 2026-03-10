@@ -22,7 +22,8 @@ class UserProgress {
     this.exerciseStats = const {},
   });
 
-  factory UserProgress.fromJson(Map<String, dynamic> json) => _$UserProgressFromJson(json);
+  factory UserProgress.fromJson(Map<String, dynamic> json) =>
+      _$UserProgressFromJson(json);
   Map<String, dynamic> toJson() => _$UserProgressToJson(this);
 
   UserProgress copyWith({
@@ -60,6 +61,7 @@ class Achievement {
     required this.unlockedAt,
   });
 
-  factory Achievement.fromJson(Map<String, dynamic> json) => _$AchievementFromJson(json);
+  factory Achievement.fromJson(Map<String, dynamic> json) =>
+      _$AchievementFromJson(json);
   Map<String, dynamic> toJson() => _$AchievementToJson(this);
 }

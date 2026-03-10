@@ -1,0 +1,53 @@
+{
+    "id": "services",
+    "name": "Services",
+    "description": "Learn vocabulary for banks, post offices, and other services",
+    "level": 10,
+    "exercises": [
+        {
+            "id": "ex_sv_1",
+            "type": "matchPairs",
+            "question": "Match service locations",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "El banco", "native": "The bank"},
+                    {"target": "Correos", "native": "The post office"},
+                    {"target": "La farmacia", "native": "The pharmacy"},
+                    {"target": "La comisaría", "native": "The police station"},
+                    {"target": "El hospital", "native": "The hospital"},
+                    {"target": "La gasolinera", "native": "The gas station"}
+                ]
+            }
+        },
+        {
+            "id": "ex_sv_2",
+            "type": "translateThis",
+            "question": "Quiero enviar un paquete",
+            "options": [],
+            "correctAnswer": "I want to send a package"
+        },
+        {
+            "id": "ex_sv_3",
+            "type": "fillInBlank",
+            "question": "Necesito ___ dinero",
+            "options": ["sacar", "meter", "dar", "tener"],
+            "correctAnswer": "sacar"
+        },
+        {
+            "id": "ex_sv_4",
+            "type": "multipleChoice",
+            "question": "How do you say 'stamp' (for mail)?",
+            "options": ["Sello", "Carta", "Sobre", "Paquete"],
+            "correctAnswer": "Sello"
+        },
+        {
+            "id": "ex_sv_5",
+            "type": "speakThis",
+            "question": "¿Dónde puedo cambiar dinero?",
+            "options": [],
+            "correctAnswer": "¿Dónde puedo cambiar dinero?"
+        }
+    ]
+}

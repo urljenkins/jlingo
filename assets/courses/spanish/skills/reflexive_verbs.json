@@ -1,0 +1,61 @@
+{
+    "id": "reflexive_verbs",
+    "name": "Reflexive Verbs",
+    "description": "Learn verbs that reflect back to the subject",
+    "level": 8,
+    "exercises": [
+        {
+            "id": "ex_rv_1",
+            "type": "multipleChoice",
+            "question": "Which pronoun goes with 'yo' for reflexive verbs?",
+            "options": ["me", "te", "se", "nos"],
+            "correctAnswer": "me"
+        },
+        {
+            "id": "ex_rv_2",
+            "type": "matchPairs",
+            "question": "Match reflexive pronouns",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Me", "native": "Myself (yo)"},
+                    {"target": "Te", "native": "Yourself (tú)"},
+                    {"target": "Se", "native": "Himself/Herself"},
+                    {"target": "Nos", "native": "Ourselves"},
+                    {"target": "Se", "native": "Themselves"}
+                ]
+            }
+        },
+        {
+            "id": "ex_rv_3",
+            "type": "translateThis",
+            "question": "Me lavo las manos",
+            "options": [],
+            "correctAnswer": "I wash my hands"
+        },
+        {
+            "id": "ex_rv_4",
+            "type": "fillInBlank",
+            "question": "Ella ___ peina el pelo",
+            "options": ["se", "me", "te", "nos"],
+            "correctAnswer": "se"
+        },
+        {
+            "id": "ex_rv_5",
+            "type": "matchPairs",
+            "question": "Match common reflexive verbs",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Levantarse", "native": "To get up"},
+                    {"target": "Ducharse", "native": "To shower"},
+                    {"target": "Vestirse", "native": "To get dressed"},
+                    {"target": "Acostarse", "native": "To go to bed"},
+                    {"target": "Llamarse", "native": "To be called"}
+                ]
+            }
+        }
+    ]
+}

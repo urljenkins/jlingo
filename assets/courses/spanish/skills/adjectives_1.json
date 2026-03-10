@@ -1,0 +1,63 @@
+{
+    "id": "adjectives_1",
+    "name": "Common Adjectives",
+    "description": "Learn basic adjectives to describe things",
+    "level": 6,
+    "exercises": [
+        {
+            "id": "ex_adj_1",
+            "type": "matchPairs",
+            "question": "Match the adjectives",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Grande", "native": "Big"},
+                    {"target": "Pequeño", "native": "Small"},
+                    {"target": "Bueno", "native": "Good"},
+                    {"target": "Malo", "native": "Bad"},
+                    {"target": "Caliente", "native": "Hot"},
+                    {"target": "Frío", "native": "Cold"}
+                ]
+            }
+        },
+        {
+            "id": "ex_adj_2",
+            "type": "translateThis",
+            "question": "La casa grande",
+            "options": [],
+            "correctAnswer": "The big house"
+        },
+        {
+            "id": "ex_adj_3",
+            "type": "fillInBlank",
+            "question": "El café está muy ___",
+            "options": ["caliente", "grande", "pequeño", "bueno"],
+            "correctAnswer": "caliente"
+        },
+        {
+            "id": "ex_adj_4",
+            "type": "multipleChoice",
+            "question": "What is the opposite of 'alto' (tall)?",
+            "options": ["Bajo", "Grande", "Pequeño", "Gordo"],
+            "correctAnswer": "Bajo"
+        },
+        {
+            "id": "ex_adj_5",
+            "type": "matchPairs",
+            "question": "Match more adjectives",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Nuevo", "native": "New"},
+                    {"target": "Viejo", "native": "Old"},
+                    {"target": "Bonito", "native": "Pretty"},
+                    {"target": "Feo", "native": "Ugly"},
+                    {"target": "Fácil", "native": "Easy"},
+                    {"target": "Difícil", "native": "Difficult"}
+                ]
+            }
+        }
+    ]
+}

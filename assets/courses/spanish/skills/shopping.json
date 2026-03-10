@@ -1,0 +1,53 @@
+{
+    "id": "shopping",
+    "name": "Shopping",
+    "description": "Learn vocabulary for shopping and buying things",
+    "level": 10,
+    "exercises": [
+        {
+            "id": "ex_sh_1",
+            "type": "multipleChoice",
+            "question": "How do you ask 'How much does it cost?'",
+            "options": ["¿Cuánto cuesta?", "¿Qué precio?", "¿Cómo cuesta?", "¿Dónde cuesta?"],
+            "correctAnswer": "¿Cuánto cuesta?"
+        },
+        {
+            "id": "ex_sh_2",
+            "type": "matchPairs",
+            "question": "Match shopping vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "La tienda", "native": "The store"},
+                    {"target": "El precio", "native": "The price"},
+                    {"target": "La oferta", "native": "The sale/offer"},
+                    {"target": "El descuento", "native": "The discount"},
+                    {"target": "La caja", "native": "The cash register"},
+                    {"target": "El cambio", "native": "The change"}
+                ]
+            }
+        },
+        {
+            "id": "ex_sh_3",
+            "type": "translateThis",
+            "question": "¿Tiene esto en otra talla?",
+            "options": [],
+            "correctAnswer": "Do you have this in another size?"
+        },
+        {
+            "id": "ex_sh_4",
+            "type": "fillInBlank",
+            "question": "Quiero ___ este vestido",
+            "options": ["comprar", "vender", "pagar", "cerrar"],
+            "correctAnswer": "comprar"
+        },
+        {
+            "id": "ex_sh_5",
+            "type": "speakThis",
+            "question": "¿Puedo pagar con tarjeta?",
+            "options": [],
+            "correctAnswer": "¿Puedo pagar con tarjeta?"
+        }
+    ]
+}

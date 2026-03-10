@@ -1,0 +1,53 @@
+{
+    "id": "sightseeing",
+    "name": "Sightseeing",
+    "description": "Learn vocabulary for tourist activities",
+    "level": 17,
+    "exercises": [
+        {
+            "id": "ex_sight_1",
+            "type": "matchPairs",
+            "question": "Match sightseeing vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "El museo", "native": "The museum"},
+                    {"target": "La catedral", "native": "The cathedral"},
+                    {"target": "El monumento", "native": "The monument"},
+                    {"target": "La playa", "native": "The beach"},
+                    {"target": "El castillo", "native": "The castle"},
+                    {"target": "La plaza", "native": "The square"}
+                ]
+            }
+        },
+        {
+            "id": "ex_sight_2",
+            "type": "translateThis",
+            "question": "¿Dónde puedo comprar entradas?",
+            "options": [],
+            "correctAnswer": "Where can I buy tickets?"
+        },
+        {
+            "id": "ex_sight_3",
+            "type": "fillInBlank",
+            "question": "¿Hay visitas ___?",
+            "options": ["guiadas", "libres", "abiertas", "cerradas"],
+            "correctAnswer": "guiadas"
+        },
+        {
+            "id": "ex_sight_4",
+            "type": "multipleChoice",
+            "question": "How do you ask 'What is the opening time?'",
+            "options": ["¿A qué hora abre?", "¿Dónde está?", "¿Cuánto cuesta?", "¿Qué es?"],
+            "correctAnswer": "¿A qué hora abre?"
+        },
+        {
+            "id": "ex_sight_5",
+            "type": "speakThis",
+            "question": "Me gustaría visitar el centro histórico",
+            "options": [],
+            "correctAnswer": "Me gustaría visitar el centro histórico"
+        }
+    ]
+}

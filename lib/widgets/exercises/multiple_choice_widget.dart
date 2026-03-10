@@ -82,7 +82,7 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
             style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 40),
-          ...widget.exercise.options.map((option) => _buildOption(option)),
+          ...widget.exercise.options.map(_buildOption),
         ],
       ),
     );
@@ -93,7 +93,8 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
       padding: const EdgeInsets.only(bottom: 12),
       child: HoverCard(
         baseColor: _getOptionColor(option),
-        hoverColor: _showFeedback ? _getOptionColor(option) : const Color(0xFF3A3A3A),
+        hoverColor:
+            _showFeedback ? _getOptionColor(option) : const Color(0xFF3A3A3A),
         onTap: () => _selectAnswer(option),
         child: Container(
           decoration: BoxDecoration(

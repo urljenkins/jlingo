@@ -1,44 +1,103 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
-import '../models/course.dart';
+import '../models/course_manifest.dart';
+import '../models/skill.dart';
+
+const _selectedLanguageKey = 'selected_language';
 
 class CourseProvider extends ChangeNotifier {
-  Course? _currentCourse;
-  Course? get currentCourse => _currentCourse;
+  CourseManifest? _currentManifest;
+  CourseManifest? get currentManifest => _currentManifest;
+
+  // Cache for loaded skills
+  final Map<String, Skill> _loadedSkills = {};
+  Map<String, Skill> get loadedSkills => _loadedSkills;
 
   List<String> _availableLanguages = [];
   List<String> get availableLanguages => _availableLanguages;
 
+  String? _currentLanguageCode;
+  String? get currentLanguageCode => _currentLanguageCode;
+
   Future<void> loadAvailableLanguages() async {
-    // In a real app, this would scan the assets directory
-    // For now, we'll hardcode available languages
-    _availableLanguages = ['spanish', 'french', 'german', 'dutch', 'portuguese', 'japanese', 'chinese'];
+    _availableLanguages = [
+      'spanish',
+      'french',
+      'german',
+      'dutch',
+      'portuguese',
+      'japanese',
+      'chinese'
+    ];
     notifyListeners();
+  }
+
+  Future<String?> getSavedLanguage() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString(_selectedLanguageKey);
   }
 
   Future<void> loadCourse(String languageCode) async {
     try {
-      final jsonString = await rootBundle.loadString('assets/courses/$languageCode.json');
+      _currentLanguageCode = languageCode;
+      final jsonString = await rootBundle
+          .loadString('assets/courses/$languageCode/manifest.json');
       final jsonData = jsonDecode(jsonString) as Map<String, dynamic>;
-      _currentCourse = Course.fromJson(jsonData);
+      _currentManifest = CourseManifest.fromJson(jsonData);
+
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_selectedLanguageKey, languageCode);
+
+      _loadedSkills.clear();
       notifyListeners();
     } catch (e) {
-      debugPrint('Error loading course: $e');
+      debugPrint('Error loading course manifest: $e');
     }
   }
 
-  int getCurrentSkillIndex(Map<String, double> skillMastery) {
-    if (_currentCourse == null) return 0;
+  Future<Skill?> loadSkill(String skillId) async {
+    if (_loadedSkills.containsKey(skillId)) {
+      return _loadedSkills[skillId];
+    }
 
-    for (int i = 0; i < _currentCourse!.skills.length; i++) {
-      final skill = _currentCourse!.skills[i];
-      final mastery = skillMastery[skill.id] ?? 0.0;
+    if (_currentLanguageCode == null) return null;
+
+    try {
+      final jsonString = await rootBundle.loadString(
+          'assets/courses/$_currentLanguageCode/skills/$skillId.json');
+      final jsonData = jsonDecode(jsonString) as Map<String, dynamic>;
+      final skill = Skill.fromJson(jsonData);
+      _loadedSkills[skillId] = skill;
+      notifyListeners();
+      return skill;
+    } catch (e) {
+      debugPrint('Error loading skill $skillId: $e');
+      return null;
+    }
+  }
+
+  Future<void> clearSelectedLanguage() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_selectedLanguageKey);
+    _currentManifest = null;
+    _currentLanguageCode = null;
+    _loadedSkills.clear();
+    notifyListeners();
+  }
+
+  int getCurrentSkillIndex(Map<String, double> skillMastery) {
+    if (_currentManifest == null) return 0;
+
+    for (int i = 0; i < _currentManifest!.skills.length; i++) {
+      final skillHeader = _currentManifest!.skills[i];
+      final mastery = skillMastery[skillHeader.id] ?? 0.0;
       if (mastery < 100.0) {
         return i;
       }
     }
 
-    return _currentCourse!.skills.length - 1;
+    return _currentManifest!.skills.length - 1;
   }
 }
