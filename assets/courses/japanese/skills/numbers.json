@@ -1,0 +1,62 @@
+{
+  "id": "numbers",
+  "name": "Numbers",
+  "description": "Learn numbers 1-10",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_15",
+      "type": "translateThis",
+      "question": "いち",
+      "options": [],
+      "correctAnswer": "One",
+      "acceptableAnswers": ["One", "1"],
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_16",
+      "type": "multipleChoice",
+      "question": "What number is 'ご'?",
+      "options": ["5", "3", "7", "9"],
+      "correctAnswer": "5",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_17",
+      "type": "fillInBlank",
+      "question": "に たす に は ___",
+      "options": ["よん", "さん", "ご", "ろく"],
+      "correctAnswer": "よん",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_18",
+      "type": "matchPairs",
+      "question": "Match the numbers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "いち", "native": "One"},
+          {"target": "に", "native": "Two"},
+          {"target": "さん", "native": "Three"},
+          {"target": "よん", "native": "Four"}
+        ]
+      }
+    },
+    {
+      "id": "ex_19",
+      "type": "listeningComprehension",
+      "question": "ご",
+      "options": [],
+      "correctAnswer": "ご",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

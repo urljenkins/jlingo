@@ -1,0 +1,52 @@
+{
+    "id": "ordering_food",
+    "name": "Pedir Comida",
+    "description": "Aprende a pedir comida e a expressar necessidades alimentares",
+    "level": 11,
+    "exercises": [
+        {
+            "id": "ex_of_1",
+            "type": "multipleChoice",
+            "question": "Como se diz 'Eu gostaria...'?",
+            "options": ["Gostaria...", "Quero...", "Tenho...", "Posso..."],
+            "correctAnswer": "Gostaria..."
+        },
+        {
+            "id": "ex_of_2",
+            "type": "matchPairs",
+            "question": "Match menu sections",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Entradas", "native": "Starters"},
+                    {"target": "Prato principal", "native": "Main course"},
+                    {"target": "Sobremesa", "native": "Dessert"},
+                    {"target": "Bebidas", "native": "Drinks"},
+                    {"target": "Acompanhamento", "native": "Side dish"}
+                ]
+            }
+        },
+        {
+            "id": "ex_of_3",
+            "type": "translateThis",
+            "question": "Sou vegetariano",
+            "options": [],
+            "correctAnswer": "I am vegetarian"
+        },
+        {
+            "id": "ex_of_4",
+            "type": "fillInBlank",
+            "question": "Sou alérgico a ___",
+            "options": ["frutos do mar", "cozinha", "menu", "pratos"],
+            "correctAnswer": "frutos do mar"
+        },
+        {
+            "id": "ex_of_5",
+            "type": "speakThis",
+            "question": "Para mim, o frango com arroz",
+            "options": [],
+            "correctAnswer": "Para mim, o frango com arroz"
+        }
+    ]
+}

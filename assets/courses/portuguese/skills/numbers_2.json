@@ -1,0 +1,66 @@
+{
+    "id": "numbers_2",
+    "name": "Números 2",
+    "description": "Aprende os números 11-20",
+    "level": 3,
+    "exercises": [
+        {
+            "id": "ex_n2_1",
+            "type": "translateThis",
+            "question": "Onze",
+            "options": [],
+            "correctAnswer": "Eleven"
+        },
+        {
+            "id": "ex_n2_2",
+            "type": "multipleChoice",
+            "question": "'Quinze' é qual número?",
+            "options": [
+                "15",
+                "11",
+                "5",
+                "20"
+            ],
+            "correctAnswer": "15"
+        },
+        {
+            "id": "ex_n2_3",
+            "type": "fillInBlank",
+            "question": "Dez mais dez é ___",
+            "options": [
+                "vinte",
+                "quinze",
+                "doze",
+                "treze"
+            ],
+            "correctAnswer": "vinte"
+        },
+        {
+            "id": "ex_n2_4",
+            "type": "matchPairs",
+            "question": "Match the numbers",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Doze",
+                        "native": "Twelve"
+                    },
+                    {
+                        "target": "Treze",
+                        "native": "Thirteen"
+                    },
+                    {
+                        "target": "Catorze",
+                        "native": "Fourteen"
+                    },
+                    {
+                        "target": "Vinte",
+                        "native": "Twenty"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "numbers",
+  "name": "Numbers",
+  "description": "Learn numbers 1-10",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_15",
+      "type": "translateThis",
+      "question": "一",
+      "options": [],
+      "correctAnswer": "One"
+    },
+    {
+      "id": "ex_16",
+      "type": "multipleChoice",
+      "question": "What number is '五'?",
+      "options": ["5", "3", "7", "9"],
+      "correctAnswer": "5"
+    },
+    {
+      "id": "ex_17",
+      "type": "fillInBlank",
+      "question": "二 加 二 等于 ___",
+      "options": ["四", "三", "五", "六"],
+      "correctAnswer": "四"
+    },
+    {
+      "id": "ex_18",
+      "type": "matchPairs",
+      "question": "Match the numbers",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "一", "native": "One"},
+          {"target": "二", "native": "Two"},
+          {"target": "三", "native": "Three"},
+          {"target": "四", "native": "Four"}
+        ]
+      }
+    },
+    {
+      "id": "ex_19",
+      "type": "listeningComprehension",
+      "question": "五",
+      "options": [],
+      "correctAnswer": "五"
+    },
+    {
+      "id": "ex_20",
+      "type": "speakThis",
+      "question": "六",
+      "options": [],
+      "correctAnswer": "六"
+    }
+  ]
+}

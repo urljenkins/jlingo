@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/flashcard_provider.dart';
@@ -18,7 +19,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       final provider = context.read<FlashcardProvider>();
       if (provider.decks.isEmpty) {
         // Load decks with a default course ID - this should come from CourseProvider
-        provider.loadDecks('default_course');
+        unawaited(provider.loadDecks('default_course'));
       }
     });
   }
@@ -549,7 +550,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   void _showSettings(BuildContext context) {
-    showModalBottomSheet<void>(
+    unawaited(showModalBottomSheet<void>(
       context: context,
       backgroundColor: const Color(0xFF1A1A1A),
       shape: const RoundedRectangleBorder(
@@ -598,7 +599,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           },
         );
       },
-    );
+    ));
   }
 
   Widget _buildSettingSlider(
@@ -639,7 +640,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     final nameController = TextEditingController();
     final descController = TextEditingController();
 
-    showDialog<void>(
+    unawaited(showDialog<void>(
       context: context,
       builder: (context) {
         return AlertDialog(
@@ -674,13 +675,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             ElevatedButton(
               onPressed: () {
                 if (nameController.text.isNotEmpty) {
-                  context.read<FlashcardProvider>().createDeck(
+                  unawaited(context.read<FlashcardProvider>().createDeck(
                         courseId: 'default_course',
                         name: nameController.text,
                         description: descController.text,
                         targetLanguage: 'target',
                         nativeLanguage: 'native',
-                      );
+                      ));
                   Navigator.pop(context);
                 }
               },
@@ -693,6 +694,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           ],
         );
       },
-    );
+    ));
   }
 }

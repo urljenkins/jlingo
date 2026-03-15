@@ -1,0 +1,44 @@
+{
+  "id": "greetings_2",
+  "name": "问候 2",
+  "description": "更多常用问候与礼貌用语",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_g2_1",
+      "type": "translateThis",
+      "question": "Encantado",
+      "options": [],
+      "correctAnswer": "很高兴认识你"
+    },
+    {
+      "id": "ex_g2_2",
+      "type": "multipleChoice",
+      "question": "'¿Qué pasa?' 是什么意思？",
+      "options": ["怎么了？", "你好吗？", "再见", "请"],
+      "correctAnswer": "怎么了？"
+    },
+    {
+      "id": "ex_g2_3",
+      "type": "fillInBlank",
+      "question": "___ luego",
+      "options": ["Hasta", "Hola", "Adiós", "Gracias"],
+      "correctAnswer": "Hasta"
+    },
+    {
+      "id": "ex_g2_4",
+      "type": "matchPairs",
+      "question": "配对短语",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "Hasta mañana", "native": "See you tomorrow"},
+          {"target": "Buenas tardes", "native": "Good afternoon"},
+          {"target": "Lo siento", "native": "I'm sorry"},
+          {"target": "Perdón", "native": "Excuse me"}
+        ]
+      }
+    }
+  ]
+}

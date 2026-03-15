@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/onboarding_provider.dart';
@@ -27,12 +28,12 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
     // Quiz is complete, navigate to goals
     if (onboardingProvider.isQuizComplete) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        Navigator.of(context).pushReplacement(
+        unawaited(Navigator.of(context).pushReplacement(
           PageRouteBuilder<void>(
             pageBuilder: (context, _, __) => const GoalsScreen(),
             transitionDuration: Duration.zero,
           ),
-        );
+        ));
       });
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),

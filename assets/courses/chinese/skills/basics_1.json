@@ -1,0 +1,105 @@
+{
+  "id": "basics_1",
+  "name": "基础 1",
+  "description": "学习基本问候与自我介绍",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_1",
+      "type": "translateThis",
+      "question": "Hola",
+      "options": [],
+      "correctAnswer": "你好"
+    },
+    {
+      "id": "ex_2",
+      "type": "multipleChoice",
+      "question": "'Gracias' 是什么意思？",
+      "options": [
+        "谢谢",
+        "请",
+        "再见",
+        "你好"
+      ],
+      "correctAnswer": "谢谢"
+    },
+    {
+      "id": "ex_3",
+      "type": "fillInBlank",
+      "question": "Buenos ___",
+      "options": ["días", "noches", "tardes", "hola"],
+      "correctAnswer": "días"
+    },
+    {
+      "id": "ex_4",
+      "type": "translateThis",
+      "question": "Adiós",
+      "options": [],
+      "correctAnswer": "再见"
+    },
+    {
+      "id": "ex_5",
+      "type": "multipleChoice",
+      "question": "如何用西班牙语说 '晚安'？",
+      "options": ["Buenas noches", "Buenos días", "Buenas tardes", "Hola"],
+      "correctAnswer": "Buenas noches"
+    },
+    {
+      "id": "ex_6",
+      "type": "matchPairs",
+      "question": "将西班牙词与其英文翻译配对",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "Hola", "native": "Hello"},
+          {"target": "Adiós", "native": "Goodbye"},
+          {"target": "Gracias", "native": "Thank you"},
+          {"target": "Por favor", "native": "Please"}
+        ]
+      }
+    },
+    {
+      "id": "ex_7",
+      "type": "listeningComprehension",
+      "question": "Buenas tardes",
+      "options": [],
+      "correctAnswer": "Buenas tardes"
+    },
+    {
+      "id": "ex_8",
+      "type": "speakThis",
+      "question": "Hola, ¿cómo estás?",
+      "options": [],
+      "correctAnswer": "Hola, ¿cómo estás?"
+    },
+    {
+      "id": "ex_b1_9",
+      "type": "translateThis",
+      "question": "Por favor",
+      "options": [],
+      "correctAnswer": "请"
+    },
+    {
+      "id": "ex_b1_10",
+      "type": "multipleChoice",
+      "question": "如何用西班牙语说 '打扰一下' (Excuse me)？",
+      "options": ["Perdón", "Hola", "Gracias", "Adiós"],
+      "correctAnswer": "Perdón"
+    },
+    {
+      "id": "ex_b1_11",
+      "type": "fillInBlank",
+      "question": "De ___",
+      "options": ["nada", "todo", "algo", "poco"],
+      "correctAnswer": "nada"
+    },
+    {
+      "id": "ex_b1_12",
+      "type": "listeningComprehension",
+      "question": "Mucho gusto",
+      "options": [],
+      "correctAnswer": "Mucho gusto"
+    }
+  ]
+}

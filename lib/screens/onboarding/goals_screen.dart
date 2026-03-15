@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/onboarding_provider.dart';
@@ -122,7 +123,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: isSelected
-              ? Theme.of(context).colorScheme.primary.withOpacity(0.2)
+              ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.2)
               : null,
           borderRadius: BorderRadius.circular(12),
           border: isSelected
@@ -141,7 +142,10 @@ class _GoalsScreenState extends State<GoalsScreen> {
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: isSelected
-                        ? Theme.of(context).colorScheme.primary.withOpacity(0.3)
+                        ? Theme.of(context)
+                            .colorScheme
+                            .primary
+                            .withValues(alpha: 0.3)
                         : Colors.white12,
                     shape: BoxShape.circle,
                   ),
@@ -217,7 +221,10 @@ class _GoalsScreenState extends State<GoalsScreen> {
               padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
               decoration: BoxDecoration(
                 color: isSelected
-                    ? Theme.of(context).colorScheme.primary.withOpacity(0.2)
+                    ? Theme.of(context)
+                        .colorScheme
+                        .primary
+                        .withValues(alpha: 0.2)
                     : null,
                 borderRadius: BorderRadius.circular(12),
                 border: isSelected
@@ -417,13 +424,13 @@ class _GoalsScreenState extends State<GoalsScreen> {
     await provider.setGoals(_selectedGoals.toList());
     await provider.setDailyGoal(_dailyGoalMinutes);
 
-    if (!mounted) return;
+    if (!context.mounted) return;
 
-    Navigator.of(context).pushReplacement(
+    unawaited(Navigator.of(context).pushReplacement(
       PageRouteBuilder<void>(
         pageBuilder: (context, _, __) => const OnboardingCompleteScreen(),
         transitionDuration: Duration.zero,
       ),
-    );
+    ));
   }
 }

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/book_provider.dart';
@@ -116,9 +117,9 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
       onHorizontalDragEnd: (details) {
         if (details.primaryVelocity != null) {
           if (details.primaryVelocity! < -100) {
-            provider.nextParagraph();
+            unawaited(provider.nextParagraph());
           } else if (details.primaryVelocity! > 100) {
-            provider.previousParagraph();
+            unawaited(provider.previousParagraph());
           }
         }
       },
@@ -282,7 +283,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
   void _showWordDialog(String word, String cleanWord, BookProvider provider) {
     final isSaved = provider.isWordSaved(cleanWord);
 
-    showDialog(
+    unawaited(showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: const Color(0xFF1A1A1A),
@@ -310,9 +311,9 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
           TextButton(
             onPressed: () {
               if (isSaved) {
-                provider.removeWord(cleanWord);
+                unawaited(provider.removeWord(cleanWord));
               } else {
-                provider.saveWord(cleanWord);
+                unawaited(provider.saveWord(cleanWord));
               }
               Navigator.pop(context);
             },
@@ -320,7 +321,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
           ),
         ],
       ),
-    );
+    ));
   }
 
   Widget _buildVocabularySection(
@@ -349,9 +350,9 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
             return GestureDetector(
               onTap: () {
                 if (isSaved) {
-                  provider.removeWord(word.toLowerCase());
+                  unawaited(provider.removeWord(word.toLowerCase()));
                 } else {
-                  provider.saveWord(word.toLowerCase());
+                  unawaited(provider.saveWord(word.toLowerCase()));
                 }
               },
               child: Container(
@@ -470,7 +471,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
                               )
                             : null,
                         onTap: () {
-                          provider.goToChapter(index);
+                          unawaited(provider.goToChapter(index));
                           setState(() => _showChapterList = false);
                         },
                       );
@@ -566,7 +567,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
   }
 
   void _showFontSizeDialog() {
-    showDialog(
+    unawaited(showDialog<void>(
       context: context,
       builder: (context) => StatefulBuilder(
         builder: (context, setDialogState) => AlertDialog(
@@ -610,6 +611,6 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
           ],
         ),
       ),
-    );
+    ));
   }
 }

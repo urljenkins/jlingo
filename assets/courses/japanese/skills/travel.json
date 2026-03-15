@@ -1,0 +1,32 @@
+{
+  "id": "travel",
+  "name": "Travel & Getting Around",
+  "description": "Phrases and vocabulary for navigating Japanese cities and transport",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "tr_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Where is the train station?' in Japanese?",
+      "options": ["駅はどこですか?", "バスはどこですか?", "トイレはどこですか?", "これは何ですか?"],
+      "correctAnswer": "駅はどこですか?"
+    },
+    {
+      "id": "tr_2",
+      "type": "translateThis",
+      "question": "右に曲がってください",
+      "options": [],
+      "correctAnswer": "Please turn right",
+      "acceptableAnswers": ["Please turn right", "Turn right please", "Turn right"],
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "tr_3",
+      "type": "multipleChoice",
+      "question": "What is 'ticket' in Japanese?",
+      "options": ["きっぷ", "くつ", "ドア", "かぎ"],
+      "correctAnswer": "きっぷ"
+    }
+  ]
+}

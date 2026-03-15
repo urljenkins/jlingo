@@ -1,0 +1,72 @@
+{
+    "id": "basics_2",
+    "name": "Basics 2",
+    "description": "Introduce common verbs and simple sentences",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "ex_11",
+            "type": "translateThis",
+            "question": "Merci beaucoup",
+            "options": [],
+            "correctAnswer": "Thank you very much"
+        },
+        {
+            "id": "ex_12",
+            "type": "multipleChoice",
+            "question": "Which is the French word for 'water'?",
+            "options": ["eau", "lait", "thé", "café"],
+            "correctAnswer": "eau"
+        },
+        {
+            "id": "ex_13",
+            "type": "fillInBlank",
+            "question": "Tu ___ français?",
+            "options": ["parles", "parle", "parlent", "parlez"],
+            "correctAnswer": "parles"
+        },
+        {
+            "id": "ex_14",
+            "type": "translationExercise",
+            "question": "She eats an apple",
+            "options": [],
+            "correctAnswer": "Elle mange une pomme"
+        },
+        {
+            "id": "ex_b2_m1",
+            "type": "matchPairs",
+            "question": "Match the French verbs to their English meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "manger",  "native": "to eat"},
+                    {"target": "boire",   "native": "to drink"},
+                    {"target": "parler",  "native": "to speak"},
+                    {"target": "écrire",  "native": "to write"}
+                ]
+            }
+        },
+        {
+            "id": "ex_b2_6",
+            "type": "multipleChoice",
+            "question": "What does 'Je m'appelle' mean?",
+            "options": ["My name is", "I am", "I have", "I speak"],
+            "correctAnswer": "My name is"
+        },
+        {
+            "id": "ex_b2_7",
+            "type": "translateThis",
+            "question": "I have a cat",
+            "options": [],
+            "correctAnswer": "J'ai un chat"
+        },
+        {
+            "id": "ex_b2_8",
+            "type": "fillInBlank",
+            "question": "Nous ___ à Paris.",
+            "options": ["habitons", "habites", "habite", "habitez"],
+            "correctAnswer": "habitons"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "alphabet",
+  "name": "字母与发音",
+  "description": "学习西班牙语发音与元音的基础（已从西班牙语内容机译）",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_alp_1",
+      "type": "multipleChoice",
+      "question": "哪个字母发出类似 canyon 中 'ny' 的音？",
+      "options": [
+        "Ñ",
+        "N",
+        "RR",
+        "LL"
+      ],
+      "correctAnswer": "Ñ"
+    },
+    {
+      "id": "ex_alp_2",
+      "type": "listeningComprehension",
+      "question": "A",
+      "options": [],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ex_alp_3",
+      "type": "listeningComprehension",
+      "question": "E",
+      "options": [],
+      "correctAnswer": "E"
+    },
+    {
+      "id": "ex_alp_4",
+      "type": "multipleChoice",
+      "question": "双写 'L' (LL) 的发音如何？",
+      "options": [
+        "Y 音",
+        "L 音",
+        "R 音",
+        "S 音"
+      ],
+      "correctAnswer": "Y 音"
+    },
+    {
+      "id": "ex_alp_5",
+      "type": "translateThis",
+      "question": "El niño",
+      "options": [],
+      "correctAnswer": "男孩"
+    }
+  ]
+}

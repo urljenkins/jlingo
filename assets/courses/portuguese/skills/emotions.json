@@ -1,0 +1,62 @@
+{
+    "id": "emotions",
+    "name": "Sentimentos & Emoções",
+    "description": "Aprende a expressar emoções com nuance",
+    "level": 21,
+    "exercises": [
+        {
+            "id": "ex_em_1",
+            "type": "matchPairs",
+            "question": "Associe as emoções",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Feliz", "native": "Happy"},
+                    {"target": "Triste", "native": "Sad"},
+                    {"target": "Zangado", "native": "Angry"},
+                    {"target": "Entusiasmado", "native": "Excited"},
+                    {"target": "Preocupado", "native": "Worried"},
+                    {"target": "Surpreendido", "native": "Surprised"}
+                ]
+            }
+        },
+        {
+            "id": "ex_em_2",
+            "type": "translateThis",
+            "question": "Estou muito entusiasmado com a viagem",
+            "options": [],
+            "correctAnswer": "I am very excited about the trip"
+        },
+        {
+            "id": "ex_em_3",
+            "type": "fillInBlank",
+            "question": "Sinto-me ___ pela situação",
+            "options": ["frustrado", "frustrando", "frustrar", "frustre"],
+            "correctAnswer": "frustrado"
+        },
+        {
+            "id": "ex_em_4",
+            "type": "matchPairs",
+            "question": "Associe mais emoções",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Nervoso", "native": "Nervous"},
+                    {"target": "Aborrecido", "native": "Bored"},
+                    {"target": "Confuso", "native": "Confused"},
+                    {"target": "Agradecido", "native": "Grateful"},
+                    {"target": "Orgulhoso", "native": "Proud"}
+                ]
+            }
+        },
+        {
+            "id": "ex_em_5",
+            "type": "speakThis",
+            "question": "Estou um pouco desapontado com o resultado",
+            "options": [],
+            "correctAnswer": "Estou um pouco desapontado com o resultado"
+        }
+    ]
+}

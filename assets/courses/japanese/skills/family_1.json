@@ -1,0 +1,42 @@
+{
+  "id": "family_1",
+  "name": "Family 1",
+  "description": "Family member vocabulary",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_fam1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Mother' in Japanese?",
+      "options": ["おかあさん", "おとうさん", "おねえさん", "おじいさん"],
+      "correctAnswer": "おかあさん"
+    },
+    {
+      "id": "ex_fam2",
+      "type": "translateThis",
+      "question": "おとうさん",
+      "options": [],
+      "correctAnswer": "Father",
+      "acceptableAnswers": ["Father", "Dad", "dad"],
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fam3",
+      "type": "matchPairs",
+      "question": "Match family members",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "おかあさん", "native": "Mother"},
+          {"target": "おとうさん", "native": "Father"},
+          {"target": "おねえさん", "native": "Older sister"},
+          {"target": "おにいさん", "native": "Older brother"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "introductions",
+  "name": "自我介绍",
+  "description": "学习如何介绍自己并询问他人",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_intro_1",
+      "type": "translateThis",
+      "question": "Me llamo María",
+      "options": [],
+      "correctAnswer": "我叫玛丽亚"
+    },
+    {
+      "id": "ex_intro_2",
+      "type": "multipleChoice",
+      "question": "如何用礼貌的方式问 '你叫什么名字？'？",
+      "options": ["¿Cómo se llama?", "¿Cómo te llamas?", "¿Qué tal?", "¿De dónde eres?"],
+      "correctAnswer": "¿Cómo se llama?"
+    },
+    {
+      "id": "ex_intro_3",
+      "type": "fillInBlank",
+      "question": "Soy ___ Estados Unidos",
+      "options": ["de", "en", "a", "con"],
+      "correctAnswer": "de"
+    },
+    {
+      "id": "ex_intro_4",
+      "type": "matchPairs",
+      "question": "配对自我介绍短语",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "Me llamo", "native": "My name is"},
+          {"target": "Soy de", "native": "I am from"},
+          {"target": "Mucho gusto", "native": "Nice to meet you"},
+          {"target": "Encantado", "native": "Pleased to meet you"}
+        ]
+      }
+    },
+    {
+      "id": "ex_intro_5",
+      "type": "speakThis",
+      "question": "Mucho gusto",
+      "options": [],
+      "correctAnswer": "Mucho gusto"
+    }
+  ]
+}

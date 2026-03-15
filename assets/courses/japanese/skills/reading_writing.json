@@ -1,0 +1,49 @@
+{
+  "id": "reading_writing",
+  "name": "Reading & Writing",
+  "description": "Short texts, reading comprehension and simple writing practice",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "rw_1",
+      "type": "translateThis",
+      "question": "私は学生です。",
+      "options": [],
+      "correctAnswer": "I am a student.",
+      "acceptableAnswers": ["I'm a student."],
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "rw_2",
+      "type": "clozeTest",
+      "question": "今日は___です。 (weather)",
+      "options": ["はれ", "あめ", "ゆき"],
+      "correctAnswer": "はれ",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "rw_3",
+      "type": "storyLesson",
+      "question": "公園で何を見ましたか？",
+      "options": ["黒い猫", "大きな犬", "青い鳥", "蝶"],
+      "correctAnswer": "黒い猫",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "title": "公園での散歩",
+        "level": "A1",
+        "story": "今日は晴れた日で、さくらが咲く公園を歩きました。ベンチの上に小さな黒い猫が座っていて、静かに目を閉じていました。鳥が近くでさえずり、子どもたちが遊んでいました。猫はとてもかわいくて、私はしばらく見ていました。",
+        "vocabulary": [
+          {"word": "公園", "translation": "park", "highlight": true},
+          {"word": "猫", "translation": "cat", "highlight": true},
+          {"word": "ベンチ", "translation": "bench", "highlight": true},
+          {"word": "さくら", "translation": "cherry blossoms", "highlight": true}
+        ],
+        "question": "公園で何を見ましたか？",
+        "acceptableAnswers": ["A black cat", "I saw a black cat"]
+      }
+    }
+  ]
+}

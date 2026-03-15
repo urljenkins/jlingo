@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
@@ -82,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() => _isLoading = false);
 
     if (mounted && skill != null) {
-      Navigator.of(context).push(
+      unawaited(Navigator.of(context).push(
         PageRouteBuilder<void>(
           pageBuilder: (context, _, __) => LessonScreen(
             skill: skill,
@@ -90,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           transitionDuration: Duration.zero,
         ),
-      );
+      ));
     } else if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Error loading lesson content')),
@@ -219,7 +220,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   onKeyEvent: (node, event) {
                     if (event.logicalKey == LogicalKeyboardKey.enter ||
                         event.logicalKey == LogicalKeyboardKey.numpadEnter) {
-                      _startLesson(manifest.skills[currentSkillIndex].id);
+                      unawaited(
+                          _startLesson(manifest.skills[currentSkillIndex].id));
                       return KeyEventResult.handled;
                     }
                     return KeyEventResult.ignored;
@@ -300,21 +302,21 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _navigateToLanguageSelection() {
-    Navigator.of(context).pushReplacement(
+    unawaited(Navigator.of(context).pushReplacement(
       PageRouteBuilder<void>(
         pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
         transitionDuration: Duration.zero,
       ),
-    );
+    ));
   }
 
   void _navigateToVocabulary() {
-    Navigator.of(context).push(
+    unawaited(Navigator.of(context).push(
       PageRouteBuilder<void>(
         pageBuilder: (context, _, __) => const VocabularyScreen(),
         transitionDuration: Duration.zero,
       ),
-    );
+    ));
   }
 
   Widget _buildHomeGamificationHeader(

@@ -1,0 +1,42 @@
+{
+  "id": "colors",
+  "name": "Colors",
+  "description": "Learn the names of colors in Japanese",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_c1",
+      "type": "multipleChoice",
+      "question": "How do you say 'red' in Japanese?",
+      "options": ["あか", "あお", "きいろ", "みどり"],
+      "correctAnswer": "あか"
+    },
+    {
+      "id": "ex_c2",
+      "type": "translateThis",
+      "question": "みどり",
+      "options": [],
+      "correctAnswer": "Green",
+      "acceptableAnswers": ["Green", "green"],
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_c3",
+      "type": "matchPairs",
+      "question": "Match the colors",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "あか", "native": "Red"},
+          {"target": "あお", "native": "Blue"},
+          {"target": "きいろ", "native": "Yellow"},
+          {"target": "しろ", "native": "White"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/book_provider.dart';
@@ -19,7 +20,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      _loadBooks();
+      unawaited(_loadBooks());
     });
   }
 
@@ -51,12 +52,12 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
     final success = await provider.loadBook(entry.id);
 
     if (mounted && success) {
-      Navigator.of(context).push(
+      unawaited(Navigator.of(context).push(
         PageRouteBuilder<void>(
           pageBuilder: (context, _, __) => const BookReaderScreen(),
           transitionDuration: Duration.zero,
         ),
-      );
+      ));
     } else if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Error loading book')),
@@ -382,7 +383,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
 
   void _showSavedWords() {
     final provider = context.read<BookProvider>();
-    showModalBottomSheet(
+    unawaited(showModalBottomSheet<void>(
       context: context,
       backgroundColor: const Color(0xFF1A1A1A),
       shape: const RoundedRectangleBorder(
@@ -476,6 +477,6 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
           ),
         );
       },
-    );
+    ));
   }
 }

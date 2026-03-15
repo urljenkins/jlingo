@@ -1,0 +1,52 @@
+{
+    "id": "superlatives",
+    "name": "Superlativos",
+    "description": "Aprende a expressar 'o mais' e 'o menos'",
+    "level": 15,
+    "exercises": [
+        {
+            "id": "ex_sup_1",
+            "type": "multipleChoice",
+            "question": "Como se diz 'o mais alto'?",
+            "options": ["o mais alto", "mais alto que", "muito alto", "tão alto como"],
+            "correctAnswer": "o mais alto"
+        },
+        {
+            "id": "ex_sup_2",
+            "type": "matchPairs",
+            "question": "Associe formas superlativas",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "O melhor", "native": "The best"},
+                    {"target": "O pior", "native": "The worst"},
+                    {"target": "O mais velho", "native": "The oldest"},
+                    {"target": "O mais novo", "native": "The youngest"},
+                    {"target": "O mais grande", "native": "The biggest"}
+                ]
+            }
+        },
+        {
+            "id": "ex_sup_3",
+            "type": "translateThis",
+            "question": "É o livro mais interessante do mundo",
+            "options": [],
+            "correctAnswer": "It's the most interesting book in the world"
+        },
+        {
+            "id": "ex_sup_4",
+            "type": "fillInBlank",
+            "question": "Este é o restaurante mais caro ___ da cidade",
+            "options": ["da", "em", "a", "com"],
+            "correctAnswer": "da"
+        },
+        {
+            "id": "ex_sup_5",
+            "type": "speakThis",
+            "question": "A minha irmã é a mais inteligente da família",
+            "options": [],
+            "correctAnswer": "A minha irmã é a mais inteligente da família"
+        }
+    ]
+}

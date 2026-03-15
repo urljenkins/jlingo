@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/skill.dart';
@@ -33,8 +34,6 @@ class _LessonScreenState extends State<LessonScreen> {
   int _totalAnswers = 0;
   int _totalXPEarned = 0;
   List<Exercise> _exercises = [];
-  XPGainResult? _lastXPResult;
-  bool _showingLevelUp = false;
 
   @override
   void initState() {
@@ -76,8 +75,9 @@ class _LessonScreenState extends State<LessonScreen> {
 
       setState(() {
         _totalXPEarned += result.totalXP;
-        _lastXPResult = result;
       });
+
+      if (!mounted) return;
 
       // Update legacy points for compatibility
       context.read<ProgressProvider>().addPoints(result.totalXP);
@@ -104,11 +104,7 @@ class _LessonScreenState extends State<LessonScreen> {
   }
 
   void _showLevelUpCelebration(int newLevel) {
-    setState(() {
-      _showingLevelUp = true;
-    });
-
-    showDialog(
+    unawaited(showDialog<void>(
       context: context,
       barrierDismissible: false,
       builder: (context) => LevelUpCelebration(
@@ -116,12 +112,9 @@ class _LessonScreenState extends State<LessonScreen> {
         newTitle: LevelConfig.getTitleForLevel(newLevel),
         onDismiss: () {
           Navigator.of(context).pop();
-          setState(() {
-            _showingLevelUp = false;
-          });
         },
       ),
-    );
+    ));
   }
 
   Future<void> _finishLesson() async {
@@ -168,11 +161,11 @@ class _LessonScreenState extends State<LessonScreen> {
 
     // Show completion dialog
     if (!mounted) return;
-    showDialog(
+    unawaited(showDialog<void>(
       context: context,
       barrierDismissible: false,
       builder: (context) => _buildCompletionDialog(),
-    );
+    ));
   }
 
   Widget _buildCompletionDialog() {

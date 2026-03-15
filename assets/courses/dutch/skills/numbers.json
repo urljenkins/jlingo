@@ -1,0 +1,44 @@
+{
+  "id": "numbers",
+  "name": "Numbers",
+  "description": "Learn numbers 1-10",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_15",
+      "type": "translateThis",
+      "question": "Een",
+      "options": [],
+      "correctAnswer": "One"
+    },
+    {
+      "id": "ex_16",
+      "type": "multipleChoice",
+      "question": "What number is 'Vijf'?",
+      "options": ["5", "3", "7", "9"],
+      "correctAnswer": "5"
+    },
+    {
+      "id": "ex_17",
+      "type": "fillInBlank",
+      "question": "Twee plus twee is ___",
+      "options": ["vier", "drie", "vijf", "zes"],
+      "correctAnswer": "vier"
+    },
+    {
+      "id": "ex_18",
+      "type": "matchPairs",
+      "question": "Match the numbers",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "Een", "native": "One"},
+          {"target": "Twee", "native": "Two"},
+          {"target": "Drie", "native": "Three"},
+          {"target": "Vier", "native": "Four"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/course_provider.dart';
@@ -70,12 +71,12 @@ class LanguageSelectionScreen extends StatelessWidget {
                 leading: const Icon(Icons.home),
                 title: const Text('Home'),
                 onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    PageRouteBuilder(
+                  unawaited(Navigator.of(context).pushReplacement(
+                    PageRouteBuilder<void>(
                       pageBuilder: (context, _, __) => const HomeScreen(),
                       transitionDuration: Duration.zero,
                     ),
-                  );
+                  ));
                 },
               ),
               ListTile(
@@ -107,8 +108,10 @@ class LanguageSelectionScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color:
-                        Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                    color: Theme.of(context)
+                        .colorScheme
+                        .primary
+                        .withValues(alpha: 0.1),
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
@@ -148,12 +151,12 @@ class LanguageSelectionScreen extends StatelessWidget {
       await progressProvider.loadProgress(courseProvider.currentManifest!.id);
 
       if (context.mounted) {
-        Navigator.of(context).pushReplacement(
-          PageRouteBuilder(
+        unawaited(Navigator.of(context).pushReplacement(
+          PageRouteBuilder<void>(
             pageBuilder: (context, _, __) => const HomeScreen(),
             transitionDuration: Duration.zero,
           ),
-        );
+        ));
       }
     }
   }

@@ -1,0 +1,41 @@
+{
+  "id": "culture",
+  "name": "Culture & Traditions",
+  "description": "Learn about Japanese customs, holidays and cultural notes",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "cul_1",
+      "type": "multipleChoice",
+      "question": "What is the Japanese custom of resting in the afternoon called?",
+      "options": ["Siesta", "Obon", "Hanami", "None of the above"],
+      "correctAnswer": "None of the above"
+    },
+    {
+      "id": "cul_2",
+      "type": "translateThis",
+      "question": "花見",
+      "options": [],
+      "correctAnswer": "Cherry blossom viewing",
+      "acceptableAnswers": ["Cherry blossom viewing", "Viewing cherry blossoms"],
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "cul_3",
+      "type": "matchPairs",
+      "question": "Match festivals with descriptions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "お正月", "native": "New Year celebrations"},
+          {"target": "花見", "native": "Cherry blossom viewing"},
+          {"target": "祭り", "native": "Local festival"}
+        ]
+      }
+    }
+  ]
+}

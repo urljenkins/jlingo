@@ -1,0 +1,3 @@
+courses/portuguese/audio/bom_dia.mp3
+courses/portuguese/audio/onde_estacao.mp3
+courses/portuguese/audio/reservar_mesa.mp3

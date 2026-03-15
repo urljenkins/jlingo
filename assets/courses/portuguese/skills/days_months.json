@@ -1,0 +1,64 @@
+{
+    "id": "days_months",
+    "name": "Dias & Meses",
+    "description": "Aprende os dias da semana e os meses do ano",
+    "level": 4,
+    "exercises": [
+        {
+            "id": "ex_dm_1",
+            "type": "multipleChoice",
+            "question": "Como se diz 'segunda-feira' em inglês?",
+            "options": ["Segunda-feira", "Terça-feira", "Domingo", "Sexta-feira"],
+            "correctAnswer": "Segunda-feira"
+        },
+        {
+            "id": "ex_dm_2",
+            "type": "matchPairs",
+            "question": "Associe os dias da semana",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Segunda-feira", "native": "Monday"},
+                    {"target": "Terça-feira", "native": "Tuesday"},
+                    {"target": "Quarta-feira", "native": "Wednesday"},
+                    {"target": "Quinta-feira", "native": "Thursday"},
+                    {"target": "Sexta-feira", "native": "Friday"},
+                    {"target": "Sábado", "native": "Saturday"},
+                    {"target": "Domingo", "native": "Sunday"}
+                ]
+            }
+        },
+        {
+            "id": "ex_dm_3",
+            "type": "translateThis",
+            "question": "Janeiro",
+            "options": [],
+            "correctAnswer": "January"
+        },
+        {
+            "id": "ex_dm_4",
+            "type": "matchPairs",
+            "question": "Associe os meses",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Janeiro", "native": "January"},
+                    {"target": "Fevereiro", "native": "February"},
+                    {"target": "Março", "native": "March"},
+                    {"target": "Abril", "native": "April"},
+                    {"target": "Maio", "native": "May"},
+                    {"target": "Junho", "native": "June"}
+                ]
+            }
+        },
+        {
+            "id": "ex_dm_5",
+            "type": "fillInBlank",
+            "question": "Hoje é ___ 15 de março",
+            "options": ["o", "a", "um", "uma"],
+            "correctAnswer": "o"
+        }
+    ]
+}

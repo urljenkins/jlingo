@@ -1,0 +1,26 @@
+{
+    "id": "french_en",
+    "name": "French for English Speakers",
+    "targetLanguage": "fr-FR",
+    "nativeLanguage": "en-US",
+    "skills": [
+        {
+            "id": "basics_1",
+            "name": "Basics 1",
+            "level": 1,
+            "section": "foundational"
+        },
+        {
+            "id": "basics_2",
+            "name": "Basics 2",
+            "level": 2,
+            "section": "foundational"
+        },
+        {
+            "id": "travel_1",
+            "name": "Travel",
+            "level": 2,
+            "section": "travel"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "listening_pronunciation",
+  "name": "Listening & Pronunciation",
+  "description": "Master Japanese sounds through listening exercises, pronunciation practice, dialogues, and songs",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "lp_1",
+      "type": "listeningComprehension",
+      "question": "Audio: 'おはようございます'",
+      "options": [],
+      "correctAnswer": "おはようございます",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "lp_2",
+      "type": "pronunciationPractice",
+      "question": "Repeat: こんばんは",
+      "options": [],
+      "correctAnswer": "こんばんは",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "lp_3",
+      "type": "dialogueListening",
+      "question": "Short dialogue: 'A: こんにちは B: こんにちは、元気ですか'",
+      "options": [],
+      "correctAnswer": "A: こんにちは B: こんにちは、元気ですか",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

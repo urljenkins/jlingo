@@ -1,0 +1,86 @@
+{
+    "id": "travel_1",
+    "name": "Travel",
+    "description": "Useful phrases for travel and transportation",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "ex_15",
+            "type": "translationExercise",
+            "question": "Where is the train station?",
+            "options": [],
+            "correctAnswer": "Où est la gare?"
+        },
+        {
+            "id": "ex_16",
+            "type": "multipleChoice",
+            "question": "Which French word means 'ticket'?",
+            "options": ["billet", "voiture", "porte", "heure"],
+            "correctAnswer": "billet"
+        },
+        {
+            "id": "ex_17",
+            "type": "fillInBlank",
+            "question": "Je voudrais un ___ pour Paris.",
+            "options": ["billet", "bagage", "plat", "siège"],
+            "correctAnswer": "billet"
+        },
+        {
+            "id": "ex_18",
+            "type": "translateThis",
+            "question": "I'm lost",
+            "options": [],
+            "correctAnswer": "Je suis perdu"
+        },
+        {
+            "id": "ex_19",
+            "type": "multipleChoice",
+            "question": "How do you say 'Do you speak English?' in French?",
+            "options": ["Parlez-vous anglais?", "Vous êtes anglais?", "Parle-tu anglais?", "Je parle anglais?"],
+            "correctAnswer": "Parlez-vous anglais?"
+        },
+        {
+            "id": "ex_t_m1",
+            "type": "matchPairs",
+            "question": "Match the French travel words to their English meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "gare",       "native": "train station"},
+                    {"target": "aéroport",   "native": "airport"},
+                    {"target": "billet",     "native": "ticket"},
+                    {"target": "hôtel",      "native": "hotel"}
+                ]
+            }
+        },
+        {
+            "id": "ex_t_6",
+            "type": "multipleChoice",
+            "question": "How do you ask 'How much does this cost?' in French?",
+            "options": ["Combien ça coûte?", "Où est-ce?", "Qu'est-ce que c'est?", "C'est loin?"],
+            "correctAnswer": "Combien ça coûte?"
+        },
+        {
+            "id": "ex_t_7",
+            "type": "fillInBlank",
+            "question": "Je ___ à l'hôtel ce soir.",
+            "options": ["dors", "dorme", "dormez", "dormons"],
+            "correctAnswer": "dors"
+        },
+        {
+            "id": "ex_t_8",
+            "type": "translateThis",
+            "question": "Can you help me?",
+            "options": [],
+            "correctAnswer": "Pouvez-vous m'aider?"
+        },
+        {
+            "id": "ex_t_9",
+            "type": "translationExercise",
+            "question": "I would like a room for two nights.",
+            "options": [],
+            "correctAnswer": "Je voudrais une chambre pour deux nuits."
+        }
+    ]
+}

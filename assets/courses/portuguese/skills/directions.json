@@ -1,0 +1,52 @@
+{
+    "id": "directions",
+    "name": "Direcções",
+    "description": "Aprende a pedir e dar direcções",
+    "level": 9,
+    "exercises": [
+        {
+            "id": "ex_dir_1",
+            "type": "multipleChoice",
+            "question": "Como se pergunta 'Onde fica o banco?'",
+            "options": ["Onde fica o banco?", "O que é o banco?", "Como é o banco?", "Qual é o banco?"],
+            "correctAnswer": "Onde fica o banco?"
+        },
+        {
+            "id": "ex_dir_2",
+            "type": "matchPairs",
+            "question": "Associe as palavras de direcção",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "À direita", "native": "To the right"},
+                    {"target": "À esquerda", "native": "To the left"},
+                    {"target": "Siga em frente", "native": "Straight ahead"},
+                    {"target": "Na esquina", "native": "On the corner"},
+                    {"target": "Ao lado de", "native": "Next to"}
+                ]
+            }
+        },
+        {
+            "id": "ex_dir_3",
+            "type": "translateThis",
+            "question": "Vire à direita",
+            "options": [],
+            "correctAnswer": "Turn right"
+        },
+        {
+            "id": "ex_dir_4",
+            "type": "fillInBlank",
+            "question": "O museu fica ___ do parque",
+            "options": ["perto", "longe", "dentro", "fora"],
+            "correctAnswer": "perto"
+        },
+        {
+            "id": "ex_dir_5",
+            "type": "speakThis",
+            "question": "Siga em frente e depois vire à esquerda",
+            "options": [],
+            "correctAnswer": "Siga em frente e depois vire à esquerda"
+        }
+    ]
+}

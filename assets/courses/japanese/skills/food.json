@@ -1,0 +1,44 @@
+{
+  "id": "food",
+  "name": "Food",
+  "description": "Common food and drink words",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_f1",
+      "type": "translateThis",
+      "question": "ごはん",
+      "options": [],
+      "correctAnswer": "Rice",
+      "acceptableAnswers": ["Rice", "rice"],
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_f2",
+      "type": "multipleChoice",
+      "question": "How do you say 'bread' in Japanese?",
+      "options": ["ごはん", "パン", "さかな", "みず"],
+      "correctAnswer": "パン",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_f3",
+      "type": "matchPairs",
+      "question": "Match food words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "ごはん", "native": "Rice"},
+          {"target": "みず", "native": "Water"},
+          {"target": "さかな", "native": "Fish"},
+          {"target": "パン", "native": "Bread"}
+        ]
+      }
+    }
+  ]
+}

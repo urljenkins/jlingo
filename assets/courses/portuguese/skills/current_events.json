@@ -1,0 +1,61 @@
+{
+    "id": "current_events",
+    "name": "Actualidade",
+    "description": "Aprende vocabulário para falar sobre notícias e sociedade",
+    "level": 25,
+    "exercises": [
+        {
+            "id": "ex_ce_1",
+            "type": "matchPairs",
+            "question": "Associe o vocabulário das notícias",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "As notícias", "native": "The news"},
+                    {"target": "O jornalista", "native": "The journalist"},
+                    {"target": "O jornal", "native": "The newspaper"},
+                    {"target": "A entrevista", "native": "The interview"},
+                    {"target": "A manchete", "native": "The headline"}
+                ]
+            }
+        },
+        {
+            "id": "ex_ce_2",
+            "type": "translateThis",
+            "question": "Viu as últimas notícias?",
+            "options": [],
+            "correctAnswer": "Have you seen the latest news?"
+        },
+        {
+            "id": "ex_ce_3",
+            "type": "matchPairs",
+            "question": "Associe os tópicos sociais",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "O meio ambiente", "native": "The environment"},
+                    {"target": "As alterações climáticas", "native": "Climate change"},
+                    {"target": "A economia", "native": "The economy"},
+                    {"target": "A política", "native": "Politics"},
+                    {"target": "Os direitos humanos", "native": "Human rights"}
+                ]
+            }
+        },
+        {
+            "id": "ex_ce_4",
+            "type": "fillInBlank",
+            "question": "O governo anunciou novas ___ económicas",
+            "options": ["medidas", "jornais", "notícias", "entrevistas"],
+            "correctAnswer": "medidas"
+        },
+        {
+            "id": "ex_ce_5",
+            "type": "speakThis",
+            "question": "É importante estar informado sobre o que acontece no mundo",
+            "options": [],
+            "correctAnswer": "É importante estar informado sobre o que acontece no mundo"
+        }
+    ]
+}

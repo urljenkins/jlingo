@@ -1,0 +1,58 @@
+{
+  "id": "basics_2",
+  "name": "Basics 2",
+  "description": "Learn basic phrases and common words",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_9",
+      "type": "translateThis",
+      "question": "Hoe gaat het?",
+      "options": [],
+      "correctAnswer": "How are you?"
+    },
+    {
+      "id": "ex_10",
+      "type": "multipleChoice",
+      "question": "What does 'Ik' mean?",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "I"
+    },
+    {
+      "id": "ex_11",
+      "type": "fillInBlank",
+      "question": "Ik ___ Jan",
+      "options": ["heet", "ben", "heb", "ga"],
+      "correctAnswer": "heet"
+    },
+    {
+      "id": "ex_12",
+      "type": "translateThis",
+      "question": "Leuk je te ontmoeten",
+      "options": [],
+      "correctAnswer": "Nice to meet you"
+    },
+    {
+      "id": "ex_13",
+      "type": "multipleChoice",
+      "question": "How do you say 'I am' in Dutch?",
+      "options": ["Ik ben", "Jij bent", "Hij is", "Wij zijn"],
+      "correctAnswer": "Ik ben"
+    },
+    {
+      "id": "ex_14",
+      "type": "matchPairs",
+      "question": "Match the pronouns",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "Ik", "native": "I"},
+          {"target": "Jij", "native": "You"},
+          {"target": "Hij", "native": "He"},
+          {"target": "Zij", "native": "She"}
+        ]
+      }
+    }
+  ]
+}

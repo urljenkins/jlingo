@@ -1,0 +1,58 @@
+{
+  "id": "basics_2",
+  "name": "Basics 2",
+  "description": "Learn basic phrases and common words",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_9",
+      "type": "translateThis",
+      "question": "你好吗？",
+      "options": [],
+      "correctAnswer": "How are you?"
+    },
+    {
+      "id": "ex_10",
+      "type": "multipleChoice",
+      "question": "What does '我' mean?",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "I"
+    },
+    {
+      "id": "ex_11",
+      "type": "fillInBlank",
+      "question": "我___李明",
+      "options": ["叫", "是", "有", "好"],
+      "correctAnswer": "叫"
+    },
+    {
+      "id": "ex_12",
+      "type": "translateThis",
+      "question": "很高兴认识你",
+      "options": [],
+      "correctAnswer": "Nice to meet you"
+    },
+    {
+      "id": "ex_13",
+      "type": "multipleChoice",
+      "question": "How do you say 'I am' in Chinese?",
+      "options": ["我是", "你是", "他是", "我们是"],
+      "correctAnswer": "我是"
+    },
+    {
+      "id": "ex_14",
+      "type": "matchPairs",
+      "question": "Match the pronouns",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "我", "native": "I"},
+          {"target": "你", "native": "You"},
+          {"target": "他", "native": "He"},
+          {"target": "她", "native": "She"}
+        ]
+      }
+    }
+  ]
+}

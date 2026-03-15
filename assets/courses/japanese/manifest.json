@@ -1,0 +1,14 @@
+{
+  "id": "japanese_en",
+  "name": "Japanese for English Speakers",
+  "targetLanguage": "ja-JP",
+  "nativeLanguage": "en-US",
+  "skills": [
+    { "id": "basics_1", "path": "skills/basics_1.json" },
+    { "id": "basics_2", "path": "skills/basics_2.json" },
+    { "id": "numbers", "path": "skills/numbers.json" },
+    { "id": "colors", "path": "skills/colors.json" },
+    { "id": "food", "path": "skills/food.json" },
+    { "id": "family_1", "path": "skills/family_1.json" }
+  ]
+}

@@ -1,0 +1,5 @@
+Audio check summary
+===================
+Modified skill JSON files: 1
+portuguese: 3 missing files -> /Users/daniel.jatto/Source/mine/jlingo/assets/courses/portuguese/audio/missing_audio_list.txt
+spanish: 1 missing files -> /Users/daniel.jatto/Source/mine/jlingo/assets/courses/spanish/audio/missing_audio_list.txt
