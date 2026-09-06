@@ -68,7 +68,12 @@ class ExerciseRendererRegistry {
         child: Text('No renderer registered for ${exercise.type}'),
       );
     }
-    return renderer(exercise: exercise, onAnswer: onAnswer);
+    // Key by exercise id so advancing to a new exercise of the same type
+    // builds a fresh State instead of reusing the previous one's answer state.
+    return KeyedSubtree(
+      key: ValueKey(exercise.id),
+      child: renderer(exercise: exercise, onAnswer: onAnswer),
+    );
   }
 
   static void register(ExerciseType type, ExerciseRenderer renderer) {
