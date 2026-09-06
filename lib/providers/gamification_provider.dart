@@ -304,8 +304,9 @@ class GamificationProvider extends ChangeNotifier {
   }) {
     final courseSkillLevels = skills.map((s) => s.level).toList();
 
-    // Group skills by level
-    final Map<int, List<SkillNode>> groupedSkills = {};
+    // Group by CEFR tier rather than raw level: levels run 1-27, so grouping
+    // by number would produce a couple of dozen paths with repeated names.
+    final Map<LanguageLevel, List<SkillNode>> groupedSkills = {};
 
     for (var i = 0; i < skills.length; i++) {
       final skill = skills[i];
@@ -327,44 +328,29 @@ class GamificationProvider extends ChangeNotifier {
         prerequisites: i > 0 ? [skills[i - 1].id] : [],
       );
 
-      groupedSkills.putIfAbsent(skill.level, () => []).add(node);
+      groupedSkills
+          .putIfAbsent(CefrLevel.tierForSkillLevel(skill.level), () => [])
+          .add(node);
     }
 
-    // Create progression paths for each level
-    _progressionPaths = groupedSkills.entries.map((entry) {
-      final levelSkills = entry.value;
+    // Create a progression path per tier, in CEFR order.
+    _progressionPaths =
+        CefrLevel.ordered.where(groupedSkills.containsKey).map((tier) {
+      final levelSkills = groupedSkills[tier]!;
       final completedCount = levelSkills.where((s) => s.isCompleted).length;
       final totalProgress =
           levelSkills.isEmpty ? 0.0 : completedCount / levelSkills.length;
 
       return ProgressionPath(
-        pathId: 'level_${entry.key}',
-        name: _getLevelTitle(entry.key),
+        pathId: 'tier_${tier.name}',
+        name: '${CefrLevel.nameFor(tier)} · ${CefrLevel.codeFor(tier)}',
         skills: levelSkills,
         totalProgress: totalProgress,
       );
-    }).toList()
-      ..sort((a, b) => int.parse(a.pathId.split('_')[1])
-          .compareTo(int.parse(b.pathId.split('_')[1])));
+    }).toList();
+    // Already in CEFR order — built by walking CefrLevel.ordered.
 
     notifyListeners();
-  }
-
-  String _getLevelTitle(int level) {
-    switch (level) {
-      case 1:
-        return 'Fundamentals';
-      case 2:
-        return 'Building Blocks';
-      case 3:
-        return 'Expanding Horizons';
-      case 4:
-        return 'Advanced Topics';
-      case 5:
-        return 'Mastery';
-      default:
-        return 'Level $level';
-    }
   }
 
   /// Set daily XP goal

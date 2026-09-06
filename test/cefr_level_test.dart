@@ -7,6 +7,7 @@ import 'package:lingua_sprint/models/cefr_level.dart';
 import 'package:lingua_sprint/models/course_manifest.dart';
 import 'package:lingua_sprint/models/user_profile.dart';
 import 'package:lingua_sprint/providers/course_provider.dart';
+import 'package:lingua_sprint/providers/gamification_provider.dart';
 import 'package:lingua_sprint/providers/onboarding_provider.dart';
 
 /// Covers the promise the level picker makes: choosing a level opens material
@@ -378,6 +379,103 @@ void main() {
     test('an empty course reports nothing available', () {
       expect(
           CefrLevel.hasContentFor(LanguageLevel.beginner, const []), isFalse);
+    });
+  });
+
+  group('level headings', () {
+    test('every authored level gets a real name, not a bare number', () {
+      // Levels run 1-27; the previous per-level switch named only 1-6 and
+      // rendered the other 21 as "Level 17".
+      for (var level = 1; level <= 27; level++) {
+        final heading = CefrLevel.headingForSkillLevel(level);
+        expect(heading, isNot(contains('Level $level')));
+        expect(heading, isNotEmpty);
+      }
+    });
+
+    test('headings follow the tier boundaries', () {
+      expect(CefrLevel.headingForSkillLevel(1), contains('A1'));
+      expect(CefrLevel.headingForSkillLevel(7), contains('A2'));
+      expect(CefrLevel.headingForSkillLevel(8), contains('B1'));
+      expect(CefrLevel.headingForSkillLevel(14), contains('B2'));
+      expect(CefrLevel.headingForSkillLevel(26), contains('C1'));
+      expect(CefrLevel.headingForSkillLevel(27), contains('C2'));
+    });
+
+    test('a level maps back to the tier that owns it', () {
+      for (final tier in CefrLevel.ordered) {
+        expect(
+          CefrLevel.tierForSkillLevel(CefrLevel.startLevelFor(tier)),
+          tier,
+          reason: 'a tier start should resolve to that tier',
+        );
+      }
+    });
+
+    test('levels below the first tier still resolve', () {
+      expect(CefrLevel.tierForSkillLevel(0), LanguageLevel.beginner);
+    });
+
+    test('every real course level produces a heading', () {
+      for (final course in ['spanish', 'japanese', 'french']) {
+        for (final skill in _manifestFor(course).skills) {
+          expect(CefrLevel.headingForSkillLevel(skill.level), isNotEmpty);
+        }
+      }
+    });
+  });
+
+  group('progression paths', () {
+    test('one path per tier, in CEFR order, with no repeated names', () {
+      final provider = GamificationProvider();
+      final skills = _manifestFor('spanish').skills;
+
+      provider.updateProgressionPaths(skills, const {}, const {});
+      final paths = provider.progressionPaths;
+
+      // Spanish spans every tier; 27 raw levels must collapse to 6 paths.
+      expect(paths.length, CefrLevel.ordered.length);
+
+      final names = paths.map((p) => p.name).toList();
+      expect(names.toSet().length, names.length,
+          reason: 'tier headings must not repeat');
+
+      // Order follows the CEFR ladder.
+      expect(
+        names,
+        CefrLevel.ordered
+            .map((t) => '${CefrLevel.nameFor(t)} · ${CefrLevel.codeFor(t)}')
+            .toList(),
+      );
+    });
+
+    test('building paths does not throw on a sparse course', () {
+      // The previous ordering parsed an int out of pathId; a non-numeric id
+      // would have thrown on every call.
+      final provider = GamificationProvider();
+      expect(
+        () => provider.updateProgressionPaths(
+            _manifestFor('japanese').skills, const {}, const {}),
+        returnsNormally,
+      );
+      expect(provider.progressionPaths, isNotEmpty);
+    });
+  });
+
+  group('manifest section parsing', () {
+    test('the section field is read rather than dropped', () {
+      final spanish = _manifestFor('spanish');
+      expect(
+        spanish.skills.any((s) => s.section == 'mastery'),
+        isTrue,
+        reason: 'spanish declares a mastery section',
+      );
+    });
+
+    test('a manifest without sections still parses', () {
+      final japanese = _manifestFor('japanese');
+      expect(japanese.skills, isNotEmpty);
+      expect(japanese.skills.every((s) => s.section == null), isTrue);
     });
   });
 

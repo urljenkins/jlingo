@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../models/cefr_level.dart';
+import '../models/user_profile.dart';
 import '../models/course_manifest.dart';
 import '../models/exercise.dart';
 import '../models/gamification.dart';
@@ -439,11 +440,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
     final courseSkillLevels = manifest.skills.map((s) => s.level).toList();
 
-    final Map<int, List<SkillHeader>> groupedSkills = {};
+    // Group by CEFR tier rather than by raw level: levels run 1-27, so
+    // grouping by number would repeat "UPPER INTERMEDIATE · B2" a dozen times
+    // down the list. Skills keep their manifest order within a tier.
+    final Map<LanguageLevel, List<SkillHeader>> groupedSkills = {};
     for (final skill in manifest.skills) {
-      groupedSkills.putIfAbsent(skill.level, () => []).add(skill);
+      groupedSkills
+          .putIfAbsent(CefrLevel.tierForSkillLevel(skill.level), () => [])
+          .add(skill);
     }
-    final sortedLevels = groupedSkills.keys.toList()..sort();
+    final sortedTiers = CefrLevel.ordered
+        .where(groupedSkills.containsKey)
+        .toList(growable: false);
 
     return ListView.builder(
       padding: const EdgeInsets.fromLTRB(
@@ -452,10 +460,10 @@ class _HomeScreenState extends State<HomeScreen> {
         AppSpacing.screenInset,
         AppSpacing.xxl,
       ),
-      itemCount: sortedLevels.length,
+      itemCount: sortedTiers.length,
       itemBuilder: (context, index) {
-        final level = sortedLevels[index];
-        final levelSkills = groupedSkills[level]!;
+        final tier = sortedTiers[index];
+        final levelSkills = groupedSkills[tier]!;
 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -464,7 +472,8 @@ class _HomeScreenState extends State<HomeScreen> {
             Padding(
               padding: const EdgeInsets.only(bottom: AppSpacing.md),
               child: Text(
-                _getLevelTitle(level).toUpperCase(),
+                '${CefrLevel.nameFor(tier)} · ${CefrLevel.codeFor(tier)}'
+                    .toUpperCase(),
                 style: AppTypography.sectionLabel,
               ),
             ),
@@ -495,29 +504,6 @@ class _HomeScreenState extends State<HomeScreen> {
         );
       },
     );
-  }
-
-  String _getLevelTitle(int level) {
-    switch (level) {
-      case 1:
-        return 'Foundational Building Blocks';
-      case 2:
-        return 'Intermediate Communication';
-      case 3:
-        return 'Numbers & Counting';
-      case 4:
-        return 'Food & Drink';
-      case 5:
-        return 'Daily Routine';
-      case 6:
-        return 'Getting Around';
-      case 26:
-        return 'C1 Mastery Capstone';
-      case 27:
-        return 'C2 Rhetoric & Literature';
-      default:
-        return 'Level $level';
-    }
   }
 
   // ---------------------------------------------------------------------

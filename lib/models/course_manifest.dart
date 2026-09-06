@@ -8,10 +8,17 @@ class SkillHeader {
   final String name;
   final int level;
 
+  /// Authoring group from the manifest ('foundational', 'intermediate',
+  /// 'advanced', 'mastery'). Absent in some courses, and not consistent
+  /// enough across them to drive UI headings — those come from the CEFR
+  /// tier instead. Parsed so the data is not silently dropped.
+  final String? section;
+
   SkillHeader({
     required this.id,
     required this.name,
     required this.level,
+    this.section,
   });
 
   factory SkillHeader.fromJson(Map<String, dynamic> json) =>

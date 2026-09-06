@@ -138,6 +138,29 @@ class CefrLevel {
     return courseSkillLevels.any((l) => l >= start);
   }
 
+  /// The tier a numeric skill level belongs to.
+  ///
+  /// The inverse of [startLevelFor]: the highest tier whose start is at or
+  /// below [skillLevel].
+  static LanguageLevel tierForSkillLevel(int skillLevel) {
+    var result = ordered.first;
+    for (final level in ordered) {
+      if (startLevelFor(level) <= skillLevel) result = level;
+    }
+    return result;
+  }
+
+  /// Heading for a group of skills at [skillLevel].
+  ///
+  /// Titles come from the CEFR tier rather than the raw number, because the
+  /// numbers run 1-27 and naming each one individually left most of them
+  /// rendering as a bare "Level 17". A tier name plus its code says where the
+  /// learner is in terms they already understand.
+  static String headingForSkillLevel(int skillLevel) {
+    final tier = tierForSkillLevel(skillLevel);
+    return '${nameFor(tier)} · ${codeFor(tier)}';
+  }
+
   /// Tiers in order, for pickers.
   static const List<LanguageLevel> ordered = [
     LanguageLevel.beginner,
