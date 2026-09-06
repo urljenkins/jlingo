@@ -377,8 +377,12 @@ class _LessonScreenState extends State<LessonScreen> {
           backgroundColor: Colors.transparent,
           elevation: 0,
         ),
-        body: const Center(
-          child: Text('No exercises available for this filter'),
+        body: Center(
+          child: Text(
+            widget.filterType != null
+                ? 'No exercises of this type in this skill'
+                : 'This skill has no exercises yet',
+          ),
         ),
       );
     }

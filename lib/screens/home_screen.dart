@@ -3,11 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
+import '../models/cefr_level.dart';
 import '../models/course_manifest.dart';
+import '../models/exercise.dart';
 import '../models/gamification.dart';
 import '../providers/course_provider.dart';
 import '../providers/flashcard_provider.dart';
 import '../providers/gamification_provider.dart';
+import '../providers/onboarding_provider.dart';
 import '../providers/progress_provider.dart';
 import '../providers/settings_provider.dart';
 import '../providers/vocabulary_provider.dart';
@@ -32,23 +35,43 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   bool _isLoading = false;
 
+  /// Restricts a lesson to a single exercise type. Null means "All".
+  ExerciseType? _selectedFilter;
+
   Future<void> _startLesson(String skillId) async {
     setState(() => _isLoading = true);
     final skill = await context.read<CourseProvider>().loadSkill(skillId);
     if (!mounted) return;
     setState(() => _isLoading = false);
 
-    if (skill != null) {
-      unawaited(Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (context) => LessonScreen(skill: skill),
-        ),
-      ));
-    } else {
+    if (skill == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Error loading lesson content')),
       );
+      return;
     }
+
+    // The skill list is built from manifest headers, which carry no exercise
+    // types, so a filter can only be checked once the skill itself is loaded.
+    // Catching it here keeps the lesson screen off the stack entirely rather
+    // than opening it on an empty state the user has to back out of.
+    final filter = _selectedFilter;
+    if (filter != null && !skill.exercises.any((e) => e.type == filter)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'No ${_formatExerciseType(filter)} exercises in ${skill.name}',
+          ),
+        ),
+      );
+      return;
+    }
+
+    unawaited(Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (context) => LessonScreen(skill: skill, filterType: filter),
+      ),
+    ));
   }
 
   @override
@@ -86,6 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
             else
               _buildWordOfDayCard(),
             _buildContinueButton(manifest, currentSkillIndex),
+            _buildFilterBar(),
             Expanded(child: _buildSkillList(manifest, progressProvider)),
           ],
         );
@@ -118,6 +142,78 @@ class _HomeScreenState extends State<HomeScreen> {
   // Pushed, not replaced: replacing would tear down the shell and take the
   // navigation with it.
   void _navigateToLanguageSelection() => _push(const LanguageSelectionScreen());
+
+  // ---------------------------------------------------------------------
+  // Exercise type filter
+  // ---------------------------------------------------------------------
+
+  /// Horizontal chip row restricting lessons to one exercise type.
+  Widget _buildFilterBar() {
+    return SizedBox(
+      height: 32 + AppSpacing.md,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.md,
+          vertical: AppSpacing.sm,
+        ),
+        itemCount: ExerciseType.values.length + 1,
+        separatorBuilder: (_, __) => const SizedBox(width: AppSpacing.sm),
+        itemBuilder: (context, index) {
+          if (index == 0) {
+            return _FilterChip(
+              label: 'All',
+              selected: _selectedFilter == null,
+              onTap: () => setState(() => _selectedFilter = null),
+            );
+          }
+          final type = ExerciseType.values[index - 1];
+          return _FilterChip(
+            label: _formatExerciseType(type),
+            selected: _selectedFilter == type,
+            // Tapping the active chip clears it, so the row never traps the
+            // user in a filtered state.
+            onTap: () => setState(
+              () => _selectedFilter = _selectedFilter == type ? null : type,
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  String _formatExerciseType(ExerciseType type) {
+    switch (type) {
+      case ExerciseType.translateThis:
+        return 'Translate';
+      case ExerciseType.matchPairs:
+        return 'Match';
+      case ExerciseType.multipleChoice:
+        return 'Multiple Choice';
+      case ExerciseType.listeningComprehension:
+        return 'Listening';
+      case ExerciseType.speakThis:
+        return 'Speaking';
+      case ExerciseType.fillInBlank:
+        return 'Fill Blank';
+      case ExerciseType.nativeAudio:
+        return 'Native Audio';
+      case ExerciseType.pronunciationPractice:
+        return 'Pronunciation';
+      case ExerciseType.dialogueListening:
+        return 'Dialogue';
+      case ExerciseType.songFill:
+        return 'Song Fill';
+      case ExerciseType.interactiveDialogue:
+        return 'Interactive';
+      case ExerciseType.storyLesson:
+        return 'Story';
+      case ExerciseType.translationExercise:
+        return 'Translation';
+      case ExerciseType.clozeTest:
+        return 'Cloze Test';
+    }
+  }
 
   // ---------------------------------------------------------------------
   // Top bar
@@ -329,11 +425,19 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildSkillList(
       CourseManifest manifest, ProgressProvider progressProvider) {
     final completed = progressProvider.progress?.completedSkills ?? const {};
-    final currentIndex =
-        context.read<CourseProvider>().getCurrentSkillIndex(completed);
+    final language = context.watch<CourseProvider>().currentLanguageCode;
+    final entryLevel =
+        context.watch<OnboardingProvider>().profile.levelFor(language);
+    final currentIndex = context.read<CourseProvider>().getCurrentSkillIndex(
+          completed,
+          entryLevel: entryLevel,
+          manifest: manifest,
+        );
     final currentSkillId = currentIndex < manifest.skills.length
         ? manifest.skills[currentIndex].id
         : null;
+
+    final courseSkillLevels = manifest.skills.map((s) => s.level).toList();
 
     final Map<int, List<SkillHeader>> groupedSkills = {};
     for (final skill in manifest.skills) {
@@ -365,20 +469,26 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ...levelSkills.map((skill) {
-              // A skill opens once the one before it in the course has been
-              // finished; the first is always available.
+              // A skill opens if it sits at or below the learner's chosen
+              // entry level, or once the one before it has been finished.
               final position = manifest.skills.indexOf(skill);
-              final isUnlocked = position == 0 ||
-                  completed.contains(manifest.skills[position - 1].id);
+              final unlocked = isSkillUnlocked(
+                skillLevel: skill.level,
+                position: position,
+                previousCompleted: position > 0 &&
+                    completed.contains(manifest.skills[position - 1].id),
+                entryLevel: entryLevel,
+                courseSkillLevels: courseSkillLevels,
+              );
 
               return _SkillRow(
                 name: skill.name,
                 isCompleted: completed.contains(skill.id),
                 isCurrent: skill.id == currentSkillId,
-                isUnlocked: isUnlocked,
+                isUnlocked: unlocked,
                 previousSkillName:
                     position > 0 ? manifest.skills[position - 1].name : null,
-                onTap: isUnlocked ? () => _startLesson(skill.id) : null,
+                onTap: unlocked ? () => _startLesson(skill.id) : null,
               );
             }),
           ],
@@ -401,6 +511,10 @@ class _HomeScreenState extends State<HomeScreen> {
         return 'Daily Routine';
       case 6:
         return 'Getting Around';
+      case 26:
+        return 'C1 Mastery Capstone';
+      case 27:
+        return 'C2 Rhetoric & Literature';
       default:
         return 'Level $level';
     }
@@ -458,6 +572,49 @@ class _Chip extends StatelessWidget {
       ),
       clipBehavior: Clip.antiAlias,
       child: onTap == null ? content : InkWell(onTap: onTap, child: content),
+    );
+  }
+}
+
+/// Selectable chip used by the exercise type filter row.
+class _FilterChip extends StatelessWidget {
+  const _FilterChip({
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: selected ? AppColors.accent : AppColors.surface,
+      shape: StadiumBorder(
+        side: BorderSide(
+          color: selected ? AppColors.accent : AppColors.border,
+        ),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.md,
+            vertical: AppSpacing.xs,
+          ),
+          child: Center(
+            child: Text(
+              label,
+              style: AppTypography.label.copyWith(
+                color: selected ? AppColors.onAccent : AppColors.textSecondary,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
