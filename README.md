@@ -20,15 +20,30 @@ A hyper-efficient language learning app for busy individuals focused on rapid, e
 ## Available Languages
 
 Currently, Lingua Sprint supports the following languages:
-- 🇪🇸 Spanish
-- 🇫🇷 French
-- 🇩🇪 German
-- 🇳🇱 Dutch
-- 🇵🇹 Portuguese
-- 🇯🇵 Japanese
-- 🇨🇳 Chinese
 
-Each language course includes basic greetings, common phrases, and numbers with multiple exercise types.
+| Course | Skills | Levels |
+|---|---|---|
+| 🇪🇸 Spanish | 69 | A1–C2 |
+| 🇲🇽 Spanish (Latin America) | 69 | A1–C2 |
+| 🇳🇱 Dutch | 69 | A1–C2 |
+| 🇨🇳 Chinese | 69 | A1–C2 |
+| 🇵🇹 Portuguese | 25 | A1–C2 |
+| 🇯🇵 Japanese | 14 | A1–C2 |
+| 🇫🇷 French | 11 | A1–C2 |
+
+Courses cover greetings, common phrases and numbers through to grammar,
+listening, and C-level rhetoric and literature, using the exercise types
+listed above.
+
+Every course reaches C2, but the density between A1 and C2 varies a great
+deal — Japanese and French have few mid-tier skills, so a learner entering
+at B1 or B2 there is placed at the nearest content below their level rather
+than skipped ahead. `assets/courses/portuguese/planned_skills.json` tracks
+skills that are outlined but not yet authored.
+
+Learners pick a CEFR level when they start, or change it any time in
+settings. The level decides where the course opens; everything below it
+stays unlocked, so earlier lessons are always available.
 
 ## Philosophy
 

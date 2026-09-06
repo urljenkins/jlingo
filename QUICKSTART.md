@@ -44,8 +44,8 @@ When Lingua Sprint launches correctly, you'll see:
    - "Select Language" title at top
    - List of 7 languages with flags:
      - 🇪🇸 Spanish
+     - 🇲🇽 Spanish (Latin America)
      - 🇫🇷 French
-     - 🇩🇪 German
      - 🇳🇱 Dutch
      - 🇵🇹 Portuguese
      - 🇯🇵 Japanese
@@ -90,7 +90,7 @@ flutter run --release
 
 # Or build release app
 flutter build macos --release
-# App will be at: build/macos/Build/Products/Release/lingua_sprint.app
+# App will be at: build/macos/Build/Products/Release/Lingua Sprint.app
 ```
 
 ## Verify Installation

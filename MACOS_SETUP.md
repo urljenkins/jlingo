@@ -1,73 +1,64 @@
-# Lingua Sprint - macOS Setup Fix
+# Lingua Sprint — macOS Notes
 
-## Problem
-The project is missing platform-specific files for macOS and web.
+The `macos/`, `web/` and `ios/` directories already exist and are configured.
 
-## Solution
+> **Do not run `flutter create .` on this project.**
+> It regenerates the platform wrappers and would overwrite the macOS
+> deployment target, bundle identifier, product name and sandbox
+> entitlements documented below.
 
-Run this command in your project directory:
+## Requirements
 
-```bash
-cd /path/to/jlingo
-flutter create . --platforms=macos,web
+macOS **11.0 or later**. The `speech_to_text` plugin sets this floor; the
+Flutter template default of 10.15 makes `pod install` fail with:
+
+```
+Error: The plugin "speech_to_text" requires a higher minimum macOS
+deployment version than your application is targeting.
 ```
 
-**This is safe!** It will only add the missing `macos/` and `web/` directories without touching your existing code in `lib/`.
+This is already set in `macos/Podfile` (`platform :osx, '11.0'`) and in
+`MACOSX_DEPLOYMENT_TARGET` in the Xcode project.
 
-## Then Run the App
-
-After adding platform support:
-
-```bash
-# For macOS Desktop
-flutter run -d macos
-
-# Or for Chrome browser
-flutter run -d chrome
-```
-
-## Alternative: iOS Simulator
-
-If you have Xcode installed, you can also add iOS support:
+## Running
 
 ```bash
-flutter create . --platforms=ios
-open -a Simulator
-flutter run
-```
-
-## What This Does
-
-The `flutter create .` command:
-- ✅ Adds `macos/` directory with native macOS app wrapper
-- ✅ Adds `web/` directory with HTML/JS wrapper
-- ✅ Does NOT modify your `lib/` code (your app stays intact)
-- ✅ Does NOT modify `pubspec.yaml`, `assets/`, or any existing files
-
-## Full Setup Commands
-
-```bash
-# Navigate to project
-cd /path/to/jlingo
-
-# Add platform support
-flutter create . --platforms=macos,web,ios
-
-# Get dependencies
 flutter pub get
-
-# Generate model files
-flutter pub run build_runner build --delete-conflicting-outputs
-
-# Run on macOS
-flutter run -d macos --release
+dart run build_runner build --delete-conflicting-outputs
+flutter run -d macos
 ```
 
-## Expected Result
+## Building
 
-You should see the **Lingua Sprint** language selection screen with:
-- Dark background
-- "Select Language" title
-- 7 languages with flags (🇪🇸 🇫🇷 🇩🇪 🇳🇱 🇵🇹 🇯🇵 🇨🇳)
+```bash
+flutter build macos --release
+# App is at: build/macos/Build/Products/Release/Lingua Sprint.app
+```
 
-NOT Flutter's default demo app.
+## Platform configuration
+
+Already applied — listed so it is not lost in a future regeneration:
+
+| Setting | Value | Where |
+|---|---|---|
+| Product name | `Lingua Sprint` | `macos/Runner/Configs/AppInfo.xcconfig` |
+| Bundle id | `com.linguasprint.app` | `macos/Runner/Configs/AppInfo.xcconfig` |
+| Deployment target | `11.0` | `macos/Podfile`, Xcode project |
+| Microphone access | `NSMicrophoneUsageDescription` | `macos/Runner/Info.plist` |
+| Speech recognition | `NSSpeechRecognitionUsageDescription` | `macos/Runner/Info.plist` |
+| Audio input entitlement | `com.apple.security.device.audio-input` | both `.entitlements` files |
+
+The microphone strings and the audio-input entitlement are required for the
+speaking and pronunciation exercises. Without them macOS terminates the app
+when speech recognition starts.
+
+## Expected result
+
+The language selection screen — dark background, "Select Language", and the
+seven bundled courses:
+
+🇪🇸 Spanish · 🇲🇽 Spanish (Latin America) · 🇫🇷 French · 🇳🇱 Dutch ·
+🇵🇹 Portuguese · 🇯🇵 Japanese · 🇨🇳 Chinese
+
+If you see Flutter's default demo counter app instead, the build picked up a
+stale `lib/main.dart` — run `flutter clean` and rebuild.
