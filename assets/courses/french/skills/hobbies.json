@@ -1,0 +1,87 @@
+{
+  "id": "hobbies",
+  "name": "Loisirs & Passions",
+  "description": "Activités artistiques, manuelles et temps libre",
+  "level": 18,
+  "exercises": [
+    {
+      "id": "ex_fr_hobbies_1",
+      "type": "multipleChoice",
+      "question": "Which preposition is used with 'jouer' for instruments?",
+      "options": [
+        "De (jouer du piano)",
+        "À (jouer au piano)",
+        "Par (jouer par piano)",
+        "Pour (jouer pour piano)"
+      ],
+      "correctAnswer": "De (jouer du piano)",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_hobbies_2",
+      "type": "translateThis",
+      "question": "Pendant mon temps libre, j'aime peindre à l'aquarelle",
+      "options": [],
+      "correctAnswer": "During my free time, I like painting with watercolors",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "In my spare time, I like painting with watercolours",
+        "During my free time, I like painting with watercolors"
+      ]
+    },
+    {
+      "id": "ex_fr_hobbies_3",
+      "type": "fillInBlank",
+      "question": "Elle fait de la ___ deux fois par semaine.",
+      "options": [
+        "poterie",
+        "football",
+        "vélo",
+        "piano"
+      ],
+      "correctAnswer": "poterie",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_hobbies_4",
+      "type": "matchPairs",
+      "question": "Match pastimes",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le jardinage",
+            "native": "gardening"
+          },
+          {
+            "target": "la photographie",
+            "native": "photography"
+          },
+          {
+            "target": "la randonnée",
+            "native": "hiking"
+          },
+          {
+            "target": "la lecture",
+            "native": "reading"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_hobbies_5",
+      "type": "speakThis",
+      "question": "La pratique régulière d'une passion enrichit l'esprit",
+      "options": [],
+      "correctAnswer": "La pratique régulière d'une passion enrichit l'esprit",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

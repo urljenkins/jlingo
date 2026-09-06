@@ -1,0 +1,87 @@
+{
+  "id": "present_continuous",
+  "name": "Present Continuous (Te-iru)",
+  "description": "Express ongoing actions and continuous states using the 〜ている form",
+  "level": 12,
+  "exercises": [
+    {
+      "id": "ex_ja_present_continuous_1",
+      "type": "multipleChoice",
+      "question": "Which form indicates an ongoing action or resulting state?",
+      "options": [
+        "〜ています",
+        "〜てあります",
+        "〜ておきます",
+        "〜てみます"
+      ],
+      "correctAnswer": "〜ています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_present_continuous_2",
+      "type": "translateThis",
+      "question": "弟は部屋で本を読んでいます",
+      "options": [],
+      "correctAnswer": "My younger brother is reading a book in his room",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "My brother is reading a book in his room",
+        "My younger brother is reading a book in his room"
+      ]
+    },
+    {
+      "id": "ex_ja_present_continuous_3",
+      "type": "fillInBlank",
+      "question": "彼女は東京のIT企業で___います。",
+      "options": [
+        "働いて",
+        "働いてから",
+        "働く",
+        "働き"
+      ],
+      "correctAnswer": "働いて",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_present_continuous_4",
+      "type": "matchPairs",
+      "question": "Match state/action uses of 〜ている",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "結婚している",
+            "native": "is married (state)"
+          },
+          {
+            "target": "住んでいる",
+            "native": "lives in / residing"
+          },
+          {
+            "target": "食べている",
+            "native": "is eating (in progress)"
+          },
+          {
+            "target": "知っている",
+            "native": "knows (state)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_present_continuous_5",
+      "type": "speakThis",
+      "question": "今、日本語の文法を復習しています",
+      "options": [],
+      "correctAnswer": "今、日本語の文法を復習しています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

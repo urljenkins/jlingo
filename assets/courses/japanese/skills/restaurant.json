@@ -1,0 +1,87 @@
+{
+  "id": "restaurant",
+  "name": "At the Restaurant & Izakaya",
+  "description": "Order at Japanese izakayas, ramen shops, sushi bars, and restaurants",
+  "level": 11,
+  "exercises": [
+    {
+      "id": "ex_ja_restaurant_1",
+      "type": "multipleChoice",
+      "question": "What do Japanese people say before eating a meal?",
+      "options": [
+        "いただきます",
+        "ごちそうさまでした",
+        "いらっしゃいませ",
+        "お邪魔します"
+      ],
+      "correctAnswer": "いただきます",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_restaurant_2",
+      "type": "translateThis",
+      "question": "とりあえず生ビールを二つお願いします",
+      "options": [],
+      "correctAnswer": "For now, two draft beers please",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "To start with two draft beers please",
+        "For now, two draft beers please"
+      ]
+    },
+    {
+      "id": "ex_ja_restaurant_3",
+      "type": "fillInBlank",
+      "question": "食事が終わって、「ごちそう___でした」と言いました。",
+      "options": [
+        "さま",
+        "さん",
+        "です",
+        "ます"
+      ],
+      "correctAnswer": "さま",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_restaurant_4",
+      "type": "matchPairs",
+      "question": "Match dining terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "注文 (ちゅうもん)",
+            "native": "order"
+          },
+          {
+            "target": "お会計 (おかいけい)",
+            "native": "the bill"
+          },
+          {
+            "target": "おすすめ",
+            "native": "recommendation"
+          },
+          {
+            "target": "取り皿 (とりざら)",
+            "native": "sharing plates"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_restaurant_5",
+      "type": "speakThis",
+      "question": "すみません、お会計をお願いします",
+      "options": [],
+      "correctAnswer": "すみません、お会計をお願いします",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

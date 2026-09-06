@@ -1,0 +1,87 @@
+{
+  "id": "subjunctive",
+  "name": "Le Subjonctif",
+  "description": "Nécessité, doute, souhait et émotions avec le subjonctif",
+  "level": 22,
+  "exercises": [
+    {
+      "id": "ex_fr_subjunctive_1",
+      "type": "multipleChoice",
+      "question": "Which conjunction triggers the subjunctive mood?",
+      "options": [
+        "Pour que",
+        "Parce que",
+        "Pendant que",
+        "Depuis que"
+      ],
+      "correctAnswer": "Pour que",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_subjunctive_2",
+      "type": "translateThis",
+      "question": "Il est indispensable que tu viennes à l'heure demain",
+      "options": [],
+      "correctAnswer": "It is essential that you come on time tomorrow",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "It is indispensable that you arrive on time tomorrow",
+        "It is essential that you come on time tomorrow"
+      ]
+    },
+    {
+      "id": "ex_fr_subjunctive_3",
+      "type": "fillInBlank",
+      "question": "Bien qu'il ___ tard, nous poursuivons notre discussion.",
+      "options": [
+        "soit",
+        "est",
+        "sera",
+        "était"
+      ],
+      "correctAnswer": "soit",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_subjunctive_4",
+      "type": "matchPairs",
+      "question": "Match verbs in subjunctive mood with infinitives",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "que je fasse",
+            "native": "faire"
+          },
+          {
+            "target": "qu'il sache",
+            "native": "savoir"
+          },
+          {
+            "target": "que nous puissions",
+            "native": "pouvoir"
+          },
+          {
+            "target": "qu'ils veuillent",
+            "native": "vouloir"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_subjunctive_5",
+      "type": "speakThis",
+      "question": "J'aimerais tant qu'elle puisse nous accompagner",
+      "options": [],
+      "correctAnswer": "J'aimerais tant qu'elle puisse nous accompagner",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

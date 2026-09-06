@@ -1,0 +1,88 @@
+{
+  "id": "grammar_tener",
+  "name": "Grammar: Possession & Holding (Motsu)",
+  "description": "Express possession in Japanese using もっている (to have/hold) and がある (to possess)",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_ja_grammar_tener_1",
+      "type": "multipleChoice",
+      "question": "Which phrase expresses 'I have a car' using 持つ (motsu)?",
+      "options": [
+        "車を持っています",
+        "車を着ています",
+        "車を乗っています",
+        "車を行きます"
+      ],
+      "correctAnswer": "車を持っています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_grammar_tener_2",
+      "type": "translateThis",
+      "question": "私は時間に余裕がありません",
+      "options": [],
+      "correctAnswer": "I do not have spare time",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I don't have spare time",
+        "I have no time to spare",
+        "I do not have spare time"
+      ]
+    },
+    {
+      "id": "ex_ja_grammar_tener_3",
+      "type": "fillInBlank",
+      "question": "パスポートを___いますか？",
+      "options": [
+        "持って",
+        "連れて",
+        "取って",
+        "運んで"
+      ],
+      "correctAnswer": "持って",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_grammar_tener_4",
+      "type": "matchPairs",
+      "question": "Match possession expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "お金がある",
+            "native": "to have money"
+          },
+          {
+            "target": "時間がある",
+            "native": "to have time"
+          },
+          {
+            "target": "本を持っている",
+            "native": "to own a book"
+          },
+          {
+            "target": "自信がある",
+            "native": "to have confidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_grammar_tener_5",
+      "type": "speakThis",
+      "question": "有効なビザを持っています",
+      "options": [],
+      "correctAnswer": "有効なビザを持っています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

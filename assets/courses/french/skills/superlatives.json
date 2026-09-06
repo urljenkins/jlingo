@@ -1,0 +1,87 @@
+{
+  "id": "superlatives",
+  "name": "Le Superlatif",
+  "description": "Le plus, la moins, le meilleur, la pire",
+  "level": 15,
+  "exercises": [
+    {
+      "id": "ex_fr_superlatives_1",
+      "type": "multipleChoice",
+      "question": "What is the superlative for 'the best' in French?",
+      "options": [
+        "Le meilleur",
+        "Le plus bien",
+        "Le pire",
+        "Le plus bon"
+      ],
+      "correctAnswer": "Le meilleur",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_superlatives_2",
+      "type": "translateThis",
+      "question": "C'est le plus beau musée de la capitale",
+      "options": [],
+      "correctAnswer": "It is the most beautiful museum in the capital",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "This is the most beautiful museum of the capital",
+        "It is the most beautiful museum in the capital"
+      ]
+    },
+    {
+      "id": "ex_fr_superlatives_3",
+      "type": "fillInBlank",
+      "question": "C'est la ville la plus ___ de tout le pays.",
+      "options": [
+        "animée",
+        "animé",
+        "animés",
+        "animer"
+      ],
+      "correctAnswer": "animée",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_superlatives_4",
+      "type": "matchPairs",
+      "question": "Match superlatives",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le plus grand",
+            "native": "the biggest"
+          },
+          {
+            "target": "la plus belle",
+            "native": "the most beautiful (fem.)"
+          },
+          {
+            "target": "le pire",
+            "native": "the worst"
+          },
+          {
+            "target": "le moindre",
+            "native": "the slightest/least"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_superlatives_5",
+      "type": "speakThis",
+      "question": "C'est la décision la plus sage dans cette situation",
+      "options": [],
+      "correctAnswer": "C'est la décision la plus sage dans cette situation",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

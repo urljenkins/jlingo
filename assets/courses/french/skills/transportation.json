@@ -1,0 +1,87 @@
+{
+  "id": "transportation",
+  "name": "Les Transports",
+  "description": "Train, métro, bus, vélo et avion",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_fr_transportation_1",
+      "type": "multipleChoice",
+      "question": "What is the French word for 'high-speed train'?",
+      "options": [
+        "Le TGV",
+        "Le bus",
+        "Le tramway",
+        "Le métro"
+      ],
+      "correctAnswer": "Le TGV",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_transportation_2",
+      "type": "translateThis",
+      "question": "Le vol part du terminal deux",
+      "options": [],
+      "correctAnswer": "The flight departs from terminal two",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The flight leaves from terminal two",
+        "The flight departs from terminal two"
+      ]
+    },
+    {
+      "id": "ex_fr_transportation_3",
+      "type": "fillInBlank",
+      "question": "Je préfère me déplacer à ___ en ville.",
+      "options": [
+        "vélo",
+        "train",
+        "avion",
+        "bateau"
+      ],
+      "correctAnswer": "vélo",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_transportation_4",
+      "type": "matchPairs",
+      "question": "Match vehicles",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "la voiture",
+            "native": "the car"
+          },
+          {
+            "target": "le vélo",
+            "native": "the bicycle"
+          },
+          {
+            "target": "l'avion",
+            "native": "the airplane"
+          },
+          {
+            "target": "le train",
+            "native": "the train"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_transportation_5",
+      "type": "speakThis",
+      "question": "Attention à la fermeture des portes",
+      "options": [],
+      "correctAnswer": "Attention à la fermeture des portes",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

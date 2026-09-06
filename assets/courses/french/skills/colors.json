@@ -1,0 +1,86 @@
+{
+  "id": "colors",
+  "name": "Les Couleurs",
+  "description": "Vocabulaire des couleurs et accord des adjectifs de couleur",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "ex_fr_col_1",
+      "type": "multipleChoice",
+      "question": "What is 'blue' in French?",
+      "options": [
+        "Bleu",
+        "Rouge",
+        "Vert",
+        "Jaune"
+      ],
+      "correctAnswer": "Bleu",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_col_2",
+      "type": "translateThis",
+      "question": "Une voiture rouge",
+      "options": [],
+      "correctAnswer": "A red car",
+      "acceptableAnswers": [
+        "A red car"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_col_3",
+      "type": "fillInBlank",
+      "question": "Le ciel est ___ aujourd'hui.",
+      "options": [
+        "bleu",
+        "bleue",
+        "bleus",
+        "bleues"
+      ],
+      "correctAnswer": "bleu",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_col_4",
+      "type": "matchPairs",
+      "question": "Match colors",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "vert",
+            "native": "green"
+          },
+          {
+            "target": "jaune",
+            "native": "yellow"
+          },
+          {
+            "target": "noir",
+            "native": "black"
+          },
+          {
+            "target": "blanc",
+            "native": "white"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_col_5",
+      "type": "speakThis",
+      "question": "Les feuilles sont vertes en été",
+      "options": [],
+      "correctAnswer": "Les feuilles sont vertes en été",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

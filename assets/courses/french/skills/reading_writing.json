@@ -1,0 +1,87 @@
+{
+  "id": "reading_writing",
+  "name": "Lecture & Écriture",
+  "description": "Compréhension écrite de courts textes et dialogues",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_fr_rw_1",
+      "type": "translateThis",
+      "question": "J'écris une lettre à mes amis",
+      "options": [],
+      "correctAnswer": "I am writing a letter to my friends",
+      "acceptableAnswers": [
+        "I write a letter to my friends",
+        "I am writing a letter to my friends"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_rw_2",
+      "type": "multipleChoice",
+      "question": "Which verb means 'to read' in French?",
+      "options": [
+        "Lire",
+        "Écrire",
+        "Parler",
+        "Écouter"
+      ],
+      "correctAnswer": "Lire",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_rw_3",
+      "type": "fillInBlank",
+      "question": "Ce livre raconte une histoire très ___.",
+      "options": [
+        "passionnante",
+        "passionnant",
+        "passionnés",
+        "passionnément"
+      ],
+      "correctAnswer": "passionnante",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_rw_4",
+      "type": "matchPairs",
+      "question": "Match literary words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "roman",
+            "native": "novel"
+          },
+          {
+            "target": "journal",
+            "native": "newspaper"
+          },
+          {
+            "target": "stylo",
+            "native": "pen"
+          },
+          {
+            "target": "page",
+            "native": "page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_rw_5",
+      "type": "speakThis",
+      "question": "J'aime lire le journal chaque matin",
+      "options": [],
+      "correctAnswer": "J'aime lire le journal chaque matin",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

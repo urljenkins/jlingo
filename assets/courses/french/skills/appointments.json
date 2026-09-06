@@ -1,0 +1,87 @@
+{
+  "id": "appointments",
+  "name": "Rendez-vous",
+  "description": "Prendre, décaler ou confirmer un rendez-vous",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_fr_appointments_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'I would like to make an appointment' in French?",
+      "options": [
+        "Je voudrais prendre un rendez-vous",
+        "Je voudrais payer",
+        "Je dois partir",
+        "J'attends le docteur"
+      ],
+      "correctAnswer": "Je voudrais prendre un rendez-vous",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_appointments_2",
+      "type": "translateThis",
+      "question": "Est-il possible de reporter notre réunion à jeudi prochain ?",
+      "options": [],
+      "correctAnswer": "Is it possible to postpone our meeting to next Thursday?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Can we reschedule our meeting to next Thursday?",
+        "Is it possible to postpone our meeting to next Thursday?"
+      ]
+    },
+    {
+      "id": "ex_fr_appointments_3",
+      "type": "fillInBlank",
+      "question": "Je confirme notre entretien pour demain à dix ___.",
+      "options": [
+        "heures",
+        "jours",
+        "semaines",
+        "mois"
+      ],
+      "correctAnswer": "heures",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_appointments_4",
+      "type": "matchPairs",
+      "question": "Match scheduling terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "prendre rendez-vous",
+            "native": "to make an appointment"
+          },
+          {
+            "target": "décaler",
+            "native": "to reschedule/shift"
+          },
+          {
+            "target": "annuler",
+            "native": "to cancel"
+          },
+          {
+            "target": "confirmer",
+            "native": "to confirm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_appointments_5",
+      "type": "speakThis",
+      "question": "Je vous appelle pour confirmer notre entrevue",
+      "options": [],
+      "correctAnswer": "Je vous appelle pour confirmer notre entrevue",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

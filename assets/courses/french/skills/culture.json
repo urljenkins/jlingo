@@ -1,0 +1,87 @@
+{
+  "id": "culture",
+  "name": "Culture & Traditions",
+  "description": "Histoire, patrimoine et mode de vie français",
+  "level": 25,
+  "exercises": [
+    {
+      "id": "ex_fr_culture_1",
+      "type": "multipleChoice",
+      "question": "Which historical event is commemorated on the French national holiday of July 14th?",
+      "options": [
+        "La prise de la Bastille et la Fête de la Fédération",
+        "Le débarquement de Normandie",
+        "L'armistice de 1918",
+        "La signature du traité de Versailles"
+      ],
+      "correctAnswer": "La prise de la Bastille et la Fête de la Fédération",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_culture_2",
+      "type": "translateThis",
+      "question": "L'art de vivre à la française accorde une place centrale aux repas partagés",
+      "options": [],
+      "correctAnswer": "The French way of life gives a central place to shared meals",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "French art de vivre places shared meals at the center",
+        "The French way of life gives a central place to shared meals"
+      ]
+    },
+    {
+      "id": "ex_fr_culture_3",
+      "type": "fillInBlank",
+      "question": "La devise républicaine française est : Liberté, Égalité, ___.",
+      "options": [
+        "Fraternité",
+        "Solidarité",
+        "Laïcité",
+        "Unité"
+      ],
+      "correctAnswer": "Fraternité",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_culture_4",
+      "type": "matchPairs",
+      "question": "Match French cultural institutions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "L'Académie française",
+            "native": "language normalization"
+          },
+          {
+            "target": "Le musée du Louvre",
+            "native": "fine arts & history"
+          },
+          {
+            "target": "La Comédie-Française",
+            "native": "classical theater"
+          },
+          {
+            "target": "Le Collège de France",
+            "native": "high-level research"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_culture_5",
+      "type": "speakThis",
+      "question": "La richesse du patrimoine français réside dans la diversité de ses terroirs",
+      "options": [],
+      "correctAnswer": "La richesse du patrimoine français réside dans la diversité de ses terroirs",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

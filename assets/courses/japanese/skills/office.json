@@ -1,0 +1,87 @@
+{
+  "id": "office",
+  "name": "Office Vocabulary & Business Emails",
+  "description": "Write formal business correspondence, manage meetings, and collaborate with teams",
+  "level": 19,
+  "exercises": [
+    {
+      "id": "ex_ja_office_1",
+      "type": "multipleChoice",
+      "question": "What formal opening formula begins almost every business email in Japan?",
+      "options": [
+        "お世話になっております",
+        "こんにちは",
+        "ごきげんよう",
+        "もしもし"
+      ],
+      "correctAnswer": "お世話になっております",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_office_2",
+      "type": "translateThis",
+      "question": "添付ファイルを送付いたしましたので、ご査収ください",
+      "options": [],
+      "correctAnswer": "I have attached the file, so please inspect it",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Please find attached the file for your review",
+        "I have attached the file, so please inspect it"
+      ]
+    },
+    {
+      "id": "ex_ja_office_3",
+      "type": "fillInBlank",
+      "question": "会議の___を前日までに参加者全員に送付します。",
+      "options": [
+        "資料",
+        "名刺",
+        "机",
+        "給料"
+      ],
+      "correctAnswer": "資料",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_office_4",
+      "type": "matchPairs",
+      "question": "Match office terminology",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "議事録 (ぎじろく)",
+            "native": "meeting minutes"
+          },
+          {
+            "target": "締め切り (しめきり)",
+            "native": "deadline"
+          },
+          {
+            "target": "出張 (しゅっちょう)",
+            "native": "business trip"
+          },
+          {
+            "target": "稟議 (りんぎ)",
+            "native": "approval request"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_office_5",
+      "type": "speakThis",
+      "question": "何卒よろしくお願い申し上げます",
+      "options": [],
+      "correctAnswer": "何卒よろしくお願い申し上げます",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

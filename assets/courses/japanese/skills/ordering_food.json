@@ -1,0 +1,87 @@
+{
+  "id": "ordering_food",
+  "name": "Ordering Food & Dietary Needs",
+  "description": "Express allergies, dietary preferences, spiciness levels, and special orders",
+  "level": 11,
+  "exercises": [
+    {
+      "id": "ex_ja_ordering_food_1",
+      "type": "multipleChoice",
+      "question": "How do you state 'I have an allergy to nuts' in Japanese?",
+      "options": [
+        "ナッツのアレルギーがあります",
+        "ナッツが好きです",
+        "ナッツを食べます",
+        "ナッツをください"
+      ],
+      "correctAnswer": "ナッツのアレルギーがあります",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_ordering_food_2",
+      "type": "translateThis",
+      "question": "肉と魚を入れないで作っていただけますか？",
+      "options": [],
+      "correctAnswer": "Could you make it without putting in meat and fish?",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Can you prepare this without meat and fish?",
+        "Could you make it without putting in meat and fish?"
+      ]
+    },
+    {
+      "id": "ex_ja_ordering_food_3",
+      "type": "fillInBlank",
+      "question": "わさびを___でお願いします。",
+      "options": [
+        "抜き",
+        "入れ",
+        "足し",
+        "盛り"
+      ],
+      "correctAnswer": "抜き",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_ordering_food_4",
+      "type": "matchPairs",
+      "question": "Match dietary requests",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "わさび抜き",
+            "native": "without wasabi"
+          },
+          {
+            "target": "ベジタリアン",
+            "native": "vegetarian"
+          },
+          {
+            "target": "アレルギー",
+            "native": "allergy"
+          },
+          {
+            "target": "大盛り (おおもり)",
+            "native": "large portion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_ordering_food_5",
+      "type": "speakThis",
+      "question": "辛いものが苦手なので、辛さを控えめにしてください",
+      "options": [],
+      "correctAnswer": "辛いものが苦手なので、辛さを控えめにしてください",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

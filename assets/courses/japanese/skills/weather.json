@@ -1,0 +1,87 @@
+{
+  "id": "weather",
+  "name": "Weather & Climate",
+  "description": "Discuss weather conditions, rain, typhoons, snow, and temperatures",
+  "level": 6,
+  "exercises": [
+    {
+      "id": "ex_ja_weather_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'It is raining' in Japanese?",
+      "options": [
+        "雨が降っています",
+        "晴れています",
+        "雪が降っています",
+        "風が強いです"
+      ],
+      "correctAnswer": "雨が降っています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_weather_2",
+      "type": "translateThis",
+      "question": "明日は晴れるでしょう",
+      "options": [],
+      "correctAnswer": "Tomorrow will probably be sunny",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Tomorrow it will likely be fine",
+        "Tomorrow will probably be sunny"
+      ]
+    },
+    {
+      "id": "ex_ja_weather_3",
+      "type": "fillInBlank",
+      "question": "今日はとても蒸し___ですね。",
+      "options": [
+        "暑い",
+        "寒い",
+        "涼しい",
+        "冷たい"
+      ],
+      "correctAnswer": "暑い",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_weather_4",
+      "type": "matchPairs",
+      "question": "Match weather words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "晴れ",
+            "native": "sunny"
+          },
+          {
+            "target": "雨",
+            "native": "rain"
+          },
+          {
+            "target": "曇り",
+            "native": "cloudy"
+          },
+          {
+            "target": "雪",
+            "native": "snow"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_weather_5",
+      "type": "speakThis",
+      "question": "午後は雷雨になる予報です",
+      "options": [],
+      "correctAnswer": "午後は雷雨になる予報です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

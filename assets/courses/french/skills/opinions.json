@@ -1,0 +1,87 @@
+{
+  "id": "opinions",
+  "name": "Donner son Avis",
+  "description": "Partager son point de vue: je pense que, à mon avis",
+  "level": 21,
+  "exercises": [
+    {
+      "id": "ex_fr_opinions_1",
+      "type": "multipleChoice",
+      "question": "Which phrase introduces a personal opinion in formal French?",
+      "options": [
+        "À mon humble avis",
+        "C'est faux",
+        "Sans doute",
+        "Au contraire"
+      ],
+      "correctAnswer": "À mon humble avis",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_opinions_2",
+      "type": "translateThis",
+      "question": "Selon moi, cette stratégie s'avère la plus judicieuse",
+      "options": [],
+      "correctAnswer": "In my opinion, this strategy proves to be the most sensible",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "According to me, this strategy is the most judicious",
+        "In my opinion, this strategy proves to be the most sensible"
+      ]
+    },
+    {
+      "id": "ex_fr_opinions_3",
+      "type": "fillInBlank",
+      "question": "Je suis fermement ___ que nous devons agir sans tarder.",
+      "options": [
+        "convaincu",
+        "convaincue",
+        "convaincus",
+        "convaincre"
+      ],
+      "correctAnswer": "convaincu",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_opinions_4",
+      "type": "matchPairs",
+      "question": "Match opinion markers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "d'après moi",
+            "native": "in my view"
+          },
+          {
+            "target": "il me semble que",
+            "native": "it seems to me that"
+          },
+          {
+            "target": "je partage votre opinion",
+            "native": "I share your opinion"
+          },
+          {
+            "target": "je soutiens que",
+            "native": "I maintain that"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_opinions_5",
+      "type": "speakThis",
+      "question": "À mon sens, le dialogue demeure indispensable",
+      "options": [],
+      "correctAnswer": "À mon sens, le dialogue demeure indispensable",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

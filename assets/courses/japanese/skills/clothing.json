@@ -1,0 +1,87 @@
+{
+  "id": "clothing",
+  "name": "Clothing & Accessories",
+  "description": "Clothing vocabulary and distinct verbs for wearing: kiru, haku, kaburu, tsukeru",
+  "level": 6,
+  "exercises": [
+    {
+      "id": "ex_ja_clothing_1",
+      "type": "multipleChoice",
+      "question": "Which verb is used for wearing a hat on your head?",
+      "options": [
+        "かぶる",
+        "着る (きる)",
+        "はく",
+        "かける"
+      ],
+      "correctAnswer": "かぶる",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_clothing_2",
+      "type": "translateThis",
+      "question": "寒いのでコートを着ます",
+      "options": [],
+      "correctAnswer": "Because it is cold, I wear a coat",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Because it's cold I put on a coat",
+        "Because it is cold, I wear a coat"
+      ]
+    },
+    {
+      "id": "ex_ja_clothing_3",
+      "type": "fillInBlank",
+      "question": "新しい靴を___。（足に身につける動詞）",
+      "options": [
+        "はきます",
+        "きます",
+        "かぶります",
+        "つけます"
+      ],
+      "correctAnswer": "はきます",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_clothing_4",
+      "type": "matchPairs",
+      "question": "Match wearing verbs with items",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "着る (きる)",
+            "native": "shirts / tops"
+          },
+          {
+            "target": "はく",
+            "native": "pants / shoes"
+          },
+          {
+            "target": "かぶる",
+            "native": "hats / caps"
+          },
+          {
+            "target": "かける",
+            "native": "glasses"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_clothing_5",
+      "type": "speakThis",
+      "question": "このセーターはとても暖かいです",
+      "options": [],
+      "correctAnswer": "このセーターはとても暖かいです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

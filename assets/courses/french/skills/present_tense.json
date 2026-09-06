@@ -1,0 +1,86 @@
+{
+  "id": "present_tense",
+  "name": "Présent de l'Indicatif",
+  "description": "Conjugaison régulière des verbes en -er, -ir et -re",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_fr_present_tense_1",
+      "type": "multipleChoice",
+      "question": "What is the ending for 'nous' with regular -er verbs?",
+      "options": [
+        "-ons",
+        "-ez",
+        "-ent",
+        "-es"
+      ],
+      "correctAnswer": "-ons",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_present_tense_2",
+      "type": "translateThis",
+      "question": "Nous parlons français et espagnol",
+      "options": [],
+      "correctAnswer": "We speak French and Spanish",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "We speak French and Spanish"
+      ]
+    },
+    {
+      "id": "ex_fr_present_tense_3",
+      "type": "fillInBlank",
+      "question": "Elles ___ leurs devoirs chaque soir.",
+      "options": [
+        "finissent",
+        "finit",
+        "finis",
+        "finissons"
+      ],
+      "correctAnswer": "finissent",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_present_tense_4",
+      "type": "matchPairs",
+      "question": "Match verb stems and subjects",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "je parle",
+            "native": "I speak"
+          },
+          {
+            "target": "tu choisis",
+            "native": "you choose"
+          },
+          {
+            "target": "nous vendons",
+            "native": "we sell"
+          },
+          {
+            "target": "ils attendent",
+            "native": "they wait"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_present_tense_5",
+      "type": "speakThis",
+      "question": "Nous habitons dans le centre de Paris",
+      "options": [],
+      "correctAnswer": "Nous habitons dans le centre de Paris",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

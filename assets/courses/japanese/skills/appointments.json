@@ -1,0 +1,87 @@
+{
+  "id": "appointments",
+  "name": "Appointments & Schedules",
+  "description": "Set schedules, reserve doctor visits, reschedule, and confirm appointments",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_ja_appointments_1",
+      "type": "multipleChoice",
+      "question": "What is the Japanese word for appointment or promise?",
+      "options": [
+        "約束 (やくそく)",
+        "時間",
+        "予定",
+        "計画"
+      ],
+      "correctAnswer": "約束 (やくそく)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_appointments_2",
+      "type": "translateThis",
+      "question": "明日の午後に歯医者の予約が入っています",
+      "options": [],
+      "correctAnswer": "I have a dentist appointment tomorrow afternoon",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I have a dentist reservation tomorrow afternoon",
+        "I have a dentist appointment tomorrow afternoon"
+      ]
+    },
+    {
+      "id": "ex_ja_appointments_3",
+      "type": "fillInBlank",
+      "question": "ご都合のよろしい日時を___ください。",
+      "options": [
+        "教えて",
+        "話して",
+        "言って",
+        "聞いて"
+      ],
+      "correctAnswer": "教えて",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_appointments_4",
+      "type": "matchPairs",
+      "question": "Match scheduling terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "予約 (よやく)",
+            "native": "reservation/appointment"
+          },
+          {
+            "target": "都合 (つごう)",
+            "native": "convenience/availability"
+          },
+          {
+            "target": "変更 (へんこう)",
+            "native": "change/reschedule"
+          },
+          {
+            "target": "取り消し",
+            "native": "cancellation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_appointments_5",
+      "type": "speakThis",
+      "question": "打ち合わせの日程を来週の火曜日に変更できますか？",
+      "options": [],
+      "correctAnswer": "打ち合わせの日程を来週の火曜日に変更できますか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

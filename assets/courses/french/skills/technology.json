@@ -1,0 +1,87 @@
+{
+  "id": "technology",
+  "name": "Technologie & Appareils",
+  "description": "Ordinateurs, smartphones et innovation numérique",
+  "level": 20,
+  "exercises": [
+    {
+      "id": "ex_fr_technology_1",
+      "type": "multipleChoice",
+      "question": "What is 'l'ordinateur portable'?",
+      "options": [
+        "The laptop",
+        "The desktop screen",
+        "The tablet",
+        "The printer"
+      ],
+      "correctAnswer": "The laptop",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_technology_2",
+      "type": "translateThis",
+      "question": "La mise à jour du système d'exploitation s'est déroulée sans encombre",
+      "options": [],
+      "correctAnswer": "The operating system update took place smoothly",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The operating system update completed without a hitch",
+        "The operating system update took place smoothly"
+      ]
+    },
+    {
+      "id": "ex_fr_technology_3",
+      "type": "fillInBlank",
+      "question": "N'oublie pas de faire une ___ de sauvegarde de tes fichiers.",
+      "options": [
+        "copie",
+        "panne",
+        "clic",
+        "touche"
+      ],
+      "correctAnswer": "copie",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_technology_4",
+      "type": "matchPairs",
+      "question": "Match computing terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le clavier",
+            "native": "the keyboard"
+          },
+          {
+            "target": "l'écran",
+            "native": "the screen/monitor"
+          },
+          {
+            "target": "le disque dur",
+            "native": "the hard drive"
+          },
+          {
+            "target": "le mot de passe",
+            "native": "the password"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_technology_5",
+      "type": "speakThis",
+      "question": "L'intelligence artificielle transforme profondément les usages technologiques",
+      "options": [],
+      "correctAnswer": "L'intelligence artificielle transforme profondément les usages technologiques",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

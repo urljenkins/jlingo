@@ -1,0 +1,87 @@
+{
+  "id": "transportation",
+  "name": "Transportation & Shinkansen",
+  "description": "Vocabulary for bullet trains (Shinkansen), buses, taxis, and domestic flights",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_ja_transportation_1",
+      "type": "multipleChoice",
+      "question": "What is the Japanese bullet train called?",
+      "options": [
+        "新幹線 (しんかんせん)",
+        "特急 (とっきゅう)",
+        "地下鉄 (ちかてつ)",
+        "快速 (かいそく)"
+      ],
+      "correctAnswer": "新幹線 (しんかんせん)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_transportation_2",
+      "type": "translateThis",
+      "question": "京都まで指定席の切符を買いました",
+      "options": [],
+      "correctAnswer": "I bought a reserved seat ticket to Kyoto",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I bought a reserved ticket to Kyoto",
+        "I bought a reserved seat ticket to Kyoto"
+      ]
+    },
+    {
+      "id": "ex_ja_transportation_3",
+      "type": "fillInBlank",
+      "question": "次の駅で___がドアの反対側に開きます。",
+      "options": [
+        "扉 (とびら)",
+        "窓",
+        "切符",
+        "座席"
+      ],
+      "correctAnswer": "扉 (とびら)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_transportation_4",
+      "type": "matchPairs",
+      "question": "Match train vocabulary",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "自由席",
+            "native": "non-reserved seat"
+          },
+          {
+            "target": "指定席",
+            "native": "reserved seat"
+          },
+          {
+            "target": "往復切符",
+            "native": "round-trip ticket"
+          },
+          {
+            "target": "終点",
+            "native": "last stop/terminal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_transportation_5",
+      "type": "speakThis",
+      "question": "東京駅から新幹線に乗ります",
+      "options": [],
+      "correctAnswer": "東京駅から新幹線に乗ります",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "comparatives",
+  "name": "Comparatives (Yori & No Hou Ga)",
+  "description": "Compare items and qualities using A のほうが B より (A is more ... than B)",
+  "level": 15,
+  "exercises": [
+    {
+      "id": "ex_ja_comparatives_1",
+      "type": "multipleChoice",
+      "question": "In 'A のほうが B より大きいです', which item is bigger?",
+      "options": [
+        "A",
+        "B",
+        "Both are equal",
+        "Neither"
+      ],
+      "correctAnswer": "A",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_comparatives_2",
+      "type": "translateThis",
+      "question": "新幹線のほうがバスよりずっと速いです",
+      "options": [],
+      "correctAnswer": "The Shinkansen is much faster than the bus",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The bullet train is much faster than the bus",
+        "The Shinkansen is much faster than the bus"
+      ]
+    },
+    {
+      "id": "ex_ja_comparatives_3",
+      "type": "fillInBlank",
+      "question": "飛行機___新幹線のほうが快適です。",
+      "options": [
+        "より",
+        "ほう",
+        "ほど",
+        "まで"
+      ],
+      "correctAnswer": "より",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_comparatives_4",
+      "type": "matchPairs",
+      "question": "Match comparison grammar markers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "〜のほうが",
+            "native": "indicates the preferred/greater side"
+          },
+          {
+            "target": "〜より",
+            "native": "than / compared to"
+          },
+          {
+            "target": "ずっと",
+            "native": "by far / much more"
+          },
+          {
+            "target": "どちら",
+            "native": "which of the two?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_comparatives_5",
+      "type": "speakThis",
+      "question": "夏より秋のほうが過ごしやすくて好きです",
+      "options": [],
+      "correctAnswer": "夏より秋のほうが過ごしやすくて好きです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

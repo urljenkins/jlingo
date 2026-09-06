@@ -1,0 +1,87 @@
+{
+  "id": "reflexive_verbs",
+  "name": "Verbes Pronominaux",
+  "description": "Se lever, se laver, s'habiller et leur conjugaison",
+  "level": 8,
+  "exercises": [
+    {
+      "id": "ex_fr_reflexive_verbs_1",
+      "type": "multipleChoice",
+      "question": "Which reflexive pronoun matches 'nous'?",
+      "options": [
+        "nous",
+        "vous",
+        "se",
+        "me"
+      ],
+      "correctAnswer": "nous",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_reflexive_verbs_2",
+      "type": "translateThis",
+      "question": "Je me réveille à sept heures tous les matins",
+      "options": [],
+      "correctAnswer": "I wake up at seven o'clock every morning",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I wake up at seven every morning",
+        "I wake up at seven o'clock every morning"
+      ]
+    },
+    {
+      "id": "ex_fr_reflexive_verbs_3",
+      "type": "fillInBlank",
+      "question": "Ils ___ couchent tard le week-end.",
+      "options": [
+        "se",
+        "me",
+        "te",
+        "nous"
+      ],
+      "correctAnswer": "se",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_reflexive_verbs_4",
+      "type": "matchPairs",
+      "question": "Match reflexive verbs with English meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "se lever",
+            "native": "to get up"
+          },
+          {
+            "target": "se laver",
+            "native": "to wash oneself"
+          },
+          {
+            "target": "se souvenir",
+            "native": "to remember"
+          },
+          {
+            "target": "se dépêcher",
+            "native": "to hurry"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_reflexive_verbs_5",
+      "type": "speakThis",
+      "question": "Dépêchez-vous, nous allons être en retard",
+      "options": [],
+      "correctAnswer": "Dépêchez-vous, nous allons être en retard",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

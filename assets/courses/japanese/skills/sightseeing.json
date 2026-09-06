@@ -1,0 +1,87 @@
+{
+  "id": "sightseeing",
+  "name": "Sightseeing & World Heritage",
+  "description": "Shrines, temples, castles, UNESCO world heritage sites, and souvenir shopping",
+  "level": 17,
+  "exercises": [
+    {
+      "id": "ex_ja_sightseeing_1",
+      "type": "multipleChoice",
+      "question": "What is the traditional red gate found at the entrance to Shinto shrines?",
+      "options": [
+        "鳥居 (とりい)",
+        "本堂 (ほんどう)",
+        "天守閣",
+        "五重塔"
+      ],
+      "correctAnswer": "鳥居 (とりい)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_sightseeing_2",
+      "type": "translateThis",
+      "question": "この古い神社は千年以上前に建てられました",
+      "options": [],
+      "correctAnswer": "This ancient shrine was built over a thousand years ago",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "This old shrine was erected more than 1000 years ago",
+        "This ancient shrine was built over a thousand years ago"
+      ]
+    },
+    {
+      "id": "ex_ja_sightseeing_3",
+      "type": "fillInBlank",
+      "question": "神社を参拝する時、「二礼二拍手___」を行います。",
+      "options": [
+        "一礼",
+        "一拍手",
+        "二礼",
+        "お辞儀"
+      ],
+      "correctAnswer": "一礼",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_sightseeing_4",
+      "type": "matchPairs",
+      "question": "Match sightseeing landmarks",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "神社 (じんじゃ)",
+            "native": "Shinto shrine"
+          },
+          {
+            "target": "寺院 (じいん)",
+            "native": "Buddhist temple"
+          },
+          {
+            "target": "天守閣 (てんしゅかく)",
+            "native": "castle tower/keep"
+          },
+          {
+            "target": "お守り (おまもり)",
+            "native": "lucky charm/amulet"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_sightseeing_5",
+      "type": "speakThis",
+      "question": "紅葉の名所として知られる名刹を訪れました",
+      "options": [],
+      "correctAnswer": "紅葉の名所として知られる名刹を訪れました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

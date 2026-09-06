@@ -257,6 +257,360 @@
             ],
             "correctAnswer": "Ñ",
             "id": "ex_alp_25"
+        },
+        {
+            "type": "translateThis",
+            "question": "Deletrear",
+            "options": [],
+            "correctAnswer": "To spell",
+            "id": "ex_alp22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you spell 'casa' out loud starting?",
+            "options": [
+                "Ce-a-ese-a",
+                "Ka-a-se-a",
+                "Ce-ah-se-ah",
+                "Ka-ah-se-ah"
+            ],
+            "correctAnswer": "Ce-a-ese-a",
+            "id": "ex_alp22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La letra ___ sigue a la 'ñ'",
+            "options": [
+                "o",
+                "p",
+                "n",
+                "m"
+            ],
+            "correctAnswer": "o",
+            "id": "ex_alp22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "¿Cómo se escribe tu nombre?",
+            "options": [],
+            "correctAnswer": "¿Cómo se escribe tu nombre?",
+            "id": "ex_alp22_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Se escribe con doble ele",
+            "options": [],
+            "correctAnswer": "Se escribe con doble ele",
+            "id": "ex_alp22_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Mayúscula",
+            "options": [],
+            "correctAnswer": "Uppercase/capital letter",
+            "id": "ex_alp22_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Minúscula",
+            "options": [],
+            "correctAnswer": "Lowercase letter",
+            "id": "ex_alp22_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which letter never appears at the start of a Spanish word?",
+            "options": [
+                "Ñ",
+                "A",
+                "B",
+                "C"
+            ],
+            "correctAnswer": "Ñ",
+            "id": "ex_alp22_8"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match letters Q-Z",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Q",
+                        "native": "Cu"
+                    },
+                    {
+                        "target": "R",
+                        "native": "Ere"
+                    },
+                    {
+                        "target": "S",
+                        "native": "Ese"
+                    },
+                    {
+                        "target": "T",
+                        "native": "Te"
+                    },
+                    {
+                        "target": "V",
+                        "native": "Uve"
+                    }
+                ]
+            },
+            "id": "ex_alp22_9"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "W se llama ___ doble",
+            "options": [
+                "uve",
+                "ve",
+                "u",
+                "doble u"
+            ],
+            "correctAnswer": "uve",
+            "id": "ex_alp22_10"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "X, Y, Z",
+            "options": [],
+            "correctAnswer": "X, Y, Z",
+            "id": "ex_alp22_11"
+        },
+        {
+            "type": "translateThis",
+            "question": "El signo de interrogación",
+            "options": [],
+            "correctAnswer": "The question mark",
+            "id": "ex_alp22_12"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Spanish uses an upside-down question mark at the start of a question. What is it called?",
+            "options": [
+                "Signo de apertura",
+                "Signo de cierre",
+                "Acento",
+                "Diéresis"
+            ],
+            "correctAnswer": "Signo de apertura",
+            "id": "ex_alp22_13"
+        },
+        {
+            "type": "speakThis",
+            "question": "¿Cómo se llama esta letra?",
+            "options": [],
+            "correctAnswer": "¿Cómo se llama esta letra?",
+            "id": "ex_alp22_14"
+        },
+        {
+            "type": "translateThis",
+            "question": "El acento",
+            "options": [],
+            "correctAnswer": "The accent mark",
+            "id": "ex_alp22_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "La letra be",
+            "options": [],
+            "correctAnswer": "The letter B",
+            "id": "ex_alp3_1"
+        },
+        {
+            "type": "translateThis",
+            "question": "La letra ka",
+            "options": [],
+            "correctAnswer": "The letter K",
+            "id": "ex_alp3_2"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which letter is pronounced 'doble ve' in some countries?",
+            "options": [
+                "W",
+                "V",
+                "U",
+                "B"
+            ],
+            "correctAnswer": "W",
+            "id": "ex_alp3_3"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La palabra 'zapato' empieza con la letra ___",
+            "options": [
+                "zeta",
+                "ese",
+                "equis",
+                "ce"
+            ],
+            "correctAnswer": "zeta",
+            "id": "ex_alp3_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Zeta, equis, ye",
+            "options": [],
+            "correctAnswer": "Zeta, equis, ye",
+            "id": "ex_alp3_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "La zeta suena como 'ese' en Latinoamérica",
+            "options": [],
+            "correctAnswer": "La zeta suena como 'ese' en Latinoamérica",
+            "id": "ex_alp3_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Vocal abierta",
+            "options": [],
+            "correctAnswer": "Open vowel",
+            "id": "ex_alp3_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which of these is NOT a Spanish vowel?",
+            "options": [
+                "Y",
+                "A",
+                "E",
+                "O"
+            ],
+            "correctAnswer": "Y",
+            "id": "ex_alp3_8"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match tricky letter sounds",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Z",
+                        "native": "Zeta"
+                    },
+                    {
+                        "target": "Y",
+                        "native": "Ye/i griega"
+                    },
+                    {
+                        "target": "Ll",
+                        "native": "Elle"
+                    },
+                    {
+                        "target": "Ñ",
+                        "native": "Eñe"
+                    }
+                ]
+            },
+            "id": "ex_alp3_9"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿Cómo se ___ tu apellido? (spell)",
+            "options": [
+                "deletrea",
+                "escribe",
+                "dice",
+                "habla"
+            ],
+            "correctAnswer": "deletrea",
+            "id": "ex_alp3_10"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "¿Puede deletrear su nombre?",
+            "options": [],
+            "correctAnswer": "¿Puede deletrear su nombre?",
+            "id": "ex_alp3_11"
+        },
+        {
+            "type": "speakThis",
+            "question": "G-A-R-C-Í-A",
+            "options": [],
+            "correctAnswer": "G-A-R-C-Í-A",
+            "id": "ex_alp3_12"
+        },
+        {
+            "type": "translateThis",
+            "question": "El diptongo",
+            "options": [],
+            "correctAnswer": "The diphthong",
+            "id": "ex_alp3_13"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which pair of vowels forms a diphthong in 'ciudad'?",
+            "options": [
+                "iu",
+                "ci",
+                "da",
+                "ud"
+            ],
+            "correctAnswer": "iu",
+            "id": "ex_alp3_14"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La palabra tiene un ___ (accent mark)",
+            "options": [
+                "acento",
+                "punto",
+                "signo",
+                "guion"
+            ],
+            "correctAnswer": "acento",
+            "id": "ex_alp3_15"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Mú-si-ca tiene acento en la primera sílaba",
+            "options": [],
+            "correctAnswer": "Mú-si-ca tiene acento en la primera sílaba",
+            "id": "ex_alp3_16"
+        },
+        {
+            "type": "speakThis",
+            "question": "Sí, café, and árbol all have accent marks",
+            "options": [],
+            "correctAnswer": "Sí, café, and árbol all have accent marks",
+            "id": "ex_alp3_17"
+        },
+        {
+            "type": "translateThis",
+            "question": "Sin acento",
+            "options": [],
+            "correctAnswer": "Without an accent mark",
+            "id": "ex_alp3_18"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is 'sílaba' in English?",
+            "options": [
+                "Syllable",
+                "Sentence",
+                "Word",
+                "Letter"
+            ],
+            "correctAnswer": "Syllable",
+            "id": "ex_alp3_19"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Ca-fé tiene dos ___ (syllables)",
+            "options": [
+                "sílabas",
+                "letras",
+                "acentos",
+                "palabras"
+            ],
+            "correctAnswer": "sílabas",
+            "id": "ex_alp3_20"
         }
     ]
 }

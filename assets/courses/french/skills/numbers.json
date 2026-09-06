@@ -1,0 +1,87 @@
+{
+  "id": "numbers",
+  "name": "Nombres 1-10",
+  "description": "Apprendre à compter de 1 à 10 en français",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_fr_num_1",
+      "type": "multipleChoice",
+      "question": "What is the French word for 'five'?",
+      "options": [
+        "Cinq",
+        "Quatre",
+        "Six",
+        "Sept"
+      ],
+      "correctAnswer": "Cinq",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_num_2",
+      "type": "translateThis",
+      "question": "Un, deux, trois",
+      "options": [],
+      "correctAnswer": "One, two, three",
+      "acceptableAnswers": [
+        "One, two, three",
+        "1, 2, 3"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_num_3",
+      "type": "fillInBlank",
+      "question": "Sept, huit, neuf, ___.",
+      "options": [
+        "dix",
+        "onze",
+        "six",
+        "cinq"
+      ],
+      "correctAnswer": "dix",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_num_4",
+      "type": "matchPairs",
+      "question": "Match French numbers with English words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "quatre",
+            "native": "four"
+          },
+          {
+            "target": "six",
+            "native": "six"
+          },
+          {
+            "target": "huit",
+            "native": "eight"
+          },
+          {
+            "target": "dix",
+            "native": "ten"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_num_5",
+      "type": "speakThis",
+      "question": "Deux croissants et trois cafés",
+      "options": [],
+      "correctAnswer": "Deux croissants et trois cafés",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

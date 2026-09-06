@@ -1,0 +1,87 @@
+{
+  "id": "opinions",
+  "name": "Giving Opinions & Nuance",
+  "description": "State opinions tactfully using 〜と思います, 〜のではないかと思います",
+  "level": 21,
+  "exercises": [
+    {
+      "id": "ex_ja_opinions_1",
+      "type": "multipleChoice",
+      "question": "Which phrase softens an opinion to sound polite and non-confrontational?",
+      "options": [
+        "〜のではないかと思います",
+        "〜に決まっている",
+        "〜である",
+        "〜に違いない"
+      ],
+      "correctAnswer": "〜のではないかと思います",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_opinions_2",
+      "type": "translateThis",
+      "question": "個人的には、この提案には再考の余地があると考えます",
+      "options": [],
+      "correctAnswer": "Personally, I think there is room for reconsideration in this proposal",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Personally I feel this proposal needs rethinking",
+        "Personally, I think there is room for reconsideration in this proposal"
+      ]
+    },
+    {
+      "id": "ex_ja_opinions_3",
+      "type": "fillInBlank",
+      "question": "私の率直な___を述べさせていただきます。",
+      "options": [
+        "意見",
+        "質問",
+        "反論",
+        "注文"
+      ],
+      "correctAnswer": "意見",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_opinions_4",
+      "type": "matchPairs",
+      "question": "Match opinion markers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "〜と感じる",
+            "native": "I feel that..."
+          },
+          {
+            "target": "〜と確信している",
+            "native": "I am convinced that..."
+          },
+          {
+            "target": "私見によれば",
+            "native": "according to my personal view"
+          },
+          {
+            "target": "一理ある",
+            "native": "there is some truth/merit in that"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_opinions_5",
+      "type": "speakThis",
+      "question": "双方の立場を尊重しながら合意点を探るべきです",
+      "options": [],
+      "correctAnswer": "双方の立場を尊重しながら合意点を探るべきです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

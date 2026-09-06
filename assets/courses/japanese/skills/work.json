@@ -1,0 +1,87 @@
+{
+  "id": "work",
+  "name": "Business & Career (Keigo Basics)",
+  "description": "Corporate culture, job hunting (Shuukatsu), business cards (Meishi), and greetings",
+  "level": 19,
+  "exercises": [
+    {
+      "id": "ex_ja_work_1",
+      "type": "multipleChoice",
+      "question": "What essential greeting means 'Thank you for your hard work' among colleagues?",
+      "options": [
+        "お疲れ様です (おつかれさまです)",
+        "ご苦労様です",
+        "お大事に",
+        "おかげさまで"
+      ],
+      "correctAnswer": "お疲れ様です (おつかれさまです)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_work_2",
+      "type": "translateThis",
+      "question": "両手で名刺を受け取って一礼します",
+      "options": [],
+      "correctAnswer": "Receive the business card with both hands and bow",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I receive the business card with both hands and bow",
+        "Receive the business card with both hands and bow"
+      ]
+    },
+    {
+      "id": "ex_ja_work_3",
+      "type": "fillInBlank",
+      "question": "お忙しいところ恐れ___が、書類をご確認ください。",
+      "options": [
+        "入ります",
+        "出ます",
+        "行きます",
+        "来ます"
+      ],
+      "correctAnswer": "入ります",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_work_4",
+      "type": "matchPairs",
+      "question": "Match corporate phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "名刺交換",
+            "native": "business card exchange"
+          },
+          {
+            "target": "面接 (めんせつ)",
+            "native": "job interview"
+          },
+          {
+            "target": "昇進 (しょうしん)",
+            "native": "promotion"
+          },
+          {
+            "target": "残業 (ざんぎょう)",
+            "native": "overtime work"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_work_5",
+      "type": "speakThis",
+      "question": "本日は貴重なお時間をいただき、誠にありがとうございます",
+      "options": [],
+      "correctAnswer": "本日は貴重なお時間をいただき、誠にありがとうございます",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "debating",
+  "name": "Débattre & Argumenter",
+  "description": "Défendre une thèse, réfuter et concéder avec élégance",
+  "level": 21,
+  "exercises": [
+    {
+      "id": "ex_fr_debating_1",
+      "type": "multipleChoice",
+      "question": "Which connector expresses a concession?",
+      "options": [
+        "Bien que",
+        "Puisque",
+        "Par conséquent",
+        "En effet"
+      ],
+      "correctAnswer": "Bien que",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_debating_2",
+      "type": "translateThis",
+      "question": "Certes, l'argument est recevable, néanmoins il reste incomplet",
+      "options": [],
+      "correctAnswer": "Granted, the argument is admissible, nevertheless it remains incomplete",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Admittedly, the argument is valid, nevertheless it remains incomplete",
+        "Certes, the argument is valid, however it is incomplete",
+        "Granted, the argument is admissible, nevertheless it remains incomplete"
+      ]
+    },
+    {
+      "id": "ex_fr_debating_3",
+      "type": "fillInBlank",
+      "question": "Il convient de distinguer les causes réelles des simples ___.",
+      "options": [
+        "conséquences",
+        "effets",
+        "motifs",
+        "facteurs"
+      ],
+      "correctAnswer": "conséquences",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_debating_4",
+      "type": "matchPairs",
+      "question": "Match rhetorical debate phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "par ailleurs",
+            "native": "furthermore"
+          },
+          {
+            "target": "en revanche",
+            "native": "on the other hand"
+          },
+          {
+            "target": "toutefois",
+            "native": "however"
+          },
+          {
+            "target": "en résumé",
+            "native": "in summary"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_debating_5",
+      "type": "speakThis",
+      "question": "Il est impératif d'examiner attentivement les objections soulevées",
+      "options": [],
+      "correctAnswer": "Il est impératif d'examiner attentivement les objections soulevées",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

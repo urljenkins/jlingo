@@ -1,0 +1,87 @@
+{
+  "id": "superlatives",
+  "name": "Superlatives (Ichiban)",
+  "description": "Express superlatives and absolute favorites using 一番 (ichiban - the most)",
+  "level": 15,
+  "exercises": [
+    {
+      "id": "ex_ja_superlatives_1",
+      "type": "multipleChoice",
+      "question": "Which word indicates 'the most' or 'number one'?",
+      "options": [
+        "一番 (いちばん)",
+        "もっと",
+        "少し",
+        "大体"
+      ],
+      "correctAnswer": "一番 (いちばん)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_superlatives_2",
+      "type": "translateThis",
+      "question": "日本の中で富士山が一番高い山です",
+      "options": [],
+      "correctAnswer": "Mount Fuji is the highest mountain in Japan",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Mt. Fuji is the highest mountain in Japan",
+        "Mount Fuji is the highest mountain in Japan"
+      ]
+    },
+    {
+      "id": "ex_ja_superlatives_3",
+      "type": "fillInBlank",
+      "question": "四季の中でどの季節が___好きですか？",
+      "options": [
+        "一番",
+        "とても",
+        "かなり",
+        "余計に"
+      ],
+      "correctAnswer": "一番",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_superlatives_4",
+      "type": "matchPairs",
+      "question": "Match superlative categories",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "世界で一番",
+            "native": "the most in the world"
+          },
+          {
+            "target": "日本で一番",
+            "native": "the most in Japan"
+          },
+          {
+            "target": "一番人気",
+            "native": "most popular"
+          },
+          {
+            "target": "一番大切",
+            "native": "most important"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_superlatives_5",
+      "type": "speakThis",
+      "question": "健康が何よりも一番大切です",
+      "options": [],
+      "correctAnswer": "健康が何よりも一番大切です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "present_perfect",
+  "name": "Experience & Recent Completion",
+  "description": "Express life experience with 〜たことがある and recent completion with 〜たばかり",
+  "level": 13,
+  "exercises": [
+    {
+      "id": "ex_ja_present_perfect_1",
+      "type": "multipleChoice",
+      "question": "Which grammatical pattern indicates having the experience of doing something?",
+      "options": [
+        "〜たことがある",
+        "〜たほうがいい",
+        "〜てはいけない",
+        "〜つもりだ"
+      ],
+      "correctAnswer": "〜たことがある",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_present_perfect_2",
+      "type": "translateThis",
+      "question": "日本へ行ったことがありますか？",
+      "options": [],
+      "correctAnswer": "Have you ever been to Japan?",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Have you ever gone to Japan?",
+        "Have you ever been to Japan?"
+      ]
+    },
+    {
+      "id": "ex_ja_present_perfect_3",
+      "type": "fillInBlank",
+      "question": "富士山に___ことがあります。",
+      "options": [
+        "登った",
+        "登る",
+        "登り",
+        "登って"
+      ],
+      "correctAnswer": "登った",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_present_perfect_4",
+      "type": "matchPairs",
+      "question": "Match experience expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "食べたことがある",
+            "native": "have eaten before"
+          },
+          {
+            "target": "見たことがある",
+            "native": "have seen before"
+          },
+          {
+            "target": "行ったことがある",
+            "native": "have been to before"
+          },
+          {
+            "target": "会ったことがある",
+            "native": "have met before"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_present_perfect_5",
+      "type": "speakThis",
+      "question": "歌舞伎を劇場で一度鑑賞したことがあります",
+      "options": [],
+      "correctAnswer": "歌舞伎を劇場で一度鑑賞したことがあります",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "conditional",
+  "name": "Conditionals (To, Ba, Tara, Nara)",
+  "description": "Master the four Japanese conditionals: と (natural result), ば, たら, and なら",
+  "level": 22,
+  "exercises": [
+    {
+      "id": "ex_ja_conditional_1",
+      "type": "multipleChoice",
+      "question": "Which conditional particle expresses contextual advice or topic condition ('If it is X, then...')?",
+      "options": [
+        "なら",
+        "と",
+        "ば",
+        "ても"
+      ],
+      "correctAnswer": "なら",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_conditional_2",
+      "type": "translateThis",
+      "question": "春になると桜の花が一斉に咲きます",
+      "options": [],
+      "correctAnswer": "When spring comes, cherry blossoms bloom all at once",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "When it becomes spring the cherry blossoms bloom at once",
+        "When spring comes, cherry blossoms bloom all at once"
+      ]
+    },
+    {
+      "id": "ex_ja_conditional_3",
+      "type": "fillInBlank",
+      "question": "安けれ___、買いたいと思っています。",
+      "options": [
+        "ば",
+        "なら",
+        "たら",
+        "と"
+      ],
+      "correctAnswer": "ば",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_conditional_4",
+      "type": "matchPairs",
+      "question": "Match Japanese conditional types",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "〜と",
+            "native": "natural consequence / constant fact"
+          },
+          {
+            "target": "〜たら",
+            "native": "past condition / after doing"
+          },
+          {
+            "target": "〜ば",
+            "native": "hypothetical condition"
+          },
+          {
+            "target": "〜なら",
+            "native": "contextual assumption / topic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_conditional_5",
+      "type": "speakThis",
+      "question": "雨が降ったら、無理をせず室内の催しに変更しましょう",
+      "options": [],
+      "correctAnswer": "雨が降ったら、無理をせず室内の催しに変更しましょう",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

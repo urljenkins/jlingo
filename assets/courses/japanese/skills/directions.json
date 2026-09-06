@@ -1,0 +1,87 @@
+{
+  "id": "directions",
+  "name": "Giving & Asking Directions",
+  "description": "Ask for directions, understand landmarks, turn right/left, and follow routes",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_ja_directions_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Please turn to the right' in Japanese?",
+      "options": [
+        "右に曲がってください",
+        "左に曲がってください",
+        "まっすぐ行ってください",
+        "止まってください"
+      ],
+      "correctAnswer": "右に曲がってください",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_directions_2",
+      "type": "translateThis",
+      "question": "この道をまっすぐ行くと交番があります",
+      "options": [],
+      "correctAnswer": "If you go straight down this road, there is a police box",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Going straight on this street leads to a police box",
+        "If you go straight down this road, there is a police box"
+      ]
+    },
+    {
+      "id": "ex_ja_directions_3",
+      "type": "fillInBlank",
+      "question": "信号を渡って、二つ目の角を___に曲がります。",
+      "options": [
+        "左",
+        "上",
+        "下",
+        "中"
+      ],
+      "correctAnswer": "左",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_directions_4",
+      "type": "matchPairs",
+      "question": "Match directions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "まっすぐ",
+            "native": "straight ahead"
+          },
+          {
+            "target": "右 (みぎ)",
+            "native": "right"
+          },
+          {
+            "target": "左 (ひだり)",
+            "native": "left"
+          },
+          {
+            "target": "交差点 (こうさてん)",
+            "native": "intersection"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_directions_5",
+      "type": "speakThis",
+      "question": "すみません、最寄りの駅はどちらですか？",
+      "options": [],
+      "correctAnswer": "すみません、最寄りの駅はどちらですか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

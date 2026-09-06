@@ -227,6 +227,96 @@
             ],
             "correctAnswer": "Cero",
             "id": "ex_n_12"
+        },
+        {
+            "type": "translateThis",
+            "question": "Ocho más uno es nueve",
+            "options": [],
+            "correctAnswer": "Eight plus one is nine",
+            "id": "ex_nx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is 'Seis menos dos'?",
+            "options": [
+                "Cuatro",
+                "Cinco",
+                "Tres",
+                "Seis"
+            ],
+            "correctAnswer": "Cuatro",
+            "id": "ex_nx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Tres por tres es ___",
+            "options": [
+                "nueve",
+                "seis",
+                "doce",
+                "tres"
+            ],
+            "correctAnswer": "nueve",
+            "id": "ex_nx22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Cinco, seis, siete",
+            "options": [],
+            "correctAnswer": "Cinco, seis, siete",
+            "id": "ex_nx22_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Diez menos cinco es cinco",
+            "options": [],
+            "correctAnswer": "Diez menos cinco es cinco",
+            "id": "ex_nx22_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Siete más tres es diez",
+            "options": [],
+            "correctAnswer": "Seven plus three is ten",
+            "id": "ex_nx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is 'nueve menos cuatro'?",
+            "options": [
+                "Cinco",
+                "Seis",
+                "Cuatro",
+                "Tres"
+            ],
+            "correctAnswer": "Cinco",
+            "id": "ex_nx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Ocho dividido entre dos es ___",
+            "options": [
+                "cuatro",
+                "dos",
+                "ocho",
+                "seis"
+            ],
+            "correctAnswer": "cuatro",
+            "id": "ex_nx3_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Uno más uno es dos",
+            "options": [],
+            "correctAnswer": "Uno más uno es dos",
+            "id": "ex_nx3_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Dos por cuatro es ocho",
+            "options": [],
+            "correctAnswer": "Dos por cuatro es ocho",
+            "id": "ex_nx3_5"
         }
     ]
 }

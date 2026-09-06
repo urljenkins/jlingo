@@ -1,0 +1,87 @@
+{
+  "id": "current_events",
+  "name": "Actualités & Société",
+  "description": "Enjeux sociétaux, écologie, économie et débats d'actualité",
+  "level": 25,
+  "exercises": [
+    {
+      "id": "ex_fr_current_events_1",
+      "type": "multipleChoice",
+      "question": "What is the French term for 'global warming'?",
+      "options": [
+        "Le réchauffement climatique",
+        "La déforestation",
+        "L'effet de serre",
+        "La biodiversité"
+      ],
+      "correctAnswer": "Le réchauffement climatique",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_current_events_2",
+      "type": "translateThis",
+      "question": "La transition écologique exige des investissements massifs dans les énergies renouvelables",
+      "options": [],
+      "correctAnswer": "The ecological transition requires massive investments in renewable energies",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The green transition demands massive investment in renewable energy",
+        "The ecological transition requires massive investments in renewable energies"
+      ]
+    },
+    {
+      "id": "ex_fr_current_events_3",
+      "type": "fillInBlank",
+      "question": "Les citoyens sont appelés aux ___ pour renouveler leurs représentants.",
+      "options": [
+        "urnes",
+        "places",
+        "rues",
+        "écoles"
+      ],
+      "correctAnswer": "urnes",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_current_events_4",
+      "type": "matchPairs",
+      "question": "Match civic and journalistic terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le sondage",
+            "native": "the poll/survey"
+          },
+          {
+            "target": "le pouvoir d'achat",
+            "native": "the purchasing power"
+          },
+          {
+            "target": "le projet de loi",
+            "native": "the draft bill"
+          },
+          {
+            "target": "la croissance économique",
+            "native": "economic growth"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_current_events_5",
+      "type": "speakThis",
+      "question": "Le débat démocratique repose sur la confrontation loyale des idées",
+      "options": [],
+      "correctAnswer": "Le débat démocratique repose sur la confrontation loyale des idées",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

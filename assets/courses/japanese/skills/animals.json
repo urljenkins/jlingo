@@ -1,0 +1,87 @@
+{
+  "id": "animals",
+  "name": "Animals",
+  "description": "Names of common animals, pets, wildlife, and animal sounds in Japanese",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_ja_animals_1",
+      "type": "multipleChoice",
+      "question": "What is 'dog' in Japanese?",
+      "options": [
+        "犬 (いぬ)",
+        "猫 (ねこ)",
+        "鳥 (とり)",
+        "魚 (さかな)"
+      ],
+      "correctAnswer": "犬 (いぬ)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_animals_2",
+      "type": "translateThis",
+      "question": "公園で白い猫を見ました",
+      "options": [],
+      "correctAnswer": "I saw a white cat in the park",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I saw a white cat at the park",
+        "I saw a white cat in the park"
+      ]
+    },
+    {
+      "id": "ex_ja_animals_3",
+      "type": "fillInBlank",
+      "question": "木の上で小鳥が___鳴いています。",
+      "options": [
+        "ちゅんちゅんと",
+        "わんわんと",
+        "にゃーにゃーと",
+        "もーもーと"
+      ],
+      "correctAnswer": "ちゅんちゅんと",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_animals_4",
+      "type": "matchPairs",
+      "question": "Match Japanese animals",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "犬",
+            "native": "dog"
+          },
+          {
+            "target": "猫",
+            "native": "cat"
+          },
+          {
+            "target": "鳥",
+            "native": "bird"
+          },
+          {
+            "target": "馬",
+            "native": "horse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_animals_5",
+      "type": "speakThis",
+      "question": "私の家にはかわいい犬が二匹います",
+      "options": [],
+      "correctAnswer": "私の家にはかわいい犬が二匹います",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

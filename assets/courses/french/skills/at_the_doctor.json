@@ -1,0 +1,87 @@
+{
+  "id": "at_the_doctor",
+  "name": "Chez le Médecin",
+  "description": "Expliquer sa douleur et comprendre les ordonnances",
+  "level": 16,
+  "exercises": [
+    {
+      "id": "ex_fr_at_the_doctor_1",
+      "type": "multipleChoice",
+      "question": "What does a French doctor write for prescription medication?",
+      "options": [
+        "Une ordonnance",
+        "Une facture",
+        "Une note",
+        "Un reçu"
+      ],
+      "correctAnswer": "Une ordonnance",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_at_the_doctor_2",
+      "type": "translateThis",
+      "question": "Prenez deux comprimés trois fois par jour avant les repas",
+      "options": [],
+      "correctAnswer": "Take two tablets three times a day before meals",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Take two pills three times a day before meals",
+        "Take two tablets three times a day before meals"
+      ]
+    },
+    {
+      "id": "ex_fr_at_the_doctor_3",
+      "type": "fillInBlank",
+      "question": "Avez-vous de la ___ ou des frissons ?",
+      "options": [
+        "fièvre",
+        "médicament",
+        "ordonnance",
+        "pansement"
+      ],
+      "correctAnswer": "fièvre",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_at_the_doctor_4",
+      "type": "matchPairs",
+      "question": "Match medical vocabulary",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le stéthoscope",
+            "native": "the stethoscope"
+          },
+          {
+            "target": "la toux",
+            "native": "the cough"
+          },
+          {
+            "target": "la tension",
+            "native": "the blood pressure"
+          },
+          {
+            "target": "le sirop",
+            "native": "the cough syrup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_at_the_doctor_5",
+      "type": "speakThis",
+      "question": "Respirez profondément et toussez doucement",
+      "options": [],
+      "correctAnswer": "Respirez profondément et toussez doucement",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

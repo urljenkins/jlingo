@@ -1,0 +1,87 @@
+{
+  "id": "grammar_ser_estar",
+  "name": "Grammar: Existence Verbs (Iru & Aru)",
+  "description": "Master the Japanese verbs of existence: いる (living things) and ある (inanimate objects)",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_ja_grammar_ser_estar_1",
+      "type": "multipleChoice",
+      "question": "Which verb expresses the existence of a living being (person or animal)?",
+      "options": [
+        "いる (います)",
+        "ある (あります)",
+        "する (します)",
+        "いく (いきます)"
+      ],
+      "correctAnswer": "いる (います)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_grammar_ser_estar_2",
+      "type": "translateThis",
+      "question": "机の上に本があります",
+      "options": [],
+      "correctAnswer": "There is a book on the desk",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "There's a book on the desk",
+        "There is a book on the desk"
+      ]
+    },
+    {
+      "id": "ex_ja_grammar_ser_estar_3",
+      "type": "fillInBlank",
+      "question": "庭に猫が一匹___。（生き物の存在）",
+      "options": [
+        "います",
+        "あります",
+        "します",
+        "来ます"
+      ],
+      "correctAnswer": "います",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_grammar_ser_estar_4",
+      "type": "matchPairs",
+      "question": "Match subjects with appropriate existence verbs",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "先生",
+            "native": "います (living)"
+          },
+          {
+            "target": "かばん",
+            "native": "あります (inanimate)"
+          },
+          {
+            "target": "友だち",
+            "native": "います (living)"
+          },
+          {
+            "target": "ビル",
+            "native": "あります (inanimate)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_grammar_ser_estar_5",
+      "type": "speakThis",
+      "question": "部屋の中に誰かいますか？",
+      "options": [],
+      "correctAnswer": "部屋の中に誰かいますか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

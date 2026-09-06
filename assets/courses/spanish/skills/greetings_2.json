@@ -231,6 +231,188 @@
             ],
             "correctAnswer": "Cuídate",
             "id": "ex_g2_21"
+        },
+        {
+            "type": "translateThis",
+            "question": "¡Bienvenido de nuevo!",
+            "options": [],
+            "correctAnswer": "Welcome back!",
+            "id": "ex_g2x22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How would you greet someone you haven't seen in a long time?",
+            "options": [
+                "¡Cuánto tiempo!",
+                "Hola",
+                "Adiós",
+                "Por favor"
+            ],
+            "correctAnswer": "¡Cuánto tiempo!",
+            "id": "ex_g2x22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¡___ tiempo sin verte!",
+            "options": [
+                "Cuánto",
+                "Cómo",
+                "Qué",
+                "Dónde"
+            ],
+            "correctAnswer": "Cuánto",
+            "id": "ex_g2x22_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match time-based farewells",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Hasta pronto",
+                        "native": "See you soon"
+                    },
+                    {
+                        "target": "Hasta la próxima",
+                        "native": "Until next time"
+                    },
+                    {
+                        "target": "Nos vemos",
+                        "native": "See you"
+                    },
+                    {
+                        "target": "Que te vaya bien",
+                        "native": "Hope it goes well for you"
+                    }
+                ]
+            },
+            "id": "ex_g2x22_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Que te vaya bien",
+            "options": [],
+            "correctAnswer": "Que te vaya bien",
+            "id": "ex_g2x22_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "¡Cuánto tiempo sin verte!",
+            "options": [],
+            "correctAnswer": "¡Cuánto tiempo sin verte!",
+            "id": "ex_g2x22_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Nos vemos pronto",
+            "options": [],
+            "correctAnswer": "See you soon",
+            "id": "ex_g2x22_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'Que descanses' mean?",
+            "options": [
+                "Rest well",
+                "Good morning",
+                "Nice to meet you",
+                "Take care"
+            ],
+            "correctAnswer": "Rest well",
+            "id": "ex_g2x22_8"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Que ___ (rest well - informal)",
+            "options": [
+                "descanses",
+                "descansas",
+                "descansar",
+                "descanso"
+            ],
+            "correctAnswer": "descanses",
+            "id": "ex_g2x22_9"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Cómo amaneciste?",
+            "options": [],
+            "correctAnswer": "How did you wake up? (informal, Latin America)",
+            "id": "ex_g2x3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is a friendly way to ask how someone slept?",
+            "options": [
+                "¿Cómo amaneciste?",
+                "¿Qué comiste?",
+                "¿A dónde vas?",
+                "¿Cuánto cuesta?"
+            ],
+            "correctAnswer": "¿Cómo amaneciste?",
+            "id": "ex_g2x3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Amanecí muy ___ (well)",
+            "options": [
+                "bien",
+                "bueno",
+                "buena",
+                "bienes"
+            ],
+            "correctAnswer": "bien",
+            "id": "ex_g2x3_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match casual check-ins",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "¿Todo bien?",
+                        "native": "Everything OK?"
+                    },
+                    {
+                        "target": "¿Qué me cuentas?",
+                        "native": "What's new with you?"
+                    },
+                    {
+                        "target": "Aquí andamos",
+                        "native": "Just getting by"
+                    },
+                    {
+                        "target": "Nada nuevo",
+                        "native": "Nothing new"
+                    }
+                ]
+            },
+            "id": "ex_g2x3_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "¿Qué me cuentas?",
+            "options": [],
+            "correctAnswer": "¿Qué me cuentas?",
+            "id": "ex_g2x3_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "Aquí andamos, ¿y tú?",
+            "options": [],
+            "correctAnswer": "Aquí andamos, ¿y tú?",
+            "id": "ex_g2x3_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Nada nuevo por aquí",
+            "options": [],
+            "correctAnswer": "Nothing new around here",
+            "id": "ex_g2x3_7"
         }
     ]
 }

@@ -1,0 +1,87 @@
+{
+  "id": "comparatives",
+  "name": "Le Comparatif",
+  "description": "Plus... que, moins... que, aussi... que",
+  "level": 15,
+  "exercises": [
+    {
+      "id": "ex_fr_comparatives_1",
+      "type": "multipleChoice",
+      "question": "Which phrase expresses equality with adjectives in French?",
+      "options": [
+        "Aussi... que",
+        "Plus... que",
+        "Moins... que",
+        "Autant... de"
+      ],
+      "correctAnswer": "Aussi... que",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_comparatives_2",
+      "type": "translateThis",
+      "question": "Le train est plus rapide que le car",
+      "options": [],
+      "correctAnswer": "The train is faster than the coach",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The train is faster than the bus",
+        "The train is faster than the coach"
+      ]
+    },
+    {
+      "id": "ex_fr_comparatives_3",
+      "type": "fillInBlank",
+      "question": "Cette chambre est moins ___ que la précédente.",
+      "options": [
+        "chère",
+        "cher",
+        "chers",
+        "chèrement"
+      ],
+      "correctAnswer": "chère",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_comparatives_4",
+      "type": "matchPairs",
+      "question": "Match comparatives",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "plus grand que",
+            "native": "taller/bigger than"
+          },
+          {
+            "target": "moins rapide que",
+            "native": "less fast than"
+          },
+          {
+            "target": "aussi bon que",
+            "native": "as good as"
+          },
+          {
+            "target": "meilleur que",
+            "native": "better than"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_comparatives_5",
+      "type": "speakThis",
+      "question": "Ce modèle est nettement plus performant",
+      "options": [],
+      "correctAnswer": "Ce modèle est nettement plus performant",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

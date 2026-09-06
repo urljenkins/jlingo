@@ -1,0 +1,87 @@
+{
+  "id": "directions",
+  "name": "Directions",
+  "description": "Indiquer le chemin: tout droit, à gauche, à droite",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_fr_directions_1",
+      "type": "multipleChoice",
+      "question": "What does 'tournez à gauche' mean?",
+      "options": [
+        "Turn left",
+        "Turn right",
+        "Go straight",
+        "Stop here"
+      ],
+      "correctAnswer": "Turn left",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_directions_2",
+      "type": "translateThis",
+      "question": "Continuez tout droit jusqu'au feu rouge",
+      "options": [],
+      "correctAnswer": "Continue straight ahead to the traffic light",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Go straight ahead to the traffic light",
+        "Continue straight ahead to the traffic light"
+      ]
+    },
+    {
+      "id": "ex_fr_directions_3",
+      "type": "fillInBlank",
+      "question": "La pharmacie est située ___ la boulangerie et la banque.",
+      "options": [
+        "entre",
+        "sur",
+        "sous",
+        "vers"
+      ],
+      "correctAnswer": "entre",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_directions_4",
+      "type": "matchPairs",
+      "question": "Match directions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "tout droit",
+            "native": "straight ahead"
+          },
+          {
+            "target": "à droite",
+            "native": "to the right"
+          },
+          {
+            "target": "à gauche",
+            "native": "to the left"
+          },
+          {
+            "target": "en face de",
+            "native": "opposite/facing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_directions_5",
+      "type": "speakThis",
+      "question": "Prenez la deuxième rue à droite après le pont",
+      "options": [],
+      "correctAnswer": "Prenez la deuxième rue à droite après le pont",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "shopping",
+  "name": "Shopping & Department Stores",
+  "description": "Ask prices, sizes, tax-free shopping, and paying at Japanese stores",
+  "level": 10,
+  "exercises": [
+    {
+      "id": "ex_ja_shopping_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'How much is this?' in Japanese?",
+      "options": [
+        "これはいくらですか？",
+        "これは何ですか？",
+        "ここはどこですか？",
+        "どなたですか？"
+      ],
+      "correctAnswer": "これはいくらですか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_shopping_2",
+      "type": "translateThis",
+      "question": "免税手続きをお願いできますか？",
+      "options": [],
+      "correctAnswer": "Could I request tax-free processing?",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Can I do tax free shopping please?",
+        "Could I request tax-free processing?"
+      ]
+    },
+    {
+      "id": "ex_ja_shopping_3",
+      "type": "fillInBlank",
+      "question": "レシートを___ですか？（店員の確認）",
+      "options": [
+        "ご利用",
+        "お買い",
+        "お持ち",
+        "お探し"
+      ],
+      "correctAnswer": "ご利用",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_shopping_4",
+      "type": "matchPairs",
+      "question": "Match shopping phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "試着室 (しちゃくしつ)",
+            "native": "fitting room"
+          },
+          {
+            "target": "お会計 (おかいけい)",
+            "native": "the bill / checkout"
+          },
+          {
+            "target": "免税 (めんぜい)",
+            "native": "tax-free"
+          },
+          {
+            "target": "割引 (わりびき)",
+            "native": "discount"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_shopping_5",
+      "type": "speakThis",
+      "question": "クレジットカードで支払えますか？",
+      "options": [],
+      "correctAnswer": "クレジットカードで支払えますか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

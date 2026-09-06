@@ -183,6 +183,82 @@
             "options": [],
             "correctAnswer": "It's ten minutes to eight",
             "id": "ex_time_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "Es tarde",
+            "options": [],
+            "correctAnswer": "It's late",
+            "id": "ex_timex22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'It's early'?",
+            "options": [
+                "Es temprano",
+                "Es tarde",
+                "Es pronto",
+                "Es rápido"
+            ],
+            "correctAnswer": "Es temprano",
+            "id": "ex_timex22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Llegué ___ a la reunión (late)",
+            "options": [
+                "tarde",
+                "temprano",
+                "rápido",
+                "lento"
+            ],
+            "correctAnswer": "tarde",
+            "id": "ex_timex22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Todavía es temprano",
+            "options": [],
+            "correctAnswer": "Todavía es temprano",
+            "id": "ex_timex22_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Dentro de una hora",
+            "options": [],
+            "correctAnswer": "In an hour",
+            "id": "ex_timex3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'in ten minutes'?",
+            "options": [
+                "En diez minutos",
+                "Hace diez minutos",
+                "Diez minutos pasados",
+                "Por diez minutos"
+            ],
+            "correctAnswer": "En diez minutos",
+            "id": "ex_timex3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Nos vemos ___ una hora (in)",
+            "options": [
+                "en",
+                "dentro",
+                "por",
+                "a"
+            ],
+            "correctAnswer": "en",
+            "id": "ex_timex3_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Dentro de media hora",
+            "options": [],
+            "correctAnswer": "Dentro de media hora",
+            "id": "ex_timex3_4"
         }
     ]
 }

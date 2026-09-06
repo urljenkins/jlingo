@@ -1,0 +1,87 @@
+{
+  "id": "subjunctive",
+  "name": "Potential & Desiderative Expressions",
+  "description": "Express potential (〜ができる, 〜(ら)れる) and desires (〜たい, 〜てほしい)",
+  "level": 22,
+  "exercises": [
+    {
+      "id": "ex_ja_subjunctive_1",
+      "type": "multipleChoice",
+      "question": "What is the potential form of 話す (hanasu - to speak)?",
+      "options": [
+        "話せる (はなせる)",
+        "話される",
+        "話させる",
+        "話したい"
+      ],
+      "correctAnswer": "話せる (はなせる)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_subjunctive_2",
+      "type": "translateThis",
+      "question": "もっと流暢に日本語を話せるようになりたいです",
+      "options": [],
+      "correctAnswer": "I want to become able to speak Japanese more fluently",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I want to be able to speak Japanese more fluently",
+        "I want to become able to speak Japanese more fluently"
+      ]
+    },
+    {
+      "id": "ex_ja_subjunctive_3",
+      "type": "fillInBlank",
+      "question": "この漢字は難しくて___ません。（読めるの否定）",
+      "options": [
+        "読め",
+        "読み",
+        "読まれ",
+        "読ませ"
+      ],
+      "correctAnswer": "読め",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_subjunctive_4",
+      "type": "matchPairs",
+      "question": "Match verb forms with meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "行ける",
+            "native": "can go (potential)"
+          },
+          {
+            "target": "食べたい",
+            "native": "want to eat (desire)"
+          },
+          {
+            "target": "教えてほしい",
+            "native": "want someone to teach me"
+          },
+          {
+            "target": "見られる",
+            "native": "can see / be seen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_subjunctive_5",
+      "type": "speakThis",
+      "question": "自分の力で困難を克服できるよう全力を尽くします",
+      "options": [],
+      "correctAnswer": "自分の力で困難を克服できるよう全力を尽くします",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

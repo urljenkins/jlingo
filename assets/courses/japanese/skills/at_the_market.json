@@ -1,0 +1,87 @@
+{
+  "id": "at_the_market",
+  "name": "At the Market & Supermarket",
+  "description": "Shop for groceries at Japanese supermarkets, depachika, and local markets",
+  "level": 10,
+  "exercises": [
+    {
+      "id": "ex_ja_at_the_market_1",
+      "type": "multipleChoice",
+      "question": "What is the gourmet food basement of a Japanese department store called?",
+      "options": [
+        "デパ地下 (デパちか)",
+        "コンビニ",
+        "スーパー",
+        "商店街"
+      ],
+      "correctAnswer": "デパ地下 (デパちか)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_at_the_market_2",
+      "type": "translateThis",
+      "question": "この魚は産地直送でとても新鮮です",
+      "options": [],
+      "correctAnswer": "This fish is shipped directly from the source and very fresh",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "This fish is direct from the farm and fresh",
+        "This fish is shipped directly from the source and very fresh"
+      ]
+    },
+    {
+      "id": "ex_ja_at_the_market_3",
+      "type": "fillInBlank",
+      "question": "賞味___を確認してから購入します。",
+      "options": [
+        "期限",
+        "日付",
+        "値段",
+        "重量"
+      ],
+      "correctAnswer": "期限",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_at_the_market_4",
+      "type": "matchPairs",
+      "question": "Match grocery sections",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "生鮮食品",
+            "native": "fresh food"
+          },
+          {
+            "target": "惣菜 (そうざい)",
+            "native": "prepared deli dishes"
+          },
+          {
+            "target": "調味料",
+            "native": "seasonings"
+          },
+          {
+            "target": "菓子",
+            "native": "sweets/snacks"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_at_the_market_5",
+      "type": "speakThis",
+      "question": "地元で採れた新鮮な野菜を買いました",
+      "options": [],
+      "correctAnswer": "地元で採れた新鮮な野菜を買いました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

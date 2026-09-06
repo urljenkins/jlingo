@@ -1,0 +1,87 @@
+{
+  "id": "greetings_2",
+  "name": "Salutations 2",
+  "description": "Formules de politesse et salutations du quotidien",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_fr_g2_1",
+      "type": "translateThis",
+      "question": "Enchanté de faire votre connaissance",
+      "options": [],
+      "correctAnswer": "Pleased to meet you",
+      "acceptableAnswers": [
+        "Nice to meet you",
+        "Pleased to meet you"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_g2_2",
+      "type": "multipleChoice",
+      "question": "What does 'À bientôt' mean?",
+      "options": [
+        "See you soon",
+        "Good evening",
+        "Please",
+        "Thank you"
+      ],
+      "correctAnswer": "See you soon",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_g2_3",
+      "type": "fillInBlank",
+      "question": "Bonne ___, dormez bien !",
+      "options": [
+        "nuit",
+        "journée",
+        "matinée",
+        "après-midi"
+      ],
+      "correctAnswer": "nuit",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_g2_4",
+      "type": "matchPairs",
+      "question": "Match polite greetings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "À demain",
+            "native": "See you tomorrow"
+          },
+          {
+            "target": "Bonne journée",
+            "native": "Have a nice day"
+          },
+          {
+            "target": "Au revoir",
+            "native": "Goodbye"
+          },
+          {
+            "target": "S'il vous plaît",
+            "native": "Please"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_g2_5",
+      "type": "speakThis",
+      "question": "Passez une excellente soirée",
+      "options": [],
+      "correctAnswer": "Passez une excellente soirée",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sightseeing",
+  "name": "Visites Touristiques",
+  "description": "Musées, monuments historiques et visites guidées",
+  "level": 17,
+  "exercises": [
+    {
+      "id": "ex_fr_sightseeing_1",
+      "type": "multipleChoice",
+      "question": "How do you ask for a guided audio tour?",
+      "options": [
+        "Un audioguide, s'il vous plaît",
+        "Un plan de la ville",
+        "Une brochure gratuite",
+        "Un ticket de bus"
+      ],
+      "correctAnswer": "Un audioguide, s'il vous plaît",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_sightseeing_2",
+      "type": "translateThis",
+      "question": "Ce château médiéval date du douzième siècle",
+      "options": [],
+      "correctAnswer": "This medieval castle dates from the twelfth century",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "This medieval castle dates back to the twelfth century",
+        "This medieval castle dates from the twelfth century"
+      ]
+    },
+    {
+      "id": "ex_fr_sightseeing_3",
+      "type": "fillInBlank",
+      "question": "L'accès au monument est gratuit pour les moins de vingt-six ___.",
+      "options": [
+        "ans",
+        "jours",
+        "mois",
+        "heures"
+      ],
+      "correctAnswer": "ans",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_sightseeing_4",
+      "type": "matchPairs",
+      "question": "Match cultural tourist sights",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le patrimoine",
+            "native": "the heritage"
+          },
+          {
+            "target": "l'exposition",
+            "native": "the exhibition"
+          },
+          {
+            "target": "le monument",
+            "native": "the monument"
+          },
+          {
+            "target": "le guide touristique",
+            "native": "the tour guide"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_sightseeing_5",
+      "type": "speakThis",
+      "question": "La vue panoramique depuis le sommet est époustouflante",
+      "options": [],
+      "correctAnswer": "La vue panoramique depuis le sommet est époustouflante",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

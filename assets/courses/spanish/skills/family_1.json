@@ -269,6 +269,188 @@
             ],
             "correctAnswer": "grande",
             "id": "ex_fam_24"
+        },
+        {
+            "type": "translateThis",
+            "question": "Cuñado",
+            "options": [],
+            "correctAnswer": "Brother-in-law",
+            "id": "ex_famx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Sister-in-law'?",
+            "options": [
+                "Cuñada",
+                "Cuñado",
+                "Nuera",
+                "Suegra"
+            ],
+            "correctAnswer": "Cuñada",
+            "id": "ex_famx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Mi ___ es la madre de mi esposo (mother-in-law)",
+            "options": [
+                "suegra",
+                "cuñada",
+                "nuera",
+                "tía"
+            ],
+            "correctAnswer": "suegra",
+            "id": "ex_famx22_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match in-law family terms",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Suegro",
+                        "native": "Father-in-law"
+                    },
+                    {
+                        "target": "Suegra",
+                        "native": "Mother-in-law"
+                    },
+                    {
+                        "target": "Yerno",
+                        "native": "Son-in-law"
+                    },
+                    {
+                        "target": "Nuera",
+                        "native": "Daughter-in-law"
+                    }
+                ]
+            },
+            "id": "ex_famx22_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Mi cuñado vive cerca",
+            "options": [],
+            "correctAnswer": "Mi cuñado vive cerca",
+            "id": "ex_famx22_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "Mi familia es grande y unida",
+            "options": [],
+            "correctAnswer": "Mi familia es grande y unida",
+            "id": "ex_famx22_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los parientes",
+            "options": [],
+            "correctAnswer": "The relatives",
+            "id": "ex_famx22_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'Los parientes' mean?",
+            "options": [
+                "The relatives",
+                "The parents",
+                "The children",
+                "The neighbors"
+            ],
+            "correctAnswer": "The relatives",
+            "id": "ex_famx22_8"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Toda mi familia se reúne en ___ (Christmas)",
+            "options": [
+                "Navidad",
+                "verano",
+                "enero",
+                "vacaciones"
+            ],
+            "correctAnswer": "Navidad",
+            "id": "ex_famx22_9"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los gemelos",
+            "options": [],
+            "correctAnswer": "The twins",
+            "id": "ex_famx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'stepmother'?",
+            "options": [
+                "Madrastra",
+                "Madre",
+                "Suegra",
+                "Tía"
+            ],
+            "correctAnswer": "Madrastra",
+            "id": "ex_famx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Mi ___ tiene el mismo cumpleaños que yo (twin brother)",
+            "options": [
+                "hermano gemelo",
+                "hermano mayor",
+                "hermano menor",
+                "primo"
+            ],
+            "correctAnswer": "hermano gemelo",
+            "id": "ex_famx3_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match blended family terms",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Madrastra",
+                        "native": "Stepmother"
+                    },
+                    {
+                        "target": "Padrastro",
+                        "native": "Stepfather"
+                    },
+                    {
+                        "target": "Hermanastro",
+                        "native": "Stepbrother"
+                    },
+                    {
+                        "target": "Medio hermano",
+                        "native": "Half-brother"
+                    }
+                ]
+            },
+            "id": "ex_famx3_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Mis padres están divorciados",
+            "options": [],
+            "correctAnswer": "Mis padres están divorciados",
+            "id": "ex_famx3_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "Tengo un hermanastro y dos medios hermanos",
+            "options": [],
+            "correctAnswer": "Tengo un hermanastro y dos medios hermanos",
+            "id": "ex_famx3_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "La familia numerosa",
+            "options": [],
+            "correctAnswer": "The large family",
+            "id": "ex_famx3_7"
         }
     ]
 }

@@ -179,6 +179,82 @@
             ],
             "correctAnswer": "leche",
             "id": "ex_dr_14"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un batido de fresa",
+            "options": [],
+            "correctAnswer": "A strawberry smoothie",
+            "id": "ex_drx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'sparkling water'?",
+            "options": [
+                "Agua con gas",
+                "Agua sin gas",
+                "Agua fría",
+                "Agua caliente"
+            ],
+            "correctAnswer": "Agua con gas",
+            "id": "ex_drx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Prefiero el agua ___ gas (without)",
+            "options": [
+                "sin",
+                "con",
+                "de",
+                "por"
+            ],
+            "correctAnswer": "sin",
+            "id": "ex_drx22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Un batido de chocolate",
+            "options": [],
+            "correctAnswer": "Un batido de chocolate",
+            "id": "ex_drx22_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un té helado",
+            "options": [],
+            "correctAnswer": "An iced tea",
+            "id": "ex_drx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'hot drink'?",
+            "options": [
+                "Bebida caliente",
+                "Bebida fría",
+                "Bebida dulce",
+                "Bebida amarga"
+            ],
+            "correctAnswer": "Bebida caliente",
+            "id": "ex_drx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "En verano prefiero bebidas ___ (cold)",
+            "options": [
+                "frías",
+                "calientes",
+                "dulces",
+                "amargas"
+            ],
+            "correctAnswer": "frías",
+            "id": "ex_drx3_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Una bebida fría, por favor",
+            "options": [],
+            "correctAnswer": "Una bebida fría, por favor",
+            "id": "ex_drx3_4"
         }
     ]
 }

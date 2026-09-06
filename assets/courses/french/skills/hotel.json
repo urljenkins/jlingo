@@ -1,0 +1,87 @@
+{
+  "id": "hotel",
+  "name": "À l'Hôtel",
+  "description": "Enregistrement, réclamations et services hôteliers",
+  "level": 17,
+  "exercises": [
+    {
+      "id": "ex_fr_hotel_1",
+      "type": "multipleChoice",
+      "question": "What is the phrase for 'check-in' at a French hotel?",
+      "options": [
+        "L'enregistrement des bagages / arrivée",
+        "Le départ",
+        "La note de frais",
+        "Le service d'étage"
+      ],
+      "correctAnswer": "L'enregistrement des bagages / arrivée",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_hotel_2",
+      "type": "translateThis",
+      "question": "Nous avons réservé une chambre double avec vue sur mer",
+      "options": [],
+      "correctAnswer": "We booked a double room with sea view",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "We have reserved a double room overlooking the sea",
+        "We booked a double room with sea view"
+      ]
+    },
+    {
+      "id": "ex_fr_hotel_3",
+      "type": "fillInBlank",
+      "question": "Le petit-déjeuner est-il ___ dans le tarif ?",
+      "options": [
+        "inclus",
+        "exclu",
+        "payé",
+        "fermé"
+      ],
+      "correctAnswer": "inclus",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_hotel_4",
+      "type": "matchPairs",
+      "question": "Match hotel terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "la clé de chambre",
+            "native": "the room key"
+          },
+          {
+            "target": "le coffre-fort",
+            "native": "the safe"
+          },
+          {
+            "target": "le service d'étage",
+            "native": "room service"
+          },
+          {
+            "target": "la réception",
+            "native": "the front desk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_hotel_5",
+      "type": "speakThis",
+      "question": "Pourriez-vous commander un taxi pour l'aéroport demain matin ?",
+      "options": [],
+      "correctAnswer": "Pourriez-vous commander un taxi pour l'aéroport demain matin ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

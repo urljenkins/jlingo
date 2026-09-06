@@ -1,0 +1,87 @@
+{
+  "id": "days_months",
+  "name": "Days & Months",
+  "description": "Days of the week (Youbi) and twelve months (Gatsu) in Japanese",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "ex_ja_days_months_1",
+      "type": "multipleChoice",
+      "question": "Which day is 'Getsuyoubi' (月曜日)?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "correctAnswer": "Monday",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_days_months_2",
+      "type": "translateThis",
+      "question": "土曜日と日曜日は休みです",
+      "options": [],
+      "correctAnswer": "Saturday and Sunday are days off",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Saturday and Sunday are holidays",
+        "Saturday and Sunday are days off"
+      ]
+    },
+    {
+      "id": "ex_ja_days_months_3",
+      "type": "fillInBlank",
+      "question": "一年の最初の月は___月です。",
+      "options": [
+        "一",
+        "二",
+        "十二",
+        "四"
+      ],
+      "correctAnswer": "一",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_days_months_4",
+      "type": "matchPairs",
+      "question": "Match days of the week",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "火曜日",
+            "native": "Tuesday"
+          },
+          {
+            "target": "水曜日",
+            "native": "Wednesday"
+          },
+          {
+            "target": "木曜日",
+            "native": "Thursday"
+          },
+          {
+            "target": "金曜日",
+            "native": "Friday"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_days_months_5",
+      "type": "speakThis",
+      "question": "週末は何をしますか？",
+      "options": [],
+      "correctAnswer": "週末は何をしますか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

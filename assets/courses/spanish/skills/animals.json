@@ -199,6 +199,96 @@
             ],
             "correctAnswer": "rana",
             "id": "ex_an_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "El mono trepa el árbol",
+            "options": [],
+            "correctAnswer": "The monkey climbs the tree",
+            "id": "ex_anx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which animal is known as 'the king of the jungle'?",
+            "options": [
+                "León",
+                "Tigre",
+                "Oso",
+                "Elefante"
+            ],
+            "correctAnswer": "León",
+            "id": "ex_anx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El ___ tiene rayas (tiger)",
+            "options": [
+                "tigre",
+                "león",
+                "oso",
+                "conejo"
+            ],
+            "correctAnswer": "tigre",
+            "id": "ex_anx22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El mono come plátanos",
+            "options": [],
+            "correctAnswer": "El mono come plátanos",
+            "id": "ex_anx22_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "El elefante tiene una trompa larga",
+            "options": [],
+            "correctAnswer": "El elefante tiene una trompa larga",
+            "id": "ex_anx22_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "La oveja da lana",
+            "options": [],
+            "correctAnswer": "The sheep gives wool",
+            "id": "ex_anx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which animal is known for giving wool?",
+            "options": [
+                "Oveja",
+                "Vaca",
+                "Cerdo",
+                "Cabra"
+            ],
+            "correctAnswer": "Oveja",
+            "id": "ex_anx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El ___ da leche (cow)",
+            "options": [
+                "vaca",
+                "vacas",
+                "vaca da",
+                "vacuno"
+            ],
+            "correctAnswer": "vaca",
+            "id": "ex_anx3_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "La gallina pone huevos",
+            "options": [],
+            "correctAnswer": "La gallina pone huevos",
+            "id": "ex_anx3_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "El cerdo vive en la granja",
+            "options": [],
+            "correctAnswer": "El cerdo vive en la granja",
+            "id": "ex_anx3_5"
         }
     ]
 }

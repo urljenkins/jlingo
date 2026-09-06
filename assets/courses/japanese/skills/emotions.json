@@ -1,0 +1,87 @@
+{
+  "id": "emotions",
+  "name": "Feelings & Nuanced Emotions",
+  "description": "Express complex feelings, onomatopoeia for emotions (doki-doki, waku-waku, etc.)",
+  "level": 21,
+  "exercises": [
+    {
+      "id": "ex_ja_emotions_1",
+      "type": "multipleChoice",
+      "question": "Which onomatopoeic word expresses heart-pounding excitement or nervousness?",
+      "options": [
+        "どきどき",
+        "わくわく",
+        "いらいら",
+        "うとうと"
+      ],
+      "correctAnswer": "どきどき",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_emotions_2",
+      "type": "translateThis",
+      "question": "明日からの旅行のことを考えると胸がわくわくします",
+      "options": [],
+      "correctAnswer": "Thinking about the trip starting tomorrow, my heart is thrilled with anticipation",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Thinking about the trip from tomorrow makes me excited",
+        "Thinking about the trip starting tomorrow, my heart is thrilled with anticipation"
+      ]
+    },
+    {
+      "id": "ex_ja_emotions_3",
+      "type": "fillInBlank",
+      "question": "試験の結果を待つ間、不安で___していました。",
+      "options": [
+        "そわそわ",
+        "すやすや",
+        "ぺこぺこ",
+        "ぐうぐう"
+      ],
+      "correctAnswer": "そわそわ",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_emotions_4",
+      "type": "matchPairs",
+      "question": "Match emotional mimetic words (Gitaigo)",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "わくわく",
+            "native": "excited / anticipation"
+          },
+          {
+            "target": "いらいら",
+            "native": "irritated / annoyed"
+          },
+          {
+            "target": "ほっとする",
+            "native": "relieved"
+          },
+          {
+            "target": "がっかり",
+            "native": "disappointed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_emotions_5",
+      "type": "speakThis",
+      "question": "皆さんの温かい励ましに心から深く感謝しています",
+      "options": [],
+      "correctAnswer": "皆さんの温かい励ましに心から深く感謝しています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

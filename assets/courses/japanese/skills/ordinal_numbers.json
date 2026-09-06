@@ -1,0 +1,88 @@
+{
+  "id": "ordinal_numbers",
+  "name": "Ordinal Numbers & Dates",
+  "description": "Express first, second, ranks, days of the month and specific dates",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_ja_ordinal_numbers_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'the first' or 'number one' in Japanese?",
+      "options": [
+        "一番目 (いちばんめ)",
+        "二番目",
+        "三番目",
+        "最初だけ"
+      ],
+      "correctAnswer": "一番目 (いちばんめ)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_ordinal_numbers_2",
+      "type": "translateThis",
+      "question": "今日は五月一日（ついたち）です",
+      "options": [],
+      "correctAnswer": "Today is May first",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Today is the first of May",
+        "Today is May 1st",
+        "Today is May first"
+      ]
+    },
+    {
+      "id": "ex_ja_ordinal_numbers_3",
+      "type": "fillInBlank",
+      "question": "二番___の角を左に曲がってください。",
+      "options": [
+        "目",
+        "番",
+        "本",
+        "個"
+      ],
+      "correctAnswer": "目",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_ordinal_numbers_4",
+      "type": "matchPairs",
+      "question": "Match special days of the month",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "一日 (ついたち)",
+            "native": "first day of month"
+          },
+          {
+            "target": "二日 (ふつか)",
+            "native": "second day"
+          },
+          {
+            "target": "三日 (みっか)",
+            "native": "third day"
+          },
+          {
+            "target": "十日 (とおか)",
+            "native": "tenth day"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_ordinal_numbers_5",
+      "type": "speakThis",
+      "question": "会議は来週の木曜日です",
+      "options": [],
+      "correctAnswer": "会議は来週の木曜日です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "making_plans",
+  "name": "Making Plans & Invitations",
+  "description": "Invite others with 〜ませんか and make joint suggestions with 〜ましょう",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_ja_making_plans_1",
+      "type": "multipleChoice",
+      "question": "How do you politely invite someone: 'Shall we drink tea together?'",
+      "options": [
+        "一緒にお茶を飲みませんか？",
+        "お茶を飲みました",
+        "お茶を飲んでください",
+        "お茶を飲みたいです"
+      ],
+      "correctAnswer": "一緒にお茶を飲みませんか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_making_plans_2",
+      "type": "translateThis",
+      "question": "今度の土曜日に美術館へ行きましょう",
+      "options": [],
+      "correctAnswer": "Let's go to the art museum this Saturday",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Let us go to the art museum this coming Saturday",
+        "Let's go to the art museum this Saturday"
+      ]
+    },
+    {
+      "id": "ex_ja_making_plans_3",
+      "type": "fillInBlank",
+      "question": "少し休憩___ましょう。",
+      "options": [
+        "し",
+        "する",
+        "して",
+        "した"
+      ],
+      "correctAnswer": "し",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_making_plans_4",
+      "type": "matchPairs",
+      "question": "Match invitation responses",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ぜひ行きましょう",
+            "native": "by all means let's go"
+          },
+          {
+            "target": "いいですね",
+            "native": "sounds good!"
+          },
+          {
+            "target": "残念ですが...",
+            "native": "I am sorry, but... (declining)"
+          },
+          {
+            "target": "また今度誘ってください",
+            "native": "please invite me next time"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_making_plans_5",
+      "type": "speakThis",
+      "question": "今週末、一緒にハイキングに行きませんか？",
+      "options": [],
+      "correctAnswer": "今週末、一緒にハイキングに行きませんか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

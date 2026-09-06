@@ -233,6 +233,96 @@
             "options": [],
             "correctAnswer": "I was born in the month of July",
             "id": "ex_dm_16"
+        },
+        {
+            "type": "translateThis",
+            "question": "El próximo lunes",
+            "options": [],
+            "correctAnswer": "Next Monday",
+            "id": "ex_dmx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'last month'?",
+            "options": [
+                "El mes pasado",
+                "El próximo mes",
+                "Este mes",
+                "El mes que viene"
+            ],
+            "correctAnswer": "El mes pasado",
+            "id": "ex_dmx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Nos vemos el ___ que viene (week)",
+            "options": [
+                "semana",
+                "mes",
+                "año",
+                "día"
+            ],
+            "correctAnswer": "semana",
+            "id": "ex_dmx22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El mes pasado viajé a España",
+            "options": [],
+            "correctAnswer": "El mes pasado viajé a España",
+            "id": "ex_dmx22_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Hoy es martes, dos de abril",
+            "options": [],
+            "correctAnswer": "Hoy es martes, dos de abril",
+            "id": "ex_dmx22_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Todos los martes",
+            "options": [],
+            "correctAnswer": "Every Tuesday",
+            "id": "ex_dmx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'every day'?",
+            "options": [
+                "Todos los días",
+                "Todo el día",
+                "Cada mes",
+                "Cada semana"
+            ],
+            "correctAnswer": "Todos los días",
+            "id": "ex_dmx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ los domingos vamos a la iglesia (every)",
+            "options": [
+                "Todos",
+                "Todo",
+                "Cada",
+                "Cada uno"
+            ],
+            "correctAnswer": "Todos",
+            "id": "ex_dmx3_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Todos los viernes salimos a cenar",
+            "options": [],
+            "correctAnswer": "Todos los viernes salimos a cenar",
+            "id": "ex_dmx3_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "El próximo año voy a viajar mucho",
+            "options": [],
+            "correctAnswer": "El próximo año voy a viajar mucho",
+            "id": "ex_dmx3_5"
         }
     ]
 }

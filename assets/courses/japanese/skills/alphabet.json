@@ -1,0 +1,87 @@
+{
+  "id": "alphabet",
+  "name": "Hiragana & Katakana",
+  "description": "Learn the Japanese syllabaries: Hiragana, Katakana, and basic pronunciation",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_ja_alphabet_1",
+      "type": "multipleChoice",
+      "question": "Which character is the Hiragana vowel 'A'?",
+      "options": [
+        "あ",
+        "い",
+        "う",
+        "え"
+      ],
+      "correctAnswer": "あ",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_alphabet_2",
+      "type": "translateThis",
+      "question": "ありがとう",
+      "options": [],
+      "correctAnswer": "Thank you",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Thanks",
+        "Thank you"
+      ]
+    },
+    {
+      "id": "ex_ja_alphabet_3",
+      "type": "fillInBlank",
+      "question": "おはよう___（丁寧な朝の挨拶）",
+      "options": [
+        "ございます",
+        "です",
+        "ます",
+        "さん"
+      ],
+      "correctAnswer": "ございます",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_alphabet_4",
+      "type": "matchPairs",
+      "question": "Match basic Hiragana characters with their romaji sounds",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "あ",
+            "native": "a"
+          },
+          {
+            "target": "か",
+            "native": "ka"
+          },
+          {
+            "target": "さ",
+            "native": "sa"
+          },
+          {
+            "target": "た",
+            "native": "ta"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_alphabet_5",
+      "type": "speakThis",
+      "question": "こんにちは",
+      "options": [],
+      "correctAnswer": "こんにちは",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

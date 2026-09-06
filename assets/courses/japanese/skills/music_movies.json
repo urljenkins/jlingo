@@ -1,0 +1,87 @@
+{
+  "id": "music_movies",
+  "name": "Music & Cinema (J-Pop, Anime, Film)",
+  "description": "Japanese music genres, anime soundtracks, studio directors, and live concerts",
+  "level": 18,
+  "exercises": [
+    {
+      "id": "ex_ja_music_movies_1",
+      "type": "multipleChoice",
+      "question": "Which legendary Japanese animation studio produced 'Spirited Away'?",
+      "options": [
+        "スタジオジブリ",
+        "東映アニメーション",
+        "京都アニメーション",
+        "MAPPA"
+      ],
+      "correctAnswer": "スタジオジブリ",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_music_movies_2",
+      "type": "translateThis",
+      "question": "このアニメの主題歌は世界中のファンに愛されています",
+      "options": [],
+      "correctAnswer": "The theme song of this anime is loved by fans all over the world",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The anime's opening song is loved by fans worldwide",
+        "The theme song of this anime is loved by fans all over the world"
+      ]
+    },
+    {
+      "id": "ex_ja_music_movies_3",
+      "type": "fillInBlank",
+      "question": "黒澤明監督の映画は映画史に大きな___を与えました。",
+      "options": [
+        "影響",
+        "音楽",
+        "音声",
+        "曲"
+      ],
+      "correctAnswer": "影響",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_music_movies_4",
+      "type": "matchPairs",
+      "question": "Match entertainment vocabulary",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "声優 (せいゆう)",
+            "native": "voice actor"
+          },
+          {
+            "target": "監督 (かんとく)",
+            "native": "director"
+          },
+          {
+            "target": "主題歌 (しゅだいか)",
+            "native": "theme song"
+          },
+          {
+            "target": "演奏 (えんそう)",
+            "native": "musical performance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_music_movies_5",
+      "type": "speakThis",
+      "question": "心に深く響く感動的な映画のストーリーでした",
+      "options": [],
+      "correctAnswer": "心に深く響く感動的な映画のストーリーでした",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

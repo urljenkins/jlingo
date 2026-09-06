@@ -1,0 +1,87 @@
+{
+  "id": "sports",
+  "name": "Les Sports",
+  "description": "Sports individuels, collectifs et compétition",
+  "level": 18,
+  "exercises": [
+    {
+      "id": "ex_fr_sports_1",
+      "type": "multipleChoice",
+      "question": "Which preposition is used with 'faire' for sports?",
+      "options": [
+        "Du / de la / des",
+        "Au / à la",
+        "Par",
+        "Pour"
+      ],
+      "correctAnswer": "Du / de la / des",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_sports_2",
+      "type": "translateThis",
+      "question": "L'équipe nationale a remporté la coupe du monde",
+      "options": [],
+      "correctAnswer": "The national team won the world cup",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The national team has won the World Cup",
+        "The national team won the world cup"
+      ]
+    },
+    {
+      "id": "ex_fr_sports_3",
+      "type": "fillInBlank",
+      "question": "Il fait de l'___ tous les samedis matins.",
+      "options": [
+        "escalade",
+        "football",
+        "tennis",
+        "rugby"
+      ],
+      "correctAnswer": "escalade",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_sports_4",
+      "type": "matchPairs",
+      "question": "Match sports terminology",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le terrain",
+            "native": "the pitch/court"
+          },
+          {
+            "target": "l'arbitre",
+            "native": "the referee"
+          },
+          {
+            "target": "le vainqueur",
+            "native": "the winner"
+          },
+          {
+            "target": "l'entraînement",
+            "native": "the training session"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_sports_5",
+      "type": "speakThis",
+      "question": "L'important est de participer et de donner le meilleur de soi",
+      "options": [],
+      "correctAnswer": "L'important est de participer et de donner le meilleur de soi",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

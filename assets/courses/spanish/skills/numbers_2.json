@@ -175,6 +175,82 @@
             ],
             "correctAnswer": "diecisiete",
             "id": "ex_n2_14"
+        },
+        {
+            "type": "translateThis",
+            "question": "Veinte más diez es treinta",
+            "options": [],
+            "correctAnswer": "Twenty plus ten is thirty",
+            "id": "ex_n2x22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What number is 'doce'?",
+            "options": [
+                "12",
+                "11",
+                "13",
+                "20"
+            ],
+            "correctAnswer": "12",
+            "id": "ex_n2x22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Quince más cinco es ___",
+            "options": [
+                "veinte",
+                "diez",
+                "treinta",
+                "doce"
+            ],
+            "correctAnswer": "veinte",
+            "id": "ex_n2x22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Trece, catorce, quince",
+            "options": [],
+            "correctAnswer": "Trece, catorce, quince",
+            "id": "ex_n2x22_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Diecisiete más tres es veinte",
+            "options": [],
+            "correctAnswer": "Seventeen plus three is twenty",
+            "id": "ex_n2x3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'eleven'?",
+            "options": [
+                "Once",
+                "Doce",
+                "Diez",
+                "Trece"
+            ],
+            "correctAnswer": "Once",
+            "id": "ex_n2x3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Veinte menos cinco es ___",
+            "options": [
+                "quince",
+                "diez",
+                "veinticinco",
+                "doce"
+            ],
+            "correctAnswer": "quince",
+            "id": "ex_n2x3_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Dieciocho, diecinueve, veinte",
+            "options": [],
+            "correctAnswer": "Dieciocho, diecinueve, veinte",
+            "id": "ex_n2x3_4"
         }
     ]
 }

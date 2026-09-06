@@ -1,0 +1,87 @@
+{
+  "id": "slang",
+  "name": "Colloquial Japanese & Wakamono Kotoba",
+  "description": "Youth slang, internet abbreviations (w, kusa), dialect particles, and informal speech",
+  "level": 24,
+  "exercises": [
+    {
+      "id": "ex_ja_slang_1",
+      "type": "multipleChoice",
+      "question": "What does the internet slang '草 (kusa)' represent in Japanese chat?",
+      "options": [
+        "Laughter (from 'w' resembling grass)",
+        "Anger",
+        "Boredom",
+        "Sadness"
+      ],
+      "correctAnswer": "Laughter (from 'w' resembling grass)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_slang_2",
+      "type": "translateThis",
+      "question": "その映画、マジでやばいから絶対見たほうがいいよ",
+      "options": [],
+      "correctAnswer": "That movie is seriously awesome, so you definitely should see it",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "That film is really incredible, you must watch it",
+        "That movie is seriously awesome, so you definitely should see it"
+      ]
+    },
+    {
+      "id": "ex_ja_slang_3",
+      "type": "fillInBlank",
+      "question": "ネットで面白い動画を見つけて、思わず___生えた。（ネットスラング：笑う）",
+      "options": [
+        "草が",
+        "木が",
+        "花が",
+        "森が"
+      ],
+      "correctAnswer": "草が",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_slang_4",
+      "type": "matchPairs",
+      "question": "Match colloquial expressions with standard meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "マジで",
+            "native": "really / seriously"
+          },
+          {
+            "target": "やばい",
+            "native": "incredible / dangerous / amazing"
+          },
+          {
+            "target": "めっちゃ",
+            "native": "very / exceedingly"
+          },
+          {
+            "target": "ガチで",
+            "native": "in all seriousness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_slang_5",
+      "type": "speakThis",
+      "question": "これめっちゃ美味しいから一口食べてみて！",
+      "options": [],
+      "correctAnswer": "これめっちゃ美味しいから一口食べてみて！",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

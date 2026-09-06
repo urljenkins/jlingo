@@ -1,0 +1,87 @@
+{
+  "id": "introductions",
+  "name": "Présentations",
+  "description": "Se présenter et faire connaissance en français",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_fr_intro_1",
+      "type": "translateThis",
+      "question": "Je m'appelle Thomas",
+      "options": [],
+      "correctAnswer": "My name is Thomas",
+      "acceptableAnswers": [
+        "I am Thomas",
+        "My name is Thomas"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_intro_2",
+      "type": "multipleChoice",
+      "question": "How do you politely ask 'Where are you from?'",
+      "options": [
+        "D'où venez-vous ?",
+        "Comment vous appelez-vous ?",
+        "Quel âge avez-vous ?",
+        "Où habitez-vous ?"
+      ],
+      "correctAnswer": "D'où venez-vous ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_intro_3",
+      "type": "fillInBlank",
+      "question": "Je ___ canadien et j'habite à Montréal.",
+      "options": [
+        "suis",
+        "es",
+        "est",
+        "sommes"
+      ],
+      "correctAnswer": "suis",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_intro_4",
+      "type": "matchPairs",
+      "question": "Match personal introduction questions and answers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Je m'appelle",
+            "native": "My name is"
+          },
+          {
+            "target": "J'habite à",
+            "native": "I live in"
+          },
+          {
+            "target": "Je suis",
+            "native": "I am"
+          },
+          {
+            "target": "Enchanté",
+            "native": "Nice to meet you"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_intro_5",
+      "type": "speakThis",
+      "question": "Je suis ravi de faire votre connaissance",
+      "options": [],
+      "correctAnswer": "Je suis ravi de faire votre connaissance",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

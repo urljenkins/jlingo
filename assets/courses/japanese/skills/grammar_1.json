@@ -1,0 +1,88 @@
+{
+  "id": "grammar_1",
+  "name": "Grammar: Particles (Wa, Ga, Mo)",
+  "description": "Master basic Japanese particles: topic marker は, subject marker が, and also も",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_ja_grammar_1_1",
+      "type": "multipleChoice",
+      "question": "Which particle means 'also' or 'too'?",
+      "options": [
+        "も",
+        "は",
+        "が",
+        "で"
+      ],
+      "correctAnswer": "も",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_grammar_1_2",
+      "type": "translateThis",
+      "question": "私も学生です",
+      "options": [],
+      "correctAnswer": "I am also a student",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I am a student too",
+        "I'm also a student",
+        "I am also a student"
+      ]
+    },
+    {
+      "id": "ex_ja_grammar_1_3",
+      "type": "fillInBlank",
+      "question": "猫___好きです。（好む対象を表す助詞）",
+      "options": [
+        "が",
+        "を",
+        "に",
+        "で"
+      ],
+      "correctAnswer": "が",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_grammar_1_4",
+      "type": "matchPairs",
+      "question": "Match particles with functions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "は",
+            "native": "topic marker"
+          },
+          {
+            "target": "が",
+            "native": "subject identifier"
+          },
+          {
+            "target": "も",
+            "native": "also / too"
+          },
+          {
+            "target": "の",
+            "native": "possessive marker"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_grammar_1_5",
+      "type": "speakThis",
+      "question": "私も日本に行きたいです",
+      "options": [],
+      "correctAnswer": "私も日本に行きたいです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

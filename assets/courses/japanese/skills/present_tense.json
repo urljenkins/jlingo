@@ -1,0 +1,87 @@
+{
+  "id": "present_tense",
+  "name": "Present & Habitual (Masu-form)",
+  "description": "Regular polite present tense with ます and present habitual actions",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_ja_present_tense_1",
+      "type": "multipleChoice",
+      "question": "What is the polite present form of 飲む (nomu - to drink)?",
+      "options": [
+        "飲みます",
+        "飲みました",
+        "飲んで",
+        "飲むです"
+      ],
+      "correctAnswer": "飲みます",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_present_tense_2",
+      "type": "translateThis",
+      "question": "毎朝七時に起きます",
+      "options": [],
+      "correctAnswer": "I wake up at seven every morning",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I get up at seven every morning",
+        "I wake up at seven every morning"
+      ]
+    },
+    {
+      "id": "ex_ja_present_tense_3",
+      "type": "fillInBlank",
+      "question": "図書館で日本語を___ます。",
+      "options": [
+        "勉強し",
+        "飲み",
+        "食べ",
+        "買い"
+      ],
+      "correctAnswer": "勉強し",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_present_tense_4",
+      "type": "matchPairs",
+      "question": "Match dictionary verbs with polite ます forms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "食べる",
+            "native": "食べます"
+          },
+          {
+            "target": "行く",
+            "native": "行きます"
+          },
+          {
+            "target": "話す",
+            "native": "話します"
+          },
+          {
+            "target": "見る",
+            "native": "見ます"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_present_tense_5",
+      "type": "speakThis",
+      "question": "毎日日本語を熱心に勉強しています",
+      "options": [],
+      "correctAnswer": "毎日日本語を熱心に勉強しています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

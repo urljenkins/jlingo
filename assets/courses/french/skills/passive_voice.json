@@ -1,0 +1,87 @@
+{
+  "id": "passive_voice",
+  "name": "La Voix Passive",
+  "description": "Constructions passives et tournures impersonnelles",
+  "level": 23,
+  "exercises": [
+    {
+      "id": "ex_fr_passive_voice_1",
+      "type": "multipleChoice",
+      "question": "Which preposition introduces the agent complement in passive voice?",
+      "options": [
+        "Par",
+        "Pour",
+        "Avec",
+        "Sans"
+      ],
+      "correctAnswer": "Par",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_passive_voice_2",
+      "type": "translateThis",
+      "question": "Ce tableau célèbre a été peint par Claude Monet",
+      "options": [],
+      "correctAnswer": "This famous painting was painted by Claude Monet",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "This famous painting has been painted by Claude Monet",
+        "This famous painting was painted by Claude Monet"
+      ]
+    },
+    {
+      "id": "ex_fr_passive_voice_3",
+      "type": "fillInBlank",
+      "question": "Le traité de paix fut ___ par les deux gouvernements.",
+      "options": [
+        "signé",
+        "signer",
+        "signant",
+        "signée"
+      ],
+      "correctAnswer": "signé",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_passive_voice_4",
+      "type": "matchPairs",
+      "question": "Match active sentences with passive equivalents",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "on a découvert",
+            "native": "a été découvert"
+          },
+          {
+            "target": "le jury décerne",
+            "native": "est décerné par le jury"
+          },
+          {
+            "target": "la tempête a détruit",
+            "native": "a été détruit par la tempête"
+          },
+          {
+            "target": "l'équipe prépare",
+            "native": "est préparé par l'équipe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_passive_voice_5",
+      "type": "speakThis",
+      "question": "Ces édifices historiques ont été entièrement rénovés",
+      "options": [],
+      "correctAnswer": "Ces édifices historiques ont été entièrement rénovés",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

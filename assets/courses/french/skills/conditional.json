@@ -1,0 +1,87 @@
+{
+  "id": "conditional",
+  "name": "Le Conditionnel",
+  "description": "Politesse, hypothèses et monde imaginaire au conditionnel",
+  "level": 22,
+  "exercises": [
+    {
+      "id": "ex_fr_conditional_1",
+      "type": "multipleChoice",
+      "question": "Which form expresses polite requests: 'Je ___ vous parler'?",
+      "options": [
+        "voudrais",
+        "veux",
+        "voulais",
+        "voudrai"
+      ],
+      "correctAnswer": "voudrais",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_conditional_2",
+      "type": "translateThis",
+      "question": "Si j'avais le temps, je voyagerais à travers le monde",
+      "options": [],
+      "correctAnswer": "If I had the time, I would travel around the world",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "If I had time I would travel across the world",
+        "If I had the time, I would travel around the world"
+      ]
+    },
+    {
+      "id": "ex_fr_conditional_3",
+      "type": "fillInBlank",
+      "question": "Nous ___ ravis de vous accueillir chez nous.",
+      "options": [
+        "serions",
+        "serons",
+        "étions",
+        "sommes"
+      ],
+      "correctAnswer": "serions",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_conditional_4",
+      "type": "matchPairs",
+      "question": "Match conditional verbs with pronouns",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "je pourrais",
+            "native": "I could"
+          },
+          {
+            "target": "tu devrais",
+            "native": "you should"
+          },
+          {
+            "target": "il saurait",
+            "native": "he would know"
+          },
+          {
+            "target": "nous aimerions",
+            "native": "we would love"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_conditional_5",
+      "type": "speakThis",
+      "question": "Auriez-vous l'obligeance de m'indiquer la direction ?",
+      "options": [],
+      "correctAnswer": "Auriez-vous l'obligeance de m'indiquer la direction ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

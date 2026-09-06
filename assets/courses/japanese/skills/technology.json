@@ -1,0 +1,87 @@
+{
+  "id": "technology",
+  "name": "Technology & Robotics",
+  "description": "Japan's technological advancements, bullet trains, robotics, and consumer tech",
+  "level": 20,
+  "exercises": [
+    {
+      "id": "ex_ja_technology_1",
+      "type": "multipleChoice",
+      "question": "What is the Japanese word for 'artificial intelligence'?",
+      "options": [
+        "人工知能 (じんこうちのう)",
+        "情報技術",
+        "自動運転",
+        "量子力学"
+      ],
+      "correctAnswer": "人工知能 (じんこうちのう)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_technology_2",
+      "type": "translateThis",
+      "question": "製造現場では産業用ロボットが精密な作業を行っています",
+      "options": [],
+      "correctAnswer": "In manufacturing sites, industrial robots perform precise work",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Industrial robots perform precision work on factory floors",
+        "In manufacturing sites, industrial robots perform precise work"
+      ]
+    },
+    {
+      "id": "ex_ja_technology_3",
+      "type": "fillInBlank",
+      "question": "最先端の___技術が社会の課題解決に貢献しています。",
+      "options": [
+        "デジタル",
+        "古い",
+        "手作業",
+        "紙"
+      ],
+      "correctAnswer": "デジタル",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_technology_4",
+      "type": "matchPairs",
+      "question": "Match technical fields",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ロボット工学",
+            "native": "robotics"
+          },
+          {
+            "target": "半導体 (はんどうたい)",
+            "native": "semiconductors"
+          },
+          {
+            "target": "自動化 (じどうか)",
+            "native": "automation"
+          },
+          {
+            "target": "電池技術",
+            "native": "battery technology"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_technology_5",
+      "type": "speakThis",
+      "question": "日本の精密工学技術は世界中で高く評価されています",
+      "options": [],
+      "correctAnswer": "日本の精密工学技術は世界中で高く評価されています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "music_movies",
+  "name": "Musique & Cinéma",
+  "description": "Genres musicaux, films, critiques et festivals",
+  "level": 18,
+  "exercises": [
+    {
+      "id": "ex_fr_music_movies_1",
+      "type": "multipleChoice",
+      "question": "What is the French cinema award ceremony equivalent to the Oscars?",
+      "options": [
+        "Les César",
+        "Les Molière",
+        "Les Victoires",
+        "Les Palmes"
+      ],
+      "correctAnswer": "Les César",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_music_movies_2",
+      "type": "translateThis",
+      "question": "Ce réalisateur a été primé au festival de Cannes",
+      "options": [],
+      "correctAnswer": "This director was awarded at the Cannes Film Festival",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "This director won an award at the Cannes festival",
+        "This director was awarded at the festival de Cannes",
+        "This director was awarded at the Cannes Film Festival"
+      ]
+    },
+    {
+      "id": "ex_fr_music_movies_3",
+      "type": "fillInBlank",
+      "question": "La bande-___ du film a été composée par un orchestre réputé.",
+      "options": [
+        "originale",
+        "sonore",
+        "musicale",
+        "visuelle"
+      ],
+      "correctAnswer": "originale",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_music_movies_4",
+      "type": "matchPairs",
+      "question": "Match cinematic and musical terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le scénario",
+            "native": "the screenplay"
+          },
+          {
+            "target": "le compositeur",
+            "native": "the composer"
+          },
+          {
+            "target": "la mise en scène",
+            "native": "the directing/staging"
+          },
+          {
+            "target": "l'interprétation",
+            "native": "the performance/acting"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_music_movies_5",
+      "type": "speakThis",
+      "question": "Cette œuvre cinématographique suscite une émotion remarquable",
+      "options": [],
+      "correctAnswer": "Cette œuvre cinématographique suscite une émotion remarquable",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

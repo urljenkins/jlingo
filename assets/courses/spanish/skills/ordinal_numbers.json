@@ -186,6 +186,82 @@
             ],
             "correctAnswer": "tercer",
             "id": "ex_ord_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "El sexto lugar",
+            "options": [],
+            "correctAnswer": "The sixth place",
+            "id": "ex_ordx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'the seventh day'?",
+            "options": [
+                "El séptimo día",
+                "El siete día",
+                "El septena día",
+                "El séptima día"
+            ],
+            "correctAnswer": "El séptimo día",
+            "id": "ex_ordx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Ganó el ___ premio (first)",
+            "options": [
+                "primer",
+                "primero",
+                "uno",
+                "un"
+            ],
+            "correctAnswer": "primer",
+            "id": "ex_ordx22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El noveno piso",
+            "options": [],
+            "correctAnswer": "El noveno piso",
+            "id": "ex_ordx22_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Llegó en último lugar",
+            "options": [],
+            "correctAnswer": "He/she arrived in last place",
+            "id": "ex_ordx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'last' (as in position)?",
+            "options": [
+                "Último",
+                "Primero",
+                "Final",
+                "Fin"
+            ],
+            "correctAnswer": "Último",
+            "id": "ex_ordx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Es la ___ vez que lo veo (last)",
+            "options": [
+                "última",
+                "último",
+                "final",
+                "primer"
+            ],
+            "correctAnswer": "última",
+            "id": "ex_ordx3_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El octavo piso",
+            "options": [],
+            "correctAnswer": "El octavo piso",
+            "id": "ex_ordx3_4"
         }
     ]
 }

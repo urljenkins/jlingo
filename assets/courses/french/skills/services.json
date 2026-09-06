@@ -1,0 +1,87 @@
+{
+  "id": "services",
+  "name": "Services & Démarches",
+  "description": "La poste, la banque, la pharmacie",
+  "level": 10,
+  "exercises": [
+    {
+      "id": "ex_fr_services_1",
+      "type": "multipleChoice",
+      "question": "Where do you go to send a registered parcel in France?",
+      "options": [
+        "À la poste",
+        "À la boulangerie",
+        "Au cinéma",
+        "À la boucherie"
+      ],
+      "correctAnswer": "À la poste",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_services_2",
+      "type": "translateThis",
+      "question": "Je voudrais envoyer cette lettre par courrier recommandé",
+      "options": [],
+      "correctAnswer": "I would like to send this letter by registered mail",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I'd like to send this letter by registered mail",
+        "I would like to send this letter by registered mail"
+      ]
+    },
+    {
+      "id": "ex_fr_services_3",
+      "type": "fillInBlank",
+      "question": "Pouvez-vous me donner ce médicament sans ___ ?",
+      "options": [
+        "ordonnance",
+        "facture",
+        "monnaie",
+        "carte"
+      ],
+      "correctAnswer": "ordonnance",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_services_4",
+      "type": "matchPairs",
+      "question": "Match services",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "la banque",
+            "native": "the bank"
+          },
+          {
+            "target": "la poste",
+            "native": "the post office"
+          },
+          {
+            "target": "la pharmacie",
+            "native": "the pharmacy"
+          },
+          {
+            "target": "le commissariat",
+            "native": "the police station"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_services_5",
+      "type": "speakThis",
+      "question": "Je viens retirer un colis à mon nom",
+      "options": [],
+      "correctAnswer": "Je viens retirer un colis à mon nom",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "past_tense_2",
+  "name": "L'Imparfait",
+  "description": "Description du passé, habitudes et météo avec l'imparfait",
+  "level": 13,
+  "exercises": [
+    {
+      "id": "ex_fr_past_tense_2_1",
+      "type": "multipleChoice",
+      "question": "What is the ending for 'je' in the imperfect tense?",
+      "options": [
+        "-ais",
+        "-ait",
+        "-ions",
+        "-iez"
+      ],
+      "correctAnswer": "-ais",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_past_tense_2_2",
+      "type": "translateThis",
+      "question": "Quand j'étais petit, je jouais souvent dans le jardin",
+      "options": [],
+      "correctAnswer": "When I was young, I often played in the garden",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "When I was little, I used to play often in the garden",
+        "When I was young, I often played in the garden"
+      ]
+    },
+    {
+      "id": "ex_fr_past_tense_2_3",
+      "type": "fillInBlank",
+      "question": "Il ___ beau tous les jours pendant nos vacances.",
+      "options": [
+        "faisait",
+        "faisais",
+        "faisaient",
+        "faisions"
+      ],
+      "correctAnswer": "faisait",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_past_tense_2_4",
+      "type": "matchPairs",
+      "question": "Match imperfect conjugations of 'avoir'",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "j'avais",
+            "native": "I had / used to have"
+          },
+          {
+            "target": "tu avais",
+            "native": "you had"
+          },
+          {
+            "target": "nous avions",
+            "native": "we had"
+          },
+          {
+            "target": "ils avaient",
+            "native": "they had"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_past_tense_2_5",
+      "type": "speakThis",
+      "question": "Chaque dimanche, ma grand-mère préparait un gâteau",
+      "options": [],
+      "correctAnswer": "Chaque dimanche, ma grand-mère préparait un gâteau",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

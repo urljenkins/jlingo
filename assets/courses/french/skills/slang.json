@@ -1,0 +1,87 @@
+{
+  "id": "slang",
+  "name": "Argot & Langage Familier",
+  "description": "Verlan, langage des jeunes et registre informel",
+  "level": 24,
+  "exercises": [
+    {
+      "id": "ex_fr_slang_1",
+      "type": "multipleChoice",
+      "question": "What is 'un bouquin' in colloquial French?",
+      "options": [
+        "A book",
+        "A movie",
+        "A pen",
+        "A friend"
+      ],
+      "correctAnswer": "A book",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_slang_2",
+      "type": "translateThis",
+      "question": "C'est un truc de ouf, je n'en reviens pas",
+      "options": [],
+      "correctAnswer": "It is something crazy, I cannot believe it",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "It's totally crazy, I can't believe it",
+        "It is something crazy, I cannot believe it"
+      ]
+    },
+    {
+      "id": "ex_fr_slang_3",
+      "type": "fillInBlank",
+      "question": "On va se boire un verre avec les ___ ce soir.",
+      "options": [
+        "potes",
+        "livres",
+        "voitures",
+        "maisons"
+      ],
+      "correctAnswer": "potes",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_slang_4",
+      "type": "matchPairs",
+      "question": "Match colloquial words with standard French",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le taf",
+            "native": "le travail"
+          },
+          {
+            "target": "la bagnole",
+            "native": "la voiture"
+          },
+          {
+            "target": "les fringues",
+            "native": "les vêtements"
+          },
+          {
+            "target": "le fric",
+            "native": "l'argent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_slang_5",
+      "type": "speakThis",
+      "question": "Laisse tomber, ce n'est pas grave du tout",
+      "options": [],
+      "correctAnswer": "Laisse tomber, ce n'est pas grave du tout",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

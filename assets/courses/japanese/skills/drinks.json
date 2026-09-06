@@ -1,0 +1,87 @@
+{
+  "id": "drinks",
+  "name": "Drinks",
+  "description": "Vocabulary for beverages: water, tea, coffee, juice, and ordering drinks",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_ja_drinks_1",
+      "type": "multipleChoice",
+      "question": "What is Japanese green tea called?",
+      "options": [
+        "お茶 (おちゃ)",
+        "みず",
+        "ジュース",
+        "ミルク"
+      ],
+      "correctAnswer": "お茶 (おちゃ)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_drinks_2",
+      "type": "translateThis",
+      "question": "冷たい水を一杯ください",
+      "options": [],
+      "correctAnswer": "Please give me a glass of cold water",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "A glass of cold water please",
+        "Please give me a glass of cold water"
+      ]
+    },
+    {
+      "id": "ex_ja_drinks_3",
+      "type": "fillInBlank",
+      "question": "朝起きて、温かい___を飲みます。",
+      "options": [
+        "コーヒー",
+        "ごはん",
+        "パン",
+        "さかな"
+      ],
+      "correctAnswer": "コーヒー",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_drinks_4",
+      "type": "matchPairs",
+      "question": "Match drink vocabulary",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "水 (みず)",
+            "native": "water"
+          },
+          {
+            "target": "お茶 (おちゃ)",
+            "native": "tea"
+          },
+          {
+            "target": "牛乳 (ぎゅうにゅう)",
+            "native": "milk"
+          },
+          {
+            "target": "お酒 (おさけ)",
+            "native": "sake / alcohol"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_drinks_5",
+      "type": "speakThis",
+      "question": "温かい緑茶をお願いします",
+      "options": [],
+      "correctAnswer": "温かい緑茶をお願いします",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

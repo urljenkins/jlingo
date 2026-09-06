@@ -1,0 +1,87 @@
+{
+  "id": "ordering_food",
+  "name": "Commander à Manger",
+  "description": "Formuler ses préférences alimentaires et demandes particulières",
+  "level": 11,
+  "exercises": [
+    {
+      "id": "ex_fr_ordering_food_1",
+      "type": "multipleChoice",
+      "question": "How do you specify your meat should be cooked medium?",
+      "options": [
+        "À point",
+        "Saignant",
+        "Bien cuit",
+        "Bleu"
+      ],
+      "correctAnswer": "À point",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ordering_food_2",
+      "type": "translateThis",
+      "question": "Je suis végétarien, avez-vous des options sans viande ?",
+      "options": [],
+      "correctAnswer": "I am vegetarian, do you have options without meat?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I am vegetarian, do you have meat-free options?",
+        "I am vegetarian, do you have options without meat?"
+      ]
+    },
+    {
+      "id": "ex_fr_ordering_food_3",
+      "type": "fillInBlank",
+      "question": "Je suis allergique aux fruits de ___.",
+      "options": [
+        "mer",
+        "terre",
+        "forêt",
+        "soleil"
+      ],
+      "correctAnswer": "mer",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ordering_food_4",
+      "type": "matchPairs",
+      "question": "Match cooking preferences for meat",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "bleu",
+            "native": "rare/very rare"
+          },
+          {
+            "target": "saignant",
+            "native": "rare"
+          },
+          {
+            "target": "à point",
+            "native": "medium"
+          },
+          {
+            "target": "bien cuit",
+            "native": "well done"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_ordering_food_5",
+      "type": "speakThis",
+      "question": "Pourriez-vous apporter une carafe d'eau et du pain ?",
+      "options": [],
+      "correctAnswer": "Pourriez-vous apporter une carafe d'eau et du pain ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "adjectives_1",
+  "name": "Adjectifs Courants",
+  "description": "Adjectifs descriptifs essentiels et leur accord en genre et nombre",
+  "level": 6,
+  "exercises": [
+    {
+      "id": "ex_fr_adjectives_1_1",
+      "type": "multipleChoice",
+      "question": "What is the feminine form of the adjective 'grand'?",
+      "options": [
+        "Grande",
+        "Grands",
+        "Grandes",
+        "Grand"
+      ],
+      "correctAnswer": "Grande",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_adjectives_1_2",
+      "type": "translateThis",
+      "question": "C'est une nouvelle voiture rapide",
+      "options": [],
+      "correctAnswer": "This is a new fast car",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "It is a new fast car",
+        "It's a new fast car",
+        "This is a new fast car"
+      ]
+    },
+    {
+      "id": "ex_fr_adjectives_1_3",
+      "type": "fillInBlank",
+      "question": "Ils habitent dans une ___ maison au bord du lac.",
+      "options": [
+        "grande",
+        "grand",
+        "grands",
+        "grandes"
+      ],
+      "correctAnswer": "grande",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_adjectives_1_4",
+      "type": "matchPairs",
+      "question": "Match French adjectives with English opposites",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "petit",
+            "native": "small"
+          },
+          {
+            "target": "grand",
+            "native": "tall/big"
+          },
+          {
+            "target": "facile",
+            "native": "easy"
+          },
+          {
+            "target": "difficile",
+            "native": "difficult"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_adjectives_1_5",
+      "type": "speakThis",
+      "question": "Cet appartement est très lumineux",
+      "options": [],
+      "correctAnswer": "Cet appartement est très lumineux",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

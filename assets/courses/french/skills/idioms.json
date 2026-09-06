@@ -1,0 +1,87 @@
+{
+  "id": "idioms",
+  "name": "Expressions Idiomatiques",
+  "description": "Poser un lapin, avoir le coup de foudre et expressions imagées",
+  "level": 24,
+  "exercises": [
+    {
+      "id": "ex_fr_idioms_1",
+      "type": "multipleChoice",
+      "question": "What does 'poser un lapin' mean in French?",
+      "options": [
+        "To stand someone up",
+        "To bring a gift",
+        "To run fast",
+        "To tell a lie"
+      ],
+      "correctAnswer": "To stand someone up",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_idioms_2",
+      "type": "translateThis",
+      "question": "Ils ont eu un véritable coup de foudre dès leur première rencontre",
+      "options": [],
+      "correctAnswer": "They truly experienced love at first sight at their first meeting",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "They had love at first sight from their very first meeting",
+        "They truly experienced love at first sight at their first meeting"
+      ]
+    },
+    {
+      "id": "ex_fr_idioms_3",
+      "type": "fillInBlank",
+      "question": "Garder la tête sur les ___ permet de prendre les bonnes décisions.",
+      "options": [
+        "épaules",
+        "mains",
+        "yeux",
+        "pieds"
+      ],
+      "correctAnswer": "épaules",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_idioms_4",
+      "type": "matchPairs",
+      "question": "Match French idioms with meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "casser les pieds",
+            "native": "to annoy/get on nerves"
+          },
+          {
+            "target": "tomber dans les pommes",
+            "native": "to faint"
+          },
+          {
+            "target": "raconter des salades",
+            "native": "to tell tall tales"
+          },
+          {
+            "target": "avoir du pain sur la planche",
+            "native": "to have a lot on one's plate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_idioms_5",
+      "type": "speakThis",
+      "question": "Ne vous inquiétez pas, ce n'est pas la mer à boire !",
+      "options": [],
+      "correctAnswer": "Ne vous inquiétez pas, ce n'est pas la mer à boire !",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "passive_voice",
+  "name": "Passive & Causative (Rareru & Saseru)",
+  "description": "Direct passive, suffering/adversity passive (Meiwaku ukemi), and causative",
+  "level": 23,
+  "exercises": [
+    {
+      "id": "ex_ja_passive_voice_1",
+      "type": "multipleChoice",
+      "question": "What kind of passive expresses that the speaker was inconvenienced by an event in Japanese?",
+      "options": [
+        "迷惑受け身 (Suffering passive)",
+        "直接受け身",
+        "使役形",
+        "尊敬形"
+      ],
+      "correctAnswer": "迷惑受け身 (Suffering passive)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_passive_voice_2",
+      "type": "translateThis",
+      "question": "雨に降られて服が濡れてしまいました",
+      "options": [],
+      "correctAnswer": "I got rained on and my clothes got wet",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "It rained on me and my clothes got wet",
+        "I got rained on and my clothes got wet"
+      ]
+    },
+    {
+      "id": "ex_ja_passive_voice_3",
+      "type": "fillInBlank",
+      "question": "部長は部下に企画書を___。（使役形：書く）",
+      "options": [
+        "書かせました",
+        "書かれました",
+        "書きました",
+        "書けました"
+      ],
+      "correctAnswer": "書かせました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_passive_voice_4",
+      "type": "matchPairs",
+      "question": "Match grammatical voice categories",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "〜られる",
+            "native": "passive / potential"
+          },
+          {
+            "target": "〜させる",
+            "native": "causative (make/let)"
+          },
+          {
+            "target": "〜させられる",
+            "native": "causative-passive (made to do)"
+          },
+          {
+            "target": "〜てもらう",
+            "native": "receive a favor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_passive_voice_5",
+      "type": "speakThis",
+      "question": "先生に論文を丁寧に添削していただきました",
+      "options": [],
+      "correctAnswer": "先生に論文を丁寧に添削していただきました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

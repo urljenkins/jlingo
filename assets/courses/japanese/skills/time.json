@@ -1,0 +1,87 @@
+{
+  "id": "time",
+  "name": "Telling Time",
+  "description": "Telling hours (Ji), minutes (Fun/Pun), and half hours (Han)",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "ex_ja_time_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'What time is it now?' in Japanese?",
+      "options": [
+        "今、何時ですか？",
+        "今は何曜日ですか？",
+        "何日ですか？",
+        "いくらですか？"
+      ],
+      "correctAnswer": "今、何時ですか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_time_2",
+      "type": "translateThis",
+      "question": "今は午後三時半です",
+      "options": [],
+      "correctAnswer": "It is 3:30 PM now",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "It is half past three in the afternoon",
+        "It is 3:30 PM now"
+      ]
+    },
+    {
+      "id": "ex_ja_time_3",
+      "type": "fillInBlank",
+      "question": "授業は九時___始まります。",
+      "options": [
+        "から",
+        "まで",
+        "より",
+        "でも"
+      ],
+      "correctAnswer": "から",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_time_4",
+      "type": "matchPairs",
+      "question": "Match time expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "午前",
+            "native": "AM / morning"
+          },
+          {
+            "target": "午後",
+            "native": "PM / afternoon"
+          },
+          {
+            "target": "半",
+            "native": "half past"
+          },
+          {
+            "target": "分",
+            "native": "minutes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_time_5",
+      "type": "speakThis",
+      "question": "電車は八時十五分に出発します",
+      "options": [],
+      "correctAnswer": "電車は八時十五分に出発します",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

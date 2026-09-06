@@ -287,6 +287,226 @@
             ],
             "correctAnswer": "OK / alright",
             "id": "ex_b1_19"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Qué pasa?",
+            "options": [],
+            "correctAnswer": "What's happening?",
+            "id": "ex_b1x22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'Igualmente' mean?",
+            "options": [
+                "Likewise",
+                "Never mind",
+                "Of course",
+                "Not at all"
+            ],
+            "correctAnswer": "Likewise",
+            "id": "ex_b1x22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "No hay de ___ (no problem)",
+            "options": [
+                "qué",
+                "nada",
+                "algo",
+                "todo"
+            ],
+            "correctAnswer": "qué",
+            "id": "ex_b1x22_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match everyday courtesy phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Con gusto",
+                        "native": "With pleasure"
+                    },
+                    {
+                        "target": "No hay problema",
+                        "native": "No problem"
+                    },
+                    {
+                        "target": "Claro que sí",
+                        "native": "Of course"
+                    },
+                    {
+                        "target": "Faltaba más",
+                        "native": "Don't mention it"
+                    }
+                ]
+            },
+            "id": "ex_b1x22_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Claro que sí",
+            "options": [],
+            "correctAnswer": "Claro que sí",
+            "id": "ex_b1x22_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "No hay de qué",
+            "options": [],
+            "correctAnswer": "No hay de qué",
+            "id": "ex_b1x22_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Faltaba más",
+            "options": [],
+            "correctAnswer": "Don't mention it / of course",
+            "id": "ex_b1x22_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'Con gusto' mean?",
+            "options": [
+                "With pleasure",
+                "With sadness",
+                "With haste",
+                "Without doubt"
+            ],
+            "correctAnswer": "With pleasure",
+            "id": "ex_b1x22_8"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ que sí (of course)",
+            "options": [
+                "Claro",
+                "Bueno",
+                "Vale",
+                "Sí"
+            ],
+            "correctAnswer": "Claro",
+            "id": "ex_b1x22_9"
+        },
+        {
+            "type": "translateThis",
+            "question": "¡Qué bien!",
+            "options": [],
+            "correctAnswer": "How great!",
+            "id": "ex_b1x22_10"
+        },
+        {
+            "type": "translateThis",
+            "question": "¡Buena suerte!",
+            "options": [],
+            "correctAnswer": "Good luck!",
+            "id": "ex_b1x3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Congratulations'?",
+            "options": [
+                "¡Felicidades!",
+                "¡Buena suerte!",
+                "¡Bienvenido!",
+                "¡Salud!"
+            ],
+            "correctAnswer": "¡Felicidades!",
+            "id": "ex_b1x3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¡___ suerte en tu examen!",
+            "options": [
+                "Buena",
+                "Buen",
+                "Bueno",
+                "Bien"
+            ],
+            "correctAnswer": "Buena",
+            "id": "ex_b1x3_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match celebratory expressions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "¡Felicidades!",
+                        "native": "Congratulations!"
+                    },
+                    {
+                        "target": "¡Salud!",
+                        "native": "Cheers!/Bless you!"
+                    },
+                    {
+                        "target": "¡Feliz cumpleaños!",
+                        "native": "Happy birthday!"
+                    },
+                    {
+                        "target": "¡Que lo disfrutes!",
+                        "native": "Enjoy it!"
+                    }
+                ]
+            },
+            "id": "ex_b1x3_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "¡Feliz cumpleaños!",
+            "options": [],
+            "correctAnswer": "¡Feliz cumpleaños!",
+            "id": "ex_b1x3_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "¡Felicidades por tu nuevo trabajo!",
+            "options": [],
+            "correctAnswer": "¡Felicidades por tu nuevo trabajo!",
+            "id": "ex_b1x3_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "¡Salud!",
+            "options": [],
+            "correctAnswer": "Cheers! / Bless you!",
+            "id": "ex_b1x3_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "When do Spanish speakers say '¡Salud!'?",
+            "options": [
+                "When toasting or after a sneeze",
+                "When saying goodbye",
+                "When apologizing",
+                "When introducing themselves"
+            ],
+            "correctAnswer": "When toasting or after a sneeze",
+            "id": "ex_b1x3_8"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¡Que ___ disfrutes! (you - informal)",
+            "options": [
+                "lo",
+                "la",
+                "los",
+                "le"
+            ],
+            "correctAnswer": "lo",
+            "id": "ex_b1x3_9"
+        },
+        {
+            "type": "translateThis",
+            "question": "Que tengas un buen día",
+            "options": [],
+            "correctAnswer": "Have a good day",
+            "id": "ex_b1x3_10"
         }
     ]
 }

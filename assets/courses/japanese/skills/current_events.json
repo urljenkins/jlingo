@@ -1,0 +1,87 @@
+{
+  "id": "current_events",
+  "name": "Current Affairs & Modern Society",
+  "description": "Discuss Japanese society, aging population (Shoushikoureika), sustainability, and technology",
+  "level": 25,
+  "exercises": [
+    {
+      "id": "ex_ja_current_events_1",
+      "type": "multipleChoice",
+      "question": "What term describes the demographic trend of falling birth rates and an aging society in Japan?",
+      "options": [
+        "少子高齢化 (しょうしこうれいか)",
+        "都市過密化",
+        "終身雇用",
+        "高度成長"
+      ],
+      "correctAnswer": "少子高齢化 (しょうしこうれいか)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_current_events_2",
+      "type": "translateThis",
+      "question": "再生可能エネルギーの導入拡大が持続可能な社会の実現に不可欠です",
+      "options": [],
+      "correctAnswer": "Expanding the introduction of renewable energy is essential for realizing a sustainable society",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Adopting renewable energy is vital for a sustainable society",
+        "Expanding the introduction of renewable energy is essential for realizing a sustainable society"
+      ]
+    },
+    {
+      "id": "ex_ja_current_events_3",
+      "type": "fillInBlank",
+      "question": "環境問題への取り組みとして、世界的な___削減が求められています。",
+      "options": [
+        "排出量",
+        "人口",
+        "輸入量",
+        "物価"
+      ],
+      "correctAnswer": "排出量",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_current_events_4",
+      "type": "matchPairs",
+      "question": "Match journalistic terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "持続可能性 (じぞくかのうせい)",
+            "native": "sustainability"
+          },
+          {
+            "target": "世論調査 (よろんちょうさ)",
+            "native": "public opinion poll"
+          },
+          {
+            "target": "景気動向",
+            "native": "economic trends"
+          },
+          {
+            "target": "法改正 (ほうかいせい)",
+            "native": "legal reform"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_current_events_5",
+      "type": "speakThis",
+      "question": "持続可能な未来に向けて、地球規模での連帯と革新が求められています",
+      "options": [],
+      "correctAnswer": "持続可能な未来に向けて、地球規模での連帯と革新が求められています",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

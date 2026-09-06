@@ -1,0 +1,87 @@
+{
+  "id": "idioms",
+  "name": "Four-Character Idioms (Yojijukugo)",
+  "description": "Master iconic four-character idioms (Yojijukugo) and proverb wisdom (Kotowaza)",
+  "level": 24,
+  "exercises": [
+    {
+      "id": "ex_ja_idioms_1",
+      "type": "multipleChoice",
+      "question": "Which idiom means 'once-in-a-lifetime encounter'?",
+      "options": [
+        "一期一会 (いちごいちえ)",
+        "十人十色 (じゅうにんといろ)",
+        "日進月歩 (にっしんげっぽ)",
+        "以心伝心 (いしんでんしん)"
+      ],
+      "correctAnswer": "一期一会 (いちごいちえ)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_idioms_2",
+      "type": "translateThis",
+      "question": "猿も木から落ちるということわざがあります",
+      "options": [],
+      "correctAnswer": "There is a proverb that says even monkeys fall from trees",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Even monkeys fall from trees, as the proverb goes",
+        "There is a proverb that says even monkeys fall from trees"
+      ]
+    },
+    {
+      "id": "ex_ja_idioms_3",
+      "type": "fillInBlank",
+      "question": "人それぞれ個性が異なることを「十人___」と言います。",
+      "options": [
+        "十色 (といろ)",
+        "一色",
+        "百色",
+        "多色"
+      ],
+      "correctAnswer": "十色 (といろ)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_idioms_4",
+      "type": "matchPairs",
+      "question": "Match four-character idioms with meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "一期一会",
+            "native": "cherish every encounter once in a lifetime"
+          },
+          {
+            "target": "以心伝心",
+            "native": "tacit mutual understanding"
+          },
+          {
+            "target": "十人十色",
+            "native": "everyone has their own distinct taste"
+          },
+          {
+            "target": "七転八起",
+            "native": "falling seven times, rising eight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_idioms_5",
+      "type": "speakThis",
+      "question": "出会いは一期一会として深く心に刻むべきです",
+      "options": [],
+      "correctAnswer": "出会いは一期一会として深く心に刻むべきです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

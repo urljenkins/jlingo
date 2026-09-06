@@ -1,0 +1,87 @@
+{
+  "id": "present_perfect",
+  "name": "Passé Récent",
+  "description": "Venir de + infinitif et actions récentes",
+  "level": 13,
+  "exercises": [
+    {
+      "id": "ex_fr_present_perfect_1",
+      "type": "multipleChoice",
+      "question": "Which structure expresses an action that just happened?",
+      "options": [
+        "Venir de + infinitif",
+        "Être sur le point de",
+        "Aller + infinitif",
+        "En train de"
+      ],
+      "correctAnswer": "Venir de + infinitif",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_present_perfect_2",
+      "type": "translateThis",
+      "question": "Le train vient d'arriver en gare",
+      "options": [],
+      "correctAnswer": "The train has just arrived at the station",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The train just arrived at the station",
+        "The train has just arrived at the station"
+      ]
+    },
+    {
+      "id": "ex_fr_present_perfect_3",
+      "type": "fillInBlank",
+      "question": "Je viens ___ terminer mon rapport de travail.",
+      "options": [
+        "de",
+        "à",
+        "par",
+        "pour"
+      ],
+      "correctAnswer": "de",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_present_perfect_4",
+      "type": "matchPairs",
+      "question": "Match recent past phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "je viens de manger",
+            "native": "I just ate"
+          },
+          {
+            "target": "il vient de partir",
+            "native": "he just left"
+          },
+          {
+            "target": "nous venons d'arriver",
+            "native": "we just arrived"
+          },
+          {
+            "target": "elles viennent d'appeler",
+            "native": "they just called"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_present_perfect_5",
+      "type": "speakThis",
+      "question": "Nous venons tout juste de rentrer chez nous",
+      "options": [],
+      "correctAnswer": "Nous venons tout juste de rentrer chez nous",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

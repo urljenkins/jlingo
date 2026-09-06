@@ -5,10 +5,28 @@
   "nativeLanguage": "en-US",
   "skills": [
     {
+      "id": "alphabet",
+      "name": "Alphabet & Sounds",
+      "level": 1,
+      "path": "skills/alphabet.json"
+    },
+    {
       "id": "basics_1",
       "name": "Basics 1",
       "level": 1,
       "path": "skills/basics_1.json"
+    },
+    {
+      "id": "greetings_2",
+      "name": "Greetings 2",
+      "level": 1,
+      "path": "skills/greetings_2.json"
+    },
+    {
+      "id": "introductions",
+      "name": "Introductions",
+      "level": 1,
+      "path": "skills/introductions.json"
     },
     {
       "id": "basics_2",
@@ -17,57 +35,129 @@
       "path": "skills/basics_2.json"
     },
     {
+      "id": "listening_pronunciation",
+      "name": "Listening & Pronunciation",
+      "level": 2,
+      "path": "skills/listening_pronunciation.json"
+    },
+    {
+      "id": "family_1",
+      "name": "Family",
+      "level": 2,
+      "path": "skills/family_1.json"
+    },
+    {
+      "id": "grammar_1",
+      "name": "Grammar: Pronouns",
+      "level": 2,
+      "path": "skills/grammar_1.json"
+    },
+    {
+      "id": "grammar_articles",
+      "name": "Grammar: Articles",
+      "level": 2,
+      "path": "skills/grammar_articles.json"
+    },
+    {
       "id": "numbers",
       "name": "Numbers",
       "level": 3,
       "path": "skills/numbers.json"
     },
     {
+      "id": "numbers_2",
+      "name": "Numbers 2",
+      "level": 3,
+      "path": "skills/numbers_2.json"
+    },
+    {
+      "id": "ordinal_numbers",
+      "name": "Ordinal Numbers",
+      "level": 3,
+      "path": "skills/ordinal_numbers.json"
+    },
+    {
       "id": "colors",
       "name": "Colors",
-      "level": 2,
+      "level": 4,
       "path": "skills/colors.json"
+    },
+    {
+      "id": "days_months",
+      "name": "Days & Months",
+      "level": 4,
+      "path": "skills/days_months.json"
+    },
+    {
+      "id": "time",
+      "name": "Telling Time",
+      "level": 4,
+      "path": "skills/time.json"
     },
     {
       "id": "food",
       "name": "Food",
-      "level": 2,
+      "level": 5,
       "path": "skills/food.json"
     },
     {
-      "id": "family_1",
-      "name": "Family 1",
-      "level": 2,
-      "path": "skills/family_1.json"
+      "id": "drinks",
+      "name": "Drinks",
+      "level": 5,
+      "path": "skills/drinks.json"
     },
     {
-      "id": "travel",
-      "name": "Travel & Getting Around",
-      "level": 3,
-      "path": "skills/travel.json"
-    },
-    {
-      "id": "listening_pronunciation",
-      "name": "Listening & Pronunciation",
-      "level": 3,
-      "path": "skills/listening_pronunciation.json"
-    },
-    {
-      "id": "culture",
-      "name": "Culture & Traditions",
-      "level": 4,
-      "path": "skills/culture.json"
+      "id": "animals",
+      "name": "Animals",
+      "level": 5,
+      "path": "skills/animals.json"
     },
     {
       "id": "reading_writing",
       "name": "Reading & Writing",
-      "level": 4,
+      "level": 5,
       "path": "skills/reading_writing.json"
     },
     {
+      "id": "clothing",
+      "name": "Clothing",
+      "level": 6,
+      "path": "skills/clothing.json"
+    },
+    {
+      "id": "weather",
+      "name": "Weather",
+      "level": 6,
+      "path": "skills/weather.json"
+    },
+    {
+      "id": "adjectives_1",
+      "name": "Common Adjectives",
+      "level": 6,
+      "path": "skills/adjectives_1.json"
+    },
+    {
+      "id": "grammar_ser_estar",
+      "name": "Grammar: Ser & Estar",
+      "level": 7,
+      "path": "skills/grammar_ser_estar.json"
+    },
+    {
+      "id": "grammar_tener",
+      "name": "Grammar: Tener (To Have)",
+      "level": 7,
+      "path": "skills/grammar_tener.json"
+    },
+    {
+      "id": "present_tense",
+      "name": "Present Tense",
+      "level": 7,
+      "path": "skills/present_tense.json"
+    },
+    {
       "id": "daily_routine",
-      "name": "Daily Routine & Te-form",
-      "level": 5,
+      "name": "Daily Routine",
+      "level": 8,
       "path": "skills/daily_routine.json"
     },
     {
@@ -75,6 +165,246 @@
       "name": "Intermediate Expressions",
       "level": 8,
       "path": "skills/intermediate_expressions.json"
+    },
+    {
+      "id": "getting_around",
+      "name": "Getting Around",
+      "level": 9,
+      "path": "skills/getting_around.json"
+    },
+    {
+      "id": "directions",
+      "name": "Directions",
+      "level": 9,
+      "path": "skills/directions.json"
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "level": 9,
+      "path": "skills/transportation.json"
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping",
+      "level": 10,
+      "path": "skills/shopping.json"
+    },
+    {
+      "id": "at_the_market",
+      "name": "At the Market",
+      "level": 10,
+      "path": "skills/at_the_market.json"
+    },
+    {
+      "id": "services",
+      "name": "Services",
+      "level": 10,
+      "path": "skills/services.json"
+    },
+    {
+      "id": "restaurant",
+      "name": "At the Restaurant",
+      "level": 11,
+      "path": "skills/restaurant.json"
+    },
+    {
+      "id": "ordering_food",
+      "name": "Ordering Food",
+      "level": 11,
+      "path": "skills/ordering_food.json"
+    },
+    {
+      "id": "present_continuous",
+      "name": "Present Continuous",
+      "level": 12,
+      "path": "skills/present_continuous.json"
+    },
+    {
+      "id": "past_tense_1",
+      "name": "Past Tense: Preterite",
+      "level": 12,
+      "path": "skills/past_tense_1.json"
+    },
+    {
+      "id": "past_tense_2",
+      "name": "Past Tense: Imperfect",
+      "level": 13,
+      "path": "skills/past_tense_2.json"
+    },
+    {
+      "id": "present_perfect",
+      "name": "Present Perfect",
+      "level": 13,
+      "path": "skills/present_perfect.json"
+    },
+    {
+      "id": "future_tense",
+      "name": "Future Tense",
+      "level": 14,
+      "path": "skills/future_tense.json"
+    },
+    {
+      "id": "making_plans",
+      "name": "Making Plans",
+      "level": 14,
+      "path": "skills/making_plans.json"
+    },
+    {
+      "id": "appointments",
+      "name": "Appointments",
+      "level": 14,
+      "path": "skills/appointments.json"
+    },
+    {
+      "id": "comparatives",
+      "name": "Comparatives",
+      "level": 15,
+      "path": "skills/comparatives.json"
+    },
+    {
+      "id": "superlatives",
+      "name": "Superlatives",
+      "level": 15,
+      "path": "skills/superlatives.json"
+    },
+    {
+      "id": "health_body",
+      "name": "Health & Body",
+      "level": 16,
+      "path": "skills/health_body.json"
+    },
+    {
+      "id": "at_the_doctor",
+      "name": "At the Doctor",
+      "level": 16,
+      "path": "skills/at_the_doctor.json"
+    },
+    {
+      "id": "travel",
+      "name": "Travel",
+      "level": 17,
+      "path": "skills/travel.json"
+    },
+    {
+      "id": "hotel",
+      "name": "At the Hotel",
+      "level": 17,
+      "path": "skills/hotel.json"
+    },
+    {
+      "id": "sightseeing",
+      "name": "Sightseeing",
+      "level": 17,
+      "path": "skills/sightseeing.json"
+    },
+    {
+      "id": "hobbies",
+      "name": "Hobbies",
+      "level": 18,
+      "path": "skills/hobbies.json"
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "level": 18,
+      "path": "skills/sports.json"
+    },
+    {
+      "id": "music_movies",
+      "name": "Music & Movies",
+      "level": 18,
+      "path": "skills/music_movies.json"
+    },
+    {
+      "id": "work",
+      "name": "Work & Profession",
+      "level": 19,
+      "path": "skills/work.json"
+    },
+    {
+      "id": "office",
+      "name": "Office Vocabulary",
+      "level": 19,
+      "path": "skills/office.json"
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "level": 20,
+      "path": "skills/technology.json"
+    },
+    {
+      "id": "internet",
+      "name": "Internet & Social Media",
+      "level": 20,
+      "path": "skills/internet.json"
+    },
+    {
+      "id": "emotions",
+      "name": "Feelings & Emotions",
+      "level": 21,
+      "path": "skills/emotions.json"
+    },
+    {
+      "id": "opinions",
+      "name": "Giving Opinions",
+      "level": 21,
+      "path": "skills/opinions.json"
+    },
+    {
+      "id": "debating",
+      "name": "Debating",
+      "level": 21,
+      "path": "skills/debating.json"
+    },
+    {
+      "id": "conditional",
+      "name": "Conditional Tense",
+      "level": 22,
+      "path": "skills/conditional.json"
+    },
+    {
+      "id": "subjunctive",
+      "name": "Subjunctive Mood",
+      "level": 22,
+      "path": "skills/subjunctive.json"
+    },
+    {
+      "id": "passive_voice",
+      "name": "Passive Voice",
+      "level": 23,
+      "path": "skills/passive_voice.json"
+    },
+    {
+      "id": "phrasal_expressions",
+      "name": "Phrasal Expressions",
+      "level": 23,
+      "path": "skills/phrasal_expressions.json"
+    },
+    {
+      "id": "idioms",
+      "name": "Idioms",
+      "level": 24,
+      "path": "skills/idioms.json"
+    },
+    {
+      "id": "slang",
+      "name": "Slang & Colloquialisms",
+      "level": 24,
+      "path": "skills/slang.json"
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Traditions",
+      "level": 25,
+      "path": "skills/culture.json"
+    },
+    {
+      "id": "current_events",
+      "name": "Current Events",
+      "level": 25,
+      "path": "skills/current_events.json"
     },
     {
       "id": "c_level_mastery",

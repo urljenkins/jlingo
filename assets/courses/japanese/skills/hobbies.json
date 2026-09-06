@@ -1,0 +1,87 @@
+{
+  "id": "hobbies",
+  "name": "Hobbies & Pastimes",
+  "description": "Express personal hobbies using 〜ことが好き / 趣味は〜ことです",
+  "level": 18,
+  "exercises": [
+    {
+      "id": "ex_ja_hobbies_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'My hobby is taking photos' in Japanese?",
+      "options": [
+        "趣味は写真を撮ることです",
+        "写真を撮るのが嫌いです",
+        "写真を見ました",
+        "写真を買います"
+      ],
+      "correctAnswer": "趣味は写真を撮ることです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_hobbies_2",
+      "type": "translateThis",
+      "question": "休日はアニメを見たり本を読んだりして過ごします",
+      "options": [],
+      "correctAnswer": "On holidays, I spend time doing things like watching anime and reading books",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "On days off I watch anime and read books",
+        "On holidays, I spend time doing things like watching anime and reading books"
+      ]
+    },
+    {
+      "id": "ex_ja_hobbies_3",
+      "type": "fillInBlank",
+      "question": "私の趣味は茶道を___ことです。",
+      "options": [
+        "習う",
+        "食べる",
+        "着る",
+        "乗る"
+      ],
+      "correctAnswer": "習う",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_hobbies_4",
+      "type": "matchPairs",
+      "question": "Match traditional Japanese hobbies",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "茶道 (さどう)",
+            "native": "tea ceremony"
+          },
+          {
+            "target": "華道 (かどう)",
+            "native": "flower arrangement"
+          },
+          {
+            "target": "書道 (しょどう)",
+            "native": "calligraphy"
+          },
+          {
+            "target": "将棋 (しょうぎ)",
+            "native": "Japanese chess"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_hobbies_5",
+      "type": "speakThis",
+      "question": "週末は趣味の登山に出かけるのが習慣です",
+      "options": [],
+      "correctAnswer": "週末は趣味の登山に出かけるのが習慣です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

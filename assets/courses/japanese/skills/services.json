@@ -1,0 +1,87 @@
+{
+  "id": "services",
+  "name": "Services & Convenience Stores",
+  "description": "Using Japanese Konbini, post offices, ATMs, and local administration",
+  "level": 10,
+  "exercises": [
+    {
+      "id": "ex_ja_services_1",
+      "type": "multipleChoice",
+      "question": "What multi-function store is ubiquitous in Japan for food, ATMs, and bills?",
+      "options": [
+        "コンビニ (Konbini)",
+        "郵便局",
+        "市役所",
+        "警察署"
+      ],
+      "correctAnswer": "コンビニ (Konbini)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_services_2",
+      "type": "translateThis",
+      "question": "お弁当を温めていただけますか？",
+      "options": [],
+      "correctAnswer": "Could you warm up the bento lunchbox?",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Can you heat up the lunchbox please?",
+        "Could you warm up the bento lunchbox?"
+      ]
+    },
+    {
+      "id": "ex_ja_services_3",
+      "type": "fillInBlank",
+      "question": "ATMで現金を引き___。",
+      "options": [
+        "出し",
+        "入れ",
+        "送り",
+        "払い"
+      ],
+      "correctAnswer": "出し",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_services_4",
+      "type": "matchPairs",
+      "question": "Match konbini services",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "宅配便 (たくはいびん)",
+            "native": "parcel delivery"
+          },
+          {
+            "target": "公共料金支払い",
+            "native": "utility bill payment"
+          },
+          {
+            "target": "コピー機",
+            "native": "photocopy machine"
+          },
+          {
+            "target": "おにぎり",
+            "native": "rice balls"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_services_5",
+      "type": "speakThis",
+      "question": "お弁当を温めてください、お箸もお願いします",
+      "options": [],
+      "correctAnswer": "お弁当を温めてください、お箸もお願いします",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

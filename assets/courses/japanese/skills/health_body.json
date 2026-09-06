@@ -1,0 +1,87 @@
+{
+  "id": "health_body",
+  "name": "Health & Body Parts",
+  "description": "Body parts in Japanese and describing symptoms (itai, netsu, seki)",
+  "level": 16,
+  "exercises": [
+    {
+      "id": "ex_ja_health_body_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'My stomach hurts' in Japanese?",
+      "options": [
+        "お腹が痛いです",
+        "頭が痛いです",
+        "喉が痛いです",
+        "歯が痛いです"
+      ],
+      "correctAnswer": "お腹が痛いです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_health_body_2",
+      "type": "translateThis",
+      "question": "熱があって喉がひどく痛みます",
+      "options": [],
+      "correctAnswer": "I have a fever and my throat hurts badly",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I have a temperature and my throat hurts badly",
+        "I have a fever and my throat hurts badly"
+      ]
+    },
+    {
+      "id": "ex_ja_health_body_3",
+      "type": "fillInBlank",
+      "question": "昨夜から___が止まりません。（咳の症状）",
+      "options": [
+        "咳 (せき)",
+        "目",
+        "手",
+        "足"
+      ],
+      "correctAnswer": "咳 (せき)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_health_body_4",
+      "type": "matchPairs",
+      "question": "Match body parts",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "頭 (あたま)",
+            "native": "head"
+          },
+          {
+            "target": "目 (め)",
+            "native": "eye"
+          },
+          {
+            "target": "喉 (のど)",
+            "native": "throat"
+          },
+          {
+            "target": "足 (あし)",
+            "native": "foot/leg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_health_body_5",
+      "type": "speakThis",
+      "question": "無理をしないでゆっくり休養を取ってください",
+      "options": [],
+      "correctAnswer": "無理をしないでゆっくり休養を取ってください",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

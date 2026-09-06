@@ -1,0 +1,87 @@
+{
+  "id": "grammar_ser_estar",
+  "name": "Grammaire: Être",
+  "description": "Le verbe être au présent, description et état",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_fr_grammar_ser_estar_1",
+      "type": "multipleChoice",
+      "question": "What is the correct form: 'Vous ___ fatigués'?",
+      "options": [
+        "êtes",
+        "sommes",
+        "sont",
+        "es"
+      ],
+      "correctAnswer": "êtes",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_grammar_ser_estar_2",
+      "type": "translateThis",
+      "question": "Nous sommes très heureux d'être ici",
+      "options": [],
+      "correctAnswer": "We are very happy to be here",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "We're very happy to be here",
+        "We are very happy to be here"
+      ]
+    },
+    {
+      "id": "ex_fr_grammar_ser_estar_3",
+      "type": "fillInBlank",
+      "question": "Je ___ prêt pour commencer la leçon.",
+      "options": [
+        "suis",
+        "es",
+        "est",
+        "sommes"
+      ],
+      "correctAnswer": "suis",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_grammar_ser_estar_4",
+      "type": "matchPairs",
+      "question": "Match conjugations of 'être'",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "je suis",
+            "native": "I am"
+          },
+          {
+            "target": "tu es",
+            "native": "you are"
+          },
+          {
+            "target": "il est",
+            "native": "he is"
+          },
+          {
+            "target": "ils sont",
+            "native": "they are"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_grammar_ser_estar_5",
+      "type": "speakThis",
+      "question": "Elle est toujours à l'heure",
+      "options": [],
+      "correctAnswer": "Elle est toujours à l'heure",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

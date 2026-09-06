@@ -1,0 +1,88 @@
+{
+  "id": "ordinal_numbers",
+  "name": "Nombres Ordinaux",
+  "description": "Premier, deuxième, troisième et l'ordre des choses",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_fr_ord_1",
+      "type": "multipleChoice",
+      "question": "What is 'first' in French for a masculine noun?",
+      "options": [
+        "Premier",
+        "Première",
+        "Deuxième",
+        "Unième"
+      ],
+      "correctAnswer": "Premier",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ord_2",
+      "type": "fillInBlank",
+      "question": "J'habite au ___ étage de cet immeuble.",
+      "options": [
+        "troisième",
+        "trois",
+        "tiers",
+        "troisièmement"
+      ],
+      "correctAnswer": "troisième",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ord_3",
+      "type": "matchPairs",
+      "question": "Match ordinal numbers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "premier",
+            "native": "first"
+          },
+          {
+            "target": "deuxième",
+            "native": "second"
+          },
+          {
+            "target": "quatrième",
+            "native": "fourth"
+          },
+          {
+            "target": "dernier",
+            "native": "last"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_ord_4",
+      "type": "translateThis",
+      "question": "C'est la deuxième fois",
+      "options": [],
+      "correctAnswer": "It is the second time",
+      "acceptableAnswers": [
+        "This is the second time",
+        "It's the second time",
+        "It is the second time"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ord_5",
+      "type": "speakThis",
+      "question": "Prenez la première rue à droite",
+      "options": [],
+      "correctAnswer": "Prenez la première rue à droite",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

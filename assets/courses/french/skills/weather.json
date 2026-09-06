@@ -1,0 +1,88 @@
+{
+  "id": "weather",
+  "name": "La Météo",
+  "description": "Parler du temps qu'il fait et des prévisions météo",
+  "level": 6,
+  "exercises": [
+    {
+      "id": "ex_fr_weather_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'It is sunny' in French?",
+      "options": [
+        "Il fait du soleil",
+        "Il pleut",
+        "Il neige",
+        "Il fait froid"
+      ],
+      "correctAnswer": "Il fait du soleil",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_weather_2",
+      "type": "translateThis",
+      "question": "Il pleut aujourd'hui",
+      "options": [],
+      "correctAnswer": "It is raining today",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "It's raining today",
+        "It rains today",
+        "It is raining today"
+      ]
+    },
+    {
+      "id": "ex_fr_weather_3",
+      "type": "fillInBlank",
+      "question": "En hiver, il ___ souvent dans les montagnes.",
+      "options": [
+        "neige",
+        "soleil",
+        "vent",
+        "chaud"
+      ],
+      "correctAnswer": "neige",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_weather_4",
+      "type": "matchPairs",
+      "question": "Match weather expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "il fait beau",
+            "native": "nice weather"
+          },
+          {
+            "target": "il fait froid",
+            "native": "cold weather"
+          },
+          {
+            "target": "il y a du vent",
+            "native": "windy"
+          },
+          {
+            "target": "le ciel est couvert",
+            "native": "overcast sky"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_weather_5",
+      "type": "speakThis",
+      "question": "Quel temps fait-il aujourd'hui ?",
+      "options": [],
+      "correctAnswer": "Quel temps fait-il aujourd'hui ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

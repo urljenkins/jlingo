@@ -1,0 +1,87 @@
+{
+  "id": "grammar_1",
+  "name": "Grammaire: Pronoms",
+  "description": "Les pronoms sujets et toniques en français",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_fr_g1_1",
+      "type": "multipleChoice",
+      "question": "Which pronoun is used for informal singular 'you'?",
+      "options": [
+        "Tu",
+        "Vous",
+        "Nous",
+        "Il"
+      ],
+      "correctAnswer": "Tu",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_g1_2",
+      "type": "fillInBlank",
+      "question": "___ parlons français ensemble.",
+      "options": [
+        "Nous",
+        "Vous",
+        "Ils",
+        "Je"
+      ],
+      "correctAnswer": "Nous",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_g1_3",
+      "type": "matchPairs",
+      "question": "Match French subject pronouns with their English equivalents",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "je",
+            "native": "I"
+          },
+          {
+            "target": "tu",
+            "native": "you"
+          },
+          {
+            "target": "nous",
+            "native": "we"
+          },
+          {
+            "target": "ils",
+            "native": "they (masculine)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_g1_4",
+      "type": "translateThis",
+      "question": "Elle est médecin",
+      "options": [],
+      "correctAnswer": "She is a doctor",
+      "acceptableAnswers": [
+        "She is a doctor",
+        "She's a doctor"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_g1_5",
+      "type": "speakThis",
+      "question": "Moi, j'habite en France",
+      "options": [],
+      "correctAnswer": "Moi, j'habite en France",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

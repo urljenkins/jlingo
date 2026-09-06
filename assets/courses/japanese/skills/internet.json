@@ -1,0 +1,87 @@
+{
+  "id": "internet",
+  "name": "Internet & Social Media",
+  "description": "Digital communication, apps, online etiquette, and cyber security",
+  "level": 20,
+  "exercises": [
+    {
+      "id": "ex_ja_internet_1",
+      "type": "multipleChoice",
+      "question": "Which messaging application is the dominant platform in Japan?",
+      "options": [
+        "LINE",
+        "WeChat",
+        "WhatsApp",
+        "KakaoTalk"
+      ],
+      "correctAnswer": "LINE",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_internet_2",
+      "type": "translateThis",
+      "question": "パスワードを定期的に変更してセキュリティを高めます",
+      "options": [],
+      "correctAnswer": "Change passwords periodically to increase security",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Change your password regularly to increase security",
+        "Change passwords periodically to increase security"
+      ]
+    },
+    {
+      "id": "ex_ja_internet_3",
+      "type": "fillInBlank",
+      "question": "SNSに個人情報を安易に___しないように注意してください。",
+      "options": [
+        "投稿",
+        "削除",
+        "保護",
+        "遮断"
+      ],
+      "correctAnswer": "投稿",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_internet_4",
+      "type": "matchPairs",
+      "question": "Match online terminology",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "検索 (けんさく)",
+            "native": "search"
+          },
+          {
+            "target": "保存 (ほぞん)",
+            "native": "save"
+          },
+          {
+            "target": "共有 (きょうゆう)",
+            "native": "share"
+          },
+          {
+            "target": "設定 (せってい)",
+            "native": "settings"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_internet_5",
+      "type": "speakThis",
+      "question": "情報リテラシーを身につけることが重要です",
+      "options": [],
+      "correctAnswer": "情報リテラシーを身につけることが重要です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

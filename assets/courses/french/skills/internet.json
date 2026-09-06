@@ -1,0 +1,87 @@
+{
+  "id": "internet",
+  "name": "Internet & Réseaux Sociaux",
+  "description": "Navigation en ligne, sécurité et réseaux sociaux",
+  "level": 20,
+  "exercises": [
+    {
+      "id": "ex_fr_internet_1",
+      "type": "multipleChoice",
+      "question": "What is the recommended French term for 'podcast'?",
+      "options": [
+        "L'émission balado / le balado",
+        "Le courriel",
+        "Le lien",
+        "L'onglet"
+      ],
+      "correctAnswer": "L'émission balado / le balado",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_internet_2",
+      "type": "translateThis",
+      "question": "Il est crucial de sécuriser ses données personnelles sur le web",
+      "options": [],
+      "correctAnswer": "It is crucial to secure one's personal data on the web",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "It is crucial to protect your personal data online",
+        "It is crucial to secure one's personal data on the web"
+      ]
+    },
+    {
+      "id": "ex_fr_internet_3",
+      "type": "fillInBlank",
+      "question": "Cliquez sur le ___ pour accéder à l'article complet.",
+      "options": [
+        "lien",
+        "souris",
+        "fil",
+        "clavier"
+      ],
+      "correctAnswer": "lien",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_internet_4",
+      "type": "matchPairs",
+      "question": "Match digital concepts",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le navigateur",
+            "native": "the browser"
+          },
+          {
+            "target": "le téléchargement",
+            "native": "the download"
+          },
+          {
+            "target": "l'identifiant",
+            "native": "the username/login"
+          },
+          {
+            "target": "les réseaux sociaux",
+            "native": "social media"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_internet_5",
+      "type": "speakThis",
+      "question": "La protection de la vie privée numérique est une priorité majeure",
+      "options": [],
+      "correctAnswer": "La protection de la vie privée numérique est une priorité majeure",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -228,6 +228,157 @@
             "options": [],
             "correctAnswer": "And you, how are you?",
             "id": "ex_b2_10"
+        },
+        {
+            "type": "translateThis",
+            "question": "No entiendo",
+            "options": [],
+            "correctAnswer": "I don't understand",
+            "id": "ex_b2x22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you ask someone to repeat what they said?",
+            "options": [
+                "¿Puede repetir, por favor?",
+                "¿Cómo está?",
+                "¿Qué es esto?",
+                "¿De dónde es?"
+            ],
+            "correctAnswer": "¿Puede repetir, por favor?",
+            "id": "ex_b2x22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿Puede hablar más ___? (slowly)",
+            "options": [
+                "despacio",
+                "rápido",
+                "alto",
+                "bajo"
+            ],
+            "correctAnswer": "despacio",
+            "id": "ex_b2x22_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match classroom phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "No entiendo",
+                        "native": "I don't understand"
+                    },
+                    {
+                        "target": "¿Puede repetir?",
+                        "native": "Can you repeat?"
+                    },
+                    {
+                        "target": "¿Cómo se dice...?",
+                        "native": "How do you say...?"
+                    },
+                    {
+                        "target": "No sé",
+                        "native": "I don't know"
+                    }
+                ]
+            },
+            "id": "ex_b2x22_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "¿Cómo se dice 'thank you' en español?",
+            "options": [],
+            "correctAnswer": "¿Cómo se dice 'thank you' en español?",
+            "id": "ex_b2x22_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "¿Puede hablar más despacio, por favor?",
+            "options": [],
+            "correctAnswer": "¿Puede hablar más despacio, por favor?",
+            "id": "ex_b2x22_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "No sé",
+            "options": [],
+            "correctAnswer": "I don't know",
+            "id": "ex_b2x22_7"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Puede escribirlo, por favor?",
+            "options": [],
+            "correctAnswer": "Can you write it down, please?",
+            "id": "ex_b2x3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you ask 'What does this mean?'",
+            "options": [
+                "¿Qué significa esto?",
+                "¿Qué es esto?",
+                "¿Cómo es esto?",
+                "¿Dónde está esto?"
+            ],
+            "correctAnswer": "¿Qué significa esto?",
+            "id": "ex_b2x3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿Cómo se ___ 'apple' en español?",
+            "options": [
+                "dice",
+                "escribe",
+                "habla",
+                "llama"
+            ],
+            "correctAnswer": "dice",
+            "id": "ex_b2x3_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match learner survival phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "¿Qué significa?",
+                        "native": "What does it mean?"
+                    },
+                    {
+                        "target": "Estoy aprendiendo",
+                        "native": "I am learning"
+                    },
+                    {
+                        "target": "¿Puede escribirlo?",
+                        "native": "Can you write it?"
+                    },
+                    {
+                        "target": "Más despacio, por favor",
+                        "native": "Slower, please"
+                    }
+                ]
+            },
+            "id": "ex_b2x3_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "¿Qué significa esta palabra?",
+            "options": [],
+            "correctAnswer": "¿Qué significa esta palabra?",
+            "id": "ex_b2x3_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "¿Puede escribirlo, por favor?",
+            "options": [],
+            "correctAnswer": "¿Puede escribirlo, por favor?",
+            "id": "ex_b2x3_6"
         }
     ]
 }

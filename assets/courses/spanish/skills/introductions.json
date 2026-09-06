@@ -190,6 +190,176 @@
             ],
             "correctAnswer": "Igualmente",
             "id": "ex_intro_16"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Dónde vives?",
+            "options": [],
+            "correctAnswer": "Where do you live?",
+            "id": "ex_introx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'I live in Madrid'?",
+            "options": [
+                "Vivo en Madrid",
+                "Soy en Madrid",
+                "Estoy Madrid",
+                "Vivir Madrid"
+            ],
+            "correctAnswer": "Vivo en Madrid",
+            "id": "ex_introx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿A qué te ___ tú?",
+            "options": [
+                "dedicas",
+                "dedico",
+                "dedicamos",
+                "dedican"
+            ],
+            "correctAnswer": "dedicas",
+            "id": "ex_introx22_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match professions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Médico",
+                        "native": "Doctor"
+                    },
+                    {
+                        "target": "Profesor",
+                        "native": "Teacher"
+                    },
+                    {
+                        "target": "Ingeniero",
+                        "native": "Engineer"
+                    },
+                    {
+                        "target": "Abogado",
+                        "native": "Lawyer"
+                    }
+                ]
+            },
+            "id": "ex_introx22_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Vivo en Buenos Aires",
+            "options": [],
+            "correctAnswer": "Vivo en Buenos Aires",
+            "id": "ex_introx22_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "Soy ingeniero y vivo en Chile",
+            "options": [],
+            "correctAnswer": "Soy ingeniero y vivo en Chile",
+            "id": "ex_introx22_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Cuál es tu apellido?",
+            "options": [],
+            "correctAnswer": "What is your last name?",
+            "id": "ex_introx22_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'my last name is'?",
+            "options": [
+                "Mi apellido es",
+                "Mi nombre es",
+                "Me llamo",
+                "Mi edad es"
+            ],
+            "correctAnswer": "Mi apellido es",
+            "id": "ex_introx22_8"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Hablas inglés?",
+            "options": [],
+            "correctAnswer": "Do you speak English?",
+            "id": "ex_introx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'I speak a little Spanish'?",
+            "options": [
+                "Hablo un poco de español",
+                "Hablo mucho español",
+                "No hablo nada",
+                "Hablo español perfecto"
+            ],
+            "correctAnswer": "Hablo un poco de español",
+            "id": "ex_introx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Yo ___ español y un poco de inglés",
+            "options": [
+                "hablo",
+                "habla",
+                "hablas",
+                "hablan"
+            ],
+            "correctAnswer": "hablo",
+            "id": "ex_introx3_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match language-related phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "¿Qué idiomas hablas?",
+                        "native": "What languages do you speak?"
+                    },
+                    {
+                        "target": "Hablo un poco",
+                        "native": "I speak a little"
+                    },
+                    {
+                        "target": "Estoy aprendiendo",
+                        "native": "I am learning"
+                    },
+                    {
+                        "target": "Todavía no",
+                        "native": "Not yet"
+                    }
+                ]
+            },
+            "id": "ex_introx3_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Estoy aprendiendo español",
+            "options": [],
+            "correctAnswer": "Estoy aprendiendo español",
+            "id": "ex_introx3_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "¿Qué idiomas hablas tú?",
+            "options": [],
+            "correctAnswer": "¿Qué idiomas hablas tú?",
+            "id": "ex_introx3_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Todavía estoy aprendiendo",
+            "options": [],
+            "correctAnswer": "I am still learning",
+            "id": "ex_introx3_7"
         }
     ]
 }

@@ -1,0 +1,87 @@
+{
+  "id": "future_tense",
+  "name": "Future Intentions & Volitional Form",
+  "description": "Express future plans, intentions with 〜つもり and the volitional form (〜よう)",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_ja_future_tense_1",
+      "type": "multipleChoice",
+      "question": "Which phrase expresses 'I intend to study abroad next year'?",
+      "options": [
+        "来年留学するつもりです",
+        "来年留学しました",
+        "来年留学したことがあります",
+        "来年留学してください"
+      ],
+      "correctAnswer": "来年留学するつもりです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_future_tense_2",
+      "type": "translateThis",
+      "question": "今週末は家でゆっくり休もうと思います",
+      "options": [],
+      "correctAnswer": "This weekend I think I will rest quietly at home",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I think I will relax at home this weekend",
+        "This weekend I think I will rest quietly at home"
+      ]
+    },
+    {
+      "id": "ex_ja_future_tense_3",
+      "type": "fillInBlank",
+      "question": "将来、自分の会社を___つもりです。",
+      "options": [
+        "作る",
+        "作った",
+        "作って",
+        "作ろう"
+      ],
+      "correctAnswer": "作る",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_future_tense_4",
+      "type": "matchPairs",
+      "question": "Match dictionary verbs with volitional forms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "行く",
+            "native": "行こう"
+          },
+          {
+            "target": "食べる",
+            "native": "食べよう"
+          },
+          {
+            "target": "する",
+            "native": "しよう"
+          },
+          {
+            "target": "来る",
+            "native": "来よう (こよう)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_future_tense_5",
+      "type": "speakThis",
+      "question": "来年の春に日本へ旅行する予定です",
+      "options": [],
+      "correctAnswer": "来年の春に日本へ旅行する予定です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

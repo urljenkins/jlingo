@@ -1,0 +1,88 @@
+{
+  "id": "numbers_2",
+  "name": "Nombres 11-100",
+  "description": "Compter jusqu'à 100 et maîtriser les spécificités françaises",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_fr_num2_1",
+      "type": "multipleChoice",
+      "question": "What is 'soixante-dix' (70) composed of?",
+      "options": [
+        "60 + 10",
+        "7 x 10",
+        "50 + 20",
+        "80 - 10"
+      ],
+      "correctAnswer": "60 + 10",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_num2_2",
+      "type": "translateThis",
+      "question": "Vingt et un",
+      "options": [],
+      "correctAnswer": "Twenty-one",
+      "acceptableAnswers": [
+        "Twenty one",
+        "21",
+        "Twenty-one"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_num2_3",
+      "type": "fillInBlank",
+      "question": "Quatre-vingts équivaut au chiffre ___.",
+      "options": [
+        "80",
+        "70",
+        "90",
+        "100"
+      ],
+      "correctAnswer": "80",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_num2_4",
+      "type": "matchPairs",
+      "question": "Match numbers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "douze",
+            "native": "twelve"
+          },
+          {
+            "target": "trente",
+            "native": "thirty"
+          },
+          {
+            "target": "cinquante",
+            "native": "fifty"
+          },
+          {
+            "target": "cent",
+            "native": "one hundred"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_num2_5",
+      "type": "speakThis",
+      "question": "Quatre-vingt-dix-neuf euros",
+      "options": [],
+      "correctAnswer": "Quatre-vingt-dix-neuf euros",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

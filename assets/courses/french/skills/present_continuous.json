@@ -1,0 +1,87 @@
+{
+  "id": "present_continuous",
+  "name": "Être en Train De",
+  "description": "Exprimer une action en cours avec être en train de",
+  "level": 12,
+  "exercises": [
+    {
+      "id": "ex_fr_present_continuous_1",
+      "type": "multipleChoice",
+      "question": "Which construction expresses an ongoing action in French?",
+      "options": [
+        "Être en train de + infinitif",
+        "Venir de + infinitif",
+        "Aller + infinitif",
+        "Avoir à + infinitif"
+      ],
+      "correctAnswer": "Être en train de + infinitif",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_present_continuous_2",
+      "type": "translateThis",
+      "question": "Ne fais pas de bruit, le bébé est en train de dormir",
+      "options": [],
+      "correctAnswer": "Don't make noise, the baby is sleeping",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Do not make noise, the baby is sleeping",
+        "Don't make noise, the baby is sleeping"
+      ]
+    },
+    {
+      "id": "ex_fr_present_continuous_3",
+      "type": "fillInBlank",
+      "question": "Nous sommes en train ___ préparer le dîner.",
+      "options": [
+        "de",
+        "à",
+        "pour",
+        "par"
+      ],
+      "correctAnswer": "de",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_present_continuous_4",
+      "type": "matchPairs",
+      "question": "Match progressive phrases with English translations",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "je suis en train de lire",
+            "native": "I am currently reading"
+          },
+          {
+            "target": "tu es en train de manger",
+            "native": "you are currently eating"
+          },
+          {
+            "target": "il est en train d'écrire",
+            "native": "he is currently writing"
+          },
+          {
+            "target": "nous sommes en train de marcher",
+            "native": "we are currently walking"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_present_continuous_5",
+      "type": "speakThis",
+      "question": "Je suis en train d'étudier pour mes examens",
+      "options": [],
+      "correctAnswer": "Je suis en train d'étudier pour mes examens",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

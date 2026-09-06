@@ -1,0 +1,87 @@
+{
+  "id": "clothing",
+  "name": "Les Vêtements",
+  "description": "Vocabulaire des vêtements, chaussures et accessoires",
+  "level": 6,
+  "exercises": [
+    {
+      "id": "ex_fr_clothing_1",
+      "type": "multipleChoice",
+      "question": "What is 'une chemise' in English?",
+      "options": [
+        "A shirt",
+        "A dress",
+        "A coat",
+        "A hat"
+      ],
+      "correctAnswer": "A shirt",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_clothing_2",
+      "type": "translateThis",
+      "question": "Je porte un manteau chaud en hiver",
+      "options": [],
+      "correctAnswer": "I wear a warm coat in winter",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I wear a warm coat in winter",
+        "I am wearing a warm coat in winter"
+      ]
+    },
+    {
+      "id": "ex_fr_clothing_3",
+      "type": "fillInBlank",
+      "question": "Elle achète une belle ___ pour la fête.",
+      "options": [
+        "robe",
+        "pantalon",
+        "chapeau",
+        "costume"
+      ],
+      "correctAnswer": "robe",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_clothing_4",
+      "type": "matchPairs",
+      "question": "Match clothing items",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "pantalon",
+            "native": "trousers/pants"
+          },
+          {
+            "target": "chaussures",
+            "native": "shoes"
+          },
+          {
+            "target": "chapeau",
+            "native": "hat"
+          },
+          {
+            "target": "veste",
+            "native": "jacket"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_clothing_5",
+      "type": "speakThis",
+      "question": "Ces chaussures sont très confortables",
+      "options": [],
+      "correctAnswer": "Ces chaussures sont très confortables",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "food",
+  "name": "La Nourriture",
+  "description": "Vocabulaire des aliments, fruits, légumes et repas",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_fr_food_1",
+      "type": "multipleChoice",
+      "question": "What is 'fromage' in English?",
+      "options": [
+        "Cheese",
+        "Bread",
+        "Butter",
+        "Meat"
+      ],
+      "correctAnswer": "Cheese",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_food_2",
+      "type": "translateThis",
+      "question": "Le pain frais du matin",
+      "options": [],
+      "correctAnswer": "The morning fresh bread",
+      "acceptableAnswers": [
+        "Fresh morning bread",
+        "The fresh morning bread",
+        "The bread is fresh",
+        "The fresh bread of the morning",
+        "The morning fresh bread"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_food_3",
+      "type": "fillInBlank",
+      "question": "Je mange une ___ rouge comme dessert.",
+      "options": [
+        "pomme",
+        "viande",
+        "salade",
+        "soupe"
+      ],
+      "correctAnswer": "pomme",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_food_4",
+      "type": "matchPairs",
+      "question": "Match French foods with English translations",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "pain",
+            "native": "bread"
+          },
+          {
+            "target": "poisson",
+            "native": "fish"
+          },
+          {
+            "target": "viande",
+            "native": "meat"
+          },
+          {
+            "target": "légumes",
+            "native": "vegetables"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_food_5",
+      "type": "speakThis",
+      "question": "Ce plat est délicieux",
+      "options": [],
+      "correctAnswer": "Ce plat est délicieux",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

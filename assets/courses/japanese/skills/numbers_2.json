@@ -1,0 +1,87 @@
+{
+  "id": "numbers_2",
+  "name": "Numbers 11-100 & Counters",
+  "description": "Count up to 100, use Japanese numbers and essential counter words",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_ja_numbers_2_1",
+      "type": "multipleChoice",
+      "question": "What is 'one hundred' in Japanese?",
+      "options": [
+        "ひゃく (百)",
+        "せん (千)",
+        "じゅう (十)",
+        "まん (万)"
+      ],
+      "correctAnswer": "ひゃく (百)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_numbers_2_2",
+      "type": "translateThis",
+      "question": "りんごを三つください",
+      "options": [],
+      "correctAnswer": "Please give me three apples",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Three apples please",
+        "Please give me three apples"
+      ]
+    },
+    {
+      "id": "ex_ja_numbers_2_3",
+      "type": "fillInBlank",
+      "question": "この本は五百___です。",
+      "options": [
+        "円",
+        "本",
+        "人",
+        "匹"
+      ],
+      "correctAnswer": "円",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_numbers_2_4",
+      "type": "matchPairs",
+      "question": "Match numbers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "二十",
+            "native": "twenty (20)"
+          },
+          {
+            "target": "五十",
+            "native": "fifty (50)"
+          },
+          {
+            "target": "百",
+            "native": "one hundred (100)"
+          },
+          {
+            "target": "千",
+            "native": "one thousand (1000)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_numbers_2_5",
+      "type": "speakThis",
+      "question": "コーヒーを二つお願いします",
+      "options": [],
+      "correctAnswer": "コーヒーを二つお願いします",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

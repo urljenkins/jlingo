@@ -1,0 +1,87 @@
+{
+  "id": "restaurant",
+  "name": "Au Restaurant",
+  "description": "Réserver une table, lire le menu et commander",
+  "level": 11,
+  "exercises": [
+    {
+      "id": "ex_fr_restaurant_1",
+      "type": "multipleChoice",
+      "question": "What is 'l'addition' in a restaurant context?",
+      "options": [
+        "The bill/check",
+        "The menu",
+        "The appetizer",
+        "The dessert"
+      ],
+      "correctAnswer": "The bill/check",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_restaurant_2",
+      "type": "translateThis",
+      "question": "Avez-vous réservé une table pour ce soir ?",
+      "options": [],
+      "correctAnswer": "Did you book a table for tonight?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Have you reserved a table for tonight?",
+        "Did you book a table for tonight?"
+      ]
+    },
+    {
+      "id": "ex_fr_restaurant_3",
+      "type": "fillInBlank",
+      "question": "Comme plat principal, je prends le ___ du jour.",
+      "options": [
+        "plat",
+        "addition",
+        "serviette",
+        "verre"
+      ],
+      "correctAnswer": "plat",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_restaurant_4",
+      "type": "matchPairs",
+      "question": "Match dining courses",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "l'entrée",
+            "native": "the starter/appetizer"
+          },
+          {
+            "target": "le plat principal",
+            "native": "the main course"
+          },
+          {
+            "target": "le dessert",
+            "native": "the dessert"
+          },
+          {
+            "target": "la boisson",
+            "native": "the drink"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_restaurant_5",
+      "type": "speakThis",
+      "question": "L'addition, s'il vous plaît, nous étions deux",
+      "options": [],
+      "correctAnswer": "L'addition, s'il vous plaît, nous étions deux",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

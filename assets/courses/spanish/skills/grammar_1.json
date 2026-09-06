@@ -227,6 +227,143 @@
             "options": [],
             "correctAnswer": "And you all?",
             "id": "ex_g1_20"
+        },
+        {
+            "type": "translateThis",
+            "question": "Vos sos mi amigo",
+            "options": [],
+            "correctAnswer": "You are my friend (voseo, Argentina)",
+            "id": "ex_g1x22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which region commonly uses 'vos' instead of 'tú'?",
+            "options": [
+                "Argentina",
+                "Spain",
+                "Mexico",
+                "Puerto Rico"
+            ],
+            "correctAnswer": "Argentina",
+            "id": "ex_g1x22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ eres muy inteligente (informal you)",
+            "options": [
+                "Tú",
+                "Usted",
+                "Vosotros",
+                "Ustedes"
+            ],
+            "correctAnswer": "Tú",
+            "id": "ex_g1x22_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match formal vs informal 'you'",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Tú",
+                        "native": "Informal singular"
+                    },
+                    {
+                        "target": "Usted",
+                        "native": "Formal singular"
+                    },
+                    {
+                        "target": "Vosotros",
+                        "native": "Informal plural (Spain)"
+                    },
+                    {
+                        "target": "Ustedes",
+                        "native": "Formal/plural (Latin America)"
+                    }
+                ]
+            },
+            "id": "ex_g1x22_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Tú y yo somos amigos",
+            "options": [],
+            "correctAnswer": "Tú y yo somos amigos",
+            "id": "ex_g1x22_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "Ustedes son bienvenidos aquí",
+            "options": [],
+            "correctAnswer": "Ustedes son bienvenidos aquí",
+            "id": "ex_g1x22_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Nosotros vamos al cine",
+            "options": [],
+            "correctAnswer": "We are going to the movies",
+            "id": "ex_g1x3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which pronoun would you use to address a group formally?",
+            "options": [
+                "Ustedes",
+                "Vosotros",
+                "Ellos",
+                "Nosotros"
+            ],
+            "correctAnswer": "Ustedes",
+            "id": "ex_g1x3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ hablan español muy bien (they - fem.)",
+            "options": [
+                "Ellas",
+                "Ellos",
+                "Nosotras",
+                "Vosotras"
+            ],
+            "correctAnswer": "Ellas",
+            "id": "ex_g1x3_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match pronoun + verb 'ser' forms",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Yo soy",
+                        "native": "I am"
+                    },
+                    {
+                        "target": "Él es",
+                        "native": "He is"
+                    },
+                    {
+                        "target": "Ellos son",
+                        "native": "They are"
+                    },
+                    {
+                        "target": "Nosotros somos",
+                        "native": "We are"
+                    }
+                ]
+            },
+            "id": "ex_g1x3_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Él es mi hermano y ella es mi hermana",
+            "options": [],
+            "correctAnswer": "Él es mi hermano y ella es mi hermana",
+            "id": "ex_g1x3_5"
         }
     ]
 }

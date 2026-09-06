@@ -1,0 +1,87 @@
+{
+  "id": "making_plans",
+  "name": "Faire des Projets",
+  "description": "Proposer des sorties et s'organiser entre amis",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_fr_making_plans_1",
+      "type": "multipleChoice",
+      "question": "How do you propose 'How about going to the cinema tonight?'",
+      "options": [
+        "Ça te dit d'aller au cinéma ce soir ?",
+        "Quand part le cinéma ?",
+        "Combien coûte le cinéma ?",
+        "Où se trouve le cinéma ?"
+      ],
+      "correctAnswer": "Ça te dit d'aller au cinéma ce soir ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_making_plans_2",
+      "type": "translateThis",
+      "question": "Si tu es libre ce samedi, rejoins-nous pour le pique-nique",
+      "options": [],
+      "correctAnswer": "If you are free this Saturday, join us for the picnic",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "If you're free this Saturday join us for the picnic",
+        "If you are free this Saturday, join us for the picnic"
+      ]
+    },
+    {
+      "id": "ex_fr_making_plans_3",
+      "type": "fillInBlank",
+      "question": "On pourrait se ___ vers quatorze heures sur la place.",
+      "options": [
+        "retrouver",
+        "parler",
+        "manger",
+        "dormir"
+      ],
+      "correctAnswer": "retrouver",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_making_plans_4",
+      "type": "matchPairs",
+      "question": "Match planning phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ça te dit ?",
+            "native": "are you up for it?"
+          },
+          {
+            "target": "je suis pris",
+            "native": "I am busy/booked"
+          },
+          {
+            "target": "avec plaisir",
+            "native": "with pleasure"
+          },
+          {
+            "target": "on se tient au courant",
+            "native": "we'll keep each other posted"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_making_plans_5",
+      "type": "speakThis",
+      "question": "C'est une excellente idée, j'ai hâte d'y être !",
+      "options": [],
+      "correctAnswer": "C'est une excellente idée, j'ai hâte d'y être !",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

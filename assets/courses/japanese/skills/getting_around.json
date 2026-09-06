@@ -1,0 +1,87 @@
+{
+  "id": "getting_around",
+  "name": "Getting Around",
+  "description": "Navigate Japanese subway stations, train lines, IC cards, and transfers",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_ja_getting_around_1",
+      "type": "multipleChoice",
+      "question": "What is the contactless smart travel card in Tokyo called?",
+      "options": [
+        "Suica / Pasmo",
+        "JR Pass",
+        "Shinkansen",
+        "Ticket"
+      ],
+      "correctAnswer": "Suica / Pasmo",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_getting_around_2",
+      "type": "translateThis",
+      "question": "新宿駅で山手線に乗り換えます",
+      "options": [],
+      "correctAnswer": "I transfer to the Yamanote Line at Shinjuku Station",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Transfer to the Yamanote line at Shinjuku station",
+        "I transfer to the Yamanote Line at Shinjuku Station"
+      ]
+    },
+    {
+      "id": "ex_ja_getting_around_3",
+      "type": "fillInBlank",
+      "question": "改札口でカードを___してください。",
+      "options": [
+        "タッチ",
+        "切符",
+        "階段",
+        "出口"
+      ],
+      "correctAnswer": "タッチ",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_getting_around_4",
+      "type": "matchPairs",
+      "question": "Match station navigation words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "改札口 (かいさつぐち)",
+            "native": "ticket gates"
+          },
+          {
+            "target": "乗り換え (のりかえ)",
+            "native": "transfer"
+          },
+          {
+            "target": "出口 (でぐち)",
+            "native": "exit"
+          },
+          {
+            "target": "ホーム",
+            "native": "train platform"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_getting_around_5",
+      "type": "speakThis",
+      "question": "次の電車は何番線から出ますか？",
+      "options": [],
+      "correctAnswer": "次の電車は何番線から出ますか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

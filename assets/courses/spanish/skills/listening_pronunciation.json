@@ -513,6 +513,66 @@
                 "focus": "Linking words smoothly in a question"
             },
             "id": "lp_ex_21"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Yo trabajo todos los días",
+            "options": [],
+            "correctAnswer": "Yo trabajo todos los días",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "yoh trah-BAH-hoh TOH-dos los DEE-as",
+                "focus": "The soft 'j' sound"
+            },
+            "id": "lp_ex22_1"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "¿Qué quieres comer hoy?",
+            "options": [],
+            "correctAnswer": "¿Qué quieres comer hoy?",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "keh kee-EH-res koh-MEHR oy",
+                "focus": "The silent 'h' in 'hoy'"
+            },
+            "id": "lp_ex22_2"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "La familia cena junta todas las noches",
+            "options": [],
+            "correctAnswer": "La familia cena junta todas las noches",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "lah fah-MEE-lyah SEH-nah HOON-tah TOH-das las NO-ches",
+                "focus": "Linking 'la familia' smoothly"
+            },
+            "id": "lp_ex3_1"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "¿Cuántos hermanos tienes?",
+            "options": [],
+            "correctAnswer": "¿Cuántos hermanos tienes?",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "KWAN-tos er-MAH-nos tee-EH-nes",
+                "focus": "Silent 'h' in 'hermanos'"
+            },
+            "id": "lp_ex3_2"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Vivimos cerca del parque central",
+            "options": [],
+            "correctAnswer": "Vivimos cerca del parque central",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "vee-VEE-mos SER-kah del PAR-keh sen-TRAHL",
+                "focus": "The soft 'c' before 'e' and 'i'"
+            },
+            "id": "lp_ex3_3"
         }
     ]
 }

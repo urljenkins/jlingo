@@ -1,0 +1,87 @@
+{
+  "id": "at_the_doctor",
+  "name": "At the Clinic & Pharmacy",
+  "description": "Visiting a Japanese hospital, health insurance cards, and taking medicine",
+  "level": 16,
+  "exercises": [
+    {
+      "id": "ex_ja_at_the_doctor_1",
+      "type": "multipleChoice",
+      "question": "What essential card must you present at a Japanese medical clinic?",
+      "options": [
+        "健康保険証 (けんこうほけんしょう)",
+        "パスポート",
+        "クレジットカード",
+        "運転免許証"
+      ],
+      "correctAnswer": "健康保険証 (けんこうほけんしょう)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_at_the_doctor_2",
+      "type": "translateThis",
+      "question": "食後にこの薬を二錠飲んでください",
+      "options": [],
+      "correctAnswer": "Please take two tablets of this medicine after meals",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Take two pills of this medicine after eating please",
+        "Please take two tablets of this medicine after meals"
+      ]
+    },
+    {
+      "id": "ex_ja_at_the_doctor_3",
+      "type": "fillInBlank",
+      "question": "処方箋を持って___で薬を受け取ります。",
+      "options": [
+        "薬局 (やっきょく)",
+        "郵便局",
+        "本屋",
+        "銀行"
+      ],
+      "correctAnswer": "薬局 (やっきょく)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_at_the_doctor_4",
+      "type": "matchPairs",
+      "question": "Match medical facility words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "診察 (しんさつ)",
+            "native": "medical examination"
+          },
+          {
+            "target": "処方箋 (しょほうせん)",
+            "native": "prescription"
+          },
+          {
+            "target": "薬局 (やっきょく)",
+            "native": "pharmacy"
+          },
+          {
+            "target": "内科 (ないか)",
+            "native": "internal medicine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_at_the_doctor_5",
+      "type": "speakThis",
+      "question": "一日三回、毎食後に服用してください",
+      "options": [],
+      "correctAnswer": "一日三回、毎食後に服用してください",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

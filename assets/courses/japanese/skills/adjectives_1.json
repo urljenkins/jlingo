@@ -1,0 +1,87 @@
+{
+  "id": "adjectives_1",
+  "name": "Adjectives (I-adjectives & Na-adjectives)",
+  "description": "Understand the two adjective categories in Japanese: い-adjectives and な-adjectives",
+  "level": 6,
+  "exercises": [
+    {
+      "id": "ex_ja_adjectives_1_1",
+      "type": "multipleChoice",
+      "question": "Which of the following is an い-adjective (i-adjective)?",
+      "options": [
+        "大きい (おおきい)",
+        "きれい",
+        "静か (しずか)",
+        "親切 (しんせつ)"
+      ],
+      "correctAnswer": "大きい (おおきい)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_adjectives_1_2",
+      "type": "translateThis",
+      "question": "京都はとても静かで綺麗な街です",
+      "options": [],
+      "correctAnswer": "Kyoto is a very quiet and beautiful city",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Kyoto is a very quiet and clean city",
+        "Kyoto is a very quiet and beautiful city"
+      ]
+    },
+    {
+      "id": "ex_ja_adjectives_1_3",
+      "type": "fillInBlank",
+      "question": "昨日は天気が___かったです。（暑いの過去形）",
+      "options": [
+        "暑",
+        "暑い",
+        "暑く",
+        "暑な"
+      ],
+      "correctAnswer": "暑",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_adjectives_1_4",
+      "type": "matchPairs",
+      "question": "Match adjectives with meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "高い (たかい)",
+            "native": "high / expensive"
+          },
+          {
+            "target": "安い (やすい)",
+            "native": "cheap / inexpensive"
+          },
+          {
+            "target": "新しい (あたらしい)",
+            "native": "new"
+          },
+          {
+            "target": "古い (ふるい)",
+            "native": "old"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_adjectives_1_5",
+      "type": "speakThis",
+      "question": "日本の夏はとても蒸し暑いです",
+      "options": [],
+      "correctAnswer": "日本の夏はとても蒸し暑いです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

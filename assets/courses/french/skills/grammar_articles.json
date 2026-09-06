@@ -1,0 +1,86 @@
+{
+  "id": "grammar_articles",
+  "name": "Grammaire: Articles",
+  "description": "Articles définis, indéfinis et partitifs",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_fr_ga_1",
+      "type": "multipleChoice",
+      "question": "Which article is used before a masculine noun starting with a consonant?",
+      "options": [
+        "Le",
+        "La",
+        "Les",
+        "L'"
+      ],
+      "correctAnswer": "Le",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ga_2",
+      "type": "fillInBlank",
+      "question": "Voici ___ amie de Marie.",
+      "options": [
+        "une",
+        "un",
+        "des",
+        "du"
+      ],
+      "correctAnswer": "une",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ga_3",
+      "type": "matchPairs",
+      "question": "Match articles with categories",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le",
+            "native": "definite masculine"
+          },
+          {
+            "target": "la",
+            "native": "definite feminine"
+          },
+          {
+            "target": "un",
+            "native": "indefinite masculine"
+          },
+          {
+            "target": "des",
+            "native": "plural indefinite"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_ga_4",
+      "type": "translateThis",
+      "question": "Les livres sont sur la table",
+      "options": [],
+      "correctAnswer": "The books are on the table",
+      "acceptableAnswers": [
+        "The books are on the table"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ga_5",
+      "type": "speakThis",
+      "question": "Je veux de l'eau s'il vous plaît",
+      "options": [],
+      "correctAnswer": "Je veux de l'eau s'il vous plaît",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "work",
+  "name": "Travail & Carrière",
+  "description": "Postes, entretiens d'embauche et monde professionnel",
+  "level": 19,
+  "exercises": [
+    {
+      "id": "ex_fr_work_1",
+      "type": "multipleChoice",
+      "question": "What does 'un CV' stand for in French?",
+      "options": [
+        "Curriculum Vitæ",
+        "Contrat de Vente",
+        "Compte Vérifié",
+        "Certificat de Vol"
+      ],
+      "correctAnswer": "Curriculum Vitæ",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_work_2",
+      "type": "translateThis",
+      "question": "J'ai postulé à cette offre d'emploi en ligne",
+      "options": [],
+      "correctAnswer": "I applied for this job offer online",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I applied to this online job offer",
+        "I applied for this job offer online"
+      ]
+    },
+    {
+      "id": "ex_fr_work_3",
+      "type": "fillInBlank",
+      "question": "Elle a obtenu une promotion et gère désormais une ___.",
+      "options": [
+        "équipe",
+        "salaire",
+        "poste",
+        "bureau"
+      ],
+      "correctAnswer": "équipe",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_work_4",
+      "type": "matchPairs",
+      "question": "Match career terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "l'embauche",
+            "native": "the hiring"
+          },
+          {
+            "target": "le salaire",
+            "native": "the salary"
+          },
+          {
+            "target": "la démission",
+            "native": "the resignation"
+          },
+          {
+            "target": "le stage",
+            "native": "the internship"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_work_5",
+      "type": "speakThis",
+      "question": "Mon parcours professionnel m'a permis d'acquérir de solides compétences",
+      "options": [],
+      "correctAnswer": "Mon parcours professionnel m'a permis d'acquérir de solides compétences",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

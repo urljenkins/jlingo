@@ -1,0 +1,87 @@
+{
+  "id": "shopping",
+  "name": "Faire les Magasins",
+  "description": "Vocabulaire des boutiques, achats et prix",
+  "level": 10,
+  "exercises": [
+    {
+      "id": "ex_fr_shopping_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'How much does it cost?' in French?",
+      "options": [
+        "Combien ça coûte ?",
+        "Où est la caisse ?",
+        "Quelle taille faites-vous ?",
+        "Avez-vous de la monnaie ?"
+      ],
+      "correctAnswer": "Combien ça coûte ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_shopping_2",
+      "type": "translateThis",
+      "question": "Puis-je essayer cette veste en cabine d'essayage ?",
+      "options": [],
+      "correctAnswer": "May I try on this jacket in the fitting room?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Can I try on this jacket in the fitting room?",
+        "May I try on this jacket in the fitting room?"
+      ]
+    },
+    {
+      "id": "ex_fr_shopping_3",
+      "type": "fillInBlank",
+      "question": "Est-ce que vous acceptez la carte de ___ ?",
+      "options": [
+        "crédit",
+        "visite",
+        "séjour",
+        "fêtes"
+      ],
+      "correctAnswer": "crédit",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_shopping_4",
+      "type": "matchPairs",
+      "question": "Match retail terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "la caisse",
+            "native": "the cash register/checkout"
+          },
+          {
+            "target": "le reçu",
+            "native": "the receipt"
+          },
+          {
+            "target": "les soldes",
+            "native": "the sales"
+          },
+          {
+            "target": "le prix",
+            "native": "the price"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_shopping_5",
+      "type": "speakThis",
+      "question": "Avez-vous cette chemise en taille moyenne ?",
+      "options": [],
+      "correctAnswer": "Avez-vous cette chemise en taille moyenne ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

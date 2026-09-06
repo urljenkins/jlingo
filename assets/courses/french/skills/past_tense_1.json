@@ -1,0 +1,87 @@
+{
+  "id": "past_tense_1",
+  "name": "Passé Composé",
+  "description": "Former le passé composé avec avoir et être",
+  "level": 12,
+  "exercises": [
+    {
+      "id": "ex_fr_past_tense_1_1",
+      "type": "multipleChoice",
+      "question": "Which auxiliary verb is used with 'partir' in passé composé?",
+      "options": [
+        "Être",
+        "Avoir",
+        "Faire",
+        "Aller"
+      ],
+      "correctAnswer": "Être",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_past_tense_1_2",
+      "type": "translateThis",
+      "question": "Hier soir, nous avons mangé au restaurant avec nos amis",
+      "options": [],
+      "correctAnswer": "Yesterday evening, we ate at the restaurant with our friends",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Last night we ate at the restaurant with our friends",
+        "Yesterday evening, we ate at the restaurant with our friends"
+      ]
+    },
+    {
+      "id": "ex_fr_past_tense_1_3",
+      "type": "fillInBlank",
+      "question": "Elle est ___ chez elle vers vingt heures.",
+      "options": [
+        "rentrée",
+        "rentré",
+        "rentrer",
+        "rentrés"
+      ],
+      "correctAnswer": "rentrée",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_past_tense_1_4",
+      "type": "matchPairs",
+      "question": "Match infinitives with irregular past participles",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "avoir",
+            "native": "eu"
+          },
+          {
+            "target": "être",
+            "native": "été"
+          },
+          {
+            "target": "faire",
+            "native": "fait"
+          },
+          {
+            "target": "prendre",
+            "native": "pris"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_past_tense_1_5",
+      "type": "speakThis",
+      "question": "J'ai passé une excellente semaine de vacances",
+      "options": [],
+      "correctAnswer": "J'ai passé une excellente semaine de vacances",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

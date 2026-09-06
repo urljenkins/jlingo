@@ -1,0 +1,87 @@
+{
+  "id": "emotions",
+  "name": "Émotions & Sentiments",
+  "description": "Exprimer des sentiments nuancés et des états psychologiques",
+  "level": 21,
+  "exercises": [
+    {
+      "id": "ex_fr_emotions_1",
+      "type": "multipleChoice",
+      "question": "What does 'avoir le cafard' mean colloquially in French?",
+      "options": [
+        "To feel down or melancholy",
+        "To be furious",
+        "To be ecstatic",
+        "To be terrified"
+      ],
+      "correctAnswer": "To feel down or melancholy",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_emotions_2",
+      "type": "translateThis",
+      "question": "Elle ressentait un profond soulagement après l'annonce des résultats",
+      "options": [],
+      "correctAnswer": "She felt profound relief after the announcement of the results",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "She felt a deep relief after the results were announced",
+        "She felt profound relief after the announcement of the results"
+      ]
+    },
+    {
+      "id": "ex_fr_emotions_3",
+      "type": "fillInBlank",
+      "question": "Sa gentillesse m'a sincèrement ___.",
+      "options": [
+        "touché",
+        "effrayé",
+        "fâché",
+        "déçu"
+      ],
+      "correctAnswer": "touché",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_emotions_4",
+      "type": "matchPairs",
+      "question": "Match feelings with English equivalents",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "l'angoisse",
+            "native": "anxiety"
+          },
+          {
+            "target": "l'émerveillement",
+            "native": "wonder/awe"
+          },
+          {
+            "target": "la déception",
+            "native": "disappointment"
+          },
+          {
+            "target": "la fierté",
+            "native": "pride"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_emotions_5",
+      "type": "speakThis",
+      "question": "Nous partageons votre immense joie en cette journée mémorable",
+      "options": [],
+      "correctAnswer": "Nous partageons votre immense joie en cette journée mémorable",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

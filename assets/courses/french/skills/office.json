@@ -1,0 +1,87 @@
+{
+  "id": "office",
+  "name": "Vie de Bureau",
+  "description": "Réunions, courriels formels et collègues",
+  "level": 19,
+  "exercises": [
+    {
+      "id": "ex_fr_office_1",
+      "type": "multipleChoice",
+      "question": "Which closing formula is common in formal professional emails in French?",
+      "options": [
+        "Cordialement",
+        "Bisous",
+        "Salut",
+        "À plus"
+      ],
+      "correctAnswer": "Cordialement",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_office_2",
+      "type": "translateThis",
+      "question": "Veuillez trouver ci-joint le compte rendu de notre réunion",
+      "options": [],
+      "correctAnswer": "Please find attached the minutes of our meeting",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Please find enclosed the report of our meeting",
+        "Please find attached the minutes of our meeting"
+      ]
+    },
+    {
+      "id": "ex_fr_office_3",
+      "type": "fillInBlank",
+      "question": "La réunion se tiendra dans la ___ de conférence.",
+      "options": [
+        "salle",
+        "bureau",
+        "table",
+        "porte"
+      ],
+      "correctAnswer": "salle",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_office_4",
+      "type": "matchPairs",
+      "question": "Match corporate items",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "pièce jointe",
+            "native": "attachment"
+          },
+          {
+            "target": "ordre du jour",
+            "native": "agenda"
+          },
+          {
+            "target": "délai",
+            "native": "deadline"
+          },
+          {
+            "target": "collègue",
+            "native": "colleague"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_office_5",
+      "type": "speakThis",
+      "question": "Je vous remercie pour votre prompt retour",
+      "options": [],
+      "correctAnswer": "Je vous remercie pour votre prompt retour",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

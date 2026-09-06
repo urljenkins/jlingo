@@ -1,0 +1,87 @@
+{
+  "id": "past_tense_1",
+  "name": "Past Tense: Completed Actions (Ta-form)",
+  "description": "Polite past tense 〜ました and informal completed past 〜た",
+  "level": 12,
+  "exercises": [
+    {
+      "id": "ex_ja_past_tense_1_1",
+      "type": "multipleChoice",
+      "question": "What is the polite past form of 行きます (ikimasu)?",
+      "options": [
+        "行きました",
+        "行きますでした",
+        "行ったです",
+        "行きません"
+      ],
+      "correctAnswer": "行きました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_past_tense_1_2",
+      "type": "translateThis",
+      "question": "昨日の夜はおいしい寿司を食べました",
+      "options": [],
+      "correctAnswer": "Last night I ate delicious sushi",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Yesterday evening I ate delicious sushi",
+        "Last night I ate delicious sushi"
+      ]
+    },
+    {
+      "id": "ex_ja_past_tense_1_3",
+      "type": "fillInBlank",
+      "question": "先週の土曜日に友達と映画を___ました。",
+      "options": [
+        "見",
+        "見え",
+        "見て",
+        "見られ"
+      ],
+      "correctAnswer": "見",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_past_tense_1_4",
+      "type": "matchPairs",
+      "question": "Match present verbs with plain past た forms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "行く",
+            "native": "行った"
+          },
+          {
+            "target": "飲む",
+            "native": "飲んだ"
+          },
+          {
+            "target": "買う",
+            "native": "買った"
+          },
+          {
+            "target": "する",
+            "native": "した"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_past_tense_1_5",
+      "type": "speakThis",
+      "question": "京都で古いお寺をたくさん見学しました",
+      "options": [],
+      "correctAnswer": "京都で古いお寺をたくさん見学しました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

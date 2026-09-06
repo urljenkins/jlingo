@@ -1,0 +1,87 @@
+{
+  "id": "future_tense",
+  "name": "Le Futur Simple",
+  "description": "Projets d'avenir et prédictions au futur simple",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_fr_future_tense_1",
+      "type": "multipleChoice",
+      "question": "What is the future stem of the irregular verb 'aller'?",
+      "options": [
+        "ir-",
+        "all-",
+        "v-",
+        "aur-"
+      ],
+      "correctAnswer": "ir-",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_future_tense_2",
+      "type": "translateThis",
+      "question": "Demain, nous voyagerons vers le sud de la France",
+      "options": [],
+      "correctAnswer": "Tomorrow, we will travel towards the south of France",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Tomorrow we will travel to the south of France",
+        "Tomorrow, we will travel towards the south of France"
+      ]
+    },
+    {
+      "id": "ex_fr_future_tense_3",
+      "type": "fillInBlank",
+      "question": "L'année prochaine, vous ___ votre diplôme.",
+      "options": [
+        "aurez",
+        "avez",
+        "auriez",
+        "aviez"
+      ],
+      "correctAnswer": "aurez",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_future_tense_4",
+      "type": "matchPairs",
+      "question": "Match future stems with infinitives",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "être",
+            "native": "ser-"
+          },
+          {
+            "target": "avoir",
+            "native": "aur-"
+          },
+          {
+            "target": "faire",
+            "native": "fer-"
+          },
+          {
+            "target": "venir",
+            "native": "viendr-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_future_tense_5",
+      "type": "speakThis",
+      "question": "Tout ira bien, ne vous inquiétez pas",
+      "options": [],
+      "correctAnswer": "Tout ira bien, ne vous inquiétez pas",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

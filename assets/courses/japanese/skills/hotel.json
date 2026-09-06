@@ -1,0 +1,87 @@
+{
+  "id": "hotel",
+  "name": "At the Ryokan & Hotel",
+  "description": "Check-in at Japanese ryokans and hotels, onsen etiquette, and amenities",
+  "level": 17,
+  "exercises": [
+    {
+      "id": "ex_ja_hotel_1",
+      "type": "multipleChoice",
+      "question": "What traditional Japanese inn features tatami rooms and onsen?",
+      "options": [
+        "旅館 (りょかん)",
+        "カプセルホテル",
+        "民宿",
+        "ビジネスホテル"
+      ],
+      "correctAnswer": "旅館 (りょかん)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_hotel_2",
+      "type": "translateThis",
+      "question": "露天風呂は何時まで利用できますか？",
+      "options": [],
+      "correctAnswer": "Until what time is the open-air bath available?",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Until what time can we use the outdoor bath?",
+        "Until what time is the open-air bath available?"
+      ]
+    },
+    {
+      "id": "ex_ja_hotel_3",
+      "type": "fillInBlank",
+      "question": "チェックインの際に___を提示してください。",
+      "options": [
+        "パスポート",
+        "財布",
+        "切符",
+        "お土産"
+      ],
+      "correctAnswer": "パスポート",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_hotel_4",
+      "type": "matchPairs",
+      "question": "Match ryokan terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "露天風呂 (ろてんぶろ)",
+            "native": "open-air onsen bath"
+          },
+          {
+            "target": "浴衣 (ゆかた)",
+            "native": "cotton kimono robe"
+          },
+          {
+            "target": "布団 (ふとん)",
+            "native": "traditional futon bedding"
+          },
+          {
+            "target": "会席料理",
+            "native": "traditional multi-course dinner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_hotel_5",
+      "type": "speakThis",
+      "question": "静かで落ち着いた素晴らしい和室ですね",
+      "options": [],
+      "correctAnswer": "静かで落ち着いた素晴らしい和室ですね",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

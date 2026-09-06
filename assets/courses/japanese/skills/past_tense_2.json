@@ -1,0 +1,87 @@
+{
+  "id": "past_tense_2",
+  "name": "Past Continuous & Habitual",
+  "description": "Express past ongoing activities (〜ていました) and past habits",
+  "level": 13,
+  "exercises": [
+    {
+      "id": "ex_ja_past_tense_2_1",
+      "type": "multipleChoice",
+      "question": "Which construction means 'was doing' in the past?",
+      "options": [
+        "〜ていました",
+        "〜てしまいました",
+        "〜たばかり",
+        "〜てみたい"
+      ],
+      "correctAnswer": "〜ていました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_past_tense_2_2",
+      "type": "translateThis",
+      "question": "電話が鳴った時、私はお風呂に入っていました",
+      "options": [],
+      "correctAnswer": "When the phone rang, I was taking a bath",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "When the phone rang I was in the bath",
+        "When the phone rang, I was taking a bath"
+      ]
+    },
+    {
+      "id": "ex_ja_past_tense_2_3",
+      "type": "fillInBlank",
+      "question": "子どもの頃、よく川で___いました。",
+      "options": [
+        "泳いで",
+        "泳ぐ",
+        "泳ぎ",
+        "泳いだ"
+      ],
+      "correctAnswer": "泳いで",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_past_tense_2_4",
+      "type": "matchPairs",
+      "question": "Match past continuous phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "本を読んでいた",
+            "native": "was reading a book"
+          },
+          {
+            "target": "走っていた",
+            "native": "was running"
+          },
+          {
+            "target": "待っていた",
+            "native": "was waiting"
+          },
+          {
+            "target": "寝ていた",
+            "native": "was sleeping"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_past_tense_2_5",
+      "type": "speakThis",
+      "question": "その時、私はちょうど宿題をしていました",
+      "options": [],
+      "correctAnswer": "その時、私はちょうど宿題をしていました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

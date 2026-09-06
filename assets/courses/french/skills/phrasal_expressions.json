@@ -1,0 +1,87 @@
+{
+  "id": "phrasal_expressions",
+  "name": "Locutions Verbales",
+  "description": "Avoir beau, faire en sorte que, se mettre à",
+  "level": 23,
+  "exercises": [
+    {
+      "id": "ex_fr_phrasal_expressions_1",
+      "type": "multipleChoice",
+      "question": "What does 'avoir beau faire quelque chose' mean?",
+      "options": [
+        "To do something in vain / no matter how hard one tries",
+        "To do something with great pleasure",
+        "To do something beautifully",
+        "To pretend to do something"
+      ],
+      "correctAnswer": "To do something in vain / no matter how hard one tries",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_phrasal_expressions_2",
+      "type": "translateThis",
+      "question": "J'ai beau chercher mes clés, impossible de les retrouver",
+      "options": [],
+      "correctAnswer": "No matter how much I look for my keys, I cannot find them",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Hard as I look for my keys, it is impossible to find them",
+        "No matter how much I look for my keys, I cannot find them"
+      ]
+    },
+    {
+      "id": "ex_fr_phrasal_expressions_3",
+      "type": "fillInBlank",
+      "question": "Elle s'est mise ___ pleurer d'émotion.",
+      "options": [
+        "à",
+        "de",
+        "pour",
+        "en"
+      ],
+      "correctAnswer": "à",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_phrasal_expressions_4",
+      "type": "matchPairs",
+      "question": "Match complex locutions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "faire en sorte que",
+            "native": "to ensure that"
+          },
+          {
+            "target": "se rendre compte de",
+            "native": "to realize/notice"
+          },
+          {
+            "target": "avoir hâte de",
+            "native": "to look forward to"
+          },
+          {
+            "target": "tenir compte de",
+            "native": "to take into account"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_phrasal_expressions_5",
+      "type": "speakThis",
+      "question": "Faites en sorte que tous les documents soient signés à temps",
+      "options": [],
+      "correctAnswer": "Faites en sorte que tous les documents soient signés à temps",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

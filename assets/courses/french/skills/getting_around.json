@@ -1,0 +1,87 @@
+{
+  "id": "getting_around",
+  "name": "Se Déplacer",
+  "description": "S'orienter dans la ville et prendre les transports en commun",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_fr_getting_around_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'Where is the metro station?' in French?",
+      "options": [
+        "Où se trouve la station de métro ?",
+        "Où est le restaurant ?",
+        "Comment s'appelle cette rue ?",
+        "Combien coûte le ticket ?"
+      ],
+      "correctAnswer": "Où se trouve la station de métro ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_getting_around_2",
+      "type": "translateThis",
+      "question": "Pour aller à la tour Eiffel, prenez la ligne six",
+      "options": [],
+      "correctAnswer": "To go to the Eiffel Tower, take line six",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "To go to the Eiffel Tower take line six",
+        "To go to the Eiffel Tower, take line six"
+      ]
+    },
+    {
+      "id": "ex_fr_getting_around_3",
+      "type": "fillInBlank",
+      "question": "Le bus ___ devant la mairie.",
+      "options": [
+        "s'arrête",
+        "monte",
+        "descend",
+        "tourne"
+      ],
+      "correctAnswer": "s'arrête",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_getting_around_4",
+      "type": "matchPairs",
+      "question": "Match navigation terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "arrêt de bus",
+            "native": "bus stop"
+          },
+          {
+            "target": "ligne de métro",
+            "native": "metro line"
+          },
+          {
+            "target": "correspondance",
+            "native": "connection/transfer"
+          },
+          {
+            "target": "billet aller-retour",
+            "native": "round-trip ticket"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_getting_around_5",
+      "type": "speakThis",
+      "question": "Où puis-je acheter un carnet de tickets ?",
+      "options": [],
+      "correctAnswer": "Où puis-je acheter un carnet de tickets ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

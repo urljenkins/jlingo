@@ -188,6 +188,136 @@
             "options": [],
             "correctAnswer": "El agua está fría",
             "id": "ex_art_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "El águila",
+            "options": [],
+            "correctAnswer": "The eagle (masc. article with fem. noun)",
+            "id": "ex_artx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Why does 'agua' use 'el' instead of 'la'?",
+            "options": [
+                "Because it starts with a stressed 'a' sound",
+                "Because it's masculine",
+                "It's an exception with no rule",
+                "Because it's plural"
+            ],
+            "correctAnswer": "Because it starts with a stressed 'a' sound",
+            "id": "ex_artx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ alma es inmortal (the - fem. starting with stressed a)",
+            "options": [
+                "El",
+                "La",
+                "Un",
+                "Una"
+            ],
+            "correctAnswer": "El",
+            "id": "ex_artx22_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match tricky feminine nouns using 'el'",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "El agua",
+                        "native": "The water"
+                    },
+                    {
+                        "target": "El águila",
+                        "native": "The eagle"
+                    },
+                    {
+                        "target": "El área",
+                        "native": "The area"
+                    },
+                    {
+                        "target": "El hacha",
+                        "native": "The axe"
+                    }
+                ]
+            },
+            "id": "ex_artx22_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El agua está muy fría",
+            "options": [],
+            "correctAnswer": "El agua está muy fría",
+            "id": "ex_artx22_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Del y al (contractions)",
+            "options": [],
+            "correctAnswer": "Of the / to the",
+            "id": "ex_artx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is 'a + el' contracted to?",
+            "options": [
+                "Al",
+                "El",
+                "A el",
+                "Ael"
+            ],
+            "correctAnswer": "Al",
+            "id": "ex_artx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Voy ___ mercado (to the)",
+            "options": [
+                "al",
+                "a el",
+                "a la",
+                "el"
+            ],
+            "correctAnswer": "al",
+            "id": "ex_artx3_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match contractions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "A + el",
+                        "native": "Al"
+                    },
+                    {
+                        "target": "De + el",
+                        "native": "Del"
+                    },
+                    {
+                        "target": "La casa del perro",
+                        "native": "The dog's house"
+                    },
+                    {
+                        "target": "Voy al parque",
+                        "native": "I go to the park"
+                    }
+                ]
+            },
+            "id": "ex_artx3_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El libro es del profesor",
+            "options": [],
+            "correctAnswer": "El libro es del profesor",
+            "id": "ex_artx3_5"
         }
     ]
 }

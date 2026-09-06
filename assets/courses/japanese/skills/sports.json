@@ -1,0 +1,87 @@
+{
+  "id": "sports",
+  "name": "Sports & Martial Arts",
+  "description": "Modern sports, baseball popularity, and traditional martial arts (Budo)",
+  "level": 18,
+  "exercises": [
+    {
+      "id": "ex_ja_sports_1",
+      "type": "multipleChoice",
+      "question": "What is Japan's ancient national martial sport?",
+      "options": [
+        "相撲 (すもう)",
+        "野球 (やきゅう)",
+        "サッカー",
+        "剣道 (けんどう)"
+      ],
+      "correctAnswer": "相撲 (すもう)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_sports_2",
+      "type": "translateThis",
+      "question": "甲子園高校野球大会は日本全国で熱狂的な人気があります",
+      "options": [],
+      "correctAnswer": "The Koshien high school baseball tournament has enthusiastic popularity nationwide in Japan",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Koshien high school baseball is wildly popular across Japan",
+        "The Koshien high school baseball tournament has enthusiastic popularity nationwide in Japan"
+      ]
+    },
+    {
+      "id": "ex_ja_sports_3",
+      "type": "fillInBlank",
+      "question": "道場で___の稽古に励んでいます。",
+      "options": [
+        "柔道",
+        "野球",
+        "テニス",
+        "スキー"
+      ],
+      "correctAnswer": "柔道",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_sports_4",
+      "type": "matchPairs",
+      "question": "Match martial arts",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "空手 (からて)",
+            "native": "Karate"
+          },
+          {
+            "target": "柔道 (じゅうどう)",
+            "native": "Judo"
+          },
+          {
+            "target": "剣道 (けんどう)",
+            "native": "Kendo"
+          },
+          {
+            "target": "合気道 (あいきどう)",
+            "native": "Aikido"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_sports_5",
+      "type": "speakThis",
+      "question": "礼に始まり礼に終わるのが武道の精神です",
+      "options": [],
+      "correctAnswer": "礼に始まり礼に終わるのが武道の精神です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

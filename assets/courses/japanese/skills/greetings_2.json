@@ -1,0 +1,87 @@
+{
+  "id": "greetings_2",
+  "name": "Greetings 2",
+  "description": "Polite greetings, apologies, and everyday expressions in Japanese",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_ja_greetings_2_1",
+      "type": "multipleChoice",
+      "question": "What is the polite phrase for 'Excuse me' or 'I am sorry'?",
+      "options": [
+        "すみません",
+        "さようなら",
+        "いただきます",
+        "ごちそうさま"
+      ],
+      "correctAnswer": "すみません",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_greetings_2_2",
+      "type": "translateThis",
+      "question": "おやすみなさい",
+      "options": [],
+      "correctAnswer": "Good night",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Goodnight",
+        "Good night"
+      ]
+    },
+    {
+      "id": "ex_ja_greetings_2_3",
+      "type": "fillInBlank",
+      "question": "はじめまして、よろしくお願い___。",
+      "options": [
+        "します",
+        "です",
+        "ます",
+        "でした"
+      ],
+      "correctAnswer": "します",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_greetings_2_4",
+      "type": "matchPairs",
+      "question": "Match polite expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "すみません",
+            "native": "Excuse me"
+          },
+          {
+            "target": "どういたしまして",
+            "native": "You are welcome"
+          },
+          {
+            "target": "ごめんなさい",
+            "native": "I am sorry"
+          },
+          {
+            "target": "またね",
+            "native": "See you later"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_greetings_2_5",
+      "type": "speakThis",
+      "question": "よろしくお願いします",
+      "options": [],
+      "correctAnswer": "よろしくお願いします",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

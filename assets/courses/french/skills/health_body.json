@@ -1,0 +1,87 @@
+{
+  "id": "health_body",
+  "name": "Corps & Santé",
+  "description": "Parties du corps humain et symptômes fréquents",
+  "level": 16,
+  "exercises": [
+    {
+      "id": "ex_fr_health_body_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'I have a headache' in French?",
+      "options": [
+        "J'ai mal à la tête",
+        "J'ai mal au dos",
+        "J'ai mal au ventre",
+        "J'ai mal aux dents"
+      ],
+      "correctAnswer": "J'ai mal à la tête",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_health_body_2",
+      "type": "translateThis",
+      "question": "Le médecin a examiné mes poumons et ma gorge",
+      "options": [],
+      "correctAnswer": "The doctor examined my lungs and my throat",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "The doctor examined my lungs and throat",
+        "The doctor examined my lungs and my throat"
+      ]
+    },
+    {
+      "id": "ex_fr_health_body_3",
+      "type": "fillInBlank",
+      "question": "J'ai mal au ___ après avoir porté ces cartons lourds.",
+      "options": [
+        "dos",
+        "tête",
+        "jambes",
+        "mains"
+      ],
+      "correctAnswer": "dos",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_health_body_4",
+      "type": "matchPairs",
+      "question": "Match parts of the body",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le bras",
+            "native": "the arm"
+          },
+          {
+            "target": "la jambe",
+            "native": "the leg"
+          },
+          {
+            "target": "le cœur",
+            "native": "the heart"
+          },
+          {
+            "target": "l'épaule",
+            "native": "the shoulder"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_health_body_5",
+      "type": "speakThis",
+      "question": "Prenez soin de votre santé et reposez-vous",
+      "options": [],
+      "correctAnswer": "Prenez soin de votre santé et reposez-vous",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "family_1",
+  "name": "La Famille",
+  "description": "Vocabulaire des membres de la famille et relations proches",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_fr_fam_1",
+      "type": "translateThis",
+      "question": "Mon père et ma mère",
+      "options": [],
+      "correctAnswer": "My father and my mother",
+      "acceptableAnswers": [
+        "My father and my mother",
+        "My dad and my mom"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_fam_2",
+      "type": "multipleChoice",
+      "question": "What is 'brother' in French?",
+      "options": [
+        "Frère",
+        "Sœur",
+        "Fils",
+        "Cousin"
+      ],
+      "correctAnswer": "Frère",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_fam_3",
+      "type": "fillInBlank",
+      "question": "Ma ___ s'appelle Sophie, c'est la fille de mes parents.",
+      "options": [
+        "sœur",
+        "frère",
+        "oncle",
+        "père"
+      ],
+      "correctAnswer": "sœur",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_fam_4",
+      "type": "matchPairs",
+      "question": "Match family relations",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "père",
+            "native": "father"
+          },
+          {
+            "target": "mère",
+            "native": "mother"
+          },
+          {
+            "target": "fils",
+            "native": "son"
+          },
+          {
+            "target": "fille",
+            "native": "daughter"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_fam_5",
+      "type": "speakThis",
+      "question": "J'ai une grande famille",
+      "options": [],
+      "correctAnswer": "J'ai une grande famille",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

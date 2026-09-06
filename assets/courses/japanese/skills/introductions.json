@@ -1,0 +1,87 @@
+{
+  "id": "introductions",
+  "name": "Introductions",
+  "description": "Introduce yourself, state your occupation and nationality in Japanese",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_ja_introductions_1",
+      "type": "multipleChoice",
+      "question": "Which particle marks the topic of a sentence (written as 'ha')?",
+      "options": [
+        "は",
+        "が",
+        "を",
+        "に"
+      ],
+      "correctAnswer": "は",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_introductions_2",
+      "type": "translateThis",
+      "question": "私の名前はケンです",
+      "options": [],
+      "correctAnswer": "My name is Ken",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I am Ken",
+        "My name is Ken"
+      ]
+    },
+    {
+      "id": "ex_ja_introductions_3",
+      "type": "fillInBlank",
+      "question": "私はアメリカから___。",
+      "options": [
+        "来ました",
+        "行きました",
+        "見ました",
+        "食べました"
+      ],
+      "correctAnswer": "来ました",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_introductions_4",
+      "type": "matchPairs",
+      "question": "Match nationalities",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "日本人",
+            "native": "Japanese person"
+          },
+          {
+            "target": "アメリカ人",
+            "native": "American person"
+          },
+          {
+            "target": "イギリス人",
+            "native": "British person"
+          },
+          {
+            "target": "フランス人",
+            "native": "French person"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_introductions_5",
+      "type": "speakThis",
+      "question": "初めまして、田中と申します",
+      "options": [],
+      "correctAnswer": "初めまして、田中と申します",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

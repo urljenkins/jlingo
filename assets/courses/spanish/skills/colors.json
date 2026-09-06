@@ -197,6 +197,96 @@
             "options": [],
             "correctAnswer": "An orange sky at sunset",
             "id": "ex_col_16"
+        },
+        {
+            "type": "translateThis",
+            "question": "Celeste",
+            "options": [],
+            "correctAnswer": "Sky blue",
+            "id": "ex_colx22_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'beige'?",
+            "options": [
+                "Beige",
+                "Rosado",
+                "Café claro",
+                "Blanco"
+            ],
+            "correctAnswer": "Beige",
+            "id": "ex_colx22_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El vestido es de color ___",
+            "options": [
+                "celeste",
+                "cielo",
+                "aire",
+                "sol"
+            ],
+            "correctAnswer": "celeste",
+            "id": "ex_colx22_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Un vestido celeste",
+            "options": [],
+            "correctAnswer": "Un vestido celeste",
+            "id": "ex_colx22_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Mi color favorito es el morado",
+            "options": [],
+            "correctAnswer": "Mi color favorito es el morado",
+            "id": "ex_colx22_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Dorado",
+            "options": [],
+            "correctAnswer": "Golden",
+            "id": "ex_colx3_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'silver' (color)?",
+            "options": [
+                "Plateado",
+                "Dorado",
+                "Gris",
+                "Blanco"
+            ],
+            "correctAnswer": "Plateado",
+            "id": "ex_colx3_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El anillo es de color ___",
+            "options": [
+                "dorado",
+                "oro",
+                "sol",
+                "luz"
+            ],
+            "correctAnswer": "dorado",
+            "id": "ex_colx3_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Un collar plateado",
+            "options": [],
+            "correctAnswer": "Un collar plateado",
+            "id": "ex_colx3_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Me encanta el color dorado",
+            "options": [],
+            "correctAnswer": "Me encanta el color dorado",
+            "id": "ex_colx3_5"
         }
     ]
 }

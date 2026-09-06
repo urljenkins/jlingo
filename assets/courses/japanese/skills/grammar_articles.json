@@ -1,0 +1,87 @@
+{
+  "id": "grammar_articles",
+  "name": "Grammar: Demonstratives (Ko-So-A-Do)",
+  "description": "Learn demonstrative pronouns and words: kore, sore, are, dore and kono, sono, ano",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_ja_grammar_articles_1",
+      "type": "multipleChoice",
+      "question": "Which demonstrative refers to an object close to the speaker?",
+      "options": [
+        "これ",
+        "それ",
+        "あれ",
+        "どれ"
+      ],
+      "correctAnswer": "これ",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_grammar_articles_2",
+      "type": "translateThis",
+      "question": "この本はとても面白いです",
+      "options": [],
+      "correctAnswer": "This book is very interesting",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "This book is really interesting",
+        "This book is very interesting"
+      ]
+    },
+    {
+      "id": "ex_ja_grammar_articles_3",
+      "type": "fillInBlank",
+      "question": "郵便局は___ですか？（尋ねる疑問詞）",
+      "options": [
+        "どこ",
+        "だれ",
+        "どれ",
+        "なに"
+      ],
+      "correctAnswer": "どこ",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_grammar_articles_4",
+      "type": "matchPairs",
+      "question": "Match demonstratives with English equivalents",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "これ",
+            "native": "this one (near me)"
+          },
+          {
+            "target": "それ",
+            "native": "that one (near you)"
+          },
+          {
+            "target": "あれ",
+            "native": "that one over there"
+          },
+          {
+            "target": "どれ",
+            "native": "which one?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_grammar_articles_5",
+      "type": "speakThis",
+      "question": "あれは何ですか？",
+      "options": [],
+      "correctAnswer": "あれは何ですか？",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

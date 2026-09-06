@@ -1,0 +1,87 @@
+{
+  "id": "drinks",
+  "name": "Les Boissons",
+  "description": "Boissons chaudes, fraîches et expressions associées",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_fr_drk_1",
+      "type": "multipleChoice",
+      "question": "What is 'eau' in English?",
+      "options": [
+        "Water",
+        "Wine",
+        "Juice",
+        "Milk"
+      ],
+      "correctAnswer": "Water",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_drk_2",
+      "type": "fillInBlank",
+      "question": "Un grand verre de ___ d'orange, s'il vous plaît.",
+      "options": [
+        "jus",
+        "café",
+        "thé",
+        "soupe"
+      ],
+      "correctAnswer": "jus",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_drk_3",
+      "type": "matchPairs",
+      "question": "Match drinks",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "café",
+            "native": "coffee"
+          },
+          {
+            "target": "thé",
+            "native": "tea"
+          },
+          {
+            "target": "lait",
+            "native": "milk"
+          },
+          {
+            "target": "vin",
+            "native": "wine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_drk_4",
+      "type": "translateThis",
+      "question": "Elle boit une tasse de thé",
+      "options": [],
+      "correctAnswer": "She drinks a cup of tea",
+      "acceptableAnswers": [
+        "She is drinking a cup of tea",
+        "She drinks a cup of tea"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_drk_5",
+      "type": "speakThis",
+      "question": "Je voudrais une carafe d'eau fraîche",
+      "options": [],
+      "correctAnswer": "Je voudrais une carafe d'eau fraîche",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

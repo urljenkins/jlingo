@@ -1,0 +1,87 @@
+{
+  "id": "debating",
+  "name": "Debating & Formal Discussion",
+  "description": "Concede, counter, structure arguments, and maintain diplomatic decorum",
+  "level": 21,
+  "exercises": [
+    {
+      "id": "ex_ja_debating_1",
+      "type": "multipleChoice",
+      "question": "Which formal connector introduces a concession ('Certainly..., however...')?",
+      "options": [
+        "確かに〜、しかし〜",
+        "だから〜",
+        "つまり〜",
+        "例えば〜"
+      ],
+      "correctAnswer": "確かに〜、しかし〜",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_debating_2",
+      "type": "translateThis",
+      "question": "相手の主張にも一定の合理性があることは認めざるを得ません",
+      "options": [],
+      "correctAnswer": "We cannot help but acknowledge that the opposing claim also has a certain rationality",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "I must admit that the counter-argument has some validity",
+        "We cannot help but acknowledge that the opposing claim also has a certain rationality"
+      ]
+    },
+    {
+      "id": "ex_ja_debating_3",
+      "type": "fillInBlank",
+      "question": "客観的なデータを___にして議論を進める必要があります。",
+      "options": [
+        "根拠",
+        "感想",
+        "直感",
+        "推測"
+      ],
+      "correctAnswer": "根拠",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_debating_4",
+      "type": "matchPairs",
+      "question": "Match formal discourse connectors",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "一方で",
+            "native": "on the other hand"
+          },
+          {
+            "target": "それに反して",
+            "native": "contrary to that"
+          },
+          {
+            "target": "したがって",
+            "native": "therefore / accordingly"
+          },
+          {
+            "target": "要するに",
+            "native": "in short / to summarize"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_debating_5",
+      "type": "speakThis",
+      "question": "感情論を排し、論理的な根拠に基づいて判断を下すべきです",
+      "options": [],
+      "correctAnswer": "感情論を排し、論理的な根拠に基づいて判断を下すべきです",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

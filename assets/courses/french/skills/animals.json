@@ -1,0 +1,88 @@
+{
+  "id": "animals",
+  "name": "Les Animaux",
+  "description": "Animaux domestiques et sauvages en français",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_fr_ani_1",
+      "type": "multipleChoice",
+      "question": "What is 'le chien'?",
+      "options": [
+        "The dog",
+        "The cat",
+        "The horse",
+        "The bird"
+      ],
+      "correctAnswer": "The dog",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ani_2",
+      "type": "translateThis",
+      "question": "Le chat dort sur le canapé",
+      "options": [],
+      "correctAnswer": "The cat sleeps on the sofa",
+      "acceptableAnswers": [
+        "The cat is sleeping on the couch",
+        "The cat sleeps on the sofa",
+        "The cat is sleeping on the sofa"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ani_3",
+      "type": "fillInBlank",
+      "question": "Un bel ___ chante dans l'arbre.",
+      "options": [
+        "oiseau",
+        "poisson",
+        "cheval",
+        "serpent"
+      ],
+      "correctAnswer": "oiseau",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_ani_4",
+      "type": "matchPairs",
+      "question": "Match animals",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "cheval",
+            "native": "horse"
+          },
+          {
+            "target": "vache",
+            "native": "cow"
+          },
+          {
+            "target": "oiseau",
+            "native": "bird"
+          },
+          {
+            "target": "souris",
+            "native": "mouse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_ani_5",
+      "type": "speakThis",
+      "question": "Les chiens sont des animaux fidèles",
+      "options": [],
+      "correctAnswer": "Les chiens sont des animaux fidèles",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

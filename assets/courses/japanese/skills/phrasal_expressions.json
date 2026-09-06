@@ -1,0 +1,87 @@
+{
+  "id": "phrasal_expressions",
+  "name": "Compound Verbs & Complex Patterns",
+  "description": "Compound verbs (V-masu + kakeru, dasu, kiru) and formal patterns (〜にともなって)",
+  "level": 23,
+  "exercises": [
+    {
+      "id": "ex_ja_phrasal_expressions_1",
+      "type": "multipleChoice",
+      "question": "Which compound verb suffix indicates doing something thoroughly to the very end?",
+      "options": [
+        "〜きる (例: やりきる)",
+        "〜かける",
+        "〜だす",
+        "〜こむ"
+      ],
+      "correctAnswer": "〜きる (例: やりきる)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_phrasal_expressions_2",
+      "type": "translateThis",
+      "question": "突然激しい雨が降り出しました",
+      "options": [],
+      "correctAnswer": "Suddenly, heavy rain started pouring down",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "Suddenly it began to rain heavily",
+        "Suddenly, heavy rain started pouring down"
+      ]
+    },
+    {
+      "id": "ex_ja_phrasal_expressions_3",
+      "type": "fillInBlank",
+      "question": "経済の発展に___、人々の生活様式も変化しました。",
+      "options": [
+        "伴って (ともなって)",
+        "関して",
+        "対して",
+        "向かって"
+      ],
+      "correctAnswer": "伴って (ともなって)",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_phrasal_expressions_4",
+      "type": "matchPairs",
+      "question": "Match compound verb auxiliaries",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "〜出す (だす)",
+            "native": "sudden onset / bursting out"
+          },
+          {
+            "target": "〜直す (なおす)",
+            "native": "redo / do again"
+          },
+          {
+            "target": "〜続ける (つづける)",
+            "native": "continue doing"
+          },
+          {
+            "target": "〜終わる (おわる)",
+            "native": "finish doing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_phrasal_expressions_5",
+      "type": "speakThis",
+      "question": "最後まであきらめずにやりきることが大切です",
+      "options": [],
+      "correctAnswer": "最後まであきらめずにやりきることが大切です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

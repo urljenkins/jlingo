@@ -733,6 +733,90 @@
                 ]
             },
             "id": "rw_ex_8"
+        },
+        {
+            "type": "clozeTest",
+            "question": "El ___ sale por la mañana y se pone por la ___.",
+            "options": [
+                "sol",
+                "noche",
+                "luna",
+                "día"
+            ],
+            "correctAnswer": "sol,noche",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "sol",
+                        "options": [
+                            "sol",
+                            "luna",
+                            "cielo"
+                        ]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "noche",
+                        "options": [
+                            "noche",
+                            "día",
+                            "tarde"
+                        ]
+                    }
+                ],
+                "context": "Complete the sentence about the sun and moon."
+            },
+            "id": "rw_ex22_1"
+        },
+        {
+            "type": "storyLesson",
+            "question": "¿Qué animal encontró Marcos en el jardín?",
+            "options": [
+                "Un gato",
+                "Un perro",
+                "Un pájaro",
+                "Una tortuga"
+            ],
+            "correctAnswer": "Un gato",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "title": "El Nuevo Amigo",
+                "level": "A1",
+                "story": "Marcos jugaba en el jardín de su casa cuando escuchó un ruido detrás de las flores. Se acercó despacio y encontró un pequeño gato blanco. El gato estaba solo y tenía hambre. Marcos le dio un poco de leche y el gato se quedó a vivir con su familia. Ahora Marcos tiene un nuevo amigo para jugar todos los días.",
+                "vocabulary": [
+                    {
+                        "word": "ruido",
+                        "translation": "noise",
+                        "highlight": true
+                    },
+                    {
+                        "word": "despacio",
+                        "translation": "slowly",
+                        "highlight": true
+                    },
+                    {
+                        "word": "hambre",
+                        "translation": "hunger",
+                        "highlight": true
+                    },
+                    {
+                        "word": "se quedó",
+                        "translation": "stayed",
+                        "highlight": true
+                    },
+                    {
+                        "word": "amigo",
+                        "translation": "friend",
+                        "highlight": true
+                    }
+                ],
+                "question": "¿Qué animal encontró Marcos en el jardín?"
+            },
+            "id": "rw_ex3_1"
         }
     ]
 }

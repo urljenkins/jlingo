@@ -1,0 +1,88 @@
+{
+  "id": "alphabet",
+  "name": "Alphabet & Sons",
+  "description": "Apprendre l'alphabet français, les accents et les sons fondamentaux",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_fr_alpha_1",
+      "type": "multipleChoice",
+      "question": "Which accent gives the letter 'e' a closed sound as in 'café'?",
+      "options": [
+        "L'accent aigu (é)",
+        "L'accent grave (è)",
+        "L'accent circonflexe (ê)",
+        "Le tréma (ë)"
+      ],
+      "correctAnswer": "L'accent aigu (é)",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_alpha_2",
+      "type": "translateThis",
+      "question": "Bonjour",
+      "options": [],
+      "correctAnswer": "Hello",
+      "acceptableAnswers": [
+        "Good morning",
+        "Good day",
+        "Hello"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_alpha_3",
+      "type": "matchPairs",
+      "question": "Match French letters and sounds with examples",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ç",
+            "native": "Soft s sound (façade)"
+          },
+          {
+            "target": "é",
+            "native": "Closed e (café)"
+          },
+          {
+            "target": "è",
+            "native": "Open e (mère)"
+          },
+          {
+            "target": "ou",
+            "native": "Oo sound (vous)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_alpha_4",
+      "type": "fillInBlank",
+      "question": "Le mot 'gar___on' prend une cédille sous le c.",
+      "options": [
+        "ç",
+        "c",
+        "s",
+        "z"
+      ],
+      "correctAnswer": "ç",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_alpha_5",
+      "type": "speakThis",
+      "question": "Comment ça va ?",
+      "options": [],
+      "correctAnswer": "Comment ça va ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

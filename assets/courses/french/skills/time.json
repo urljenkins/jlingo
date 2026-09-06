@@ -1,0 +1,89 @@
+{
+  "id": "time",
+  "name": "L'Heure",
+  "description": "Demander et dire l'heure en français",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "ex_fr_time_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'What time is it?' in French?",
+      "options": [
+        "Quelle heure est-il ?",
+        "Quel jour sommes-nous ?",
+        "Quand partez-vous ?",
+        "Combien ça coûte ?"
+      ],
+      "correctAnswer": "Quelle heure est-il ?",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_time_2",
+      "type": "translateThis",
+      "question": "Il est huit heures et demie",
+      "options": [],
+      "correctAnswer": "It is half past eight",
+      "acceptableAnswers": [
+        "It's 8:30",
+        "It is 8:30",
+        "It's half past eight",
+        "It is half past eight"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_time_3",
+      "type": "fillInBlank",
+      "question": "Il est midi moins le ___.",
+      "options": [
+        "quart",
+        "demi",
+        "dix",
+        "vingt"
+      ],
+      "correctAnswer": "quart",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_time_4",
+      "type": "matchPairs",
+      "question": "Match time expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "midi",
+            "native": "noon"
+          },
+          {
+            "target": "minuit",
+            "native": "midnight"
+          },
+          {
+            "target": "et quart",
+            "native": "quarter past"
+          },
+          {
+            "target": "moins le quart",
+            "native": "quarter to"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_time_5",
+      "type": "speakThis",
+      "question": "Le train part à quatorze heures",
+      "options": [],
+      "correctAnswer": "Le train part à quatorze heures",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

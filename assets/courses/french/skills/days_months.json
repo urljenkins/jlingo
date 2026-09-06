@@ -1,0 +1,87 @@
+{
+  "id": "days_months",
+  "name": "Jours & Mois",
+  "description": "Les jours de la semaine, les mois et les saisons",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "ex_fr_dm_1",
+      "type": "multipleChoice",
+      "question": "Which day comes after 'mardi'?",
+      "options": [
+        "Mercredi",
+        "Lundi",
+        "Jeudi",
+        "Vendredi"
+      ],
+      "correctAnswer": "Mercredi",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_dm_2",
+      "type": "fillInBlank",
+      "question": "Le premier mois de l'année est ___.",
+      "options": [
+        "janvier",
+        "février",
+        "décembre",
+        "mars"
+      ],
+      "correctAnswer": "janvier",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_dm_3",
+      "type": "matchPairs",
+      "question": "Match days of the week",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "lundi",
+            "native": "Monday"
+          },
+          {
+            "target": "vendredi",
+            "native": "Friday"
+          },
+          {
+            "target": "samedi",
+            "native": "Saturday"
+          },
+          {
+            "target": "dimanche",
+            "native": "Sunday"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_dm_4",
+      "type": "translateThis",
+      "question": "En juillet et en août",
+      "options": [],
+      "correctAnswer": "In July and in August",
+      "acceptableAnswers": [
+        "In July and August",
+        "In July and in August"
+      ],
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_dm_5",
+      "type": "speakThis",
+      "question": "Nous partons en vacances en été",
+      "options": [],
+      "correctAnswer": "Nous partons en vacances en été",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "at_the_market",
+  "name": "Au Marché",
+  "description": "Acheter des fruits, légumes et produits frais au marché",
+  "level": 10,
+  "exercises": [
+    {
+      "id": "ex_fr_at_the_market_1",
+      "type": "multipleChoice",
+      "question": "How do you ask for a kilogram of apples?",
+      "options": [
+        "Un kilo de pommes, s'il vous plaît",
+        "Une tranche de pommes",
+        "Un litre de pommes",
+        "Un paquet de pommes"
+      ],
+      "correctAnswer": "Un kilo de pommes, s'il vous plaît",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_at_the_market_2",
+      "type": "translateThis",
+      "question": "Ces tomates sont fraîches et de saison",
+      "options": [],
+      "correctAnswer": "These tomatoes are fresh and in season",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "acceptableAnswers": [
+        "These tomatoes are fresh and in season"
+      ]
+    },
+    {
+      "id": "ex_fr_at_the_market_3",
+      "type": "fillInBlank",
+      "question": "Ce sera tout pour aujourd'hui, merci ___.",
+      "options": [
+        "monsieur",
+        "pomme",
+        "fromage",
+        "kilo"
+      ],
+      "correctAnswer": "monsieur",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_at_the_market_4",
+      "type": "matchPairs",
+      "question": "Match market terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "le marchand",
+            "native": "the merchant/vendor"
+          },
+          {
+            "target": "peser",
+            "native": "to weigh"
+          },
+          {
+            "target": "frais",
+            "native": "fresh"
+          },
+          {
+            "target": "la barquette",
+            "native": "the small punnet/basket"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_at_the_market_5",
+      "type": "speakThis",
+      "question": "Donnez-moi deux barquettes de fraises, s'il vous plaît",
+      "options": [],
+      "correctAnswer": "Donnez-moi deux barquettes de fraises, s'il vous plaît",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}
