@@ -1,35 +1,131 @@
 {
-  "id": "listening_pronunciation",
-  "name": "Listening & Pronunciation",
-  "description": "Master Japanese sounds through listening exercises, pronunciation practice, dialogues, and songs",
-  "level": 3,
-  "exercises": [
-    {
-      "id": "lp_1",
-      "type": "listeningComprehension",
-      "question": "Audio: 'おはようございます'",
-      "options": [],
-      "correctAnswer": "おはようございます",
-      "targetLanguage": "ja-JP",
-      "nativeLanguage": "en-US"
-    },
-    {
-      "id": "lp_2",
-      "type": "pronunciationPractice",
-      "question": "Repeat: こんばんは",
-      "options": [],
-      "correctAnswer": "こんばんは",
-      "targetLanguage": "ja-JP",
-      "nativeLanguage": "en-US"
-    },
-    {
-      "id": "lp_3",
-      "type": "dialogueListening",
-      "question": "Short dialogue: 'A: こんにちは B: こんにちは、元気ですか'",
-      "options": [],
-      "correctAnswer": "A: こんにちは B: こんにちは、元気ですか",
-      "targetLanguage": "ja-JP",
-      "nativeLanguage": "en-US"
-    }
-  ]
+    "id": "listening_pronunciation",
+    "name": "Listening & Pronunciation",
+    "description": "Master Japanese sounds through listening exercises, pronunciation practice, dialogues, and songs",
+    "level": 3,
+    "exercises": [
+        {
+            "id": "lp_1",
+            "type": "listeningComprehension",
+            "question": "Audio: 'おはようございます'",
+            "options": [],
+            "correctAnswer": "おはようございます",
+            "targetLanguage": "ja-JP",
+            "nativeLanguage": "en-US"
+        },
+        {
+            "id": "lp_2",
+            "type": "pronunciationPractice",
+            "question": "Repeat: こんばんは",
+            "options": [],
+            "correctAnswer": "こんばんは",
+            "targetLanguage": "ja-JP",
+            "nativeLanguage": "en-US"
+        },
+        {
+            "id": "lp_3",
+            "type": "dialogueListening",
+            "question": "Short dialogue: 'A: こんにちは B: こんにちは、元気ですか'",
+            "options": [],
+            "correctAnswer": "A: こんにちは B: こんにちは、元気ですか",
+            "targetLanguage": "ja-JP",
+            "nativeLanguage": "en-US"
+        },
+        {
+            "id": "jp_lp_native_1",
+            "type": "nativeAudio",
+            "question": "こんにちは、お元気ですか？",
+            "options": [],
+            "correctAnswer": "こんにちは、お元気ですか？",
+            "targetLanguage": "ja-JP",
+            "audioPath": null,
+            "audioAvailable": false,
+            "enabled": false,
+            "metadata": {
+                "speaker": "Native Speaker - Kenji",
+                "difficulty": "beginner"
+            }
+        },
+        {
+            "id": "jp_lp_song_1",
+            "type": "songFill",
+            "question": "上を向いて歩こう (Sukiyaki)",
+            "options": [],
+            "correctAnswer": "歩こう,涙,春",
+            "targetLanguage": "ja-JP",
+            "metadata": {
+                "songTitle": "上を向いて歩こう",
+                "artist": "坂本九",
+                "lyrics": [
+                    {
+                        "text": "上を向いて歩こう",
+                        "timestamp": 0
+                    },
+                    {
+                        "text": "涙がこぼれないように",
+                        "timestamp": 3000
+                    },
+                    {
+                        "text": "思い出す春の日",
+                        "timestamp": 6000
+                    }
+                ],
+                "blanks": [
+                    {
+                        "lineIndex": 0,
+                        "wordIndex": 0,
+                        "correctWord": "上を向いて歩こう",
+                        "hint": "look up and walk"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "jp_lp_dialogue_1",
+            "type": "interactiveDialogue",
+            "question": "レストランでの注文 (Ordering at a restaurant)",
+            "options": [
+                "お水をお願いします",
+                "さようなら",
+                "わかりません"
+            ],
+            "correctAnswer": "お水をお願いします",
+            "targetLanguage": "ja-JP",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "topic": "Restaurant",
+                "dialogue": [
+                    {
+                        "speaker": "店員",
+                        "text": "いらっしゃいませ。ご注文はお決まりですか？",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "You",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "お水をお願いします",
+                            "さようなら",
+                            "わかりません"
+                        ]
+                    },
+                    {
+                        "speaker": "店員",
+                        "text": "かしこまりました。少々お待ちください。",
+                        "isNative": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": "jp_lp_trans_1",
+            "type": "translationExercise",
+            "question": "これはいくらですか？",
+            "options": [],
+            "correctAnswer": "How much is this?",
+            "targetLanguage": "ja-JP",
+            "nativeLanguage": "en-US"
+        }
+    ]
 }

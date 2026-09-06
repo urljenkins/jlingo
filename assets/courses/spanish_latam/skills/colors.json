@@ -1,0 +1,81 @@
+{
+    "id": "colors",
+    "name": "Colors",
+    "description": "Learn the names of colors in Spanish",
+    "level": 4,
+    "exercises": [
+        {
+            "id": "ex_col_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'red' in Spanish?",
+            "options": [
+                "Rojo",
+                "Azul",
+                "Verde",
+                "Amarillo"
+            ],
+            "correctAnswer": "Rojo"
+        },
+        {
+            "id": "ex_col_2",
+            "type": "translateThis",
+            "question": "Azul",
+            "options": [],
+            "correctAnswer": "Blue"
+        },
+        {
+            "id": "ex_col_3",
+            "type": "matchPairs",
+            "question": "Match the colors",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Rojo",
+                        "native": "Red"
+                    },
+                    {
+                        "target": "Azul",
+                        "native": "Blue"
+                    },
+                    {
+                        "target": "Verde",
+                        "native": "Green"
+                    },
+                    {
+                        "target": "Amarillo",
+                        "native": "Yellow"
+                    },
+                    {
+                        "target": "Negro",
+                        "native": "Black"
+                    },
+                    {
+                        "target": "Blanco",
+                        "native": "White"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_col_4",
+            "type": "fillInBlank",
+            "question": "La camisa es ___",
+            "options": [
+                "azul",
+                "azules",
+                "azula",
+                "azulo"
+            ],
+            "correctAnswer": "azul"
+        },
+        {
+            "id": "ex_col_5",
+            "type": "speakThis",
+            "question": "El carro rojo",
+            "options": [],
+            "correctAnswer": "El carro rojo"
+        }
+    ]
+}

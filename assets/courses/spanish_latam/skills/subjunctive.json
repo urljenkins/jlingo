@@ -1,0 +1,82 @@
+{
+    "id": "subjunctive",
+    "name": "Subjunctive Mood",
+    "description": "Learn the subjunctive for wishes, doubts, and emotions",
+    "level": 22,
+    "exercises": [
+        {
+            "id": "ex_subj_1",
+            "type": "multipleChoice",
+            "question": "When do we use the subjunctive?",
+            "options": [
+                "For wishes, doubts, emotions, and uncertainty",
+                "For facts and certainty",
+                "For past events",
+                "For giving orders"
+            ],
+            "correctAnswer": "For wishes, doubts, emotions, and uncertainty"
+        },
+        {
+            "id": "ex_subj_2",
+            "type": "matchPairs",
+            "question": "Match subjunctive triggers",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Espero que...",
+                        "native": "I hope that..."
+                    },
+                    {
+                        "target": "Quiero que...",
+                        "native": "I want (you) to..."
+                    },
+                    {
+                        "target": "Dudo que...",
+                        "native": "I doubt that..."
+                    },
+                    {
+                        "target": "Es importante que...",
+                        "native": "It's important that..."
+                    },
+                    {
+                        "target": "Ojalá que...",
+                        "native": "I wish that..."
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_subj_3",
+            "type": "translateThis",
+            "question": "Espero que tengas un buen día",
+            "options": [],
+            "correctAnswer": "I hope you have a good day"
+        },
+        {
+            "id": "ex_subj_4",
+            "type": "fillInBlank",
+            "question": "Quiero que ___ la verdad",
+            "options": [
+                "sepas",
+                "sabes",
+                "saber",
+                "sabiendo"
+            ],
+            "correctAnswer": "sepas"
+        },
+        {
+            "id": "ex_subj_5",
+            "type": "multipleChoice",
+            "question": "What is the subjunctive of 'tener' for 'él'?",
+            "options": [
+                "Tenga",
+                "Tiene",
+                "Tenía",
+                "Tendría"
+            ],
+            "correctAnswer": "Tenga"
+        }
+    ]
+}

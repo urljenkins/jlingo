@@ -26,25 +26,99 @@
           "id": "ch1_p1",
           "originalText_english": "In the year 1878, I took my degree of Doctor of Medicine of the University of London, and proceeded to Netley to go through the course prescribed for surgeons in the army. Having completed my studies there, I was duly attached to the Fifth Northumberland Fusiliers as Assistant Surgeon.",
           "translatedText_english": "En el año 1878, obtuve mi título de Doctor en Medicina de la Universidad de Londres, y me dirigí a Netley para completar el curso prescrito para cirujanos del ejército. Habiendo completado mis estudios allí, fui debidamente asignado al Quinto Regimiento de Fusileros de Northumberland como Cirujano Asistente.",
-          "vocabularyWords_english": ["degree", "proceeded", "prescribed", "surgeons", "completed", "attached"]
+          "vocabularyWords_english": [
+            "degree",
+            "proceeded",
+            "prescribed",
+            "surgeons",
+            "completed",
+            "attached"
+          ],
+          "originalText": "In the year 1878, I took my degree of Doctor of Medicine of the University of London, and proceeded to Netley to go through the course prescribed for surgeons in the army. Having completed my studies there, I was duly attached to the Fifth Northumberland Fusiliers as Assistant Surgeon.",
+          "translatedText": "En el año 1878, obtuve mi título de Doctor en Medicina de la Universidad de Londres, y me dirigí a Netley para completar el curso prescrito para cirujanos del ejército. Habiendo completado mis estudios allí, fui debidamente asignado al Quinto Regimiento de Fusileros de Northumberland como Cirujano Asistente.",
+          "vocabularyWords": [
+            "degree",
+            "proceeded",
+            "prescribed",
+            "surgeons",
+            "completed",
+            "attached"
+          ]
         },
         {
           "id": "ch1_p2",
           "originalText_english": "I was struck on the shoulder by a Jezail bullet, which shattered the bone and grazed the subclavian artery. I should have fallen into the hands of the murderous Ghazis had it not been for the devotion and courage shown by Murray, my orderly.",
           "translatedText_english": "Fui alcanzado en el hombro por una bala Jezail, que destrozó el hueso y rozó la arteria subclavia. Habría caído en manos de los asesinos ghazis de no haber sido por la devoción y el coraje mostrados por Murray, mi asistente.",
-          "vocabularyWords_english": ["struck", "shoulder", "shattered", "grazed", "devotion", "courage", "orderly"]
+          "vocabularyWords_english": [
+            "struck",
+            "shoulder",
+            "shattered",
+            "grazed",
+            "devotion",
+            "courage",
+            "orderly"
+          ],
+          "originalText": "I was struck on the shoulder by a Jezail bullet, which shattered the bone and grazed the subclavian artery. I should have fallen into the hands of the murderous Ghazis had it not been for the devotion and courage shown by Murray, my orderly.",
+          "translatedText": "Fui alcanzado en el hombro por una bala Jezail, que destrozó el hueso y rozó la arteria subclavia. Habría caído en manos de los asesinos ghazis de no haber sido por la devoción y el coraje mostrados por Murray, mi asistente.",
+          "vocabularyWords": [
+            "struck",
+            "shoulder",
+            "shattered",
+            "grazed",
+            "devotion",
+            "courage",
+            "orderly"
+          ]
         },
         {
           "id": "ch1_p3",
           "originalText_english": "There I found a young man in the chemical laboratory of the hospital, who was enthusiastically performing an experiment. \"I've found it! I've found it!\" he shouted to my companion, running towards us with a test-tube in his hand. \"I have found a reagent which is precipitated by haemoglobin, and by nothing else.\"",
           "translatedText_english": "Allí encontré a un joven en el laboratorio químico del hospital, que realizaba un experimento con entusiasmo. \"¡Lo encontré! ¡Lo encontré!\" gritó a mi compañero, corriendo hacia nosotros con un tubo de ensayo en la mano. \"He encontrado un reactivo que es precipitado por la hemoglobina, y por nada más.\"",
-          "vocabularyWords_english": ["chemical", "laboratory", "enthusiastically", "experiment", "shouted", "test-tube", "reagent"]
+          "vocabularyWords_english": [
+            "chemical",
+            "laboratory",
+            "enthusiastically",
+            "experiment",
+            "shouted",
+            "test-tube",
+            "reagent"
+          ],
+          "originalText": "There I found a young man in the chemical laboratory of the hospital, who was enthusiastically performing an experiment. \"I've found it! I've found it!\" he shouted to my companion, running towards us with a test-tube in his hand. \"I have found a reagent which is precipitated by haemoglobin, and by nothing else.\"",
+          "translatedText": "Allí encontré a un joven en el laboratorio químico del hospital, que realizaba un experimento con entusiasmo. \"¡Lo encontré! ¡Lo encontré!\" gritó a mi compañero, corriendo hacia nosotros con un tubo de ensayo en la mano. \"He encontrado un reactivo que es precipitado por la hemoglobina, y por nada más.\"",
+          "vocabularyWords": [
+            "chemical",
+            "laboratory",
+            "enthusiastically",
+            "experiment",
+            "shouted",
+            "test-tube",
+            "reagent"
+          ]
         },
         {
           "id": "ch1_p4",
           "originalText_english": "\"Dr. Watson, Mr. Sherlock Holmes,\" said Stamford, introducing us. \"How are you?\" he said cordially, gripping my hand with a strength for which I should hardly have given him credit. \"You have been in Afghanistan, I perceive.\" \"How on earth did you know that?\" I asked in astonishment.",
           "translatedText_english": "\"Doctor Watson, señor Sherlock Holmes\", dijo Stamford, presentándonos. \"¿Cómo está usted?\" dijo cordialmente, estrechando mi mano con una fuerza que difícilmente le habría atribuido. \"Ha estado usted en Afganistán, según percibo.\" \"¿Cómo demonios sabe eso?\" pregunté con asombro.",
-          "vocabularyWords_english": ["introducing", "cordially", "gripping", "strength", "credit", "perceive", "astonishment"]
+          "vocabularyWords_english": [
+            "introducing",
+            "cordially",
+            "gripping",
+            "strength",
+            "credit",
+            "perceive",
+            "astonishment"
+          ],
+          "originalText": "\"Dr. Watson, Mr. Sherlock Holmes,\" said Stamford, introducing us. \"How are you?\" he said cordially, gripping my hand with a strength for which I should hardly have given him credit. \"You have been in Afghanistan, I perceive.\" \"How on earth did you know that?\" I asked in astonishment.",
+          "translatedText": "\"Doctor Watson, señor Sherlock Holmes\", dijo Stamford, presentándonos. \"¿Cómo está usted?\" dijo cordialmente, estrechando mi mano con una fuerza que difícilmente le habría atribuido. \"Ha estado usted en Afganistán, según percibo.\" \"¿Cómo demonios sabe eso?\" pregunté con asombro.",
+          "vocabularyWords": [
+            "introducing",
+            "cordially",
+            "gripping",
+            "strength",
+            "credit",
+            "perceive",
+            "astonishment"
+          ]
         }
       ]
     },
@@ -57,25 +131,103 @@
           "id": "ch2_p1",
           "originalText_english": "His very person and appearance were such as to strike the attention of the most casual observer. In height he was rather over six feet, and so excessively lean that he seemed to be considerably taller. His eyes were sharp and piercing, and his thin, hawk-like nose gave his whole expression an air of alertness and decision.",
           "translatedText_english": "Su persona y apariencia eran tales que llamaban la atención del observador más casual. De estatura medía algo más de seis pies, y era tan excesivamente delgado que parecía considerablemente más alto. Sus ojos eran agudos y penetrantes, y su nariz delgada como la de un halcón daba a toda su expresión un aire de alerta y decisión.",
-          "vocabularyWords_english": ["appearance", "casual", "observer", "excessively", "lean", "piercing", "hawk-like", "alertness"]
+          "vocabularyWords_english": [
+            "appearance",
+            "casual",
+            "observer",
+            "excessively",
+            "lean",
+            "piercing",
+            "hawk-like",
+            "alertness"
+          ],
+          "originalText": "His very person and appearance were such as to strike the attention of the most casual observer. In height he was rather over six feet, and so excessively lean that he seemed to be considerably taller. His eyes were sharp and piercing, and his thin, hawk-like nose gave his whole expression an air of alertness and decision.",
+          "translatedText": "Su persona y apariencia eran tales que llamaban la atención del observador más casual. De estatura medía algo más de seis pies, y era tan excesivamente delgado que parecía considerablemente más alto. Sus ojos eran agudos y penetrantes, y su nariz delgada como la de un halcón daba a toda su expresión un aire de alerta y decisión.",
+          "vocabularyWords": [
+            "appearance",
+            "casual",
+            "observer",
+            "excessively",
+            "lean",
+            "piercing",
+            "hawk-like",
+            "alertness"
+          ]
         },
         {
           "id": "ch2_p2",
           "originalText_english": "\"I consider that a man's brain originally is like a little empty attic, and you have to stock it with such furniture as you choose. A fool takes in all the lumber of every sort that he comes across, so that the knowledge which might be useful to him gets crowded out.\"",
           "translatedText_english": "\"Considero que el cerebro de un hombre originalmente es como un pequeño ático vacío, y hay que amueblarlo con los muebles que uno elija. Un tonto mete toda clase de trastos que se encuentra, de modo que el conocimiento que podría serle útil queda desplazado.\"",
-          "vocabularyWords_english": ["brain", "attic", "stock", "furniture", "fool", "lumber", "crowded out"]
+          "vocabularyWords_english": [
+            "brain",
+            "attic",
+            "stock",
+            "furniture",
+            "fool",
+            "lumber",
+            "crowded out"
+          ],
+          "originalText": "\"I consider that a man's brain originally is like a little empty attic, and you have to stock it with such furniture as you choose. A fool takes in all the lumber of every sort that he comes across, so that the knowledge which might be useful to him gets crowded out.\"",
+          "translatedText": "\"Considero que el cerebro de un hombre originalmente es como un pequeño ático vacío, y hay que amueblarlo con los muebles que uno elija. Un tonto mete toda clase de trastos que se encuentra, de modo que el conocimiento que podría serle útil queda desplazado.\"",
+          "vocabularyWords": [
+            "brain",
+            "attic",
+            "stock",
+            "furniture",
+            "fool",
+            "lumber",
+            "crowded out"
+          ]
         },
         {
           "id": "ch2_p3",
           "originalText_english": "\"From a drop of water,\" said the writer, \"a logician could infer the possibility of an Atlantic or a Niagara without having seen or heard of one or the other. By a man's finger-nails, by his coat-sleeve, by his boots, by the callosity of his forefinger and thumb, by his expression — by each of these things a man's calling is plainly revealed.\"",
           "translatedText_english": "\"De una gota de agua\", decía el escritor, \"un lógico podría inferir la posibilidad de un Atlántico o un Niágara sin haber visto ni oído hablar de uno u otro. Por las uñas de un hombre, por la manga de su abrigo, por sus botas, por la callosidad de su dedo índice y pulgar, por su expresión — por cada una de estas cosas se revela claramente la ocupación de un hombre.\"",
-          "vocabularyWords_english": ["logician", "infer", "possibility", "callosity", "expression", "calling", "revealed"]
+          "vocabularyWords_english": [
+            "logician",
+            "infer",
+            "possibility",
+            "callosity",
+            "expression",
+            "calling",
+            "revealed"
+          ],
+          "originalText": "\"From a drop of water,\" said the writer, \"a logician could infer the possibility of an Atlantic or a Niagara without having seen or heard of one or the other. By a man's finger-nails, by his coat-sleeve, by his boots, by the callosity of his forefinger and thumb, by his expression — by each of these things a man's calling is plainly revealed.\"",
+          "translatedText": "\"De una gota de agua\", decía el escritor, \"un lógico podría inferir la posibilidad de un Atlántico o un Niágara sin haber visto ni oído hablar de uno u otro. Por las uñas de un hombre, por la manga de su abrigo, por sus botas, por la callosidad de su dedo índice y pulgar, por su expresión — por cada una de estas cosas se revela claramente la ocupación de un hombre.\"",
+          "vocabularyWords": [
+            "logician",
+            "infer",
+            "possibility",
+            "callosity",
+            "expression",
+            "calling",
+            "revealed"
+          ]
         },
         {
           "id": "ch2_p4",
           "originalText_english": "I had no idea that such individuals did exist outside of stories. Holmes was certainly not a difficult man to live with. He was quiet in his ways, and his habits were regular. It was rare for him to be up after ten at night, and he had invariably breakfasted and gone out before I rose in the morning.",
           "translatedText_english": "No tenía idea de que tales individuos existieran fuera de las historias. Holmes ciertamente no era un hombre difícil con quien convivir. Era tranquilo en sus costumbres, y sus hábitos eran regulares. Era raro que estuviera despierto después de las diez de la noche, e invariablemente había desayunado y salido antes de que yo me levantara por la mañana.",
-          "vocabularyWords_english": ["individuals", "exist", "quiet", "habits", "regular", "invariably", "breakfasted"]
+          "vocabularyWords_english": [
+            "individuals",
+            "exist",
+            "quiet",
+            "habits",
+            "regular",
+            "invariably",
+            "breakfasted"
+          ],
+          "originalText": "I had no idea that such individuals did exist outside of stories. Holmes was certainly not a difficult man to live with. He was quiet in his ways, and his habits were regular. It was rare for him to be up after ten at night, and he had invariably breakfasted and gone out before I rose in the morning.",
+          "translatedText": "No tenía idea de que tales individuos existieran fuera de las historias. Holmes ciertamente no era un hombre difícil con quien convivir. Era tranquilo en sus costumbres, y sus hábitos eran regulares. Era raro que estuviera despierto después de las diez de la noche, e invariablemente había desayunado y salido antes de que yo me levantara por la mañana.",
+          "vocabularyWords": [
+            "individuals",
+            "exist",
+            "quiet",
+            "habits",
+            "regular",
+            "invariably",
+            "breakfasted"
+          ]
         }
       ]
     },
@@ -88,25 +240,99 @@
           "id": "ch3_p1",
           "originalText_english": "On the 4th of March, I remember the date very well, I rose somewhat earlier than usual, and found that Sherlock Holmes had not yet finished his breakfast. Our landlady had become so accustomed to my late rising that my place had not been laid nor my coffee prepared.",
           "translatedText_english": "El 4 de marzo, recuerdo muy bien la fecha, me levanté algo más temprano de lo habitual, y descubrí que Sherlock Holmes aún no había terminado su desayuno. Nuestra casera se había acostumbrado tanto a que yo me levantara tarde que mi lugar no estaba puesto ni mi café preparado.",
-          "vocabularyWords_english": ["somewhat", "earlier", "usual", "landlady", "accustomed", "laid", "prepared"]
+          "vocabularyWords_english": [
+            "somewhat",
+            "earlier",
+            "usual",
+            "landlady",
+            "accustomed",
+            "laid",
+            "prepared"
+          ],
+          "originalText": "On the 4th of March, I remember the date very well, I rose somewhat earlier than usual, and found that Sherlock Holmes had not yet finished his breakfast. Our landlady had become so accustomed to my late rising that my place had not been laid nor my coffee prepared.",
+          "translatedText": "El 4 de marzo, recuerdo muy bien la fecha, me levanté algo más temprano de lo habitual, y descubrí que Sherlock Holmes aún no había terminado su desayuno. Nuestra casera se había acostumbrado tanto a que yo me levantara tarde que mi lugar no estaba puesto ni mi café preparado.",
+          "vocabularyWords": [
+            "somewhat",
+            "earlier",
+            "usual",
+            "landlady",
+            "accustomed",
+            "laid",
+            "prepared"
+          ]
         },
         {
           "id": "ch3_p2",
           "originalText_english": "A detective was rushing up the dark stairs, three steps at a time. He burst into the room where we sat. \"Come with me!\" he cried, breathlessly. \"There has been a bad business in Lauriston Gardens. A man has been found dead, and there's not a clue to be had.\"",
           "translatedText_english": "Un detective subía corriendo las escaleras oscuras, de tres en tres escalones. Irrumpió en la habitación donde estábamos sentados. \"¡Vengan conmigo!\" gritó, sin aliento. \"Ha ocurrido algo grave en Lauriston Gardens. Se ha encontrado a un hombre muerto, y no hay ni una pista.\"",
-          "vocabularyWords_english": ["rushing", "stairs", "burst", "breathlessly", "business", "clue"]
+          "vocabularyWords_english": [
+            "rushing",
+            "stairs",
+            "burst",
+            "breathlessly",
+            "business",
+            "clue"
+          ],
+          "originalText": "A detective was rushing up the dark stairs, three steps at a time. He burst into the room where we sat. \"Come with me!\" he cried, breathlessly. \"There has been a bad business in Lauriston Gardens. A man has been found dead, and there's not a clue to be had.\"",
+          "translatedText": "Un detective subía corriendo las escaleras oscuras, de tres en tres escalones. Irrumpió en la habitación donde estábamos sentados. \"¡Vengan conmigo!\" gritó, sin aliento. \"Ha ocurrido algo grave en Lauriston Gardens. Se ha encontrado a un hombre muerto, y no hay ni una pista.\"",
+          "vocabularyWords": [
+            "rushing",
+            "stairs",
+            "burst",
+            "breathlessly",
+            "business",
+            "clue"
+          ]
         },
         {
           "id": "ch3_p3",
           "originalText_english": "There had been no robbery; the dead man's pockets were full of loose change and two letters — one addressed to E. J. Drebber and the other to Joseph Stangerson. The cause of death was a great puzzle; there was no wound upon the body, yet there was an expression of horror upon the man's face.",
           "translatedText_english": "No había habido robo; los bolsillos del muerto estaban llenos de monedas sueltas y dos cartas: una dirigida a E. J. Drebber y la otra a Joseph Stangerson. La causa de muerte era un gran misterio; no había herida alguna en el cuerpo, pero había una expresión de horror en el rostro del hombre.",
-          "vocabularyWords_english": ["robbery", "pockets", "loose change", "addressed", "puzzle", "wound", "horror"]
+          "vocabularyWords_english": [
+            "robbery",
+            "pockets",
+            "loose change",
+            "addressed",
+            "puzzle",
+            "wound",
+            "horror"
+          ],
+          "originalText": "There had been no robbery; the dead man's pockets were full of loose change and two letters — one addressed to E. J. Drebber and the other to Joseph Stangerson. The cause of death was a great puzzle; there was no wound upon the body, yet there was an expression of horror upon the man's face.",
+          "translatedText": "No había habido robo; los bolsillos del muerto estaban llenos de monedas sueltas y dos cartas: una dirigida a E. J. Drebber y la otra a Joseph Stangerson. La causa de muerte era un gran misterio; no había herida alguna en el cuerpo, pero había una expresión de horror en el rostro del hombre.",
+          "vocabularyWords": [
+            "robbery",
+            "pockets",
+            "loose change",
+            "addressed",
+            "puzzle",
+            "wound",
+            "horror"
+          ]
         },
         {
           "id": "ch3_p4",
           "originalText_english": "Holmes walked slowly about the room, examining every detail with the keenest interest. The body was that of a large man, well dressed and with a heavy face. On the wall, written in blood-red letters, was a single word — RACHE. \"What do you think of that?\" cried the detective. \"It means revenge,\" said Holmes quietly.",
           "translatedText_english": "Holmes caminó lentamente por la habitación, examinando cada detalle con el más vivo interés. El cuerpo era el de un hombre corpulento, bien vestido y de rostro pesado. En la pared, escrita con letras rojo sangre, había una sola palabra: RACHE. \"¿Qué opina de eso?\" exclamó el detective. \"Significa venganza\", dijo Holmes tranquilamente.",
-          "vocabularyWords_english": ["examining", "keenest", "interest", "well dressed", "heavy", "blood-red", "revenge"]
+          "vocabularyWords_english": [
+            "examining",
+            "keenest",
+            "interest",
+            "well dressed",
+            "heavy",
+            "blood-red",
+            "revenge"
+          ],
+          "originalText": "Holmes walked slowly about the room, examining every detail with the keenest interest. The body was that of a large man, well dressed and with a heavy face. On the wall, written in blood-red letters, was a single word — RACHE. \"What do you think of that?\" cried the detective. \"It means revenge,\" said Holmes quietly.",
+          "translatedText": "Holmes caminó lentamente por la habitación, examinando cada detalle con el más vivo interés. El cuerpo era el de un hombre corpulento, bien vestido y de rostro pesado. En la pared, escrita con letras rojo sangre, había una sola palabra: RACHE. \"¿Qué opina de eso?\" exclamó el detective. \"Significa venganza\", dijo Holmes tranquilamente.",
+          "vocabularyWords": [
+            "examining",
+            "keenest",
+            "interest",
+            "well dressed",
+            "heavy",
+            "blood-red",
+            "revenge"
+          ]
         }
       ]
     }

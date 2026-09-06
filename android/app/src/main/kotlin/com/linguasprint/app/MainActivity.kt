@@ -1,4 +1,4 @@
-package com.example.lingua_sprint
+package com.linguasprint.app
 
 import io.flutter.embedding.android.FlutterActivity
 

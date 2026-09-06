@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../theme/app_colors.dart';
 
 class HoverCard extends StatefulWidget {
   final Widget child;
@@ -12,8 +13,8 @@ class HoverCard extends StatefulWidget {
     super.key,
     required this.child,
     this.onTap,
-    this.baseColor = const Color(0xFF1A1A1A),
-    this.hoverColor = const Color(0xFF2A2A2A),
+    this.baseColor = AppColors.surface,
+    this.hoverColor = AppColors.surfaceRaised,
     this.borderRadius,
   });
 

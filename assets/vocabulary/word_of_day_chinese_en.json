@@ -1,0 +1,127 @@
+{
+  "courseId": "chinese_en",
+  "words": [
+    {
+      "id": "wod_zh_1",
+      "word": "蝴蝶 (Húdié)",
+      "translation": "Butterfly",
+      "pronunciation": "/xǔ.tjɛ̌/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "美丽的蝴蝶在花丛中翩翩起舞。",
+      "exampleTranslation": "The beautiful butterfly dances gracefully among the flowers.",
+      "etymology": "Old Chinese rhyming compound '*ɡlaː-leːws'",
+      "funFact": "The 'Butterfly Lovers' (梁祝) is one of China's Four Great Folktales, renowned for its romance.",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_zh_2",
+      "word": "星星 (Xīngxing)",
+      "translation": "Star",
+      "pronunciation": "/ɕíŋ.ɕiŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "夜空中闪烁着无数颗星星。",
+      "exampleTranslation": "Countless stars twinkle in the night sky.",
+      "etymology": "Reduplication of 星 (star/celestial body)",
+      "category": "Space",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_zh_3",
+      "word": "雨伞 (Yǔsǎn)",
+      "translation": "Umbrella",
+      "pronunciation": "/ỳ.sàn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "出门记得带雨伞，今天可能会下雨。",
+      "exampleTranslation": "Remember to take an umbrella when going out, it might rain today.",
+      "etymology": "Compound of 雨 (rain) + 伞 (umbrella)",
+      "category": "Weather",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_zh_4",
+      "word": "太阳 (Tàiyáng)",
+      "translation": "Sun",
+      "pronunciation": "/tʰâi.jǎŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "清晨的太阳冉冉升起，温暖大地。",
+      "exampleTranslation": "The morning sun rises slowly, warming the earth.",
+      "etymology": "From 太 (extreme/great) + 阳 (yang/light/sun)",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_zh_5",
+      "word": "城堡 (Chéngbǎo)",
+      "translation": "Castle",
+      "pronunciation": "/ʈʂʰə̌ŋ.pàʊ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "山上有一座古老而壮观的城堡。",
+      "exampleTranslation": "On the mountain stands an ancient and magnificent castle.",
+      "etymology": "Compound of 城 (city/wall) + 堡 (fortress)",
+      "category": "Places",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_zh_6",
+      "word": "梦想 (Mèngxiǎng)",
+      "translation": "Dream / Aspiration",
+      "pronunciation": "/mə̂ŋ.ɕjàŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "坚持你的梦想，努力就会有收获。",
+      "exampleTranslation": "Hold on to your dream; hard work will yield rewards.",
+      "etymology": "Compound of 梦 (dream) + 想 (think/wish)",
+      "category": "Abstract",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_zh_7",
+      "word": "向日葵 (Xiàngrìkuí)",
+      "translation": "Sunflower",
+      "pronunciation": "/ɕjâŋ.ɻî.kʰwěi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "向日葵总是朝着阳光生长的方向。",
+      "exampleTranslation": "Sunflowers always grow facing the direction of the sunlight.",
+      "etymology": "Compound: 向 (facing) + 日 (sun) + 葵 (sunflower/mallow)",
+      "category": "Nature",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_zh_8",
+      "word": "彩虹 (Cǎihóng)",
+      "translation": "Rainbow",
+      "pronunciation": "/tsʰàɪ.xǔŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "大雨过后，天边出现了一道美丽的彩虹。",
+      "exampleTranslation": "After the heavy rain, a beautiful rainbow appeared on the horizon.",
+      "etymology": "Compound of 彩 (colored) + 虹 (rainbow)",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_zh_9",
+      "word": "希望 (Xīwàng)",
+      "translation": "Hope / Wish",
+      "pronunciation": "/ɕí.wâŋ/",
+      "partOfSpeech": "noun / verb",
+      "exampleSentence": "只要心中有希望，就没有克服不了的困难。",
+      "exampleTranslation": "As long as there is hope in our hearts, there are no obstacles we cannot overcome.",
+      "etymology": "Compound of 希 (rare/hope) + 望 (look forward to/hope)",
+      "category": "Abstract",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_zh_10",
+      "word": "加油 (Jiāyóu)",
+      "translation": "Cheer on / Keep it up",
+      "pronunciation": "/tɕjá.jǒu/",
+      "partOfSpeech": "phrase / verb",
+      "exampleSentence": "加油！你一定能学好这门新语言！",
+      "exampleTranslation": "Keep it up! You will definitely master this new language!",
+      "etymology": "Literally 'add oil' (fuel the flame / engine)",
+      "funFact": "'Jiayou' is one of the most widely recognized Chinese encouraging phrases and is officially recognized in the Oxford English Dictionary.",
+      "category": "Culture",
+      "difficulty": 1
+    }
+  ]
+}

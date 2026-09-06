@@ -1,0 +1,81 @@
+{
+    "id": "at_the_market",
+    "name": "At the Market",
+    "description": "Learn vocabulary for the supermarket and local markets",
+    "level": 10,
+    "exercises": [
+        {
+            "id": "ex_mk_1",
+            "type": "matchPairs",
+            "question": "Match market vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "El supermercado",
+                        "native": "The supermarket"
+                    },
+                    {
+                        "target": "El mercado",
+                        "native": "The market"
+                    },
+                    {
+                        "target": "La carnicería",
+                        "native": "The butcher shop"
+                    },
+                    {
+                        "target": "La panadería",
+                        "native": "The bakery"
+                    },
+                    {
+                        "target": "La frutería",
+                        "native": "The fruit shop"
+                    },
+                    {
+                        "target": "La pescadería",
+                        "native": "The fish shop"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_mk_2",
+            "type": "translateThis",
+            "question": "Medio kilo de manzanas, por favor",
+            "options": [],
+            "correctAnswer": "Half a kilo of apples, please"
+        },
+        {
+            "id": "ex_mk_3",
+            "type": "fillInBlank",
+            "question": "¿Me pone un ___ de pan?",
+            "options": [
+                "trozo",
+                "vaso",
+                "taza",
+                "plato"
+            ],
+            "correctAnswer": "trozo"
+        },
+        {
+            "id": "ex_mk_4",
+            "type": "multipleChoice",
+            "question": "How do you say 'Is it fresh?'",
+            "options": [
+                "¿Está fresco?",
+                "¿Es nuevo?",
+                "¿Está bueno?",
+                "¿Es rico?"
+            ],
+            "correctAnswer": "¿Está fresco?"
+        },
+        {
+            "id": "ex_mk_5",
+            "type": "speakThis",
+            "question": "Quiero dos kilos de naranjas",
+            "options": [],
+            "correctAnswer": "Quiero dos kilos de naranjas"
+        }
+    ]
+}

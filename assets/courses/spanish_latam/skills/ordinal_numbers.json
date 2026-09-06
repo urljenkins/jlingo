@@ -1,0 +1,77 @@
+{
+    "id": "ordinal_numbers",
+    "name": "Ordinal Numbers",
+    "description": "Learn first, second, third and other ordinal numbers",
+    "level": 3,
+    "exercises": [
+        {
+            "id": "ex_ord_1",
+            "type": "translateThis",
+            "question": "Primero",
+            "options": [],
+            "correctAnswer": "First"
+        },
+        {
+            "id": "ex_ord_2",
+            "type": "multipleChoice",
+            "question": "How do you say 'second' in Spanish?",
+            "options": [
+                "Segundo",
+                "Dos",
+                "Tercero",
+                "Cuarto"
+            ],
+            "correctAnswer": "Segundo"
+        },
+        {
+            "id": "ex_ord_3",
+            "type": "matchPairs",
+            "question": "Match the ordinal numbers",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Primero",
+                        "native": "First"
+                    },
+                    {
+                        "target": "Segundo",
+                        "native": "Second"
+                    },
+                    {
+                        "target": "Tercero",
+                        "native": "Third"
+                    },
+                    {
+                        "target": "Cuarto",
+                        "native": "Fourth"
+                    },
+                    {
+                        "target": "Quinto",
+                        "native": "Fifth"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_ord_4",
+            "type": "fillInBlank",
+            "question": "Es mi ___ día de trabajo",
+            "options": [
+                "primer",
+                "uno",
+                "primera",
+                "un"
+            ],
+            "correctAnswer": "primer"
+        },
+        {
+            "id": "ex_ord_5",
+            "type": "translateThis",
+            "question": "La tercera calle",
+            "options": [],
+            "correctAnswer": "The third street"
+        }
+    ]
+}

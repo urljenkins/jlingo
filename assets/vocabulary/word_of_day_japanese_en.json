@@ -1,0 +1,127 @@
+{
+  "courseId": "japanese_en",
+  "words": [
+    {
+      "id": "wod_ja_1",
+      "word": "木漏れ日 (Komorebi)",
+      "translation": "Sunlight filtering through trees",
+      "pronunciation": "/ko.mo.ɾe.bi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "森の中で美しい木漏れ日を見ました。",
+      "exampleTranslation": "I saw beautiful sunlight filtering through the trees in the forest.",
+      "etymology": "Compound of 木 (tree) + 漏れ (leaking/filtering) + 日 (sun/light)",
+      "funFact": "'Komorebi' is a poetic Japanese concept capturing the interplay of leaves and sunlight, with no single-word English equivalent.",
+      "category": "Nature",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_ja_2",
+      "word": "星 (Hoshi)",
+      "translation": "Star",
+      "pronunciation": "/ho.ɕi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "今夜は星がとてもきれいに見えます。",
+      "exampleTranslation": "The stars look very beautiful tonight.",
+      "etymology": "Old Japanese 'pösi'",
+      "category": "Space",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_ja_3",
+      "word": "傘 (Kasa)",
+      "translation": "Umbrella",
+      "pronunciation": "/ka.sa/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "雨が降りそうだから、傘を持っていきましょう。",
+      "exampleTranslation": "It looks like rain, so let's take an umbrella.",
+      "etymology": "Old Japanese 'kasa'",
+      "category": "Weather",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_ja_4",
+      "word": "太陽 (Taiyō)",
+      "translation": "Sun",
+      "pronunciation": "/ta.i.joː/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "東の空から太陽が昇ります。",
+      "exampleTranslation": "The sun rises from the eastern sky.",
+      "etymology": "Sino-Japanese compound: 太 (great) + 陽 (yang/sun)",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_ja_5",
+      "word": "城 (Shiro)",
+      "translation": "Castle",
+      "pronunciation": "/ɕi.ɾo/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "姫路城は白鷺城とも呼ばれています。",
+      "exampleTranslation": "Himeji Castle is also known as White Heron Castle.",
+      "etymology": "Old Japanese 'ki / siro'",
+      "funFact": "Japan has 12 original historic castles surviving from the feudal era.",
+      "category": "Places",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_ja_6",
+      "word": "夢 (Yume)",
+      "translation": "Dream",
+      "pronunciation": "/jɯ.me/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "私には日本中を旅するという夢があります。",
+      "exampleTranslation": "I have a dream to travel all over Japan.",
+      "etymology": "Old Japanese 'ime / yume'",
+      "category": "Abstract",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_ja_7",
+      "word": "向日葵 (Himawari)",
+      "translation": "Sunflower",
+      "pronunciation": "/çi.ma.wa.ɾi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "夏になると向日葵が一面に咲きます。",
+      "exampleTranslation": "When summer comes, sunflowers bloom everywhere.",
+      "etymology": "From 日 (sun) + 回り (turning)",
+      "category": "Nature",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_ja_8",
+      "word": "虹 (Niji)",
+      "translation": "Rainbow",
+      "pronunciation": "/ɲi.dʑi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "雨上がりに空に大きな虹がかかりました。",
+      "exampleTranslation": "After the rain, a large rainbow arched across the sky.",
+      "etymology": "Old Japanese 'nizi'",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_ja_9",
+      "word": "希望 (Kibō)",
+      "translation": "Hope",
+      "pronunciation": "/ki.boː/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "未来への希望を持って努力します。",
+      "exampleTranslation": "I will make efforts with hope for the future.",
+      "etymology": "Sino-Japanese compound: 希 (rare/desire) + 望 (hope/view)",
+      "category": "Abstract",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_ja_10",
+      "word": "蝶 (Chō)",
+      "translation": "Butterfly",
+      "pronunciation": "/tɕoː/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "色鮮やかな蝶が庭をひらひらと飛んでいます。",
+      "exampleTranslation": "A brightly colored butterfly is fluttering in the garden.",
+      "etymology": "From Classical Japanese 'tefutefu' / Sino-Japanese reading",
+      "category": "Animals",
+      "difficulty": 2
+    }
+  ]
+}

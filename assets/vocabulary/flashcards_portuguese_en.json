@@ -1,0 +1,89 @@
+{
+  "id": "portuguese_flashcards",
+  "name": "Portuguese Core Vocabulary",
+  "description": "Essential Portuguese words and phrases with spaced repetition",
+  "targetLanguage": "pt-PT",
+  "nativeLanguage": "en-US",
+  "cards": [
+    {
+      "id": "fc_pt_1",
+      "front": "Olá",
+      "back": "Hello",
+      "pronunciation": "/ɔˈla/",
+      "exampleSentence": "Olá, como está?",
+      "exampleTranslation": "Hello, how are you?",
+      "category": "Greetings",
+      "tags": ["basic", "essential"]
+    },
+    {
+      "id": "fc_pt_2",
+      "front": "Bom dia",
+      "back": "Good morning",
+      "pronunciation": "/bõ ˈdi.ɐ/",
+      "exampleSentence": "Bom dia a todos!",
+      "exampleTranslation": "Good morning everyone!",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_pt_3",
+      "front": "Obrigado / Obrigada",
+      "back": "Thank you (masc / fem)",
+      "pronunciation": "/o.bɾiˈɡa.du/",
+      "exampleSentence": "Muito obrigado pela ajuda.",
+      "exampleTranslation": "Thank you very much for the help.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_pt_4",
+      "front": "De nada",
+      "back": "You're welcome",
+      "pronunciation": "/dɨ ˈna.ðɐ/",
+      "exampleSentence": "Não tem de quê, de nada.",
+      "exampleTranslation": "Don't mention it, you're welcome.",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_pt_5",
+      "front": "Por favor",
+      "back": "Please",
+      "pronunciation": "/puɾ fɐˈvoɾ/",
+      "exampleSentence": "Um café, por favor.",
+      "exampleTranslation": "A coffee, please.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_pt_6",
+      "front": "Chamo-me...",
+      "back": "My name is...",
+      "pronunciation": "/ˈʃɐ.mu.mɨ/",
+      "exampleSentence": "Chamo-me Ana e moro no Porto.",
+      "exampleTranslation": "My name is Ana and I live in Porto.",
+      "category": "Introductions",
+      "tags": ["basic", "introductions"]
+    },
+    {
+      "id": "fc_pt_7",
+      "front": "A água",
+      "back": "The water",
+      "pronunciation": "/a ˈa.ɡwɐ/",
+      "exampleSentence": "Quero um copo de água fresca.",
+      "exampleTranslation": "I want a glass of cold water.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    },
+    {
+      "id": "fc_pt_8",
+      "front": "O pão",
+      "back": "The bread",
+      "pronunciation": "/u pɐ̃w̃/",
+      "exampleSentence": "O pão quente acabou de sair do forno.",
+      "exampleTranslation": "The warm bread just came out of the oven.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    }
+  ]
+}

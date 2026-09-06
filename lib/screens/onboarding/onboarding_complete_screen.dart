@@ -3,13 +3,15 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/onboarding_provider.dart';
+import '../../providers/settings_provider.dart';
 import '../../providers/course_provider.dart';
 import '../../services/course_bootstrap.dart';
 import '../../models/user_profile.dart';
 import '../../widgets/responsive/responsive_layout.dart';
 import '../../widgets/responsive/desktop_scaffold.dart';
 import '../../widgets/responsive/mobile_scaffold.dart';
-import '../home_screen.dart';
+import '../app_shell.dart';
+import '../../theme/app_colors.dart';
 
 class OnboardingCompleteScreen extends StatelessWidget {
   const OnboardingCompleteScreen({super.key});
@@ -103,7 +105,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: const Color(0xFF1A1A1A),
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3),
@@ -180,7 +182,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
           label,
           style: const TextStyle(
             fontSize: 12,
-            color: Colors.white54,
+            color: AppColors.textMuted,
           ),
         ),
       ],
@@ -189,12 +191,14 @@ class OnboardingCompleteScreen extends StatelessWidget {
 
   Widget _buildGoalsCard(BuildContext context, OnboardingProvider provider) {
     final goals = provider.profile.goals;
-    final dailyMinutes = provider.profile.dailyGoalMinutes ?? 10;
+    final dailyMinutes = provider.profile.dailyGoalMinutes;
+    final trackingEnabled =
+        context.watch<SettingsProvider>().progressTrackingEnabled;
 
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: const Color(0xFF1A1A1A),
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -249,25 +253,27 @@ class OnboardingCompleteScreen extends StatelessWidget {
               );
             }).toList(),
           ),
-          const SizedBox(height: 16),
-          const Divider(color: Colors.white12),
-          const SizedBox(height: 16),
-          Row(
-            children: [
-              Icon(
-                Icons.schedule,
-                color: Theme.of(context).colorScheme.secondary,
-              ),
-              const SizedBox(width: 8),
-              Text(
-                'Daily Goal: $dailyMinutes minutes',
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
+          if (trackingEnabled && dailyMinutes != null) ...[
+            const SizedBox(height: 16),
+            const Divider(color: AppColors.border),
+            const SizedBox(height: 16),
+            Row(
+              children: [
+                Icon(
+                  Icons.schedule,
+                  color: Theme.of(context).colorScheme.secondary,
                 ),
-              ),
-            ],
-          ),
+                const SizedBox(width: 8),
+                Text(
+                  'Daily Goal: $dailyMinutes minutes',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          ],
         ],
       ),
     );
@@ -279,7 +285,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: const Color(0xFF1A1A1A),
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -319,7 +325,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
                       rec,
                       style: const TextStyle(
                         fontSize: 14,
-                        color: Colors.white70,
+                        color: AppColors.textSecondary,
                       ),
                     ),
                   ),
@@ -369,7 +375,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
     LanguageLevel level,
   ) {
     return ColoredBox(
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       child: Column(
         children: [
           const Padding(
@@ -379,7 +385,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ),
-          const Divider(color: Colors.white12),
+          const Divider(color: AppColors.border),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -459,7 +465,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
                   ? Theme.of(context).colorScheme.secondary
                   : isActive
                       ? Theme.of(context).colorScheme.primary
-                      : Colors.white12,
+                      : AppColors.border,
               shape: BoxShape.circle,
             ),
             child: Center(
@@ -470,7 +476,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
                       style: TextStyle(
                         color: isActive || isCompleted
                             ? Colors.black
-                            : Colors.white54,
+                            : AppColors.textMuted,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -480,7 +486,8 @@ class OnboardingCompleteScreen extends StatelessWidget {
           Text(
             label,
             style: TextStyle(
-              color: isActive || isCompleted ? Colors.white : Colors.white54,
+              color:
+                  isActive || isCompleted ? Colors.white : AppColors.textMuted,
               fontWeight:
                   isActive || isCompleted ? FontWeight.w600 : FontWeight.normal,
             ),
@@ -564,12 +571,10 @@ class OnboardingCompleteScreen extends StatelessWidget {
 
     if (!context.mounted) return;
 
-    // Navigate to home screen
+    // Into the shell, not the bare home screen: onboarding clears the stack,
+    // so anything else would leave the learner without navigation.
     unawaited(Navigator.of(context).pushAndRemoveUntil(
-      PageRouteBuilder<void>(
-        pageBuilder: (context, _, __) => const HomeScreen(),
-        transitionDuration: Duration.zero,
-      ),
+      MaterialPageRoute<void>(builder: (context) => const AppShell()),
       (route) => false,
     ));
   }

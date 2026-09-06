@@ -1,7 +1,192 @@
 {
-  "id": "listening_pronunciation",
-  "name": "Listening & Pronunciation",
-  "description": "TODO: add listening/pronunciation exercises",
-  "level": 2,
-  "exercises": []
+    "id": "listening_pronunciation",
+    "name": "Listening & Pronunciation",
+    "description": "TODO: add listening/pronunciation exercises",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "zh_lp_native_1",
+            "type": "nativeAudio",
+            "question": "你好，很高兴认识你。",
+            "options": [],
+            "correctAnswer": "你好，很高兴认识你。",
+            "targetLanguage": "zh-CN",
+            "audioPath": null,
+            "audioAvailable": false,
+            "enabled": false,
+            "metadata": {
+                "speaker": "Native Speaker - Wang",
+                "difficulty": "beginner"
+            }
+        },
+        {
+            "id": "zh_lp_pron_1",
+            "type": "pronunciationPractice",
+            "question": "四是四，十是十",
+            "options": [],
+            "correctAnswer": "四是四，十是十",
+            "targetLanguage": "zh-CN",
+            "metadata": {
+                "phonetics": "sì shì sì, shí shì shí",
+                "focus": "区分平舌音 s 与翘舌音 sh，以及声调变化"
+            }
+        },
+        {
+            "id": "zh_lp_diag_1",
+            "type": "dialogueListening",
+            "question": "听茶馆里的对话",
+            "options": [
+                "绿茶",
+                "咖啡",
+                "果汁",
+                "红茶"
+            ],
+            "correctAnswer": "绿茶",
+            "targetLanguage": "zh-CN",
+            "metadata": {
+                "type": "dialogue",
+                "context": "在茶馆点茶",
+                "dialogue": [
+                    {
+                        "speaker": "服务员",
+                        "text": "您好，想喝点什么茶？",
+                        "translation": "Hello, what tea would you like?"
+                    },
+                    {
+                        "speaker": "顾客",
+                        "text": "请给我一杯龙井绿茶。",
+                        "translation": "Please give me a cup of Longjing green tea."
+                    }
+                ],
+                "comprehensionQuestion": "顾客点了什么？",
+                "correctOptionIndex": 0
+            }
+        },
+        {
+            "id": "zh_lp_song_1",
+            "type": "songFill",
+            "question": "茉莉花 (Jasmine Flower)",
+            "options": [],
+            "correctAnswer": "茉莉花,芬芳,美丽",
+            "targetLanguage": "zh-CN",
+            "metadata": {
+                "songTitle": "茉莉花",
+                "artist": "民歌",
+                "lyrics": [
+                    {
+                        "text": "好一朵美丽的茉莉花",
+                        "timestamp": 0
+                    },
+                    {
+                        "text": "芬芳美丽满枝桠",
+                        "timestamp": 3000
+                    },
+                    {
+                        "text": "又香又白人人夸",
+                        "timestamp": 6000
+                    }
+                ],
+                "blanks": [
+                    {
+                        "lineIndex": 0,
+                        "wordIndex": 5,
+                        "correctWord": "茉莉花",
+                        "hint": "jasmine"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "zh_lp_inter_1",
+            "type": "interactiveDialogue",
+            "question": "在餐馆点餐 (Ordering at Restaurant)",
+            "options": [
+                "请给我一份宫保鸡丁",
+                "再见",
+                "不知道"
+            ],
+            "correctAnswer": "请给我一份宫保鸡丁",
+            "targetLanguage": "zh-CN",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "topic": "Restaurant",
+                "dialogue": [
+                    {
+                        "speaker": "服务员",
+                        "text": "您好，请问需要点什么菜？",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "You",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "请给我一份宫保鸡丁",
+                            "再见",
+                            "不知道"
+                        ]
+                    },
+                    {
+                        "speaker": "服务员",
+                        "text": "好的，请稍等！",
+                        "isNative": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": "zh_lp_story_1",
+            "type": "storyLesson",
+            "question": "小李今天早上吃了什么？",
+            "options": [
+                "包子和豆浆",
+                "面包和咖啡",
+                "面条",
+                "米饭"
+            ],
+            "correctAnswer": "包子和豆浆",
+            "targetLanguage": "zh-CN",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "title": "小李的早晨",
+                "level": "A1",
+                "story": "今天天气非常晴朗。小李七点起床去早市。他在街角的早餐店买了热气腾腾的包子和新鲜的豆浆，吃得非常开心。",
+                "vocabulary": [
+                    {
+                        "word": "包子",
+                        "translation": "steamed bun",
+                        "highlight": true
+                    }
+                ],
+                "question": "小李今天早上吃了什么？"
+            }
+        },
+        {
+            "id": "zh_lp_trans_1",
+            "type": "translationExercise",
+            "question": "这个多少钱？",
+            "options": [],
+            "correctAnswer": "How much is this?",
+            "targetLanguage": "zh-CN",
+            "nativeLanguage": "en-US"
+        },
+        {
+            "id": "zh_lp_cloze_1",
+            "type": "clozeTest",
+            "question": "Complete the sentence with the correct particle",
+            "options": [
+                "吗",
+                "呢",
+                "吧",
+                "的"
+            ],
+            "correctAnswer": "吗",
+            "targetLanguage": "zh-CN",
+            "metadata": {
+                "text": "你好___？我是王明。",
+                "missingWord": "吗",
+                "translation": "How are you? I am Wang Ming."
+            }
+        }
+    ]
 }

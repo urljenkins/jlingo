@@ -1,0 +1,81 @@
+{
+    "id": "restaurant",
+    "name": "At the Restaurant",
+    "description": "Learn vocabulary for dining out",
+    "level": 11,
+    "exercises": [
+        {
+            "id": "ex_rest_1",
+            "type": "matchPairs",
+            "question": "Match restaurant vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "La mesa",
+                        "native": "The table"
+                    },
+                    {
+                        "target": "El menú",
+                        "native": "The menu"
+                    },
+                    {
+                        "target": "El camarero",
+                        "native": "The waiter"
+                    },
+                    {
+                        "target": "La cuenta",
+                        "native": "The bill"
+                    },
+                    {
+                        "target": "La propina",
+                        "native": "The tip"
+                    },
+                    {
+                        "target": "La reserva",
+                        "native": "The reservation"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_rest_2",
+            "type": "translateThis",
+            "question": "Una mesa para dos, por favor",
+            "options": [],
+            "correctAnswer": "A table for two, please"
+        },
+        {
+            "id": "ex_rest_3",
+            "type": "fillInBlank",
+            "question": "¿Puedo ver el ___, por favor?",
+            "options": [
+                "menú",
+                "mesa",
+                "cuenta",
+                "vaso"
+            ],
+            "correctAnswer": "menú"
+        },
+        {
+            "id": "ex_rest_4",
+            "type": "multipleChoice",
+            "question": "How do you ask for the bill?",
+            "options": [
+                "La cuenta, por favor",
+                "El menú, por favor",
+                "La mesa, por favor",
+                "El plato, por favor"
+            ],
+            "correctAnswer": "La cuenta, por favor"
+        },
+        {
+            "id": "ex_rest_5",
+            "type": "speakThis",
+            "question": "Quisiera hacer una reserva para esta noche",
+            "options": [],
+            "correctAnswer": "Quisiera hacer una reserva para esta noche"
+        }
+    ]
+}

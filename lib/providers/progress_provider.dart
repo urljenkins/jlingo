@@ -14,8 +14,10 @@ class ProgressProvider extends ChangeNotifier {
 
     if (progressJson != null) {
       try {
-        _progress = UserProgress.fromJson(
-            jsonDecode(progressJson) as Map<String, dynamic>);
+        _progress = _migrateCompletedSkills(
+          UserProgress.fromJson(
+              jsonDecode(progressJson) as Map<String, dynamic>),
+        );
       } catch (e) {
         // Corrupt or old-format data must not brick startup.
         debugPrint('Error loading progress for $courseId: $e');
@@ -27,14 +29,52 @@ class ProgressProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Back-fills [UserProgress.completedSkills] for progress saved before
+  /// completion was a boolean. A skill previously at full mastery counts as
+  /// finished; anything short of that is picked up again where it was left.
+  UserProgress _migrateCompletedSkills(UserProgress loaded) {
+    if (loaded.completedSkills.isNotEmpty || loaded.skillMastery.isEmpty) {
+      return loaded;
+    }
+
+    final completed = loaded.skillMastery.entries
+        .where((entry) => entry.value >= 100.0)
+        .map((entry) => entry.key)
+        .toSet();
+
+    if (completed.isEmpty) return loaded;
+
+    final migrated = loaded.copyWith(completedSkills: completed);
+    unawaited(_persist(migrated));
+    return migrated;
+  }
+
+  Future<void> _persist(UserProgress progress) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(
+      'progress_${progress.courseId}',
+      jsonEncode(progress.toJson()),
+    );
+  }
+
   Future<void> saveProgress() async {
     if (_progress == null) return;
 
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(
-      'progress_${_progress!.courseId}',
-      jsonEncode(_progress!.toJson()),
+    await _persist(_progress!);
+  }
+
+  /// Marks a skill finished. One pass is enough — this is a bookmark, not a
+  /// grade, and it is what unlocks the next skill.
+  void markSkillCompleted(String skillId) {
+    if (_progress == null) return;
+    if (_progress!.completedSkills.contains(skillId)) return;
+
+    _progress = _progress!.copyWith(
+      completedSkills: {..._progress!.completedSkills, skillId},
     );
+
+    unawaited(saveProgress());
+    notifyListeners();
   }
 
   // Streak and points are owned by GamificationProvider; this provider

@@ -1,0 +1,81 @@
+{
+    "id": "travel",
+    "name": "Travel",
+    "description": "Learn essential travel vocabulary",
+    "level": 17,
+    "exercises": [
+        {
+            "id": "ex_trav_1",
+            "type": "matchPairs",
+            "question": "Match travel vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "El pasaporte",
+                        "native": "Passport"
+                    },
+                    {
+                        "target": "El equipaje",
+                        "native": "Luggage"
+                    },
+                    {
+                        "target": "El vuelo",
+                        "native": "Flight"
+                    },
+                    {
+                        "target": "La maleta",
+                        "native": "Suitcase"
+                    },
+                    {
+                        "target": "El aeropuerto",
+                        "native": "Airport"
+                    },
+                    {
+                        "target": "El boleto",
+                        "native": "Ticket"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_trav_2",
+            "type": "translateThis",
+            "question": "He perdido mi equipaje",
+            "options": [],
+            "correctAnswer": "I have lost my luggage"
+        },
+        {
+            "id": "ex_trav_3",
+            "type": "fillInBlank",
+            "question": "¿Dónde está la puerta de ___?",
+            "options": [
+                "embarque",
+                "llegada",
+                "salida",
+                "entrada"
+            ],
+            "correctAnswer": "embarque"
+        },
+        {
+            "id": "ex_trav_4",
+            "type": "multipleChoice",
+            "question": "How do you ask 'Is this seat taken?'",
+            "options": [
+                "¿Está ocupado este asiento?",
+                "¿Dónde está el asiento?",
+                "¿Cuántos asientos hay?",
+                "¿Es mi asiento?"
+            ],
+            "correctAnswer": "¿Está ocupado este asiento?"
+        },
+        {
+            "id": "ex_trav_5",
+            "type": "speakThis",
+            "question": "Necesito ayuda con mis maletas",
+            "options": [],
+            "correctAnswer": "Necesito ayuda con mis maletas"
+        }
+    ]
+}

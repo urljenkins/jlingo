@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 /// Enhanced pronunciation practice widget with detailed feedback
 /// Provides word-by-word analysis, accuracy scores, and suggestions
@@ -35,6 +36,10 @@ class _PronunciationPracticeWidgetState
   int _attempts = 0;
   double _overallScore = 0.0;
 
+  /// Null while [_initializeSpeech] is still running, then true/false once the
+  /// recognizer has reported whether it can be used on this device.
+  bool? _speechAvailable;
+
   late AnimationController _pulseController;
   late Animation<double> _pulseAnimation;
   late AnimationController _waveController;
@@ -63,13 +68,18 @@ class _PronunciationPracticeWidgetState
   }
 
   Future<void> _initializeSpeech() async {
-    await _speech.initialize(
+    // initialize() returns false when the device has no recognizer or the
+    // microphone permission was denied; both mean the exercise can only be
+    // skipped.
+    final available = await _speech.initialize(
       onStatus: (status) {
         if (status == 'done' && _isListening) {
           _stopListening();
         }
       },
     );
+    if (!mounted) return;
+    setState(() => _speechAvailable = available);
   }
 
   Future<void> _initializeTts() async {
@@ -83,12 +93,7 @@ class _PronunciationPracticeWidgetState
   }
 
   Future<void> _startListening() async {
-    if (!_speech.isAvailable) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Speech recognition not available')),
-      );
-      return;
-    }
+    if (_speechAvailable != true) return;
 
     setState(() {
       _isListening = true;
@@ -288,6 +293,10 @@ class _PronunciationPracticeWidgetState
 
   @override
   Widget build(BuildContext context) {
+    final unavailable = _speechAvailable == false;
+    final enabled = _speechAvailable == true;
+    const disabledColor = AppColors.textDisabled;
+
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: Column(
@@ -296,11 +305,11 @@ class _PronunciationPracticeWidgetState
           // Header
           Row(
             children: [
-              const Icon(Icons.mic, color: Color(0xFF00D9FF), size: 20),
+              const Icon(Icons.mic, color: AppColors.textPrimary, size: 20),
               const SizedBox(width: 8),
               const Text(
                 'Pronunciation Practice',
-                style: TextStyle(fontSize: 14, color: Colors.white60),
+                style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
               ),
               const Spacer(),
               if (_attempts > 0)
@@ -313,7 +322,8 @@ class _PronunciationPracticeWidgetState
                   ),
                   child: Text(
                     'Attempt $_attempts',
-                    style: const TextStyle(fontSize: 12, color: Colors.white60),
+                    style: const TextStyle(
+                        fontSize: 12, color: AppColors.textSecondary),
                   ),
                 ),
             ],
@@ -324,7 +334,7 @@ class _PronunciationPracticeWidgetState
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: const Color(0xFF2A2A2A),
+              color: AppColors.surfaceRaised,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Column(
@@ -334,14 +344,15 @@ class _PronunciationPracticeWidgetState
                   children: [
                     const Text(
                       'Say this phrase:',
-                      style: TextStyle(fontSize: 14, color: Colors.white60),
+                      style: TextStyle(
+                          fontSize: 14, color: AppColors.textSecondary),
                     ),
                     const Spacer(),
                     IconButton(
                       onPressed: _playReference,
                       icon: const Icon(
                         Icons.volume_up,
-                        color: Color(0xFF00D9FF),
+                        color: AppColors.textPrimary,
                       ),
                       tooltip: 'Listen to reference',
                     ),
@@ -363,9 +374,9 @@ class _PronunciationPracticeWidgetState
           // Microphone button
           Center(
             child: GestureDetector(
-              onTapDown: (_) => _startListening(),
-              onTapUp: (_) => _stopListening(),
-              onTapCancel: _stopListening,
+              onTapDown: enabled ? (_) => _startListening() : null,
+              onTapUp: enabled ? (_) => _stopListening() : null,
+              onTapCancel: enabled ? _stopListening : null,
               child: AnimatedBuilder(
                 animation: _pulseAnimation,
                 builder: (context, child) {
@@ -376,34 +387,47 @@ class _PronunciationPracticeWidgetState
                       height: 120,
                       decoration: BoxDecoration(
                         gradient: RadialGradient(
-                          colors: _isListening
+                          colors: !enabled
                               ? [
-                                  const Color(0xFFFF4757)
-                                      .withValues(alpha: 0.3),
-                                  const Color(0xFFFF4757)
-                                      .withValues(alpha: 0.1),
+                                  Colors.white.withValues(alpha: 0.08),
+                                  Colors.white.withValues(alpha: 0.03),
                                 ]
-                              : [
-                                  const Color(0xFF00D9FF)
-                                      .withValues(alpha: 0.3),
-                                  const Color(0xFF00D9FF)
-                                      .withValues(alpha: 0.1),
-                                ],
+                              : _isListening
+                                  ? [
+                                      AppColors.incorrect
+                                          .withValues(alpha: 0.3),
+                                      AppColors.incorrect
+                                          .withValues(alpha: 0.1),
+                                    ]
+                                  : [
+                                      AppColors.textPrimary
+                                          .withValues(alpha: 0.3),
+                                      AppColors.textPrimary
+                                          .withValues(alpha: 0.1),
+                                    ],
                         ),
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: _isListening
-                              ? const Color(0xFFFF4757)
-                              : const Color(0xFF00D9FF),
+                          color: !enabled
+                              ? disabledColor
+                              : _isListening
+                                  ? AppColors.incorrect
+                                  : AppColors.textPrimary,
                           width: 3,
                         ),
                       ),
                       child: Icon(
-                        _isListening ? Icons.mic : Icons.mic_none,
+                        unavailable
+                            ? Icons.mic_off
+                            : _isListening
+                                ? Icons.mic
+                                : Icons.mic_none,
                         size: 60,
-                        color: _isListening
-                            ? const Color(0xFFFF4757)
-                            : const Color(0xFF00D9FF),
+                        color: !enabled
+                            ? disabledColor
+                            : _isListening
+                                ? AppColors.incorrect
+                                : AppColors.textPrimary,
                       ),
                     ),
                   );
@@ -414,8 +438,17 @@ class _PronunciationPracticeWidgetState
           const SizedBox(height: 16),
           Center(
             child: Text(
-              _isListening ? 'Listening... Release to stop' : 'Hold to speak',
-              style: const TextStyle(fontSize: 16, color: Colors.white70),
+              unavailable
+                  ? 'Speech not available on this device'
+                  : _speechAvailable == null
+                      ? 'Checking microphone...'
+                      : _isListening
+                          ? 'Listening... Release to stop'
+                          : 'Hold to speak',
+              style: TextStyle(
+                fontSize: 16,
+                color: unavailable ? disabledColor : AppColors.textSecondary,
+              ),
             ),
           ),
 
@@ -425,13 +458,13 @@ class _PronunciationPracticeWidgetState
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: const Color(0xFF2A2A2A),
+                color: AppColors.surfaceRaised,
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: const Color(0xFFFF4757), width: 2),
+                border: Border.all(color: AppColors.incorrect, width: 2),
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.hearing, color: Color(0xFFFF4757)),
+                  const Icon(Icons.hearing, color: AppColors.incorrect),
                   const SizedBox(width: 12),
                   Expanded(
                     child: Text(
@@ -453,15 +486,34 @@ class _PronunciationPracticeWidgetState
           const Spacer(),
 
           // Bottom actions
-          if (_showFeedback && !_isCorrect)
+          if (unavailable)
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: _skip,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.surfaceRaised,
+                  foregroundColor: AppColors.textSecondary,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                child: const Text(
+                  'Skip - Speech not available',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
+            )
+          else if (_showFeedback && !_isCorrect)
             Row(
               children: [
                 Expanded(
                   child: OutlinedButton(
                     onPressed: _skip,
                     style: OutlinedButton.styleFrom(
-                      foregroundColor: Colors.white70,
-                      side: const BorderSide(color: Colors.white24),
+                      foregroundColor: AppColors.textSecondary,
+                      side: const BorderSide(color: AppColors.border),
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
@@ -476,7 +528,7 @@ class _PronunciationPracticeWidgetState
                   child: ElevatedButton(
                     onPressed: _tryAgain,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF00D9FF),
+                      backgroundColor: AppColors.textPrimary,
                       foregroundColor: Colors.black,
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
@@ -502,11 +554,11 @@ class _PronunciationPracticeWidgetState
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: _isCorrect
-            ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-            : const Color(0xFFFFAA00).withValues(alpha: 0.1),
+            ? AppColors.correct.withValues(alpha: 0.1)
+            : AppColors.textSecondary.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: _isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFFAA00),
+          color: _isCorrect ? AppColors.correct : AppColors.textSecondary,
         ),
       ),
       child: Column(
@@ -517,9 +569,7 @@ class _PronunciationPracticeWidgetState
             children: [
               Icon(
                 _isCorrect ? Icons.check_circle : Icons.info_outline,
-                color: _isCorrect
-                    ? const Color(0xFF00FF85)
-                    : const Color(0xFFFFAA00),
+                color: _isCorrect ? AppColors.correct : AppColors.textSecondary,
                 size: 28,
               ),
               const SizedBox(width: 12),
@@ -533,15 +583,15 @@ class _PronunciationPracticeWidgetState
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: _isCorrect
-                            ? const Color(0xFF00FF85)
-                            : const Color(0xFFFFAA00),
+                            ? AppColors.correct
+                            : AppColors.textSecondary,
                       ),
                     ),
                     const SizedBox(height: 4),
                     Text(
                       'Accuracy: ${_overallScore.toStringAsFixed(0)}%',
-                      style:
-                          const TextStyle(fontSize: 14, color: Colors.white70),
+                      style: const TextStyle(
+                          fontSize: 14, color: AppColors.textSecondary),
                     ),
                   ],
                 ),
@@ -555,11 +605,11 @@ class _PronunciationPracticeWidgetState
                   children: [
                     CircularProgressIndicator(
                       value: _overallScore / 100,
-                      backgroundColor: Colors.white24,
+                      backgroundColor: AppColors.border,
                       valueColor: AlwaysStoppedAnimation(
                         _isCorrect
-                            ? const Color(0xFF00FF85)
-                            : const Color(0xFFFFAA00),
+                            ? AppColors.correct
+                            : AppColors.textSecondary,
                       ),
                       strokeWidth: 6,
                     ),
@@ -577,13 +627,13 @@ class _PronunciationPracticeWidgetState
           ),
 
           const SizedBox(height: 16),
-          const Divider(color: Colors.white24),
+          const Divider(color: AppColors.border),
           const SizedBox(height: 16),
 
           // Word-by-word analysis
           const Text(
             'Word Analysis:',
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 12),
           Wrap(
@@ -605,12 +655,13 @@ class _PronunciationPracticeWidgetState
             child: Row(
               children: [
                 const Icon(Icons.lightbulb_outline,
-                    color: Color(0xFFFFAA00), size: 20),
+                    color: AppColors.textSecondary, size: 20),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
                     _getTip(),
-                    style: const TextStyle(fontSize: 14, color: Colors.white70),
+                    style: const TextStyle(
+                        fontSize: 14, color: AppColors.textSecondary),
                   ),
                 ),
               ],
@@ -646,26 +697,26 @@ class _WordChip extends StatelessWidget {
   Color get _backgroundColor {
     switch (analysis.status) {
       case _WordStatus.perfect:
-        return const Color(0xFF00FF85).withValues(alpha: 0.2);
+        return AppColors.correct.withValues(alpha: 0.2);
       case _WordStatus.close:
-        return const Color(0xFF00D9FF).withValues(alpha: 0.2);
+        return AppColors.textPrimary.withValues(alpha: 0.2);
       case _WordStatus.needsWork:
-        return const Color(0xFFFFAA00).withValues(alpha: 0.2);
+        return AppColors.textSecondary.withValues(alpha: 0.2);
       case _WordStatus.missed:
-        return const Color(0xFFFF4757).withValues(alpha: 0.2);
+        return AppColors.incorrect.withValues(alpha: 0.2);
     }
   }
 
   Color get _borderColor {
     switch (analysis.status) {
       case _WordStatus.perfect:
-        return const Color(0xFF00FF85);
+        return AppColors.correct;
       case _WordStatus.close:
-        return const Color(0xFF00D9FF);
+        return AppColors.textPrimary;
       case _WordStatus.needsWork:
-        return const Color(0xFFFFAA00);
+        return AppColors.textSecondary;
       case _WordStatus.missed:
-        return const Color(0xFFFF4757);
+        return AppColors.incorrect;
     }
   }
 

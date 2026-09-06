@@ -26,25 +26,115 @@
           "id": "ch1_p1",
           "originalText_french": "Le premier lundi du mois d'avril 1625, le bourg de Meung, où naquit l'auteur du Roman de la Rose, semblait être dans une révolution aussi complète que si les huguenots fussent venus y faire une seconde Rochelle.",
           "translatedText_french": "On the first Monday of April 1625, the town of Meung, where the author of the Romance of the Rose was born, appeared to be in a revolution as complete as if the Huguenots had just made a second Rochelle of it.",
-          "vocabularyWords_french": ["lundi", "mois", "avril", "bourg", "naquit", "auteur", "révolution", "complète"]
+          "vocabularyWords_french": [
+            "lundi",
+            "mois",
+            "avril",
+            "bourg",
+            "naquit",
+            "auteur",
+            "révolution",
+            "complète"
+          ],
+          "originalText": "Le premier lundi du mois d'avril 1625, le bourg de Meung, où naquit l'auteur du Roman de la Rose, semblait être dans une révolution aussi complète que si les huguenots fussent venus y faire une seconde Rochelle.",
+          "translatedText": "On the first Monday of April 1625, the town of Meung, where the author of the Romance of the Rose was born, appeared to be in a revolution as complete as if the Huguenots had just made a second Rochelle of it.",
+          "vocabularyWords": [
+            "lundi",
+            "mois",
+            "avril",
+            "bourg",
+            "naquit",
+            "auteur",
+            "révolution",
+            "complète"
+          ]
         },
         {
           "id": "ch1_p2",
           "originalText_french": "Plusieurs bourgeois, voyant s'enfuir les femmes du côté de la Grande-Rue, laissant leurs enfants crier sur le seuil des portes, se hâtaient d'endosser la cuirasse.",
           "translatedText_french": "Several townspeople, seeing the women fleeing toward the Grande-Rue, leaving their children crying on the doorsteps, hastened to don their cuirasses.",
-          "vocabularyWords_french": ["bourgeois", "voyant", "enfuir", "femmes", "côté", "enfants", "crier", "hâtaient", "cuirasse"]
+          "vocabularyWords_french": [
+            "bourgeois",
+            "voyant",
+            "enfuir",
+            "femmes",
+            "côté",
+            "enfants",
+            "crier",
+            "hâtaient",
+            "cuirasse"
+          ],
+          "originalText": "Plusieurs bourgeois, voyant s'enfuir les femmes du côté de la Grande-Rue, laissant leurs enfants crier sur le seuil des portes, se hâtaient d'endosser la cuirasse.",
+          "translatedText": "Several townspeople, seeing the women fleeing toward the Grande-Rue, leaving their children crying on the doorsteps, hastened to don their cuirasses.",
+          "vocabularyWords": [
+            "bourgeois",
+            "voyant",
+            "enfuir",
+            "femmes",
+            "côté",
+            "enfants",
+            "crier",
+            "hâtaient",
+            "cuirasse"
+          ]
         },
         {
           "id": "ch1_p3",
           "originalText_french": "Et se dirigeaient vers l'hôtellerie du Franc-Meunier, devant laquelle s'empressait, en grossissant de minute en minute, un groupe compact, bruyant et plein de curiosité.",
           "translatedText_french": "And directed themselves toward the hostelry of the Franc-Meunier before which was gathered, growing larger every minute, a compact, clamorous group full of curiosity.",
-          "vocabularyWords_french": ["dirigeaient", "hôtellerie", "devant", "empressait", "grossissant", "minute", "groupe", "bruyant", "curiosité"]
+          "vocabularyWords_french": [
+            "dirigeaient",
+            "hôtellerie",
+            "devant",
+            "empressait",
+            "grossissant",
+            "minute",
+            "groupe",
+            "bruyant",
+            "curiosité"
+          ],
+          "originalText": "Et se dirigeaient vers l'hôtellerie du Franc-Meunier, devant laquelle s'empressait, en grossissant de minute en minute, un groupe compact, bruyant et plein de curiosité.",
+          "translatedText": "And directed themselves toward the hostelry of the Franc-Meunier before which was gathered, growing larger every minute, a compact, clamorous group full of curiosity.",
+          "vocabularyWords": [
+            "dirigeaient",
+            "hôtellerie",
+            "devant",
+            "empressait",
+            "grossissant",
+            "minute",
+            "groupe",
+            "bruyant",
+            "curiosité"
+          ]
         },
         {
           "id": "ch1_p4",
           "originalText_french": "En ce temps-là les paniques étaient fréquentes, et peu de jours se passaient sans qu'une ville ou l'autre enregistrât sur ses archives quelque événement de ce genre.",
           "translatedText_french": "In those times panics were common, and few days passed without some city or another recording in its archives some event of this kind.",
-          "vocabularyWords_french": ["temps", "paniques", "fréquentes", "jours", "passaient", "ville", "enregistrât", "archives", "événement"]
+          "vocabularyWords_french": [
+            "temps",
+            "paniques",
+            "fréquentes",
+            "jours",
+            "passaient",
+            "ville",
+            "enregistrât",
+            "archives",
+            "événement"
+          ],
+          "originalText": "En ce temps-là les paniques étaient fréquentes, et peu de jours se passaient sans qu'une ville ou l'autre enregistrât sur ses archives quelque événement de ce genre.",
+          "translatedText": "In those times panics were common, and few days passed without some city or another recording in its archives some event of this kind.",
+          "vocabularyWords": [
+            "temps",
+            "paniques",
+            "fréquentes",
+            "jours",
+            "passaient",
+            "ville",
+            "enregistrât",
+            "archives",
+            "événement"
+          ]
         }
       ]
     },
@@ -57,25 +147,121 @@
           "id": "ch2_p1",
           "originalText_french": "M. de Tréville, comme le roi l'appelait encore quelquefois, ou M. le capitaine, comme les mousquetaires l'appelaient toujours, était réellement un homme brave.",
           "translatedText_french": "M. de Tréville, as the king still sometimes called him, or M. le Capitaine, as the musketeers always called him, was in reality a brave man.",
-          "vocabularyWords_french": ["roi", "appelait", "quelquefois", "capitaine", "mousquetaires", "toujours", "réellement", "homme", "brave"]
+          "vocabularyWords_french": [
+            "roi",
+            "appelait",
+            "quelquefois",
+            "capitaine",
+            "mousquetaires",
+            "toujours",
+            "réellement",
+            "homme",
+            "brave"
+          ],
+          "originalText": "M. de Tréville, comme le roi l'appelait encore quelquefois, ou M. le capitaine, comme les mousquetaires l'appelaient toujours, était réellement un homme brave.",
+          "translatedText": "M. de Tréville, as the king still sometimes called him, or M. le Capitaine, as the musketeers always called him, was in reality a brave man.",
+          "vocabularyWords": [
+            "roi",
+            "appelait",
+            "quelquefois",
+            "capitaine",
+            "mousquetaires",
+            "toujours",
+            "réellement",
+            "homme",
+            "brave"
+          ]
         },
         {
           "id": "ch2_p2",
           "originalText_french": "Il avait ce regard ferme que les bretteurs seuls savent prendre, cette tranquillité d'aspect qui suppose le repos de la conscience et la résolution de l'âme.",
           "translatedText_french": "He had that firm glance that only swordsmen know how to assume, that tranquility of aspect which denotes repose of conscience and resolution of spirit.",
-          "vocabularyWords_french": ["regard", "ferme", "bretteurs", "seuls", "prendre", "tranquillité", "aspect", "conscience", "résolution", "âme"]
+          "vocabularyWords_french": [
+            "regard",
+            "ferme",
+            "bretteurs",
+            "seuls",
+            "prendre",
+            "tranquillité",
+            "aspect",
+            "conscience",
+            "résolution",
+            "âme"
+          ],
+          "originalText": "Il avait ce regard ferme que les bretteurs seuls savent prendre, cette tranquillité d'aspect qui suppose le repos de la conscience et la résolution de l'âme.",
+          "translatedText": "He had that firm glance that only swordsmen know how to assume, that tranquility of aspect which denotes repose of conscience and resolution of spirit.",
+          "vocabularyWords": [
+            "regard",
+            "ferme",
+            "bretteurs",
+            "seuls",
+            "prendre",
+            "tranquillité",
+            "aspect",
+            "conscience",
+            "résolution",
+            "âme"
+          ]
         },
         {
           "id": "ch2_p3",
           "originalText_french": "D'Artagnan entra sans façon avec les autres, et se trouva bientôt au milieu de l'antichambre de M. de Tréville, antichambre qui n'était ni plus ni moins qu'une salle d'armes.",
           "translatedText_french": "D'Artagnan entered unceremoniously along with the others, and soon found himself in the middle of M. de Tréville's antechamber, which was neither more nor less than an armory.",
-          "vocabularyWords_french": ["entra", "façon", "autres", "trouva", "bientôt", "milieu", "antichambre", "salle", "armes"]
+          "vocabularyWords_french": [
+            "entra",
+            "façon",
+            "autres",
+            "trouva",
+            "bientôt",
+            "milieu",
+            "antichambre",
+            "salle",
+            "armes"
+          ],
+          "originalText": "D'Artagnan entra sans façon avec les autres, et se trouva bientôt au milieu de l'antichambre de M. de Tréville, antichambre qui n'était ni plus ni moins qu'une salle d'armes.",
+          "translatedText": "D'Artagnan entered unceremoniously along with the others, and soon found himself in the middle of M. de Tréville's antechamber, which was neither more nor less than an armory.",
+          "vocabularyWords": [
+            "entra",
+            "façon",
+            "autres",
+            "trouva",
+            "bientôt",
+            "milieu",
+            "antichambre",
+            "salle",
+            "armes"
+          ]
         },
         {
           "id": "ch2_p4",
           "originalText_french": "Cette antichambre était semée de gens d'épée qui attendaient. Quelques-uns causaient à voix basse, d'autres promenaient leur ennui avec une impatience mal contenue.",
           "translatedText_french": "This antechamber was scattered with men of the sword who waited. Some talked in low voices, while others paced about with their boredom barely contained.",
-          "vocabularyWords_french": ["semée", "gens", "épée", "attendaient", "causaient", "voix", "basse", "promenaient", "ennui", "impatience"]
+          "vocabularyWords_french": [
+            "semée",
+            "gens",
+            "épée",
+            "attendaient",
+            "causaient",
+            "voix",
+            "basse",
+            "promenaient",
+            "ennui",
+            "impatience"
+          ],
+          "originalText": "Cette antichambre était semée de gens d'épée qui attendaient. Quelques-uns causaient à voix basse, d'autres promenaient leur ennui avec une impatience mal contenue.",
+          "translatedText": "This antechamber was scattered with men of the sword who waited. Some talked in low voices, while others paced about with their boredom barely contained.",
+          "vocabularyWords": [
+            "semée",
+            "gens",
+            "épée",
+            "attendaient",
+            "causaient",
+            "voix",
+            "basse",
+            "promenaient",
+            "ennui",
+            "impatience"
+          ]
         }
       ]
     },
@@ -88,25 +274,127 @@
           "id": "ch3_p1",
           "originalText_french": "M. de Tréville était pour le moment de fort mauvaise humeur; néanmoins il salua poliment le jeune homme, qui s'inclina jusqu'à terre.",
           "translatedText_french": "M. de Tréville was at the moment in a very bad temper; nevertheless he greeted the young man politely, who bowed to the ground.",
-          "vocabularyWords_french": ["moment", "mauvaise", "humeur", "néanmoins", "salua", "poliment", "jeune", "homme", "inclina", "terre"]
+          "vocabularyWords_french": [
+            "moment",
+            "mauvaise",
+            "humeur",
+            "néanmoins",
+            "salua",
+            "poliment",
+            "jeune",
+            "homme",
+            "inclina",
+            "terre"
+          ],
+          "originalText": "M. de Tréville était pour le moment de fort mauvaise humeur; néanmoins il salua poliment le jeune homme, qui s'inclina jusqu'à terre.",
+          "translatedText": "M. de Tréville was at the moment in a very bad temper; nevertheless he greeted the young man politely, who bowed to the ground.",
+          "vocabularyWords": [
+            "moment",
+            "mauvaise",
+            "humeur",
+            "néanmoins",
+            "salua",
+            "poliment",
+            "jeune",
+            "homme",
+            "inclina",
+            "terre"
+          ]
         },
         {
           "id": "ch3_p2",
           "originalText_french": "\"Monsieur,\" dit d'Artagnan, \"j'ai quitté ma maison natale pour venir offrir mes services au roi. Mon père m'a donné quinze écus, un cheval et cette lettre pour vous.\"",
           "translatedText_french": "\"Monsieur,\" said d'Artagnan, \"I have left my native home to come and offer my services to the king. My father gave me fifteen écus, a horse, and this letter for you.\"",
-          "vocabularyWords_french": ["quitté", "maison", "natale", "venir", "offrir", "services", "père", "donné", "quinze", "écus", "cheval", "lettre"]
+          "vocabularyWords_french": [
+            "quitté",
+            "maison",
+            "natale",
+            "venir",
+            "offrir",
+            "services",
+            "père",
+            "donné",
+            "quinze",
+            "écus",
+            "cheval",
+            "lettre"
+          ],
+          "originalText": "\"Monsieur,\" dit d'Artagnan, \"j'ai quitté ma maison natale pour venir offrir mes services au roi. Mon père m'a donné quinze écus, un cheval et cette lettre pour vous.\"",
+          "translatedText": "\"Monsieur,\" said d'Artagnan, \"I have left my native home to come and offer my services to the king. My father gave me fifteen écus, a horse, and this letter for you.\"",
+          "vocabularyWords": [
+            "quitté",
+            "maison",
+            "natale",
+            "venir",
+            "offrir",
+            "services",
+            "père",
+            "donné",
+            "quinze",
+            "écus",
+            "cheval",
+            "lettre"
+          ]
         },
         {
           "id": "ch3_p3",
           "originalText_french": "M. de Tréville prit la lettre et la lut d'un bout à l'autre, tandis que d'Artagnan l'observait avec une attention profonde.",
           "translatedText_french": "M. de Tréville took the letter and read it from beginning to end, while d'Artagnan observed him with profound attention.",
-          "vocabularyWords_french": ["prit", "lettre", "lut", "bout", "autre", "tandis", "observait", "attention", "profonde"]
+          "vocabularyWords_french": [
+            "prit",
+            "lettre",
+            "lut",
+            "bout",
+            "autre",
+            "tandis",
+            "observait",
+            "attention",
+            "profonde"
+          ],
+          "originalText": "M. de Tréville prit la lettre et la lut d'un bout à l'autre, tandis que d'Artagnan l'observait avec une attention profonde.",
+          "translatedText": "M. de Tréville took the letter and read it from beginning to end, while d'Artagnan observed him with profound attention.",
+          "vocabularyWords": [
+            "prit",
+            "lettre",
+            "lut",
+            "bout",
+            "autre",
+            "tandis",
+            "observait",
+            "attention",
+            "profonde"
+          ]
         },
         {
           "id": "ch3_p4",
           "originalText_french": "\"Ainsi vous êtes le fils de mon vieil ami,\" dit-il enfin. \"Eh bien, vous pouvez compter sur moi. Je ferai pour vous ce que je pourrai.\"",
           "translatedText_french": "\"So you are the son of my old friend,\" he said at last. \"Well, you can count on me. I will do for you what I can.\"",
-          "vocabularyWords_french": ["ainsi", "fils", "vieil", "ami", "enfin", "bien", "pouvez", "compter", "ferai", "pourrai"]
+          "vocabularyWords_french": [
+            "ainsi",
+            "fils",
+            "vieil",
+            "ami",
+            "enfin",
+            "bien",
+            "pouvez",
+            "compter",
+            "ferai",
+            "pourrai"
+          ],
+          "originalText": "\"Ainsi vous êtes le fils de mon vieil ami,\" dit-il enfin. \"Eh bien, vous pouvez compter sur moi. Je ferai pour vous ce que je pourrai.\"",
+          "translatedText": "\"So you are the son of my old friend,\" he said at last. \"Well, you can count on me. I will do for you what I can.\"",
+          "vocabularyWords": [
+            "ainsi",
+            "fils",
+            "vieil",
+            "ami",
+            "enfin",
+            "bien",
+            "pouvez",
+            "compter",
+            "ferai",
+            "pourrai"
+          ]
         }
       ]
     }

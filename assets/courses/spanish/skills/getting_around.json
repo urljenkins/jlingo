@@ -61,6 +61,58 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "ex_ga_5",
+            "type": "multipleChoice",
+            "question": "How do you say \"Train station\" in Spanish?",
+            "options": [
+                "Estación de tren",
+                "Aeropuerto",
+                "Parada de autobús",
+                "Puerto"
+            ],
+            "correctAnswer": "Estación de tren"
+        },
+        {
+            "id": "ex_ga_6",
+            "type": "speakThis",
+            "question": "¿Dónde está la parada de autobús?",
+            "options": [],
+            "correctAnswer": "¿Dónde está la parada de autobús?"
+        },
+        {
+            "id": "ex_ga_7",
+            "type": "listeningComprehension",
+            "question": "Un billete por favor",
+            "options": [],
+            "correctAnswer": "Un billete por favor"
+        },
+        {
+            "id": "ex_ga_8",
+            "type": "fillInBlank",
+            "question": "El tren sale a las ocho de la ___",
+            "options": [
+                "mañana",
+                "coche",
+                "calle",
+                "metro"
+            ],
+            "correctAnswer": "mañana"
+        },
+        {
+            "id": "ex_ga_9",
+            "type": "translateThis",
+            "question": "Gire a la derecha",
+            "options": [],
+            "correctAnswer": "Turn right"
+        },
+        {
+            "id": "ex_ga_10",
+            "type": "listeningComprehension",
+            "question": "La estación central",
+            "options": [],
+            "correctAnswer": "La estación central"
         }
     ]
 }

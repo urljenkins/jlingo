@@ -26,25 +26,91 @@
           "id": "ch1_p1",
           "originalText_spanish": "Una vez, cuando tenía seis años, vi una magnífica imagen en un libro sobre la selva virgen que se llamaba \"Historias vividas\". Representaba una serpiente boa que se tragaba a una fiera.",
           "translatedText_spanish": "Once when I was six years old I saw a magnificent picture in a book about the primeval forest called \"True Stories.\" It showed a boa constrictor swallowing a wild animal.",
-          "vocabularyWords_spanish": ["magnífica", "selva virgen", "serpiente", "tragaba", "fiera"]
+          "vocabularyWords_spanish": [
+            "magnífica",
+            "selva virgen",
+            "serpiente",
+            "tragaba",
+            "fiera"
+          ],
+          "originalText": "Una vez, cuando tenía seis años, vi una magnífica imagen en un libro sobre la selva virgen que se llamaba \"Historias vividas\". Representaba una serpiente boa que se tragaba a una fiera.",
+          "translatedText": "Once when I was six years old I saw a magnificent picture in a book about the primeval forest called \"True Stories.\" It showed a boa constrictor swallowing a wild animal.",
+          "vocabularyWords": [
+            "magnífica",
+            "selva virgen",
+            "serpiente",
+            "tragaba",
+            "fiera"
+          ]
         },
         {
           "id": "ch1_p2",
           "originalText_spanish": "En el libro decía: \"Las serpientes boas tragan a sus presas enteras, sin masticarlas. Luego no pueden moverse y duermen durante los seis meses de la digestión\".",
           "translatedText_spanish": "In the book it said: \"Boa constrictors swallow their prey whole, without chewing it. After that they are not able to move, and they sleep through the six months that they need for digestion.\"",
-          "vocabularyWords_spanish": ["tragan", "presas", "masticar", "moverse", "digestión"]
+          "vocabularyWords_spanish": [
+            "tragan",
+            "presas",
+            "masticar",
+            "moverse",
+            "digestión"
+          ],
+          "originalText": "En el libro decía: \"Las serpientes boas tragan a sus presas enteras, sin masticarlas. Luego no pueden moverse y duermen durante los seis meses de la digestión\".",
+          "translatedText": "In the book it said: \"Boa constrictors swallow their prey whole, without chewing it. After that they are not able to move, and they sleep through the six months that they need for digestion.\"",
+          "vocabularyWords": [
+            "tragan",
+            "presas",
+            "masticar",
+            "moverse",
+            "digestión"
+          ]
         },
         {
           "id": "ch1_p3",
           "originalText_spanish": "Reflexioné mucho sobre las aventuras de la jungla y, a mi vez, logré trazar con un lápiz de colores mi primer dibujo. Mi dibujo número 1 era así.",
           "translatedText_spanish": "I pondered deeply over the adventures of the jungle, and in turn, managed to trace with a colored pencil my first drawing. My Drawing Number One looked like this.",
-          "vocabularyWords_spanish": ["reflexioné", "aventuras", "jungla", "logré", "trazar", "lápiz", "dibujo"]
+          "vocabularyWords_spanish": [
+            "reflexioné",
+            "aventuras",
+            "jungla",
+            "logré",
+            "trazar",
+            "lápiz",
+            "dibujo"
+          ],
+          "originalText": "Reflexioné mucho sobre las aventuras de la jungla y, a mi vez, logré trazar con un lápiz de colores mi primer dibujo. Mi dibujo número 1 era así.",
+          "translatedText": "I pondered deeply over the adventures of the jungle, and in turn, managed to trace with a colored pencil my first drawing. My Drawing Number One looked like this.",
+          "vocabularyWords": [
+            "reflexioné",
+            "aventuras",
+            "jungla",
+            "logré",
+            "trazar",
+            "lápiz",
+            "dibujo"
+          ]
         },
         {
           "id": "ch1_p4",
           "originalText_spanish": "Mostré mi obra de arte a las personas mayores y les pregunté si mi dibujo les daba miedo. Me contestaron: \"¿Por qué habría de asustarnos un sombrero?\"",
           "translatedText_spanish": "I showed my masterpiece to the grown-ups and asked them if my drawing frightened them. They answered: \"Why should anyone be frightened by a hat?\"",
-          "vocabularyWords_spanish": ["mostré", "obra de arte", "personas mayores", "miedo", "asustarnos", "sombrero"]
+          "vocabularyWords_spanish": [
+            "mostré",
+            "obra de arte",
+            "personas mayores",
+            "miedo",
+            "asustarnos",
+            "sombrero"
+          ],
+          "originalText": "Mostré mi obra de arte a las personas mayores y les pregunté si mi dibujo les daba miedo. Me contestaron: \"¿Por qué habría de asustarnos un sombrero?\"",
+          "translatedText": "I showed my masterpiece to the grown-ups and asked them if my drawing frightened them. They answered: \"Why should anyone be frightened by a hat?\"",
+          "vocabularyWords": [
+            "mostré",
+            "obra de arte",
+            "personas mayores",
+            "miedo",
+            "asustarnos",
+            "sombrero"
+          ]
         }
       ]
     },
@@ -57,25 +123,107 @@
           "id": "ch2_p1",
           "originalText_spanish": "Viví así, solo, sin nadie con quien hablar verdaderamente, hasta que tuve una avería en el desierto del Sahara, hace seis años. Algo se había roto en mi motor.",
           "translatedText_spanish": "So I lived alone, without anyone I could really talk to, until I had a breakdown in the Sahara Desert, six years ago. Something had broken in my engine.",
-          "vocabularyWords_spanish": ["solo", "hablar", "avería", "desierto", "roto", "motor"]
+          "vocabularyWords_spanish": [
+            "solo",
+            "hablar",
+            "avería",
+            "desierto",
+            "roto",
+            "motor"
+          ],
+          "originalText": "Viví así, solo, sin nadie con quien hablar verdaderamente, hasta que tuve una avería en el desierto del Sahara, hace seis años. Algo se había roto en mi motor.",
+          "translatedText": "So I lived alone, without anyone I could really talk to, until I had a breakdown in the Sahara Desert, six years ago. Something had broken in my engine.",
+          "vocabularyWords": [
+            "solo",
+            "hablar",
+            "avería",
+            "desierto",
+            "roto",
+            "motor"
+          ]
         },
         {
           "id": "ch2_p2",
           "originalText_spanish": "Y como no llevaba conmigo ni mecánico ni pasajeros, me dispuse a intentar solo y sin ayuda una reparación difícil. Era para mí cuestión de vida o muerte. Apenas tenía agua para ocho días.",
           "translatedText_spanish": "And as I had neither a mechanic nor passengers with me, I set myself to attempt the difficult repair all alone. It was a matter of life and death for me. I had barely enough drinking water for eight days.",
-          "vocabularyWords_spanish": ["mecánico", "pasajeros", "dispuse", "reparación", "cuestión", "vida", "muerte", "apenas"]
+          "vocabularyWords_spanish": [
+            "mecánico",
+            "pasajeros",
+            "dispuse",
+            "reparación",
+            "cuestión",
+            "vida",
+            "muerte",
+            "apenas"
+          ],
+          "originalText": "Y como no llevaba conmigo ni mecánico ni pasajeros, me dispuse a intentar solo y sin ayuda una reparación difícil. Era para mí cuestión de vida o muerte. Apenas tenía agua para ocho días.",
+          "translatedText": "And as I had neither a mechanic nor passengers with me, I set myself to attempt the difficult repair all alone. It was a matter of life and death for me. I had barely enough drinking water for eight days.",
+          "vocabularyWords": [
+            "mecánico",
+            "pasajeros",
+            "dispuse",
+            "reparación",
+            "cuestión",
+            "vida",
+            "muerte",
+            "apenas"
+          ]
         },
         {
           "id": "ch2_p3",
           "originalText_spanish": "La primera noche dormí sobre la arena, a mil millas de toda tierra habitada. Estaba más aislado que un náufrago sobre una balsa en medio del océano.",
           "translatedText_spanish": "The first night I went to sleep on the sand, a thousand miles from any inhabited land. I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean.",
-          "vocabularyWords_spanish": ["noche", "dormí", "arena", "millas", "habitada", "aislado", "náufrago", "balsa", "océano"]
+          "vocabularyWords_spanish": [
+            "noche",
+            "dormí",
+            "arena",
+            "millas",
+            "habitada",
+            "aislado",
+            "náufrago",
+            "balsa",
+            "océano"
+          ],
+          "originalText": "La primera noche dormí sobre la arena, a mil millas de toda tierra habitada. Estaba más aislado que un náufrago sobre una balsa en medio del océano.",
+          "translatedText": "The first night I went to sleep on the sand, a thousand miles from any inhabited land. I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean.",
+          "vocabularyWords": [
+            "noche",
+            "dormí",
+            "arena",
+            "millas",
+            "habitada",
+            "aislado",
+            "náufrago",
+            "balsa",
+            "océano"
+          ]
         },
         {
           "id": "ch2_p4",
           "originalText_spanish": "Así que pueden imaginar mi sorpresa cuando, al amanecer, me despertó una vocecita extraña que decía: \"Por favor... ¡dibújame un cordero!\"",
           "translatedText_spanish": "So you can imagine my surprise when I was awakened at daybreak by an odd little voice saying: \"Please... draw me a sheep!\"",
-          "vocabularyWords_spanish": ["imaginar", "sorpresa", "amanecer", "despertó", "vocecita", "extraña", "dibújame", "cordero"]
+          "vocabularyWords_spanish": [
+            "imaginar",
+            "sorpresa",
+            "amanecer",
+            "despertó",
+            "vocecita",
+            "extraña",
+            "dibújame",
+            "cordero"
+          ],
+          "originalText": "Así que pueden imaginar mi sorpresa cuando, al amanecer, me despertó una vocecita extraña que decía: \"Por favor... ¡dibújame un cordero!\"",
+          "translatedText": "So you can imagine my surprise when I was awakened at daybreak by an odd little voice saying: \"Please... draw me a sheep!\"",
+          "vocabularyWords": [
+            "imaginar",
+            "sorpresa",
+            "amanecer",
+            "despertó",
+            "vocecita",
+            "extraña",
+            "dibújame",
+            "cordero"
+          ]
         }
       ]
     },
@@ -88,25 +236,103 @@
           "id": "ch3_p1",
           "originalText_spanish": "Me llevó mucho tiempo comprender de dónde venía. El principito, que me hacía muchas preguntas, jamás parecía oír las mías.",
           "translatedText_spanish": "It took me a long time to understand where he came from. The little prince, who asked me so many questions, never seemed to hear mine.",
-          "vocabularyWords_spanish": ["tiempo", "comprender", "venía", "principito", "preguntas", "jamás", "oír"]
+          "vocabularyWords_spanish": [
+            "tiempo",
+            "comprender",
+            "venía",
+            "principito",
+            "preguntas",
+            "jamás",
+            "oír"
+          ],
+          "originalText": "Me llevó mucho tiempo comprender de dónde venía. El principito, que me hacía muchas preguntas, jamás parecía oír las mías.",
+          "translatedText": "It took me a long time to understand where he came from. The little prince, who asked me so many questions, never seemed to hear mine.",
+          "vocabularyWords": [
+            "tiempo",
+            "comprender",
+            "venía",
+            "principito",
+            "preguntas",
+            "jamás",
+            "oír"
+          ]
         },
         {
           "id": "ch3_p2",
           "originalText_spanish": "Fueron palabras pronunciadas al azar las que, poco a poco, me revelaron todo. Así, cuando vio mi avión por primera vez, me preguntó: \"¿Qué cosa es esa?\"",
           "translatedText_spanish": "It was words spoken by chance that, little by little, revealed everything to me. Thus, when he saw my airplane for the first time, he asked: \"What is that thing?\"",
-          "vocabularyWords_spanish": ["palabras", "pronunciadas", "azar", "revelaron", "avión", "primera vez", "preguntó"]
+          "vocabularyWords_spanish": [
+            "palabras",
+            "pronunciadas",
+            "azar",
+            "revelaron",
+            "avión",
+            "primera vez",
+            "preguntó"
+          ],
+          "originalText": "Fueron palabras pronunciadas al azar las que, poco a poco, me revelaron todo. Así, cuando vio mi avión por primera vez, me preguntó: \"¿Qué cosa es esa?\"",
+          "translatedText": "It was words spoken by chance that, little by little, revealed everything to me. Thus, when he saw my airplane for the first time, he asked: \"What is that thing?\"",
+          "vocabularyWords": [
+            "palabras",
+            "pronunciadas",
+            "azar",
+            "revelaron",
+            "avión",
+            "primera vez",
+            "preguntó"
+          ]
         },
         {
           "id": "ch3_p3",
           "originalText_spanish": "\"No es una cosa. Vuela. Es un avión. Es mi avión.\" Y me sentí orgulloso de hacerle saber que yo volaba.",
           "translatedText_spanish": "\"It is not a thing. It flies. It is an airplane. It is my airplane.\" And I was proud to let him know that I flew.",
-          "vocabularyWords_spanish": ["cosa", "vuela", "avión", "sentí", "orgulloso", "saber", "volaba"]
+          "vocabularyWords_spanish": [
+            "cosa",
+            "vuela",
+            "avión",
+            "sentí",
+            "orgulloso",
+            "saber",
+            "volaba"
+          ],
+          "originalText": "\"No es una cosa. Vuela. Es un avión. Es mi avión.\" Y me sentí orgulloso de hacerle saber que yo volaba.",
+          "translatedText": "\"It is not a thing. It flies. It is an airplane. It is my airplane.\" And I was proud to let him know that I flew.",
+          "vocabularyWords": [
+            "cosa",
+            "vuela",
+            "avión",
+            "sentí",
+            "orgulloso",
+            "saber",
+            "volaba"
+          ]
         },
         {
           "id": "ch3_p4",
           "originalText_spanish": "Entonces él exclamó: \"¡Cómo! ¿Has caído del cielo?\" \"Sí\", le dije modestamente. \"¡Qué gracioso!\" Y el principito soltó una encantadora carcajada que me irritó mucho.",
           "translatedText_spanish": "Then he cried: \"What! You fell from the sky?\" \"Yes,\" I said modestly. \"How funny!\" And the little prince broke into a lovely peal of laughter which irritated me very much.",
-          "vocabularyWords_spanish": ["exclamó", "caído", "cielo", "modestamente", "gracioso", "soltó", "carcajada", "irritó"]
+          "vocabularyWords_spanish": [
+            "exclamó",
+            "caído",
+            "cielo",
+            "modestamente",
+            "gracioso",
+            "soltó",
+            "carcajada",
+            "irritó"
+          ],
+          "originalText": "Entonces él exclamó: \"¡Cómo! ¿Has caído del cielo?\" \"Sí\", le dije modestamente. \"¡Qué gracioso!\" Y el principito soltó una encantadora carcajada que me irritó mucho.",
+          "translatedText": "Then he cried: \"What! You fell from the sky?\" \"Yes,\" I said modestly. \"How funny!\" And the little prince broke into a lovely peal of laughter which irritated me very much.",
+          "vocabularyWords": [
+            "exclamó",
+            "caído",
+            "cielo",
+            "modestamente",
+            "gracioso",
+            "soltó",
+            "carcajada",
+            "irritó"
+          ]
         }
       ]
     }

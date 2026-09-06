@@ -2,12 +2,14 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/onboarding_provider.dart';
+import '../../providers/settings_provider.dart';
 import '../../models/user_profile.dart';
 import '../../widgets/responsive/responsive_layout.dart';
 import '../../widgets/responsive/desktop_scaffold.dart';
 import '../../widgets/responsive/mobile_scaffold.dart';
 import '../../widgets/hover_card.dart';
 import 'onboarding_complete_screen.dart';
+import '../../theme/app_colors.dart';
 
 class GoalsScreen extends StatefulWidget {
   const GoalsScreen({super.key});
@@ -23,6 +25,8 @@ class _GoalsScreenState extends State<GoalsScreen> {
   @override
   Widget build(BuildContext context) {
     final onboardingProvider = context.watch<OnboardingProvider>();
+    final trackingEnabled =
+        context.watch<SettingsProvider>().progressTrackingEnabled;
 
     final bodyContent = SafeArea(
       child: SingleChildScrollView(
@@ -47,22 +51,26 @@ class _GoalsScreenState extends State<GoalsScreen> {
             ),
             const SizedBox(height: 24),
             _buildGoalsList(context),
-            const SizedBox(height: 40),
-            Text(
-              'Daily Learning Goal',
-              style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                    fontSize: 24,
-                  ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'How much time can you dedicate each day?',
-              style: Theme.of(context).textTheme.bodyMedium,
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 24),
-            _buildDailyGoalSelector(context),
+            // A daily target is only meaningful when progress tracking is on;
+            // with it off the commitment is asked for and never shown again.
+            if (trackingEnabled) ...[
+              const SizedBox(height: 40),
+              Text(
+                'Daily Learning Goal',
+                style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                      fontSize: 24,
+                    ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'How much time can you dedicate each day?',
+                style: Theme.of(context).textTheme.bodyMedium,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 24),
+              _buildDailyGoalSelector(context),
+            ],
             const SizedBox(height: 40),
             _buildContinueButton(context, onboardingProvider),
           ],
@@ -146,7 +154,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
                             .colorScheme
                             .primary
                             .withValues(alpha: 0.3)
-                        : Colors.white12,
+                        : AppColors.border,
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
@@ -154,7 +162,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
                     size: 28,
                     color: isSelected
                         ? Theme.of(context).colorScheme.primary
-                        : Colors.white70,
+                        : AppColors.textSecondary,
                   ),
                 ),
                 if (isSelected)
@@ -178,7 +186,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
-                color: isSelected ? Colors.white : Colors.white70,
+                color: isSelected ? Colors.white : AppColors.textSecondary,
               ),
               textAlign: TextAlign.center,
             ),
@@ -187,7 +195,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
               UserProfile.goalDescription(goal),
               style: const TextStyle(
                 fontSize: 11,
-                color: Colors.white54,
+                color: AppColors.textMuted,
               ),
               textAlign: TextAlign.center,
               maxLines: 2,
@@ -243,7 +251,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
                       fontWeight: FontWeight.bold,
                       color: isSelected
                           ? Theme.of(context).colorScheme.primary
-                          : Colors.white70,
+                          : AppColors.textSecondary,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -251,7 +259,9 @@ class _GoalsScreenState extends State<GoalsScreen> {
                     goal.$3,
                     style: TextStyle(
                       fontSize: 10,
-                      color: isSelected ? Colors.white70 : Colors.white54,
+                      color: isSelected
+                          ? AppColors.textSecondary
+                          : AppColors.textMuted,
                     ),
                   ),
                 ],
@@ -280,8 +290,8 @@ class _GoalsScreenState extends State<GoalsScreen> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
-              disabledBackgroundColor: Colors.white12,
-              disabledForegroundColor: Colors.white38,
+              disabledBackgroundColor: AppColors.border,
+              disabledForegroundColor: AppColors.textDisabled,
             ),
             child: const Text(
               'Continue',
@@ -309,7 +319,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
 
   Widget _buildSideNav(BuildContext context, OnboardingProvider provider) {
     return ColoredBox(
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       child: Column(
         children: [
           const Padding(
@@ -319,7 +329,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ),
-          const Divider(color: Colors.white12),
+          const Divider(color: AppColors.border),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -337,11 +347,11 @@ class _GoalsScreenState extends State<GoalsScreen> {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
-                const Divider(color: Colors.white12),
+                const Divider(color: AppColors.border),
                 const SizedBox(height: 16),
                 Text(
                   'Language: ${provider.selectedLanguage ?? "Not selected"}',
-                  style: const TextStyle(color: Colors.white54),
+                  style: const TextStyle(color: AppColors.textMuted),
                 ),
                 const SizedBox(height: 8),
                 Text(
@@ -378,7 +388,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
                   ? Theme.of(context).colorScheme.secondary
                   : isActive
                       ? Theme.of(context).colorScheme.primary
-                      : Colors.white12,
+                      : AppColors.border,
               shape: BoxShape.circle,
             ),
             child: Center(
@@ -389,7 +399,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
                       style: TextStyle(
                         color: isActive || isCompleted
                             ? Colors.black
-                            : Colors.white54,
+                            : AppColors.textMuted,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -399,7 +409,8 @@ class _GoalsScreenState extends State<GoalsScreen> {
           Text(
             label,
             style: TextStyle(
-              color: isActive || isCompleted ? Colors.white : Colors.white54,
+              color:
+                  isActive || isCompleted ? Colors.white : AppColors.textMuted,
               fontWeight:
                   isActive || isCompleted ? FontWeight.w600 : FontWeight.normal,
             ),
@@ -422,7 +433,10 @@ class _GoalsScreenState extends State<GoalsScreen> {
   Future<void> _continue(
       BuildContext context, OnboardingProvider provider) async {
     await provider.setGoals(_selectedGoals.toList());
-    await provider.setDailyGoal(_dailyGoalMinutes);
+    if (context.mounted &&
+        context.read<SettingsProvider>().progressTrackingEnabled) {
+      await provider.setDailyGoal(_dailyGoalMinutes);
+    }
 
     if (!context.mounted) return;
 

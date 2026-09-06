@@ -1,0 +1,127 @@
+{
+  "courseId": "dutch_en",
+  "words": [
+    {
+      "id": "wod_nl_1",
+      "word": "Vlinder",
+      "translation": "Butterfly",
+      "pronunciation": "/ˈvlɪn.dər/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "De kleurrijke vlinder landt op de bloem.",
+      "exampleTranslation": "The colorful butterfly lands on the flower.",
+      "etymology": "Middle Dutch 'vlinder', related to fluttering motion",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_nl_2",
+      "word": "Gezellig",
+      "translation": "Cozy / Sociable / Convivial",
+      "pronunciation": "/ɣəˈzɛ.ləx/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Het was gisteravond heel gezellig met vrienden.",
+      "exampleTranslation": "It was very cozy and pleasant with friends yesterday evening.",
+      "etymology": "From 'gezel' (companion)",
+      "funFact": "'Gezelligheid' is a quintessential Dutch concept of warmth, togetherness, and comfort with no exact English equivalent.",
+      "category": "Culture",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_nl_3",
+      "word": "Ster",
+      "translation": "Star",
+      "pronunciation": "/stɛr/",
+      "partOfSpeech": "noun (feminine/masculine)",
+      "exampleSentence": "De sterren schijnen helder in de nacht.",
+      "exampleTranslation": "The stars shine brightly in the night.",
+      "etymology": "Proto-Germanic '*sternǭ'",
+      "category": "Space",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_nl_4",
+      "word": "Paraplu",
+      "translation": "Umbrella",
+      "pronunciation": "/ˌpaː.raːˈply/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "Vergeet je paraplu niet, het regent buiten.",
+      "exampleTranslation": "Don't forget your umbrella, it is raining outside.",
+      "etymology": "Borrowed from French 'parapluie'",
+      "category": "Weather",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_nl_5",
+      "word": "Zon",
+      "translation": "Sun",
+      "pronunciation": "/zɔn/",
+      "partOfSpeech": "noun (feminine/masculine)",
+      "exampleSentence": "De zon komt vroeg op in de lente.",
+      "exampleTranslation": "The sun rises early in spring.",
+      "etymology": "Proto-Germanic '*sunnǭ'",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_nl_6",
+      "word": "Kasteel",
+      "translation": "Castle",
+      "pronunciation": "/kɑsˈteːl/",
+      "partOfSpeech": "noun (neuter)",
+      "exampleSentence": "We hebben een oud kasteel in Utrecht bezocht.",
+      "exampleTranslation": "We visited an old castle in Utrecht.",
+      "etymology": "From Latin 'castellum'",
+      "category": "Places",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_nl_7",
+      "word": "Droom",
+      "translation": "Dream",
+      "pronunciation": "/droːm/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "Mijn droom is om over de hele wereld te reizen.",
+      "exampleTranslation": "My dream is to travel all over the world.",
+      "etymology": "Proto-Germanic '*draumaz'",
+      "category": "Abstract",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_nl_8",
+      "word": "Zonnebloem",
+      "translation": "Sunflower",
+      "pronunciation": "/ˈzɔ.nəˌblum/",
+      "partOfSpeech": "noun (feminine/masculine)",
+      "exampleSentence": "Vincent van Gogh schilderde beroemde zonnebloemen.",
+      "exampleTranslation": "Vincent van Gogh painted famous sunflowers.",
+      "etymology": "Compound of 'zon' (sun) and 'bloem' (flower)",
+      "funFact": "The Van Gogh Museum in Amsterdam displays his iconic 'Sunflowers' masterpiece.",
+      "category": "Nature",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_nl_9",
+      "word": "Regenboog",
+      "translation": "Rainbow",
+      "pronunciation": "/ˈreː.ɣə(n)ˌboːx/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "Kijk, er is een prachtige regenboog aan de hemel!",
+      "exampleTranslation": "Look, there is a beautiful rainbow in the sky!",
+      "etymology": "Compound of 'regen' (rain) and 'boog' (bow)",
+      "category": "Nature",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_nl_10",
+      "word": "Hoop",
+      "translation": "Hope",
+      "pronunciation": "/hoːp/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "We houden altijd hoop op betere tijden.",
+      "exampleTranslation": "We always keep hope for better times.",
+      "etymology": "Proto-Germanic '*hōpô'",
+      "category": "Abstract",
+      "difficulty": 1
+    }
+  ]
+}

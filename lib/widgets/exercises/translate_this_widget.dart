@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 class TranslateThisWidget extends StatefulWidget {
   final Exercise exercise;
@@ -51,13 +52,13 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
         children: [
           const Text(
             'Translate to English',
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 16),
           Container(
             padding: const EdgeInsets.all(12.0),
             decoration: BoxDecoration(
-              color: const Color(0xFF2A2A2A),
+              color: AppColors.surfaceRaised,
               borderRadius: BorderRadius.circular(8),
             ),
             child: Text(
@@ -68,7 +69,7 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
           const SizedBox(height: 24),
           const Text(
             'Type the English translation:',
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 12),
           TextField(
@@ -80,9 +81,9 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
               filled: true,
               fillColor: _showFeedback
                   ? (_isCorrect
-                      ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-                      : const Color(0xFFFF4757).withValues(alpha: 0.1))
-                  : const Color(0xFF2A2A2A),
+                      ? AppColors.correct.withValues(alpha: 0.1)
+                      : AppColors.incorrect.withValues(alpha: 0.1))
+                  : AppColors.surfaceRaised,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide.none,
@@ -91,9 +92,7 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect
-                          ? const Color(0xFF00FF85)
-                          : const Color(0xFFFF4757))
+                      ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
                       : Colors.transparent,
                   width: 2,
                 ),
@@ -102,10 +101,8 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect
-                          ? const Color(0xFF00FF85)
-                          : const Color(0xFFFF4757))
-                      : const Color(0xFF00D9FF),
+                      ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
+                      : AppColors.textPrimary,
                   width: 2,
                 ),
               ),
@@ -118,18 +115,14 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect
-                      ? const Color(0xFF00FF85)
-                      : const Color(0xFFFF4757),
+                  color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _isCorrect ? 'Correct!' : 'Incorrect',
                   style: TextStyle(
                     fontSize: 16,
-                    color: _isCorrect
-                        ? const Color(0xFF00FF85)
-                        : const Color(0xFFFF4757),
+                    color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                   ),
                 ),
               ],
@@ -138,7 +131,8 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
               const SizedBox(height: 8),
               Text(
                 'Correct answer: ${widget.exercise.correctAnswer}',
-                style: const TextStyle(fontSize: 14, color: Colors.white70),
+                style: const TextStyle(
+                    fontSize: 14, color: AppColors.textSecondary),
               ),
             ],
           ],
@@ -148,18 +142,7 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
             height: 50,
             child: ElevatedButton(
               onPressed: _showFeedback ? null : _checkAnswer,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
-                foregroundColor: Colors.black,
-                disabledBackgroundColor: const Color(0xFF3A3A3A),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              child: const Text(
-                'CHECK',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
+              child: const Text('Check'),
             ),
           ),
         ],

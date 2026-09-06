@@ -1,0 +1,96 @@
+{
+    "id": "slang",
+    "name": "Slang & Colloquialisms",
+    "description": "Learn informal Spanish expressions",
+    "level": 24,
+    "exercises": [
+        {
+            "id": "ex_sl_1",
+            "type": "matchPairs",
+            "question": "Match slang expressions (Spain)",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Mola",
+                        "native": "Cool/Awesome"
+                    },
+                    {
+                        "target": "Tío/Tía",
+                        "native": "Dude/Buddy"
+                    },
+                    {
+                        "target": "Guay",
+                        "native": "Cool"
+                    },
+                    {
+                        "target": "Currar",
+                        "native": "To work"
+                    },
+                    {
+                        "target": "Flipar",
+                        "native": "To freak out/be amazed"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_sl_2",
+            "type": "translateThis",
+            "question": "¡Qué pasada!",
+            "options": [],
+            "correctAnswer": "How awesome!/Wow!"
+        },
+        {
+            "id": "ex_sl_3",
+            "type": "matchPairs",
+            "question": "Match slang expressions (Latin America)",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Chido (Mexico)",
+                        "native": "Cool"
+                    },
+                    {
+                        "target": "Bacán (South Am.)",
+                        "native": "Great/Cool"
+                    },
+                    {
+                        "target": "Plata",
+                        "native": "Money"
+                    },
+                    {
+                        "target": "Chamba",
+                        "native": "Job/Work"
+                    },
+                    {
+                        "target": "Onda",
+                        "native": "Vibe/Thing"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_sl_4",
+            "type": "multipleChoice",
+            "question": "What does '¿Qué onda?' mean in Mexican Spanish?",
+            "options": [
+                "What's up?",
+                "What wave?",
+                "What sound?",
+                "What do you want?"
+            ],
+            "correctAnswer": "What's up?"
+        },
+        {
+            "id": "ex_sl_5",
+            "type": "speakThis",
+            "question": "No mames, eso está muy padre",
+            "options": [],
+            "correctAnswer": "No mames, eso está muy padre"
+        }
+    ]
+}

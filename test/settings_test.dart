@@ -14,25 +14,25 @@ void main() {
       final provider = SettingsProvider();
       await provider.loadSettings();
 
-      expect(provider.streakMonitoringEnabled, isTrue);
+      expect(provider.progressTrackingEnabled, isFalse);
       expect(provider.notificationsEnabled, isTrue);
       expect(provider.speechRate, 0.5);
     });
 
-    test('updates and persists streak monitoring setting', () async {
+    test('updates and persists progress tracking setting', () async {
       final provider = SettingsProvider();
       await provider.loadSettings();
 
-      await provider.setStreakMonitoringEnabled(false);
-      expect(provider.streakMonitoringEnabled, isFalse);
+      await provider.setProgressTrackingEnabled(true);
+      expect(provider.progressTrackingEnabled, isTrue);
 
       final prefs = await SharedPreferences.getInstance();
-      expect(prefs.getBool('settings_streak_monitoring_enabled'), isFalse);
+      expect(prefs.getBool('settings_progress_tracking_enabled'), isTrue);
 
       // Re-load into fresh provider
       final freshProvider = SettingsProvider();
       await freshProvider.loadSettings();
-      expect(freshProvider.streakMonitoringEnabled, isFalse);
+      expect(freshProvider.progressTrackingEnabled, isTrue);
     });
 
     test('updates notifications and speech rate', () async {

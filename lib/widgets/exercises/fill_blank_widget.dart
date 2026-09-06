@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 class FillBlankWidget extends StatefulWidget {
   final Exercise exercise;
@@ -73,7 +74,7 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
         children: [
           const Text(
             'Fill in the blank',
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 16),
 
@@ -93,16 +94,14 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
                 decoration: BoxDecoration(
                   color: _showFeedback
                       ? (_isCorrect
-                          ? const Color(0xFF00FF85).withValues(alpha: 0.2)
-                          : const Color(0xFFFF4757).withValues(alpha: 0.2))
-                      : const Color(0xFF00D9FF).withValues(alpha: 0.2),
+                          ? AppColors.correct.withValues(alpha: 0.2)
+                          : AppColors.incorrect.withValues(alpha: 0.2))
+                      : AppColors.textPrimary.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(4),
                   border: Border.all(
                     color: _showFeedback
-                        ? (_isCorrect
-                            ? const Color(0xFF00FF85)
-                            : const Color(0xFFFF4757))
-                        : const Color(0xFF00D9FF),
+                        ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
+                        : AppColors.textPrimary,
                     width: 2,
                   ),
                 ),
@@ -129,7 +128,7 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
             // Word bank options
             const Text(
               'Select the correct word:',
-              style: TextStyle(fontSize: 14, color: Colors.white60),
+              style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
             ),
             const SizedBox(height: 16),
             Wrap(
@@ -139,17 +138,16 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
                 final isSelected = _selectedWord == word;
                 final isCorrectAnswer = word == widget.exercise.correctAnswer;
 
-                Color backgroundColor = const Color(0xFF2A2A2A);
+                Color backgroundColor = AppColors.surfaceRaised;
                 Color borderColor = Colors.transparent;
 
                 if (_showFeedback && isCorrectAnswer) {
-                  backgroundColor =
-                      const Color(0xFF00FF85).withValues(alpha: 0.2);
-                  borderColor = const Color(0xFF00FF85);
+                  backgroundColor = AppColors.correct.withValues(alpha: 0.2);
+                  borderColor = AppColors.correct;
                 } else if (isSelected) {
                   backgroundColor =
-                      const Color(0xFF00D9FF).withValues(alpha: 0.2);
-                  borderColor = const Color(0xFF00D9FF);
+                      AppColors.textPrimary.withValues(alpha: 0.2);
+                  borderColor = AppColors.textPrimary;
                 }
 
                 return Material(
@@ -180,7 +178,7 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
               decoration: InputDecoration(
                 hintText: 'Type the missing word',
                 filled: true,
-                fillColor: const Color(0xFF2A2A2A),
+                fillColor: AppColors.surfaceRaised,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide.none,
@@ -196,18 +194,14 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect
-                      ? const Color(0xFF00FF85)
-                      : const Color(0xFFFF4757),
+                  color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _isCorrect ? 'Correct!' : 'Incorrect',
                   style: TextStyle(
                     fontSize: 16,
-                    color: _isCorrect
-                        ? const Color(0xFF00FF85)
-                        : const Color(0xFFFF4757),
+                    color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                   ),
                 ),
               ],
@@ -216,7 +210,8 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
               const SizedBox(height: 8),
               Text(
                 'Correct answer: ${widget.exercise.correctAnswer}',
-                style: const TextStyle(fontSize: 14, color: Colors.white70),
+                style: const TextStyle(
+                    fontSize: 14, color: AppColors.textSecondary),
               ),
             ],
           ],
@@ -230,18 +225,7 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
                   _showFeedback || (_useWordBank && _selectedWord == null)
                       ? null
                       : _checkAnswer,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
-                foregroundColor: Colors.black,
-                disabledBackgroundColor: const Color(0xFF3A3A3A),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              child: const Text(
-                'CHECK',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
+              child: const Text('Check'),
             ),
           ),
         ],

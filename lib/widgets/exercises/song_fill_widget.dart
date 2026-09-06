@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:audioplayers/audioplayers.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 /// Widget for song-fill exercises
 /// Listen to a song and fill in the missing lyrics
@@ -300,11 +301,12 @@ class _SongFillWidgetState extends State<SongFillWidget>
           // Header
           Row(
             children: [
-              const Icon(Icons.music_note, color: Color(0xFFFF6B9D), size: 20),
+              const Icon(Icons.music_note,
+                  color: AppColors.textSecondary, size: 20),
               const SizedBox(width: 8),
               const Text(
                 'Song Fill Exercise',
-                style: TextStyle(fontSize: 14, color: Colors.white60),
+                style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
               ),
               const Spacer(),
               if (_playCount > 0)
@@ -312,19 +314,19 @@ class _SongFillWidgetState extends State<SongFillWidget>
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFFF6B9D).withValues(alpha: 0.2),
+                    color: AppColors.textSecondary.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       const Icon(Icons.replay,
-                          size: 14, color: Color(0xFFFF6B9D)),
+                          size: 14, color: AppColors.textSecondary),
                       const SizedBox(width: 4),
                       Text(
                         '$_playCount',
                         style: const TextStyle(
-                            fontSize: 12, color: Color(0xFFFF6B9D)),
+                            fontSize: 12, color: AppColors.textSecondary),
                       ),
                     ],
                   ),
@@ -339,15 +341,15 @@ class _SongFillWidgetState extends State<SongFillWidget>
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  const Color(0xFFFF6B9D).withValues(alpha: 0.2),
-                  const Color(0xFF9D4EDD).withValues(alpha: 0.2),
+                  AppColors.textSecondary.withValues(alpha: 0.2),
+                  AppColors.textSecondary.withValues(alpha: 0.2),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: const Color(0xFFFF6B9D).withValues(alpha: 0.3),
+                color: AppColors.textSecondary.withValues(alpha: 0.3),
               ),
             ),
             child: Column(
@@ -359,12 +361,12 @@ class _SongFillWidgetState extends State<SongFillWidget>
                       width: 60,
                       height: 60,
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFF6B9D).withValues(alpha: 0.3),
+                        color: AppColors.textSecondary.withValues(alpha: 0.3),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: const Icon(
                         Icons.album,
-                        color: Color(0xFFFF6B9D),
+                        color: AppColors.textSecondary,
                         size: 36,
                       ),
                     ),
@@ -387,7 +389,7 @@ class _SongFillWidgetState extends State<SongFillWidget>
                             _artist,
                             style: const TextStyle(
                               fontSize: 14,
-                              color: Colors.white60,
+                              color: AppColors.textSecondary,
                             ),
                           ),
                         ],
@@ -404,7 +406,7 @@ class _SongFillWidgetState extends State<SongFillWidget>
                       Text(
                         _formatDuration(_position),
                         style: const TextStyle(
-                            fontSize: 12, color: Colors.white60),
+                            fontSize: 12, color: AppColors.textSecondary),
                       ),
                       Expanded(
                         child: Slider(
@@ -416,14 +418,14 @@ class _SongFillWidgetState extends State<SongFillWidget>
                             );
                             await _audioPlayer.seek(position);
                           },
-                          activeColor: const Color(0xFFFF6B9D),
-                          inactiveColor: Colors.white24,
+                          activeColor: AppColors.textSecondary,
+                          inactiveColor: AppColors.border,
                         ),
                       ),
                       Text(
                         _formatDuration(_duration),
                         style: const TextStyle(
-                            fontSize: 12, color: Colors.white60),
+                            fontSize: 12, color: AppColors.textSecondary),
                       ),
                     ],
                   ),
@@ -436,7 +438,8 @@ class _SongFillWidgetState extends State<SongFillWidget>
                   children: [
                     IconButton(
                       onPressed: _restart,
-                      icon: const Icon(Icons.replay, color: Colors.white70),
+                      icon: const Icon(Icons.replay,
+                          color: AppColors.textSecondary),
                     ),
                     const SizedBox(width: 16),
                     IconButton(
@@ -445,14 +448,15 @@ class _SongFillWidgetState extends State<SongFillWidget>
                         _isPlaying
                             ? Icons.pause_circle_filled
                             : Icons.play_circle_filled,
-                        color: const Color(0xFFFF6B9D),
+                        color: AppColors.textSecondary,
                         size: 52,
                       ),
                     ),
                     const SizedBox(width: 16),
                     IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.skip_next, color: Colors.white70),
+                      icon: const Icon(Icons.skip_next,
+                          color: AppColors.textSecondary),
                     ),
                   ],
                 ),
@@ -476,7 +480,7 @@ class _SongFillWidgetState extends State<SongFillWidget>
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFF2A2A2A),
+                color: AppColors.surfaceRaised,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: ListView.builder(
@@ -494,11 +498,11 @@ class _SongFillWidgetState extends State<SongFillWidget>
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: isCurrentLine
-                          ? const Color(0xFFFF6B9D).withValues(alpha: 0.2)
+                          ? AppColors.textSecondary.withValues(alpha: 0.2)
                           : Colors.transparent,
                       borderRadius: BorderRadius.circular(8),
                       border: isCurrentLine
-                          ? Border.all(color: const Color(0xFFFF6B9D))
+                          ? Border.all(color: AppColors.textSecondary)
                           : null,
                     ),
                     child: Column(
@@ -511,7 +515,7 @@ class _SongFillWidgetState extends State<SongFillWidget>
                             line.translation!,
                             style: const TextStyle(
                               fontSize: 12,
-                              color: Colors.white38,
+                              color: AppColors.textDisabled,
                               fontStyle: FontStyle.italic,
                             ),
                           ),
@@ -532,22 +536,18 @@ class _SongFillWidgetState extends State<SongFillWidget>
               margin: const EdgeInsets.only(bottom: 12),
               decoration: BoxDecoration(
                 color: _isCorrect
-                    ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-                    : const Color(0xFFFF4757).withValues(alpha: 0.1),
+                    ? AppColors.correct.withValues(alpha: 0.1)
+                    : AppColors.incorrect.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                  color: _isCorrect
-                      ? const Color(0xFF00FF85)
-                      : const Color(0xFFFF4757),
+                  color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                 ),
               ),
               child: Row(
                 children: [
                   Icon(
                     _isCorrect ? Icons.check_circle : Icons.close,
-                    color: _isCorrect
-                        ? const Color(0xFF00FF85)
-                        : const Color(0xFFFF4757),
+                    color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -557,8 +557,8 @@ class _SongFillWidgetState extends State<SongFillWidget>
                           : 'Some answers are incorrect. Check the highlighted words.',
                       style: TextStyle(
                         color: _isCorrect
-                            ? const Color(0xFF00FF85)
-                            : const Color(0xFFFF4757),
+                            ? AppColors.correct
+                            : AppColors.incorrect,
                       ),
                     ),
                   ),
@@ -571,13 +571,13 @@ class _SongFillWidgetState extends State<SongFillWidget>
             child: ElevatedButton(
               onPressed: _showFeedback ? null : _checkAnswers,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFFFF6B9D),
+                backgroundColor: AppColors.textSecondary,
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
-                disabledBackgroundColor: Colors.white24,
+                disabledBackgroundColor: AppColors.border,
               ),
               child: const Text(
                 'Check Answers',
@@ -628,13 +628,13 @@ class _SongFillWidgetState extends State<SongFillWidget>
               style: const TextStyle(fontSize: 14),
               decoration: InputDecoration(
                 hintText: blank.hint ?? '____',
-                hintStyle: const TextStyle(color: Colors.white38),
+                hintStyle: const TextStyle(color: AppColors.textDisabled),
                 filled: true,
                 fillColor: showFeedbackForBlank
                     ? (isCorrectAnswer == true
-                        ? const Color(0xFF00FF85).withValues(alpha: 0.2)
-                        : const Color(0xFFFF4757).withValues(alpha: 0.2))
-                    : const Color(0xFF3A3A3A),
+                        ? AppColors.correct.withValues(alpha: 0.2)
+                        : AppColors.incorrect.withValues(alpha: 0.2))
+                    : AppColors.surfaceRaised,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(4),
                   borderSide: BorderSide.none,
@@ -644,8 +644,8 @@ class _SongFillWidgetState extends State<SongFillWidget>
                   borderSide: BorderSide(
                     color: showFeedbackForBlank
                         ? (isCorrectAnswer == true
-                            ? const Color(0xFF00FF85)
-                            : const Color(0xFFFF4757))
+                            ? AppColors.correct
+                            : AppColors.incorrect)
                         : Colors.transparent,
                     width: 2,
                   ),
@@ -653,7 +653,7 @@ class _SongFillWidgetState extends State<SongFillWidget>
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(4),
                   borderSide: const BorderSide(
-                    color: Color(0xFFFF6B9D),
+                    color: AppColors.textSecondary,
                     width: 2,
                   ),
                 ),
@@ -667,7 +667,7 @@ class _SongFillWidgetState extends State<SongFillWidget>
                         child: const Icon(
                           Icons.info_outline,
                           size: 16,
-                          color: Color(0xFFFF4757),
+                          color: AppColors.incorrect,
                         ),
                       )
                     : null,

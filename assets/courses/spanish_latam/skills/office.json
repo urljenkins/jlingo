@@ -1,0 +1,100 @@
+{
+    "id": "office",
+    "name": "Office Vocabulary",
+    "description": "Learn vocabulary for the workplace",
+    "level": 19,
+    "exercises": [
+        {
+            "id": "ex_off_1",
+            "type": "matchPairs",
+            "question": "Match office vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "La oficina",
+                        "native": "The office"
+                    },
+                    {
+                        "target": "El jefe",
+                        "native": "The boss"
+                    },
+                    {
+                        "target": "El colega",
+                        "native": "The colleague"
+                    },
+                    {
+                        "target": "La reunión",
+                        "native": "The meeting"
+                    },
+                    {
+                        "target": "El sueldo",
+                        "native": "The salary"
+                    },
+                    {
+                        "target": "Las vacaciones",
+                        "native": "The vacation"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_off_2",
+            "type": "translateThis",
+            "question": "Tenemos una reunión a las diez",
+            "options": [],
+            "correctAnswer": "We have a meeting at ten"
+        },
+        {
+            "id": "ex_off_3",
+            "type": "fillInBlank",
+            "question": "Necesito enviar este ___ por email",
+            "options": [
+                "documento",
+                "oficina",
+                "reunión",
+                "jefe"
+            ],
+            "correctAnswer": "documento"
+        },
+        {
+            "id": "ex_off_4",
+            "type": "matchPairs",
+            "question": "Match more office terms",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "El escritorio",
+                        "native": "The desk"
+                    },
+                    {
+                        "target": "El ordenador",
+                        "native": "The computer"
+                    },
+                    {
+                        "target": "La impresora",
+                        "native": "The printer"
+                    },
+                    {
+                        "target": "El archivo",
+                        "native": "The file"
+                    },
+                    {
+                        "target": "La contraseña",
+                        "native": "The password"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_off_5",
+            "type": "speakThis",
+            "question": "¿Puedo trabajar desde casa mañana?",
+            "options": [],
+            "correctAnswer": "¿Puedo trabajar desde casa mañana?"
+        }
+    ]
+}

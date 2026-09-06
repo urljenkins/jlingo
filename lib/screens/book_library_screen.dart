@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../providers/book_provider.dart';
 import '../models/book.dart';
 import 'book_reader_screen.dart';
+import '../theme/app_colors.dart';
 
 class BookLibraryScreen extends StatefulWidget {
   const BookLibraryScreen({super.key});
@@ -70,8 +71,6 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Library'),
-        backgroundColor: const Color(0xFF0D0D0D),
-        elevation: 0,
         actions: [
           IconButton(
             icon: const Icon(Icons.bookmark),
@@ -152,7 +151,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
           _selectedDifficulty = selected ? difficulty : null;
         });
       },
-      selectedColor: const Color(0xFF00D9FF),
+      selectedColor: AppColors.textPrimary,
       labelStyle: TextStyle(
         color: isSelected ? Colors.black : Colors.white,
       ),
@@ -193,7 +192,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
       onTap: () => _openBook(book),
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: const Color(0xFF1A1A1A),
+          color: AppColors.surface,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: Colors.white.withValues(alpha: 0.1),
@@ -230,7 +229,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
                           _buildLanguageBadge(book.originalLanguage),
                           const SizedBox(width: 4),
                           const Icon(Icons.swap_horiz,
-                              size: 16, color: Colors.white70),
+                              size: 16, color: AppColors.textSecondary),
                           const SizedBox(width: 4),
                           _buildLanguageBadge(book.translatedLanguage),
                         ],
@@ -313,7 +312,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
                         value: progress / 100,
                         backgroundColor: Colors.white.withValues(alpha: 0.1),
                         valueColor: const AlwaysStoppedAnimation<Color>(
-                            Color(0xFF00D9FF)),
+                            AppColors.textPrimary),
                       ),
                       const SizedBox(height: 4),
                       Text(
@@ -371,13 +370,13 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
   Color _getDifficultyColor(String difficulty) {
     switch (difficulty.toLowerCase()) {
       case 'beginner':
-        return const Color(0xFF00FF85);
+        return AppColors.textSecondary;
       case 'intermediate':
-        return const Color(0xFF00D9FF);
+        return AppColors.textPrimary;
       case 'advanced':
-        return const Color(0xFFFF6B6B);
+        return AppColors.textSecondary;
       default:
-        return Colors.white70;
+        return AppColors.textSecondary;
     }
   }
 
@@ -385,7 +384,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
     final provider = context.read<BookProvider>();
     unawaited(showModalBottomSheet<void>(
       context: context,
-      backgroundColor: const Color(0xFF1A1A1A),
+      backgroundColor: AppColors.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
@@ -460,7 +459,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
                         ),
                         trailing: IconButton(
                           icon: const Icon(Icons.delete_outline,
-                              color: Colors.white54),
+                              color: AppColors.textMuted),
                           onPressed: () {
                             provider.removeWord(word);
                             if (mounted) {

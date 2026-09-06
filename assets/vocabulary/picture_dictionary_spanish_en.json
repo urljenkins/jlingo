@@ -1,0 +1,116 @@
+{
+  "id": "spanish_dict",
+  "name": "Diccionario Visual Español",
+  "targetLanguage": "es-ES",
+  "nativeLanguage": "en-US",
+  "topics": [
+    {
+      "id": "topic_food",
+      "name": "Comida y Bebida",
+      "description": "Vocabulario esencial de alimentos y bebidas",
+      "iconName": "restaurant",
+      "coverImageUrl": "assets/images/topics/food.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_pan",
+          "word": "pan",
+          "translation": "Bread",
+          "pronunciation": "/pan/",
+          "imageUrl": "assets/images/dict/pan.png",
+          "article": "el",
+          "pluralForm": "los panes",
+          "relatedWords": ["panadería", "tostada", "harina"],
+          "usageNote": "Elemento básico en las comidas diarias."
+        },
+        {
+          "id": "pde_manzana",
+          "word": "manzana",
+          "translation": "Apple",
+          "pronunciation": "/manˈsa.na/",
+          "imageUrl": "assets/images/dict/manzana.png",
+          "article": "la",
+          "pluralForm": "las manzanas",
+          "relatedWords": ["fruta", "rojo", "árbol"],
+          "usageNote": "También puede significar una cuadra o bloque urbano."
+        },
+        {
+          "id": "pde_leche",
+          "word": "leche",
+          "translation": "Milk",
+          "pronunciation": "/ˈle.tʃe/",
+          "imageUrl": "assets/images/dict/leche.png",
+          "article": "la",
+          "pluralForm": "las leches",
+          "relatedWords": ["vaca", "queso", "café"],
+          "usageNote": "Común en el desayuno, como en 'café con leche'."
+        },
+        {
+          "id": "pde_agua",
+          "word": "agua",
+          "translation": "Water",
+          "pronunciation": "/ˈa.ɣwa/",
+          "imageUrl": "assets/images/dict/agua.png",
+          "article": "el",
+          "pluralForm": "las aguas",
+          "relatedWords": ["beber", "vaso", "río"],
+          "usageNote": "Toma el artículo 'el' en singular por empezar con 'a' tónica, pero es femenino."
+        }
+      ]
+    },
+    {
+      "id": "topic_family",
+      "name": "La Familia",
+      "description": "Miembros de la familia y el hogar",
+      "iconName": "people",
+      "coverImageUrl": "assets/images/topics/family.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_madre",
+          "word": "madre",
+          "translation": "Mother",
+          "pronunciation": "/ˈma.ðɾe/",
+          "imageUrl": "assets/images/dict/madre.png",
+          "article": "la",
+          "pluralForm": "las madres",
+          "relatedWords": ["mamá", "padre", "hijos"],
+          "usageNote": "'Mamá' es la forma afectiva cotidiana."
+        },
+        {
+          "id": "pde_padre",
+          "word": "padre",
+          "translation": "Father",
+          "pronunciation": "/ˈpa.ðɾe/",
+          "imageUrl": "assets/images/dict/padre.png",
+          "article": "el",
+          "pluralForm": "los padres",
+          "relatedWords": ["papá", "madre", "hijos"],
+          "usageNote": "En plural, 'los padres' puede referirse a ambos progenitores."
+        },
+        {
+          "id": "pde_hermano",
+          "word": "hermano",
+          "translation": "Brother",
+          "pronunciation": "/eɾˈma.no/",
+          "imageUrl": "assets/images/dict/hermano.png",
+          "article": "el",
+          "pluralForm": "los hermanos",
+          "relatedWords": ["hermana", "familia"],
+          "usageNote": "'Los hermanos' abarca hermanos y hermanas juntos."
+        },
+        {
+          "id": "pde_abuelo",
+          "word": "abuelo",
+          "translation": "Grandfather",
+          "pronunciation": "/aˈβwe.lo/",
+          "imageUrl": "assets/images/dict/abuelo.png",
+          "article": "el",
+          "pluralForm": "los abuelos",
+          "relatedWords": ["abuela", "nietos", "familia"],
+          "usageNote": "Forma afectiva: 'abuelito'."
+        }
+      ]
+    }
+  ]
+}

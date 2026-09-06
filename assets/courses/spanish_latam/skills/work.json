@@ -1,0 +1,81 @@
+{
+    "id": "work",
+    "name": "Work & Profession",
+    "description": "Learn vocabulary for jobs and careers",
+    "level": 19,
+    "exercises": [
+        {
+            "id": "ex_wk_1",
+            "type": "multipleChoice",
+            "question": "How do you ask 'What do you do for work?'",
+            "options": [
+                "¿A qué te dedicas?",
+                "¿Dónde vives?",
+                "¿Cómo estás?",
+                "¿Qué comes?"
+            ],
+            "correctAnswer": "¿A qué te dedicas?"
+        },
+        {
+            "id": "ex_wk_2",
+            "type": "matchPairs",
+            "question": "Match professions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Abogado/a",
+                        "native": "Lawyer"
+                    },
+                    {
+                        "target": "Médico/a",
+                        "native": "Doctor"
+                    },
+                    {
+                        "target": "Ingeniero/a",
+                        "native": "Engineer"
+                    },
+                    {
+                        "target": "Profesor/a",
+                        "native": "Teacher"
+                    },
+                    {
+                        "target": "Enfermero/a",
+                        "native": "Nurse"
+                    },
+                    {
+                        "target": "Contador/a",
+                        "native": "Accountant"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_wk_3",
+            "type": "translateThis",
+            "question": "Trabajo en una empresa de tecnología",
+            "options": [],
+            "correctAnswer": "I work at a technology company"
+        },
+        {
+            "id": "ex_wk_4",
+            "type": "fillInBlank",
+            "question": "Estoy buscando ___ nuevo",
+            "options": [
+                "trabajo",
+                "trabajar",
+                "trabajando",
+                "trabaja"
+            ],
+            "correctAnswer": "trabajo"
+        },
+        {
+            "id": "ex_wk_5",
+            "type": "speakThis",
+            "question": "Soy programador y trabajo desde casa",
+            "options": [],
+            "correctAnswer": "Soy programador y trabajo desde casa"
+        }
+    ]
+}

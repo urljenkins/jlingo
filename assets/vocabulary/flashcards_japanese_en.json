@@ -1,0 +1,89 @@
+{
+  "id": "japanese_flashcards",
+  "name": "Japanese Core Vocabulary",
+  "description": "Essential Japanese words and phrases with spaced repetition",
+  "targetLanguage": "ja-JP",
+  "nativeLanguage": "en-US",
+  "cards": [
+    {
+      "id": "fc_ja_1",
+      "front": "こんにちは (Konnichiwa)",
+      "back": "Hello / Good day",
+      "pronunciation": "/koɲ.ɲi.tɕi.wa/",
+      "exampleSentence": "こんにちは、お元気ですか？",
+      "exampleTranslation": "Hello, how are you?",
+      "category": "Greetings",
+      "tags": ["basic", "essential"]
+    },
+    {
+      "id": "fc_ja_2",
+      "front": "おはようございます (Ohayō gozaimasu)",
+      "back": "Good morning",
+      "pronunciation": "/o.ha.joː ɡo.za.i.ma.sɯ/",
+      "exampleSentence": "皆さん、おはようございます！",
+      "exampleTranslation": "Good morning, everyone!",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_ja_3",
+      "front": "ありがとうございます (Arigatō gozaimasu)",
+      "back": "Thank you very much",
+      "pronunciation": "/a.ɾi.ɡa.toː ɡo.za.i.ma.sɯ/",
+      "exampleSentence": "ご親切にありがとうございます。",
+      "exampleTranslation": "Thank you very much for your kindness.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_ja_4",
+      "front": "どういたしまして (Dō itashimashite)",
+      "back": "You're welcome",
+      "pronunciation": "/doː i.ta.ɕi.ma.ɕi.te/",
+      "exampleSentence": "いえいえ、どういたしまして。",
+      "exampleTranslation": "No problem, you're welcome.",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_ja_5",
+      "front": "お願いします (Onegaishimasu)",
+      "back": "Please (request)",
+      "pronunciation": "/o.ne.ɡa.i.ɕi.ma.sɯ/",
+      "exampleSentence": "お水を一杯お願いします。",
+      "exampleTranslation": "A glass of water, please.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_ja_6",
+      "front": "はじめまして (Hajimemashite)",
+      "back": "Nice to meet you",
+      "pronunciation": "/ha.dʑi.me.ma.ɕi.te/",
+      "exampleSentence": "はじめまして、田中と申します。",
+      "exampleTranslation": "Nice to meet you, my name is Tanaka.",
+      "category": "Introductions",
+      "tags": ["basic", "introductions"]
+    },
+    {
+      "id": "fc_ja_7",
+      "front": "水 (Mizu)",
+      "back": "Water",
+      "pronunciation": "/mi.zɯ/",
+      "exampleSentence": "冷たい水を飲みたいです。",
+      "exampleTranslation": "I want to drink cold water.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    },
+    {
+      "id": "fc_ja_8",
+      "front": "パン (Pan)",
+      "back": "Bread",
+      "pronunciation": "/paɴ/",
+      "exampleSentence": "朝食に焼きたてのパンを食べます。",
+      "exampleTranslation": "I eat freshly baked bread for breakfast.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    }
+  ]
+}

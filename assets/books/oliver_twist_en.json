@@ -26,25 +26,105 @@
           "id": "ch1_p1",
           "originalText_english": "Among other public buildings in a certain town, there is one anciently common to most towns, great or small: to wit, a workhouse. In this workhouse was born, on a day and date which I need not trouble myself to repeat, the item of mortality whose name is prefixed to the head of this chapter.",
           "translatedText_english": "Entre otros edificios públicos de cierta ciudad, hay uno que desde la antigüedad ha sido común a la mayoría de las ciudades, grandes o pequeñas: a saber, un asilo de pobres. En este asilo nació, en un día y fecha que no necesito molestarme en repetir, el ser mortal cuyo nombre encabeza este capítulo.",
-          "vocabularyWords_english": ["public", "buildings", "anciently", "common", "workhouse", "mortality", "prefixed"]
+          "vocabularyWords_english": [
+            "public",
+            "buildings",
+            "anciently",
+            "common",
+            "workhouse",
+            "mortality",
+            "prefixed"
+          ],
+          "originalText": "Among other public buildings in a certain town, there is one anciently common to most towns, great or small: to wit, a workhouse. In this workhouse was born, on a day and date which I need not trouble myself to repeat, the item of mortality whose name is prefixed to the head of this chapter.",
+          "translatedText": "Entre otros edificios públicos de cierta ciudad, hay uno que desde la antigüedad ha sido común a la mayoría de las ciudades, grandes o pequeñas: a saber, un asilo de pobres. En este asilo nació, en un día y fecha que no necesito molestarme en repetir, el ser mortal cuyo nombre encabeza este capítulo.",
+          "vocabularyWords": [
+            "public",
+            "buildings",
+            "anciently",
+            "common",
+            "workhouse",
+            "mortality",
+            "prefixed"
+          ]
         },
         {
           "id": "ch1_p2",
           "originalText_english": "For a long time after it was ushered into this world of sorrow and trouble, by the parish surgeon, it remained a matter of considerable doubt whether the child would survive to bear any name at all. The fact is, that there was considerable difficulty in inducing Oliver to take upon himself the office of respiration.",
           "translatedText_english": "Durante mucho tiempo después de que fue traído a este mundo de pena y dificultades, por el cirujano parroquial, quedó como una cuestión de considerable duda si el niño sobreviviría para llevar algún nombre. El hecho es que hubo una considerable dificultad en inducir a Oliver a asumir la función de la respiración.",
-          "vocabularyWords_english": ["ushered", "sorrow", "parish", "surgeon", "considerable", "survive", "inducing", "respiration"]
+          "vocabularyWords_english": [
+            "ushered",
+            "sorrow",
+            "parish",
+            "surgeon",
+            "considerable",
+            "survive",
+            "inducing",
+            "respiration"
+          ],
+          "originalText": "For a long time after it was ushered into this world of sorrow and trouble, by the parish surgeon, it remained a matter of considerable doubt whether the child would survive to bear any name at all. The fact is, that there was considerable difficulty in inducing Oliver to take upon himself the office of respiration.",
+          "translatedText": "Durante mucho tiempo después de que fue traído a este mundo de pena y dificultades, por el cirujano parroquial, quedó como una cuestión de considerable duda si el niño sobreviviría para llevar algún nombre. El hecho es que hubo una considerable dificultad en inducir a Oliver a asumir la función de la respiración.",
+          "vocabularyWords": [
+            "ushered",
+            "sorrow",
+            "parish",
+            "surgeon",
+            "considerable",
+            "survive",
+            "inducing",
+            "respiration"
+          ]
         },
         {
           "id": "ch1_p3",
           "originalText_english": "Oliver cried lustily. If he could have known that he was an orphan, left to the tender mercies of church-wardens and overseers, perhaps he would have cried the louder. He was wrapped in the blanket which had hitherto formed his only covering, and fell asleep.",
           "translatedText_english": "Oliver lloró con fuerza. Si hubiera podido saber que era un huérfano, dejado a la tierna merced de los concejales parroquiales y los supervisores, quizás habría llorado aún más fuerte. Fue envuelto en la manta que hasta entonces había formado su única cubierta, y se quedó dormido.",
-          "vocabularyWords_english": ["lustily", "orphan", "tender", "mercies", "overseers", "wrapped", "blanket", "hitherto"]
+          "vocabularyWords_english": [
+            "lustily",
+            "orphan",
+            "tender",
+            "mercies",
+            "overseers",
+            "wrapped",
+            "blanket",
+            "hitherto"
+          ],
+          "originalText": "Oliver cried lustily. If he could have known that he was an orphan, left to the tender mercies of church-wardens and overseers, perhaps he would have cried the louder. He was wrapped in the blanket which had hitherto formed his only covering, and fell asleep.",
+          "translatedText": "Oliver lloró con fuerza. Si hubiera podido saber que era un huérfano, dejado a la tierna merced de los concejales parroquiales y los supervisores, quizás habría llorado aún más fuerte. Fue envuelto en la manta que hasta entonces había formado su única cubierta, y se quedó dormido.",
+          "vocabularyWords": [
+            "lustily",
+            "orphan",
+            "tender",
+            "mercies",
+            "overseers",
+            "wrapped",
+            "blanket",
+            "hitherto"
+          ]
         },
         {
           "id": "ch1_p4",
           "originalText_english": "The hungry and destitute situation of the infant orphans was such that one of them was bold enough to rise from the table and, advancing to the master with his bowl and spoon in hand, said in a trembling voice: \"Please, sir, I want some more.\"",
           "translatedText_english": "La situación hambrienta y miserable de los huérfanos era tal que uno de ellos fue lo bastante atrevido como para levantarse de la mesa y, avanzando hacia el director con su tazón y cuchara en mano, dijo con voz temblorosa: \"Por favor, señor, quiero un poco más.\"",
-          "vocabularyWords_english": ["hungry", "destitute", "bold", "advancing", "bowl", "spoon", "trembling"]
+          "vocabularyWords_english": [
+            "hungry",
+            "destitute",
+            "bold",
+            "advancing",
+            "bowl",
+            "spoon",
+            "trembling"
+          ],
+          "originalText": "The hungry and destitute situation of the infant orphans was such that one of them was bold enough to rise from the table and, advancing to the master with his bowl and spoon in hand, said in a trembling voice: \"Please, sir, I want some more.\"",
+          "translatedText": "La situación hambrienta y miserable de los huérfanos era tal que uno de ellos fue lo bastante atrevido como para levantarse de la mesa y, avanzando hacia el director con su tazón y cuchara en mano, dijo con voz temblorosa: \"Por favor, señor, quiero un poco más.\"",
+          "vocabularyWords": [
+            "hungry",
+            "destitute",
+            "bold",
+            "advancing",
+            "bowl",
+            "spoon",
+            "trembling"
+          ]
         }
       ]
     },
@@ -57,25 +137,91 @@
           "id": "ch2_p1",
           "originalText_english": "Oliver reached the stile at which the by-path led to the high road. It was eight o'clock now. Though he was nearly five miles away from the town, he ran, and hid behind the hedges, by turns, till noon: fearing that he might be pursued and overtaken.",
           "translatedText_english": "Oliver alcanzó el escalón del cercado donde el sendero llevaba a la carretera principal. Eran las ocho. Aunque estaba a casi cinco millas de la ciudad, corrió y se escondió detrás de los setos, alternando, hasta el mediodía: temiendo que pudieran perseguirlo y alcanzarlo.",
-          "vocabularyWords_english": ["stile", "by-path", "high road", "hedges", "pursued", "overtaken"]
+          "vocabularyWords_english": [
+            "stile",
+            "by-path",
+            "high road",
+            "hedges",
+            "pursued",
+            "overtaken"
+          ],
+          "originalText": "Oliver reached the stile at which the by-path led to the high road. It was eight o'clock now. Though he was nearly five miles away from the town, he ran, and hid behind the hedges, by turns, till noon: fearing that he might be pursued and overtaken.",
+          "translatedText": "Oliver alcanzó el escalón del cercado donde el sendero llevaba a la carretera principal. Eran las ocho. Aunque estaba a casi cinco millas de la ciudad, corrió y se escondió detrás de los setos, alternando, hasta el mediodía: temiendo que pudieran perseguirlo y alcanzarlo.",
+          "vocabularyWords": [
+            "stile",
+            "by-path",
+            "high road",
+            "hedges",
+            "pursued",
+            "overtaken"
+          ]
         },
         {
           "id": "ch2_p2",
           "originalText_english": "He sat down to rest by the side of the milestone, and began to think, for the first time, where he had better go and try to live. The stone by which he was seated bore, in large characters, an intimation that it was just seventy miles from that spot to London.",
           "translatedText_english": "Se sentó a descansar junto al mojón de la carretera, y comenzó a pensar, por primera vez, adónde sería mejor ir y tratar de vivir. La piedra junto a la cual estaba sentado llevaba, en caracteres grandes, una indicación de que estaba a solo setenta millas de aquel lugar a Londres.",
-          "vocabularyWords_english": ["milestone", "rest", "intimation", "characters", "spot"]
+          "vocabularyWords_english": [
+            "milestone",
+            "rest",
+            "intimation",
+            "characters",
+            "spot"
+          ],
+          "originalText": "He sat down to rest by the side of the milestone, and began to think, for the first time, where he had better go and try to live. The stone by which he was seated bore, in large characters, an intimation that it was just seventy miles from that spot to London.",
+          "translatedText": "Se sentó a descansar junto al mojón de la carretera, y comenzó a pensar, por primera vez, adónde sería mejor ir y tratar de vivir. La piedra junto a la cual estaba sentado llevaba, en caracteres grandes, una indicación de que estaba a solo setenta millas de aquel lugar a Londres.",
+          "vocabularyWords": [
+            "milestone",
+            "rest",
+            "intimation",
+            "characters",
+            "spot"
+          ]
         },
         {
           "id": "ch2_p3",
           "originalText_english": "The name awakened a new train of ideas in the boy's mind. London — that great place! Nobody, not even Mr. Bumble, could ever find him there! He had often heard the old men in the workhouse talk about London. They said it was the place where clever boys might make their fortunes.",
           "translatedText_english": "El nombre despertó una nueva serie de ideas en la mente del muchacho. ¡Londres — ese gran lugar! Nadie, ni siquiera el señor Bumble, podría encontrarlo allí jamás. A menudo había oído a los ancianos del asilo hablar de Londres. Decían que era el lugar donde los chicos listos podían hacer fortuna.",
-          "vocabularyWords_english": ["awakened", "train of ideas", "clever", "fortunes"]
+          "vocabularyWords_english": [
+            "awakened",
+            "train of ideas",
+            "clever",
+            "fortunes"
+          ],
+          "originalText": "The name awakened a new train of ideas in the boy's mind. London — that great place! Nobody, not even Mr. Bumble, could ever find him there! He had often heard the old men in the workhouse talk about London. They said it was the place where clever boys might make their fortunes.",
+          "translatedText": "El nombre despertó una nueva serie de ideas en la mente del muchacho. ¡Londres — ese gran lugar! Nadie, ni siquiera el señor Bumble, podría encontrarlo allí jamás. A menudo había oído a los ancianos del asilo hablar de Londres. Decían que era el lugar donde los chicos listos podían hacer fortuna.",
+          "vocabularyWords": [
+            "awakened",
+            "train of ideas",
+            "clever",
+            "fortunes"
+          ]
         },
         {
           "id": "ch2_p4",
           "originalText_english": "Oliver walked twenty miles that day, and all that time tasted nothing but dry bread and a few draughts of water, which he begged at the cottage doors by the road-side. When the night came, he turned into a meadow, and creeping close under a haystack, determined to lie there until morning.",
           "translatedText_english": "Oliver caminó veinte millas ese día, y durante todo ese tiempo no probó nada más que pan seco y unos pocos tragos de agua, que pidió en las puertas de las casitas al borde del camino. Cuando llegó la noche, se metió en un prado, y arrastrándose junto a un pajar, decidió quedarse allí hasta la mañana.",
-          "vocabularyWords_english": ["tasted", "bread", "draughts", "begged", "cottage", "meadow", "creeping", "haystack"]
+          "vocabularyWords_english": [
+            "tasted",
+            "bread",
+            "draughts",
+            "begged",
+            "cottage",
+            "meadow",
+            "creeping",
+            "haystack"
+          ],
+          "originalText": "Oliver walked twenty miles that day, and all that time tasted nothing but dry bread and a few draughts of water, which he begged at the cottage doors by the road-side. When the night came, he turned into a meadow, and creeping close under a haystack, determined to lie there until morning.",
+          "translatedText": "Oliver caminó veinte millas ese día, y durante todo ese tiempo no probó nada más que pan seco y unos pocos tragos de agua, que pidió en las puertas de las casitas al borde del camino. Cuando llegó la noche, se metió en un prado, y arrastrándose junto a un pajar, decidió quedarse allí hasta la mañana.",
+          "vocabularyWords": [
+            "tasted",
+            "bread",
+            "draughts",
+            "begged",
+            "cottage",
+            "meadow",
+            "creeping",
+            "haystack"
+          ]
         }
       ]
     },
@@ -88,25 +234,101 @@
           "id": "ch3_p1",
           "originalText_english": "A dirtier or more wretched place he had never seen. The street was very narrow and muddy, and the air was impregnated with filthy odours. There were a good many small shops; but the only stock in trade appeared to be heaps of children, who were crawling in and out at the doors.",
           "translatedText_english": "Un lugar más sucio o más miserable nunca lo había visto. La calle era muy estrecha y fangosa, y el aire estaba impregnado de olores inmundos. Había bastantes tiendas pequeñas; pero la única mercancía parecían ser montones de niños, que entraban y salían gateando por las puertas.",
-          "vocabularyWords_english": ["wretched", "narrow", "muddy", "impregnated", "filthy", "odours", "stock in trade", "crawling"]
+          "vocabularyWords_english": [
+            "wretched",
+            "narrow",
+            "muddy",
+            "impregnated",
+            "filthy",
+            "odours",
+            "stock in trade",
+            "crawling"
+          ],
+          "originalText": "A dirtier or more wretched place he had never seen. The street was very narrow and muddy, and the air was impregnated with filthy odours. There were a good many small shops; but the only stock in trade appeared to be heaps of children, who were crawling in and out at the doors.",
+          "translatedText": "Un lugar más sucio o más miserable nunca lo había visto. La calle era muy estrecha y fangosa, y el aire estaba impregnado de olores inmundos. Había bastantes tiendas pequeñas; pero la única mercancía parecían ser montones de niños, que entraban y salían gateando por las puertas.",
+          "vocabularyWords": [
+            "wretched",
+            "narrow",
+            "muddy",
+            "impregnated",
+            "filthy",
+            "odours",
+            "stock in trade",
+            "crawling"
+          ]
         },
         {
           "id": "ch3_p2",
           "originalText_english": "\"Is this the old gentleman's house?\" asked Oliver. The boy nodded, and they entered a back parlour. The walls and ceiling were perfectly black with age and dirt. There was a deal table before the fire, upon which were a candle stuck in a ginger-beer bottle, and several bread and butter plates.",
           "translatedText_english": "\"¿Es esta la casa del anciano caballero?\" preguntó Oliver. El muchacho asintió con la cabeza, y entraron en un salón trasero. Las paredes y el techo estaban completamente negros por la edad y la suciedad. Había una mesa de pino frente al fuego, sobre la cual había una vela metida en una botella de cerveza de jengibre, y varios platos con pan y mantequilla.",
-          "vocabularyWords_english": ["nodded", "parlour", "ceiling", "deal table", "candle", "ginger-beer"]
+          "vocabularyWords_english": [
+            "nodded",
+            "parlour",
+            "ceiling",
+            "deal table",
+            "candle",
+            "ginger-beer"
+          ],
+          "originalText": "\"Is this the old gentleman's house?\" asked Oliver. The boy nodded, and they entered a back parlour. The walls and ceiling were perfectly black with age and dirt. There was a deal table before the fire, upon which were a candle stuck in a ginger-beer bottle, and several bread and butter plates.",
+          "translatedText": "\"¿Es esta la casa del anciano caballero?\" preguntó Oliver. El muchacho asintió con la cabeza, y entraron en un salón trasero. Las paredes y el techo estaban completamente negros por la edad y la suciedad. Había una mesa de pino frente al fuego, sobre la cual había una vela metida en una botella de cerveza de jengibre, y varios platos con pan y mantequilla.",
+          "vocabularyWords": [
+            "nodded",
+            "parlour",
+            "ceiling",
+            "deal table",
+            "candle",
+            "ginger-beer"
+          ]
         },
         {
           "id": "ch3_p3",
           "originalText_english": "The old man made a low, profound bow to Oliver, and took him by the hand, and said he hoped he should have the honour of his intimate acquaintance. \"We are very glad to see you, Oliver, very,\" said the old gentleman. \"Dodger, take off the sausages; and draw a chair near the fire for Oliver.\"",
           "translatedText_english": "El anciano hizo una reverencia profunda ante Oliver, lo tomó de la mano, y dijo que esperaba tener el honor de su íntimo conocimiento. \"Estamos muy contentos de verte, Oliver, mucho\", dijo el anciano caballero. \"Dodger, retira las salchichas; y acerca una silla al fuego para Oliver.\"",
-          "vocabularyWords_english": ["bow", "profound", "honour", "intimate", "acquaintance", "sausages"]
+          "vocabularyWords_english": [
+            "bow",
+            "profound",
+            "honour",
+            "intimate",
+            "acquaintance",
+            "sausages"
+          ],
+          "originalText": "The old man made a low, profound bow to Oliver, and took him by the hand, and said he hoped he should have the honour of his intimate acquaintance. \"We are very glad to see you, Oliver, very,\" said the old gentleman. \"Dodger, take off the sausages; and draw a chair near the fire for Oliver.\"",
+          "translatedText": "El anciano hizo una reverencia profunda ante Oliver, lo tomó de la mano, y dijo que esperaba tener el honor de su íntimo conocimiento. \"Estamos muy contentos de verte, Oliver, mucho\", dijo el anciano caballero. \"Dodger, retira las salchichas; y acerca una silla al fuego para Oliver.\"",
+          "vocabularyWords": [
+            "bow",
+            "profound",
+            "honour",
+            "intimate",
+            "acquaintance",
+            "sausages"
+          ]
         },
         {
           "id": "ch3_p4",
           "originalText_english": "Oliver ate his share, and the old gentleman then mixed him a glass of hot gin-and-water, telling him he must drink it off directly, because another gentleman wanted the tumbler. Oliver did as he was bid. Instantly afterwards, he felt himself gently lifted on to one of the sacks, and then he sank into a deep sleep.",
           "translatedText_english": "Oliver comió su parte, y luego el anciano le preparó un vaso de ginebra caliente con agua, diciéndole que debía bebérselo de un trago, porque otro caballero necesitaba el vaso. Oliver hizo lo que le dijeron. Inmediatamente después, sintió que lo levantaban suavemente y lo colocaban sobre uno de los sacos, y entonces cayó en un profundo sueño.",
-          "vocabularyWords_english": ["share", "mixed", "gin-and-water", "tumbler", "bid", "gently", "lifted", "sank"]
+          "vocabularyWords_english": [
+            "share",
+            "mixed",
+            "gin-and-water",
+            "tumbler",
+            "bid",
+            "gently",
+            "lifted",
+            "sank"
+          ],
+          "originalText": "Oliver ate his share, and the old gentleman then mixed him a glass of hot gin-and-water, telling him he must drink it off directly, because another gentleman wanted the tumbler. Oliver did as he was bid. Instantly afterwards, he felt himself gently lifted on to one of the sacks, and then he sank into a deep sleep.",
+          "translatedText": "Oliver comió su parte, y luego el anciano le preparó un vaso de ginebra caliente con agua, diciéndole que debía bebérselo de un trago, porque otro caballero necesitaba el vaso. Oliver hizo lo que le dijeron. Inmediatamente después, sintió que lo levantaban suavemente y lo colocaban sobre uno de los sacos, y entonces cayó en un profundo sueño.",
+          "vocabularyWords": [
+            "share",
+            "mixed",
+            "gin-and-water",
+            "tumbler",
+            "bid",
+            "gently",
+            "lifted",
+            "sank"
+          ]
         }
       ]
     }

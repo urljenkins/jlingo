@@ -1,0 +1,116 @@
+{
+  "id": "spanish_latam_dict",
+  "name": "Diccionario Visual (Latinoamérica)",
+  "targetLanguage": "es-419",
+  "nativeLanguage": "en-US",
+  "topics": [
+    {
+      "id": "topic_food_latam",
+      "name": "Comida y Bebida",
+      "description": "Vocabulario latinoamericano de alimentos y bebidas",
+      "iconName": "restaurant",
+      "coverImageUrl": "assets/images/topics/food.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_pan_latam",
+          "word": "pan",
+          "translation": "Bread",
+          "pronunciation": "/pan/",
+          "imageUrl": "assets/images/dict/pan.png",
+          "article": "el",
+          "pluralForm": "los panes",
+          "relatedWords": ["panadería", "torta", "harina"],
+          "usageNote": "Infaltable en desayunos y meriendas."
+        },
+        {
+          "id": "pde_manzana_latam",
+          "word": "manzana",
+          "translation": "Apple",
+          "pronunciation": "/manˈsa.na/",
+          "imageUrl": "assets/images/dict/manzana.png",
+          "article": "la",
+          "pluralForm": "las manzanas",
+          "relatedWords": ["fruta", "rojo", "árbol"],
+          "usageNote": "También se usa comúnmente para referirse a una cuadra o bloque de casas."
+        },
+        {
+          "id": "pde_leche_latam",
+          "word": "leche",
+          "translation": "Milk",
+          "pronunciation": "/ˈle.tʃe/",
+          "imageUrl": "assets/images/dict/leche.png",
+          "article": "la",
+          "pluralForm": "las leches",
+          "relatedWords": ["vaca", "queso", "café con leche"],
+          "usageNote": "Base indispensable para postres como el 'dulce de leche' o 'tres leches'."
+        },
+        {
+          "id": "pde_jugo_latam",
+          "word": "jugo",
+          "translation": "Juice",
+          "pronunciation": "/ˈxu.ɣo/",
+          "imageUrl": "assets/images/dict/agua.png",
+          "article": "el",
+          "pluralForm": "los jugos",
+          "relatedWords": ["fruta", "naranja", "beber"],
+          "usageNote": "En América Latina se dice 'jugo', mientras que en España se dice 'zumo'."
+        }
+      ]
+    },
+    {
+      "id": "topic_family_latam",
+      "name": "La Familia",
+      "description": "Miembros de la familia y el hogar",
+      "iconName": "people",
+      "coverImageUrl": "assets/images/topics/family.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_mama_latam",
+          "word": "mamá / madre",
+          "translation": "Mother",
+          "pronunciation": "/maˈma/ /ˈma.ðɾe/",
+          "imageUrl": "assets/images/dict/madre.png",
+          "article": "la",
+          "pluralForm": "las mamás",
+          "relatedWords": ["papá", "hijos", "abuelos"],
+          "usageNote": "'Mamá' es la forma de cariño más usada en toda la región."
+        },
+        {
+          "id": "pde_papa_latam",
+          "word": "papá / padre",
+          "translation": "Father",
+          "pronunciation": "/paˈpa/ /ˈpa.ðɾe/",
+          "imageUrl": "assets/images/dict/padre.png",
+          "article": "el",
+          "pluralForm": "los papás",
+          "relatedWords": ["mamá", "hijos", "abuelos"],
+          "usageNote": "'Papá' con tilde es el padre; 'papa' sin tilde es la patata o papa andina."
+        },
+        {
+          "id": "pde_hermano_latam",
+          "word": "hermano",
+          "translation": "Brother",
+          "pronunciation": "/eɾˈma.no/",
+          "imageUrl": "assets/images/dict/hermano.png",
+          "article": "el",
+          "pluralForm": "los hermanos",
+          "relatedWords": ["hermana", "familia"],
+          "usageNote": "En plural, 'los hermanos' se refiere al grupo completo de hermanos y hermanas."
+        },
+        {
+          "id": "pde_abuelo_latam",
+          "word": "abuelo",
+          "translation": "Grandfather",
+          "pronunciation": "/aˈβwe.lo/",
+          "imageUrl": "assets/images/dict/abuelo.png",
+          "article": "el",
+          "pluralForm": "los abuelos",
+          "relatedWords": ["abuelita", "nietos", "familia"],
+          "usageNote": "Formas de cariño muy comunes: 'abuelito', 'tata'."
+        }
+      ]
+    }
+  ]
+}

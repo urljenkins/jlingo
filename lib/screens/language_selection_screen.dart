@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/course_provider.dart';
 import '../services/course_bootstrap.dart';
-import 'home_screen.dart';
+import 'app_shell.dart';
 import '../widgets/responsive/responsive_layout.dart';
 import '../widgets/responsive/desktop_scaffold.dart';
 import '../widgets/responsive/mobile_scaffold.dart';
 import '../widgets/hover_card.dart';
+import '../theme/app_colors.dart';
 
 class LanguageSelectionScreen extends StatelessWidget {
   const LanguageSelectionScreen({super.key});
@@ -57,7 +58,7 @@ class LanguageSelectionScreen extends StatelessWidget {
       ),
       desktopScaffold: DesktopScaffold(
         sideNav: ColoredBox(
-          color: const Color(0xFF1A1A1A),
+          color: AppColors.surface,
           child: Column(
             children: [
               const Padding(
@@ -70,14 +71,7 @@ class LanguageSelectionScreen extends StatelessWidget {
               ListTile(
                 leading: const Icon(Icons.home),
                 title: const Text('Home'),
-                onTap: () {
-                  unawaited(Navigator.of(context).pushReplacement(
-                    PageRouteBuilder<void>(
-                      pageBuilder: (context, _, __) => const HomeScreen(),
-                      transitionDuration: Duration.zero,
-                    ),
-                  ));
-                },
+                onTap: () => Navigator.of(context).pop(),
               ),
               ListTile(
                 leading: const Icon(Icons.language),
@@ -146,13 +140,15 @@ class LanguageSelectionScreen extends StatelessWidget {
     // language does not leave gamification or vocabulary on the old course.
     final loaded = await CourseBootstrap.selectLanguage(context, language);
 
-    if (loaded) {
-      if (context.mounted) {
+    if (loaded && context.mounted) {
+      // This screen sits above the shell, which rebuilds on the new course.
+      // Popping keeps the persistent navigation intact; replacing would
+      // discard it.
+      if (Navigator.of(context).canPop()) {
+        Navigator.of(context).pop();
+      } else {
         unawaited(Navigator.of(context).pushReplacement(
-          PageRouteBuilder<void>(
-            pageBuilder: (context, _, __) => const HomeScreen(),
-            transitionDuration: Duration.zero,
-          ),
+          MaterialPageRoute<void>(builder: (context) => const AppShell()),
         ));
       }
     }
@@ -160,7 +156,8 @@ class LanguageSelectionScreen extends StatelessWidget {
 
   String _getLanguageName(String code) {
     final names = {
-      'spanish': 'Spanish',
+      'spanish': 'Spanish (Spain)',
+      'spanish_latam': 'Spanish (Latin America)',
       'french': 'French',
       'german': 'German',
       'dutch': 'Dutch',
@@ -173,7 +170,8 @@ class LanguageSelectionScreen extends StatelessWidget {
 
   IconData _getLanguageIcon(String code) {
     final icons = {
-      'spanish': Icons.restaurant, // Tapas/Food
+      'spanish': Icons.castle, // Historical heritage / Spain
+      'spanish_latam': Icons.public, // Americas / Global Latin America
       'french': Icons.palette, // Art/Eiffel (Palette for art)
       'german': Icons.directions_car, // Engineering/Cars
       'dutch': Icons.wb_sunny, // Windmills (Sun for fields)
@@ -187,6 +185,7 @@ class LanguageSelectionScreen extends StatelessWidget {
   String _getLanguageFlag(String code) {
     final flags = {
       'spanish': '🇪🇸',
+      'spanish_latam': '🇲🇽',
       'french': '🇫🇷',
       'german': '🇩🇪',
       'dutch': '🇳🇱',

@@ -7,6 +7,7 @@ import '../../widgets/responsive/desktop_scaffold.dart';
 import '../../widgets/responsive/mobile_scaffold.dart';
 import '../../widgets/hover_card.dart';
 import 'level_quiz_screen.dart';
+import '../../theme/app_colors.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -34,7 +35,7 @@ class WelcomeScreen extends StatelessWidget {
               'Learn languages faster with personalized lessons',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     fontSize: 18,
-                    color: Colors.white70,
+                    color: AppColors.textSecondary,
                   ),
               textAlign: TextAlign.center,
             ),
@@ -167,7 +168,7 @@ class WelcomeScreen extends StatelessWidget {
 
   Widget _buildSideNav(BuildContext context) {
     return ColoredBox(
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       child: Column(
         children: [
           const Padding(
@@ -177,7 +178,7 @@ class WelcomeScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ),
-          const Divider(color: Colors.white12),
+          const Divider(color: AppColors.border),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -207,14 +208,14 @@ class WelcomeScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: isActive
                   ? Theme.of(context).colorScheme.primary
-                  : Colors.white12,
+                  : AppColors.border,
               shape: BoxShape.circle,
             ),
             child: Center(
               child: Text(
                 '$step',
                 style: TextStyle(
-                  color: isActive ? Colors.black : Colors.white54,
+                  color: isActive ? Colors.black : AppColors.textMuted,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -224,7 +225,7 @@ class WelcomeScreen extends StatelessWidget {
           Text(
             label,
             style: TextStyle(
-              color: isActive ? Colors.white : Colors.white54,
+              color: isActive ? Colors.white : AppColors.textMuted,
               fontWeight: isActive ? FontWeight.w600 : FontWeight.normal,
             ),
           ),

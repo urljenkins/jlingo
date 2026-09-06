@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/flashcard_provider.dart';
 import '../models/flashcard.dart';
+import '../theme/app_colors.dart';
 
 class FlashcardScreen extends StatefulWidget {
   const FlashcardScreen({super.key});
@@ -35,8 +36,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flashcards'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
@@ -77,7 +76,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
         return Card(
           margin: const EdgeInsets.only(bottom: 16),
-          color: const Color(0xFF1A1A1A),
+          color: AppColors.surface,
           child: InkWell(
             onTap: () {
               provider.selectDeck(deck.id);
@@ -107,7 +106,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                   const SizedBox(height: 8),
                   Text(
                     deck.description,
-                    style: const TextStyle(color: Colors.white70),
+                    style: const TextStyle(color: AppColors.textSecondary),
                   ),
                   const SizedBox(height: 16),
                   Row(
@@ -115,19 +114,19 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                       _buildStatChip(
                         Icons.schedule,
                         '${stats.dueCards} due',
-                        const Color(0xFFFF4757),
+                        AppColors.textSecondary,
                       ),
                       const SizedBox(width: 8),
                       _buildStatChip(
                         Icons.add_circle_outline,
                         '${stats.newCards} new',
-                        const Color(0xFF00D9FF),
+                        AppColors.textPrimary,
                       ),
                       const SizedBox(width: 8),
                       _buildStatChip(
                         Icons.check_circle_outline,
                         '${stats.matureCards}/${stats.totalCards}',
-                        const Color(0xFF00FF85),
+                        AppColors.textSecondary,
                       ),
                     ],
                   ),
@@ -136,9 +135,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                     borderRadius: BorderRadius.circular(4),
                     child: LinearProgressIndicator(
                       value: stats.retentionRate / 100,
-                      backgroundColor: Colors.white12,
+                      backgroundColor: AppColors.border,
                       valueColor: const AlwaysStoppedAnimation<Color>(
-                          Color(0xFF00FF85)),
+                          AppColors.textSecondary),
                     ),
                   ),
                 ],
@@ -156,13 +155,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       return Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         decoration: BoxDecoration(
-          color: const Color(0xFF00FF85).withValues(alpha: 0.2),
+          color: AppColors.textSecondary.withValues(alpha: 0.2),
           borderRadius: BorderRadius.circular(16),
         ),
         child: const Text(
           'Complete!',
           style: TextStyle(
-            color: Color(0xFF00FF85),
+            color: AppColors.textSecondary,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -172,13 +171,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: const Color(0xFF00D9FF).withValues(alpha: 0.2),
+        color: AppColors.textPrimary.withValues(alpha: 0.2),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Text(
         '$total cards',
         style: const TextStyle(
-          color: Color(0xFF00D9FF),
+          color: AppColors.textPrimary,
           fontWeight: FontWeight.bold,
         ),
       ),
@@ -212,7 +211,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       color: Colors.transparent,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
-        side: const BorderSide(color: Colors.white24, width: 2),
+        side: const BorderSide(color: AppColors.border, width: 2),
       ),
       child: InkWell(
         onTap: () => _showCreateDeckDialog(context),
@@ -222,12 +221,12 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.add, color: Colors.white54),
+              Icon(Icons.add, color: AppColors.textMuted),
               SizedBox(width: 8),
               Text(
                 'Create New Deck',
                 style: TextStyle(
-                  color: Colors.white54,
+                  color: AppColors.textMuted,
                   fontSize: 16,
                 ),
               ),
@@ -254,7 +253,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             children: [
               Text(
                 '${provider.currentCardIndex + 1}/${provider.sessionCards.length}',
-                style: const TextStyle(color: Colors.white70),
+                style: const TextStyle(color: AppColors.textSecondary),
               ),
               const SizedBox(width: 12),
               Expanded(
@@ -263,9 +262,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                   child: LinearProgressIndicator(
                     value: (provider.currentCardIndex + 1) /
                         provider.sessionCards.length,
-                    backgroundColor: Colors.white12,
-                    valueColor:
-                        const AlwaysStoppedAnimation<Color>(Color(0xFF00D9FF)),
+                    backgroundColor: AppColors.border,
+                    valueColor: const AlwaysStoppedAnimation<Color>(
+                        AppColors.textPrimary),
                   ),
                 ),
               ),
@@ -306,7 +305,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       duration: const Duration(milliseconds: 300),
       child: Card(
         key: ValueKey('${card.id}_$showingAnswer'),
-        color: const Color(0xFF1A1A1A),
+        color: AppColors.surface,
         elevation: 8,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         child: Container(
@@ -330,7 +329,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                   card.pronunciation!,
                   style: const TextStyle(
                     fontSize: 18,
-                    color: Colors.white54,
+                    color: AppColors.textMuted,
                     fontStyle: FontStyle.italic,
                   ),
                 ),
@@ -341,7 +340,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 Container(
                   height: 1,
                   width: 100,
-                  color: Colors.white24,
+                  color: AppColors.border,
                 ),
                 const SizedBox(height: 24),
 
@@ -351,7 +350,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                   style: const TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.w500,
-                    color: Color(0xFF00FF85),
+                    color: AppColors.textSecondary,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -380,7 +379,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                             card.exampleTranslation!,
                             style: const TextStyle(
                               fontSize: 14,
-                              color: Colors.white54,
+                              color: AppColors.textMuted,
                             ),
                             textAlign: TextAlign.center,
                           ),
@@ -415,7 +414,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             Expanded(
               child: _buildAnswerButton(
                 'Again',
-                const Color(0xFFFF4757),
+                AppColors.textSecondary,
                 Icons.refresh,
                 () {
                   final id = _courseId;
@@ -427,7 +426,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             Expanded(
               child: _buildAnswerButton(
                 'Hard',
-                const Color(0xFFFF9F43),
+                AppColors.textSecondary,
                 Icons.trending_down,
                 () {
                   final id = _courseId;
@@ -439,7 +438,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             Expanded(
               child: _buildAnswerButton(
                 'Good',
-                const Color(0xFF00D9FF),
+                AppColors.textPrimary,
                 Icons.check,
                 () {
                   final id = _courseId;
@@ -451,7 +450,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             Expanded(
               child: _buildAnswerButton(
                 'Easy',
-                const Color(0xFF00FF85),
+                AppColors.textSecondary,
                 Icons.check_circle,
                 () {
                   final id = _courseId;
@@ -508,7 +507,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             const Icon(
               Icons.celebration,
               size: 80,
-              color: Color(0xFF00FF85),
+              color: AppColors.textSecondary,
             ),
             const SizedBox(height: 24),
             const Text(
@@ -523,7 +522,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               'You reviewed ${provider.cardsReviewedToday} cards',
               style: const TextStyle(
                 fontSize: 18,
-                color: Colors.white70,
+                color: AppColors.textSecondary,
               ),
             ),
             const SizedBox(height: 8),
@@ -531,7 +530,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               'Accuracy: $accuracy%',
               style: const TextStyle(
                 fontSize: 18,
-                color: Color(0xFF00D9FF),
+                color: AppColors.textPrimary,
               ),
             ),
             const SizedBox(height: 8),
@@ -539,7 +538,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               'Time: ${_formatDuration(provider.sessionDuration)}',
               style: const TextStyle(
                 fontSize: 16,
-                color: Colors.white54,
+                color: AppColors.textMuted,
               ),
             ),
             const SizedBox(height: 32),
@@ -548,7 +547,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 provider.startStudySession(newCardLimit: 0, reviewLimit: 0);
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
+                backgroundColor: AppColors.textPrimary,
                 foregroundColor: Colors.black,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
@@ -570,7 +569,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   void _showSettings(BuildContext context) {
     unawaited(showModalBottomSheet<void>(
       context: context,
-      backgroundColor: const Color(0xFF1A1A1A),
+      backgroundColor: AppColors.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
@@ -637,7 +636,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             Text(
               value.toInt().toString(),
               style: const TextStyle(
-                color: Color(0xFF00D9FF),
+                color: AppColors.textPrimary,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -647,7 +646,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           value: value,
           min: min,
           max: max,
-          activeColor: const Color(0xFF00D9FF),
+          activeColor: AppColors.textPrimary,
           onChanged: onChanged,
         ),
       ],
@@ -662,7 +661,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          backgroundColor: const Color(0xFF1A1A1A),
+          backgroundColor: AppColors.surface,
           title: const Text('Create New Deck'),
           content: Column(
             mainAxisSize: MainAxisSize.min,
@@ -692,8 +691,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                final manifest =
-                    context.read<CourseProvider>().currentManifest;
+                final manifest = context.read<CourseProvider>().currentManifest;
                 if (nameController.text.isNotEmpty && manifest != null) {
                   unawaited(context.read<FlashcardProvider>().createDeck(
                         courseId: manifest.id,
@@ -706,7 +704,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 }
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
+                backgroundColor: AppColors.textPrimary,
                 foregroundColor: Colors.black,
               ),
               child: const Text('Create'),

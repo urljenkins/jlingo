@@ -5,6 +5,7 @@ import '../providers/vocabulary_provider.dart';
 import 'flashcard_screen.dart';
 import 'word_of_day_screen.dart';
 import 'picture_dictionary_screen.dart';
+import '../theme/app_colors.dart';
 
 class VocabularyScreen extends StatelessWidget {
   const VocabularyScreen({super.key});
@@ -14,8 +15,6 @@ class VocabularyScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Vocabulary Building'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
@@ -42,7 +41,7 @@ class VocabularyScreen extends StatelessWidget {
               icon: Icons.style,
               title: 'Flashcards',
               subtitle: 'Practice with spaced repetition',
-              color: const Color(0xFF00D9FF),
+              color: AppColors.textPrimary,
               onTap: () {
                 Navigator.push(
                   context,
@@ -67,13 +66,13 @@ class VocabularyScreen extends StatelessWidget {
                       vertical: 6,
                     ),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFFF4757).withValues(alpha: 0.2),
+                      color: AppColors.textSecondary.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Text(
                       '$totalDue due',
                       style: const TextStyle(
-                        color: Color(0xFFFF4757),
+                        color: AppColors.textSecondary,
                         fontWeight: FontWeight.bold,
                         fontSize: 12,
                       ),
@@ -90,7 +89,7 @@ class VocabularyScreen extends StatelessWidget {
               icon: Icons.collections,
               title: 'Picture Dictionary',
               subtitle: 'Visual learning by topic',
-              color: const Color(0xFF00FF85),
+              color: AppColors.textSecondary,
               onTap: () {
                 Navigator.push(
                   context,
@@ -106,7 +105,7 @@ class VocabularyScreen extends StatelessWidget {
                   return Text(
                     '${dict.topics.length} topics',
                     style: const TextStyle(
-                      color: Colors.white54,
+                      color: AppColors.textMuted,
                       fontSize: 12,
                     ),
                   );
@@ -142,14 +141,14 @@ class VocabularyScreen extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFF667eea), Color(0xFF764ba2)],
+                colors: [AppColors.textSecondary, Color(0xFF764ba2)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF667eea).withValues(alpha: 0.3),
+                  color: AppColors.textSecondary.withValues(alpha: 0.3),
                   blurRadius: 20,
                   offset: const Offset(0, 10),
                 ),
@@ -224,6 +223,15 @@ class VocabularyScreen extends StatelessWidget {
                       fontSize: 20,
                     ),
                   ),
+                ] else if (provider.isLoaded) ...[
+                  const Text(
+                    'Not available for this language yet',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                 ] else ...[
                   const Text(
                     'Loading...',
@@ -251,7 +259,7 @@ class VocabularyScreen extends StatelessWidget {
     Widget? trailing,
   }) {
     return Card(
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: InkWell(
         onTap: onTap,
@@ -284,7 +292,7 @@ class VocabularyScreen extends StatelessWidget {
                     Text(
                       subtitle,
                       style: const TextStyle(
-                        color: Colors.white54,
+                        color: AppColors.textMuted,
                         fontSize: 14,
                       ),
                     ),
@@ -330,7 +338,7 @@ class VocabularyScreen extends StatelessWidget {
                     icon: Icons.style,
                     value: '$cardsReviewed',
                     label: 'Cards Reviewed',
-                    color: const Color(0xFF00D9FF),
+                    color: AppColors.textPrimary,
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -339,7 +347,7 @@ class VocabularyScreen extends StatelessWidget {
                     icon: Icons.auto_awesome,
                     value: '$wordsLearned',
                     label: 'Words Learned',
-                    color: const Color(0xFF00FF85),
+                    color: AppColors.textSecondary,
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -348,7 +356,7 @@ class VocabularyScreen extends StatelessWidget {
                     icon: Icons.bookmark,
                     value: '$wordsSaved',
                     label: 'Words Saved',
-                    color: const Color(0xFFFFD700),
+                    color: AppColors.textPrimary,
                   ),
                 ),
               ],
@@ -368,7 +376,7 @@ class VocabularyScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0xFF1A1A1A),
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
@@ -387,7 +395,7 @@ class VocabularyScreen extends StatelessWidget {
           Text(
             label,
             style: const TextStyle(
-              color: Colors.white54,
+              color: AppColors.textMuted,
               fontSize: 10,
             ),
             textAlign: TextAlign.center,

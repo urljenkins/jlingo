@@ -1,0 +1,82 @@
+{
+    "id": "comparatives",
+    "name": "Comparatives",
+    "description": "Learn to compare things using más, menos, tan",
+    "level": 15,
+    "exercises": [
+        {
+            "id": "ex_comp_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'bigger than'?",
+            "options": [
+                "más grande que",
+                "tan grande como",
+                "muy grande",
+                "el más grande"
+            ],
+            "correctAnswer": "más grande que"
+        },
+        {
+            "id": "ex_comp_2",
+            "type": "matchPairs",
+            "question": "Match comparative structures",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Más...que",
+                        "native": "More...than"
+                    },
+                    {
+                        "target": "Menos...que",
+                        "native": "Less...than"
+                    },
+                    {
+                        "target": "Tan...como",
+                        "native": "As...as"
+                    },
+                    {
+                        "target": "Tanto como",
+                        "native": "As much as"
+                    },
+                    {
+                        "target": "Mejor que",
+                        "native": "Better than"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_comp_3",
+            "type": "translateThis",
+            "question": "María es más alta que Juan",
+            "options": [],
+            "correctAnswer": "María is taller than Juan"
+        },
+        {
+            "id": "ex_comp_4",
+            "type": "fillInBlank",
+            "question": "Este libro es ___ interesante que ese",
+            "options": [
+                "más",
+                "muy",
+                "mucho",
+                "tan"
+            ],
+            "correctAnswer": "más"
+        },
+        {
+            "id": "ex_comp_5",
+            "type": "multipleChoice",
+            "question": "What is the comparative of 'bueno'?",
+            "options": [
+                "Mejor",
+                "Más bueno",
+                "Muy bueno",
+                "Buenísimo"
+            ],
+            "correctAnswer": "Mejor"
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "dutch_dict",
+  "name": "Nederlands Beeldwoordenboek",
+  "targetLanguage": "nl-NL",
+  "nativeLanguage": "en-US",
+  "topics": [
+    {
+      "id": "topic_food_nl",
+      "name": "Eten en Drinken",
+      "description": "Basiswoorden over voeding en drinken",
+      "iconName": "restaurant",
+      "coverImageUrl": "assets/images/topics/food.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_brood_nl",
+          "word": "brood",
+          "translation": "Bread",
+          "pronunciation": "/broːt/",
+          "imageUrl": "assets/images/dict/pan.png",
+          "article": "het",
+          "pluralForm": "de broden",
+          "relatedWords": ["bakker", "boter", "tosti"],
+          "usageNote": "Basisproduct bij het Nederlandse ontbijt en lunch."
+        },
+        {
+          "id": "pde_appel_nl",
+          "word": "appel",
+          "translation": "Apple",
+          "pronunciation": "/ˈɑ.pəl/",
+          "imageUrl": "assets/images/dict/manzana.png",
+          "article": "de",
+          "pluralForm": "de appels",
+          "relatedWords": ["fruit", "rood", "boom"],
+          "usageNote": "Gezond tussendoortje en populair in appeltaart."
+        },
+        {
+          "id": "pde_melk_nl",
+          "word": "melk",
+          "translation": "Milk",
+          "pronunciation": "/mɛlk/",
+          "imageUrl": "assets/images/dict/leche.png",
+          "article": "de",
+          "pluralForm": "de melken",
+          "relatedWords": ["koe", "kaas", "koffie"],
+          "usageNote": "Nederland staat bekend om zijn zuivelproducten."
+        },
+        {
+          "id": "pde_water_nl",
+          "word": "water",
+          "translation": "Water",
+          "pronunciation": "/ˈʋaː.tər/",
+          "imageUrl": "assets/images/dict/agua.png",
+          "article": "het",
+          "pluralForm": "de waters",
+          "relatedWords": ["drinken", "glas", "fles"],
+          "usageNote": "Essentieel voor het dagelijks leven."
+        }
+      ]
+    },
+    {
+      "id": "topic_family_nl",
+      "name": "De Familie",
+      "description": "Familieleden en verwanten",
+      "iconName": "people",
+      "coverImageUrl": "assets/images/topics/family.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_moeder_nl",
+          "word": "moeder",
+          "translation": "Mother",
+          "pronunciation": "/ˈmu.dər/",
+          "imageUrl": "assets/images/dict/madre.png",
+          "article": "de",
+          "pluralForm": "de moeders",
+          "relatedWords": ["mama", "vader", "kinderen"],
+          "usageNote": "'Mama' is de informele en liefkozende naam."
+        },
+        {
+          "id": "pde_vader_nl",
+          "word": "vader",
+          "translation": "Father",
+          "pronunciation": "/ˈvaː.dər/",
+          "imageUrl": "assets/images/dict/padre.png",
+          "article": "de",
+          "pluralForm": "de vaders",
+          "relatedWords": ["papa", "moeder", "ouders"],
+          "usageNote": "'De ouders' betekent 'the parents'."
+        },
+        {
+          "id": "pde_broer_nl",
+          "word": "broer",
+          "translation": "Brother",
+          "pronunciation": "/bruːr/",
+          "imageUrl": "assets/images/dict/hermano.png",
+          "article": "de",
+          "pluralForm": "de broers",
+          "relatedWords": ["zus", "familie"],
+          "usageNote": "'Broers en zussen' betekent 'brothers and sisters' (siblings)."
+        },
+        {
+          "id": "pde_grootvader_nl",
+          "word": "opa / grootvader",
+          "translation": "Grandfather",
+          "pronunciation": "/ˈoː.paː/",
+          "imageUrl": "assets/images/dict/abuelo.png",
+          "article": "de",
+          "pluralForm": "de opa's",
+          "relatedWords": ["oma", "kleinkinderen"],
+          "usageNote": "'Opa' en 'oma' zijn de meest gebruikelijke vormen in het dagelijks leven."
+        }
+      ]
+    }
+  ]
+}

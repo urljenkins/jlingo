@@ -21,6 +21,12 @@
             "name": "Travel",
             "level": 2,
             "section": "travel"
+        },
+        {
+            "id": "listening_pronunciation",
+            "name": "Listening & Pronunciation",
+            "level": 2,
+            "section": "foundational"
         }
     ]
 }

@@ -1,0 +1,77 @@
+{
+    "id": "ordering_food",
+    "name": "Ordering Food",
+    "description": "Learn to order food and express dietary needs",
+    "level": 11,
+    "exercises": [
+        {
+            "id": "ex_of_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'I would like...'?",
+            "options": [
+                "Quisiera...",
+                "Quiero...",
+                "Tengo...",
+                "Puedo..."
+            ],
+            "correctAnswer": "Quisiera..."
+        },
+        {
+            "id": "ex_of_2",
+            "type": "matchPairs",
+            "question": "Match menu sections",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Entrantes",
+                        "native": "Starters"
+                    },
+                    {
+                        "target": "Plato principal",
+                        "native": "Main course"
+                    },
+                    {
+                        "target": "Postre",
+                        "native": "Dessert"
+                    },
+                    {
+                        "target": "Bebidas",
+                        "native": "Drinks"
+                    },
+                    {
+                        "target": "Guarnición",
+                        "native": "Side dish"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_of_3",
+            "type": "translateThis",
+            "question": "Soy vegetariano",
+            "options": [],
+            "correctAnswer": "I am vegetarian"
+        },
+        {
+            "id": "ex_of_4",
+            "type": "fillInBlank",
+            "question": "Soy alérgico a los ___",
+            "options": [
+                "mariscos",
+                "cocina",
+                "menu",
+                "platos"
+            ],
+            "correctAnswer": "mariscos"
+        },
+        {
+            "id": "ex_of_5",
+            "type": "speakThis",
+            "question": "Para mí, el pollo con arroz",
+            "options": [],
+            "correctAnswer": "Para mí, el pollo con arroz"
+        }
+    ]
+}

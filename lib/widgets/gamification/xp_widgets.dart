@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/gamification.dart';
+import '../../theme/app_colors.dart';
 
 /// Animated XP bar showing current level progress
 class XPProgressBar extends StatelessWidget {
@@ -31,7 +32,7 @@ class XPProgressBar extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white70,
+                    color: AppColors.textSecondary,
                   ),
                 ),
                 Text(
@@ -40,7 +41,7 @@ class XPProgressBar extends StatelessWidget {
                       : '${userLevel.currentXP} / ${userLevel.xpForNextLevel} XP',
                   style: const TextStyle(
                     fontSize: 12,
-                    color: Colors.white54,
+                    color: AppColors.textMuted,
                   ),
                 ),
               ],
@@ -61,12 +62,12 @@ class XPProgressBar extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
-                      colors: [Color(0xFF00D9FF), Color(0xFF00FF85)],
+                      colors: [AppColors.textPrimary, AppColors.textSecondary],
                     ),
                     borderRadius: BorderRadius.circular(height / 2),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF00D9FF).withValues(alpha: 0.5),
+                        color: AppColors.textPrimary.withValues(alpha: 0.5),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
                       ),
@@ -123,7 +124,7 @@ class XPCircleIndicator extends StatelessWidget {
                 strokeWidth: 4,
                 backgroundColor: Colors.transparent,
                 valueColor: const AlwaysStoppedAnimation<Color>(
-                  Color(0xFF00D9FF),
+                  AppColors.textPrimary,
                 ),
               );
             },
@@ -145,7 +146,7 @@ class XPCircleIndicator extends StatelessWidget {
                   '${userLevel.currentXP}',
                   style: TextStyle(
                     fontSize: size * 0.15,
-                    color: Colors.white54,
+                    color: AppColors.textMuted,
                   ),
                 ),
             ],
@@ -233,12 +234,12 @@ class _XPGainPopupState extends State<XPGainPopup>
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
-                    colors: [Color(0xFF00D9FF), Color(0xFF00FF85)],
+                    colors: [AppColors.textPrimary, AppColors.textSecondary],
                   ),
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF00D9FF).withValues(alpha: 0.5),
+                      color: AppColors.textPrimary.withValues(alpha: 0.5),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),
@@ -294,7 +295,7 @@ class DailyGoalWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: dailyGoal.isCompleted
-                ? const Color(0xFF00FF85)
+                ? AppColors.textSecondary
                 : Colors.white.withValues(alpha: 0.1),
             width: dailyGoal.isCompleted ? 2 : 1,
           ),
@@ -312,8 +313,8 @@ class DailyGoalWidget extends StatelessWidget {
                           ? Icons.check_circle
                           : Icons.flag_outlined,
                       color: dailyGoal.isCompleted
-                          ? const Color(0xFF00FF85)
-                          : const Color(0xFF00D9FF),
+                          ? AppColors.textSecondary
+                          : AppColors.textPrimary,
                       size: 20,
                     ),
                     const SizedBox(width: 8),
@@ -330,8 +331,8 @@ class DailyGoalWidget extends StatelessWidget {
                   '${dailyGoal.earnedXP} / ${dailyGoal.targetXP} XP',
                   style: TextStyle(
                     color: dailyGoal.isCompleted
-                        ? const Color(0xFF00FF85)
-                        : Colors.white70,
+                        ? AppColors.textSecondary
+                        : AppColors.textSecondary,
                     fontSize: 12,
                   ),
                 ),
@@ -345,8 +346,8 @@ class DailyGoalWidget extends StatelessWidget {
                 backgroundColor: Colors.white.withValues(alpha: 0.1),
                 valueColor: AlwaysStoppedAnimation<Color>(
                   dailyGoal.isCompleted
-                      ? const Color(0xFF00FF85)
-                      : const Color(0xFF00D9FF),
+                      ? AppColors.textSecondary
+                      : AppColors.textPrimary,
                 ),
                 minHeight: 8,
               ),
@@ -356,7 +357,7 @@ class DailyGoalWidget extends StatelessWidget {
               Text(
                 '${dailyGoal.remainingXP} XP to go!',
                 style: const TextStyle(
-                  color: Colors.white54,
+                  color: AppColors.textMuted,
                   fontSize: 12,
                 ),
               ),

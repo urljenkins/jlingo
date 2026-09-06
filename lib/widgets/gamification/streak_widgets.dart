@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/gamification.dart';
+import '../../theme/app_colors.dart';
 
 /// Streak flame indicator
 class StreakFlame extends StatelessWidget {
@@ -18,10 +19,10 @@ class StreakFlame extends StatelessWidget {
 
   Color _getFlameColor() {
     if (!isActive) return Colors.grey;
-    if (streakDays >= 30) return const Color(0xFFFFD700); // Gold
-    if (streakDays >= 14) return const Color(0xFFFF6B35); // Orange
-    if (streakDays >= 7) return const Color(0xFFFF4757); // Red
-    return const Color(0xFFFF9F43); // Light orange
+    if (streakDays >= 30) return AppColors.textPrimary; // Gold
+    if (streakDays >= 14) return AppColors.textSecondary; // Orange
+    if (streakDays >= 7) return AppColors.textSecondary; // Red
+    return AppColors.textSecondary; // Light orange
   }
 
   @override
@@ -125,7 +126,7 @@ class StreakCalendar extends StatelessWidget {
                 Text(
                   'Best: ${streakInfo.longestStreak} days',
                   style: const TextStyle(
-                    color: Colors.white54,
+                    color: AppColors.textMuted,
                     fontSize: 12,
                   ),
                 ),
@@ -183,7 +184,7 @@ class _DayIndicator extends StatelessWidget {
         Text(
           _getDayName(),
           style: TextStyle(
-            color: isToday ? const Color(0xFF00D9FF) : Colors.white54,
+            color: isToday ? AppColors.textPrimary : AppColors.textMuted,
             fontSize: 12,
             fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
           ),
@@ -195,13 +196,13 @@ class _DayIndicator extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: isStudied
-                ? const Color(0xFFFF6B35).withValues(alpha: 0.2)
+                ? AppColors.textSecondary.withValues(alpha: 0.2)
                 : Colors.white.withValues(alpha: 0.05),
             border: Border.all(
               color: isToday
-                  ? const Color(0xFF00D9FF)
+                  ? AppColors.textPrimary
                   : isStudied
-                      ? const Color(0xFFFF6B35)
+                      ? AppColors.textSecondary
                       : Colors.transparent,
               width: 2,
             ),
@@ -210,13 +211,15 @@ class _DayIndicator extends StatelessWidget {
             child: isStudied
                 ? const Icon(
                     Icons.local_fire_department,
-                    color: Color(0xFFFF6B35),
+                    color: AppColors.textSecondary,
                     size: 20,
                   )
                 : Text(
                     '${day.day}',
                     style: TextStyle(
-                      color: isToday ? const Color(0xFF00D9FF) : Colors.white38,
+                      color: isToday
+                          ? AppColors.textPrimary
+                          : AppColors.textDisabled,
                       fontSize: 12,
                     ),
                   ),
@@ -255,12 +258,12 @@ class StreakMilestoneBadge extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
         color: isAchieved
-            ? const Color(0xFFFF6B35).withValues(alpha: 0.2)
+            ? AppColors.textSecondary.withValues(alpha: 0.2)
             : Colors.white.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
           color: isAchieved
-              ? const Color(0xFFFF6B35)
+              ? AppColors.textSecondary
               : Colors.white.withValues(alpha: 0.1),
         ),
       ),
@@ -287,7 +290,7 @@ class StreakMilestoneBadge extends StatelessWidget {
             const SizedBox(width: 8),
             const Icon(
               Icons.check_circle,
-              color: Color(0xFF00FF85),
+              color: AppColors.textSecondary,
               size: 16,
             ),
           ],
@@ -337,13 +340,13 @@ class StreakPanel extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 48,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFFFF6B35),
+                      color: AppColors.textSecondary,
                     ),
                   ),
                   const Text(
                     'day streak',
                     style: TextStyle(
-                      color: Colors.white54,
+                      color: AppColors.textMuted,
                       fontSize: 14,
                     ),
                   ),
@@ -360,8 +363,8 @@ class StreakPanel extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    const Color(0xFFFF6B35).withValues(alpha: 0.2),
-                    const Color(0xFFFFD700).withValues(alpha: 0.2),
+                    AppColors.textSecondary.withValues(alpha: 0.2),
+                    AppColors.textPrimary.withValues(alpha: 0.2),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(8),
@@ -371,14 +374,14 @@ class StreakPanel extends StatelessWidget {
                 children: [
                   const Icon(
                     Icons.bolt,
-                    color: Color(0xFFFFD700),
+                    color: AppColors.textPrimary,
                     size: 20,
                   ),
                   const SizedBox(width: 8),
                   Text(
                     '${streakInfo.multiplier.toStringAsFixed(1)}x XP Bonus',
                     style: const TextStyle(
-                      color: Color(0xFFFFD700),
+                      color: AppColors.textPrimary,
                       fontWeight: FontWeight.bold,
                       fontSize: 14,
                     ),
@@ -394,17 +397,17 @@ class StreakPanel extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: const Color(0xFFFF4757).withValues(alpha: 0.2),
+                color: AppColors.textSecondary.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                  color: const Color(0xFFFF4757),
+                  color: AppColors.textSecondary,
                 ),
               ),
               child: const Row(
                 children: [
                   Icon(
                     Icons.warning_amber,
-                    color: Color(0xFFFF4757),
+                    color: AppColors.textSecondary,
                     size: 20,
                   ),
                   SizedBox(width: 8),
@@ -412,7 +415,7 @@ class StreakPanel extends StatelessWidget {
                     child: Text(
                       'Your streak is at risk! Practice today to keep it going.',
                       style: TextStyle(
-                        color: Color(0xFFFF4757),
+                        color: AppColors.textSecondary,
                         fontSize: 13,
                       ),
                     ),
@@ -433,7 +436,7 @@ class StreakPanel extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 14,
-              color: Colors.white70,
+              color: AppColors.textSecondary,
             ),
           ),
           const SizedBox(height: 12),
@@ -473,12 +476,12 @@ class CompactStreakIndicator extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         decoration: BoxDecoration(
           color: streakInfo.isActiveToday
-              ? const Color(0xFFFF6B35).withValues(alpha: 0.2)
+              ? AppColors.textSecondary.withValues(alpha: 0.2)
               : Colors.white.withValues(alpha: 0.05),
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
             color: streakInfo.atRisk
-                ? const Color(0xFFFF4757)
+                ? AppColors.textSecondary
                 : Colors.transparent,
           ),
         ),
@@ -488,7 +491,7 @@ class CompactStreakIndicator extends StatelessWidget {
             Icon(
               Icons.local_fire_department,
               color: streakInfo.isActiveToday
-                  ? const Color(0xFFFF6B35)
+                  ? AppColors.textSecondary
                   : Colors.grey,
               size: 20,
             ),
@@ -505,7 +508,7 @@ class CompactStreakIndicator extends StatelessWidget {
               const SizedBox(width: 4),
               const Icon(
                 Icons.warning_amber,
-                color: Color(0xFFFF4757),
+                color: AppColors.textSecondary,
                 size: 14,
               ),
             ],

@@ -1,0 +1,101 @@
+{
+    "id": "present_perfect",
+    "name": "Present Perfect",
+    "description": "Learn to express past actions with present relevance",
+    "level": 13,
+    "exercises": [
+        {
+            "id": "ex_pp_1",
+            "type": "multipleChoice",
+            "question": "How do you form the present perfect in Spanish?",
+            "options": [
+                "haber + past participle",
+                "estar + gerund",
+                "ser + adjective",
+                "ir + a + infinitive"
+            ],
+            "correctAnswer": "haber + past participle"
+        },
+        {
+            "id": "ex_pp_2",
+            "type": "matchPairs",
+            "question": "Match HABER conjugations",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Yo he",
+                        "native": "I have"
+                    },
+                    {
+                        "target": "Tú has",
+                        "native": "You have"
+                    },
+                    {
+                        "target": "Él ha",
+                        "native": "He has"
+                    },
+                    {
+                        "target": "Nosotros hemos",
+                        "native": "We have"
+                    },
+                    {
+                        "target": "Ellos han",
+                        "native": "They have"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_pp_3",
+            "type": "translateThis",
+            "question": "He comido paella",
+            "options": [],
+            "correctAnswer": "I have eaten paella"
+        },
+        {
+            "id": "ex_pp_4",
+            "type": "fillInBlank",
+            "question": "Ella nunca ___ visitado París",
+            "options": [
+                "ha",
+                "he",
+                "has",
+                "han"
+            ],
+            "correctAnswer": "ha"
+        },
+        {
+            "id": "ex_pp_5",
+            "type": "matchPairs",
+            "question": "Match irregular past participles",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Hecho",
+                        "native": "Done/Made"
+                    },
+                    {
+                        "target": "Dicho",
+                        "native": "Said"
+                    },
+                    {
+                        "target": "Escrito",
+                        "native": "Written"
+                    },
+                    {
+                        "target": "Visto",
+                        "native": "Seen"
+                    },
+                    {
+                        "target": "Puesto",
+                        "native": "Put"
+                    }
+                ]
+            }
+        }
+    ]
+}

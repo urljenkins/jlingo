@@ -1,28 +1,26 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import '../providers/progress_provider.dart';
-import '../providers/course_provider.dart';
-import '../providers/gamification_provider.dart';
-import '../models/exercise.dart';
+
 import '../models/course_manifest.dart';
 import '../models/gamification.dart';
-import '../widgets/gamification/xp_widgets.dart'; // For XPProgressBar
-import 'language_selection_screen.dart';
+import '../providers/course_provider.dart';
+import '../providers/flashcard_provider.dart';
+import '../providers/gamification_provider.dart';
+import '../providers/progress_provider.dart';
+import '../providers/settings_provider.dart';
+import '../providers/vocabulary_provider.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_spacing.dart';
+import '../theme/app_typography.dart';
 import '../utils/language_display.dart';
+import '../widgets/gamification/xp_widgets.dart';
+import '../widgets/responsive/mobile_scaffold.dart';
+import 'language_selection_screen.dart';
 import 'lesson_screen.dart';
 import 'vocabulary_screen.dart';
-import 'book_library_screen.dart';
-import 'settings_screen.dart';
-import '../providers/onboarding_provider.dart';
-import '../providers/settings_provider.dart';
-import 'onboarding/welcome_screen.dart';
-import '../services/course_bootstrap.dart';
-import '../widgets/responsive/responsive_layout.dart';
-import '../widgets/responsive/desktop_scaffold.dart';
-import 'package:flutter/services.dart';
-import '../widgets/responsive/mobile_scaffold.dart';
-import '../widgets/hover_card.dart';
+import 'word_of_day_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -32,147 +30,24 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  bool _isLoading = true;
-  ExerciseType? _selectedFilter;
-
-  @override
-  void initState() {
-    super.initState();
-    // ignore: discarded_futures
-    _initializeApp();
-  }
-
-  Future<void> _initializeApp() async {
-    final courseProvider = context.read<CourseProvider>();
-    final onboardingProvider = context.read<OnboardingProvider>();
-    final settingsProvider = context.read<SettingsProvider>();
-    await Future.wait([
-      courseProvider.loadAvailableLanguages(),
-      settingsProvider.loadSettings(),
-    ]);
-
-    if (!mounted) return;
-    await CourseBootstrap.restoreSavedCourse(context);
-    if (!mounted) return;
-
-    setState(() => _isLoading = false);
-
-    if (courseProvider.currentManifest != null) return;
-
-    // No course yet: first-time users go through onboarding (which picks a
-    // language itself), returning users straight back to language selection.
-    // The provider loads the profile in its constructor; await it directly
-    // so we branch on a settled value rather than polling isLoading.
-    await onboardingProvider.loadProfile();
-    if (!mounted) return;
-
-    final Widget next = onboardingProvider.isOnboardingComplete
-        ? const LanguageSelectionScreen()
-        : const WelcomeScreen();
-
-    // ignore: unawaited_futures
-    Navigator.of(context).pushReplacement(
-      PageRouteBuilder<void>(
-        pageBuilder: (context, _, __) => next,
-        transitionDuration: Duration.zero,
-      ),
-    );
-  }
+  bool _isLoading = false;
 
   Future<void> _startLesson(String skillId) async {
     setState(() => _isLoading = true);
     final skill = await context.read<CourseProvider>().loadSkill(skillId);
+    if (!mounted) return;
     setState(() => _isLoading = false);
 
-    if (mounted && skill != null) {
+    if (skill != null) {
       unawaited(Navigator.of(context).push(
-        PageRouteBuilder<void>(
-          pageBuilder: (context, _, __) => LessonScreen(
-            skill: skill,
-            filterType: _selectedFilter,
-          ),
-          transitionDuration: Duration.zero,
+        MaterialPageRoute<void>(
+          builder: (context) => LessonScreen(skill: skill),
         ),
       ));
-    } else if (mounted) {
+    } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Error loading lesson content')),
       );
-    }
-  }
-
-  Widget _buildFilterBar() {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
-      child: Row(
-        children: [
-          FilterChip(
-            label: const Text('All'),
-            selected: _selectedFilter == null,
-            onSelected: (selected) {
-              setState(() {
-                _selectedFilter = null;
-              });
-            },
-            selectedColor: const Color(0xFF00D9FF),
-            labelStyle: TextStyle(
-              color: _selectedFilter == null ? Colors.black : Colors.white,
-            ),
-          ),
-          ...ExerciseType.values.map((type) {
-            return Padding(
-              padding: const EdgeInsets.only(left: 8.0),
-              child: FilterChip(
-                label: Text(_formatExerciseType(type)),
-                selected: _selectedFilter == type,
-                onSelected: (selected) {
-                  setState(() {
-                    _selectedFilter = selected ? type : null;
-                  });
-                },
-                selectedColor: const Color(0xFF00D9FF),
-                labelStyle: TextStyle(
-                  color: _selectedFilter == type ? Colors.black : Colors.white,
-                ),
-              ),
-            );
-          }),
-        ],
-      ),
-    );
-  }
-
-  String _formatExerciseType(ExerciseType type) {
-    switch (type) {
-      case ExerciseType.translateThis:
-        return 'Translate';
-      case ExerciseType.matchPairs:
-        return 'Match';
-      case ExerciseType.multipleChoice:
-        return 'Multiple Choice';
-      case ExerciseType.listeningComprehension:
-        return 'Listening';
-      case ExerciseType.speakThis:
-        return 'Speaking';
-      case ExerciseType.fillInBlank:
-        return 'Fill Blank';
-      case ExerciseType.nativeAudio:
-        return 'Native Audio';
-      case ExerciseType.pronunciationPractice:
-        return 'Pronunciation';
-      case ExerciseType.dialogueListening:
-        return 'Dialogue';
-      case ExerciseType.songFill:
-        return 'Song Fill';
-      case ExerciseType.interactiveDialogue:
-        return 'Interactive';
-      case ExerciseType.storyLesson:
-        return 'Story';
-      case ExerciseType.translationExercise:
-        return 'Translation';
-      case ExerciseType.clozeTest:
-        return 'Cloze Test';
     }
   }
 
@@ -187,294 +62,292 @@ class _HomeScreenState extends State<HomeScreen> {
     return Consumer3<ProgressProvider, CourseProvider, GamificationProvider>(
       builder:
           (context, progressProvider, courseProvider, gamificationProvider, _) {
-        final progress = progressProvider.progress;
         final manifest = courseProvider.currentManifest;
-        final userLevel = gamificationProvider.userLevel;
-        final streakInfo = gamificationProvider.streakInfo;
-        final dailyGoal = gamificationProvider.dailyGoal;
-
         if (manifest == null) {
           return const Scaffold(
             body: Center(child: Text('No course loaded')),
           );
         }
 
-        final currentSkillIndex = courseProvider.getCurrentSkillIndex(
-          progress?.skillMastery ?? {},
-        );
+        final trackingEnabled =
+            context.watch<SettingsProvider>().progressTrackingEnabled;
+        final completed =
+            progressProvider.progress?.completedSkills ?? const <String>{};
+        final currentSkillIndex =
+            courseProvider.getCurrentSkillIndex(completed);
 
-        final bodyContent = Column(
+        final body = Column(
           children: [
-            // XP Progress and Daily Goal
-            _buildHomeGamificationHeader(userLevel, dailyGoal),
-
-            // Filter Bar
-            _buildFilterBar(),
-
-            // Continue Button
-            Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: SizedBox(
-                width: double.infinity,
-                height: 60,
-                child: Focus(
-                  autofocus: true,
-                  onKeyEvent: (node, event) {
-                    if (event.logicalKey == LogicalKeyboardKey.enter ||
-                        event.logicalKey == LogicalKeyboardKey.numpadEnter) {
-                      unawaited(
-                          _startLesson(manifest.skills[currentSkillIndex].id));
-                      return KeyEventResult.handled;
-                    }
-                    return KeyEventResult.ignored;
-                  },
-                  child: ElevatedButton(
-                    onPressed: () =>
-                        _startLesson(manifest.skills[currentSkillIndex].id),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Theme.of(context).colorScheme.primary,
-                      foregroundColor: Colors.black,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                    ),
-                    child: const Text(
-                      'CONTINUE',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-            // Skills List
-            Expanded(
-              child: _buildSkillList(manifest, progressProvider),
-            ),
+            if (trackingEnabled)
+              _buildTrackingCard(
+                gamificationProvider.userLevel,
+                gamificationProvider.dailyGoal,
+              )
+            else
+              _buildWordOfDayCard(),
+            _buildContinueButton(manifest, currentSkillIndex),
+            Expanded(child: _buildSkillList(manifest, progressProvider)),
           ],
         );
 
-        return ResponsiveLayout(
-          mobileScaffold: MobileScaffold(
-            topBar: _buildHomeTopBar(userLevel, streakInfo, manifest),
-            body: bodyContent,
-          ),
-          desktopScaffold: DesktopScaffold(
-            sideNav: ColoredBox(
-              color: const Color(0xFF1A1A1A),
-              child: Column(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.all(12.0),
-                    child: Text(
-                      'Lingua Sprint',
-                      style:
-                          TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.home),
-                    title: const Text('Home'),
-                    onTap: () {},
-                    selected: true,
-                    selectedColor: Theme.of(context).colorScheme.primary,
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.library_books),
-                    title: const Text('Vocabulary'),
-                    onTap: _navigateToVocabulary,
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.menu_book),
-                    title: const Text('Books'),
-                    onTap: _navigateToBookLibrary,
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.language),
-                    title: const Text('Languages'),
-                    onTap: _navigateToLanguageSelection,
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.settings),
-                    title: const Text('Settings'),
-                    onTap: _navigateToSettings,
-                  ),
-                ],
-              ),
-            ),
-            topBar: _buildHomeTopBar(userLevel, streakInfo, manifest),
-            body: bodyContent,
-          ),
+        final topBar = _buildTopBar(
+          manifest,
+          gamificationProvider.userLevel,
+          gamificationProvider.streakInfo,
+          trackingEnabled,
         );
+
+        return MobileScaffold(topBar: topBar, body: body);
       },
     );
   }
 
-  void _navigateToSettings() {
+  // ---------------------------------------------------------------------
+  // Navigation
+  // ---------------------------------------------------------------------
+
+  void _push(Widget screen) {
     unawaited(Navigator.of(context).push(
-      PageRouteBuilder<void>(
-        pageBuilder: (context, _, __) => const SettingsScreen(),
-        transitionDuration: Duration.zero,
-      ),
+      MaterialPageRoute<void>(builder: (context) => screen),
     ));
   }
 
-  void _navigateToLanguageSelection() {
-    unawaited(Navigator.of(context).pushReplacement(
-      PageRouteBuilder<void>(
-        pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
-        transitionDuration: Duration.zero,
-      ),
-    ));
-  }
+  void _navigateToWordOfDay() => _push(const WordOfDayScreen());
+  void _navigateToVocabulary() => _push(const VocabularyScreen());
 
-  void _navigateToBookLibrary() {
-    unawaited(Navigator.of(context).push(
-      PageRouteBuilder<void>(
-        pageBuilder: (context, _, __) => const BookLibraryScreen(),
-        transitionDuration: Duration.zero,
-      ),
-    ));
-  }
+  // Pushed, not replaced: replacing would tear down the shell and take the
+  // navigation with it.
+  void _navigateToLanguageSelection() => _push(const LanguageSelectionScreen());
 
-  void _navigateToVocabulary() {
-    unawaited(Navigator.of(context).push(
-      PageRouteBuilder<void>(
-        pageBuilder: (context, _, __) => const VocabularyScreen(),
-        transitionDuration: Duration.zero,
-      ),
-    ));
-  }
+  // ---------------------------------------------------------------------
+  // Top bar
+  // ---------------------------------------------------------------------
 
-  Widget _buildHomeGamificationHeader(
-      UserLevel userLevel, DailyGoal dailyGoal) {
+  Widget _buildTopBar(CourseManifest manifest, UserLevel userLevel,
+      StreakInfo streakInfo, bool trackingEnabled) {
+    final vocabulary = context.watch<VocabularyProvider>();
+
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
-      child: Column(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.screenInset,
+        AppSpacing.md,
+        AppSpacing.screenInset,
+        AppSpacing.sm,
+      ),
+      child: Row(
         children: [
-          XPProgressBar(userLevel: userLevel),
-          const SizedBox(height: 8),
-          DailyGoalWidget(dailyGoal: dailyGoal),
+          Expanded(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: trackingEnabled
+                    ? _trackingChips(userLevel, streakInfo)
+                    : _libraryChips(vocabulary),
+              ),
+            ),
+          ),
+          const SizedBox(width: AppSpacing.sm),
+          _buildLanguageChip(manifest),
         ],
       ),
     );
   }
 
-  Widget _buildHomeTopBar(
-      UserLevel userLevel, StreakInfo streakInfo, CourseManifest manifest) {
-    final streakMonitoringEnabled =
-        context.watch<SettingsProvider>().streakMonitoringEnabled;
+  /// Counters shown only when the learner has opted into scoring.
+  List<Widget> _trackingChips(UserLevel userLevel, StreakInfo streakInfo) {
+    return [
+      _Chip(
+        icon: Icons.local_fire_department_outlined,
+        label: 'Day ${streakInfo.currentStreak}',
+      ),
+      const SizedBox(width: AppSpacing.sm),
+      _Chip(icon: Icons.bolt_outlined, label: '${userLevel.currentXP} XP'),
+    ];
+  }
+
+  /// The default. Inventory rather than achievement: what is in the library
+  /// and what is waiting, never what has been earned.
+  List<Widget> _libraryChips(VocabularyProvider vocabulary) {
+    final saved = vocabulary.savedWords.length;
+    final due = context.watch<FlashcardProvider>().remainingCards;
+
+    return [
+      if (vocabulary.todaysWord != null)
+        _Chip(
+          icon: Icons.auto_stories_outlined,
+          label: vocabulary.todaysWord!.word,
+          onTap: _navigateToWordOfDay,
+        ),
+      if (saved > 0) ...[
+        const SizedBox(width: AppSpacing.sm),
+        _Chip(
+          icon: Icons.bookmark_outline,
+          label: '$saved saved',
+          onTap: _navigateToVocabulary,
+        ),
+      ],
+      if (due > 0) ...[
+        const SizedBox(width: AppSpacing.sm),
+        _Chip(icon: Icons.style_outlined, label: '$due due'),
+      ],
+    ];
+  }
+
+  Widget _buildLanguageChip(CourseManifest manifest) {
+    return _Chip(
+      label: LanguageDisplay.name(manifest.targetLanguage),
+      trailing: Icons.expand_more,
+      onTap: _navigateToLanguageSelection,
+    );
+  }
+
+  // ---------------------------------------------------------------------
+  // Hero card
+  // ---------------------------------------------------------------------
+
+  /// Occupies the slot the level/daily-target card holds when scoring is on.
+  Widget _buildWordOfDayCard() {
+    final word = context.watch<VocabularyProvider>().todaysWord;
+    if (word == null) return const SizedBox.shrink();
 
     return Padding(
-      padding: const EdgeInsets.all(12.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          // Streak (conditionally displayed based on Settings)
-          if (streakMonitoringEnabled)
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.screenInset,
+        AppSpacing.sm,
+        AppSpacing.screenInset,
+        AppSpacing.md,
+      ),
+      child: _Surface(
+        onTap: _navigateToWordOfDay,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('WORD OF THE DAY', style: AppTypography.sectionLabel),
+            const SizedBox(height: AppSpacing.md),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.local_fire_department,
-                    color: Color(0xFFFF6B35), size: 28),
-                const SizedBox(width: 8),
-                Text(
-                  'Day ${streakInfo.currentStreak}',
-                  style: const TextStyle(
-                      fontSize: 18, fontWeight: FontWeight.bold),
-                ),
-              ],
-            )
-          else
-            const SizedBox.shrink(),
-
-          // XP + vocabulary + settings + language switch
-          Row(
-            children: [
-              const Icon(Icons.star, color: Color(0xFFFFD700), size: 28),
-              const SizedBox(width: 8),
-              Text(
-                '${userLevel.currentXP}',
-                style:
-                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(width: 8),
-              IconButton(
-                icon: const Icon(Icons.library_books),
-                tooltip: 'Vocabulary',
-                onPressed: _navigateToVocabulary,
-              ),
-              const SizedBox(width: 2),
-              IconButton(
-                icon: const Icon(Icons.menu_book),
-                tooltip: 'Books',
-                onPressed: _navigateToBookLibrary,
-              ),
-              const SizedBox(width: 2),
-              IconButton(
-                icon: const Icon(Icons.settings),
-                tooltip: 'Settings',
-                onPressed: _navigateToSettings,
-              ),
-              const SizedBox(width: 4),
-              // Current language, tappable to switch.
-              Tooltip(
-                message: 'Change language',
-                child: InkWell(
-                  onTap: _navigateToLanguageSelection,
-                  borderRadius: BorderRadius.circular(20),
-                  child: Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          LanguageDisplay.flag(manifest.targetLanguage),
-                          style: const TextStyle(fontSize: 20),
-                        ),
-                        const SizedBox(width: 6),
-                        Text(
-                          LanguageDisplay.name(manifest.targetLanguage),
-                          style: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        const Icon(Icons.arrow_drop_down, size: 20),
-                      ],
-                    ),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(word.word, style: AppTypography.title),
+                      const SizedBox(height: AppSpacing.xs),
+                      Text(word.translation, style: AppTypography.subtitle),
+                    ],
                   ),
                 ),
+                const Icon(Icons.arrow_outward,
+                    size: 18, color: AppColors.textMuted),
+              ],
+            ),
+            if (word.exampleSentence.isNotEmpty) ...[
+              const SizedBox(height: AppSpacing.md),
+              const Divider(),
+              const SizedBox(height: AppSpacing.md),
+              Text(
+                word.exampleSentence,
+                style: AppTypography.body,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
               ),
             ],
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
+
+  Widget _buildTrackingCard(UserLevel userLevel, DailyGoal dailyGoal) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.screenInset,
+        AppSpacing.sm,
+        AppSpacing.screenInset,
+        AppSpacing.md,
+      ),
+      child: _Surface(
+        child: Column(
+          children: [
+            XPProgressBar(userLevel: userLevel),
+            const SizedBox(height: AppSpacing.md),
+            const Divider(),
+            const SizedBox(height: AppSpacing.md),
+            DailyGoalWidget(dailyGoal: dailyGoal),
+          ],
+        ),
+      ),
+    );
+  }
+
+  // ---------------------------------------------------------------------
+  // Continue
+  // ---------------------------------------------------------------------
+
+  Widget _buildContinueButton(CourseManifest manifest, int currentSkillIndex) {
+    final skill = manifest.skills[currentSkillIndex];
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: AppSpacing.screenInset),
+      child: SizedBox(
+        width: double.infinity,
+        child: Focus(
+          autofocus: true,
+          onKeyEvent: (node, event) {
+            if (event.logicalKey == LogicalKeyboardKey.enter ||
+                event.logicalKey == LogicalKeyboardKey.numpadEnter) {
+              unawaited(_startLesson(skill.id));
+              return KeyEventResult.handled;
+            }
+            return KeyEventResult.ignored;
+          },
+          child: ElevatedButton(
+            onPressed: () => _startLesson(skill.id),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text('Continue'),
+                const SizedBox(height: 2),
+                Text(
+                  'Next up: ${skill.name}',
+                  style: AppTypography.caption.copyWith(
+                    color: AppColors.onAccent.withValues(alpha: 0.6),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  // ---------------------------------------------------------------------
+  // Skill list
+  // ---------------------------------------------------------------------
 
   Widget _buildSkillList(
       CourseManifest manifest, ProgressProvider progressProvider) {
-    final progress = progressProvider.progress;
+    final completed = progressProvider.progress?.completedSkills ?? const {};
+    final currentIndex =
+        context.read<CourseProvider>().getCurrentSkillIndex(completed);
+    final currentSkillId = currentIndex < manifest.skills.length
+        ? manifest.skills[currentIndex].id
+        : null;
+
     final Map<int, List<SkillHeader>> groupedSkills = {};
     for (final skill in manifest.skills) {
       groupedSkills.putIfAbsent(skill.level, () => []).add(skill);
     }
-
     final sortedLevels = groupedSkills.keys.toList()..sort();
-    final currentSkillIndex =
-        context.read<CourseProvider>().getCurrentSkillIndex(
-              progress?.skillMastery ?? {},
-            );
-    final currentSkillId = currentSkillIndex < manifest.skills.length
-        ? manifest.skills[currentSkillIndex].id
-        : null;
 
     return ListView.builder(
-      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.screenInset,
+        AppSpacing.lg,
+        AppSpacing.screenInset,
+        AppSpacing.xxl,
+      ),
       itemCount: sortedLevels.length,
       itemBuilder: (context, index) {
         final level = sortedLevels[index];
@@ -483,25 +356,29 @@ class _HomeScreenState extends State<HomeScreen> {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            if (index > 0) const SizedBox(height: AppSpacing.xl),
             Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 16.0, horizontal: 8.0),
+              padding: const EdgeInsets.only(bottom: AppSpacing.md),
               child: Text(
-                _getLevelTitle(level),
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF00D9FF),
-                ),
+                _getLevelTitle(level).toUpperCase(),
+                style: AppTypography.sectionLabel,
               ),
             ),
             ...levelSkills.map((skill) {
-              final mastery = progress?.skillMastery[skill.id] ?? 0.0;
-              return _buildSkillItem(
-                skill.name,
-                mastery,
-                skill.id == currentSkillId,
-                onTap: () => _startLesson(skill.id),
+              // A skill opens once the one before it in the course has been
+              // finished; the first is always available.
+              final position = manifest.skills.indexOf(skill);
+              final isUnlocked = position == 0 ||
+                  completed.contains(manifest.skills[position - 1].id);
+
+              return _SkillRow(
+                name: skill.name,
+                isCompleted: completed.contains(skill.id),
+                isCurrent: skill.id == currentSkillId,
+                isUnlocked: isUnlocked,
+                previousSkillName:
+                    position > 0 ? manifest.skills[position - 1].name : null,
+                onTap: isUnlocked ? () => _startLesson(skill.id) : null,
               );
             }),
           ],
@@ -529,66 +406,200 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  Widget _buildSkillItem(String name, double mastery, bool isCurrent,
-      {VoidCallback? onTap}) {
+  // ---------------------------------------------------------------------
+  // Bottom navigation
+  // ---------------------------------------------------------------------
+
+  /// Read and Words were previously buried in a row of icon buttons; the
+  /// destinations that exist get a tab each.
+}
+
+/// Pill used across the top bar. Inert unless [onTap] is supplied.
+class _Chip extends StatelessWidget {
+  const _Chip({
+    required this.label,
+    this.icon,
+    this.trailing,
+    this.onTap,
+  });
+
+  final String label;
+  final IconData? icon;
+  final IconData? trailing;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final content = Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.md,
+        vertical: AppSpacing.sm,
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (icon != null) ...[
+            Icon(icon, size: 16, color: AppColors.textSecondary),
+            const SizedBox(width: AppSpacing.xs + 2),
+          ],
+          Text(label, style: AppTypography.label),
+          if (trailing != null) ...[
+            const SizedBox(width: AppSpacing.xs),
+            Icon(trailing, size: 16, color: AppColors.textSecondary),
+          ],
+        ],
+      ),
+    );
+
+    return Material(
+      color: AppColors.surface,
+      shape: const StadiumBorder(
+        side: BorderSide(color: AppColors.border),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: onTap == null ? content : InkWell(onTap: onTap, child: content),
+    );
+  }
+}
+
+/// Bordered card used for the hero slot.
+class _Surface extends StatelessWidget {
+  const _Surface({required this.child, this.onTap});
+
+  final Widget child;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final padded = Padding(
+      padding: const EdgeInsets.all(AppSpacing.lg),
+      child: child,
+    );
+
+    return Material(
+      color: AppColors.surface,
+      borderRadius: BorderRadius.circular(AppRadius.card),
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.card),
+        side: const BorderSide(color: AppColors.border),
+      ),
+      child: onTap == null ? padded : InkWell(onTap: onTap, child: padded),
+    );
+  }
+}
+
+/// One skill in the course list. State is carried by a leading glyph and a
+/// short status word — never a percentage.
+class _SkillRow extends StatelessWidget {
+  const _SkillRow({
+    required this.name,
+    required this.isCompleted,
+    required this.isCurrent,
+    required this.isUnlocked,
+    required this.previousSkillName,
+    this.onTap,
+  });
+
+  final String name;
+  final bool isCompleted;
+  final bool isCurrent;
+  final bool isUnlocked;
+  final String? previousSkillName;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final titleColor =
+        isUnlocked ? AppColors.textPrimary : AppColors.textDisabled;
+
     return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
-      child: DecoratedBox(
-        decoration: isCurrent
-            ? BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: const Color(0xFF00D9FF), width: 2),
-              )
-            : const BoxDecoration(),
-        child: HoverCard(
+      padding: const EdgeInsets.only(bottom: AppSpacing.md),
+      child: Material(
+        color: isCurrent ? AppColors.surfaceRaised : AppColors.surface,
+        borderRadius: BorderRadius.circular(AppRadius.card),
+        clipBehavior: Clip.antiAlias,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppRadius.card),
+          side: BorderSide(
+            color: isCurrent ? AppColors.borderStrong : AppColors.border,
+          ),
+        ),
+        child: InkWell(
           onTap: onTap,
-          baseColor:
-              isCurrent ? const Color(0xFF2A2A2A) : const Color(0xFF1A1A1A),
-          hoverColor:
-              isCurrent ? const Color(0xFF3A3A3A) : const Color(0xFF2A2A2A),
           child: Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(AppSpacing.lg),
             child: Row(
               children: [
-                // Mastery Circle
-                SizedBox(
-                  width: 48,
-                  height: 48,
-                  child: Stack(
+                _buildGlyph(),
+                const SizedBox(width: AppSpacing.lg),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      CircularProgressIndicator(
-                        value: mastery / 100,
-                        strokeWidth: 4,
-                        backgroundColor: const Color(0xFF3A3A3A),
-                        valueColor: const AlwaysStoppedAnimation<Color>(
-                            Color(0xFF00FF85)),
-                      ),
-                      Center(
-                        child: Text(
-                          '${mastery.toInt()}%',
-                          style: const TextStyle(
-                              fontSize: 11, fontWeight: FontWeight.bold),
+                      Text(
+                        name,
+                        style: AppTypography.heading.copyWith(
+                          color: titleColor,
                         ),
                       ),
+                      if (_subtitle != null) ...[
+                        const SizedBox(height: AppSpacing.xs),
+                        Text(_subtitle!, style: AppTypography.caption),
+                      ],
                     ],
                   ),
                 ),
-
-                const SizedBox(width: 16),
-
-                // Skill Name
-                Expanded(
-                  child: Text(
-                    name,
-                    style: const TextStyle(
-                        fontSize: 16, fontWeight: FontWeight.w500),
+                if (isUnlocked)
+                  Icon(
+                    isCompleted ? Icons.refresh : Icons.chevron_right,
+                    size: 20,
+                    color: AppColors.textMuted,
                   ),
-                ),
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+
+  String? get _subtitle {
+    if (!isUnlocked) {
+      return previousSkillName == null
+          ? 'Locked'
+          : 'Unlocks after $previousSkillName';
+    }
+    if (isCurrent) return 'Continue where you left off';
+    if (isCompleted) return 'Finished · tap to revisit';
+    return null;
+  }
+
+  Widget _buildGlyph() {
+    late final IconData icon;
+    late final Color color;
+
+    if (!isUnlocked) {
+      icon = Icons.lock_outline;
+      color = AppColors.textDisabled;
+    } else if (isCompleted) {
+      icon = Icons.check;
+      color = AppColors.textPrimary;
+    } else {
+      icon = Icons.circle_outlined;
+      color = AppColors.textSecondary;
+    }
+
+    return Container(
+      width: 40,
+      height: 40,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        border: Border.all(
+          color: isCompleted ? AppColors.textPrimary : AppColors.border,
+        ),
+      ),
+      child: Icon(icon, size: 18, color: color),
     );
   }
 }

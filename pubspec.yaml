@@ -44,6 +44,8 @@ flutter:
     - assets/courses/
     - assets/courses/spanish/
     - assets/courses/spanish/skills/
+    - assets/courses/spanish_latam/
+    - assets/courses/spanish_latam/skills/
     - assets/courses/french/
     - assets/courses/french/skills/
     - assets/courses/chinese/

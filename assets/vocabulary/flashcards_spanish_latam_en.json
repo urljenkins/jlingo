@@ -1,0 +1,89 @@
+{
+  "id": "spanish_latam_flashcards",
+  "name": "Latin American Spanish Core",
+  "description": "Essential Latin American Spanish vocabulary with spaced repetition",
+  "targetLanguage": "es-419",
+  "nativeLanguage": "en-US",
+  "cards": [
+    {
+      "id": "fc_latam_1",
+      "front": "¡Hola!",
+      "back": "Hello / Hi",
+      "pronunciation": "/ˈo.la/",
+      "exampleSentence": "¡Hola! ¿Cómo estás?",
+      "exampleTranslation": "Hello! How are you?",
+      "category": "Greetings",
+      "tags": ["basic", "essential"]
+    },
+    {
+      "id": "fc_latam_2",
+      "front": "Buenos días",
+      "back": "Good morning",
+      "pronunciation": "/ˈbwe.noz ˈði.as/",
+      "exampleSentence": "Buenos días a todos.",
+      "exampleTranslation": "Good morning everyone.",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_latam_3",
+      "front": "Muchas gracias",
+      "back": "Thank you very much",
+      "pronunciation": "/ˈmu.tʃaz ˈɣɾa.sjas/",
+      "exampleSentence": "Muchas gracias por tu amable ayuda.",
+      "exampleTranslation": "Thank you very much for your kind help.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_latam_4",
+      "front": "De nada / Con gusto",
+      "back": "You're welcome / With pleasure",
+      "pronunciation": "/de ˈna.ða/ /koŋ ˈɡws.to/",
+      "exampleSentence": "No te preocupes, ¡con gusto!",
+      "exampleTranslation": "Don't worry, my pleasure!",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_latam_5",
+      "front": "Por favor",
+      "back": "Please",
+      "pronunciation": "/poɾ faˈβoɾ/",
+      "exampleSentence": "Un café con leche, por favor.",
+      "exampleTranslation": "A coffee with milk, please.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_latam_6",
+      "front": "¿Cómo se llaman ustedes?",
+      "back": "What are your names? (plural you)",
+      "pronunciation": "/ˈko.mo se ˈʎa.man usˈte.ðes/",
+      "exampleSentence": "Bienvenidos, ¿cómo se llaman ustedes?",
+      "exampleTranslation": "Welcome, what are your names?",
+      "category": "Introductions",
+      "tags": ["basic", "introductions", "latam"]
+    },
+    {
+      "id": "fc_latam_7",
+      "front": "El carro / El auto",
+      "back": "The car",
+      "pronunciation": "/el ˈka.ro/",
+      "exampleSentence": "Dejé el carro estacionado cerca.",
+      "exampleTranslation": "I left the car parked nearby.",
+      "category": "Transportation",
+      "tags": ["nouns", "transportation", "latam"]
+    },
+    {
+      "id": "fc_latam_8",
+      "front": "El boleto",
+      "back": "The ticket",
+      "pronunciation": "/el boˈle.to/",
+      "exampleSentence": "¿Dónde puedo comprar un boleto de autobús?",
+      "exampleTranslation": "Where can I buy a bus ticket?",
+      "category": "Travel",
+      "tags": ["travel", "nouns", "latam"]
+    }
+  ]
+}

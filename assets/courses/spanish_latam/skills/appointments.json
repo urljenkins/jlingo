@@ -1,0 +1,77 @@
+{
+    "id": "appointments",
+    "name": "Appointments",
+    "description": "Learn to schedule and manage appointments",
+    "level": 14,
+    "exercises": [
+        {
+            "id": "ex_apt_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'I have an appointment'?",
+            "options": [
+                "Tengo una cita",
+                "Tengo un tiempo",
+                "Tengo una hora",
+                "Tengo un lugar"
+            ],
+            "correctAnswer": "Tengo una cita"
+        },
+        {
+            "id": "ex_apt_2",
+            "type": "matchPairs",
+            "question": "Match appointment vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Cancelar",
+                        "native": "To cancel"
+                    },
+                    {
+                        "target": "Posponer",
+                        "native": "To postpone"
+                    },
+                    {
+                        "target": "Confirmar",
+                        "native": "To confirm"
+                    },
+                    {
+                        "target": "Reprogramar",
+                        "native": "To reschedule"
+                    },
+                    {
+                        "target": "Disponible",
+                        "native": "Available"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_apt_3",
+            "type": "translateThis",
+            "question": "Quisiera pedir una cita para el lunes",
+            "options": [],
+            "correctAnswer": "I would like to request an appointment for Monday"
+        },
+        {
+            "id": "ex_apt_4",
+            "type": "fillInBlank",
+            "question": "Lo siento, pero tengo que ___ la cita",
+            "options": [
+                "cancelar",
+                "ir",
+                "tener",
+                "ser"
+            ],
+            "correctAnswer": "cancelar"
+        },
+        {
+            "id": "ex_apt_5",
+            "type": "speakThis",
+            "question": "¿Tiene hora libre para mañana?",
+            "options": [],
+            "correctAnswer": "¿Tiene hora libre para mañana?"
+        }
+    ]
+}

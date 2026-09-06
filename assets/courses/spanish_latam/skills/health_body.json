@@ -1,0 +1,100 @@
+{
+    "id": "health_body",
+    "name": "Health & Body",
+    "description": "Learn body parts and health vocabulary",
+    "level": 16,
+    "exercises": [
+        {
+            "id": "ex_hb_1",
+            "type": "matchPairs",
+            "question": "Match body parts",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "La cabeza",
+                        "native": "The head"
+                    },
+                    {
+                        "target": "El brazo",
+                        "native": "The arm"
+                    },
+                    {
+                        "target": "La pierna",
+                        "native": "The leg"
+                    },
+                    {
+                        "target": "El estómago",
+                        "native": "The stomach"
+                    },
+                    {
+                        "target": "La espalda",
+                        "native": "The back"
+                    },
+                    {
+                        "target": "El corazón",
+                        "native": "The heart"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_hb_2",
+            "type": "translateThis",
+            "question": "Me duele la cabeza",
+            "options": [],
+            "correctAnswer": "My head hurts"
+        },
+        {
+            "id": "ex_hb_3",
+            "type": "fillInBlank",
+            "question": "Tengo ___ de garganta",
+            "options": [
+                "dolor",
+                "malo",
+                "enfermo",
+                "fiebre"
+            ],
+            "correctAnswer": "dolor"
+        },
+        {
+            "id": "ex_hb_4",
+            "type": "matchPairs",
+            "question": "Match common ailments",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "La fiebre",
+                        "native": "Fever"
+                    },
+                    {
+                        "target": "La tos",
+                        "native": "Cough"
+                    },
+                    {
+                        "target": "El resfriado",
+                        "native": "Cold"
+                    },
+                    {
+                        "target": "La gripe",
+                        "native": "Flu"
+                    },
+                    {
+                        "target": "El dolor",
+                        "native": "Pain"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_hb_5",
+            "type": "speakThis",
+            "question": "No me siento bien",
+            "options": [],
+            "correctAnswer": "No me siento bien"
+        }
+    ]
+}

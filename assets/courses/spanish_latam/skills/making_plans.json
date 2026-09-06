@@ -1,0 +1,77 @@
+{
+    "id": "making_plans",
+    "name": "Making Plans",
+    "description": "Learn to make suggestions and invitations",
+    "level": 14,
+    "exercises": [
+        {
+            "id": "ex_mp_1",
+            "type": "multipleChoice",
+            "question": "How do you suggest 'Let's go'?",
+            "options": [
+                "Vamos",
+                "Voy",
+                "Vas",
+                "Van"
+            ],
+            "correctAnswer": "Vamos"
+        },
+        {
+            "id": "ex_mp_2",
+            "type": "matchPairs",
+            "question": "Match plan-making phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "¿Te gustaría...?",
+                        "native": "Would you like to...?"
+                    },
+                    {
+                        "target": "¿Qué te parece si...?",
+                        "native": "What do you think if...?"
+                    },
+                    {
+                        "target": "¿Por qué no...?",
+                        "native": "Why don't we...?"
+                    },
+                    {
+                        "target": "Podemos...",
+                        "native": "We can..."
+                    },
+                    {
+                        "target": "¿Quedamos a las...?",
+                        "native": "Shall we meet at...?"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_mp_3",
+            "type": "translateThis",
+            "question": "¿Te apetece ir al cine?",
+            "options": [],
+            "correctAnswer": "Do you feel like going to the cinema?"
+        },
+        {
+            "id": "ex_mp_4",
+            "type": "fillInBlank",
+            "question": "¿___ vamos a cenar esta noche?",
+            "options": [
+                "Dónde",
+                "Qué",
+                "Quién",
+                "Cuánto"
+            ],
+            "correctAnswer": "Dónde"
+        },
+        {
+            "id": "ex_mp_5",
+            "type": "speakThis",
+            "question": "¡Buena idea! Nos vemos a las ocho",
+            "options": [],
+            "correctAnswer": "¡Buena idea! Nos vemos a las ocho"
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+    "id": "listening_pronunciation",
+    "name": "Écoute et Prononciation",
+    "description": "Maîtrisez les sons français à travers l'écoute, la prononciation et les dialogues",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "fr_lp_1",
+            "type": "listeningComprehension",
+            "question": "Bonjour, comment allez-vous ?",
+            "options": [],
+            "correctAnswer": "Bonjour, comment allez-vous ?"
+        },
+        {
+            "id": "fr_lp_2",
+            "type": "speakThis",
+            "question": "Je m'appelle Pierre et je suis français",
+            "options": [],
+            "correctAnswer": "Je m'appelle Pierre et je suis français"
+        },
+        {
+            "id": "fr_lp_3",
+            "type": "nativeAudio",
+            "question": "Où est la gare s'il vous plaît ?",
+            "options": [],
+            "correctAnswer": "Où est la gare s'il vous plaît ?",
+            "targetLanguage": "fr-FR",
+            "audioPath": null,
+            "audioAvailable": false,
+            "enabled": false,
+            "metadata": {
+                "speaker": "Locuteur natif - Sophie",
+                "difficulty": "beginner"
+            }
+        },
+        {
+            "id": "fr_lp_4",
+            "type": "pronunciationPractice",
+            "question": "Un bon vin blanc",
+            "options": [],
+            "correctAnswer": "Un bon vin blanc",
+            "targetLanguage": "fr-FR",
+            "metadata": {
+                "phonetics": "œ̃ bɔ̃ vɛ̃ blɑ̃",
+                "focus": "Les voyelles nasales françaises"
+            }
+        },
+        {
+            "id": "fr_lp_5",
+            "type": "dialogueListening",
+            "question": "Écoutez la conversation au café",
+            "options": [
+                "Un croissant et un café",
+                "Un thé vert",
+                "Un verre d'eau",
+                "Un jus d'orange"
+            ],
+            "correctAnswer": "Un croissant et un café",
+            "targetLanguage": "fr-FR",
+            "metadata": {
+                "type": "dialogue",
+                "context": "Une commande dans un café parisien",
+                "dialogue": [
+                    {
+                        "speaker": "Serveur",
+                        "text": "Bonjour, que désirez-vous ?",
+                        "translation": "Hello, what would you like?"
+                    },
+                    {
+                        "speaker": "Client",
+                        "text": "Un croissant et un café s'il vous plaît.",
+                        "translation": "A croissant and a coffee please."
+                    }
+                ],
+                "comprehensionQuestion": "Qu'a commandé le client ?",
+                "correctOptionIndex": 0
+            }
+        },
+        {
+            "id": "fr_lp_6",
+            "type": "songFill",
+            "question": "La Vie en Rose",
+            "options": [],
+            "correctAnswer": "rose,yeux,bonheur",
+            "targetLanguage": "fr-FR",
+            "metadata": {
+                "songTitle": "La Vie en Rose",
+                "artist": "Édith Piaf",
+                "lyrics": [
+                    {
+                        "text": "Quand il me prend dans ses bras",
+                        "timestamp": 0
+                    },
+                    {
+                        "text": "Il me parle tout bas",
+                        "timestamp": 3000
+                    },
+                    {
+                        "text": "Je vois la vie en rose",
+                        "timestamp": 6000
+                    }
+                ],
+                "blanks": [
+                    {
+                        "lineIndex": 2,
+                        "wordIndex": 5,
+                        "correctWord": "rose",
+                        "hint": "rose"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fr_lp_7",
+            "type": "interactiveDialogue",
+            "question": "Commander au restaurant",
+            "options": [
+                "L'addition s'il vous plaît",
+                "Au revoir",
+                "Je ne sais pas"
+            ],
+            "correctAnswer": "L'addition s'il vous plaît",
+            "targetLanguage": "fr-FR",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "topic": "Restaurant",
+                "dialogue": [
+                    {
+                        "speaker": "Serveur",
+                        "text": "Le repas s'est bien passé ?",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "You",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "L'addition s'il vous plaît",
+                            "Au revoir",
+                            "Je ne sais pas"
+                        ]
+                    },
+                    {
+                        "speaker": "Serveur",
+                        "text": "Tout de suite monsieur.",
+                        "isNative": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fr_lp_8",
+            "type": "storyLesson",
+            "question": "Où va Thomas ce matin ?",
+            "options": [
+                "À la boulangerie",
+                "Au cinéma",
+                "À la plage",
+                "Au musée"
+            ],
+            "correctAnswer": "À la boulangerie",
+            "targetLanguage": "fr-FR",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "title": "Le matin de Thomas",
+                "level": "A1",
+                "story": "Chaque matin, Thomas se réveille tôt. Il adore l'odeur du pain frais. Il met son manteau et marche jusqu'à la boulangerie du quartier pour acheter une baguette croustillante.",
+                "vocabulary": [
+                    {
+                        "word": "boulangerie",
+                        "translation": "bakery",
+                        "highlight": true
+                    }
+                ],
+                "question": "Où va Thomas ce matin ?"
+            }
+        }
+    ]
+}

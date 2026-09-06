@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:audioplayers/audioplayers.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 /// Widget for dialogue-based listening comprehension
 /// Plays dialogues (news, stories, conversations) followed by comprehension questions
@@ -233,11 +234,12 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
           // Header
           Row(
             children: [
-              Icon(_dialogueIcon, color: const Color(0xFF00D9FF), size: 20),
+              Icon(_dialogueIcon, color: AppColors.textPrimary, size: 20),
               const SizedBox(width: 8),
               Text(
                 'Listening Comprehension - $_dialogueLabel',
-                style: const TextStyle(fontSize: 14, color: Colors.white60),
+                style: const TextStyle(
+                    fontSize: 14, color: AppColors.textSecondary),
               ),
               const Spacer(),
               if (_playCount > 0)
@@ -251,12 +253,13 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Icon(Icons.replay, size: 14, color: Colors.white60),
+                      const Icon(Icons.replay,
+                          size: 14, color: AppColors.textSecondary),
                       const SizedBox(width: 4),
                       Text(
                         '$_playCount',
                         style: const TextStyle(
-                            fontSize: 12, color: Colors.white60),
+                            fontSize: 12, color: AppColors.textSecondary),
                       ),
                     ],
                   ),
@@ -270,21 +273,21 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: const Color(0xFF00D9FF).withValues(alpha: 0.1),
+                color: AppColors.textPrimary.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                    color: const Color(0xFF00D9FF).withValues(alpha: 0.3)),
+                    color: AppColors.textPrimary.withValues(alpha: 0.3)),
               ),
               child: Row(
                 children: [
                   const Icon(Icons.info_outline,
-                      color: Color(0xFF00D9FF), size: 18),
+                      color: AppColors.textPrimary, size: 18),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
                       _context!,
-                      style:
-                          const TextStyle(fontSize: 14, color: Colors.white70),
+                      style: const TextStyle(
+                          fontSize: 14, color: AppColors.textSecondary),
                     ),
                   ),
                 ],
@@ -299,7 +302,7 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFF2A2A2A),
+                color: AppColors.surfaceRaised,
                 borderRadius: BorderRadius.circular(12),
               ),
               child:
@@ -324,9 +327,8 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                           : 'Play Again',
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: _isPlaying
-                      ? const Color(0xFFFF4757)
-                      : const Color(0xFF00D9FF),
+                  backgroundColor:
+                      _isPlaying ? AppColors.incorrect : AppColors.textPrimary,
                   foregroundColor: _isPlaying ? Colors.white : Colors.black,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(
@@ -341,13 +343,13 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
               child: ElevatedButton(
                 onPressed: _selectedOption >= 0 ? _checkAnswer : null,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF00D9FF),
+                  backgroundColor: AppColors.textPrimary,
                   foregroundColor: Colors.black,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  disabledBackgroundColor: Colors.white24,
+                  disabledBackgroundColor: AppColors.border,
                 ),
                 child: const Text(
                   'Check Answer',
@@ -365,7 +367,7 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
       children: [
         const Text(
           'Listen to the dialogue carefully',
-          style: TextStyle(fontSize: 16, color: Colors.white70),
+          style: TextStyle(fontSize: 16, color: AppColors.textSecondary),
         ),
         const SizedBox(height: 24),
 
@@ -383,11 +385,11 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: isCurrentLine
-                        ? const Color(0xFF00D9FF).withValues(alpha: 0.2)
+                        ? AppColors.textPrimary.withValues(alpha: 0.2)
                         : Colors.transparent,
                     borderRadius: BorderRadius.circular(8),
                     border: isCurrentLine
-                        ? Border.all(color: const Color(0xFF00D9FF))
+                        ? Border.all(color: AppColors.textPrimary)
                         : null,
                   ),
                   child: Column(
@@ -398,7 +400,7 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                           line.speaker,
                           style: const TextStyle(
                             fontSize: 12,
-                            color: Color(0xFF00D9FF),
+                            color: AppColors.textPrimary,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -414,7 +416,7 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                           line.translation!,
                           style: const TextStyle(
                             fontSize: 14,
-                            color: Colors.white54,
+                            color: AppColors.textMuted,
                             fontStyle: FontStyle.italic,
                           ),
                         ),
@@ -434,20 +436,22 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                   Icon(
                     _isPlaying ? Icons.volume_up : Icons.headphones,
                     size: 64,
-                    color:
-                        _isPlaying ? const Color(0xFF00D9FF) : Colors.white38,
+                    color: _isPlaying
+                        ? AppColors.textPrimary
+                        : AppColors.textDisabled,
                   ),
                   const SizedBox(height: 16),
                   Text(
                     _isPlaying ? 'Playing...' : 'Press play to start listening',
-                    style: const TextStyle(fontSize: 16, color: Colors.white60),
+                    style: const TextStyle(
+                        fontSize: 16, color: AppColors.textSecondary),
                   ),
                   if (_isPlaying && _dialogueLines.isNotEmpty) ...[
                     const SizedBox(height: 8),
                     Text(
                       'Line ${_currentLineIndex + 1} of ${_dialogueLines.length}',
-                      style:
-                          const TextStyle(fontSize: 14, color: Colors.white38),
+                      style: const TextStyle(
+                          fontSize: 14, color: AppColors.textDisabled),
                     ),
                   ],
                 ],
@@ -465,7 +469,8 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
         // Question
         Row(
           children: [
-            const Icon(Icons.help_outline, color: Color(0xFFFFAA00), size: 24),
+            const Icon(Icons.help_outline,
+                color: AppColors.textSecondary, size: 24),
             const SizedBox(width: 12),
             Expanded(
               child: Text(
@@ -480,13 +485,13 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
             IconButton(
               onPressed: _isPlaying ? null : _playDialogue,
               icon: const Icon(Icons.replay),
-              color: const Color(0xFF00D9FF),
+              color: AppColors.textPrimary,
               tooltip: 'Listen again',
             ),
           ],
         ),
         const SizedBox(height: 16),
-        const Divider(color: Colors.white24),
+        const Divider(color: AppColors.border),
         const SizedBox(height: 16),
 
         // Answer options
@@ -503,20 +508,17 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
               Color borderColor;
 
               if (showCorrect) {
-                backgroundColor =
-                    const Color(0xFF00FF85).withValues(alpha: 0.2);
-                borderColor = const Color(0xFF00FF85);
+                backgroundColor = AppColors.correct.withValues(alpha: 0.2);
+                borderColor = AppColors.correct;
               } else if (showWrong) {
-                backgroundColor =
-                    const Color(0xFFFF4757).withValues(alpha: 0.2);
-                borderColor = const Color(0xFFFF4757);
+                backgroundColor = AppColors.incorrect.withValues(alpha: 0.2);
+                borderColor = AppColors.incorrect;
               } else if (isSelected) {
-                backgroundColor =
-                    const Color(0xFF00D9FF).withValues(alpha: 0.2);
-                borderColor = const Color(0xFF00D9FF);
+                backgroundColor = AppColors.textPrimary.withValues(alpha: 0.2);
+                borderColor = AppColors.textPrimary;
               } else {
                 backgroundColor = Colors.transparent;
-                borderColor = Colors.white24;
+                borderColor = AppColors.border;
               }
 
               return GestureDetector(
@@ -537,19 +539,21 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: isSelected
-                              ? const Color(0xFF00D9FF)
+                              ? AppColors.textPrimary
                               : Colors.transparent,
                           border: Border.all(
                             color: isSelected
-                                ? const Color(0xFF00D9FF)
-                                : Colors.white38,
+                                ? AppColors.textPrimary
+                                : AppColors.textDisabled,
                           ),
                         ),
                         child: Center(
                           child: Text(
                             String.fromCharCode(65 + index), // A, B, C, D
                             style: TextStyle(
-                              color: isSelected ? Colors.black : Colors.white70,
+                              color: isSelected
+                                  ? Colors.black
+                                  : AppColors.textSecondary,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -563,9 +567,9 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                         ),
                       ),
                       if (showCorrect)
-                        const Icon(Icons.check_circle, color: Color(0xFF00FF85))
+                        const Icon(Icons.check_circle, color: AppColors.correct)
                       else if (showWrong)
-                        const Icon(Icons.cancel, color: Color(0xFFFF4757)),
+                        const Icon(Icons.cancel, color: AppColors.incorrect),
                     ],
                   ),
                 ),
@@ -580,22 +584,18 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
               color: _isCorrect
-                  ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-                  : const Color(0xFFFF4757).withValues(alpha: 0.1),
+                  ? AppColors.correct.withValues(alpha: 0.1)
+                  : AppColors.incorrect.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(8),
               border: Border.all(
-                color: _isCorrect
-                    ? const Color(0xFF00FF85)
-                    : const Color(0xFFFF4757),
+                color: _isCorrect ? AppColors.correct : AppColors.incorrect,
               ),
             ),
             child: Row(
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect
-                      ? const Color(0xFF00FF85)
-                      : const Color(0xFFFF4757),
+                  color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                 ),
                 const SizedBox(width: 12),
                 Text(
@@ -604,9 +604,7 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                       : 'The correct answer was: ${_answerOptions.isNotEmpty && _correctOptionIndex < _answerOptions.length ? _answerOptions[_correctOptionIndex] : ""}',
                   style: TextStyle(
                     fontSize: 14,
-                    color: _isCorrect
-                        ? const Color(0xFF00FF85)
-                        : const Color(0xFFFF4757),
+                    color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                   ),
                 ),
               ],

@@ -1,0 +1,100 @@
+{
+    "id": "emotions",
+    "name": "Feelings & Emotions",
+    "description": "Learn to express nuanced emotions",
+    "level": 21,
+    "exercises": [
+        {
+            "id": "ex_em_1",
+            "type": "matchPairs",
+            "question": "Match emotions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Feliz",
+                        "native": "Happy"
+                    },
+                    {
+                        "target": "Triste",
+                        "native": "Sad"
+                    },
+                    {
+                        "target": "Enfadado",
+                        "native": "Angry"
+                    },
+                    {
+                        "target": "Emocionado",
+                        "native": "Excited"
+                    },
+                    {
+                        "target": "Preocupado",
+                        "native": "Worried"
+                    },
+                    {
+                        "target": "Sorprendido",
+                        "native": "Surprised"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_em_2",
+            "type": "translateThis",
+            "question": "Estoy muy emocionado por el viaje",
+            "options": [],
+            "correctAnswer": "I am very excited about the trip"
+        },
+        {
+            "id": "ex_em_3",
+            "type": "fillInBlank",
+            "question": "Me siento ___ por la situación",
+            "options": [
+                "frustrado",
+                "frustrando",
+                "frustrar",
+                "frustre"
+            ],
+            "correctAnswer": "frustrado"
+        },
+        {
+            "id": "ex_em_4",
+            "type": "matchPairs",
+            "question": "Match more emotions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Nervioso",
+                        "native": "Nervous"
+                    },
+                    {
+                        "target": "Aburrido",
+                        "native": "Bored"
+                    },
+                    {
+                        "target": "Confundido",
+                        "native": "Confused"
+                    },
+                    {
+                        "target": "Agradecido",
+                        "native": "Grateful"
+                    },
+                    {
+                        "target": "Orgulloso",
+                        "native": "Proud"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_em_5",
+            "type": "speakThis",
+            "question": "Estoy un poco decepcionado con el resultado",
+            "options": [],
+            "correctAnswer": "Estoy un poco decepcionado con el resultado"
+        }
+    ]
+}

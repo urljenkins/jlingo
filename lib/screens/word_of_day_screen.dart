@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/vocabulary_provider.dart';
 import '../models/word_of_day.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_spacing.dart';
 
 class WordOfDayScreen extends StatefulWidget {
   const WordOfDayScreen({super.key});
@@ -46,13 +48,11 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
     return Scaffold(
       appBar: AppBar(
         title: const Text('Word of the Day'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
         bottom: TabBar(
           controller: _tabController,
-          labelColor: const Color(0xFF00D9FF),
-          unselectedLabelColor: Colors.white54,
-          indicatorColor: const Color(0xFF00D9FF),
+          labelColor: AppColors.textPrimary,
+          unselectedLabelColor: AppColors.textMuted,
+          indicatorColor: AppColors.textPrimary,
           tabs: const [
             Tab(text: 'Today'),
             Tab(text: 'Saved'),
@@ -72,12 +72,13 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Icon(Icons.menu_book_outlined,
-                        size: 48, color: Colors.white38),
+                        size: 48, color: AppColors.textDisabled),
                     SizedBox(height: 16),
                     Text(
                       'No word of the day for this language yet.',
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 16, color: Colors.white60),
+                      style: TextStyle(
+                          fontSize: 16, color: AppColors.textSecondary),
                     ),
                   ],
                 ),
@@ -134,8 +135,12 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
     VocabularyProvider provider,
   ) {
     return Card(
-      color: const Color(0xFF1A1A1A),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      color: AppColors.surface,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.card),
+        side: const BorderSide(color: AppColors.border),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(
@@ -144,8 +149,9 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               decoration: BoxDecoration(
-                color: const Color(0xFF00D9FF).withValues(alpha: 0.2),
-                borderRadius: BorderRadius.circular(20),
+                color: AppColors.surfaceRaised,
+                borderRadius: BorderRadius.circular(AppRadius.pill),
+                border: Border.all(color: AppColors.border),
               ),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
@@ -153,13 +159,13 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
                   const Icon(
                     Icons.calendar_today,
                     size: 14,
-                    color: Color(0xFF00D9FF),
+                    color: AppColors.textSecondary,
                   ),
                   const SizedBox(width: 6),
                   Text(
                     _formatDate(word.date),
                     style: const TextStyle(
-                      color: Color(0xFF00D9FF),
+                      color: AppColors.textSecondary,
                       fontSize: 12,
                     ),
                   ),
@@ -184,7 +190,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
               word.pronunciation,
               style: const TextStyle(
                 fontSize: 20,
-                color: Colors.white54,
+                color: AppColors.textMuted,
                 fontStyle: FontStyle.italic,
               ),
             ),
@@ -194,13 +200,14 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.circular(8),
+                color: AppColors.surfaceRaised,
+                borderRadius: BorderRadius.circular(AppRadius.sm),
+                border: Border.all(color: AppColors.border),
               ),
               child: Text(
                 word.partOfSpeech,
                 style: const TextStyle(
-                  color: Colors.white70,
+                  color: AppColors.textSecondary,
                   fontSize: 14,
                 ),
               ),
@@ -211,7 +218,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
             Container(
               height: 1,
               width: 60,
-              color: Colors.white24,
+              color: AppColors.border,
             ),
             const SizedBox(height: 20),
 
@@ -221,7 +228,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
               style: const TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w500,
-                color: Color(0xFF00FF85),
+                color: AppColors.textSecondary,
               ),
               textAlign: TextAlign.center,
             ),
@@ -233,12 +240,12 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
               children: [
                 const Text(
                   'Difficulty: ',
-                  style: TextStyle(color: Colors.white54, fontSize: 14),
+                  style: TextStyle(color: AppColors.textMuted, fontSize: 14),
                 ),
                 Text(
                   word.difficultyStars,
                   style: const TextStyle(
-                    color: Color(0xFFFFD700),
+                    color: AppColors.textPrimary,
                     fontSize: 16,
                   ),
                 ),
@@ -250,7 +257,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
             IconButton(
               icon: Icon(
                 isSaved ? Icons.bookmark : Icons.bookmark_border,
-                color: isSaved ? const Color(0xFFFFD700) : Colors.white54,
+                color: isSaved ? AppColors.textPrimary : AppColors.textMuted,
                 size: 30,
               ),
               onPressed: () {
@@ -266,7 +273,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
 
   Widget _buildExampleCard(WordOfDay word) {
     return Card(
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -277,14 +284,14 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
               children: [
                 Icon(
                   Icons.format_quote,
-                  color: Color(0xFF00D9FF),
+                  color: AppColors.textPrimary,
                   size: 20,
                 ),
                 SizedBox(width: 8),
                 Text(
                   'Example',
                   style: TextStyle(
-                    color: Color(0xFF00D9FF),
+                    color: AppColors.textPrimary,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -304,7 +311,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
               word.exampleTranslation,
               style: const TextStyle(
                 fontSize: 16,
-                color: Colors.white54,
+                color: AppColors.textMuted,
                 height: 1.5,
               ),
             ),
@@ -316,7 +323,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
 
   Widget _buildInfoCard(WordOfDay word) {
     return Card(
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -328,14 +335,14 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
                 children: [
                   Icon(
                     Icons.history_edu,
-                    color: Color(0xFFFF9F43),
+                    color: AppColors.textSecondary,
                     size: 20,
                   ),
                   SizedBox(width: 8),
                   Text(
                     'Etymology',
                     style: TextStyle(
-                      color: Color(0xFFFF9F43),
+                      color: AppColors.textSecondary,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -345,7 +352,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
               Text(
                 word.etymology!,
                 style: const TextStyle(
-                  color: Colors.white70,
+                  color: AppColors.textSecondary,
                   height: 1.5,
                 ),
               ),
@@ -357,14 +364,14 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
                 children: [
                   Icon(
                     Icons.lightbulb,
-                    color: Color(0xFFFFD700),
+                    color: AppColors.textPrimary,
                     size: 20,
                   ),
                   SizedBox(width: 8),
                   Text(
                     'Fun Fact',
                     style: TextStyle(
-                      color: Color(0xFFFFD700),
+                      color: AppColors.textPrimary,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -374,7 +381,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
               Text(
                 word.funFact!,
                 style: const TextStyle(
-                  color: Colors.white70,
+                  color: AppColors.textSecondary,
                   height: 1.5,
                 ),
               ),
@@ -393,7 +400,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
         _buildActionButton(
           icon: Icons.volume_up,
           label: 'Listen',
-          color: const Color(0xFF00D9FF),
+          color: AppColors.textPrimary,
           onTap: () {
             // TODO: Implement TTS
             ScaffoldMessenger.of(context).showSnackBar(
@@ -406,7 +413,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
         _buildActionButton(
           icon: Icons.add_card,
           label: 'Flashcard',
-          color: const Color(0xFF00FF85),
+          color: AppColors.textSecondary,
           onTap: () {
             // TODO: Add to flashcard deck
             ScaffoldMessenger.of(context).showSnackBar(
@@ -419,7 +426,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
         _buildActionButton(
           icon: Icons.share,
           label: 'Share',
-          color: const Color(0xFFFF9F43),
+          color: AppColors.textSecondary,
           onTap: () {
             // TODO: Implement sharing
             ScaffoldMessenger.of(context).showSnackBar(
@@ -438,11 +445,15 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
     required VoidCallback onTap,
   }) {
     return Material(
-      color: color.withValues(alpha: 0.2),
-      borderRadius: BorderRadius.circular(12),
+      color: AppColors.surfaceRaised,
+      borderRadius: BorderRadius.circular(AppRadius.sm),
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.sm),
+        side: const BorderSide(color: AppColors.border),
+      ),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           child: Column(
@@ -464,29 +475,29 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
     final savedWords = provider.savedWords;
 
     if (savedWords.isEmpty) {
-      return Center(
+      return const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
               Icons.bookmark_border,
               size: 80,
-              color: Colors.white.withValues(alpha: 0.2),
+              color: AppColors.textDisabled,
             ),
-            const SizedBox(height: 16),
-            const Text(
+            SizedBox(height: 16),
+            Text(
               'No saved words yet',
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.white54,
+                color: AppColors.textMuted,
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Tap the bookmark icon to save words',
               style: TextStyle(
                 fontSize: 14,
-                color: Colors.white38,
+                color: AppColors.textDisabled,
               ),
             ),
           ],
@@ -507,7 +518,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
   Widget _buildSavedWordCard(WordOfDay word, VocabularyProvider provider) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: ListTile(
         contentPadding: const EdgeInsets.all(16),
@@ -524,7 +535,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
             Text(
               word.pronunciation,
               style: const TextStyle(
-                color: Colors.white54,
+                color: AppColors.textMuted,
                 fontSize: 14,
               ),
             ),
@@ -537,7 +548,7 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
             Text(
               word.translation,
               style: const TextStyle(
-                color: Color(0xFF00FF85),
+                color: AppColors.textSecondary,
                 fontSize: 16,
               ),
             ),
@@ -545,14 +556,14 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
             Text(
               word.partOfSpeech,
               style: const TextStyle(
-                color: Colors.white38,
+                color: AppColors.textDisabled,
                 fontSize: 12,
               ),
             ),
           ],
         ),
         trailing: IconButton(
-          icon: const Icon(Icons.bookmark, color: Color(0xFFFFD700)),
+          icon: const Icon(Icons.bookmark, color: AppColors.textPrimary),
           onPressed: () {
             final id = _courseId;
             if (id != null) provider.toggleSaveWord(id, word.id);

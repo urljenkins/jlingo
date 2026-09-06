@@ -7,6 +7,7 @@ import '../../widgets/responsive/desktop_scaffold.dart';
 import '../../widgets/responsive/mobile_scaffold.dart';
 import '../../widgets/hover_card.dart';
 import 'goals_screen.dart';
+import '../../theme/app_colors.dart';
 
 class LevelQuizScreen extends StatefulWidget {
   const LevelQuizScreen({super.key});
@@ -122,7 +123,7 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
           borderRadius: BorderRadius.circular(4),
           child: LinearProgressIndicator(
             value: progress,
-            backgroundColor: Colors.white12,
+            backgroundColor: AppColors.border,
             valueColor: AlwaysStoppedAnimation<Color>(
               Theme.of(context).colorScheme.primary,
             ),
@@ -212,7 +213,7 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
                   decoration: BoxDecoration(
                     color: isSelected
                         ? Theme.of(context).colorScheme.primary
-                        : Colors.white12,
+                        : AppColors.border,
                     shape: BoxShape.circle,
                   ),
                   child: Center(
@@ -307,7 +308,7 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
 
   Widget _buildSideNav(BuildContext context, OnboardingProvider provider) {
     return ColoredBox(
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       child: Column(
         children: [
           const Padding(
@@ -317,7 +318,7 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ),
-          const Divider(color: Colors.white12),
+          const Divider(color: AppColors.border),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -335,11 +336,11 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
-                const Divider(color: Colors.white12),
+                const Divider(color: AppColors.border),
                 const SizedBox(height: 16),
                 Text(
                   'Language: ${provider.selectedLanguage ?? "Not selected"}',
-                  style: const TextStyle(color: Colors.white54),
+                  style: const TextStyle(color: AppColors.textMuted),
                 ),
                 const SizedBox(height: 8),
                 Text(
@@ -376,7 +377,7 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
                   ? Theme.of(context).colorScheme.secondary
                   : isActive
                       ? Theme.of(context).colorScheme.primary
-                      : Colors.white12,
+                      : AppColors.border,
               shape: BoxShape.circle,
             ),
             child: Center(
@@ -387,7 +388,7 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
                       style: TextStyle(
                         color: isActive || isCompleted
                             ? Colors.black
-                            : Colors.white54,
+                            : AppColors.textMuted,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -397,7 +398,8 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
           Text(
             label,
             style: TextStyle(
-              color: isActive || isCompleted ? Colors.white : Colors.white54,
+              color:
+                  isActive || isCompleted ? Colors.white : AppColors.textMuted,
               fontWeight:
                   isActive || isCompleted ? FontWeight.w600 : FontWeight.normal,
             ),

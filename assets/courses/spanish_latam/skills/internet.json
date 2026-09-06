@@ -1,0 +1,100 @@
+{
+    "id": "internet",
+    "name": "Internet & Social Media",
+    "description": "Learn vocabulary for online communication",
+    "level": 20,
+    "exercises": [
+        {
+            "id": "ex_int_1",
+            "type": "matchPairs",
+            "question": "Match internet vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "El correo electrónico",
+                        "native": "Email"
+                    },
+                    {
+                        "target": "La red social",
+                        "native": "Social network"
+                    },
+                    {
+                        "target": "El sitio web",
+                        "native": "Website"
+                    },
+                    {
+                        "target": "Buscar",
+                        "native": "To search"
+                    },
+                    {
+                        "target": "Publicar",
+                        "native": "To post"
+                    },
+                    {
+                        "target": "Compartir",
+                        "native": "To share"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_int_2",
+            "type": "translateThis",
+            "question": "¿Me puedes enviar un mensaje?",
+            "options": [],
+            "correctAnswer": "Can you send me a message?"
+        },
+        {
+            "id": "ex_int_3",
+            "type": "fillInBlank",
+            "question": "Voy a ___ esta foto en Instagram",
+            "options": [
+                "publicar",
+                "comer",
+                "beber",
+                "ir"
+            ],
+            "correctAnswer": "publicar"
+        },
+        {
+            "id": "ex_int_4",
+            "type": "matchPairs",
+            "question": "Match social media terms",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Seguir",
+                        "native": "To follow"
+                    },
+                    {
+                        "target": "Me gusta",
+                        "native": "Like"
+                    },
+                    {
+                        "target": "Comentario",
+                        "native": "Comment"
+                    },
+                    {
+                        "target": "Perfil",
+                        "native": "Profile"
+                    },
+                    {
+                        "target": "En vivo",
+                        "native": "Live"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_int_5",
+            "type": "speakThis",
+            "question": "Te envié un mensaje por WhatsApp",
+            "options": [],
+            "correctAnswer": "Te envié un mensaje por WhatsApp"
+        }
+    ]
+}

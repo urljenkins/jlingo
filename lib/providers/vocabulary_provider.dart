@@ -87,7 +87,8 @@ class VocabularyProvider extends ChangeNotifier {
     _todaysWord = _getWordForToday();
   }
 
-  WordOfDay _getWordForToday() {
+  WordOfDay? _getWordForToday() {
+    if (_wordArchive.isEmpty) return null;
     final now = DateTime.now();
     final dayOfYear = now.difference(DateTime(now.year)).inDays;
 

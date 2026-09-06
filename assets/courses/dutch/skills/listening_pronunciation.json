@@ -1,8 +1,193 @@
 {
-  "id": "listening_pronunciation",
-  "name": "Listening & Pronunciation",
-  "description": "Master Dutch sounds through listening exercises, pronunciation practice, dialogues, and songs",
-  "level": 2,
-  "section": "foundational",
-  "exercises": []
+    "id": "listening_pronunciation",
+    "name": "Listening & Pronunciation",
+    "description": "Master Dutch sounds through listening exercises, pronunciation practice, dialogues, and songs",
+    "level": 2,
+    "section": "foundational",
+    "exercises": [
+        {
+            "id": "nl_lp_native_1",
+            "type": "nativeAudio",
+            "question": "Goedemorgen, hoe gaat het met u?",
+            "options": [],
+            "correctAnswer": "Goedemorgen, hoe gaat het met u?",
+            "targetLanguage": "nl-NL",
+            "audioPath": null,
+            "audioAvailable": false,
+            "enabled": false,
+            "metadata": {
+                "speaker": "Native Speaker - Daan",
+                "difficulty": "beginner"
+            }
+        },
+        {
+            "id": "nl_lp_pron_1",
+            "type": "pronunciationPractice",
+            "question": "De grachten van Amsterdam zijn prachtig",
+            "options": [],
+            "correctAnswer": "De grachten van Amsterdam zijn prachtig",
+            "targetLanguage": "nl-NL",
+            "metadata": {
+                "phonetics": "də ˈɣrɑxtə(n) vɑn ˌɑmstərˈdɑm zɛin ˈprɑxtəx",
+                "focus": "De harde Nederlandse keelklank \"g/ch\""
+            }
+        },
+        {
+            "id": "nl_lp_diag_1",
+            "type": "dialogueListening",
+            "question": "Luister naar het gesprek in het café",
+            "options": [
+                "Koffie met een stroopwafel",
+                "Thee met melk",
+                "Een glas water",
+                "Een appel"
+            ],
+            "correctAnswer": "Koffie met een stroopwafel",
+            "targetLanguage": "nl-NL",
+            "metadata": {
+                "type": "dialogue",
+                "context": "Bestellen in een Amsterdams café",
+                "dialogue": [
+                    {
+                        "speaker": "Ober",
+                        "text": "Goedemiddag, wat mag het zijn?",
+                        "translation": "Good afternoon, what can I get you?"
+                    },
+                    {
+                        "speaker": "Klant",
+                        "text": "Een koffie met een warme stroopwafel, alstublieft.",
+                        "translation": "A coffee with a warm stroopwafel, please."
+                    }
+                ],
+                "comprehensionQuestion": "Wat bestelde de klant?",
+                "correctOptionIndex": 0
+            }
+        },
+        {
+            "id": "nl_lp_song_1",
+            "type": "songFill",
+            "question": "Aan de Amsterdamse Grachten",
+            "options": [],
+            "correctAnswer": "grachten,bomen,water",
+            "targetLanguage": "nl-NL",
+            "metadata": {
+                "songTitle": "Aan de Amsterdamse Grachten",
+                "artist": "Wim Sonneveld",
+                "lyrics": [
+                    {
+                        "text": "Aan de Amsterdamse grachten",
+                        "timestamp": 0
+                    },
+                    {
+                        "text": "Heb ik heel mijn hart verpand",
+                        "timestamp": 3000
+                    },
+                    {
+                        "text": "Amsterdam vult mijn gedachten",
+                        "timestamp": 6000
+                    }
+                ],
+                "blanks": [
+                    {
+                        "lineIndex": 0,
+                        "wordIndex": 3,
+                        "correctWord": "grachten",
+                        "hint": "canals"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "nl_lp_inter_1",
+            "type": "interactiveDialogue",
+            "question": "Bestellen op de markt (Ordering at Market)",
+            "options": [
+                "Een kilo appels alstublieft",
+                "Tot ziens",
+                "Geen idee"
+            ],
+            "correctAnswer": "Een kilo appels alstublieft",
+            "targetLanguage": "nl-NL",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "topic": "Market",
+                "dialogue": [
+                    {
+                        "speaker": "Verkoper",
+                        "text": "Goedemorgen! Wat kan ik voor u inpakken?",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "You",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "Een kilo appels alstublieft",
+                            "Tot ziens",
+                            "Geen idee"
+                        ]
+                    },
+                    {
+                        "speaker": "Verkoper",
+                        "text": "Komt voor elkaar, dat is drie euro.",
+                        "isNative": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": "nl_lp_story_1",
+            "type": "storyLesson",
+            "question": "Wat kocht Emma op de markt?",
+            "options": [
+                "Verse tulpen",
+                "Een boek",
+                "Een fiets",
+                "Een jas"
+            ],
+            "correctAnswer": "Verse tulpen",
+            "targetLanguage": "nl-NL",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "title": "Emma op de bloemenmarkt",
+                "level": "A1",
+                "story": "Op zaterdagochtend fietst Emma naar het centrum. Het zonnetje schijnt heerlijk. Bij de bloemenkraam kiest ze een prachtige bos verse oranje tulpen voor op tafel.",
+                "vocabulary": [
+                    {
+                        "word": "tulpen",
+                        "translation": "tulips",
+                        "highlight": true
+                    }
+                ],
+                "question": "Wat kocht Emma op de markt?"
+            }
+        },
+        {
+            "id": "nl_lp_trans_1",
+            "type": "translationExercise",
+            "question": "Hoeveel kost dit?",
+            "options": [],
+            "correctAnswer": "How much does this cost?",
+            "targetLanguage": "nl-NL",
+            "nativeLanguage": "en-US"
+        },
+        {
+            "id": "nl_lp_cloze_1",
+            "type": "clozeTest",
+            "question": "Kies het juiste lidwoord",
+            "options": [
+                "de",
+                "het",
+                "een",
+                "der"
+            ],
+            "correctAnswer": "het",
+            "targetLanguage": "nl-NL",
+            "metadata": {
+                "text": "Mag ik ___ brood van de bakker?",
+                "missingWord": "het",
+                "translation": "May I have the bread from the bakery?"
+            }
+        }
+    ]
 }

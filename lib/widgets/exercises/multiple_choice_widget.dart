@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../hover_card.dart';
+import '../../theme/app_colors.dart';
 
 class MultipleChoiceWidget extends StatefulWidget {
   final Exercise exercise;
@@ -38,28 +39,28 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
   }
 
   Color _getOptionColor(String option) {
-    if (!_showFeedback) return const Color(0xFF2A2A2A);
+    if (!_showFeedback) return AppColors.surfaceRaised;
 
     if (option == widget.exercise.correctAnswer) {
-      return const Color(0xFF00FF85).withValues(alpha: 0.2);
+      return AppColors.correct.withValues(alpha: 0.2);
     }
 
     if (option == _selectedAnswer && option != widget.exercise.correctAnswer) {
-      return const Color(0xFFFF4757).withValues(alpha: 0.2);
+      return AppColors.incorrect.withValues(alpha: 0.2);
     }
 
-    return const Color(0xFF2A2A2A);
+    return AppColors.surfaceRaised;
   }
 
   Color _getBorderColor(String option) {
     if (!_showFeedback) return Colors.transparent;
 
     if (option == widget.exercise.correctAnswer) {
-      return const Color(0xFF00FF85);
+      return AppColors.correct;
     }
 
     if (option == _selectedAnswer && option != widget.exercise.correctAnswer) {
-      return const Color(0xFFFF4757);
+      return AppColors.incorrect;
     }
 
     return Colors.transparent;
@@ -75,7 +76,7 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
           const Text(
             'Choose the correct answer',
             textAlign: TextAlign.left,
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 16),
           Text(
@@ -102,7 +103,7 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
             baseColor: _getOptionColor(option),
             hoverColor: _showFeedback
                 ? _getOptionColor(option)
-                : const Color(0xFF3A3A3A),
+                : AppColors.surfaceRaised,
             onTap: () => _selectAnswer(option),
             child: Container(
               decoration: BoxDecoration(
@@ -124,11 +125,11 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
                     ),
                   ),
                   if (_showFeedback && option == widget.exercise.correctAnswer)
-                    const Icon(Icons.check_circle, color: Color(0xFF00FF85)),
+                    const Icon(Icons.check_circle, color: AppColors.correct),
                   if (_showFeedback &&
                       option == _selectedAnswer &&
                       option != widget.exercise.correctAnswer)
-                    const Icon(Icons.cancel, color: Color(0xFFFF4757)),
+                    const Icon(Icons.cancel, color: AppColors.incorrect),
                 ],
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/gamification.dart';
+import '../../theme/app_colors.dart';
 
 /// Level badge with title and animated effects
 class LevelBadge extends StatelessWidget {
@@ -17,9 +18,9 @@ class LevelBadge extends StatelessWidget {
   });
 
   Color _getLevelColor(int level) {
-    if (level >= 25) return const Color(0xFFFFD700); // Gold
-    if (level >= 20) return const Color(0xFFE040FB); // Purple
-    if (level >= 15) return const Color(0xFFFF4081); // Pink
+    if (level >= 25) return AppColors.textPrimary; // Gold
+    if (level >= 20) return AppColors.textSecondary; // Purple
+    if (level >= 15) return AppColors.textSecondary; // Pink
     if (level >= 10) return const Color(0xFF00E5FF); // Cyan
     if (level >= 5) return const Color(0xFF00E676); // Green
     return const Color(0xFF90A4AE); // Grey-blue
@@ -241,7 +242,7 @@ class _LevelUpCelebrationState extends State<LevelUpCelebration>
                                 child: CustomPaint(
                                   size: const Size(200, 200),
                                   painter: _RaysPainter(
-                                    color: const Color(0xFF00D9FF),
+                                    color: AppColors.textPrimary,
                                     progress: _particleController.value,
                                   ),
                                 ),
@@ -267,7 +268,7 @@ class _LevelUpCelebrationState extends State<LevelUpCelebration>
                         style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFF00D9FF),
+                          color: AppColors.textPrimary,
                           letterSpacing: 4,
                         ),
                       ),
@@ -284,16 +285,16 @@ class _LevelUpCelebrationState extends State<LevelUpCelebration>
                       OutlinedButton(
                         onPressed: widget.onDismiss,
                         style: OutlinedButton.styleFrom(
-                          side: const BorderSide(color: Color(0xFF00D9FF)),
+                          side: const BorderSide(color: AppColors.textPrimary),
                           padding: const EdgeInsets.symmetric(
                             horizontal: 32,
                             vertical: 12,
                           ),
                         ),
                         child: const Text(
-                          'CONTINUE',
+                          'Continue',
                           style: TextStyle(
-                            color: Color(0xFF00D9FF),
+                            color: AppColors.textPrimary,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -373,9 +374,9 @@ class SkillTreeNode extends StatelessWidget {
   });
 
   Color _getNodeColor() {
-    if (skill.isCompleted) return const Color(0xFF00FF85);
+    if (skill.isCompleted) return AppColors.textSecondary;
     if (!skill.isUnlocked) return Colors.grey.shade700;
-    if (skill.mastery > 0) return const Color(0xFF00D9FF);
+    if (skill.mastery > 0) return AppColors.textPrimary;
     return Colors.white.withValues(alpha: 0.5);
   }
 
@@ -505,13 +506,13 @@ class SkillTreeView extends StatelessWidget {
                       vertical: 6,
                     ),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF00D9FF).withValues(alpha: 0.2),
+                      color: AppColors.textPrimary.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Text(
                       path.name,
                       style: const TextStyle(
-                        color: Color(0xFF00D9FF),
+                        color: AppColors.textPrimary,
                         fontWeight: FontWeight.bold,
                         fontSize: 14,
                       ),
@@ -521,7 +522,7 @@ class SkillTreeView extends StatelessWidget {
                   Text(
                     '${path.completedSkills}/${path.totalSkills}',
                     style: const TextStyle(
-                      color: Colors.white54,
+                      color: AppColors.textMuted,
                       fontSize: 12,
                     ),
                   ),
@@ -533,7 +534,7 @@ class SkillTreeView extends StatelessWidget {
                         value: path.totalProgress,
                         backgroundColor: Colors.white.withValues(alpha: 0.1),
                         valueColor: const AlwaysStoppedAnimation(
-                          Color(0xFF00D9FF),
+                          AppColors.textPrimary,
                         ),
                         minHeight: 4,
                       ),
@@ -560,7 +561,7 @@ class SkillTreeView extends StatelessWidget {
                         margin: const EdgeInsets.only(bottom: 32),
                         decoration: BoxDecoration(
                           color: path.skills[i].isCompleted
-                              ? const Color(0xFF00FF85)
+                              ? AppColors.textSecondary
                               : Colors.white.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(1),
                         ),

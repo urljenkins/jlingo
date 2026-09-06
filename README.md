@@ -71,53 +71,195 @@ flutter run
 
 ## Course Content
 
-Course content is stored in JSON format in `assets/courses/`. Each language has its own JSON file with the following structure:
+Each language lives in its own directory under `assets/courses/<language>/`:
+
+```
+assets/courses/spanish/
+├── manifest.json          # Course metadata + the ordered list of skills
+└── skills/
+    ├── basics_1.json      # One file per skill, loaded lazily
+    └── ...
+```
+
+`manifest.json` lists the course and its skills. Skill content is *not* inlined
+here — each entry points at a file under `skills/`, loaded on demand:
 
 ```json
 {
-  "id": "language_code",
-  "name": "Language Name",
-  "targetLanguage": "language-code",
+  "id": "spanish_en",
+  "name": "Spanish for English Speakers",
+  "targetLanguage": "es-ES",
   "nativeLanguage": "en-US",
-  "skills": [...]
+  "skills": [
+    { "id": "basics_1", "name": "Basics 1", "level": 1 }
+  ]
 }
 ```
 
-See `assets/courses/spanish.json` for a complete example.
+A skill file holds the exercises:
+
+```json
+{
+  "id": "basics_1",
+  "name": "Basics 1",
+  "description": "Learn basic greetings and introductions",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_1",
+      "type": "translateThis",
+      "question": "Hola",
+      "options": [],
+      "correctAnswer": "Hello"
+    }
+  ]
+}
+```
+
+Every field above is required. `type` must be one of the values in the
+`ExerciseType` enum (`lib/models/exercise.dart`); an unknown type makes the
+whole skill fail to decode.
+
+See `assets/courses/spanish/` for a complete example.
 
 ## Adding New Languages
 
-1. Create a new JSON file in `assets/courses/` (e.g., `german.json`)
-2. Follow the structure in existing course files
-3. Update the `availableLanguages` list in `lib/providers/course_provider.dart`
-4. Add the language flag in `lib/screens/language_selection_screen.dart`
+1. Create `assets/courses/<language>/manifest.json` and a `skills/` directory
+   beside it, following the structure above.
+2. **Declare both directories in `pubspec.yaml`.** Flutter asset directories
+   are not recursive, so the course directory and its `skills/` subdirectory
+   each need their own entry:
+   ```yaml
+   assets:
+     - assets/courses/<language>/
+     - assets/courses/<language>/skills/
+   ```
+   Omitting the `skills/` line is the most common mistake: the app builds fine
+   and every lesson fails at runtime with "Error loading lesson content".
+3. Add the language to `loadAvailableLanguages` in
+   `lib/providers/course_provider.dart`.
+4. Add its display name and flag in `lib/screens/language_selection_screen.dart`.
+5. Optionally add `assets/vocabulary/flashcards_<courseId>.json` and
+   `word_of_day_<courseId>.json` for the vocabulary features.
+6. Run `flutter test` — `test/asset_integrity_test.dart` verifies the manifest,
+   the skill files, the pubspec declarations and the exercise types.
 
 ## Project Structure
 
 ```
 lib/
-├── main.dart                      # App entry point
-├── models/                        # Data models
-│   ├── course.dart
+├── models/
+│   ├── book.dart
+│   ├── course_manifest.dart
 │   ├── exercise.dart
+│   ├── flashcard.dart
+│   ├── gamification.dart
+│   ├── picture_dictionary.dart
+│   ├── progress.dart
 │   ├── skill.dart
-│   └── progress.dart
-├── providers/                     # State management
+│   ├── user_profile.dart
+│   └── word_of_day.dart
+├── providers/
+│   ├── book_provider.dart
 │   ├── course_provider.dart
-│   └── progress_provider.dart
-├── screens/                       # Main screens
+│   ├── flashcard_provider.dart
+│   ├── gamification_provider.dart
+│   ├── onboarding_provider.dart
+│   ├── progress_provider.dart
+│   ├── settings_provider.dart
+│   └── vocabulary_provider.dart
+├── screens/
+│   ├── onboarding/
+│   │   ├── goals_screen.dart
+│   │   ├── level_quiz_screen.dart
+│   │   ├── onboarding_complete_screen.dart
+│   │   └── welcome_screen.dart
+│   ├── book_library_screen.dart
+│   ├── book_reader_screen.dart
+│   ├── flashcard_screen.dart
 │   ├── home_screen.dart
 │   ├── language_selection_screen.dart
-│   └── lesson_screen.dart
-└── widgets/                       # Reusable widgets
-    └── exercises/                 # Exercise type widgets
-        ├── translate_this_widget.dart
-        ├── multiple_choice_widget.dart
-        ├── match_pairs_widget.dart
-        ├── listening_widget.dart
-        ├── speak_this_widget.dart
-        └── fill_blank_widget.dart
+│   ├── lesson_screen.dart
+│   ├── picture_dictionary_screen.dart
+│   ├── settings_screen.dart
+│   ├── vocabulary_screen.dart
+│   └── word_of_day_screen.dart
+├── services/
+│   ├── audio_service.dart
+│   ├── course_bootstrap.dart
+│   └── notification_service.dart
+├── utils/
+│   └── language_display.dart
+├── widgets/
+│   ├── exercises/
+│   │   ├── cloze_test_widget.dart
+│   │   ├── dialogue_listening_widget.dart
+│   │   ├── exercise_renderer_registry.dart
+│   │   ├── fill_blank_widget.dart
+│   │   ├── interactive_dialogue_widget.dart
+│   │   ├── listening_widget.dart
+│   │   ├── match_pairs_widget.dart
+│   │   ├── multiple_choice_widget.dart
+│   │   ├── native_audio_widget.dart
+│   │   ├── pronunciation_practice_widget.dart
+│   │   ├── song_fill_widget.dart
+│   │   ├── speak_this_widget.dart
+│   │   ├── story_lesson_widget.dart
+│   │   ├── translate_this_widget.dart
+│   │   └── translation_exercise_widget.dart
+│   ├── gamification/
+│   │   ├── gamification_widgets.dart
+│   │   ├── level_widgets.dart
+│   │   ├── streak_widgets.dart
+│   │   └── xp_widgets.dart
+│   ├── responsive/
+│   │   ├── desktop_scaffold.dart
+│   │   ├── mobile_scaffold.dart
+│   │   └── responsive_layout.dart
+│   └── hover_card.dart
+└── main.dart
 ```
+
+## Building for Release
+
+The app id is `com.linguasprint.app` on all platforms.
+
+### Android
+
+Release builds are signed with the **debug key** until you provide a keystore,
+so `flutter build apk --release` works out of the box but the result is **not
+distributable**. To sign properly:
+
+1. Create an upload keystore (keep the file and passwords safe — losing them
+   means you can never update an existing Play listing):
+   ```bash
+   keytool -genkey -v -keystore ~/lingua-sprint-upload.jks \
+     -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+   ```
+2. Copy `android/key.properties.example` to `android/key.properties` and fill
+   in your values. Both `key.properties` and `*.jks` are gitignored — never
+   commit them.
+3. Build:
+   ```bash
+   flutter build appbundle --release
+   ```
+
+Gradle picks up `key.properties` automatically when present and falls back to
+the debug key when it is absent. Confirm which key was used with:
+
+```bash
+apksigner verify --print-certs build/app/outputs/flutter-apk/app-release.apk
+```
+
+`CN=Android Debug` means the fallback is still in effect.
+
+Release builds are minified and resource-shrunk; see
+`android/app/proguard-rules.pro` if a plugin needs keep rules.
+
+### macOS
+
+Requires macOS 11.0 or later (`speech_to_text` sets this floor). Signing and
+notarization are configured in Xcode against your Apple developer account.
 
 ## Technologies Used
 

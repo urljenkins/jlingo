@@ -1,0 +1,118 @@
+{
+    "id": "getting_around",
+    "name": "Getting Around",
+    "description": "Learn to ask for directions and use transportation",
+    "level": 6,
+    "exercises": [
+        {
+            "id": "ex_ga_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'Turn left' in Spanish?",
+            "options": [
+                "Gira a la izquierda",
+                "Gira a la derecha",
+                "Sigue recto",
+                "Para aquí"
+            ],
+            "correctAnswer": "Gira a la izquierda"
+        },
+        {
+            "id": "ex_ga_2",
+            "type": "translateThis",
+            "question": "¿Dónde está la estación de tren?",
+            "options": [],
+            "correctAnswer": "Where is the train station?"
+        },
+        {
+            "id": "ex_ga_3",
+            "type": "fillInBlank",
+            "question": "Voy al aeropuerto en ___",
+            "options": [
+                "taxi",
+                "casa",
+                "restaurante",
+                "parque"
+            ],
+            "correctAnswer": "taxi"
+        },
+        {
+            "id": "ex_ga_4",
+            "type": "matchPairs",
+            "question": "Match transportation",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Autobús",
+                        "native": "Bus"
+                    },
+                    {
+                        "target": "Metro",
+                        "native": "Subway"
+                    },
+                    {
+                        "target": "Bicicleta",
+                        "native": "Bicycle"
+                    },
+                    {
+                        "target": "Coche",
+                        "native": "Car"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_ga_5",
+            "type": "multipleChoice",
+            "question": "How do you say \"Train station\" in Spanish?",
+            "options": [
+                "Estación de tren",
+                "Aeropuerto",
+                "Parada de autobús",
+                "Puerto"
+            ],
+            "correctAnswer": "Estación de tren"
+        },
+        {
+            "id": "ex_ga_6",
+            "type": "speakThis",
+            "question": "¿Dónde está la parada de autobús?",
+            "options": [],
+            "correctAnswer": "¿Dónde está la parada de autobús?"
+        },
+        {
+            "id": "ex_ga_7",
+            "type": "listeningComprehension",
+            "question": "Un boleto por favor",
+            "options": [],
+            "correctAnswer": "A ticket please"
+        },
+        {
+            "id": "ex_ga_8",
+            "type": "fillInBlank",
+            "question": "El tren sale a las ocho de la ___",
+            "options": [
+                "mañana",
+                "carro",
+                "calle",
+                "metro"
+            ],
+            "correctAnswer": "mañana"
+        },
+        {
+            "id": "ex_ga_9",
+            "type": "translateThis",
+            "question": "Gire a la derecha",
+            "options": [],
+            "correctAnswer": "Turn right"
+        },
+        {
+            "id": "ex_ga_10",
+            "type": "listeningComprehension",
+            "question": "La estación central",
+            "options": [],
+            "correctAnswer": "La estación central"
+        }
+    ]
+}

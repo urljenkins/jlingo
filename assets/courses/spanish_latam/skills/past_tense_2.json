@@ -1,0 +1,82 @@
+{
+    "id": "past_tense_2",
+    "name": "Past Tense: Imperfect",
+    "description": "Learn the imperfect tense for ongoing or habitual past actions",
+    "level": 13,
+    "exercises": [
+        {
+            "id": "ex_imp_1",
+            "type": "multipleChoice",
+            "question": "When do we use the imperfect tense?",
+            "options": [
+                "For habitual or ongoing past actions",
+                "For completed one-time actions",
+                "For future events",
+                "For commands"
+            ],
+            "correctAnswer": "For habitual or ongoing past actions"
+        },
+        {
+            "id": "ex_imp_2",
+            "type": "matchPairs",
+            "question": "Match HABLAR imperfect conjugations",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Yo hablaba",
+                        "native": "I used to speak"
+                    },
+                    {
+                        "target": "Tú hablabas",
+                        "native": "You used to speak"
+                    },
+                    {
+                        "target": "Él hablaba",
+                        "native": "He used to speak"
+                    },
+                    {
+                        "target": "Nosotros hablábamos",
+                        "native": "We used to speak"
+                    },
+                    {
+                        "target": "Ellos hablaban",
+                        "native": "They used to speak"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_imp_3",
+            "type": "translateThis",
+            "question": "Cuando era niño, jugaba en el parque",
+            "options": [],
+            "correctAnswer": "When I was a child, I used to play in the park"
+        },
+        {
+            "id": "ex_imp_4",
+            "type": "fillInBlank",
+            "question": "Antes ___ mucho café",
+            "options": [
+                "bebía",
+                "bebí",
+                "bebo",
+                "beberé"
+            ],
+            "correctAnswer": "bebía"
+        },
+        {
+            "id": "ex_imp_5",
+            "type": "multipleChoice",
+            "question": "What is the imperfect of 'ser' for 'yo'?",
+            "options": [
+                "Era",
+                "Fui",
+                "Soy",
+                "Seré"
+            ],
+            "correctAnswer": "Era"
+        }
+    ]
+}

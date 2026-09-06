@@ -1,0 +1,89 @@
+{
+  "id": "dutch_flashcards",
+  "name": "Dutch Core Vocabulary",
+  "description": "Essential Dutch words and phrases with spaced repetition",
+  "targetLanguage": "nl-NL",
+  "nativeLanguage": "en-US",
+  "cards": [
+    {
+      "id": "fc_nl_1",
+      "front": "Hallo / Hoi",
+      "back": "Hello / Hi",
+      "pronunciation": "/ɦɑˈloː/ /ɦɔj/",
+      "exampleSentence": "Hallo, hoe gaat het met jou?",
+      "exampleTranslation": "Hello, how are you doing?",
+      "category": "Greetings",
+      "tags": ["basic", "essential"]
+    },
+    {
+      "id": "fc_nl_2",
+      "front": "Goedemorgen",
+      "back": "Good morning",
+      "pronunciation": "/ˌɣu.dəˈmɔr.ɣə(n)/",
+      "exampleSentence": "Goedemorgen, een fijne dag gewenst!",
+      "exampleTranslation": "Good morning, have a nice day!",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_nl_3",
+      "front": "Dankjewel / Dank u wel",
+      "back": "Thank you (informal / formal)",
+      "pronunciation": "/ˈdɑŋk.jəˌʋɛl/",
+      "exampleSentence": "Hartelijk dank voor je hulp.",
+      "exampleTranslation": "Thank you very much for your help.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_nl_4",
+      "front": "Graag gedaan",
+      "back": "You're welcome",
+      "pronunciation": "/ɣraːx xəˈdaːn/",
+      "exampleSentence": "Geen probleem, graag gedaan!",
+      "exampleTranslation": "No problem, you're welcome!",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_nl_5",
+      "front": "Alsjeblieft / Alstublieft",
+      "back": "Please / Here you go",
+      "pronunciation": "/ˌɑl.ʃəˈblift/",
+      "exampleSentence": "Een kop koffie, alstublieft.",
+      "exampleTranslation": "A cup of coffee, please.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_nl_6",
+      "front": "Ik heet...",
+      "back": "My name is...",
+      "pronunciation": "/ɪk ɦeːt/",
+      "exampleSentence": "Hallo, ik heet Peter en ik woon in Amsterdam.",
+      "exampleTranslation": "Hello, my name is Peter and I live in Amsterdam.",
+      "category": "Introductions",
+      "tags": ["basic", "introductions"]
+    },
+    {
+      "id": "fc_nl_7",
+      "front": "Het water",
+      "back": "The water",
+      "pronunciation": "/ɦət ˈʋaː.tər/",
+      "exampleSentence": "Mag ik een glas water?",
+      "exampleTranslation": "May I have a glass of water?",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    },
+    {
+      "id": "fc_nl_8",
+      "front": "Het brood",
+      "back": "The bread",
+      "pronunciation": "/ɦət broːt/",
+      "exampleSentence": "We eten vers brood bij het ontbijt.",
+      "exampleTranslation": "We eat fresh bread at breakfast.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    }
+  ]
+}

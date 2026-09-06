@@ -1,0 +1,100 @@
+{
+  "id": "japanese_dict",
+  "name": "日本語ピクチャーディクショナリー",
+  "targetLanguage": "ja-JP",
+  "nativeLanguage": "en-US",
+  "topics": [
+    {
+      "id": "topic_food_ja",
+      "name": "食べ物と飲み物",
+      "description": "日常の食べ物と飲み物の単語",
+      "iconName": "restaurant",
+      "coverImageUrl": "assets/images/topics/food.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_pan_ja",
+          "word": "パン",
+          "translation": "Bread",
+          "pronunciation": "/paɴ/",
+          "imageUrl": "assets/images/dict/pan.png",
+          "relatedWords": ["パン屋", "トースト", "朝ごはん"],
+          "usageNote": "ポルトガル語 'pão' からの外来語です。"
+        },
+        {
+          "id": "pde_ringo_ja",
+          "word": "りんご",
+          "translation": "Apple",
+          "pronunciation": "/ɾiŋ.ɡo/",
+          "imageUrl": "assets/images/dict/manzana.png",
+          "relatedWords": ["果物", "赤い", "木"],
+          "usageNote": "青森県が日本の主な産地として有名です。"
+        },
+        {
+          "id": "pde_gyunyu_ja",
+          "word": "牛乳",
+          "translation": "Milk",
+          "pronunciation": "/ɡjɯː.ɲɯː/",
+          "imageUrl": "assets/images/dict/leche.png",
+          "relatedWords": ["牛", "チーズ", "ミルク"],
+          "usageNote": "カタカナで「ミルク」とも言います。"
+        },
+        {
+          "id": "pde_mizu_ja",
+          "word": "水",
+          "translation": "Water",
+          "pronunciation": "/mi.zɯ/",
+          "imageUrl": "assets/images/dict/agua.png",
+          "relatedWords": ["飲む", "コップ", "お茶"],
+          "usageNote": "冷たい水は「お冷（おひや）」、お湯は「お湯」と区別されます。"
+        }
+      ]
+    },
+    {
+      "id": "topic_family_ja",
+      "name": "家族",
+      "description": "家族や親戚の呼び方",
+      "iconName": "people",
+      "coverImageUrl": "assets/images/topics/family.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_haha_ja",
+          "word": "お母さん / 母",
+          "translation": "Mother",
+          "pronunciation": "/o.kaː.saɴ/ /ha.ha/",
+          "imageUrl": "assets/images/dict/madre.png",
+          "relatedWords": ["お父さん", "親", "子ども"],
+          "usageNote": "他人の母は「お母さん」、自分の母を他人に話すときは「母」と言います。"
+        },
+        {
+          "id": "pde_chichi_ja",
+          "word": "お父さん / 父",
+          "translation": "Father",
+          "pronunciation": "/o.toː.saɴ/ /tɕi.tɕi/",
+          "imageUrl": "assets/images/dict/padre.png",
+          "relatedWords": ["お母さん", "親", "子ども"],
+          "usageNote": "他人の父は「お父さん」、自分の父は「父」と謙譲します。"
+        },
+        {
+          "id": "pde_ani_ja",
+          "word": "お兄さん / 兄",
+          "translation": "Older Brother",
+          "pronunciation": "/o.ɲiː.saɴ/ /a.ɲi/",
+          "imageUrl": "assets/images/dict/hermano.png",
+          "relatedWords": ["弟", "姉", "妹"],
+          "usageNote": "兄（あに）は自分の兄、お兄さんは他人の兄や親しい呼びかけです。"
+        },
+        {
+          "id": "pde_sofu_ja",
+          "word": "おじいさん / 祖父",
+          "translation": "Grandfather",
+          "pronunciation": "/o.dʑiː.saɴ/ /so.ɸɯ/",
+          "imageUrl": "assets/images/dict/abuelo.png",
+          "relatedWords": ["おばあさん", "孫"],
+          "usageNote": "祖父（そふ）は自分の祖父を他人に話すときの表現です。"
+        }
+      ]
+    }
+  ]
+}

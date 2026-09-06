@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 class ListeningWidget extends StatefulWidget {
   final Exercise exercise;
@@ -78,12 +79,12 @@ class _ListeningWidgetState extends State<ListeningWidget> {
         children: [
           const Text(
             'Listening Exercise',
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 16),
           const Text(
             'Click the play button to hear the phrase, then type what you hear',
-            style: TextStyle(fontSize: 14, color: Colors.white70),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 32),
           Center(
@@ -94,14 +95,16 @@ class _ListeningWidgetState extends State<ListeningWidget> {
                   icon: Icon(
                     _isPlaying ? Icons.volume_up : Icons.play_circle_filled,
                     size: 80,
-                    color:
-                        _isPlaying ? Colors.white38 : const Color(0xFF00D9FF),
+                    color: _isPlaying
+                        ? AppColors.textDisabled
+                        : AppColors.textPrimary,
                   ),
                 ),
                 const SizedBox(height: 8),
                 Text(
                   _isPlaying ? 'Playing...' : 'Tap to play audio',
-                  style: const TextStyle(fontSize: 14, color: Colors.white60),
+                  style: const TextStyle(
+                      fontSize: 14, color: AppColors.textSecondary),
                 ),
               ],
             ),
@@ -115,9 +118,9 @@ class _ListeningWidgetState extends State<ListeningWidget> {
               filled: true,
               fillColor: _showFeedback
                   ? (_isCorrect
-                      ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-                      : const Color(0xFFFF4757).withValues(alpha: 0.1))
-                  : const Color(0xFF2A2A2A),
+                      ? AppColors.correct.withValues(alpha: 0.1)
+                      : AppColors.incorrect.withValues(alpha: 0.1))
+                  : AppColors.surfaceRaised,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide.none,
@@ -126,9 +129,7 @@ class _ListeningWidgetState extends State<ListeningWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect
-                          ? const Color(0xFF00FF85)
-                          : const Color(0xFFFF4757))
+                      ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
                       : Colors.transparent,
                   width: 2,
                 ),
@@ -137,10 +138,8 @@ class _ListeningWidgetState extends State<ListeningWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect
-                          ? const Color(0xFF00FF85)
-                          : const Color(0xFFFF4757))
-                      : const Color(0xFF00D9FF),
+                      ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
+                      : AppColors.textPrimary,
                   width: 2,
                 ),
               ),
@@ -153,18 +152,14 @@ class _ListeningWidgetState extends State<ListeningWidget> {
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect
-                      ? const Color(0xFF00FF85)
-                      : const Color(0xFFFF4757),
+                  color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _isCorrect ? 'Correct!' : 'Incorrect',
                   style: TextStyle(
                     fontSize: 16,
-                    color: _isCorrect
-                        ? const Color(0xFF00FF85)
-                        : const Color(0xFFFF4757),
+                    color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                   ),
                 ),
               ],
@@ -173,7 +168,8 @@ class _ListeningWidgetState extends State<ListeningWidget> {
               const SizedBox(height: 8),
               Text(
                 'Correct answer: ${widget.exercise.correctAnswer}',
-                style: const TextStyle(fontSize: 14, color: Colors.white70),
+                style: const TextStyle(
+                    fontSize: 14, color: AppColors.textSecondary),
               ),
             ],
           ],
@@ -191,7 +187,8 @@ class _ListeningWidgetState extends State<ListeningWidget> {
                   },
                   child: const Text(
                     "Can't hear? Show answer",
-                    style: TextStyle(fontSize: 14, color: Colors.white60),
+                    style:
+                        TextStyle(fontSize: 14, color: AppColors.textSecondary),
                   ),
                 ),
               ),
@@ -201,18 +198,7 @@ class _ListeningWidgetState extends State<ListeningWidget> {
             height: 50,
             child: ElevatedButton(
               onPressed: _showFeedback ? null : _checkAnswer,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
-                foregroundColor: Colors.black,
-                disabledBackgroundColor: const Color(0xFF3A3A3A),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              child: const Text(
-                'CHECK',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
+              child: const Text('Check'),
             ),
           ),
         ],

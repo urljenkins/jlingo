@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../hover_card.dart';
+import '../../theme/app_colors.dart';
 
 class MatchPairsWidget extends StatefulWidget {
   final Exercise exercise;
@@ -113,7 +114,7 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
         children: [
           const Text(
             'Match the pairs',
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 16),
           Text(
@@ -143,21 +144,21 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
     final isMatched = _matchedPairs.containsKey(tile);
     final value = tile.split(':')[1];
 
-    Color backgroundColor = const Color(0xFF2A2A2A);
+    Color backgroundColor = AppColors.surfaceRaised;
     Color borderColor = Colors.transparent;
 
     if (isMatched) {
-      backgroundColor = const Color(0xFF00FF85).withValues(alpha: 0.2);
-      borderColor = const Color(0xFF00FF85);
+      backgroundColor = AppColors.correct.withValues(alpha: 0.2);
+      borderColor = AppColors.correct;
     } else if (isSelected) {
-      backgroundColor = const Color(0xFF00D9FF).withValues(alpha: 0.2);
-      borderColor = const Color(0xFF00D9FF);
+      backgroundColor = AppColors.textPrimary.withValues(alpha: 0.2);
+      borderColor = AppColors.textPrimary;
     }
 
     return HoverCard(
       baseColor: backgroundColor,
       hoverColor:
-          isMatched || isSelected ? backgroundColor : const Color(0xFF3A3A3A),
+          isMatched || isSelected ? backgroundColor : AppColors.surfaceRaised,
       onTap: () => _onTileTap(tile),
       child: DecoratedBox(
         decoration: BoxDecoration(

@@ -14,6 +14,7 @@ import '../widgets/responsive/responsive_layout.dart';
 import '../widgets/responsive/desktop_scaffold.dart';
 import '../widgets/responsive/mobile_scaffold.dart';
 import '../widgets/gamification/gamification_widgets.dart';
+import '../theme/app_colors.dart';
 
 class LessonScreen extends StatefulWidget {
   final Skill skill;
@@ -55,6 +56,8 @@ class _LessonScreenState extends State<LessonScreen> {
   Future<void> _onAnswer(bool isCorrect) async {
     final gamificationProvider = context.read<GamificationProvider>();
     final courseProvider = context.read<CourseProvider>();
+    final trackingEnabled =
+        context.read<SettingsProvider>().progressTrackingEnabled;
     final courseId = courseProvider.currentManifest?.id ?? '';
 
     setState(() {
@@ -66,28 +69,27 @@ class _LessonScreenState extends State<LessonScreen> {
         _correctAnswers++;
       });
 
-      // Award XP through GamificationProvider
-      final result = await gamificationProvider.awardXP(
-        courseId: courseId,
-        type: 'exercise_correct',
-        baseAmount: XPRewards.exerciseCorrect,
-        description: 'Correct answer',
-      );
+      if (trackingEnabled) {
+        final result = await gamificationProvider.awardXP(
+          courseId: courseId,
+          type: 'exercise_correct',
+          baseAmount: XPRewards.exerciseCorrect,
+          description: 'Correct answer',
+        );
 
-      if (!mounted) return;
+        if (!mounted) return;
 
-      setState(() {
-        _totalXPEarned += result.totalXP;
-      });
+        setState(() {
+          _totalXPEarned += result.totalXP;
+        });
 
-      // Update exercise stats
-      context.read<ProgressProvider>().incrementExerciseStat(
-            _exercises[_currentExerciseIndex].type.toString(),
-          );
+        context.read<ProgressProvider>().incrementExerciseStat(
+              _exercises[_currentExerciseIndex].type.toString(),
+            );
 
-      // Check for level up
-      if (result.leveledUp) {
-        _showLevelUpCelebration(result.newLevel!);
+        if (result.leveledUp) {
+          _showLevelUpCelebration(result.newLevel!);
+        }
       }
     }
 
@@ -122,47 +124,51 @@ class _LessonScreenState extends State<LessonScreen> {
     final settingsProvider = context.read<SettingsProvider>();
     final courseId = courseProvider.currentManifest?.id ?? '';
 
-    // Record study activity for streak if streak monitoring is enabled
+    // Record study activity for streak if progress tracking is enabled
     int newStreak = 0;
-    if (settingsProvider.streakMonitoringEnabled) {
+    if (settingsProvider.progressTrackingEnabled) {
       final streakResult =
           await gamificationProvider.recordStudyActivity(courseId);
       newStreak = streakResult.newStreak;
     }
 
-    // Award lesson completion bonus
-    final completionResult = await gamificationProvider.awardXP(
-      courseId: courseId,
-      type: 'lesson_complete',
-      baseAmount: XPRewards.lessonComplete,
-      description: 'Lesson completed: ${widget.skill.name}',
-    );
+    // One pass through the skill is enough to finish it and open the next.
+    // This is the bookmark the course navigates by, so it is recorded
+    // whether or not scoring is switched on.
+    progressProvider.markSkillCompleted(widget.skill.id);
 
-    // Award perfect lesson bonus if applicable
-    final isPerfect = _correctAnswers == _totalAnswers && _totalAnswers > 0;
-    if (isPerfect) {
-      final perfectResult = await gamificationProvider.awardXP(
+    if (settingsProvider.progressTrackingEnabled) {
+      final completionResult = await gamificationProvider.awardXP(
         courseId: courseId,
-        type: 'perfect_lesson',
-        baseAmount: XPRewards.perfectLesson,
-        description: 'Perfect lesson!',
+        type: 'lesson_complete',
+        baseAmount: XPRewards.lessonComplete,
+        description: 'Lesson completed: ${widget.skill.name}',
       );
-      _totalXPEarned += perfectResult.totalXP;
+
+      final isPerfect = _correctAnswers == _totalAnswers && _totalAnswers > 0;
+      if (isPerfect) {
+        final perfectResult = await gamificationProvider.awardXP(
+          courseId: courseId,
+          type: 'perfect_lesson',
+          baseAmount: XPRewards.perfectLesson,
+          description: 'Perfect lesson!',
+        );
+        _totalXPEarned += perfectResult.totalXP;
+      }
+
+      _totalXPEarned += completionResult.totalXP;
+
+      final masteryGain =
+          (_correctAnswers / _totalAnswers) * 20; // Up to 20% per session
+      final currentMastery =
+          progressProvider.progress?.skillMastery[widget.skill.id] ?? 0.0;
+      final newMastery = (currentMastery + masteryGain).clamp(0.0, 100.0);
+
+      progressProvider.updateSkillMastery(widget.skill.id, newMastery);
+      progressProvider.checkAndUnlockAchievements(
+        currentStreak: newStreak,
+      );
     }
-
-    _totalXPEarned += completionResult.totalXP;
-
-    // Update skill mastery
-    final masteryGain =
-        (_correctAnswers / _totalAnswers) * 20; // Up to 20% per session
-    final currentMastery =
-        progressProvider.progress?.skillMastery[widget.skill.id] ?? 0.0;
-    final newMastery = (currentMastery + masteryGain).clamp(0.0, 100.0);
-
-    progressProvider.updateSkillMastery(widget.skill.id, newMastery);
-    progressProvider.checkAndUnlockAchievements(
-      currentStreak: newStreak,
-    );
 
     // Show completion dialog
     if (!mounted) return;
@@ -180,7 +186,7 @@ class _LessonScreenState extends State<LessonScreen> {
     final userLevel = gamificationProvider.userLevel;
 
     return Dialog(
-      backgroundColor: const Color(0xFF1A1A1A),
+      backgroundColor: AppColors.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -192,13 +198,12 @@ class _LessonScreenState extends State<LessonScreen> {
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: const Color(0xFF00FF85).withValues(alpha: 0.2),
+                color: AppColors.textSecondary.withValues(alpha: 0.2),
               ),
               child: Icon(
                 isPerfect ? Icons.star : Icons.check_circle,
-                color: isPerfect
-                    ? const Color(0xFFFFD700)
-                    : const Color(0xFF00FF85),
+                color:
+                    isPerfect ? AppColors.textPrimary : AppColors.textSecondary,
                 size: 64,
               ),
             ),
@@ -217,14 +222,13 @@ class _LessonScreenState extends State<LessonScreen> {
                   icon: Icons.check,
                   value: '$_correctAnswers/$_totalAnswers',
                   label: 'Correct',
-                  color: const Color(0xFF00FF85),
+                  color: AppColors.textSecondary,
                 ),
                 _buildStatColumn(
                   icon: Icons.speed,
                   value: '$accuracy%',
                   label: 'Accuracy',
-                  color:
-                      accuracy >= 80 ? const Color(0xFF00D9FF) : Colors.orange,
+                  color: accuracy >= 80 ? AppColors.textPrimary : Colors.orange,
                 ),
               ],
             ),
@@ -236,8 +240,8 @@ class _LessonScreenState extends State<LessonScreen> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    const Color(0xFFFFD700).withValues(alpha: 0.2),
-                    const Color(0xFFFF6B35).withValues(alpha: 0.2),
+                    AppColors.textPrimary.withValues(alpha: 0.2),
+                    AppColors.textSecondary.withValues(alpha: 0.2),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(12),
@@ -245,14 +249,15 @@ class _LessonScreenState extends State<LessonScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(Icons.star, color: Color(0xFFFFD700), size: 28),
+                  const Icon(Icons.star,
+                      color: AppColors.textPrimary, size: 28),
                   const SizedBox(width: 8),
                   Text(
                     '+$_totalXPEarned XP',
                     style: const TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFFFFD700),
+                      color: AppColors.textPrimary,
                     ),
                   ),
                 ],
@@ -272,14 +277,14 @@ class _LessonScreenState extends State<LessonScreen> {
                       style: const TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white70,
+                        color: AppColors.textSecondary,
                       ),
                     ),
                     Text(
                       '${LevelConfig.getXPToNextLevel(userLevel.currentXP)} XP to next',
                       style: const TextStyle(
                         fontSize: 12,
-                        color: Colors.white54,
+                        color: AppColors.textMuted,
                       ),
                     ),
                   ],
@@ -318,15 +323,7 @@ class _LessonScreenState extends State<LessonScreen> {
                     Navigator.of(context).pop(); // Close dialog
                     Navigator.of(context).pop(); // Return to home
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF00D9FF),
-                    foregroundColor: Colors.black,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                  ),
-                  child: const Text(
-                    'CONTINUE',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                  ),
+                  child: const Text('Continue'),
                 ),
               ),
             ),
@@ -365,7 +362,7 @@ class _LessonScreenState extends State<LessonScreen> {
           label,
           style: const TextStyle(
             fontSize: 12,
-            color: Colors.white54,
+            color: AppColors.textMuted,
           ),
         ),
       ],
@@ -398,8 +395,8 @@ class _LessonScreenState extends State<LessonScreen> {
       ),
       title: LinearProgressIndicator(
         value: progress,
-        backgroundColor: const Color(0xFF3A3A3A),
-        valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFF00D9FF)),
+        backgroundColor: AppColors.surfaceRaised,
+        valueColor: const AlwaysStoppedAnimation<Color>(AppColors.textPrimary),
       ),
       actions: [
         Padding(

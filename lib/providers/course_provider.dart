@@ -24,6 +24,7 @@ class CourseProvider extends ChangeNotifier {
   Future<void> loadAvailableLanguages() async {
     _availableLanguages = [
       'spanish',
+      'spanish_latam',
       'french',
       'dutch',
       'portuguese',
@@ -86,13 +87,12 @@ class CourseProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  int getCurrentSkillIndex(Map<String, double> skillMastery) {
+  /// Index of the first unfinished skill — where "Continue" resumes.
+  int getCurrentSkillIndex(Set<String> completedSkills) {
     if (_currentManifest == null) return 0;
 
     for (int i = 0; i < _currentManifest!.skills.length; i++) {
-      final skillHeader = _currentManifest!.skills[i];
-      final mastery = skillMastery[skillHeader.id] ?? 0.0;
-      if (mastery < 100.0) {
+      if (!completedSkills.contains(_currentManifest!.skills[i].id)) {
         return i;
       }
     }

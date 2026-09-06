@@ -1,0 +1,127 @@
+{
+  "courseId": "portuguese_en",
+  "words": [
+    {
+      "id": "wod_pt_1",
+      "word": "Borboleta",
+      "translation": "Butterfly",
+      "pronunciation": "/buɾ.buˈle.tɐ/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "A borboleta voa de flor em flor no jardim.",
+      "exampleTranslation": "The butterfly flies from flower to flower in the garden.",
+      "etymology": "From Latin 'belbellita' (pretty little thing)",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_pt_2",
+      "word": "Saudade",
+      "translation": "Longing / Nostalgia",
+      "pronunciation": "/sawˈda.dɨ/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "Tenho muitas saudades dos meus amigos de infância.",
+      "exampleTranslation": "I miss my childhood friends very much.",
+      "etymology": "From Latin 'solitas' (solitude)",
+      "funFact": "'Saudade' is famous as one of the most culturally distinctive Portuguese words, expressing deep nostalgic longing.",
+      "category": "Culture",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_pt_3",
+      "word": "Estrela",
+      "translation": "Star",
+      "pronunciation": "/(ɨ)ʃˈtɾe.lɐ/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "As estrelas brilham no céu noturno.",
+      "exampleTranslation": "The stars shine in the night sky.",
+      "etymology": "From Latin 'stella'",
+      "category": "Space",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_pt_4",
+      "word": "Guarda-chuva",
+      "translation": "Umbrella",
+      "pronunciation": "/ˈɡwaɾ.dɐ ˈʃu.vɐ/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "Não te esqueças do guarda-chuva, hoje vai chover.",
+      "exampleTranslation": "Don't forget your umbrella, it is going to rain today.",
+      "etymology": "Compound of 'guardar' (protect) and 'chuva' (rain)",
+      "category": "Weather",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_pt_5",
+      "word": "Madrugada",
+      "translation": "Early morning / Dawn",
+      "pronunciation": "/mɐ.ðɾuˈɣa.ðɐ/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "Gosto de caminhar na praia de madrugada.",
+      "exampleTranslation": "I like walking on the beach at dawn.",
+      "etymology": "Derived from 'madrugar' (to wake early)",
+      "category": "Time",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_pt_6",
+      "word": "Sol",
+      "translation": "Sun",
+      "pronunciation": "/sɔl/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "O sol aquece a cidade pela manhã.",
+      "exampleTranslation": "The sun warms the city in the morning.",
+      "etymology": "From Latin 'sol'",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_pt_7",
+      "word": "Cafuné",
+      "translation": "Caress on the hair",
+      "pronunciation": "/ka.fuˈnɛ/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "A mãe fez um cafuné suave na criança antes de dormir.",
+      "exampleTranslation": "The mother gently ran her fingers through the child's hair before bedtime.",
+      "etymology": "Of Kimbundu (Bantu) origin",
+      "funFact": "This affectionate word comes from the rich African cultural influence on the Portuguese language.",
+      "category": "Culture",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_pt_8",
+      "word": "Castelo",
+      "translation": "Castle",
+      "pronunciation": "/kɐʃˈtɛ.lu/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "Visitámos o Castelo de São Jorge em Lisboa.",
+      "exampleTranslation": "We visited the Castle of Saint George in Lisbon.",
+      "etymology": "From Latin 'castellum'",
+      "category": "Places",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_pt_9",
+      "word": "Girassol",
+      "translation": "Sunflower",
+      "pronunciation": "/ʒi.ɾɐˈsɔl/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "O girassol vira-se em direção à luz do sol.",
+      "exampleTranslation": "The sunflower turns towards the sunlight.",
+      "etymology": "Compound of 'girar' (turn) and 'sol' (sun)",
+      "category": "Nature",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_pt_10",
+      "word": "Esperança",
+      "translation": "Hope",
+      "pronunciation": "/(ɨ)ʃ.pɨˈɾɐ̃.sɐ/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "A esperança dá-nos força para seguir em frente.",
+      "exampleTranslation": "Hope gives us strength to move forward.",
+      "etymology": "From Latin 'sperare' (to hope)",
+      "category": "Abstract",
+      "difficulty": 1
+    }
+  ]
+}

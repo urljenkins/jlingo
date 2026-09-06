@@ -2,9 +2,11 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:lingua_sprint/models/book.dart';
 import 'package:lingua_sprint/models/course_manifest.dart';
 import 'package:lingua_sprint/models/exercise.dart';
 import 'package:lingua_sprint/models/flashcard.dart';
+import 'package:lingua_sprint/models/picture_dictionary.dart';
 import 'package:lingua_sprint/models/word_of_day.dart';
 import 'package:lingua_sprint/models/skill.dart';
 import 'package:yaml/yaml.dart';
@@ -154,11 +156,26 @@ void main() {
       }
     });
 
+    test('every bundled picture dictionary decodes', () {
+      for (final file in vocabularyFiles('picture_dictionary_')) {
+        final json =
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+        expect(() => PictureDictionary.fromJson(json), returnsNormally,
+            reason: '${file.path} failed to decode as a PictureDictionary');
+        final dict = PictureDictionary.fromJson(json);
+        expect(dict.topics, isNotEmpty, reason: '${file.path} has no topics');
+      }
+    });
+
     test('vocabulary assets are named for a real course', () {
       final courseIds = {
         for (final language in languages) _manifest(language).id,
       };
-      for (final prefix in ['flashcards_', 'word_of_day_']) {
+      for (final prefix in [
+        'flashcards_',
+        'word_of_day_',
+        'picture_dictionary_',
+      ]) {
         for (final file in vocabularyFiles(prefix)) {
           final name = file.path.split(Platform.pathSeparator).last;
           final courseId =
@@ -166,6 +183,51 @@ void main() {
           expect(courseIds, contains(courseId),
               reason: '$name is keyed to "$courseId", which is not a course '
                   'id, so no provider will ever load it');
+        }
+      }
+    });
+  });
+
+  group('bilingual books', () {
+    test('books manifest decodes and has books', () {
+      final manifestFile = File('assets/books/manifest.json');
+      expect(manifestFile.existsSync(), isTrue);
+      final json =
+          jsonDecode(manifestFile.readAsStringSync()) as Map<String, dynamic>;
+      final books = json['books'] as List<dynamic>?;
+      expect(books, isNotNull);
+      expect(books, isNotEmpty);
+      for (final b in books!.cast<Map<String, dynamic>>()) {
+        expect(() => BookManifestEntry.fromJson(b), returnsNormally);
+      }
+    });
+
+    test('every book in manifest has a corresponding valid book file', () {
+      final manifestFile = File('assets/books/manifest.json');
+      final json =
+          jsonDecode(manifestFile.readAsStringSync()) as Map<String, dynamic>;
+      final books = json['books'] as List<dynamic>;
+      for (final b in books.cast<Map<String, dynamic>>()) {
+        final id = b['id'] as String;
+        final file = File('assets/books/$id.json');
+        expect(file.existsSync(), isTrue,
+            reason:
+                'Book $id is in manifest but assets/books/$id.json is missing');
+        final bookJson =
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+        expect(() => BilingualBook.fromJson(bookJson), returnsNormally,
+            reason: 'assets/books/$id.json failed to decode as BilingualBook');
+        final book = BilingualBook.fromJson(bookJson);
+        expect(book.chapters, isNotEmpty, reason: '$id has no chapters');
+        for (final chapter in book.chapters) {
+          expect(chapter.paragraphs, isNotEmpty,
+              reason: 'Chapter ${chapter.id} in $id has no paragraphs');
+          for (final p in chapter.paragraphs) {
+            expect(p.originalText, isNotEmpty,
+                reason: 'Paragraph ${p.id} in $id has empty originalText');
+            expect(p.translatedText, isNotEmpty,
+                reason: 'Paragraph ${p.id} in $id has empty translatedText');
+          }
         }
       }
     });

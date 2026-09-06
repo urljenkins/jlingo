@@ -1,0 +1,14 @@
+# Copy to android/key.properties and fill in your own values.
+# key.properties and *.jks are gitignored - never commit either.
+#
+# Create the keystore with:
+#   keytool -genkey -v -keystore ~/lingua-sprint-upload.jks \
+#     -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+#
+# Back the .jks file and these passwords up somewhere durable. If you lose
+# them you cannot ship an update to an existing Play listing - only a new one.
+
+storePassword=<the store password you chose>
+keyPassword=<the key password you chose>
+keyAlias=upload
+storeFile=/absolute/path/to/lingua-sprint-upload.jks

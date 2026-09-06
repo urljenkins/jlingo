@@ -1,0 +1,89 @@
+{
+  "id": "chinese_flashcards",
+  "name": "Chinese Core Vocabulary",
+  "description": "Essential Chinese words and phrases with spaced repetition",
+  "targetLanguage": "zh-CN",
+  "nativeLanguage": "en-US",
+  "cards": [
+    {
+      "id": "fc_zh_1",
+      "front": "你好 (Nǐ hǎo)",
+      "back": "Hello",
+      "pronunciation": "/nǐ.xǎʊ/",
+      "exampleSentence": "你好！很高兴认识你。",
+      "exampleTranslation": "Hello! Very glad to meet you.",
+      "category": "Greetings",
+      "tags": ["basic", "essential"]
+    },
+    {
+      "id": "fc_zh_2",
+      "front": "早上好 (Zǎoshang hǎo)",
+      "back": "Good morning",
+      "pronunciation": "/tsàʊ.ʂaŋ xǎʊ/",
+      "exampleSentence": "老师，早上好！",
+      "exampleTranslation": "Teacher, good morning!",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_zh_3",
+      "front": "谢谢 (Xièxie)",
+      "back": "Thank you",
+      "pronunciation": "/ɕjê.ɕje/",
+      "exampleSentence": "非常感谢你的帮助，谢谢！",
+      "exampleTranslation": "Thank you very much for your help!",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_zh_4",
+      "front": "不客气 (Bú kèqi)",
+      "back": "You're welcome",
+      "pronunciation": "/pǔ kʰɤ̂.tɕʰi/",
+      "exampleSentence": "不用谢，不客气！",
+      "exampleTranslation": "No need to thank me, you're welcome!",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_zh_5",
+      "front": "请 (Qǐng)",
+      "back": "Please",
+      "pronunciation": "/tɕʰǐŋ/",
+      "exampleSentence": "请给我一杯水。",
+      "exampleTranslation": "Please give me a glass of water.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_zh_6",
+      "front": "我叫... (Wǒ jiào...)",
+      "back": "My name is...",
+      "pronunciation": "/wǒ tɕjâʊ/",
+      "exampleSentence": "你好，我叫李明。",
+      "exampleTranslation": "Hello, my name is Li Ming.",
+      "category": "Introductions",
+      "tags": ["basic", "introductions"]
+    },
+    {
+      "id": "fc_zh_7",
+      "front": "水 (Shuǐ)",
+      "back": "Water",
+      "pronunciation": "/ʂwěi/",
+      "exampleSentence": "我想要喝温开水。",
+      "exampleTranslation": "I would like to drink warm boiled water.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    },
+    {
+      "id": "fc_zh_8",
+      "front": "面包 (Miànbāo)",
+      "back": "Bread",
+      "pronunciation": "/mjɛ̂n.páʊ/",
+      "exampleSentence": "早上吃面包和喝牛奶。",
+      "exampleTranslation": "Eat bread and drink milk in the morning.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    }
+  ]
+}

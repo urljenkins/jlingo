@@ -1,0 +1,77 @@
+{
+    "id": "conditional",
+    "name": "Conditional Tense",
+    "description": "Learn to express hypothetical situations",
+    "level": 22,
+    "exercises": [
+        {
+            "id": "ex_cond_1",
+            "type": "multipleChoice",
+            "question": "When do we use the conditional tense?",
+            "options": [
+                "For hypothetical situations and polite requests",
+                "For past events",
+                "For future facts",
+                "For commands"
+            ],
+            "correctAnswer": "For hypothetical situations and polite requests"
+        },
+        {
+            "id": "ex_cond_2",
+            "type": "matchPairs",
+            "question": "Match conditional conjugations (HABLAR)",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Yo hablaría",
+                        "native": "I would speak"
+                    },
+                    {
+                        "target": "Tú hablarías",
+                        "native": "You would speak"
+                    },
+                    {
+                        "target": "Él hablaría",
+                        "native": "He would speak"
+                    },
+                    {
+                        "target": "Nosotros hablaríamos",
+                        "native": "We would speak"
+                    },
+                    {
+                        "target": "Ellos hablarían",
+                        "native": "They would speak"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_cond_3",
+            "type": "translateThis",
+            "question": "Si tuviera dinero, viajaría por el mundo",
+            "options": [],
+            "correctAnswer": "If I had money, I would travel the world"
+        },
+        {
+            "id": "ex_cond_4",
+            "type": "fillInBlank",
+            "question": "¿___ ayudarme con esto?",
+            "options": [
+                "Podrías",
+                "Puedes",
+                "Pudiste",
+                "Podrás"
+            ],
+            "correctAnswer": "Podrías"
+        },
+        {
+            "id": "ex_cond_5",
+            "type": "speakThis",
+            "question": "Me gustaría reservar una mesa para cuatro",
+            "options": [],
+            "correctAnswer": "Me gustaría reservar una mesa para cuatro"
+        }
+    ]
+}

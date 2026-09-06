@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 class SpeakThisWidget extends StatefulWidget {
   final Exercise exercise;
@@ -24,6 +25,10 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
   bool _isCorrect = false;
   String _recognizedText = '';
 
+  /// Null while [_initializeSpeech] is still running, then true/false once the
+  /// recognizer has reported whether it can be used on this device.
+  bool? _speechAvailable;
+
   @override
   void initState() {
     super.initState();
@@ -31,8 +36,12 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
   }
 
   Future<void> _initializeSpeech() async {
-    await _speech.initialize();
-    if (mounted) setState(() {});
+    // initialize() returns false when the device has no recognizer or the
+    // microphone permission was denied; both mean the exercise can only be
+    // skipped.
+    final available = await _speech.initialize();
+    if (!mounted) return;
+    setState(() => _speechAvailable = available);
   }
 
   @override
@@ -44,12 +53,7 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
   }
 
   Future<void> _startListening() async {
-    if (!_speech.isAvailable) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Speech recognition not available')),
-      );
-      return;
-    }
+    if (_speechAvailable != true) return;
 
     setState(() {
       _isListening = true;
@@ -140,6 +144,10 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final unavailable = _speechAvailable == false;
+    final enabled = _speechAvailable == true;
+    const disabledColor = AppColors.textDisabled;
+
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: Column(
@@ -147,7 +155,7 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
         children: [
           const Text(
             'Speak this phrase',
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 16),
           Text(
@@ -157,29 +165,39 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
           const SizedBox(height: 40),
           Center(
             child: GestureDetector(
-              onTapDown: (_) => _startListening(),
-              onTapUp: (_) => _stopListening(),
+              onTapDown: enabled ? (_) => _startListening() : null,
+              onTapUp: enabled ? (_) => _stopListening() : null,
               child: Container(
                 width: 100,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: _isListening
-                      ? const Color(0xFFFF4757).withValues(alpha: 0.2)
-                      : const Color(0xFF00D9FF).withValues(alpha: 0.2),
+                  color: !enabled
+                      ? AppColors.border
+                      : _isListening
+                          ? AppColors.incorrect.withValues(alpha: 0.2)
+                          : AppColors.textPrimary.withValues(alpha: 0.2),
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: _isListening
-                        ? const Color(0xFFFF4757)
-                        : const Color(0xFF00D9FF),
+                    color: !enabled
+                        ? disabledColor
+                        : _isListening
+                            ? AppColors.incorrect
+                            : AppColors.textPrimary,
                     width: 3,
                   ),
                 ),
                 child: Icon(
-                  _isListening ? Icons.mic : Icons.mic_none,
+                  unavailable
+                      ? Icons.mic_off
+                      : _isListening
+                          ? Icons.mic
+                          : Icons.mic_none,
                   size: 50,
-                  color: _isListening
-                      ? const Color(0xFFFF4757)
-                      : const Color(0xFF00D9FF),
+                  color: !enabled
+                      ? disabledColor
+                      : _isListening
+                          ? AppColors.incorrect
+                          : AppColors.textPrimary,
                 ),
               ),
             ),
@@ -187,8 +205,17 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
           const SizedBox(height: 16),
           Center(
             child: Text(
-              _isListening ? 'Listening...' : 'Tap and hold to speak',
-              style: const TextStyle(fontSize: 16, color: Colors.white70),
+              unavailable
+                  ? 'Speech not available on this device'
+                  : _speechAvailable == null
+                      ? 'Checking microphone...'
+                      : _isListening
+                          ? 'Listening...'
+                          : 'Tap and hold to speak',
+              style: TextStyle(
+                fontSize: 16,
+                color: unavailable ? disabledColor : AppColors.textSecondary,
+              ),
             ),
           ),
           if (_recognizedText.isNotEmpty) ...[
@@ -196,7 +223,7 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
             Container(
               padding: const EdgeInsets.all(12.0),
               decoration: BoxDecoration(
-                color: const Color(0xFF2A2A2A),
+                color: AppColors.surfaceRaised,
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Column(
@@ -204,7 +231,8 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
                 children: [
                   const Text(
                     'You said:',
-                    style: TextStyle(fontSize: 14, color: Colors.white60),
+                    style:
+                        TextStyle(fontSize: 14, color: AppColors.textSecondary),
                   ),
                   const SizedBox(height: 8),
                   Text(
@@ -221,39 +249,35 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
               children: [
                 Icon(
                   _isCorrect ? Icons.check_circle : Icons.cancel,
-                  color: _isCorrect
-                      ? const Color(0xFF00FF85)
-                      : const Color(0xFFFF4757),
+                  color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _isCorrect ? 'Good!' : 'Try again',
                   style: TextStyle(
                     fontSize: 16,
-                    color: _isCorrect
-                        ? const Color(0xFF00FF85)
-                        : const Color(0xFFFF4757),
+                    color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                   ),
                 ),
               ],
             ),
           ],
           const Spacer(),
-          if (!_speech.isAvailable || !_showFeedback)
+          if (unavailable)
             SizedBox(
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
                 onPressed: () => widget.onAnswer(true),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF3A3A3A),
-                  foregroundColor: Colors.white70,
+                  backgroundColor: AppColors.surfaceRaised,
+                  foregroundColor: AppColors.textSecondary,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
                 child: const Text(
-                  'SKIP (Speech not available)',
+                  'Skip - Speech not available',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),

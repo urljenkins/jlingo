@@ -1,0 +1,77 @@
+{
+    "id": "present_continuous",
+    "name": "Present Continuous",
+    "description": "Learn to express ongoing actions (estar + gerund)",
+    "level": 12,
+    "exercises": [
+        {
+            "id": "ex_pc_1",
+            "type": "multipleChoice",
+            "question": "How do you form the present continuous in Spanish?",
+            "options": [
+                "estar + gerund (-ando/-iendo)",
+                "ser + infinitive",
+                "haber + participle",
+                "ir + a + infinitive"
+            ],
+            "correctAnswer": "estar + gerund (-ando/-iendo)"
+        },
+        {
+            "id": "ex_pc_2",
+            "type": "matchPairs",
+            "question": "Match the gerunds",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Hablando",
+                        "native": "Speaking"
+                    },
+                    {
+                        "target": "Comiendo",
+                        "native": "Eating"
+                    },
+                    {
+                        "target": "Viviendo",
+                        "native": "Living"
+                    },
+                    {
+                        "target": "Haciendo",
+                        "native": "Doing"
+                    },
+                    {
+                        "target": "Leyendo",
+                        "native": "Reading"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_pc_3",
+            "type": "translateThis",
+            "question": "Estoy estudiando español",
+            "options": [],
+            "correctAnswer": "I am studying Spanish"
+        },
+        {
+            "id": "ex_pc_4",
+            "type": "fillInBlank",
+            "question": "Ella está ___ un libro",
+            "options": [
+                "leyendo",
+                "leiendo",
+                "ler",
+                "lee"
+            ],
+            "correctAnswer": "leyendo"
+        },
+        {
+            "id": "ex_pc_5",
+            "type": "speakThis",
+            "question": "¿Qué estás haciendo?",
+            "options": [],
+            "correctAnswer": "¿Qué estás haciendo?"
+        }
+    ]
+}

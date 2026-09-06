@@ -1,0 +1,343 @@
+{
+    "id": "listening_pronunciation",
+    "name": "Listening & Pronunciation",
+    "description": "Master Spanish sounds through listening exercises, pronunciation practice, dialogues, and songs",
+    "level": 2,
+    "exercises": [
+        {
+            "id": "lp_ex_1",
+            "type": "nativeAudio",
+            "question": "Buenos días, ¿cómo está usted?",
+            "options": [],
+            "correctAnswer": "Buenos días, ¿cómo está usted?",
+            "targetLanguage": "es-ES",
+            "audioPath": null,
+            "metadata": {
+                "speaker": "Native Speaker - María",
+                "difficulty": "beginner"
+            },
+            "audioAvailable": false,
+            "enabled": false
+        },
+        {
+            "id": "lp_ex_2",
+            "type": "pronunciationPractice",
+            "question": "Me llamo Juan y soy de España",
+            "options": [],
+            "correctAnswer": "Me llamo Juan y soy de España",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "meh YAH-moh HWAHN ee soy deh es-PAH-nyah",
+                "focus": "The 'll' sound and the 'ñ' pronunciation"
+            }
+        },
+        {
+            "id": "lp_ex_3",
+            "type": "dialogueListening",
+            "question": "Listen to the conversation at a café",
+            "options": [
+                "He ordered coffee",
+                "He ordered tea",
+                "He ordered water",
+                "He ordered juice"
+            ],
+            "correctAnswer": "He ordered coffee",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "type": "dialogue",
+                "context": "A customer ordering at a café in Madrid",
+                "dialogue": [
+                    {
+                        "speaker": "Camarero",
+                        "text": "Buenos días, ¿qué desea?",
+                        "translation": "Good morning, what would you like?"
+                    },
+                    {
+                        "speaker": "Cliente",
+                        "text": "Buenos días. Un café con leche, por favor.",
+                        "translation": "Good morning. A coffee with milk, please."
+                    },
+                    {
+                        "speaker": "Camarero",
+                        "text": "¿Algo más?",
+                        "translation": "Anything else?"
+                    },
+                    {
+                        "speaker": "Cliente",
+                        "text": "No, gracias. ¿Cuánto es?",
+                        "translation": "No, thanks. How much is it?"
+                    },
+                    {
+                        "speaker": "Camarero",
+                        "text": "Son dos euros cincuenta.",
+                        "translation": "That's two euros fifty."
+                    }
+                ],
+                "comprehensionQuestion": "What did the customer order?",
+                "correctOptionIndex": 0
+            }
+        },
+        {
+            "id": "lp_ex_4",
+            "type": "songFill",
+            "question": "Despacito",
+            "options": [],
+            "correctAnswer": "corazón,suave,beso",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "songTitle": "Despacito",
+                "artist": "Luis Fonsi",
+                "lyrics": [
+                    {
+                        "text": "Sí, sabes que ya llevo un rato mirándote",
+                        "timestamp": 0
+                    },
+                    {
+                        "text": "Tengo que bailar contigo hoy",
+                        "timestamp": 3000
+                    },
+                    {
+                        "text": "Vi que tu mirada ya estaba llamándome",
+                        "timestamp": 6000
+                    },
+                    {
+                        "text": "Muéstrame el camino que yo voy",
+                        "timestamp": 9000
+                    },
+                    {
+                        "text": "Tú, tú eres el imán y yo soy el metal",
+                        "timestamp": 12000
+                    },
+                    {
+                        "text": "Me voy acercando y voy armando el plan",
+                        "timestamp": 15000
+                    },
+                    {
+                        "text": "Solo con pensarlo se acelera el ____",
+                        "timestamp": 18000,
+                        "translation": "Just thinking about it speeds up my heart"
+                    },
+                    {
+                        "text": "Ya, ya me está gustando más de lo normal",
+                        "timestamp": 21000
+                    }
+                ],
+                "blanks": [
+                    {
+                        "lineIndex": 6,
+                        "wordIndex": 8,
+                        "correctWord": "corazón",
+                        "hint": "heart"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "lp_ex_5",
+            "type": "pronunciationPractice",
+            "question": "Tengo treinta y tres años",
+            "options": [],
+            "correctAnswer": "Tengo treinta y tres años",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "TEN-goh TRAYN-tah ee TRES AH-nyos",
+                "focus": "Rolling 'r' sound in 'treinta' and 'tres'"
+            }
+        },
+        {
+            "id": "lp_ex_6",
+            "type": "dialogueListening",
+            "question": "Listen to the news report",
+            "options": [
+                "Sunny weather expected",
+                "Rain expected tomorrow",
+                "Snow in the mountains",
+                "Strong winds tonight"
+            ],
+            "correctAnswer": "Rain expected tomorrow",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "type": "news",
+                "context": "Weather forecast from Spanish national television",
+                "dialogue": [
+                    {
+                        "speaker": "Presenter",
+                        "text": "Buenos días. Aquí está el pronóstico del tiempo para mañana.",
+                        "translation": "Good morning. Here is the weather forecast for tomorrow."
+                    },
+                    {
+                        "speaker": "Presenter",
+                        "text": "Se esperan lluvias en toda la península ibérica.",
+                        "translation": "Rain is expected throughout the Iberian Peninsula."
+                    },
+                    {
+                        "speaker": "Presenter",
+                        "text": "Las temperaturas oscilarán entre los 12 y 18 grados.",
+                        "translation": "Temperatures will range between 12 and 18 degrees."
+                    },
+                    {
+                        "speaker": "Presenter",
+                        "text": "Se recomienda llevar paraguas.",
+                        "translation": "It is recommended to carry an umbrella."
+                    }
+                ],
+                "comprehensionQuestion": "What is the weather forecast for tomorrow?",
+                "correctOptionIndex": 1
+            }
+        },
+        {
+            "id": "lp_ex_7",
+            "type": "nativeAudio",
+            "question": "¿Dónde está la estación de tren?",
+            "options": [],
+            "correctAnswer": "¿Dónde está la estación de tren?",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "speaker": "Native Speaker - Carlos",
+                "difficulty": "intermediate"
+            }
+        },
+        {
+            "id": "lp_ex_8",
+            "type": "pronunciationPractice",
+            "question": "El perro corre rápido por el parque",
+            "options": [],
+            "correctAnswer": "El perro corre rápido por el parque",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "el PEH-roh KOH-reh RAH-pee-doh por el PAR-keh",
+                "focus": "Double 'rr' sound in 'perro' and 'corre'"
+            }
+        },
+        {
+            "id": "lp_ex_9",
+            "type": "dialogueListening",
+            "question": "Listen to the short story",
+            "options": [
+                "The old man lived alone",
+                "The old man had many friends",
+                "The old man was rich",
+                "The old man was young"
+            ],
+            "correctAnswer": "The old man lived alone",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "type": "story",
+                "context": "A short tale about an old man in a small village",
+                "dialogue": [
+                    {
+                        "speaker": "Narrator",
+                        "text": "Había una vez un anciano que vivía solo en una pequeña casa.",
+                        "translation": "Once upon a time there was an old man who lived alone in a small house."
+                    },
+                    {
+                        "speaker": "Narrator",
+                        "text": "Todos los días, caminaba hasta el mercado del pueblo.",
+                        "translation": "Every day, he walked to the village market."
+                    },
+                    {
+                        "speaker": "Narrator",
+                        "text": "Le gustaba hablar con los vendedores y escuchar sus historias.",
+                        "translation": "He liked to talk to the vendors and listen to their stories."
+                    },
+                    {
+                        "speaker": "Narrator",
+                        "text": "Así pasaba sus días, en paz y tranquilidad.",
+                        "translation": "That's how he spent his days, in peace and tranquility."
+                    }
+                ],
+                "comprehensionQuestion": "How did the old man live?",
+                "correctOptionIndex": 0
+            }
+        },
+        {
+            "id": "lp_ex_10",
+            "type": "songFill",
+            "question": "La Bamba",
+            "options": [],
+            "correctAnswer": "bailar,arriba,capitán",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "songTitle": "La Bamba",
+                "artist": "Ritchie Valens",
+                "lyrics": [
+                    {
+                        "text": "Para ____ la bamba",
+                        "timestamp": 0,
+                        "translation": "To dance the bamba"
+                    },
+                    {
+                        "text": "Para bailar la bamba se necesita una poca de gracia",
+                        "timestamp": 2000
+                    },
+                    {
+                        "text": "Una poca de gracia para mí para ti",
+                        "timestamp": 5000
+                    },
+                    {
+                        "text": "Y ____ y arriba",
+                        "timestamp": 8000,
+                        "translation": "And up and up"
+                    },
+                    {
+                        "text": "Y arriba y arriba iré",
+                        "timestamp": 10000
+                    },
+                    {
+                        "text": "Yo no soy marinero",
+                        "timestamp": 13000
+                    },
+                    {
+                        "text": "Yo no soy marinero, soy ____",
+                        "timestamp": 15000,
+                        "translation": "I'm not a sailor, I'm a captain"
+                    }
+                ],
+                "blanks": [
+                    {
+                        "lineIndex": 0,
+                        "wordIndex": 1,
+                        "correctWord": "bailar",
+                        "hint": "to dance"
+                    },
+                    {
+                        "lineIndex": 3,
+                        "wordIndex": 1,
+                        "correctWord": "arriba",
+                        "hint": "up"
+                    },
+                    {
+                        "lineIndex": 6,
+                        "wordIndex": 6,
+                        "correctWord": "capitán",
+                        "hint": "captain"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "lp_ex_11",
+            "type": "pronunciationPractice",
+            "question": "La ciudad tiene muchos edificios altos",
+            "options": [],
+            "correctAnswer": "La ciudad tiene muchos edificios altos",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "lah see-oo-DAHD tee-EH-neh MOO-chos eh-dee-FEE-see-os AHL-tos",
+                "focus": "The soft 'd' sound in 'ciudad' and 'edificios'"
+            }
+        },
+        {
+            "id": "lp_ex_12",
+            "type": "nativeAudio",
+            "question": "Quisiera reservar una mesa para cuatro personas",
+            "options": [],
+            "correctAnswer": "Quisiera reservar una mesa para cuatro personas",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "speaker": "Native Speaker - Elena",
+                "difficulty": "intermediate"
+            }
+        }
+    ]
+}

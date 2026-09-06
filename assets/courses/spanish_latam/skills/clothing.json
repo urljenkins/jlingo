@@ -1,0 +1,81 @@
+{
+    "id": "clothing",
+    "name": "Clothing",
+    "description": "Learn vocabulary for clothes and accessories",
+    "level": 6,
+    "exercises": [
+        {
+            "id": "ex_cl_1",
+            "type": "multipleChoice",
+            "question": "How do you say 'shirt' in Spanish?",
+            "options": [
+                "Camisa",
+                "Pantalón",
+                "Zapato",
+                "Sombrero"
+            ],
+            "correctAnswer": "Camisa"
+        },
+        {
+            "id": "ex_cl_2",
+            "type": "matchPairs",
+            "question": "Match the clothing items",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Camisa",
+                        "native": "Shirt"
+                    },
+                    {
+                        "target": "Pantalón",
+                        "native": "Pants"
+                    },
+                    {
+                        "target": "Zapatos",
+                        "native": "Shoes"
+                    },
+                    {
+                        "target": "Vestido",
+                        "native": "Dress"
+                    },
+                    {
+                        "target": "Falda",
+                        "native": "Skirt"
+                    },
+                    {
+                        "target": "Chaqueta",
+                        "native": "Jacket"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_cl_3",
+            "type": "translateThis",
+            "question": "Los zapatos negros",
+            "options": [],
+            "correctAnswer": "The black shoes"
+        },
+        {
+            "id": "ex_cl_4",
+            "type": "fillInBlank",
+            "question": "Ella lleva una ___ azul",
+            "options": [
+                "falda",
+                "pantalón",
+                "zapato",
+                "sombrero"
+            ],
+            "correctAnswer": "falda"
+        },
+        {
+            "id": "ex_cl_5",
+            "type": "speakThis",
+            "question": "Me gusta tu camisa",
+            "options": [],
+            "correctAnswer": "Me gusta tu camisa"
+        }
+    ]
+}

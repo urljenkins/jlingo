@@ -1,0 +1,129 @@
+{
+  "id": "spanish_flashcards",
+  "name": "Spanish Core Vocabulary",
+  "description": "Essential Spanish words and phrases with spaced repetition",
+  "targetLanguage": "es-ES",
+  "nativeLanguage": "en-US",
+  "cards": [
+    {
+      "id": "fc_es_greet_1",
+      "front": "¡Hola!",
+      "back": "Hello / Hi",
+      "pronunciation": "/ˈo.la/",
+      "exampleSentence": "¡Hola! ¿Cómo estás?",
+      "exampleTranslation": "Hello! How are you?",
+      "category": "Greetings",
+      "tags": ["basic", "essential"]
+    },
+    {
+      "id": "fc_es_greet_2",
+      "front": "Buenos días",
+      "back": "Good morning",
+      "pronunciation": "/ˈbwe.noz ˈði.as/",
+      "exampleSentence": "Buenos días a todos.",
+      "exampleTranslation": "Good morning everyone.",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_es_greet_3",
+      "front": "Muchas gracias",
+      "back": "Thank you very much",
+      "pronunciation": "/ˈmu.tʃaz ˈɣɾa.sjas/",
+      "exampleSentence": "Muchas gracias por tu ayuda.",
+      "exampleTranslation": "Thank you very much for your help.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_es_greet_4",
+      "front": "De nada",
+      "back": "You're welcome",
+      "pronunciation": "/de ˈna.ða/",
+      "exampleSentence": "No te preocupes, de nada.",
+      "exampleTranslation": "Don't worry, you're welcome.",
+      "category": "Greetings",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_es_greet_5",
+      "front": "Por favor",
+      "back": "Please",
+      "pronunciation": "/poɾ faˈβoɾ/",
+      "exampleSentence": "Un café con leche, por favor.",
+      "exampleTranslation": "A coffee with milk, please.",
+      "category": "Greetings",
+      "tags": ["basic", "polite", "essential"]
+    },
+    {
+      "id": "fc_es_intro_1",
+      "front": "Me llamo...",
+      "back": "My name is...",
+      "pronunciation": "/me ˈʎa.mo/",
+      "exampleSentence": "Me llamo Carlos y soy de Madrid.",
+      "exampleTranslation": "My name is Carlos and I am from Madrid.",
+      "category": "Introductions",
+      "tags": ["basic", "introductions"]
+    },
+    {
+      "id": "fc_es_intro_2",
+      "front": "¿Cómo te llamas?",
+      "back": "What is your name?",
+      "pronunciation": "/ˈko.mo te ˈʎa.mas/",
+      "exampleSentence": "Mucho gusto, ¿cómo te llamas?",
+      "exampleTranslation": "Nice to meet you, what is your name?",
+      "category": "Introductions",
+      "tags": ["basic", "questions"]
+    },
+    {
+      "id": "fc_es_intro_3",
+      "front": "Mucho gusto",
+      "back": "Nice to meet you",
+      "pronunciation": "/ˈmu.tʃo ˈɣws.to/",
+      "exampleSentence": "Mucho gusto en conocerte.",
+      "exampleTranslation": "Nice to meet you.",
+      "category": "Introductions",
+      "tags": ["basic", "polite"]
+    },
+    {
+      "id": "fc_es_food_1",
+      "front": "El agua",
+      "back": "The water",
+      "pronunciation": "/el ˈa.ɣwa/",
+      "exampleSentence": "Bebo un vaso de agua fresca.",
+      "exampleTranslation": "I drink a glass of cool water.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    },
+    {
+      "id": "fc_es_food_2",
+      "front": "El pan",
+      "back": "The bread",
+      "pronunciation": "/el pan/",
+      "exampleSentence": "Compramos pan caliente en la panadería.",
+      "exampleTranslation": "We buy warm bread at the bakery.",
+      "category": "Food & Drink",
+      "tags": ["nouns", "food"]
+    },
+    {
+      "id": "fc_es_travel_1",
+      "front": "La estación",
+      "back": "The station",
+      "pronunciation": "/la es.taˈsjon/",
+      "exampleSentence": "El tren llega a la estación central.",
+      "exampleTranslation": "The train arrives at the central station.",
+      "category": "Travel",
+      "tags": ["travel", "nouns"]
+    },
+    {
+      "id": "fc_es_travel_2",
+      "front": "El billete",
+      "back": "The ticket",
+      "pronunciation": "/el biˈʎe.te/",
+      "exampleSentence": "¿Dónde puedo comprar un billete de autobús?",
+      "exampleTranslation": "Where can I buy a bus ticket?",
+      "category": "Travel",
+      "tags": ["travel", "nouns"]
+    }
+  ]
+}

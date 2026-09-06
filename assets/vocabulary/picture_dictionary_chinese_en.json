@@ -1,0 +1,100 @@
+{
+  "id": "chinese_dict",
+  "name": "中文图解词典",
+  "targetLanguage": "zh-CN",
+  "nativeLanguage": "en-US",
+  "topics": [
+    {
+      "id": "topic_food_zh",
+      "name": "饮食与餐点",
+      "description": "常见食物和饮料词汇",
+      "iconName": "restaurant",
+      "coverImageUrl": "assets/images/topics/food.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_mianbao_zh",
+          "word": "面包 (miànbāo)",
+          "translation": "Bread",
+          "pronunciation": "/mjɛ̂n.páʊ/",
+          "imageUrl": "assets/images/dict/pan.png",
+          "relatedWords": ["面包店", "土司", "早餐"],
+          "usageNote": "量词常用'个'或'片'（一片面包）。"
+        },
+        {
+          "id": "pde_pingguo_zh",
+          "word": "苹果 (píngguǒ)",
+          "translation": "Apple",
+          "pronunciation": "/pʰǐŋ.kwɔ̌/",
+          "imageUrl": "assets/images/dict/manzana.png",
+          "relatedWords": ["水果", "红", "果园"],
+          "usageNote": "量词用'个'（一个苹果）。"
+        },
+        {
+          "id": "pde_niunai_zh",
+          "word": "牛奶 (niúnǎi)",
+          "translation": "Milk",
+          "pronunciation": "/njěu.nǎɪ/",
+          "imageUrl": "assets/images/dict/leche.png",
+          "relatedWords": ["奶牛", "奶酪", "咖啡"],
+          "usageNote": "量词用'杯'或'盒'（一杯牛奶）。"
+        },
+        {
+          "id": "pde_shui_zh",
+          "word": "水 (shuǐ)",
+          "translation": "Water",
+          "pronunciation": "/ʂwěi/",
+          "imageUrl": "assets/images/dict/agua.png",
+          "relatedWords": ["喝水", "杯子", "水瓶"],
+          "usageNote": "生水叫'凉水'，烧开的水叫'开水'。"
+        }
+      ]
+    },
+    {
+      "id": "topic_family_zh",
+      "name": "家庭成员",
+      "description": "亲人与家庭称谓",
+      "iconName": "people",
+      "coverImageUrl": "assets/images/topics/family.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_mama_zh",
+          "word": "妈妈 / 母亲 (māma / mǔqīn)",
+          "translation": "Mother",
+          "pronunciation": "/má.ma/",
+          "imageUrl": "assets/images/dict/madre.png",
+          "relatedWords": ["爸爸", "父母", "孩子"],
+          "usageNote": "日常称呼用'妈妈'，书面语用'母亲'。"
+        },
+        {
+          "id": "pde_baba_zh",
+          "word": "爸爸 / 父亲 (bàba / fùqīn)",
+          "translation": "Father",
+          "pronunciation": "/pâ.pa/",
+          "imageUrl": "assets/images/dict/padre.png",
+          "relatedWords": ["妈妈", "父母", "孩子"],
+          "usageNote": "日常称呼用'爸爸'，书面语用'父亲'。"
+        },
+        {
+          "id": "pde_gege_zh",
+          "word": "哥哥 (gēge)",
+          "translation": "Older Brother",
+          "pronunciation": "/kɤ́.kɤ/",
+          "imageUrl": "assets/images/dict/hermano.png",
+          "relatedWords": ["弟弟", "姐姐", "妹妹"],
+          "usageNote": "中文精准区分兄（哥哥）与弟（弟弟）。"
+        },
+        {
+          "id": "pde_yeye_zh",
+          "word": "爷爷 (yéye)",
+          "translation": "Paternal Grandfather",
+          "pronunciation": "/jɛ̌.jɛ/",
+          "imageUrl": "assets/images/dict/abuelo.png",
+          "relatedWords": ["奶奶", "孙子", "孙女"],
+          "usageNote": "爸爸的父亲称'爷爷'，妈妈的父亲称'外公'或'姥爷'。"
+        }
+      ]
+    }
+  ]
+}

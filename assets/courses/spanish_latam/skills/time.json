@@ -1,0 +1,78 @@
+{
+    "id": "time",
+    "name": "Telling Time",
+    "description": "Learn to tell time and express duration",
+    "level": 4,
+    "exercises": [
+        {
+            "id": "ex_time_1",
+            "type": "multipleChoice",
+            "question": "How do you ask 'What time is it?'",
+            "options": [
+                "¿Qué hora es?",
+                "¿Cuánto tiempo?",
+                "¿Qué día es?",
+                "¿Cuándo es?"
+            ],
+            "correctAnswer": "¿Qué hora es?"
+        },
+        {
+            "id": "ex_time_2",
+            "type": "translateThis",
+            "question": "Son las tres",
+            "options": [],
+            "correctAnswer": "It's three o'clock"
+        },
+        {
+            "id": "ex_time_3",
+            "type": "fillInBlank",
+            "question": "Es la ___ de la tarde",
+            "options": [
+                "una",
+                "uno",
+                "las",
+                "los"
+            ],
+            "correctAnswer": "una"
+        },
+        {
+            "id": "ex_time_4",
+            "type": "matchPairs",
+            "question": "Match the time expressions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Y media",
+                        "native": "And half (30 mins)"
+                    },
+                    {
+                        "target": "Y cuarto",
+                        "native": "And quarter (15 mins)"
+                    },
+                    {
+                        "target": "Menos cuarto",
+                        "native": "Quarter to"
+                    },
+                    {
+                        "target": "En punto",
+                        "native": "On the dot"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_time_5",
+            "type": "multipleChoice",
+            "question": "How do you say '8:30'?",
+            "options": [
+                "Las ocho y media",
+                "Las ocho y treinta",
+                "Ocho y media",
+                "Both A and B"
+            ],
+            "correctAnswer": "Both A and B"
+        }
+    ]
+}

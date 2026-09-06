@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/vocabulary_provider.dart';
 import '../models/picture_dictionary.dart';
+import '../theme/app_colors.dart';
 
 class PictureDictionaryScreen extends StatefulWidget {
   const PictureDictionaryScreen({super.key});
@@ -84,7 +85,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
               decoration: const InputDecoration(
                 hintText: 'Search words...',
                 border: InputBorder.none,
-                hintStyle: TextStyle(color: Colors.white54),
+                hintStyle: TextStyle(color: AppColors.textMuted),
               ),
               style: const TextStyle(color: Colors.white),
               onChanged: (value) {
@@ -145,7 +146,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-              colors: [Color(0xFF00D9FF), Color(0xFF00FF85)],
+              colors: [AppColors.textPrimary, AppColors.textSecondary],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -234,7 +235,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
         0;
 
     return Card(
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       clipBehavior: Clip.antiAlias,
       child: InkWell(
@@ -279,7 +280,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                         Text(
                           '${topic.entries.length} words',
                           style: const TextStyle(
-                            color: Colors.white54,
+                            color: AppColors.textMuted,
                             fontSize: 12,
                           ),
                         ),
@@ -310,9 +311,9 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                       borderRadius: BorderRadius.circular(2),
                       child: LinearProgressIndicator(
                         value: progressPercent / 100,
-                        backgroundColor: Colors.white12,
+                        backgroundColor: AppColors.border,
                         valueColor: const AlwaysStoppedAnimation<Color>(
-                          Color(0xFF00FF85),
+                          AppColors.textSecondary,
                         ),
                         minHeight: 4,
                       ),
@@ -357,7 +358,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
               const SizedBox(height: 4),
               Text(
                 topic.description,
-                style: const TextStyle(color: Colors.white70),
+                style: const TextStyle(color: AppColors.textSecondary),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 12),
@@ -397,7 +398,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
-      color: const Color(0xFF1A1A1A),
+      color: AppColors.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: InkWell(
         onTap: () => _showEntryDetail(entry, topicId, provider),
@@ -416,7 +417,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                 ),
                 child: const Icon(
                   Icons.image,
-                  color: Colors.white38,
+                  color: AppColors.textDisabled,
                   size: 32,
                 ),
               ),
@@ -431,7 +432,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                           Text(
                             entry.article!,
                             style: const TextStyle(
-                              color: Colors.white54,
+                              color: AppColors.textMuted,
                               fontSize: 16,
                             ),
                           ),
@@ -450,7 +451,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                     Text(
                       entry.pronunciation,
                       style: const TextStyle(
-                        color: Colors.white54,
+                        color: AppColors.textMuted,
                         fontSize: 14,
                         fontStyle: FontStyle.italic,
                       ),
@@ -459,7 +460,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                     Text(
                       entry.translation,
                       style: const TextStyle(
-                        color: Color(0xFF00FF85),
+                        color: AppColors.textSecondary,
                         fontSize: 16,
                       ),
                     ),
@@ -471,7 +472,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                 icon: Icon(
                   isLearned ? Icons.check_circle : Icons.check_circle_outline,
                   color: isLearned
-                      ? const Color(0xFF00FF85)
+                      ? AppColors.textSecondary
                       : Colors.white.withValues(alpha: 0.3),
                   size: 28,
                 ),
@@ -486,7 +487,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text('Learned: ${entry.word}'),
-                        backgroundColor: const Color(0xFF00FF85),
+                        backgroundColor: AppColors.textSecondary,
                         duration: const Duration(seconds: 1),
                       ),
                     );
@@ -507,7 +508,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
   ) {
     showModalBottomSheet<void>(
       context: context,
-      backgroundColor: const Color(0xFF1A1A1A),
+      backgroundColor: AppColors.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
@@ -529,7 +530,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                     width: 40,
                     height: 4,
                     decoration: BoxDecoration(
-                      color: Colors.white24,
+                      color: AppColors.border,
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),
@@ -545,7 +546,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                     ),
                     child: const Icon(
                       Icons.image,
-                      color: Colors.white38,
+                      color: AppColors.textDisabled,
                       size: 80,
                     ),
                   ),
@@ -565,7 +566,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                     entry.pronunciation,
                     style: const TextStyle(
                       fontSize: 20,
-                      color: Colors.white54,
+                      color: AppColors.textMuted,
                       fontStyle: FontStyle.italic,
                     ),
                   ),
@@ -576,7 +577,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                     entry.translation,
                     style: const TextStyle(
                       fontSize: 28,
-                      color: Color(0xFF00FF85),
+                      color: AppColors.textSecondary,
                       fontWeight: FontWeight.w500,
                     ),
                     textAlign: TextAlign.center,
@@ -607,7 +608,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                         icon: const Icon(Icons.volume_up),
                         label: const Text('Listen'),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF00D9FF),
+                          backgroundColor: AppColors.textPrimary,
                           foregroundColor: Colors.black,
                         ),
                       ),
@@ -627,7 +628,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                         icon: const Icon(Icons.check),
                         label: const Text('Mark Learned'),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF00FF85),
+                          backgroundColor: AppColors.textSecondary,
                           foregroundColor: Colors.black,
                         ),
                       ),
@@ -653,7 +654,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
             child: Text(
               '$label:',
               style: const TextStyle(
-                color: Colors.white54,
+                color: AppColors.textMuted,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -661,7 +662,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
           Expanded(
             child: Text(
               value,
-              style: const TextStyle(color: Colors.white70),
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
         ],
@@ -687,7 +688,7 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
               'No words found',
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.white54,
+                color: AppColors.textMuted,
               ),
             ),
           ],
@@ -725,30 +726,30 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
   Color _getTopicColor(String topicId) {
     switch (topicId) {
       case 'topic_kitchen':
-        return const Color(0xFFFF6B6B);
+        return AppColors.textSecondary;
       case 'topic_home':
         return const Color(0xFF4ECDC4);
       case 'topic_food':
-        return const Color(0xFFFFE66D);
+        return AppColors.textSecondary;
       case 'topic_transport':
-        return const Color(0xFF00D9FF);
+        return AppColors.textPrimary;
       case 'topic_body':
-        return const Color(0xFFFF9F43);
+        return AppColors.textSecondary;
       default:
-        return const Color(0xFF00D9FF);
+        return AppColors.textPrimary;
     }
   }
 
   Color _getDifficultyColor(int difficulty) {
     switch (difficulty) {
       case 1:
-        return const Color(0xFF00FF85);
+        return AppColors.textSecondary;
       case 2:
-        return const Color(0xFFFFD700);
+        return AppColors.textPrimary;
       case 3:
-        return const Color(0xFFFF4757);
+        return AppColors.textSecondary;
       default:
-        return const Color(0xFF00FF85);
+        return AppColors.textSecondary;
     }
   }
 }
@@ -767,12 +768,13 @@ class _VocabularyEmptyState extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 48, color: Colors.white38),
+            Icon(icon, size: 48, color: AppColors.textDisabled),
             const SizedBox(height: 16),
             Text(
               message,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 16, color: Colors.white60),
+              style:
+                  const TextStyle(fontSize: 16, color: AppColors.textSecondary),
             ),
           ],
         ),

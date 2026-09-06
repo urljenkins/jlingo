@@ -296,6 +296,7 @@ class GamificationProvider extends ChangeNotifier {
   /// Update progression paths from course skills
   void updateProgressionPaths(
     List<SkillHeader> skills,
+    Set<String> completedSkills,
     Map<String, double> skillMastery,
   ) {
     // Group skills by level
@@ -309,8 +310,8 @@ class GamificationProvider extends ChangeNotifier {
         name: skill.name,
         level: skill.level,
         mastery: mastery / 100,
-        isUnlocked: i == 0 || (skillMastery[skills[i - 1].id] ?? 0) >= 50,
-        isCompleted: mastery >= 100,
+        isUnlocked: i == 0 || completedSkills.contains(skills[i - 1].id),
+        isCompleted: completedSkills.contains(skill.id),
         prerequisites: i > 0 ? [skills[i - 1].id] : [],
       );
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 /// Interactive Dialogue Widget
 /// Displays short conversations on various topics where users
@@ -159,11 +160,12 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
           Row(
             children: [
               const Icon(Icons.chat_bubble_outline,
-                  color: Color(0xFF00D9FF), size: 20),
+                  color: AppColors.textPrimary, size: 20),
               const SizedBox(width: 8),
               Text(
                 'Interactive Dialogue: $topic',
-                style: const TextStyle(fontSize: 14, color: Colors.white60),
+                style: const TextStyle(
+                    fontSize: 14, color: AppColors.textSecondary),
               ),
             ],
           ),
@@ -174,9 +176,9 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFF1A1A1A),
+                color: AppColors.surface,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFF333333)),
+                border: Border.all(color: AppColors.surfaceRaised),
               ),
               child: ListView.builder(
                 controller: _scrollController,
@@ -196,7 +198,7 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
               _dialogue[_currentLineIndex]['isUserTurn'] == true) ...[
             const Text(
               'Choose your response:',
-              style: TextStyle(fontSize: 14, color: Colors.white60),
+              style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
             ),
             const SizedBox(height: 12),
             Wrap(
@@ -206,21 +208,19 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
                 final isSelected = _selectedResponse == option;
                 final isCorrectOption = option == widget.exercise.correctAnswer;
 
-                Color backgroundColor = const Color(0xFF2A2A2A);
+                Color backgroundColor = AppColors.surfaceRaised;
                 Color borderColor = Colors.transparent;
 
                 if (_showFeedback && isCorrectOption) {
-                  backgroundColor =
-                      const Color(0xFF00FF85).withValues(alpha: 0.2);
-                  borderColor = const Color(0xFF00FF85);
+                  backgroundColor = AppColors.correct.withValues(alpha: 0.2);
+                  borderColor = AppColors.correct;
                 } else if (_showFeedback && isSelected && !_isCorrect) {
-                  backgroundColor =
-                      const Color(0xFFFF4757).withValues(alpha: 0.2);
-                  borderColor = const Color(0xFFFF4757);
+                  backgroundColor = AppColors.incorrect.withValues(alpha: 0.2);
+                  borderColor = AppColors.incorrect;
                 } else if (isSelected) {
                   backgroundColor =
-                      const Color(0xFF00D9FF).withValues(alpha: 0.2);
-                  borderColor = const Color(0xFF00D9FF);
+                      AppColors.textPrimary.withValues(alpha: 0.2);
+                  borderColor = AppColors.textPrimary;
                 }
 
                 return Material(
@@ -251,14 +251,14 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
                     ? _submitResponse
                     : null,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF00D9FF),
+                  backgroundColor: AppColors.textPrimary,
                   foregroundColor: Colors.black,
-                  disabledBackgroundColor: const Color(0xFF333333),
+                  disabledBackgroundColor: AppColors.surfaceRaised,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                child: const Text('RESPOND',
+                child: const Text('Respond',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               ),
@@ -284,10 +284,11 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
           if (!isUserResponse)
             CircleAvatar(
               radius: 16,
-              backgroundColor: const Color(0xFF00D9FF).withValues(alpha: 0.2),
+              backgroundColor: AppColors.textPrimary.withValues(alpha: 0.2),
               child: Text(
                 speaker as String,
-                style: const TextStyle(fontSize: 12, color: Color(0xFF00D9FF)),
+                style:
+                    const TextStyle(fontSize: 12, color: AppColors.textPrimary),
               ),
             ),
           if (!isUserResponse) const SizedBox(width: 8),
@@ -297,15 +298,14 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
               decoration: BoxDecoration(
                 color: isUserResponse
                     ? (isCorrect
-                        ? const Color(0xFF00FF85).withValues(alpha: 0.2)
-                        : const Color(0xFFFF4757).withValues(alpha: 0.2))
-                    : const Color(0xFF2A2A2A),
+                        ? AppColors.correct.withValues(alpha: 0.2)
+                        : AppColors.incorrect.withValues(alpha: 0.2))
+                    : AppColors.surfaceRaised,
                 borderRadius: BorderRadius.circular(16),
                 border: isUserResponse
                     ? Border.all(
-                        color: isCorrect
-                            ? const Color(0xFF00FF85)
-                            : const Color(0xFFFF4757),
+                        color:
+                            isCorrect ? AppColors.correct : AppColors.incorrect,
                       )
                     : null,
               ),
@@ -319,8 +319,7 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
           if (isUserResponse)
             Icon(
               isCorrect ? Icons.check_circle : Icons.cancel,
-              color:
-                  isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757),
+              color: isCorrect ? AppColors.correct : AppColors.incorrect,
               size: 20,
             ),
         ],

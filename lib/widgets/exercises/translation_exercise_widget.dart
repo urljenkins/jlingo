@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 /// Translation Exercise Widget
 /// Handles sentence and paragraph translation exercises in both directions
@@ -177,11 +178,12 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
           // Header
           Row(
             children: [
-              Icon(_directionIcon, color: const Color(0xFF00D9FF), size: 20),
+              Icon(_directionIcon, color: AppColors.textPrimary, size: 20),
               const SizedBox(width: 8),
               Text(
                 _directionLabel,
-                style: const TextStyle(fontSize: 14, color: Colors.white60),
+                style: const TextStyle(
+                    fontSize: 14, color: AppColors.textSecondary),
               ),
               const Spacer(),
               if (isParagraph)
@@ -189,14 +191,14 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFFFD93D).withValues(alpha: 0.2),
+                    color: AppColors.textPrimary.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: const Text(
-                    'PARAGRAPH',
+                    'Paragraph',
                     style: TextStyle(
                       fontSize: 10,
-                      color: Color(0xFFFFD93D),
+                      color: AppColors.textPrimary,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -210,12 +212,12 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
             width: double.infinity,
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: const Color(0xFF2A2A2A),
+              color: AppColors.surfaceRaised,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: _direction == 'toNative'
-                    ? const Color(0xFF00D9FF).withValues(alpha: 0.3)
-                    : const Color(0xFF00FF85).withValues(alpha: 0.3),
+                    ? AppColors.textPrimary.withValues(alpha: 0.3)
+                    : AppColors.correct.withValues(alpha: 0.3),
               ),
             ),
             child: Column(
@@ -228,8 +230,8 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
                           horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
                         color: _direction == 'toNative'
-                            ? const Color(0xFF00D9FF).withValues(alpha: 0.2)
-                            : const Color(0xFF00FF85).withValues(alpha: 0.2),
+                            ? AppColors.textPrimary.withValues(alpha: 0.2)
+                            : AppColors.correct.withValues(alpha: 0.2),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Text(
@@ -237,8 +239,8 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
                         style: TextStyle(
                           fontSize: 10,
                           color: _direction == 'toNative'
-                              ? const Color(0xFF00D9FF)
-                              : const Color(0xFF00FF85),
+                              ? AppColors.textPrimary
+                              : AppColors.correct,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -266,13 +268,13 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
               icon: Icon(
                 _showHints ? Icons.lightbulb : Icons.lightbulb_outline,
                 size: 18,
-                color: const Color(0xFFFFD93D),
+                color: AppColors.textPrimary,
               ),
               label: Text(
                 _showHints ? 'Hide Hints' : 'Show Hints',
                 style: const TextStyle(
                   fontSize: 12,
-                  color: Color(0xFFFFD93D),
+                  color: AppColors.textPrimary,
                 ),
               ),
             ),
@@ -280,10 +282,10 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFFFD93D).withValues(alpha: 0.1),
+                  color: AppColors.textPrimary.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(
-                    color: const Color(0xFFFFD93D).withValues(alpha: 0.3),
+                    color: AppColors.textPrimary.withValues(alpha: 0.3),
                   ),
                 ),
                 child: Column(
@@ -295,7 +297,8 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 const Text('• ',
-                                    style: TextStyle(color: Color(0xFFFFD93D))),
+                                    style: TextStyle(
+                                        color: AppColors.textPrimary)),
                                 Expanded(
                                   child: Text(
                                     hint,
@@ -316,7 +319,7 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
           // Translation input
           const Text(
             'Your translation:',
-            style: TextStyle(fontSize: 14, color: Colors.white60),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 8),
           Expanded(
@@ -324,15 +327,13 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
               decoration: BoxDecoration(
                 color: _showFeedback
                     ? (_isCorrect
-                        ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-                        : const Color(0xFFFF4757).withValues(alpha: 0.1))
-                    : const Color(0xFF2A2A2A),
+                        ? AppColors.correct.withValues(alpha: 0.1)
+                        : AppColors.incorrect.withValues(alpha: 0.1))
+                    : AppColors.surfaceRaised,
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: _showFeedback
-                      ? (_isCorrect
-                          ? const Color(0xFF00FF85)
-                          : const Color(0xFFFF4757))
+                      ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
                       : Colors.transparent,
                   width: 2,
                 ),
@@ -365,8 +366,8 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 color: _isCorrect
-                    ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-                    : const Color(0xFFFF4757).withValues(alpha: 0.1),
+                    ? AppColors.correct.withValues(alpha: 0.1)
+                    : AppColors.incorrect.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Column(
@@ -377,8 +378,8 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
                       Icon(
                         _isCorrect ? Icons.check_circle : Icons.cancel,
                         color: _isCorrect
-                            ? const Color(0xFF00FF85)
-                            : const Color(0xFFFF4757),
+                            ? AppColors.correct
+                            : AppColors.incorrect,
                       ),
                       const SizedBox(width: 8),
                       Text(
@@ -387,8 +388,8 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: _isCorrect
-                              ? const Color(0xFF00FF85)
-                              : const Color(0xFFFF4757),
+                              ? AppColors.correct
+                              : AppColors.incorrect,
                         ),
                       ),
                     ],
@@ -397,7 +398,8 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
                     const SizedBox(height: 8),
                     const Text(
                       'Expected answer:',
-                      style: TextStyle(fontSize: 12, color: Colors.white60),
+                      style: TextStyle(
+                          fontSize: 12, color: AppColors.textSecondary),
                     ),
                     const SizedBox(height: 4),
                     Text(
@@ -421,9 +423,9 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
                   ? _checkAnswer
                   : null,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
+                backgroundColor: AppColors.textPrimary,
                 foregroundColor: Colors.black,
-                disabledBackgroundColor: const Color(0xFF333333),
+                disabledBackgroundColor: AppColors.surfaceRaised,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),

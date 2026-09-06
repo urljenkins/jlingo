@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/book_provider.dart';
 import '../models/book.dart';
+import '../theme/app_colors.dart';
 
 class BookReaderScreen extends StatefulWidget {
   const BookReaderScreen({super.key});
@@ -34,7 +35,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
         }
 
         return Scaffold(
-          backgroundColor: const Color(0xFF0D0D0D),
+          backgroundColor: AppColors.background,
           appBar: _buildAppBar(provider, book),
           body: Stack(
             children: [
@@ -50,7 +51,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
 
   PreferredSizeWidget _buildAppBar(BookProvider provider, BilingualBook book) {
     return AppBar(
-      backgroundColor: const Color(0xFF0D0D0D),
+      backgroundColor: AppColors.background,
       elevation: 0,
       leading: IconButton(
         icon: const Icon(Icons.arrow_back),
@@ -147,7 +148,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
         ),
         if (provider.showTranslation) ...[
           const SizedBox(height: 24),
-          const Divider(color: Colors.white24),
+          const Divider(color: AppColors.border),
           const SizedBox(height: 24),
           // Translation
           _buildTextBlock(
@@ -182,7 +183,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
           Container(
             width: 1,
             height: 300,
-            color: Colors.white24,
+            color: AppColors.border,
           ),
           const SizedBox(width: 24),
           // Translation
@@ -213,16 +214,15 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: BoxDecoration(
             color: isOriginal
-                ? const Color(0xFF00D9FF).withValues(alpha: 0.2)
-                : const Color(0xFF00FF85).withValues(alpha: 0.2),
+                ? AppColors.textPrimary.withValues(alpha: 0.2)
+                : AppColors.textSecondary.withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Text(
             language.toUpperCase(),
             style: TextStyle(
-              color: isOriginal
-                  ? const Color(0xFF00D9FF)
-                  : const Color(0xFF00FF85),
+              color:
+                  isOriginal ? AppColors.textPrimary : AppColors.textSecondary,
               fontSize: 11,
               fontWeight: FontWeight.bold,
             ),
@@ -262,7 +262,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 2),
             decoration: isSaved
                 ? BoxDecoration(
-                    color: const Color(0xFF00D9FF).withValues(alpha: 0.2),
+                    color: AppColors.textPrimary.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(4),
                   )
                 : null,
@@ -271,7 +271,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
               style: TextStyle(
                 fontSize: _fontSize,
                 height: 1.6,
-                color: isSaved ? const Color(0xFF00D9FF) : Colors.white,
+                color: isSaved ? AppColors.textPrimary : Colors.white,
               ),
             ),
           ),
@@ -286,7 +286,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
     unawaited(showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: const Color(0xFF1A1A1A),
+        backgroundColor: AppColors.surface,
         title: Text(
           word,
           style: const TextStyle(color: Colors.white),
@@ -331,7 +331,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Divider(color: Colors.white24),
+        const Divider(color: AppColors.border),
         const SizedBox(height: 16),
         Text(
           'Key Vocabulary',
@@ -360,12 +360,12 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
                   color: isSaved
-                      ? const Color(0xFF00D9FF).withValues(alpha: 0.2)
+                      ? AppColors.textPrimary.withValues(alpha: 0.2)
                       : Colors.white.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(
                     color: isSaved
-                        ? const Color(0xFF00D9FF)
+                        ? AppColors.textPrimary
                         : Colors.white.withValues(alpha: 0.3),
                   ),
                 ),
@@ -375,7 +375,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
                     Text(
                       word,
                       style: TextStyle(
-                        color: isSaved ? const Color(0xFF00D9FF) : Colors.white,
+                        color: isSaved ? AppColors.textPrimary : Colors.white,
                         fontSize: 14,
                       ),
                     ),
@@ -383,7 +383,8 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
                     Icon(
                       isSaved ? Icons.bookmark : Icons.bookmark_border,
                       size: 16,
-                      color: isSaved ? const Color(0xFF00D9FF) : Colors.white54,
+                      color:
+                          isSaved ? AppColors.textPrimary : AppColors.textMuted,
                     ),
                   ],
                 ),
@@ -406,7 +407,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
             padding: const EdgeInsets.all(20),
             constraints: const BoxConstraints(maxWidth: 400, maxHeight: 500),
             decoration: BoxDecoration(
-              color: const Color(0xFF1A1A1A),
+              color: AppColors.surface,
               borderRadius: BorderRadius.circular(16),
             ),
             child: Column(
@@ -434,7 +435,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
                           height: 32,
                           decoration: BoxDecoration(
                             color: isCurrentChapter
-                                ? const Color(0xFF00D9FF)
+                                ? AppColors.textPrimary
                                 : Colors.white.withValues(alpha: 0.1),
                             shape: BoxShape.circle,
                           ),
@@ -454,7 +455,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
                           chapter.title,
                           style: TextStyle(
                             color: isCurrentChapter
-                                ? const Color(0xFF00D9FF)
+                                ? AppColors.textPrimary
                                 : Colors.white,
                             fontWeight: isCurrentChapter
                                 ? FontWeight.bold
@@ -497,7 +498,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: const Color(0xFF1A1A1A),
+        color: AppColors.surface,
         border: Border(
           top: BorderSide(color: Colors.white.withValues(alpha: 0.1)),
         ),
@@ -511,7 +512,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
               value: progress / 100,
               backgroundColor: Colors.white.withValues(alpha: 0.1),
               valueColor:
-                  const AlwaysStoppedAnimation<Color>(Color(0xFF00D9FF)),
+                  const AlwaysStoppedAnimation<Color>(AppColors.textPrimary),
             ),
             const SizedBox(height: 12),
             Row(
@@ -525,7 +526,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
                       ? null
                       : () => provider.previousParagraph(),
                   color: Colors.white,
-                  disabledColor: Colors.white24,
+                  disabledColor: AppColors.border,
                 ),
                 // Progress info
                 Column(
@@ -556,7 +557,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
                       ? null
                       : () => provider.nextParagraph(),
                   color: Colors.white,
-                  disabledColor: Colors.white24,
+                  disabledColor: AppColors.border,
                 ),
               ],
             ),
@@ -571,7 +572,7 @@ class _BookReaderScreenState extends State<BookReaderScreen> {
       context: context,
       builder: (context) => StatefulBuilder(
         builder: (context, setDialogState) => AlertDialog(
-          backgroundColor: const Color(0xFF1A1A1A),
+          backgroundColor: AppColors.surface,
           title: const Text(
             'Font Size',
             style: TextStyle(color: Colors.white),

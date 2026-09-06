@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 /// Story Lesson Widget
 /// Displays graded readers (stories written for specific language levels)
@@ -126,10 +127,10 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
             decoration: BoxDecoration(
-              color: const Color(0xFF00D9FF).withValues(alpha: 0.2),
+              color: AppColors.textPrimary.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(4),
               border: Border.all(
-                color: const Color(0xFF00D9FF).withValues(alpha: 0.5),
+                color: AppColors.textPrimary.withValues(alpha: 0.5),
               ),
             ),
             child: Text(
@@ -137,7 +138,7 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
               style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF00D9FF),
+                color: AppColors.textPrimary,
               ),
             ),
           ),
@@ -170,7 +171,8 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
           // Header
           Row(
             children: [
-              const Icon(Icons.menu_book, color: Color(0xFF00D9FF), size: 20),
+              const Icon(Icons.menu_book,
+                  color: AppColors.textPrimary, size: 20),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
@@ -185,14 +187,14 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF00FF85).withValues(alpha: 0.2),
+                    color: AppColors.correct.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text(
                     _level,
                     style: const TextStyle(
                       fontSize: 12,
-                      color: Color(0xFF00FF85),
+                      color: AppColors.correct,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -215,7 +217,7 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
                 style: const TextStyle(fontSize: 12),
               ),
               style: TextButton.styleFrom(
-                foregroundColor: const Color(0xFF00D9FF),
+                foregroundColor: AppColors.textPrimary,
               ),
             ),
             if (_showVocabulary) ...[
@@ -223,7 +225,7 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
                 padding: const EdgeInsets.all(12),
                 margin: const EdgeInsets.only(bottom: 12),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF1A1A1A),
+                  color: AppColors.surface,
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Wrap(
@@ -234,7 +236,7 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 10, vertical: 6),
                       decoration: BoxDecoration(
-                        color: const Color(0xFF2A2A2A),
+                        color: AppColors.surfaceRaised,
                         borderRadius: BorderRadius.circular(6),
                       ),
                       child: RichText(
@@ -244,13 +246,14 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
                               text: vocab['word'] as String?,
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: Color(0xFF00D9FF),
+                                color: AppColors.textPrimary,
                               ),
                             ),
                             const TextSpan(text: ' - '),
                             TextSpan(
                               text: vocab['translation'] as String?,
-                              style: const TextStyle(color: Colors.white70),
+                              style: const TextStyle(
+                                  color: AppColors.textSecondary),
                             ),
                           ],
                         ),
@@ -268,9 +271,9 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
               width: double.infinity,
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFF1E1E1E),
+                color: AppColors.surface,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFF333333)),
+                border: Border.all(color: AppColors.surfaceRaised),
               ),
               child: SingleChildScrollView(
                 controller: _scrollController,
@@ -285,7 +288,7 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: const Color(0xFF2A2A2A),
+              color: AppColors.surfaceRaised,
               borderRadius: BorderRadius.circular(8),
             ),
             child: Column(
@@ -293,7 +296,8 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
               children: [
                 const Text(
                   'Comprehension Question:',
-                  style: TextStyle(fontSize: 12, color: Colors.white60),
+                  style:
+                      TextStyle(fontSize: 12, color: AppColors.textSecondary),
                 ),
                 const SizedBox(height: 8),
                 Text(
@@ -312,18 +316,18 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
             final isSelected = _selectedAnswer == option;
             final isCorrectOption = option == widget.exercise.correctAnswer;
 
-            Color backgroundColor = const Color(0xFF2A2A2A);
+            Color backgroundColor = AppColors.surfaceRaised;
             Color borderColor = Colors.transparent;
 
             if (_showFeedback && isCorrectOption) {
-              backgroundColor = const Color(0xFF00FF85).withValues(alpha: 0.2);
-              borderColor = const Color(0xFF00FF85);
+              backgroundColor = AppColors.correct.withValues(alpha: 0.2);
+              borderColor = AppColors.correct;
             } else if (_showFeedback && isSelected && !_isCorrect) {
-              backgroundColor = const Color(0xFFFF4757).withValues(alpha: 0.2);
-              borderColor = const Color(0xFFFF4757);
+              backgroundColor = AppColors.incorrect.withValues(alpha: 0.2);
+              borderColor = AppColors.incorrect;
             } else if (isSelected) {
-              backgroundColor = const Color(0xFF00D9FF).withValues(alpha: 0.2);
-              borderColor = const Color(0xFF00D9FF);
+              backgroundColor = AppColors.textPrimary.withValues(alpha: 0.2);
+              borderColor = AppColors.textPrimary;
             }
 
             return Padding(
@@ -350,10 +354,10 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
                         ),
                         if (_showFeedback && isCorrectOption)
                           const Icon(Icons.check_circle,
-                              color: Color(0xFF00FF85), size: 20),
+                              color: AppColors.correct, size: 20),
                         if (_showFeedback && isSelected && !_isCorrect)
                           const Icon(Icons.cancel,
-                              color: Color(0xFFFF4757), size: 20),
+                              color: AppColors.incorrect, size: 20),
                       ],
                     ),
                   ),
@@ -373,9 +377,9 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
                   ? _checkAnswer
                   : null,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
+                backgroundColor: AppColors.textPrimary,
                 foregroundColor: Colors.black,
-                disabledBackgroundColor: const Color(0xFF333333),
+                disabledBackgroundColor: AppColors.surfaceRaised,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),

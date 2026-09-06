@@ -1,0 +1,100 @@
+{
+    "id": "music_movies",
+    "name": "Music & Movies",
+    "description": "Learn vocabulary for entertainment",
+    "level": 18,
+    "exercises": [
+        {
+            "id": "ex_mm_1",
+            "type": "matchPairs",
+            "question": "Match entertainment vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "La película",
+                        "native": "The movie"
+                    },
+                    {
+                        "target": "La canción",
+                        "native": "The song"
+                    },
+                    {
+                        "target": "El concierto",
+                        "native": "The concert"
+                    },
+                    {
+                        "target": "El actor",
+                        "native": "The actor"
+                    },
+                    {
+                        "target": "El cantante",
+                        "native": "The singer"
+                    },
+                    {
+                        "target": "La banda",
+                        "native": "The band"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_mm_2",
+            "type": "translateThis",
+            "question": "¿Qué tipo de música te gusta?",
+            "options": [],
+            "correctAnswer": "What type of music do you like?"
+        },
+        {
+            "id": "ex_mm_3",
+            "type": "fillInBlank",
+            "question": "Mi ___ favorita es la comedia",
+            "options": [
+                "género",
+                "película",
+                "actor",
+                "música"
+            ],
+            "correctAnswer": "género"
+        },
+        {
+            "id": "ex_mm_4",
+            "type": "matchPairs",
+            "question": "Match movie genres",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Comedia",
+                        "native": "Comedy"
+                    },
+                    {
+                        "target": "Drama",
+                        "native": "Drama"
+                    },
+                    {
+                        "target": "Terror",
+                        "native": "Horror"
+                    },
+                    {
+                        "target": "Ciencia ficción",
+                        "native": "Science fiction"
+                    },
+                    {
+                        "target": "Romántica",
+                        "native": "Romance"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_mm_5",
+            "type": "speakThis",
+            "question": "¿Has visto la última película de ese director?",
+            "options": [],
+            "correctAnswer": "¿Has visto la última película de ese director?"
+        }
+    ]
+}

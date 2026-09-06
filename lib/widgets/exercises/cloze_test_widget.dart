@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 /// Cloze Test (Fill-in-the-blank) Widget
 /// Displays sentences or paragraphs with multiple blanks to fill in.
@@ -120,17 +121,16 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
     final selectedAnswer = _selectedAnswers[index];
     final isCurrentBlank = index == _currentBlankIndex && !_showFeedback;
 
-    Color backgroundColor = const Color(0xFF2A2A2A);
+    Color backgroundColor = AppColors.surfaceRaised;
     Color borderColor =
-        isCurrentBlank ? const Color(0xFF00D9FF) : Colors.transparent;
+        isCurrentBlank ? AppColors.textPrimary : Colors.transparent;
 
     if (_showFeedback && _blankResults.containsKey(index)) {
       final isCorrect = _blankResults[index]!;
       backgroundColor = isCorrect
-          ? const Color(0xFF00FF85).withValues(alpha: 0.2)
-          : const Color(0xFFFF4757).withValues(alpha: 0.2);
-      borderColor =
-          isCorrect ? const Color(0xFF00FF85) : const Color(0xFFFF4757);
+          ? AppColors.correct.withValues(alpha: 0.2)
+          : AppColors.incorrect.withValues(alpha: 0.2);
+      borderColor = isCorrect ? AppColors.correct : AppColors.incorrect;
     }
 
     return GestureDetector(
@@ -158,7 +158,9 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
-                color: selectedAnswer != null ? Colors.white : Colors.white38,
+                color: selectedAnswer != null
+                    ? Colors.white
+                    : AppColors.textDisabled,
               ),
             ),
             if (_showFeedback && _blankResults.containsKey(index)) ...[
@@ -167,8 +169,8 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
                 _blankResults[index]! ? Icons.check_circle : Icons.cancel,
                 size: 16,
                 color: _blankResults[index]!
-                    ? const Color(0xFF00FF85)
-                    : const Color(0xFFFF4757),
+                    ? AppColors.correct
+                    : AppColors.incorrect,
               ),
             ],
           ],
@@ -195,24 +197,25 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
           // Header
           Row(
             children: [
-              const Icon(Icons.text_fields, color: Color(0xFF00D9FF), size: 20),
+              const Icon(Icons.text_fields,
+                  color: AppColors.textPrimary, size: 20),
               const SizedBox(width: 8),
               const Text(
                 'Fill in the Blanks',
-                style: TextStyle(fontSize: 14, color: Colors.white60),
+                style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
               ),
               const Spacer(),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF00D9FF).withValues(alpha: 0.2),
+                  color: AppColors.textPrimary.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(4),
                 ),
                 child: Text(
                   '${_selectedAnswers.length}/${_blanks.length}',
                   style: const TextStyle(
                     fontSize: 12,
-                    color: Color(0xFF00D9FF),
+                    color: AppColors.textPrimary,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -226,22 +229,22 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
             Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: const Color(0xFFFFD93D).withValues(alpha: 0.1),
+                color: AppColors.textPrimary.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
-                  color: const Color(0xFFFFD93D).withValues(alpha: 0.3),
+                  color: AppColors.textPrimary.withValues(alpha: 0.3),
                 ),
               ),
               child: Row(
                 children: [
                   const Icon(Icons.info_outline,
-                      color: Color(0xFFFFD93D), size: 16),
+                      color: AppColors.textPrimary, size: 16),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
                       _context,
                       style: const TextStyle(
-                          fontSize: 12, color: Color(0xFFFFD93D)),
+                          fontSize: 12, color: AppColors.textPrimary),
                     ),
                   ),
                 ],
@@ -258,9 +261,9 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
               width: double.infinity,
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFF1E1E1E),
+                color: AppColors.surface,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFF333333)),
+                border: Border.all(color: AppColors.surfaceRaised),
               ),
               child: SingleChildScrollView(
                 child: Wrap(
@@ -277,7 +280,8 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
           if (!_showFeedback && currentBlank != null) ...[
             Text(
               'Select word for blank ${_currentBlankIndex + 1}:',
-              style: const TextStyle(fontSize: 14, color: Colors.white60),
+              style:
+                  const TextStyle(fontSize: 14, color: AppColors.textSecondary),
             ),
             const SizedBox(height: 12),
 
@@ -293,10 +297,10 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
 
                 return Material(
                   color: isSelected
-                      ? const Color(0xFF00D9FF).withValues(alpha: 0.2)
+                      ? AppColors.textPrimary.withValues(alpha: 0.2)
                       : isUsed
-                          ? const Color(0xFF333333)
-                          : const Color(0xFF2A2A2A),
+                          ? AppColors.surfaceRaised
+                          : AppColors.surfaceRaised,
                   borderRadius: BorderRadius.circular(8),
                   child: InkWell(
                     onTap: isUsed
@@ -308,7 +312,7 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(
                           color: isSelected
-                              ? const Color(0xFF00D9FF)
+                              ? AppColors.textPrimary
                               : Colors.transparent,
                           width: 2,
                         ),
@@ -319,7 +323,7 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
                         option,
                         style: TextStyle(
                           fontSize: 16,
-                          color: isUsed ? Colors.white38 : Colors.white,
+                          color: isUsed ? AppColors.textDisabled : Colors.white,
                         ),
                       ),
                     ),
@@ -340,20 +344,21 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
                         ? () => setState(() => _currentBlankIndex--)
                         : null,
                     icon: const Icon(Icons.arrow_back_ios, size: 18),
-                    color: const Color(0xFF00D9FF),
-                    disabledColor: Colors.white30,
+                    color: AppColors.textPrimary,
+                    disabledColor: AppColors.textDisabled,
                   ),
                   Text(
                     'Blank ${_currentBlankIndex + 1} of ${_blanks.length}',
-                    style: const TextStyle(fontSize: 12, color: Colors.white60),
+                    style: const TextStyle(
+                        fontSize: 12, color: AppColors.textSecondary),
                   ),
                   IconButton(
                     onPressed: _currentBlankIndex < _blanks.length - 1
                         ? () => setState(() => _currentBlankIndex++)
                         : null,
                     icon: const Icon(Icons.arrow_forward_ios, size: 18),
-                    color: const Color(0xFF00D9FF),
-                    disabledColor: Colors.white30,
+                    color: AppColors.textPrimary,
+                    disabledColor: AppColors.textDisabled,
                   ),
                 ],
               ),
@@ -364,7 +369,7 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: const Color(0xFFFF4757).withValues(alpha: 0.1),
+                color: AppColors.incorrect.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Column(
@@ -372,7 +377,8 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
                 children: [
                   const Text(
                     'Correct answers:',
-                    style: TextStyle(fontSize: 12, color: Colors.white60),
+                    style:
+                        TextStyle(fontSize: 12, color: AppColors.textSecondary),
                   ),
                   const SizedBox(height: 8),
                   Wrap(
@@ -385,7 +391,7 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
                         '${index + 1}. ${blank['answer']}',
                         style: const TextStyle(
                           fontSize: 14,
-                          color: Color(0xFF00FF85),
+                          color: AppColors.correct,
                         ),
                       );
                     }).toList(),
@@ -405,9 +411,9 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
               onPressed:
                   _allBlanksFilled && !_showFeedback ? _checkAnswers : null,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
+                backgroundColor: AppColors.textPrimary,
                 foregroundColor: Colors.black,
-                disabledBackgroundColor: const Color(0xFF333333),
+                disabledBackgroundColor: AppColors.surfaceRaised,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),

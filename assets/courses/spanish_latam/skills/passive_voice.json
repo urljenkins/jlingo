@@ -1,0 +1,58 @@
+{
+    "id": "passive_voice",
+    "name": "Passive Voice",
+    "description": "Learn to form and use passive constructions",
+    "level": 23,
+    "exercises": [
+        {
+            "id": "ex_pass_1",
+            "type": "multipleChoice",
+            "question": "How do you form the passive voice in Spanish?",
+            "options": [
+                "ser + past participle",
+                "estar + gerund",
+                "haber + infinitive",
+                "tener + adjective"
+            ],
+            "correctAnswer": "ser + past participle"
+        },
+        {
+            "id": "ex_pass_2",
+            "type": "translateThis",
+            "question": "El libro fue escrito por Cervantes",
+            "options": [],
+            "correctAnswer": "The book was written by Cervantes"
+        },
+        {
+            "id": "ex_pass_3",
+            "type": "fillInBlank",
+            "question": "La casa fue ___ el año pasado",
+            "options": [
+                "construida",
+                "construir",
+                "construyendo",
+                "construye"
+            ],
+            "correctAnswer": "construida"
+        },
+        {
+            "id": "ex_pass_4",
+            "type": "multipleChoice",
+            "question": "Which construction is often preferred over passive in Spanish?",
+            "options": [
+                "Se pasiva (se + verb)",
+                "Estar + participle",
+                "Haber + infinitive",
+                "Ir + a + verb"
+            ],
+            "correctAnswer": "Se pasiva (se + verb)"
+        },
+        {
+            "id": "ex_pass_5",
+            "type": "translateThis",
+            "question": "Se habla español aquí",
+            "options": [],
+            "correctAnswer": "Spanish is spoken here"
+        }
+    ]
+}

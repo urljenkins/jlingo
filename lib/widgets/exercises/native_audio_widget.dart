@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:audioplayers/audioplayers.dart';
 import '../../models/exercise.dart';
+import '../../theme/app_colors.dart';
 
 /// Widget for playing audio from native speakers
 /// Supports both pre-recorded audio files and TTS fallback
@@ -153,13 +154,14 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
             children: [
               Icon(
                 _hasNativeAudio ? Icons.record_voice_over : Icons.volume_up,
-                color: const Color(0xFF00D9FF),
+                color: AppColors.textPrimary,
                 size: 20,
               ),
               const SizedBox(width: 8),
               Text(
                 _hasNativeAudio ? 'Native Speaker Audio' : 'Listening Exercise',
-                style: const TextStyle(fontSize: 14, color: Colors.white60),
+                style: const TextStyle(
+                    fontSize: 14, color: AppColors.textSecondary),
               ),
               if (_hasNativeAudio) ...[
                 const Spacer(),
@@ -167,18 +169,18 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF00FF85).withValues(alpha: 0.2),
+                    color: AppColors.correct.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(Icons.verified, color: Color(0xFF00FF85), size: 14),
+                      Icon(Icons.verified, color: AppColors.correct, size: 14),
                       SizedBox(width: 4),
                       Text(
                         'Native',
                         style:
-                            TextStyle(fontSize: 12, color: Color(0xFF00FF85)),
+                            TextStyle(fontSize: 12, color: AppColors.correct),
                       ),
                     ],
                   ),
@@ -189,7 +191,7 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
           const SizedBox(height: 16),
           const Text(
             'Listen carefully and type what you hear',
-            style: TextStyle(fontSize: 14, color: Colors.white70),
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
           ),
           const SizedBox(height: 24),
 
@@ -199,15 +201,15 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  const Color(0xFF2A2A2A),
-                  const Color(0xFF1A1A1A).withValues(alpha: 0.8),
+                  AppColors.surfaceRaised,
+                  AppColors.surface.withValues(alpha: 0.8),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
               borderRadius: BorderRadius.circular(16),
               border: Border.all(
-                color: const Color(0xFF00D9FF).withValues(alpha: 0.3),
+                color: AppColors.textPrimary.withValues(alpha: 0.3),
               ),
             ),
             child: Column(
@@ -240,7 +242,7 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                             ? Icons.pause_circle_filled
                             : Icons.play_circle_filled,
                         size: 64,
-                        color: const Color(0xFF00D9FF),
+                        color: AppColors.textPrimary,
                       ),
                     ),
                   ],
@@ -254,7 +256,7 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                       Text(
                         _formatDuration(_position),
                         style: const TextStyle(
-                            fontSize: 12, color: Colors.white60),
+                            fontSize: 12, color: AppColors.textSecondary),
                       ),
                       Expanded(
                         child: Slider(
@@ -266,14 +268,14 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                             );
                             await _audioPlayer.seek(position);
                           },
-                          activeColor: const Color(0xFF00D9FF),
-                          inactiveColor: Colors.white24,
+                          activeColor: AppColors.textPrimary,
+                          inactiveColor: AppColors.border,
                         ),
                       ),
                       Text(
                         _formatDuration(_duration),
                         style: const TextStyle(
-                            fontSize: 12, color: Colors.white60),
+                            fontSize: 12, color: AppColors.textSecondary),
                       ),
                     ],
                   ),
@@ -286,7 +288,8 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                   children: [
                     const Text(
                       'Speed:',
-                      style: TextStyle(fontSize: 12, color: Colors.white60),
+                      style: TextStyle(
+                          fontSize: 12, color: AppColors.textSecondary),
                     ),
                     const SizedBox(width: 8),
                     _SpeedButton(
@@ -326,9 +329,9 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
               filled: true,
               fillColor: _showFeedback
                   ? (_isCorrect
-                      ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-                      : const Color(0xFFFF4757).withValues(alpha: 0.1))
-                  : const Color(0xFF2A2A2A),
+                      ? AppColors.correct.withValues(alpha: 0.1)
+                      : AppColors.incorrect.withValues(alpha: 0.1))
+                  : AppColors.surfaceRaised,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide.none,
@@ -337,9 +340,7 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect
-                          ? const Color(0xFF00FF85)
-                          : const Color(0xFFFF4757))
+                      ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
                       : Colors.transparent,
                   width: 2,
                 ),
@@ -348,10 +349,8 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(
                   color: _showFeedback
-                      ? (_isCorrect
-                          ? const Color(0xFF00FF85)
-                          : const Color(0xFFFF4757))
-                      : const Color(0xFF00D9FF),
+                      ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
+                      : AppColors.textPrimary,
                   width: 2,
                 ),
               ),
@@ -365,22 +364,18 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 color: _isCorrect
-                    ? const Color(0xFF00FF85).withValues(alpha: 0.1)
-                    : const Color(0xFFFF4757).withValues(alpha: 0.1),
+                    ? AppColors.correct.withValues(alpha: 0.1)
+                    : AppColors.incorrect.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                  color: _isCorrect
-                      ? const Color(0xFF00FF85)
-                      : const Color(0xFFFF4757),
+                  color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                 ),
               ),
               child: Row(
                 children: [
                   Icon(
                     _isCorrect ? Icons.check_circle : Icons.cancel,
-                    color: _isCorrect
-                        ? const Color(0xFF00FF85)
-                        : const Color(0xFFFF4757),
+                    color: _isCorrect ? AppColors.correct : AppColors.incorrect,
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -393,8 +388,8 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                             color: _isCorrect
-                                ? const Color(0xFF00FF85)
-                                : const Color(0xFFFF4757),
+                                ? AppColors.correct
+                                : AppColors.incorrect,
                           ),
                         ),
                         if (!_isCorrect) ...[
@@ -402,7 +397,7 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
                           Text(
                             'Correct answer: ${widget.exercise.correctAnswer}',
                             style: const TextStyle(
-                                fontSize: 14, color: Colors.white70),
+                                fontSize: 14, color: AppColors.textSecondary),
                           ),
                         ],
                       ],
@@ -421,13 +416,13 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
             child: ElevatedButton(
               onPressed: _hasPlayedOnce && !_showFeedback ? _checkAnswer : null,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00D9FF),
+                backgroundColor: AppColors.textPrimary,
                 foregroundColor: Colors.black,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
-                disabledBackgroundColor: Colors.white24,
+                disabledBackgroundColor: AppColors.border,
               ),
               child: const Text(
                 'Check Answer',
@@ -460,14 +455,14 @@ class _SpeedButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         margin: const EdgeInsets.symmetric(horizontal: 4),
         decoration: BoxDecoration(
-          color: isSelected ? const Color(0xFF00D9FF) : const Color(0xFF2A2A2A),
+          color: isSelected ? AppColors.textPrimary : AppColors.surfaceRaised,
           borderRadius: BorderRadius.circular(16),
         ),
         child: Text(
           label,
           style: TextStyle(
             fontSize: 12,
-            color: isSelected ? Colors.black : Colors.white70,
+            color: isSelected ? Colors.black : AppColors.textSecondary,
             fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
           ),
         ),
@@ -535,7 +530,7 @@ class _WaveBarState extends State<_WaveBar>
           height: 20 * _animation.value,
           margin: const EdgeInsets.symmetric(horizontal: 2),
           decoration: BoxDecoration(
-            color: const Color(0xFF00D9FF),
+            color: AppColors.textPrimary,
             borderRadius: BorderRadius.circular(2),
           ),
         );

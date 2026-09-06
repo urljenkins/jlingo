@@ -17,8 +17,39 @@ class BilingualParagraph {
     this.vocabularyWords = const [],
   });
 
-  factory BilingualParagraph.fromJson(Map<String, dynamic> json) =>
-      _$BilingualParagraphFromJson(json);
+  factory BilingualParagraph.fromJson(Map<String, dynamic> json) {
+    String original = json['originalText'] as String? ?? '';
+    String translated = json['translatedText'] as String? ?? '';
+    List<String> vocab = (json['vocabularyWords'] as List<dynamic>?)
+            ?.map((e) => e as String)
+            .toList() ??
+        const [];
+
+    if (original.isEmpty || translated.isEmpty || vocab.isEmpty) {
+      for (final entry in json.entries) {
+        if (original.isEmpty &&
+            entry.key.startsWith('originalText_') &&
+            entry.value is String) {
+          original = entry.value as String;
+        } else if (translated.isEmpty &&
+            entry.key.startsWith('translatedText_') &&
+            entry.value is String) {
+          translated = entry.value as String;
+        } else if (vocab.isEmpty &&
+            entry.key.startsWith('vocabularyWords_') &&
+            entry.value is List) {
+          vocab = (entry.value as List).map((e) => e.toString()).toList();
+        }
+      }
+    }
+
+    return BilingualParagraph(
+      id: json['id'] as String? ?? '',
+      originalText: original,
+      translatedText: translated,
+      vocabularyWords: vocab,
+    );
+  }
   Map<String, dynamic> toJson() => _$BilingualParagraphToJson(this);
 }
 

@@ -1,0 +1,132 @@
+{
+  "courseId": "spanish_latam_en",
+  "words": [
+    {
+      "id": "wod_es_latam_1",
+      "word": "Mariposa",
+      "translation": "Butterfly",
+      "pronunciation": "/ma.ɾiˈpo.sa/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "La mariposa monarca vuela miles de kilómetros hasta los bosques de México.",
+      "exampleTranslation": "The monarch butterfly flies thousands of kilometers to the forests of Mexico.",
+      "etymology": "From the folk phrase 'María, pósate'",
+      "funFact": "The Monarch Butterfly Biosphere Reserve in Michoacán, Mexico is a UNESCO World Heritage site.",
+      "category": "Nature",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_es_latam_2",
+      "word": "Chévere",
+      "translation": "Cool / Great / Fantastic",
+      "pronunciation": "/ˈtʃe.βe.ɾe/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "¡Qué chévere verte después de tanto tiempo!",
+      "exampleTranslation": "How great to see you after so much time!",
+      "etymology": "From Afro-Cuban / Efik origin via the Caribbean",
+      "funFact": "'Chévere' is one of the most beloved and ubiquitous colloquial words across the Caribbean, Colombia, Venezuela, and beyond.",
+      "category": "Culture",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_es_latam_3",
+      "word": "Colibrí",
+      "translation": "Hummingbird",
+      "pronunciation": "/ko.liˈβɾi/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "Un pequeño colibrí se detuvo a beber néctar.",
+      "exampleTranslation": "A small hummingbird paused to drink nectar.",
+      "etymology": "Of Taíno / Caribbean indigenous origin",
+      "funFact": "In ancient Aztec mythology, Huitzilopochtli was symbolized by the hummingbird.",
+      "category": "Animals",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_es_latam_4",
+      "word": "Carro",
+      "translation": "Car",
+      "pronunciation": "/ˈka.ro/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "Vamos a viajar en carro por toda la costa.",
+      "exampleTranslation": "We are going to travel by car along the entire coast.",
+      "etymology": "From Latin 'carrus'",
+      "funFact": "While Spain uses 'coche', most Latin American countries use 'carro' or 'auto'.",
+      "category": "Transportation",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_es_latam_5",
+      "word": "Madrugada",
+      "translation": "Early morning / Dawn",
+      "pronunciation": "/ma.ðɾuˈɣa.ða/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "Salimos de madrugada para evitar el tráfico.",
+      "exampleTranslation": "We left in the early morning to avoid traffic.",
+      "etymology": "From 'madrugar' (to rise early)",
+      "category": "Time",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_es_latam_6",
+      "word": "Computadora",
+      "translation": "Computer",
+      "pronunciation": "/kom.pu.taˈðo.ɾa/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "Trabajo con mi computadora portátil en la oficina.",
+      "exampleTranslation": "I work with my laptop computer at the office.",
+      "etymology": "Borrowed into American Spanish from English 'computer' / Latin 'computare'",
+      "funFact": "In Spain, people say 'el ordenador', whereas Latin America uniformly uses 'la computadora' (or 'el computador').",
+      "category": "Technology",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_es_latam_7",
+      "word": "Plática",
+      "translation": "Chat / Conversation",
+      "pronunciation": "/ˈpla.ti.ka/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "Tuvimos una plática muy amena y agradable tomando café.",
+      "exampleTranslation": "We had a very pleasant chat while drinking coffee.",
+      "etymology": "From the verb 'platicar' (to chat/talk), especially prevalent in Mexico and Central America",
+      "category": "Communication",
+      "difficulty": 2
+    },
+    {
+      "id": "wod_es_latam_8",
+      "word": "Celular",
+      "translation": "Cell phone / Mobile phone",
+      "pronunciation": "/se.luˈlaɾ/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "¿Me pasas tu número de celular?",
+      "exampleTranslation": "Could you give me your cell phone number?",
+      "etymology": "From Latin 'cellula'",
+      "funFact": "Spain uses 'el móvil', while Latin America says 'el celular'.",
+      "category": "Technology",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_es_latam_9",
+      "word": "Esperanza",
+      "translation": "Hope",
+      "pronunciation": "/es.peˈɾan.sa/",
+      "partOfSpeech": "noun (feminine)",
+      "exampleSentence": "Mantenemos viva la esperanza de construir un futuro mejor.",
+      "exampleTranslation": "We keep alive the hope of building a better future.",
+      "etymology": "From Latin 'sperare'",
+      "category": "Abstract",
+      "difficulty": 1
+    },
+    {
+      "id": "wod_es_latam_10",
+      "word": "Girasol",
+      "translation": "Sunflower",
+      "pronunciation": "/xi.ɾaˈsol/",
+      "partOfSpeech": "noun (masculine)",
+      "exampleSentence": "El girasol es originario de las Américas y fue domesticado hace miles de años.",
+      "exampleTranslation": "The sunflower is native to the Americas and was domesticated thousands of years ago.",
+      "etymology": "From 'girar' (turn) + 'sol' (sun)",
+      "funFact": "Indigenous peoples of the Americas cultivated sunflowers for food and medicinal dye long before European contact.",
+      "category": "Nature",
+      "difficulty": 2
+    }
+  ]
+}
