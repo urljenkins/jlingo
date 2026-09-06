@@ -10,7 +10,11 @@ import 'goals_screen.dart';
 import '../../theme/app_colors.dart';
 
 class LevelQuizScreen extends StatefulWidget {
-  const LevelQuizScreen({super.key});
+  const LevelQuizScreen({super.key, this.isRetake = false});
+
+  /// When true the quiz was opened from settings rather than onboarding: it
+  /// saves the level and pops back instead of continuing into goal selection.
+  final bool isRetake;
 
   @override
   State<LevelQuizScreen> createState() => _LevelQuizScreenState();
@@ -26,9 +30,19 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
     final onboardingProvider = context.watch<OnboardingProvider>();
     final currentQuestion = onboardingProvider.currentQuestion;
 
-    // Quiz is complete, navigate to goals
+    // Quiz is complete: a retake saves the result and returns to settings,
+    // otherwise onboarding continues into goal selection.
     if (onboardingProvider.isQuizComplete) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (widget.isRetake) {
+          final language = onboardingProvider.selectedLanguage;
+          if (language != null) {
+            unawaited(onboardingProvider.setAssessedLevel(
+                onboardingProvider.calculateLevel(), language));
+          }
+          Navigator.of(context).pop();
+          return;
+        }
         unawaited(Navigator.of(context).pushReplacement(
           PageRouteBuilder<void>(
             pageBuilder: (context, _, __) => const GoalsScreen(),

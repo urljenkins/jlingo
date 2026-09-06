@@ -2,10 +2,14 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
+import '../models/cefr_level.dart';
 import '../models/course_manifest.dart';
 import '../models/skill.dart';
+import '../models/user_profile.dart';
 
-const _selectedLanguageKey = 'selected_language';
+/// Shared with [OnboardingProvider], which needs the studied language to
+/// migrate legacy single-level profiles.
+const selectedLanguageKey = 'selected_language';
 
 class CourseProvider extends ChangeNotifier {
   CourseManifest? _currentManifest;
@@ -36,7 +40,7 @@ class CourseProvider extends ChangeNotifier {
 
   Future<String?> getSavedLanguage() async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getString(_selectedLanguageKey);
+    return prefs.getString(selectedLanguageKey);
   }
 
   Future<void> loadCourse(String languageCode) async {
@@ -48,7 +52,7 @@ class CourseProvider extends ChangeNotifier {
       _currentManifest = CourseManifest.fromJson(jsonData);
 
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setString(_selectedLanguageKey, languageCode);
+      await prefs.setString(selectedLanguageKey, languageCode);
 
       _loadedSkills.clear();
       notifyListeners();
@@ -80,7 +84,7 @@ class CourseProvider extends ChangeNotifier {
 
   Future<void> clearSelectedLanguage() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_selectedLanguageKey);
+    await prefs.remove(selectedLanguageKey);
     _currentManifest = null;
     _currentLanguageCode = null;
     _loadedSkills.clear();
@@ -88,15 +92,41 @@ class CourseProvider extends ChangeNotifier {
   }
 
   /// Index of the first unfinished skill — where "Continue" resumes.
-  int getCurrentSkillIndex(Set<String> completedSkills) {
-    if (_currentManifest == null) return 0;
+  ///
+  /// A learner who entered above A1 resumes at their entry level rather than
+  /// at the very first skill, so the course opens where they actually are.
+  /// Earlier material stays unlocked and reachable by scrolling up.
+  int getCurrentSkillIndex(
+    Set<String> completedSkills, {
+    LanguageLevel? entryLevel,
+    CourseManifest? manifest,
+  }) {
+    final target = manifest ?? _currentManifest;
+    if (target == null) return 0;
 
-    for (int i = 0; i < _currentManifest!.skills.length; i++) {
-      if (!completedSkills.contains(_currentManifest!.skills[i].id)) {
+    final skills = target.skills;
+    // Clamp to content the course actually has, so a sparse course does not
+    // drop the learner into a tier above the one they picked.
+    final startLevel = CefrLevel.effectiveStartLevel(
+      entryLevel,
+      skills.map((s) => s.level).toList(),
+    );
+
+    // Prefer the first unfinished skill at or above the entry level.
+    for (int i = 0; i < skills.length; i++) {
+      if (skills[i].level >= startLevel &&
+          !completedSkills.contains(skills[i].id)) {
         return i;
       }
     }
 
-    return _currentManifest!.skills.length - 1;
+    // Entry level fully completed — fall back to anything left below it.
+    for (int i = 0; i < skills.length; i++) {
+      if (!completedSkills.contains(skills[i].id)) {
+        return i;
+      }
+    }
+
+    return skills.length - 1;
   }
 }

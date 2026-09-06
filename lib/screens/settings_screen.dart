@@ -1,7 +1,14 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../models/cefr_level.dart';
+import '../models/user_profile.dart';
+import '../providers/course_provider.dart';
+import '../providers/onboarding_provider.dart';
 import '../providers/settings_provider.dart';
+import 'onboarding/level_quiz_screen.dart';
+import '../utils/build_info.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_typography.dart';
@@ -24,6 +31,8 @@ class SettingsScreen extends StatelessWidget {
                 const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
             children: [
               _buildSectionHeader('Learning & Habits'),
+              _buildLevelCard(context),
+              const SizedBox(height: 12),
               Card(
                 color: AppColors.surface,
                 shape: RoundedRectangleBorder(
@@ -178,20 +187,214 @@ class SettingsScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(AppRadius.card),
                   side: const BorderSide(color: AppColors.border),
                 ),
-                child: const ListTile(
-                  leading:
-                      Icon(Icons.info_outline, color: AppColors.textSecondary),
-                  title: Text('Lingua Sprint',
+                child: ListTile(
+                  leading: const Icon(Icons.info_outline,
+                      color: AppColors.textSecondary),
+                  title: const Text('Lingua Sprint',
                       style: TextStyle(fontWeight: FontWeight.w600)),
                   subtitle: Text(
-                      'Version 1.0.0 • Hyper-efficient language learning',
-                      style: AppTypography.caption),
+                    BuildInfo.isTracked
+                        ? '${BuildInfo.summary}\nBuilt ${BuildInfo.builtAt}'
+                        : BuildInfo.summary,
+                    style: AppTypography.caption,
+                  ),
+                  isThreeLine: BuildInfo.isTracked,
+                  trailing: BuildInfo.isTracked
+                      ? IconButton(
+                          icon: const Icon(Icons.copy,
+                              size: 18, color: AppColors.textMuted),
+                          tooltip: 'Copy build details',
+                          onPressed: () => _copyBuildInfo(context),
+                        )
+                      : null,
                 ),
               ),
             ],
           );
         },
       ),
+    );
+  }
+
+  /// Lets the learner say where they are, at any time.
+  ///
+  /// Deliberately framed as a starting point rather than a verdict: changing
+  /// it opens material, never removes it, and nothing already done is lost.
+  Widget _buildLevelCard(BuildContext context) {
+    final language = context.watch<CourseProvider>().currentLanguageCode;
+    final profile = context.watch<OnboardingProvider>().profile;
+    final level = profile.levelFor(language);
+
+    return Card(
+      color: AppColors.surface,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.card),
+        side: const BorderSide(color: AppColors.border),
+      ),
+      child: ListTile(
+        leading: Container(
+          padding: const EdgeInsets.all(AppSpacing.sm),
+          decoration: BoxDecoration(
+            color: AppColors.surfaceRaised,
+            borderRadius: BorderRadius.circular(AppRadius.sm),
+          ),
+          child:
+              const Icon(Icons.school_outlined, color: AppColors.textSecondary),
+        ),
+        title: const Text(
+          'Your level',
+          style: TextStyle(fontWeight: FontWeight.w600),
+        ),
+        subtitle: Text(
+          language == null
+              ? 'Pick a course first — each language keeps its own level.'
+              : level == null
+                  ? 'Not set — this course starts from the beginning. Change '
+                      'it any time; nothing is locked away.'
+                  : '${CefrLevel.nameFor(level)} '
+                      '(${CefrLevel.codeFor(level)}) — where this course '
+                      'opens. Earlier lessons stay available.',
+          style: AppTypography.caption,
+        ),
+        trailing: const Icon(Icons.chevron_right, color: AppColors.textMuted),
+        onTap: language == null
+            ? null
+            : () => _showLevelPicker(context, level, language),
+      ),
+    );
+  }
+
+  void _showLevelPicker(
+      BuildContext context, LanguageLevel? current, String language) {
+    final provider = context.read<OnboardingProvider>();
+    final skillLevels = context
+            .read<CourseProvider>()
+            .currentManifest
+            ?.skills
+            .map((s) => s.level)
+            .toList() ??
+        const <int>[];
+
+    unawaited(showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: AppColors.surface,
+      shape: const RoundedRectangleBorder(
+        borderRadius:
+            BorderRadius.vertical(top: Radius.circular(AppRadius.card)),
+      ),
+      builder: (sheetContext) {
+        return SafeArea(
+          child: ListView(
+            shrinkWrap: true,
+            padding: const EdgeInsets.symmetric(vertical: AppSpacing.md),
+            children: [
+              const Padding(
+                padding: EdgeInsets.fromLTRB(
+                    AppSpacing.lg, AppSpacing.sm, AppSpacing.lg, AppSpacing.sm),
+                child: Text(
+                  'Where would you like to start? You can change this whenever '
+                  'you like, and nothing you have already done goes away.',
+                  style: AppTypography.caption,
+                ),
+              ),
+              RadioGroup<LanguageLevel>(
+                groupValue: current,
+                onChanged: (selected) {
+                  Navigator.of(sheetContext).pop();
+                  if (selected == null) return;
+                  unawaited(provider.setAssessedLevel(selected, language));
+                  // Say what changed, and that nothing was taken away — the
+                  // reassurance matters most at the moment of choosing.
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        'Now opening at ${CefrLevel.nameFor(selected)} '
+                        '(${CefrLevel.codeFor(selected)}). Earlier lessons are '
+                        'still there.',
+                      ),
+                    ),
+                  );
+                },
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: CefrLevel.ordered.map((level) {
+                    return RadioListTile<LanguageLevel>(
+                      value: level,
+                      title: Text(
+                        '${CefrLevel.nameFor(level)} '
+                        '(${CefrLevel.codeFor(level)})',
+                        style: const TextStyle(fontWeight: FontWeight.w600),
+                      ),
+                      subtitle: Text(
+                        CefrLevel.hasContentFor(level, skillLevels)
+                            ? CefrLevel.descriptionFor(level)
+                            : '${CefrLevel.descriptionFor(level)} — no lessons '
+                                'at this level yet for this course',
+                        style: AppTypography.caption,
+                      ),
+                    );
+                  }).toList(),
+                ),
+              ),
+              const Divider(height: 1, color: AppColors.border),
+              ListTile(
+                leading: const Icon(Icons.quiz_outlined,
+                    color: AppColors.textSecondary),
+                title: const Text('Not sure? Take a quick check'),
+                subtitle: const Text(
+                  'A few questions to suggest a level. Optional, and you can '
+                  'override the result.',
+                  style: AppTypography.caption,
+                ),
+                onTap: () {
+                  Navigator.of(sheetContext).pop();
+                  _startLevelCheck(context);
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    ));
+  }
+
+  /// Reopens the placement quiz from settings as a retake.
+  ///
+  /// The questions are keyed off the course being studied, which after a
+  /// restart is the only record of which language the quiz should cover.
+  void _startLevelCheck(BuildContext context) {
+    final provider = context.read<OnboardingProvider>();
+    final language = context.read<CourseProvider>().currentLanguageCode;
+
+    provider.restartQuiz(language: language);
+
+    if (provider.quizQuestions.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('No check available for this course yet — '
+              'pick a level directly instead.'),
+        ),
+      );
+      return;
+    }
+
+    unawaited(Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => const LevelQuizScreen(isRetake: true),
+      ),
+    ));
+  }
+
+  /// Puts the exact build on the clipboard, so a device can be matched to a
+  /// branch without reading it off the screen.
+  void _copyBuildInfo(BuildContext context) {
+    unawaited(Clipboard.setData(
+      ClipboardData(
+        text: '${BuildInfo.summary} · built ${BuildInfo.builtAt}',
+      ),
+    ));
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Build details copied')),
     );
   }
 

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/user_profile.dart';
+import 'course_provider.dart';
 
 class OnboardingProvider extends ChangeNotifier {
   static const String _profileKey = 'user_profile';
@@ -49,8 +50,12 @@ class OnboardingProvider extends ChangeNotifier {
       final profileJson = prefs.getString(_profileKey);
 
       if (profileJson != null) {
-        _profile = UserProfile.fromJson(
-            jsonDecode(profileJson) as Map<String, dynamic>);
+        final decoded = jsonDecode(profileJson) as Map<String, dynamic>;
+        // Levels were once a single value shared across all courses. Tell the
+        // migration which course that value belonged to, so it lands on the
+        // right language rather than being dropped.
+        decoded['legacyLevelLanguage'] = prefs.getString(selectedLanguageKey);
+        _profile = UserProfile.fromJson(decoded);
       }
     } catch (e) {
       debugPrint('Error loading user profile: $e');
@@ -114,6 +119,12 @@ class OnboardingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// The level the quiz suggests.
+  ///
+  /// Caps at C1: the question bank's hardest tier is `advanced`, so a perfect
+  /// score cannot honestly separate C1 from C2. C2 stays something a learner
+  /// chooses for themselves in settings rather than something a ten-question
+  /// check hands out.
   LanguageLevel calculateLevel() {
     final percentage = _quizQuestions.isNotEmpty
         ? (_correctAnswers / _quizQuestions.length) * 100
@@ -144,11 +155,45 @@ class OnboardingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Sets the level directly, without the quiz.
+  ///
+  /// This is the manual override behind the settings picker: choosing a level
+  /// is a statement about where to start, not a score, so it never touches the
+  /// recorded quiz result and never clears completed work.
+  Future<void> setAssessedLevel(LanguageLevel level, String language) async {
+    _profile = _profile.withLevelFor(language, level);
+    await _saveProfile();
+    notifyListeners();
+  }
+
+  /// Prepares the quiz to be retaken from settings.
+  ///
+  /// The question list lives in memory only, so after an app restart it is
+  /// empty; without reloading it here the quiz would report itself complete
+  /// immediately and score 0. [language] is the course currently being
+  /// studied.
+  void restartQuiz({String? language}) {
+    final target = language ?? _selectedLanguage;
+    if (target != null) {
+      // Record the language too: after a restart it is otherwise unset, and
+      // the finished retake would have no course to save its result against.
+      _selectedLanguage = target;
+      _loadQuizQuestions(target);
+    } else {
+      _currentQuestionIndex = 0;
+      _correctAnswers = 0;
+    }
+    notifyListeners();
+  }
+
   Future<void> completeOnboarding() async {
     final level = calculateLevel();
+    final language = _selectedLanguage;
     _profile = _profile.copyWith(
       onboardingComplete: true,
-      assessedLevel: level,
+      assessedLevels: language == null
+          ? _profile.assessedLevels
+          : {..._profile.assessedLevels, language: level},
       createdAt: DateTime.now(),
       quizScore: _correctAnswers,
       quizTotal: _quizQuestions.length,

@@ -4,6 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import '../models/gamification.dart';
 import '../models/course_manifest.dart';
+import '../models/cefr_level.dart';
+import '../models/user_profile.dart';
 
 /// Provider for gamification features: XP, Levels, Streaks, and Progression
 class GamificationProvider extends ChangeNotifier {
@@ -297,8 +299,11 @@ class GamificationProvider extends ChangeNotifier {
   void updateProgressionPaths(
     List<SkillHeader> skills,
     Set<String> completedSkills,
-    Map<String, double> skillMastery,
-  ) {
+    Map<String, double> skillMastery, {
+    LanguageLevel? entryLevel,
+  }) {
+    final courseSkillLevels = skills.map((s) => s.level).toList();
+
     // Group skills by level
     final Map<int, List<SkillNode>> groupedSkills = {};
 
@@ -310,7 +315,14 @@ class GamificationProvider extends ChangeNotifier {
         name: skill.name,
         level: skill.level,
         mastery: mastery / 100,
-        isUnlocked: i == 0 || completedSkills.contains(skills[i - 1].id),
+        isUnlocked: isSkillUnlocked(
+          skillLevel: skill.level,
+          position: i,
+          previousCompleted:
+              i > 0 && completedSkills.contains(skills[i - 1].id),
+          entryLevel: entryLevel,
+          courseSkillLevels: courseSkillLevels,
+        ),
         isCompleted: completedSkills.contains(skill.id),
         prerequisites: i > 0 ? [skills[i - 1].id] : [],
       );

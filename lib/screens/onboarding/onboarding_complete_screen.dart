@@ -12,6 +12,7 @@ import '../../widgets/responsive/desktop_scaffold.dart';
 import '../../widgets/responsive/mobile_scaffold.dart';
 import '../app_shell.dart';
 import '../../theme/app_colors.dart';
+import '../../models/cefr_level.dart';
 
 class OnboardingCompleteScreen extends StatelessWidget {
   const OnboardingCompleteScreen({super.key});
@@ -497,20 +498,8 @@ class OnboardingCompleteScreen extends StatelessWidget {
     );
   }
 
-  String _getLevelDisplayName(LanguageLevel level) {
-    switch (level) {
-      case LanguageLevel.beginner:
-        return 'Beginner (A1)';
-      case LanguageLevel.elementary:
-        return 'Elementary (A2)';
-      case LanguageLevel.intermediate:
-        return 'Intermediate (B1)';
-      case LanguageLevel.upperIntermediate:
-        return 'Upper Intermediate (B2)';
-      case LanguageLevel.advanced:
-        return 'Advanced (C1+)';
-    }
-  }
+  String _getLevelDisplayName(LanguageLevel level) =>
+      '${CefrLevel.nameFor(level)} (${CefrLevel.codeFor(level)})';
 
   List<String> _getRecommendations(LanguageLevel level) {
     switch (level) {
@@ -548,6 +537,13 @@ class OnboardingCompleteScreen extends StatelessWidget {
           'Focus on academic and professional vocabulary',
           'Practice with native-level content',
           'Work on accent reduction and fluency',
+        ];
+      case LanguageLevel.proficient:
+        return [
+          'Refine register — formal, academic and colloquial',
+          'Work through the mastery capstone lessons',
+          'Read unabridged native texts for nuance',
+          'Practise idiom and rhetorical precision',
         ];
     }
   }
