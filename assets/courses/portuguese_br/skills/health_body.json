@@ -1,0 +1,100 @@
+{
+  "id": "health_body",
+  "name": "Saúde & Corpo",
+  "description": "Aprende partes do corpo e vocabulário de saúde",
+  "level": 16,
+  "exercises": [
+    {
+      "id": "ex_hb_1",
+      "type": "matchPairs",
+      "question": "Associe as partes do corpo",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "A cabeça",
+            "native": "The head"
+          },
+          {
+            "target": "O braço",
+            "native": "The arm"
+          },
+          {
+            "target": "A perna",
+            "native": "The leg"
+          },
+          {
+            "target": "O estômago",
+            "native": "The stomach"
+          },
+          {
+            "target": "As costas",
+            "native": "The back"
+          },
+          {
+            "target": "O coração",
+            "native": "The heart"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_hb_2",
+      "type": "translateThis",
+      "question": "Tenho dor de cabeça",
+      "options": [],
+      "correctAnswer": "My head hurts"
+    },
+    {
+      "id": "ex_hb_3",
+      "type": "fillInBlank",
+      "question": "Tenho ___ de garganta",
+      "options": [
+        "dor",
+        "mal",
+        "doente",
+        "febre"
+      ],
+      "correctAnswer": "dor"
+    },
+    {
+      "id": "ex_hb_4",
+      "type": "matchPairs",
+      "question": "Associe doenças comuns",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Febre",
+            "native": "Fever"
+          },
+          {
+            "target": "Tosse",
+            "native": "Cough"
+          },
+          {
+            "target": "Resfriado",
+            "native": "Cold"
+          },
+          {
+            "target": "Gripe",
+            "native": "Flu"
+          },
+          {
+            "target": "Dor",
+            "native": "Pain"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_hb_5",
+      "type": "speakThis",
+      "question": "Não me sinto bem",
+      "options": [],
+      "correctAnswer": "Não me sinto bem"
+    }
+  ]
+}

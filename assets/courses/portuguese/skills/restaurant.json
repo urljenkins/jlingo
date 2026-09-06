@@ -1,0 +1,85 @@
+{
+  "id": "restaurant",
+  "name": "No Restaurante",
+  "description": "Reservar mesas, chamar o empregado de mesa, pedir a conta e pagar",
+  "level": 11,
+  "exercises": [
+    {
+      "id": "ex_pt_rest_1",
+      "type": "translateThis",
+      "question": "Uma mesa para duas pessoas, por favor",
+      "options": [],
+      "correctAnswer": "A table for two people, please"
+    },
+    {
+      "id": "ex_pt_rest_2",
+      "type": "multipleChoice",
+      "question": "Como se pede a conta ao final da refeição?",
+      "options": [
+        "A conta, por favor",
+        "A comida, por favor",
+        "O prato, por favor",
+        "A ementa, por favor"
+      ],
+      "correctAnswer": "A conta, por favor"
+    },
+    {
+      "id": "ex_pt_rest_3",
+      "type": "fillInBlank",
+      "question": "Pode trazer-nos a ___ para vermos os pratos do dia?",
+      "options": [
+        "ementa (ou menu)",
+        "conta",
+        "gorjeta",
+        "fatura"
+      ],
+      "correctAnswer": "ementa (ou menu)"
+    },
+    {
+      "id": "ex_pt_rest_4",
+      "type": "matchPairs",
+      "question": "Relacione os itens do restaurante",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O empregado de mesa (garçom)",
+            "native": "The waiter"
+          },
+          {
+            "target": "A entrada",
+            "native": "The starter / appetizer"
+          },
+          {
+            "target": "O prato principal",
+            "native": "The main course"
+          },
+          {
+            "target": "A sobremesa",
+            "native": "The dessert"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_rest_5",
+      "type": "translateThis",
+      "question": "Aceitam pagamento com cartão de crédito?",
+      "options": [],
+      "correctAnswer": "Do you accept payment by credit card?"
+    },
+    {
+      "id": "ex_pt_rest_6",
+      "type": "multipleChoice",
+      "question": "O que se deixa opcionalmente ao garçom por um bom serviço?",
+      "options": [
+        "Gorjeta",
+        "Moeda falsa",
+        "Ementa",
+        "Guardanapo"
+      ],
+      "correctAnswer": "Gorjeta"
+    }
+  ]
+}

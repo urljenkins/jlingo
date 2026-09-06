@@ -10,7 +10,7 @@
             "question": "Buenos días, ¿cómo está usted?",
             "options": [],
             "correctAnswer": "Buenos días, ¿cómo está usted?",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "audioPath": null,
             "metadata": {
                 "speaker": "Native Speaker - María",
@@ -25,7 +25,7 @@
             "question": "Me llamo Juan y soy de España",
             "options": [],
             "correctAnswer": "Me llamo Juan y soy de España",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "phonetics": "meh YAH-moh HWAHN ee soy deh es-PAH-nyah",
                 "focus": "The 'll' sound and the 'ñ' pronunciation"
@@ -42,7 +42,7 @@
                 "He ordered juice"
             ],
             "correctAnswer": "He ordered coffee",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "type": "dialogue",
                 "context": "A customer ordering at a café in Madrid",
@@ -83,7 +83,7 @@
             "question": "Despacito",
             "options": [],
             "correctAnswer": "corazón,suave,beso",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "songTitle": "Despacito",
                 "artist": "Luis Fonsi",
@@ -138,7 +138,7 @@
             "question": "Tengo treinta y tres años",
             "options": [],
             "correctAnswer": "Tengo treinta y tres años",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "phonetics": "TEN-goh TRAYN-tah ee TRES AH-nyos",
                 "focus": "Rolling 'r' sound in 'treinta' and 'tres'"
@@ -155,7 +155,7 @@
                 "Strong winds tonight"
             ],
             "correctAnswer": "Rain expected tomorrow",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "type": "news",
                 "context": "Weather forecast from Spanish national television",
@@ -191,7 +191,7 @@
             "question": "¿Dónde está la estación de tren?",
             "options": [],
             "correctAnswer": "¿Dónde está la estación de tren?",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "speaker": "Native Speaker - Carlos",
                 "difficulty": "intermediate"
@@ -203,7 +203,7 @@
             "question": "El perro corre rápido por el parque",
             "options": [],
             "correctAnswer": "El perro corre rápido por el parque",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "phonetics": "el PEH-roh KOH-reh RAH-pee-doh por el PAR-keh",
                 "focus": "Double 'rr' sound in 'perro' and 'corre'"
@@ -220,7 +220,7 @@
                 "The old man was young"
             ],
             "correctAnswer": "The old man lived alone",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "type": "story",
                 "context": "A short tale about an old man in a small village",
@@ -256,7 +256,7 @@
             "question": "La Bamba",
             "options": [],
             "correctAnswer": "bailar,arriba,capitán",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "songTitle": "La Bamba",
                 "artist": "Ritchie Valens",
@@ -321,7 +321,7 @@
             "question": "La ciudad tiene muchos edificios altos",
             "options": [],
             "correctAnswer": "La ciudad tiene muchos edificios altos",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "phonetics": "lah see-oo-DAHD tee-EH-neh MOO-chos eh-dee-FEE-see-os AHL-tos",
                 "focus": "The soft 'd' sound in 'ciudad' and 'edificios'"
@@ -333,7 +333,7 @@
             "question": "Quisiera reservar una mesa para cuatro personas",
             "options": [],
             "correctAnswer": "Quisiera reservar una mesa para cuatro personas",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "metadata": {
                 "speaker": "Native Speaker - Elena",
                 "difficulty": "intermediate"

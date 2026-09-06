@@ -1,0 +1,85 @@
+{
+  "id": "idioms",
+  "name": "Expressões Idiomáticas",
+  "description": "Expressões populares lusófonas e seus significados figurados",
+  "level": 24,
+  "exercises": [
+    {
+      "id": "ex_pt_idm_1",
+      "type": "translateThis",
+      "question": "Custou os olhos da cara",
+      "options": [],
+      "correctAnswer": "It cost an arm and a leg"
+    },
+    {
+      "id": "ex_pt_idm_2",
+      "type": "multipleChoice",
+      "question": "O que significa a expressão portuguesa \"Estar com a pulga atrás da orelha\"?",
+      "options": [
+        "To be suspicious / have doubts",
+        "To have an ear infection",
+        "To be very happy",
+        "To be sleeping deeply"
+      ],
+      "correctAnswer": "To be suspicious / have doubts"
+    },
+    {
+      "id": "ex_pt_idm_3",
+      "type": "fillInBlank",
+      "question": "Quem não tem cão, caça com ___ .",
+      "options": [
+        "gato",
+        "pássaro",
+        "leão",
+        "rato"
+      ],
+      "correctAnswer": "gato"
+    },
+    {
+      "id": "ex_pt_idm_4",
+      "type": "matchPairs",
+      "question": "Relacione as expressões idiomáticas aos significados",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Falar pelos cotovelos",
+            "native": "To talk non-stop / excessively"
+          },
+          {
+            "target": "Dar uma mãozinha",
+            "native": "To lend a helping hand"
+          },
+          {
+            "target": "Meter os pés pelas mãos",
+            "native": "To get totally confused / mess up"
+          },
+          {
+            "target": "Tirar o cavalinho da chuva",
+            "native": "To give up false hopes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_idm_5",
+      "type": "translateThis",
+      "question": "Ela tem um coração de ouro",
+      "options": [],
+      "correctAnswer": "She has a heart of gold"
+    },
+    {
+      "id": "ex_pt_idm_6",
+      "type": "multipleChoice",
+      "question": "\"Chover a potes\" ou \"chover a cântaros\" significa:",
+      "options": [
+        "To rain cats and dogs / heavily",
+        "To be slightly sunny",
+        "To be humid",
+        "To drizzle lightly"
+      ],
+      "correctAnswer": "To rain cats and dogs / heavily"
+    }
+  ]
+}

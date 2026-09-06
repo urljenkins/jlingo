@@ -127,6 +127,7 @@ void main() {
         'french',
         'dutch',
         'portuguese',
+        'portuguese_br',
         'japanese',
         'chinese',
       ];
@@ -258,7 +259,8 @@ void main() {
         'japanese',
         'chinese',
         'dutch',
-        'portuguese'
+        'portuguese',
+        'portuguese_br'
       ];
 
       for (final course in allCourses) {
@@ -327,7 +329,12 @@ void main() {
     });
 
     test('clamping never opens more than the requested tier would', () {
-      for (final course in ['japanese', 'french', 'portuguese']) {
+      for (final course in [
+        'japanese',
+        'french',
+        'portuguese',
+        'portuguese_br'
+      ]) {
         final levels = _manifestFor(course).skills.map((s) => s.level).toList();
         for (final level in CefrLevel.ordered) {
           expect(
@@ -356,7 +363,8 @@ void main() {
         'japanese',
         'chinese',
         'dutch',
-        'portuguese'
+        'portuguese',
+        'portuguese_br'
       ]) {
         final levels = _manifestFor(course).skills.map((s) => s.level).toList();
         expect(

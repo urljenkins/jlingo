@@ -1,0 +1,81 @@
+{
+  "id": "sports",
+  "name": "Desporto",
+  "description": "Aprende vocabulário para desportos e exercício físico",
+  "level": 18,
+  "exercises": [
+    {
+      "id": "ex_sp_1",
+      "type": "matchPairs",
+      "question": "Associe os desportos",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O futebol",
+            "native": "Soccer/Football"
+          },
+          {
+            "target": "O basquetebol",
+            "native": "Basketball"
+          },
+          {
+            "target": "O ténis",
+            "native": "Tennis"
+          },
+          {
+            "target": "A natação",
+            "native": "Swimming"
+          },
+          {
+            "target": "O ciclismo",
+            "native": "Cycling"
+          },
+          {
+            "target": "O yoga",
+            "native": "Yoga"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sp_2",
+      "type": "translateThis",
+      "question": "Jogo futebol aos sábados",
+      "options": [],
+      "correctAnswer": "I play soccer on Saturdays"
+    },
+    {
+      "id": "ex_sp_3",
+      "type": "fillInBlank",
+      "question": "Vou ao ___ três vezes por semana",
+      "options": [
+        "ginásio",
+        "cinema",
+        "restaurante",
+        "banco"
+      ],
+      "correctAnswer": "ginásio"
+    },
+    {
+      "id": "ex_sp_4",
+      "type": "multipleChoice",
+      "question": "Como se diz 'to win'?",
+      "options": [
+        "Ganhar",
+        "Perder",
+        "Jogar",
+        "Correr"
+      ],
+      "correctAnswer": "Ganhar"
+    },
+    {
+      "id": "ex_sp_5",
+      "type": "speakThis",
+      "question": "A minha equipa favorita é o Sporting CP",
+      "options": [],
+      "correctAnswer": "A minha equipa favorita é o Sporting CP"
+    }
+  ]
+}

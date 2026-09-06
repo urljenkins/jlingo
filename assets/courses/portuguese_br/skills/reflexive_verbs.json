@@ -1,0 +1,85 @@
+{
+  "id": "reflexive_verbs",
+  "name": "Verbos Reflexivos",
+  "description": "Ações reflexivas, pronomes oblíquos (me, te, se, nos) e rotina pessoal",
+  "level": 8,
+  "exercises": [
+    {
+      "id": "ex_pt_refl_1",
+      "type": "fillInBlank",
+      "question": "Eu levanto-___ cedo todos os dias.",
+      "options": [
+        "me",
+        "se",
+        "te",
+        "nos"
+      ],
+      "correctAnswer": "me"
+    },
+    {
+      "id": "ex_pt_refl_2",
+      "type": "translateThis",
+      "question": "Eles sentam-se na primeira fila",
+      "options": [],
+      "correctAnswer": "They sit in the front row"
+    },
+    {
+      "id": "ex_pt_refl_3",
+      "type": "multipleChoice",
+      "question": "Em Portugal, com a negação (\"não\"), o pronome reflexivo fica:",
+      "options": [
+        "Antes do verbo (Não me lembro)",
+        "Depois do verbo com hífen (Não lembro-me)",
+        "No fim da frase",
+        "Omitido obrigatoriamente"
+      ],
+      "correctAnswer": "Antes do verbo (Não me lembro)"
+    },
+    {
+      "id": "ex_pt_refl_4",
+      "type": "matchPairs",
+      "question": "Relacione os verbos reflexivos",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Lembrar-se de",
+            "native": "To remember"
+          },
+          {
+            "target": "Esquecer-se de",
+            "native": "To forget"
+          },
+          {
+            "target": "Sentir-se bem",
+            "native": "To feel well"
+          },
+          {
+            "target": "Chamar-se",
+            "native": "To be named"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_refl_5",
+      "type": "translateThis",
+      "question": "Nós encontramo-nos às seis horas",
+      "options": [],
+      "correctAnswer": "We meet at six o'clock"
+    },
+    {
+      "id": "ex_pt_refl_6",
+      "type": "fillInBlank",
+      "question": "A que horas você ___ deita à noite?",
+      "options": [
+        "se",
+        "me",
+        "te",
+        "nos"
+      ],
+      "correctAnswer": "se"
+    }
+  ]
+}

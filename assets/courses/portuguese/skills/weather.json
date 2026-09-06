@@ -1,0 +1,85 @@
+{
+  "id": "weather",
+  "name": "O Tempo & Estações",
+  "description": "Falar sobre o clima, estações do ano e previsões meteorológicas",
+  "level": 6,
+  "exercises": [
+    {
+      "id": "ex_pt_weath_1",
+      "type": "translateThis",
+      "question": "Hoje está muito sol e faz calor",
+      "options": [],
+      "correctAnswer": "Today it is very sunny and hot"
+    },
+    {
+      "id": "ex_pt_weath_2",
+      "type": "multipleChoice",
+      "question": "Como se diz \"It is raining\" em português?",
+      "options": [
+        "Está a chover (ou Está chovendo)",
+        "Está a nevar",
+        "Faz frio",
+        "Há vento"
+      ],
+      "correctAnswer": "Está a chover (ou Está chovendo)"
+    },
+    {
+      "id": "ex_pt_weath_3",
+      "type": "fillInBlank",
+      "question": "No inverno faz muito ___ no norte do país.",
+      "options": [
+        "frio",
+        "calor",
+        "sol",
+        "praia"
+      ],
+      "correctAnswer": "frio"
+    },
+    {
+      "id": "ex_pt_weath_4",
+      "type": "matchPairs",
+      "question": "Relacione as estações do ano",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "A primavera",
+            "native": "Spring"
+          },
+          {
+            "target": "O verão",
+            "native": "Summer"
+          },
+          {
+            "target": "O outono",
+            "native": "Autumn / Fall"
+          },
+          {
+            "target": "O inverno",
+            "native": "Winter"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_weath_5",
+      "type": "translateThis",
+      "question": "Amanhã o céu estará limpo",
+      "options": [],
+      "correctAnswer": "Tomorrow the sky will be clear"
+    },
+    {
+      "id": "ex_pt_weath_6",
+      "type": "multipleChoice",
+      "question": "Qual é a expressão para \"It is windy\"?",
+      "options": [
+        "Está vento / Faz vento",
+        "Está água",
+        "Faz nuvens",
+        "Cai relâmpagos"
+      ],
+      "correctAnswer": "Está vento / Faz vento"
+    }
+  ]
+}

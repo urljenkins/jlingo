@@ -1,0 +1,85 @@
+{
+  "id": "present_perfect",
+  "name": "Pretérito Perfeito Composto",
+  "description": "Ações iniciadas no passado que se repetem até o presente (tenho estudado)",
+  "level": 13,
+  "exercises": [
+    {
+      "id": "ex_pt_pp_1",
+      "type": "translateThis",
+      "question": "Tenho estudado muito ultimamente",
+      "options": [],
+      "correctAnswer": "I have been studying a lot lately"
+    },
+    {
+      "id": "ex_pt_pp_2",
+      "type": "multipleChoice",
+      "question": "Em português, a estrutura do pretérito perfeito composto é:",
+      "options": [
+        "Ter (presente) + Particípio",
+        "Haver (futuro) + Infinitivo",
+        "Ser (presente) + Gerúndio",
+        "Estar + Particípio"
+      ],
+      "correctAnswer": "Ter (presente) + Particípio"
+    },
+    {
+      "id": "ex_pt_pp_3",
+      "type": "fillInBlank",
+      "question": "Ele tem ___ muito para a conferência internacional.",
+      "options": [
+        "trabalhado",
+        "trabalhar",
+        "trabalhou",
+        "trabalha"
+      ],
+      "correctAnswer": "trabalhado"
+    },
+    {
+      "id": "ex_pt_pp_4",
+      "type": "matchPairs",
+      "question": "Relacione os particípios regulares",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Falar -> Falado",
+            "native": "Spoken"
+          },
+          {
+            "target": "Comer -> Comido",
+            "native": "Eaten"
+          },
+          {
+            "target": "Partir -> Partido",
+            "native": "Departed / Broken"
+          },
+          {
+            "target": "Fazer -> Feito",
+            "native": "Done / Made"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_pp_5",
+      "type": "translateThis",
+      "question": "Temos tido muito calor neste verão",
+      "options": [],
+      "correctAnswer": "We have been having a lot of heat this summer"
+    },
+    {
+      "id": "ex_pt_pp_6",
+      "type": "multipleChoice",
+      "question": "Diferente do espanhol, em português \"Tenho comido maçãs\" significa:",
+      "options": [
+        "Uma ação repetitiva ou habitual nos últimos tempos",
+        "Uma ação feita há um minuto atrás",
+        "Uma ação que nunca farei",
+        "Um desejo futuro"
+      ],
+      "correctAnswer": "Uma ação repetitiva ou habitual nos últimos tempos"
+    }
+  ]
+}

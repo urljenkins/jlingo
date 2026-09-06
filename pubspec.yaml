@@ -56,5 +56,7 @@ flutter:
     - assets/courses/japanese/skills/
     - assets/courses/portuguese/
     - assets/courses/portuguese/skills/
+    - assets/courses/portuguese_br/
+    - assets/courses/portuguese_br/skills/
     - assets/vocabulary/
     - assets/books/

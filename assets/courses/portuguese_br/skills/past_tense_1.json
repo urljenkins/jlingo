@@ -1,0 +1,85 @@
+{
+  "id": "past_tense_1",
+  "name": "Pretérito Perfeito",
+  "description": "Ações pontuais e concluídas no passado (falei, comi, fui, estive)",
+  "level": 12,
+  "exercises": [
+    {
+      "id": "ex_pt_pret_1",
+      "type": "translateThis",
+      "question": "Ontem fui ao cinema com os meus amigos",
+      "options": [],
+      "correctAnswer": "Yesterday I went to the cinema with my friends"
+    },
+    {
+      "id": "ex_pt_pret_2",
+      "type": "multipleChoice",
+      "question": "Qual é a 1ª pessoa singular do pretérito perfeito do verbo \"comprar\"?",
+      "options": [
+        "Comprei",
+        "Comprava",
+        "Compro",
+        "Compraria"
+      ],
+      "correctAnswer": "Comprei"
+    },
+    {
+      "id": "ex_pt_pret_3",
+      "type": "fillInBlank",
+      "question": "Na semana passada, nós ___ um museu fascinante.",
+      "options": [
+        "visitámos (ou visitamos)",
+        "visitamos-nos",
+        "visitavam",
+        "visitemos"
+      ],
+      "correctAnswer": "visitámos (ou visitamos)"
+    },
+    {
+      "id": "ex_pt_pret_4",
+      "type": "matchPairs",
+      "question": "Relacione os verbos irregulares no pretérito perfeito",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Eu fiz",
+            "native": "I made / I did"
+          },
+          {
+            "target": "Eu tive",
+            "native": "I had"
+          },
+          {
+            "target": "Eu disse",
+            "native": "I said"
+          },
+          {
+            "target": "Eu vi",
+            "native": "I saw"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_pret_5",
+      "type": "translateThis",
+      "question": "Ele não esteve presente na reunião de ontem",
+      "options": [],
+      "correctAnswer": "He was not present at yesterday's meeting"
+    },
+    {
+      "id": "ex_pt_pret_6",
+      "type": "multipleChoice",
+      "question": "No pretérito perfeito, \"Eu fui\" pode ser o passado de quais verbos?",
+      "options": [
+        "Ir e Ser",
+        "Estar e Ter",
+        "Fazer e Dar",
+        "Ficar e Ver"
+      ],
+      "correctAnswer": "Ir e Ser"
+    }
+  ]
+}

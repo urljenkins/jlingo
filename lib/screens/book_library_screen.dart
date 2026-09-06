@@ -359,6 +359,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
       'german': 'DE',
       'italian': 'IT',
       'portuguese': 'PT',
+      'portuguese_br': 'PT',
       'dutch': 'NL',
       'japanese': 'JA',
       'chinese': 'ZH',

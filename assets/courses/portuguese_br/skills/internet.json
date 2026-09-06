@@ -1,0 +1,100 @@
+{
+  "id": "internet",
+  "name": "Internet & Redes Sociais",
+  "description": "Aprende vocabulário para comunicação online",
+  "level": 20,
+  "exercises": [
+    {
+      "id": "ex_int_1",
+      "type": "matchPairs",
+      "question": "Associe o vocabulário da internet",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O correio eletrónico",
+            "native": "Email"
+          },
+          {
+            "target": "A rede social",
+            "native": "Social network"
+          },
+          {
+            "target": "O site",
+            "native": "Website"
+          },
+          {
+            "target": "Pesquisar",
+            "native": "To search"
+          },
+          {
+            "target": "Publicar",
+            "native": "To post"
+          },
+          {
+            "target": "Partilhar",
+            "native": "To share"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_int_2",
+      "type": "translateThis",
+      "question": "Podes enviar-me uma mensagem?",
+      "options": [],
+      "correctAnswer": "Can you send me a message?"
+    },
+    {
+      "id": "ex_int_3",
+      "type": "fillInBlank",
+      "question": "Vou ___ esta foto no Instagram",
+      "options": [
+        "publicar",
+        "comer",
+        "beber",
+        "ir"
+      ],
+      "correctAnswer": "publicar"
+    },
+    {
+      "id": "ex_int_4",
+      "type": "matchPairs",
+      "question": "Associe termos das redes sociais",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Seguir",
+            "native": "To follow"
+          },
+          {
+            "target": "Gostar",
+            "native": "Like"
+          },
+          {
+            "target": "Comentário",
+            "native": "Comment"
+          },
+          {
+            "target": "Perfil",
+            "native": "Profile"
+          },
+          {
+            "target": "Em directo",
+            "native": "Live"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_int_5",
+      "type": "speakThis",
+      "question": "Enviei-te uma mensagem pelo WhatsApp",
+      "options": [],
+      "correctAnswer": "Enviei-te uma mensagem pelo WhatsApp"
+    }
+  ]
+}

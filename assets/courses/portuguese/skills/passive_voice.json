@@ -1,0 +1,85 @@
+{
+  "id": "passive_voice",
+  "name": "Voz Passiva",
+  "description": "Voz passiva analítica (ser + particípio) e sintética (apassivadora com se)",
+  "level": 23,
+  "exercises": [
+    {
+      "id": "ex_pt_pass_1",
+      "type": "translateThis",
+      "question": "O livro foi escrito por um autor consagrado",
+      "options": [],
+      "correctAnswer": "The book was written by an acclaimed author"
+    },
+    {
+      "id": "ex_pt_pass_2",
+      "type": "multipleChoice",
+      "question": "Na voz passiva sintética, a frase correta para venda de apartamentos é:",
+      "options": [
+        "Vendem-se apartamentos",
+        "Vende-se apartamentos",
+        "Vendido os apartamentos",
+        "São vendido apartamentos"
+      ],
+      "correctAnswer": "Vendem-se apartamentos"
+    },
+    {
+      "id": "ex_pt_pass_3",
+      "type": "fillInBlank",
+      "question": "A nova ponte foi inaugurada ___ presidente da República.",
+      "options": [
+        "pelo",
+        "com",
+        "no",
+        "a"
+      ],
+      "correctAnswer": "pelo"
+    },
+    {
+      "id": "ex_pt_pass_4",
+      "type": "matchPairs",
+      "question": "Relacione voz ativa e correspondente passiva",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Eles constroem o prédio",
+            "native": "O prédio é construído por eles"
+          },
+          {
+            "target": "O fogo destruiu a floresta",
+            "native": "A floresta foi destruída pelo fogo"
+          },
+          {
+            "target": "Fala-se português aqui",
+            "native": "Portuguese is spoken here"
+          },
+          {
+            "target": "Descobriram a cura",
+            "native": "A cura foi descoberta"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_pass_5",
+      "type": "translateThis",
+      "question": "Todos os documentos foram assinados ontem à tarde",
+      "options": [],
+      "correctAnswer": "All documents were signed yesterday afternoon"
+    },
+    {
+      "id": "ex_pt_pass_6",
+      "type": "multipleChoice",
+      "question": "Qual a preposição utilizada para introduzir o agente da passiva?",
+      "options": [
+        "Por (pelo / pela)",
+        "Em",
+        "Para",
+        "Sob"
+      ],
+      "correctAnswer": "Por (pelo / pela)"
+    }
+  ]
+}

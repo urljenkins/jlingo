@@ -96,6 +96,7 @@ class OnboardingProvider extends ChangeNotifier {
       case 'french':
         return _frenchQuestions;
       case 'portuguese':
+      case 'portuguese_br':
         return _portugueseQuestions;
       case 'dutch':
         return _dutchQuestions;

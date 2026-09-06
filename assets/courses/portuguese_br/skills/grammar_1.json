@@ -1,0 +1,66 @@
+{
+  "id": "grammar_1",
+  "name": "Gramática: Pronomes",
+  "description": "Aprende pronomes básicos e o verbo 'Ser'",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_g1_1",
+      "type": "multipleChoice",
+      "question": "Como se diz 'They' (masculine) em português?",
+      "options": [
+        "Eles",
+        "Elas",
+        "Nós",
+        "Vocês"
+      ],
+      "correctAnswer": "Eles"
+    },
+    {
+      "id": "ex_g1_2",
+      "type": "translateThis",
+      "question": "Eu sou",
+      "options": [],
+      "correctAnswer": "I am"
+    },
+    {
+      "id": "ex_g1_3",
+      "type": "fillInBlank",
+      "question": "Ele ___ um estudante",
+      "options": [
+        "é",
+        "sou",
+        "és",
+        "somos"
+      ],
+      "correctAnswer": "é"
+    },
+    {
+      "id": "ex_g1_4",
+      "type": "matchPairs",
+      "question": "Associe pronomes com 'Ser'",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Eu sou",
+            "native": "I am"
+          },
+          {
+            "target": "Tu és",
+            "native": "You are"
+          },
+          {
+            "target": "Nós somos",
+            "native": "We are"
+          },
+          {
+            "target": "Eles são",
+            "native": "They are"
+          }
+        ]
+      }
+    }
+  ]
+}

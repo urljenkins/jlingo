@@ -1,0 +1,85 @@
+{
+  "id": "family_1",
+  "name": "Família",
+  "description": "Membros da família, relações de parentesco e estado civil",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_pt_fam_1",
+      "type": "translateThis",
+      "question": "O meu pai e a minha mãe estão em casa",
+      "options": [],
+      "correctAnswer": "My father and my mother are at home"
+    },
+    {
+      "id": "ex_pt_fam_2",
+      "type": "multipleChoice",
+      "question": "Como se diz \"sister\" e \"brother\" em português?",
+      "options": [
+        "Irmã e irmão",
+        "Tia e tio",
+        "Prima e primo",
+        "Filha e filho"
+      ],
+      "correctAnswer": "Irmã e irmão"
+    },
+    {
+      "id": "ex_pt_fam_3",
+      "type": "fillInBlank",
+      "question": "Os pais dos meus pais são os meus ___ .",
+      "options": [
+        "avós",
+        "tios",
+        "primos",
+        "irmãos"
+      ],
+      "correctAnswer": "avós"
+    },
+    {
+      "id": "ex_pt_fam_4",
+      "type": "matchPairs",
+      "question": "Relacione os membros da família",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O filho",
+            "native": "The son"
+          },
+          {
+            "target": "A filha",
+            "native": "The daughter"
+          },
+          {
+            "target": "O neto",
+            "native": "The grandson"
+          },
+          {
+            "target": "A sobrinha",
+            "native": "The niece"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_fam_5",
+      "type": "translateThis",
+      "question": "A minha família é muito unida",
+      "options": [],
+      "correctAnswer": "My family is very close"
+    },
+    {
+      "id": "ex_pt_fam_6",
+      "type": "multipleChoice",
+      "question": "O filho do meu irmão é o meu...",
+      "options": [
+        "Sobrinho",
+        "Primo",
+        "Genro",
+        "Neto"
+      ],
+      "correctAnswer": "Sobrinho"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "getting_around",
+  "name": "Deslocar-se na Cidade",
+  "description": "Mover-se na cidade, bilhetes, percursos e marcos urbanos",
+  "level": 8,
+  "exercises": [
+    {
+      "id": "ex_pt_get_1",
+      "type": "translateThis",
+      "question": "Onde fica a estação de metro mais próxima?",
+      "options": [],
+      "correctAnswer": "Where is the nearest subway station?"
+    },
+    {
+      "id": "ex_pt_get_2",
+      "type": "multipleChoice",
+      "question": "Como se pede um bilhete de ida e volta?",
+      "options": [
+        "Um bilhete de ida e volta, por favor",
+        "Um bilhete de ida apenas",
+        "Um bilhete cancelado",
+        "Uma paragem única"
+      ],
+      "correctAnswer": "Um bilhete de ida e volta, por favor"
+    },
+    {
+      "id": "ex_pt_get_3",
+      "type": "fillInBlank",
+      "question": "Para ir ao centro histórico, pode apanhar o elétrico ___ 28.",
+      "options": [
+        "número",
+        "estação",
+        "paragem",
+        "bilhete"
+      ],
+      "correctAnswer": "número"
+    },
+    {
+      "id": "ex_pt_get_4",
+      "type": "matchPairs",
+      "question": "Relacione vocabulário de deslocação",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "A paragem de autocarro",
+            "native": "Bus stop"
+          },
+          {
+            "target": "A bilheteira",
+            "native": "Ticket office"
+          },
+          {
+            "target": "A plataforma / cais",
+            "native": "Platform"
+          },
+          {
+            "target": "A linha vermelha",
+            "native": "Red line"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_get_5",
+      "type": "translateThis",
+      "question": "Preciso de validar o meu passe antes de entrar",
+      "options": [],
+      "correctAnswer": "I need to validate my pass before entering"
+    },
+    {
+      "id": "ex_pt_get_6",
+      "type": "multipleChoice",
+      "question": "O que significa o verbo \"apanhar o autocarro\"?",
+      "options": [
+        "To catch / take the bus",
+        "To drive the bus",
+        "To buy a bus",
+        "To wash the bus"
+      ],
+      "correctAnswer": "To catch / take the bus"
+    }
+  ]
+}

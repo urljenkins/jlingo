@@ -1,0 +1,85 @@
+{
+  "id": "grammar_ser_estar",
+  "name": "Gramática: Ser & Estar",
+  "description": "Distinga estados permanentes (ser) de estados temporários e localização (estar)",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_pt_se_1",
+      "type": "multipleChoice",
+      "question": "Qual forma verbal completa: \"Eu ___ médico e agora ___ no hospital\"?",
+      "options": [
+        "sou / estou",
+        "estou / sou",
+        "sou / sou",
+        "estou / estou"
+      ],
+      "correctAnswer": "sou / estou"
+    },
+    {
+      "id": "ex_pt_se_2",
+      "type": "fillInBlank",
+      "question": "A sopa ___ muito quente agora (temperatura momentânea).",
+      "options": [
+        "está",
+        "é",
+        "tem",
+        "faz"
+      ],
+      "correctAnswer": "está"
+    },
+    {
+      "id": "ex_pt_se_3",
+      "type": "translateThis",
+      "question": "Ele é simpático, mas hoje está cansado",
+      "options": [],
+      "correctAnswer": "He is nice, but today he is tired"
+    },
+    {
+      "id": "ex_pt_se_4",
+      "type": "matchPairs",
+      "question": "Relacione os usos de Ser e Estar",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Nacionalidade (Ser)",
+            "native": "Sou português"
+          },
+          {
+            "target": "Profissão (Ser)",
+            "native": "Ela é engenheira"
+          },
+          {
+            "target": "Localização (Estar)",
+            "native": "Estamos em Lisboa"
+          },
+          {
+            "target": "Humor / Estado (Estar)",
+            "native": "Ele está contente"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_se_5",
+      "type": "fillInBlank",
+      "question": "Nós ___ de Portugal e ___ felizes aqui.",
+      "options": [
+        "somos / estamos",
+        "estamos / somos",
+        "temos / estamos",
+        "somos / ficamos"
+      ],
+      "correctAnswer": "somos / estamos"
+    },
+    {
+      "id": "ex_pt_se_6",
+      "type": "translateThis",
+      "question": "Onde está o Pedro? Ele é o irmão da Ana.",
+      "options": [],
+      "correctAnswer": "Where is Pedro? He is Ana's brother."
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "id": "listening_pronunciation",
+  "name": "Audição e Pronúncia",
+  "description": "Domina os sons portugueses através de exercícios de audição, prática de pronúncia, diálogos e canções",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "lp_ex_1",
+      "type": "nativeAudio",
+      "question": "Bom dia, como está?",
+      "options": [],
+      "correctAnswer": "Bom dia, como está?",
+      "targetLanguage": "pt-BR",
+      "audioPath": null,
+      "audioAvailable": false,
+      "enabled": false,
+      "metadata": {
+        "speaker": "Falante nativo - Maria",
+        "difficulty": "beginner"
+      }
+    },
+    {
+      "id": "lp_ex_2",
+      "type": "pronunciationPractice",
+      "question": "Chamo-me João e sou de Portugal",
+      "options": [],
+      "correctAnswer": "Chamo-me João e sou de Portugal",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "phonetics": "SHAH-moo meh ZHOH-ow ee soh oo deh POR-too-gahl",
+        "focus": "O som do 'lh' e a entoação"
+      }
+    },
+    {
+      "id": "lp_ex_3",
+      "type": "dialogueListening",
+      "question": "Ouça a conversa num café",
+      "options": [
+        "Ele pediu café",
+        "Ele pediu chá",
+        "Ele pediu água",
+        "Ele pediu suco"
+      ],
+      "correctAnswer": "Ele pediu café",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "type": "dialogue",
+        "context": "Um cliente a pedir num café em São Paulo",
+        "dialogue": [
+          {
+            "speaker": "Garçom",
+            "text": "Bom dia, o que deseja?",
+            "translation": "Good morning, what would you like?"
+          },
+          {
+            "speaker": "Cliente",
+            "text": "Bom dia. Um café com leite, por favor.",
+            "translation": "Good morning. A coffee with milk, please."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Algo mais?",
+            "translation": "Anything else?"
+          },
+          {
+            "speaker": "Cliente",
+            "text": "Não, obrigado. Quanto é?",
+            "translation": "No, thanks. How much is it?"
+          },
+          {
+            "speaker": "Garçom",
+            "text": "São dois euros e cinquenta.",
+            "translation": "That's two euros fifty."
+          }
+        ],
+        "comprehensionQuestion": "O que o cliente pediu?",
+        "correctOptionIndex": 0
+      }
+    },
+    {
+      "id": "lp_ex_4",
+      "type": "songFill",
+      "question": "Aquarela",
+      "options": [],
+      "correctAnswer": "letra,cores,sonho",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "songTitle": "Aquarela",
+        "artist": "Toquinho",
+        "lyrics": [
+          {
+            "text": "Numa folha qualquer eu desenho um sol amarelo",
+            "timestamp": 0
+          },
+          {
+            "text": "E com cinco ou seis retas é fácil fazer um castelo",
+            "timestamp": 3000
+          },
+          {
+            "text": "Corro o mundo inteiro num instante",
+            "timestamp": 6000
+          },
+          {
+            "text": "E vejo as cores que vão surgindo",
+            "timestamp": 9000
+          },
+          {
+            "text": "O céu fica azul e o mar reflete o DNA",
+            "timestamp": 12000
+          },
+          {
+            "text": "E eu construo sonhos com papel e tinta",
+            "timestamp": 15000
+          },
+          {
+            "text": "E no final fica a canção a ecoar",
+            "timestamp": 18000,
+            "translation": "And in the end the song echoes"
+          }
+        ],
+        "blanks": [
+          {
+            "lineIndex": 0,
+            "wordIndex": 3,
+            "correctWord": "amarelo",
+            "hint": "yellow"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lp_ex_5",
+      "type": "pronunciationPractice",
+      "question": "Tenho trinta e três anos",
+      "options": [],
+      "correctAnswer": "Tenho trinta e três anos",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "phonetics": "TENG-oh TREEN-tah ee TRES AH-noos",
+        "focus": "O som nasal em 'trinta' e a entoação de números"
+      }
+    },
+    {
+      "id": "lp_ex_6",
+      "type": "dialogueListening",
+      "question": "Ouça o boletim meteorológico",
+      "options": [
+        "Tempo solar esperado",
+        "Chuva prevista para amanhã",
+        "Neve nas montanhas",
+        "Ventos fortes esta noite"
+      ],
+      "correctAnswer": "Chuva prevista para amanhã",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "type": "news",
+        "context": "Previsão do tempo na televisão nacional portuguesa",
+        "dialogue": [
+          {
+            "speaker": "Apresentador",
+            "text": "Bom dia. Aqui está a previsão do tempo para amanhã.",
+            "translation": "Good morning. Here is the weather forecast for tomorrow."
+          },
+          {
+            "speaker": "Apresentador",
+            "text": "Esperam-se precipitações em várias regiões.",
+            "translation": "Rain is expected in several regions."
+          },
+          {
+            "speaker": "Apresentador",
+            "text": "As temperaturas vão oscilar entre os 12 e os 18 graus.",
+            "translation": "Temperatures will range between 12 and 18 degrees."
+          },
+          {
+            "speaker": "Apresentador",
+            "text": "Recomenda-se levar guarda-chuva.",
+            "translation": "It is recommended to carry an umbrella."
+          }
+        ],
+        "comprehensionQuestion": "Qual é a previsão do tempo para amanhã?",
+        "correctOptionIndex": 1
+      }
+    },
+    {
+      "id": "lp_ex_7",
+      "type": "nativeAudio",
+      "question": "Onde fica a estação de trens?",
+      "options": [],
+      "correctAnswer": "Onde fica a estação de trens?",
+      "targetLanguage": "pt-BR",
+      "audioPath": null,
+      "audioAvailable": false,
+      "enabled": false,
+      "metadata": {
+        "speaker": "Falante nativo - Carlos",
+        "difficulty": "intermediate"
+      }
+    },
+    {
+      "id": "lp_ex_8",
+      "type": "pronunciationPractice",
+      "question": "O cão corre rápido pelo parque",
+      "options": [],
+      "correctAnswer": "O cão corre rápido pelo parque",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "phonetics": "oo KOWN KOH-reh HAH-pee-doo PEH-lo PAR-keh",
+        "focus": "Som nasal em 'cão' e o 'r' vibrante"
+      }
+    },
+    {
+      "id": "lp_ex_9",
+      "type": "dialogueListening",
+      "question": "Ouça a história curta",
+      "options": [
+        "O homem idoso vivia sozinho",
+        "O homem idoso tinha muitos amigos",
+        "O homem idoso era rico",
+        "O homem idoso era jovem"
+      ],
+      "correctAnswer": "O homem idoso vivia sozinho",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "type": "story",
+        "context": "Um conto curto sobre um homem idoso numa aldeia pequena",
+        "dialogue": [
+          {
+            "speaker": "Narrador",
+            "text": "Era uma vez um homem idoso que vivia sozinho numa casa pequena.",
+            "translation": "Once upon a time there was an old man who lived alone in a small house."
+          },
+          {
+            "speaker": "Narrador",
+            "text": "Todos os dias, caminhava até ao mercado da vila.",
+            "translation": "Every day, he walked to the village market."
+          },
+          {
+            "speaker": "Narrador",
+            "text": "Gostava de falar com os vendedores e ouvir as suas histórias.",
+            "translation": "He liked to talk to the vendors and listen to their stories."
+          },
+          {
+            "speaker": "Narrador",
+            "text": "Assim passava os seus dias, em paz e tranquilidade.",
+            "translation": "That's how he spent his days, in peace and tranquility."
+          }
+        ],
+        "comprehensionQuestion": "Como vivia o homem idoso?",
+        "correctOptionIndex": 0
+      }
+    },
+    {
+      "id": "lp_ex_10",
+      "type": "songFill",
+      "question": "Asa Branca",
+      "options": [],
+      "correctAnswer": "sertão,asa,mar",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "songTitle": "Asa Branca",
+        "artist": "Luiz Gonzaga",
+        "lyrics": [
+          {
+            "text": "Quando olhei a terra ardendo qual fogueira",
+            "timestamp": 0,
+            "translation": "When I saw the land burning like a bonfire"
+          },
+          {
+            "text": "Eu perguntei a Deus do céu, ai",
+            "timestamp": 2000
+          },
+          {
+            "text": "Por que tamanha judiação?",
+            "timestamp": 5000
+          },
+          {
+            "text": "Que braseiro, que fornaia, nem um pé de plantação",
+            "timestamp": 8000
+          },
+          {
+            "text": "Por isso, eu vou embora",
+            "timestamp": 10000
+          }
+        ],
+        "blanks": [
+          {
+            "lineIndex": 0,
+            "wordIndex": 3,
+            "correctWord": "fogueira",
+            "hint": "bonfire"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lp_ex_11",
+      "type": "pronunciationPractice",
+      "question": "A cidade tem muitos edifícios altos",
+      "options": [],
+      "correctAnswer": "A cidade tem muitos edifícios altos",
+      "targetLanguage": "pt-BR",
+      "metadata": {
+        "phonetics": "ah see-DAH-djee tehm MOO-toos eh-dee-FEE-see-ohs AH-loots",
+        "focus": "O som do 'd' suave em 'cidade' e 'edifícios'"
+      }
+    },
+    {
+      "id": "lp_ex_12",
+      "type": "nativeAudio",
+      "question": "Gostaria de reservar uma mesa para quatro pessoas",
+      "options": [],
+      "correctAnswer": "Gostaria de reservar uma mesa para quatro pessoas",
+      "targetLanguage": "pt-BR",
+      "audioPath": null,
+      "audioAvailable": false,
+      "enabled": false,
+      "metadata": {
+        "speaker": "Falante nativo - Elena",
+        "difficulty": "intermediate"
+      }
+    }
+  ]
+}

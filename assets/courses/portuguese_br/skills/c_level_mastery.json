@@ -1,0 +1,232 @@
+{
+  "id": "c_level_mastery",
+  "name": "C1/C2 Mastery Capstone",
+  "description": "Master advanced Portuguese rhetoric, syntactic nuances, formal registers, and complex hypothetical discourse",
+  "level": 26,
+  "exercises": [
+    {
+      "id": "ex_pt_c_1",
+      "type": "multipleChoice",
+      "question": "Em registro formal ou acadêmico, qual conector expressa com maior precisão uma concessão incisiva?",
+      "options": [
+        "Não obstante o exposto",
+        "Mas enfim",
+        "É que",
+        "Ou seja"
+      ],
+      "correctAnswer": "Não obstante o exposto"
+    },
+    {
+      "id": "ex_pt_c_2",
+      "type": "fillInBlank",
+      "question": "Tivéssemos nós sido alertados tempestivamente, não nos ___ envolvidos em tal impasse regulatório.",
+      "options": [
+        "teríamos visto",
+        "víamos",
+        "vimos",
+        "veremos"
+      ],
+      "correctAnswer": "teríamos visto"
+    },
+    {
+      "id": "ex_pt_c_3",
+      "type": "matchPairs",
+      "question": "Associe as expressões idiomáticas avançadas ao seu respectivo valor pragmático",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Fazer das tripas coração",
+            "native": "Summon strength in great adversity"
+          },
+          {
+            "target": "Pôr os pontos nos is",
+            "native": "Clarify all details / leave no ambiguity"
+          },
+          {
+            "target": "Dourar a pílula",
+            "native": "Sugarcoat unpleasant news"
+          },
+          {
+            "target": "Tirar o cavalinho da chuva",
+            "native": "Abandon unrealistic expectations"
+          },
+          {
+            "target": "Meter os pés pelas mãos",
+            "native": "Act clumsily / get tangled up"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_c_4",
+      "type": "translationExercise",
+      "question": "Traduza para o inglês: 'À luz das deliberações da comissão, afigura-se premente reformular os pressupostos metodológicos vigentes.'",
+      "options": [],
+      "correctAnswer": "In light of the commission's deliberations, it appears imperative to reformulate the prevailing methodological assumptions.",
+      "metadata": {
+        "direction": "toNative",
+        "sourceText": "À luz das deliberações da comissão, afigura-se premente reformular os pressupostos metodológicos vigentes.",
+        "acceptableAnswers": [
+          "In light of the committee's deliberations, it is urgent to reformulate the current methodological assumptions."
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_c_5",
+      "type": "interactiveDialogue",
+      "question": "Participe de um debate acadêmico sobre políticas públicas",
+      "options": [
+        "Permita-me dissentir; tal inferência desconsidera a assimetria informacional inerente ao processo.",
+        "Não concordo com você.",
+        "Acho isso errado."
+      ],
+      "correctAnswer": "Permita-me dissentir; tal inferência desconsidera a assimetria informacional inerente ao processo.",
+      "metadata": {
+        "dialogue": [
+          {
+            "speaker": "Prof. Silveira",
+            "text": "A desregulamentação setorial engendra inexoravelmente a otimização dos recursos alocados.",
+            "isNative": true
+          },
+          {
+            "speaker": "Pesquisador",
+            "text": "___",
+            "isUserTurn": true,
+            "options": [
+              "Permita-me dissentir; tal inferência desconsidera a assimetria informacional inerente ao processo.",
+              "Não concordo com você.",
+              "Acho isso errado."
+            ]
+          },
+          {
+            "speaker": "Prof. Silveira",
+            "text": "Uma objeção sumamente ponderada que evidencia a premência de salvaguardas institucionais.",
+            "isNative": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_c_6",
+      "type": "clozeTest",
+      "question": "Complete o fragmento com os conectores apropriados: 'O parecer contempla medidas de vulto; ___, sua aplicabilidade imediata suscita reservas. Importa, ___, aprofundar o escrutínio técnico.'",
+      "options": [
+        "contudo",
+        "por conseguinte"
+      ],
+      "correctAnswer": "contudo",
+      "metadata": {
+        "context": "Prosa formal deliberativa",
+        "blanks": [
+          {
+            "index": 0,
+            "answer": "contudo",
+            "options": [
+              "contudo",
+              "porque",
+              "mas que"
+            ]
+          },
+          {
+            "index": 1,
+            "answer": "por conseguinte",
+            "options": [
+              "por conseguinte",
+              "talvez",
+              "assim seja"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_c_7",
+      "type": "storyLesson",
+      "question": "Qual é a reflexão primordial do autor acerca da identidade cultural contemporânea?",
+      "options": [
+        "A identidade é uma tessitura dinâmica e polifônica em permanente ressignificação.",
+        "As culturas devem permanecer estáticas e impermeáveis ao mundo.",
+        "O cosmopolitismo anula qualquer valor histórico local.",
+        "A arte popular prescinde de memória coletiva."
+      ],
+      "correctAnswer": "A identidade é uma tessitura dinâmica e polifônica em permanente ressignificação.",
+      "metadata": {
+        "title": "Ensaio: A Polifonia da Memória",
+        "level": "C1/C2",
+        "story": "Conceber a herança cultural sob a ótica de um repositório imutável consubstancia um manifesto equívoco epistemológico. A memória não reproduz passivamente o pretérito; antes, refunda-o no crisol das inquietações hodiernas. É no diálogo tenso entre a tradição herdada e a ousadia da recriação estética que pulsa a genuína vitalidade de um povo.",
+        "vocabulary": [
+          {
+            "word": "epistemológico",
+            "translation": "epistemological",
+            "highlight": true
+          },
+          {
+            "word": "pretérito",
+            "translation": "past",
+            "highlight": true
+          },
+          {
+            "word": "hodiernas",
+            "translation": "present-day / contemporary",
+            "highlight": true
+          }
+        ],
+        "question": "Qual é a reflexão primordial do autor acerca da identidade cultural contemporânea?"
+      }
+    },
+    {
+      "id": "ex_pt_c_8",
+      "type": "dialogueListening",
+      "question": "Qual é a advertência manifestada pelo orador no colóquio?",
+      "options": [
+        "Ele adverte contra juízos precipitados antes de conclusos os inquéritos periciais.",
+        "Ele exige a destituição sumária de toda a equipa.",
+        "Ele recomenda a paralisação irrestrita das obras.",
+        "Ele recusa qualquer responsabilidade institucional."
+      ],
+      "correctAnswer": "Ele adverte contra juízos precipitados antes de conclusos os inquéritos periciais.",
+      "metadata": {
+        "type": "dialogue",
+        "comprehensionQuestion": "Qual é a advertência manifestada pelo orador no colóquio?",
+        "options": [
+          "Ele adverte contra juízos precipitados antes de conclusos os inquéritos periciais.",
+          "Ele exige a destituição sumária de toda a equipa.",
+          "Ele recomenda a paralisação irrestrita das obras.",
+          "Ele recusa qualquer responsabilidade institucional."
+        ],
+        "correctOptionIndex": 0,
+        "dialogue": [
+          {
+            "speaker": "Repórter",
+            "text": "Podemos inferir das declarações iniciais uma confissão tácita de negligência?"
+          },
+          {
+            "speaker": "Jurista",
+            "text": "Cumpre refutar ilações apressadas; a prudência exegética impõe aguardar o laudo técnico definitivo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_c_9",
+      "type": "multipleChoice",
+      "question": "Qual das frases seguintes emprega corretamente a mesóclise com valor estilístico formal?",
+      "options": [
+        "Celebrar-se-á o acordo assim que dirimidas as controvérsias remanescentes.",
+        "Se celebrará o acordo amanhã.",
+        "Celebrará-se o acordo logo.",
+        "Tinha se celebrado o acordo."
+      ],
+      "correctAnswer": "Celebrar-se-á o acordo assim que dirimidas as controvérsias remanescentes."
+    },
+    {
+      "id": "ex_pt_c_10",
+      "type": "speakThis",
+      "question": "Impende asseverar que a probidade administrativa constitui dever indeclinável de todo gestor público.",
+      "options": [],
+      "correctAnswer": "Impende asseverar que a probidade administrativa constitui dever indeclinável de todo gestor público."
+    }
+  ]
+}

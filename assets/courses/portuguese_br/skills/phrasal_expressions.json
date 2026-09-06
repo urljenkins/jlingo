@@ -1,0 +1,85 @@
+{
+  "id": "phrasal_expressions",
+  "name": "Expressões Frasais & Locuções",
+  "description": "Locuções verbais usuais (acabar de, dar para, ficar de, ter de)",
+  "level": 24,
+  "exercises": [
+    {
+      "id": "ex_pt_phr_1",
+      "type": "translateThis",
+      "question": "Acabei de receber uma ótima notícia",
+      "options": [],
+      "correctAnswer": "I just received great news"
+    },
+    {
+      "id": "ex_pt_phr_2",
+      "type": "multipleChoice",
+      "question": "O que significa a locução verbal \"acabar de + infinitivo\"?",
+      "options": [
+        "To have just done something",
+        "To never do something",
+        "To refuse to do something",
+        "To do something later"
+      ],
+      "correctAnswer": "To have just done something"
+    },
+    {
+      "id": "ex_pt_phr_3",
+      "type": "fillInBlank",
+      "question": "Ficámos ___ encontrar às oito em frente ao teatro.",
+      "options": [
+        "de",
+        "a",
+        "com",
+        "por"
+      ],
+      "correctAnswer": "de"
+    },
+    {
+      "id": "ex_pt_phr_4",
+      "type": "matchPairs",
+      "question": "Relacione as locuções verbais",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Ter de / Ter que",
+            "native": "To have to / Must"
+          },
+          {
+            "target": "Estar prestes a",
+            "native": "To be about to"
+          },
+          {
+            "target": "Deixar de",
+            "native": "To stop / give up doing"
+          },
+          {
+            "target": "Voltar a",
+            "native": "To do again"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_phr_5",
+      "type": "translateThis",
+      "question": "Ele voltou a estudar após vários anos",
+      "options": [],
+      "correctAnswer": "He started studying again after several years"
+    },
+    {
+      "id": "ex_pt_phr_6",
+      "type": "multipleChoice",
+      "question": "A locução \"estar prestes a sair\" expressa:",
+      "options": [
+        "Iminência (about to leave)",
+        "Passado recente",
+        "Impossibilidade",
+        "Dúvida"
+      ],
+      "correctAnswer": "Iminência (about to leave)"
+    }
+  ]
+}

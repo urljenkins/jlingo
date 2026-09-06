@@ -1,0 +1,85 @@
+{
+  "id": "culture",
+  "name": "Cultura & Tradições Lusófonas",
+  "description": "Festas dos Santos Populares, gastronomia, azulejos e o mundo lusófono",
+  "level": 25,
+  "exercises": [
+    {
+      "id": "ex_pt_cul_1",
+      "type": "translateThis",
+      "question": "As festas de Santo António em Lisboa celebram-se em junho",
+      "options": [],
+      "correctAnswer": "The Saint Anthony festivities in Lisbon are celebrated in June"
+    },
+    {
+      "id": "ex_pt_cul_2",
+      "type": "multipleChoice",
+      "question": "Qual o doce conventual tradicional feito de massa folhada e creme em Belém?",
+      "options": [
+        "Pastel de nata (ou pastel de Belém)",
+        "Bolo-rei",
+        "Queijada de Sintra",
+        "Toucinho do céu"
+      ],
+      "correctAnswer": "Pastel de nata (ou pastel de Belém)"
+    },
+    {
+      "id": "ex_pt_cul_3",
+      "type": "fillInBlank",
+      "question": "A arte decorativa tradicional em cerâmica que reveste edifícios em Portugal chama-se ___ .",
+      "options": [
+        "azulejo",
+        "mármore",
+        "madeira",
+        "vidro"
+      ],
+      "correctAnswer": "azulejo"
+    },
+    {
+      "id": "ex_pt_cul_4",
+      "type": "matchPairs",
+      "question": "Relacione os países e capitais da CPLP",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Portugal",
+            "native": "Lisboa"
+          },
+          {
+            "target": "Brasil",
+            "native": "Brasília"
+          },
+          {
+            "target": "Angola",
+            "native": "Luanda"
+          },
+          {
+            "target": "Moçambique",
+            "native": "Maputo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_cul_5",
+      "type": "translateThis",
+      "question": "A palavra \"saudade\" expressa uma profunda nostalgia e sentimento afetivo",
+      "options": [],
+      "correctAnswer": "The word saudade expresses a deep nostalgia and affectionate feeling"
+    },
+    {
+      "id": "ex_pt_cul_6",
+      "type": "multipleChoice",
+      "question": "O maior poeta clássico épico de Portugal, autor de \"Os Lusíadas\", é:",
+      "options": [
+        "Luís de Camões",
+        "Fernando Pessoa",
+        "José Saramago",
+        "Eça de Queirós"
+      ],
+      "correctAnswer": "Luís de Camões"
+    }
+  ]
+}

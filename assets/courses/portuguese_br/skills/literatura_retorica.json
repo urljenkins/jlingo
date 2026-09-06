@@ -1,0 +1,232 @@
+{
+  "id": "literatura_retorica",
+  "name": "Literatura & Retórica",
+  "description": "Explore a alta literatura lusófona, recursos estilísticos complexos, análise filosófica e retórica em português",
+  "level": 27,
+  "exercises": [
+    {
+      "id": "ex_pt_lr_1",
+      "type": "multipleChoice",
+      "question": "Nas 'Memórias Póstumas de Brás Cubas' (Machado de Assis), qual recurso retórico e estrutural desafia frontalmente a linearidade narrativa clássica?",
+      "options": [
+        "A voz de um narrador defunto com ironia volúvel e digressões metanarrativas",
+        "A obediência estrita às regras do teatro clássico francês",
+        "O lirismo ingênuo e sem qualquer crítica social",
+        "A narrativa exclusivamente cronológica em terceira pessoa"
+      ],
+      "correctAnswer": "A voz de um narrador defunto com ironia volúvel e digressões metanarrativas"
+    },
+    {
+      "id": "ex_pt_lr_2",
+      "type": "fillInBlank",
+      "question": "Por mais que se ___ à evidência dos factos, a posteridade saberá aquilatar a grandeza de sua renúncia.",
+      "options": [
+        "esquivem",
+        "esquivavam",
+        "esquivarão",
+        "esquivam"
+      ],
+      "correctAnswer": "esquivem"
+    },
+    {
+      "id": "ex_pt_lr_3",
+      "type": "matchPairs",
+      "question": "Relacione os tropos e conceitos estéticos às suas respetivas definições",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Metonímia",
+            "native": "Figure of speech replacing concept with closely related attribute"
+          },
+          {
+            "target": "Sinestesia",
+            "native": "Blending of different sensory modalities in expression"
+          },
+          {
+            "target": "Zeugma",
+            "native": "Ellipsis where previously used word is omitted in later clauses"
+          },
+          {
+            "target": "Antítese",
+            "native": "Juxtaposition of sharply contrasting ideas"
+          },
+          {
+            "target": "Hipérbato",
+            "native": "Inversion of standard grammatical word order"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_lr_4",
+      "type": "translationExercise",
+      "question": "Traduza para o inglês: 'Longe de constituir um mero subterfúgio retórico, a ironia machadiana opera como instrumento de corrosão das hipocrisias sociais.'",
+      "options": [],
+      "correctAnswer": "Far from constituting a mere rhetorical subterfuge, Machadian irony operates as an instrument for corroding social hypocrisies.",
+      "metadata": {
+        "direction": "toNative",
+        "sourceText": "Longe de constituir um mero subterfúgio retórico, a ironia machadiana opera como instrumento de corrosão das hipocrisias sociais.",
+        "acceptableAnswers": [
+          "Far from being a mere rhetorical subterfuge, Machadian irony operates as a tool to corrode social hypocrisies."
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_lr_5",
+      "type": "interactiveDialogue",
+      "question": "Participe de um colóquio camoniano sobre épica e transcendência",
+      "options": [
+        "Afigura-se-me que a grandeza d'Os Lusíadas reside precisamente na tensão trágica entre o heroísmo imperial e o lamento humano do Velho do Restelo.",
+        "É apenas um poema longo.",
+        "Não tenho opinião."
+      ],
+      "correctAnswer": "Afigura-se-me que a grandeza d'Os Lusíadas reside precisamente na tensão trágica entre o heroísmo imperial e o lamento humano do Velho do Restelo.",
+      "metadata": {
+        "dialogue": [
+          {
+            "speaker": "Profª. Alcântara",
+            "text": "A epopeia de Camões deve ser lida unicamente como uma apologia triunfalista do expansionismo marítimo.",
+            "isNative": true
+          },
+          {
+            "speaker": "Ensaísta",
+            "text": "___",
+            "isUserTurn": true,
+            "options": [
+              "Afigura-se-me que a grandeza d'Os Lusíadas reside precisamente na tensão trágica entre o heroísmo imperial e o lamento humano do Velho do Restelo.",
+              "É apenas um poema longo.",
+              "Não tenho opinião."
+            ]
+          },
+          {
+            "speaker": "Profª. Alcântara",
+            "text": "Uma advertência luminosa: a advertência profética do Velho desestabiliza qualquer leitura ufanista simplificadora.",
+            "isNative": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_lr_6",
+      "type": "clozeTest",
+      "question": "Complete a reflexão ensaística: 'A poesia pessoana não busca apaziguar a angústia existencial; ___ desdobra o sujeito em heterônimos inesgotáveis. Cada máscara poética torna-se, ___, revelação de uma alteridade insondável.'",
+      "options": [
+        "antes",
+        "pois"
+      ],
+      "correctAnswer": "antes",
+      "metadata": {
+        "context": "Crítica poética modernista",
+        "blanks": [
+          {
+            "index": 0,
+            "answer": "antes",
+            "options": [
+              "antes",
+              "mas",
+              "porque"
+            ]
+          },
+          {
+            "index": 1,
+            "answer": "pois",
+            "options": [
+              "pois",
+              "talvez",
+              "quem sabe"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_lr_7",
+      "type": "storyLesson",
+      "question": "Qual é a tese principal exposta no excerto acerca do mistério poético de Clarice Lispector?",
+      "options": [
+        "A escrita clariceana busca capturar o instante epifânico que transcende a lógica racional do idioma.",
+        "Suas obras são simples narrativas de aventuras infantis.",
+        "A autora recusa a introspecção psicológica.",
+        "O texto deve conter apenas diálogos factuais sem metáforas."
+      ],
+      "correctAnswer": "A escrita clariceana busca capturar o instante epifânico que transcende a lógica racional do idioma.",
+      "metadata": {
+        "title": "A vertigem da linguagem em Clarice",
+        "level": "C2",
+        "story": "Ler Clarice Lispector é aventurar-se nas franjas do indizível. A palavra não se contenta em significar: ela tateia a matéria viva da existência, perseguindo o âmago daquilo que se esquiva à nomeação. Nesse corpo-a-corpo febril com o silêncio, a epifania do cotidiano irrompe não como certeza reconfortante, mas como espanto cósmico diante do simples milagre do ser.",
+        "vocabulary": [
+          {
+            "word": "indizível",
+            "translation": "unspeakable / ineffable",
+            "highlight": true
+          },
+          {
+            "word": "âmago",
+            "translation": "core / innermost essence",
+            "highlight": true
+          },
+          {
+            "word": "epifania",
+            "translation": "epiphany / sudden revelation",
+            "highlight": true
+          }
+        ],
+        "question": "Qual é a tese principal exposta no excerto acerca do mistério poético de Clarice Lispector?"
+      }
+    },
+    {
+      "id": "ex_pt_lr_8",
+      "type": "dialogueListening",
+      "question": "Qual é a crítica de fundo feita ao cientificismo positivista pelo debatedor?",
+      "options": [
+        "Que ele amputa da experiência humana a dimensão estética, ética e espiritual que escapa à quantificação.",
+        "Que as ciências naturais produzem medicamentos ineficazes.",
+        "Que os laboratórios são instalações antiquadas.",
+        "Que os matemáticos não sabem escrever prosa."
+      ],
+      "correctAnswer": "Que ele amputa da experiência humana a dimensão estética, ética e espiritual que escapa à quantificação.",
+      "metadata": {
+        "type": "dialogue",
+        "comprehensionQuestion": "Qual é a crítica de fundo feita ao cientificismo positivista pelo debatedor?",
+        "options": [
+          "Que ele amputa da experiência humana a dimensão estética, ética e espiritual que escapa à quantificação.",
+          "Que as ciências naturais produzem medicamentos ineficazes.",
+          "Que os laboratórios são instalações antiquadas.",
+          "Que os matemáticos não sabem escrever prosa."
+        ],
+        "correctOptionIndex": 0,
+        "dialogue": [
+          {
+            "speaker": "Entrevistador",
+            "text": "A métrica empírica não deve constituir o derradeiro crivo de validade do saber humano?"
+          },
+          {
+            "speaker": "Ensaísta",
+            "text": "Reduzir o orbe humano ao quantificável equivale a expurgar do espírito a perplexidade moral e a intuição poética sem as quais a civilização resvala para a barbárie técnica."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_lr_9",
+      "type": "multipleChoice",
+      "question": "Qual é o sentido exato do vocábulo erudito 'inexorável'?",
+      "options": [
+        "Que não cede a súplicas; inflexível, implacável",
+        "Completamente falso",
+        "Sem importância ou banal",
+        "Cheio de dúvidas"
+      ],
+      "correctAnswer": "Que não cede a súplicas; inflexível, implacável"
+    },
+    {
+      "id": "ex_pt_lr_10",
+      "type": "speakThis",
+      "question": "Cumpre desvelar os arcanos do pensamento para erigir uma hermenêutica desprovida de preconceitos dogmáticos.",
+      "options": [],
+      "correctAnswer": "Cumpre desvelar os arcanos do pensamento para erigir uma hermenêutica desprovida de preconceitos dogmáticos."
+    }
+  ]
+}

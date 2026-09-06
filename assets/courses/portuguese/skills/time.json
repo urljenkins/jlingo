@@ -1,0 +1,85 @@
+{
+  "id": "time",
+  "name": "Que horas são?",
+  "description": "Perguntar e dizer as horas, horários e expressões temporais",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "ex_pt_time_1",
+      "type": "translateThis",
+      "question": "São três e meia da tarde",
+      "options": [],
+      "correctAnswer": "It is three thirty in the afternoon"
+    },
+    {
+      "id": "ex_pt_time_2",
+      "type": "multipleChoice",
+      "question": "Como se pergunta a hora em português?",
+      "options": [
+        "Que horas são?",
+        "Quantos tempos são?",
+        "Como é a hora?",
+        "Onde está o relógio?"
+      ],
+      "correctAnswer": "Que horas são?"
+    },
+    {
+      "id": "ex_pt_time_3",
+      "type": "fillInBlank",
+      "question": "É ___ hora em ponto.",
+      "options": [
+        "uma",
+        "um",
+        "dois",
+        "umas"
+      ],
+      "correctAnswer": "uma"
+    },
+    {
+      "id": "ex_pt_time_4",
+      "type": "matchPairs",
+      "question": "Relacione expressões de horário",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Meio-dia",
+            "native": "Noon"
+          },
+          {
+            "target": "Meia-noite",
+            "native": "Midnight"
+          },
+          {
+            "target": "Um quarto para as quatro",
+            "native": "A quarter to four"
+          },
+          {
+            "target": "Dez para as oito",
+            "native": "Ten to eight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_time_5",
+      "type": "translateThis",
+      "question": "O comboio parte às oito da manhã",
+      "options": [],
+      "correctAnswer": "The train leaves at eight in the morning"
+    },
+    {
+      "id": "ex_pt_time_6",
+      "type": "multipleChoice",
+      "question": "O que significa \"em ponto\" em horários?",
+      "options": [
+        "Exactly / On the dot",
+        "Approximately",
+        "Late",
+        "In a minute"
+      ],
+      "correctAnswer": "Exactly / On the dot"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "hotel",
+  "name": "No Hotel",
+  "description": "Aprende vocabulário para estadias em hotéis",
+  "level": 17,
+  "exercises": [
+    {
+      "id": "ex_hot_1",
+      "type": "matchPairs",
+      "question": "Associe o vocabulário do hotel",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O quarto",
+            "native": "The room"
+          },
+          {
+            "target": "A recepção",
+            "native": "The reception"
+          },
+          {
+            "target": "A chave",
+            "native": "The key"
+          },
+          {
+            "target": "O elevador",
+            "native": "The elevator"
+          },
+          {
+            "target": "Café da manhã incluído",
+            "native": "Breakfast included"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_hot_2",
+      "type": "translateThis",
+      "question": "Tenho uma reserva em nome de Garcia",
+      "options": [],
+      "correctAnswer": "I have a reservation under the name García"
+    },
+    {
+      "id": "ex_hot_3",
+      "type": "fillInBlank",
+      "question": "Gostaria de um quarto ___ para duas noites",
+      "options": [
+        "duplo",
+        "duas",
+        "par",
+        "grande"
+      ],
+      "correctAnswer": "duplo"
+    },
+    {
+      "id": "ex_hot_4",
+      "type": "multipleChoice",
+      "question": "Como se pergunta 'A que horas é o check-out?'",
+      "options": [
+        "A que horas é o check-out?",
+        "Quando posso entrar?",
+        "Onde está a chave?",
+        "Quanto custa?"
+      ],
+      "correctAnswer": "A que horas é o check-out?"
+    },
+    {
+      "id": "ex_hot_5",
+      "type": "speakThis",
+      "question": "Tem quartos disponíveis?",
+      "options": [],
+      "correctAnswer": "Tem quartos disponíveis?"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "slang",
+  "name": "Gírias & Linguagem Informal",
+  "description": "Coloquialismos comuns no Brasil e em Portugal (legal, bacana, massa, giro, fixe)",
+  "level": 24,
+  "exercises": [
+    {
+      "id": "ex_pt_slg_1",
+      "type": "translateThis",
+      "question": "Aquele concerto foi mesmo fixe!",
+      "options": [],
+      "correctAnswer": "That concert was really cool!"
+    },
+    {
+      "id": "ex_pt_slg_2",
+      "type": "multipleChoice",
+      "question": "No Brasil, quando algo é agradável, bonito ou atraente, costuma-se dizer que é:",
+      "options": [
+        "Legal / Bacana",
+        "Frio",
+        "Longe",
+        "Pesado"
+      ],
+      "correctAnswer": "Legal / Bacana"
+    },
+    {
+      "id": "ex_pt_slg_3",
+      "type": "fillInBlank",
+      "question": "No Brasil, \"um rapaz novo\" costuma ser chamado de ___ .",
+      "options": [
+        "garoto (ou moleque)",
+        "velho",
+        "chefe",
+        "doutor"
+      ],
+      "correctAnswer": "garoto (ou moleque)"
+    },
+    {
+      "id": "ex_pt_slg_4",
+      "type": "matchPairs",
+      "question": "Relacione gírias do Brasil e de Portugal",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Legal / Bacana (BR)",
+            "native": "Fixe (PT)"
+          },
+          {
+            "target": "Café da manhã (BR)",
+            "native": "Pequeno-almoço (PT)"
+          },
+          {
+            "target": "Celular (BR)",
+            "native": "Telemóvel (PT)"
+          },
+          {
+            "target": "Ônibus (BR)",
+            "native": "Autocarro (PT)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_slg_5",
+      "type": "translateThis",
+      "question": "Vamos combinar um café logo à tarde",
+      "options": [],
+      "correctAnswer": "Let's arrange to have coffee later this afternoon"
+    },
+    {
+      "id": "ex_pt_slg_6",
+      "type": "multipleChoice",
+      "question": "A expressão \"Massa\" no Brasil significa:",
+      "options": [
+        "Muito bom / Excelente",
+        "Pouco",
+        "Nada",
+        "Talvez"
+      ],
+      "correctAnswer": "Muito bom / Excelente"
+    }
+  ]
+}

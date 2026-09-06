@@ -1,0 +1,146 @@
+{
+  "id": "portuguese_br_dict",
+  "name": "Dicionário Visual — Português do Brasil",
+  "targetLanguage": "pt-BR",
+  "nativeLanguage": "en-US",
+  "topics": [
+    {
+      "id": "topic_food_pt",
+      "name": "Comida e Bebida",
+      "description": "Alimentos e bebidas em português",
+      "iconName": "restaurant",
+      "coverImageUrl": "assets/images/topics/food.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_pao_pt",
+          "word": "pão",
+          "translation": "Bread",
+          "pronunciation": "/pɐ̃w̃/",
+          "imageUrl": "assets/images/dict/pan.png",
+          "article": "o",
+          "pluralForm": "os pães",
+          "relatedWords": [
+            "padaria",
+            "manteiga",
+            "tosta"
+          ],
+          "usageNote": "Muito consumido ao café da manhã."
+        },
+        {
+          "id": "pde_maca_pt",
+          "word": "maçã",
+          "translation": "Apple",
+          "pronunciation": "/mɐˈsɐ̃/",
+          "imageUrl": "assets/images/dict/manzana.png",
+          "article": "a",
+          "pluralForm": "as maçãs",
+          "relatedWords": [
+            "fruta",
+            "vermelho",
+            "árvore"
+          ],
+          "usageNote": "Fruta comum em sobremesas e lanches."
+        },
+        {
+          "id": "pde_leite_pt",
+          "word": "leite",
+          "translation": "Milk",
+          "pronunciation": "/ˈlɐj.tɨ/",
+          "imageUrl": "assets/images/dict/leche.png",
+          "article": "o",
+          "pluralForm": "os leites",
+          "relatedWords": [
+            "vaca",
+            "queijo",
+            "café"
+          ],
+          "usageNote": "Usado para fazer 'galão' ou 'meia de leite'."
+        },
+        {
+          "id": "pde_agua_pt",
+          "word": "água",
+          "translation": "Water",
+          "pronunciation": "/ˈa.ɡwɐ/",
+          "imageUrl": "assets/images/dict/agua.png",
+          "article": "a",
+          "pluralForm": "as águas",
+          "relatedWords": [
+            "beber",
+            "copo",
+            "garrafa"
+          ],
+          "usageNote": "Essencial no dia a dia."
+        }
+      ]
+    },
+    {
+      "id": "topic_family_pt",
+      "name": "A Família",
+      "description": "Membros da família e laços familiares",
+      "iconName": "people",
+      "coverImageUrl": "assets/images/topics/family.png",
+      "difficulty": 1,
+      "entries": [
+        {
+          "id": "pde_mae_pt",
+          "word": "mãe",
+          "translation": "Mother",
+          "pronunciation": "/mɐ̃j̃/",
+          "imageUrl": "assets/images/dict/madre.png",
+          "article": "a",
+          "pluralForm": "as mães",
+          "relatedWords": [
+            "mamã",
+            "pai",
+            "filhos"
+          ],
+          "usageNote": "'Mamã' é a forma carinhosa."
+        },
+        {
+          "id": "pde_pai_pt",
+          "word": "pai",
+          "translation": "Father",
+          "pronunciation": "/paj/",
+          "imageUrl": "assets/images/dict/padre.png",
+          "article": "o",
+          "pluralForm": "os pais",
+          "relatedWords": [
+            "papá",
+            "mãe",
+            "filhos"
+          ],
+          "usageNote": "'Os pais' também se refere aos progenitores em geral."
+        },
+        {
+          "id": "pde_irmao_pt",
+          "word": "irmão",
+          "translation": "Brother",
+          "pronunciation": "/iɾˈmɐ̃w̃/",
+          "imageUrl": "assets/images/dict/hermano.png",
+          "article": "o",
+          "pluralForm": "os irmãos",
+          "relatedWords": [
+            "irmã",
+            "família"
+          ],
+          "usageNote": "'Irmãos' pode referir-se a irmãos e irmãs coletivamente."
+        },
+        {
+          "id": "pde_avo_pt",
+          "word": "avô",
+          "translation": "Grandfather",
+          "pronunciation": "/ɐˈvo/",
+          "imageUrl": "assets/images/dict/abuelo.png",
+          "article": "o",
+          "pluralForm": "os avós",
+          "relatedWords": [
+            "avó",
+            "netos"
+          ],
+          "usageNote": "'Avô' (circunflexo) é masculino; 'avó' (acento agudo) é feminino."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "alphabet",
+  "name": "Alfabeto & Sons",
+  "description": "Aprenda os sons, acentos e pronúncia fundamental do português",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_pt_alph_1",
+      "type": "multipleChoice",
+      "question": "Qual o som do til (~) em português em palavras como \"pão\" e \"mão\"?",
+      "options": [
+        "Vogal nasal",
+        "Vogal muda",
+        "Consoante oclusiva",
+        "Semivogal aberta"
+      ],
+      "correctAnswer": "Vogal nasal"
+    },
+    {
+      "id": "ex_pt_alph_2",
+      "type": "translateThis",
+      "question": "A maçã é doce",
+      "options": [],
+      "correctAnswer": "The apple is sweet"
+    },
+    {
+      "id": "ex_pt_alph_3",
+      "type": "fillInBlank",
+      "question": "O coração bate forte. \"Coração\" tem terminação ___ .",
+      "options": [
+        "-ão",
+        "-am",
+        "-om",
+        "-um"
+      ],
+      "correctAnswer": "-ão"
+    },
+    {
+      "id": "ex_pt_alph_4",
+      "type": "matchPairs",
+      "question": "Relacione os caracteres e suas pronúncias",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ç (cê-cedilha)",
+            "native": "Soft \"s\" sound before a, o, u"
+          },
+          {
+            "target": "lh",
+            "native": "Like \"lli\" in million"
+          },
+          {
+            "target": "nh",
+            "native": "Nasal like \"ni\" in onion"
+          },
+          {
+            "target": "rr",
+            "native": "Guttural or strong rolled r"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_alph_5",
+      "type": "multipleChoice",
+      "question": "Como se pronuncia a letra \"j\" em português (ex: \"janela\", \"jogo\")?",
+      "options": [
+        "Como \"s\" em measure ou \"zh\"",
+        "Como \"h\" aspirado em inglês",
+        "Como \"y\" em yes",
+        "Como som mudo"
+      ],
+      "correctAnswer": "Como \"s\" em measure ou \"zh\""
+    },
+    {
+      "id": "ex_pt_alph_6",
+      "type": "translateThis",
+      "question": "O pássaro canta",
+      "options": [],
+      "correctAnswer": "The bird sings"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "travel",
+  "name": "Viagens & Turismo",
+  "description": "Bagagem, passaportes, aeroporto, alfândega e embarque",
+  "level": 17,
+  "exercises": [
+    {
+      "id": "ex_pt_trav_1",
+      "type": "translateThis",
+      "question": "Onde posso despachar a minha bagagem de porão?",
+      "options": [],
+      "correctAnswer": "Where can I check in my hold luggage?"
+    },
+    {
+      "id": "ex_pt_trav_2",
+      "type": "multipleChoice",
+      "question": "Documento essencial para viagens internacionais fora do espaço Schengen:",
+      "options": [
+        "Passaporte",
+        "Cartão de estudante",
+        "Carta de condução",
+        "Recibo de compra"
+      ],
+      "correctAnswer": "Passaporte"
+    },
+    {
+      "id": "ex_pt_trav_3",
+      "type": "fillInBlank",
+      "question": "A porta de ___ do voo para Lisboa mudou para a número 14.",
+      "options": [
+        "embarque",
+        "saída",
+        "entrada",
+        "espera"
+      ],
+      "correctAnswer": "embarque"
+    },
+    {
+      "id": "ex_pt_trav_4",
+      "type": "matchPairs",
+      "question": "Relacione o vocabulário de aeroporto",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O cartão de embarque",
+            "native": "Boarding pass"
+          },
+          {
+            "target": "A alfândega",
+            "native": "Customs"
+          },
+          {
+            "target": "A mala de mão",
+            "native": "Carry-on luggage"
+          },
+          {
+            "target": "O controlo de segurança",
+            "native": "Security check"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_trav_5",
+      "type": "translateThis",
+      "question": "Tenha uma excelente viagem e boas férias!",
+      "options": [],
+      "correctAnswer": "Have a great trip and good holidays!"
+    },
+    {
+      "id": "ex_pt_trav_6",
+      "type": "multipleChoice",
+      "question": "Quando um voo está atrasado, no painel aparece:",
+      "options": [
+        "Atrasado",
+        "Cancelado",
+        "Embarque imediato",
+        "No horário"
+      ],
+      "correctAnswer": "Atrasado"
+    }
+  ]
+}

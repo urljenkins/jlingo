@@ -1,0 +1,85 @@
+{
+  "id": "work",
+  "name": "Trabalho & Profissões",
+  "description": "Carreiras, entrevistas de emprego, empresas e ambiente profissional",
+  "level": 19,
+  "exercises": [
+    {
+      "id": "ex_pt_work_1",
+      "type": "translateThis",
+      "question": "Trabalho como gestor de projetos numa empresa multinacional",
+      "options": [],
+      "correctAnswer": "I work as a project manager at a multinational company"
+    },
+    {
+      "id": "ex_pt_work_2",
+      "type": "multipleChoice",
+      "question": "Como se chama o documento que resume o histórico profissional?",
+      "options": [
+        "Currículo (Curriculum Vitae)",
+        "Contrato",
+        "Fatura",
+        "Diploma"
+      ],
+      "correctAnswer": "Currículo (Curriculum Vitae)"
+    },
+    {
+      "id": "ex_pt_work_3",
+      "type": "fillInBlank",
+      "question": "Amanhã tenho uma ___ de emprego muito importante.",
+      "options": [
+        "entrevista",
+        "reunião",
+        "chamada",
+        "conferência"
+      ],
+      "correctAnswer": "entrevista"
+    },
+    {
+      "id": "ex_pt_work_4",
+      "type": "matchPairs",
+      "question": "Relacione as profissões",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O advogado",
+            "native": "The lawyer"
+          },
+          {
+            "target": "O contabilista / contador",
+            "native": "The accountant"
+          },
+          {
+            "target": "O arquiteto",
+            "native": "The architect"
+          },
+          {
+            "target": "A enfermeira",
+            "native": "The nurse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_work_5",
+      "type": "translateThis",
+      "question": "O salário é pago no fim do mês",
+      "options": [],
+      "correctAnswer": "The salary is paid at the end of the month"
+    },
+    {
+      "id": "ex_pt_work_6",
+      "type": "multipleChoice",
+      "question": "O termo \"teletrabalho\" refere-se a:",
+      "options": [
+        "Trabalho remoto / em casa",
+        "Trabalhar na televisão",
+        "Trabalho voluntário",
+        "Trabalho fabril"
+      ],
+      "correctAnswer": "Trabalho remoto / em casa"
+    }
+  ]
+}

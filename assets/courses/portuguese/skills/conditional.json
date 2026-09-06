@@ -1,0 +1,85 @@
+{
+  "id": "conditional",
+  "name": "Condicional (Futuro do Pretérito)",
+  "description": "Expressar hipóteses, desejos e polidez formal (-ia, -ias, -íamos)",
+  "level": 22,
+  "exercises": [
+    {
+      "id": "ex_pt_cond_1",
+      "type": "translateThis",
+      "question": "Eu gostaria de viajar pelo mundo inteiro",
+      "options": [],
+      "correctAnswer": "I would like to travel around the whole world"
+    },
+    {
+      "id": "ex_pt_cond_2",
+      "type": "multipleChoice",
+      "question": "Qual é a forma condicional do verbo \"fazer\" para nós?",
+      "options": [
+        "Faríamos",
+        "Fazíamos",
+        "Faremos",
+        "Fizéssemos"
+      ],
+      "correctAnswer": "Faríamos"
+    },
+    {
+      "id": "ex_pt_cond_3",
+      "type": "fillInBlank",
+      "question": "Se eu tivesse tempo, ___ mais frequentemente.",
+      "options": [
+        "viajaria",
+        "viajo",
+        "viajei",
+        "viajasse"
+      ],
+      "correctAnswer": "viajaria"
+    },
+    {
+      "id": "ex_pt_cond_4",
+      "type": "matchPairs",
+      "question": "Relacione as formas condicionais irregulares",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Dizer -> Diria",
+            "native": "Would say"
+          },
+          {
+            "target": "Fazer -> Faria",
+            "native": "Would do / make"
+          },
+          {
+            "target": "Trazer -> Traria",
+            "native": "Would bring"
+          },
+          {
+            "target": "Poder -> Poderia",
+            "native": "Could / Would be able"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_cond_5",
+      "type": "translateThis",
+      "question": "Poderia trazer-me a conta, por favor?",
+      "options": [],
+      "correctAnswer": "Could you bring me the bill, please?"
+    },
+    {
+      "id": "ex_pt_cond_6",
+      "type": "multipleChoice",
+      "question": "Em situações formais, o condicional serve principalmente para:",
+      "options": [
+        "Atenuar pedidos com cortesia",
+        "Dar ordens imperativas",
+        "Indicar certeza absoluta",
+        "Narrar o passado distante"
+      ],
+      "correctAnswer": "Atenuar pedidos com cortesia"
+    }
+  ]
+}

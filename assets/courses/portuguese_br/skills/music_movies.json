@@ -1,0 +1,85 @@
+{
+  "id": "music_movies",
+  "name": "Música & Cinema",
+  "description": "Géneros musicais, filmes, atores e entretenimento audiovisual",
+  "level": 18,
+  "exercises": [
+    {
+      "id": "ex_pt_mm_1",
+      "type": "translateThis",
+      "question": "O Fado é um género musical tradicional de Portugal",
+      "options": [],
+      "correctAnswer": "Fado is a traditional musical genre from Portugal"
+    },
+    {
+      "id": "ex_pt_mm_2",
+      "type": "multipleChoice",
+      "question": "Como se chamam as legendas de um filme estrangeiro?",
+      "options": [
+        "Legendas",
+        "Pistas",
+        "Letras",
+        "Notas"
+      ],
+      "correctAnswer": "Legendas"
+    },
+    {
+      "id": "ex_pt_mm_3",
+      "type": "fillInBlank",
+      "question": "Comprei dois bilhetes para o ___ de música ao vivo este sábado.",
+      "options": [
+        "concerto",
+        "cinema",
+        "museu",
+        "livro"
+      ],
+      "correctAnswer": "concerto"
+    },
+    {
+      "id": "ex_pt_mm_4",
+      "type": "matchPairs",
+      "question": "Relacione o vocabulário de cinema e música",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O realizador / diretor",
+            "native": "The film director"
+          },
+          {
+            "target": "A banda sonora / trilha sonora",
+            "native": "The soundtrack"
+          },
+          {
+            "target": "O ator principal",
+            "native": "The lead actor"
+          },
+          {
+            "target": "A sessão da tarde",
+            "native": "The afternoon screening"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_mm_5",
+      "type": "translateThis",
+      "question": "Este filme foi premiado em vários festivais internacionais",
+      "options": [],
+      "correctAnswer": "This movie was awarded in several international festivals"
+    },
+    {
+      "id": "ex_pt_mm_6",
+      "type": "multipleChoice",
+      "question": "Quem é a fadista histórica mais famosa do mundo?",
+      "options": [
+        "Amália Rodrigues",
+        "Carmen Miranda",
+        "Cesária Évora",
+        "Elis Regina"
+      ],
+      "correctAnswer": "Amália Rodrigues"
+    }
+  ]
+}

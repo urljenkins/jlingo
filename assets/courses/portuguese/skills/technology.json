@@ -1,0 +1,85 @@
+{
+  "id": "technology",
+  "name": "Tecnologia & Inovação",
+  "description": "Dispositivos, computadores, inteligência artificial e ficheiros digitais",
+  "level": 20,
+  "exercises": [
+    {
+      "id": "ex_pt_tech_1",
+      "type": "translateThis",
+      "question": "O meu computador portátil tem uma bateria duradoura",
+      "options": [],
+      "correctAnswer": "My laptop has a long-lasting battery"
+    },
+    {
+      "id": "ex_pt_tech_2",
+      "type": "multipleChoice",
+      "question": "Em Portugal, \"mouse\" e \"screen\" de computador dizem-se:",
+      "options": [
+        "Rato e ecrã",
+        "Mouse e tela",
+        "Apontador e monitor",
+        "Sensor e vidro"
+      ],
+      "correctAnswer": "Rato e ecrã"
+    },
+    {
+      "id": "ex_pt_tech_3",
+      "type": "fillInBlank",
+      "question": "Preciso de descarregar uma nova ___ no telemóvel.",
+      "options": [
+        "aplicação (app)",
+        "bateria",
+        "tomada",
+        "câmara"
+      ],
+      "correctAnswer": "aplicação (app)"
+    },
+    {
+      "id": "ex_pt_tech_4",
+      "type": "matchPairs",
+      "question": "Relacione os termos tecnológicos",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Guardar o ficheiro",
+            "native": "Save the file"
+          },
+          {
+            "target": "A palavra-passe / senha",
+            "native": "The password"
+          },
+          {
+            "target": "O disco rígido",
+            "native": "Hard drive"
+          },
+          {
+            "target": "A inteligência artificial",
+            "native": "Artificial intelligence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_tech_5",
+      "type": "translateThis",
+      "question": "A inteligência artificial está a transformar a tecnologia",
+      "options": [],
+      "correctAnswer": "Artificial intelligence is transforming technology"
+    },
+    {
+      "id": "ex_pt_tech_6",
+      "type": "multipleChoice",
+      "question": "O que significa o verbo \"descarregar\" ou \"fazer download\"?",
+      "options": [
+        "To download",
+        "To upload",
+        "To delete",
+        "To restart"
+      ],
+      "correctAnswer": "To download"
+    }
+  ]
+}

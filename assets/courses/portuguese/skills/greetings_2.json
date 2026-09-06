@@ -1,0 +1,85 @@
+{
+  "id": "greetings_2",
+  "name": "Cumprimentos 2",
+  "description": "Saudações formais, despedidas e cortesia no dia a dia",
+  "level": 1,
+  "exercises": [
+    {
+      "id": "ex_pt_greet2_1",
+      "type": "multipleChoice",
+      "question": "Como se deseja uma boa noite ao chegar a um local?",
+      "options": [
+        "Boa noite",
+        "Bom dia",
+        "Boa tarde",
+        "Até amanhã"
+      ],
+      "correctAnswer": "Boa noite"
+    },
+    {
+      "id": "ex_pt_greet2_2",
+      "type": "translateThis",
+      "question": "Até logo, tenha um bom dia!",
+      "options": [],
+      "correctAnswer": "See you soon, have a good day!"
+    },
+    {
+      "id": "ex_pt_greet2_3",
+      "type": "fillInBlank",
+      "question": "Foi um ___ conhecê-lo.",
+      "options": [
+        "prazer",
+        "saudade",
+        "nome",
+        "olá"
+      ],
+      "correctAnswer": "prazer"
+    },
+    {
+      "id": "ex_pt_greet2_4",
+      "type": "matchPairs",
+      "question": "Relacione cumprimentos formais e informais",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Com licença",
+            "native": "Excuse me"
+          },
+          {
+            "target": "De nada",
+            "native": "You are welcome"
+          },
+          {
+            "target": "Até já",
+            "native": "See you in a bit"
+          },
+          {
+            "target": "Desculpe",
+            "native": "Sorry / Excuse me"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_greet2_5",
+      "type": "translateThis",
+      "question": "Tudo bem consigo?",
+      "options": [],
+      "correctAnswer": "Is everything good with you?"
+    },
+    {
+      "id": "ex_pt_greet2_6",
+      "type": "multipleChoice",
+      "question": "Qual é a resposta mais comum a \"Como vai?\"",
+      "options": [
+        "Tudo bem, obrigado",
+        "Adeus",
+        "Chamo-me Pedro",
+        "De nada"
+      ],
+      "correctAnswer": "Tudo bem, obrigado"
+    }
+  ]
+}

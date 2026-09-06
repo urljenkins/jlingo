@@ -1,0 +1,85 @@
+{
+  "id": "clothing",
+  "name": "Vestuário",
+  "description": "Peças de roupa, calçado e acessórios do quotidiano",
+  "level": 6,
+  "exercises": [
+    {
+      "id": "ex_pt_cloth_1",
+      "type": "translateThis",
+      "question": "Preciso de comprar um casaco novo para o inverno",
+      "options": [],
+      "correctAnswer": "I need to buy a new coat for the winter"
+    },
+    {
+      "id": "ex_pt_cloth_2",
+      "type": "multipleChoice",
+      "question": "Como se diz \"trousers / pants\" em português?",
+      "options": [
+        "Calças",
+        "Camisa",
+        "Vestido",
+        "Sapatos"
+      ],
+      "correctAnswer": "Calças"
+    },
+    {
+      "id": "ex_pt_cloth_3",
+      "type": "fillInBlank",
+      "question": "Ela usa uma ___ amarela e uma saia preta.",
+      "options": [
+        "camisola",
+        "chapéu",
+        "sapato",
+        "cinto"
+      ],
+      "correctAnswer": "camisola"
+    },
+    {
+      "id": "ex_pt_cloth_4",
+      "type": "matchPairs",
+      "question": "Relacione as peças de vestuário",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "A saia",
+            "native": "The skirt"
+          },
+          {
+            "target": "O fato (ou terno)",
+            "native": "The suit"
+          },
+          {
+            "target": "As sapatilhas / ténis",
+            "native": "The sneakers"
+          },
+          {
+            "target": "O chapéu",
+            "native": "The hat"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_cloth_5",
+      "type": "translateThis",
+      "question": "Estes sapatos são muito confortáveis",
+      "options": [],
+      "correctAnswer": "These shoes are very comfortable"
+    },
+    {
+      "id": "ex_pt_cloth_6",
+      "type": "multipleChoice",
+      "question": "O que se calça nos pés antes dos sapatos?",
+      "options": [
+        "Meias",
+        "Luvas",
+        "Cachecol",
+        "Gravata"
+      ],
+      "correctAnswer": "Meias"
+    }
+  ]
+}

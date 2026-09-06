@@ -5,8 +5,8 @@
   "nativeLanguage": "en-US",
   "skills": [
     {
-      "id": "introductions",
-      "name": "Introductions",
+      "id": "alphabet",
+      "name": "Alphabet & Sounds",
       "level": 1,
       "section": "foundational"
     },
@@ -17,8 +17,32 @@
       "section": "foundational"
     },
     {
+      "id": "greetings_2",
+      "name": "Greetings 2",
+      "level": 1,
+      "section": "foundational"
+    },
+    {
+      "id": "introductions",
+      "name": "Introductions",
+      "level": 1,
+      "section": "foundational"
+    },
+    {
+      "id": "basics_2",
+      "name": "Basics 2",
+      "level": 2,
+      "section": "foundational"
+    },
+    {
       "id": "listening_pronunciation",
       "name": "Listening & Pronunciation",
+      "level": 2,
+      "section": "foundational"
+    },
+    {
+      "id": "family_1",
+      "name": "Family",
       "level": 2,
       "section": "foundational"
     },
@@ -29,9 +53,15 @@
       "section": "foundational"
     },
     {
-      "id": "basics_2",
-      "name": "Basics 2",
+      "id": "grammar_articles",
+      "name": "Grammar: Articles & Contractions",
       "level": 2,
+      "section": "foundational"
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "level": 3,
       "section": "foundational"
     },
     {
@@ -41,8 +71,8 @@
       "section": "foundational"
     },
     {
-      "id": "numbers",
-      "name": "Numbers",
+      "id": "ordinal_numbers",
+      "name": "Ordinal Numbers",
       "level": 3,
       "section": "foundational"
     },
@@ -59,9 +89,45 @@
       "section": "foundational"
     },
     {
+      "id": "time",
+      "name": "Telling Time",
+      "level": 4,
+      "section": "foundational"
+    },
+    {
+      "id": "food",
+      "name": "Food",
+      "level": 5,
+      "section": "foundational"
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "level": 5,
+      "section": "foundational"
+    },
+    {
+      "id": "animals",
+      "name": "Animals",
+      "level": 5,
+      "section": "foundational"
+    },
+    {
       "id": "reading_writing",
       "name": "Reading & Writing",
       "level": 5,
+      "section": "foundational"
+    },
+    {
+      "id": "clothing",
+      "name": "Clothing",
+      "level": 6,
+      "section": "foundational"
+    },
+    {
+      "id": "weather",
+      "name": "Weather",
+      "level": 6,
       "section": "foundational"
     },
     {
@@ -71,8 +137,50 @@
       "section": "foundational"
     },
     {
+      "id": "grammar_ser_estar",
+      "name": "Grammar: Ser & Estar",
+      "level": 7,
+      "section": "foundational"
+    },
+    {
+      "id": "grammar_tener",
+      "name": "Grammar: Ter (To Have)",
+      "level": 7,
+      "section": "foundational"
+    },
+    {
+      "id": "present_tense",
+      "name": "Present Tense",
+      "level": 7,
+      "section": "foundational"
+    },
+    {
+      "id": "daily_routine",
+      "name": "Daily Routine",
+      "level": 8,
+      "section": "foundational"
+    },
+    {
+      "id": "reflexive_verbs",
+      "name": "Reflexive Verbs",
+      "level": 8,
+      "section": "foundational"
+    },
+    {
+      "id": "getting_around",
+      "name": "Getting Around",
+      "level": 8,
+      "section": "foundational"
+    },
+    {
       "id": "directions",
       "name": "Directions",
+      "level": 9,
+      "section": "intermediate"
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
       "level": 9,
       "section": "intermediate"
     },
@@ -83,9 +191,51 @@
       "section": "intermediate"
     },
     {
+      "id": "at_the_market",
+      "name": "At the Market",
+      "level": 10,
+      "section": "intermediate"
+    },
+    {
+      "id": "services",
+      "name": "Services",
+      "level": 10,
+      "section": "intermediate"
+    },
+    {
+      "id": "restaurant",
+      "name": "At the Restaurant",
+      "level": 11,
+      "section": "intermediate"
+    },
+    {
       "id": "ordering_food",
       "name": "Ordering Food",
       "level": 11,
+      "section": "intermediate"
+    },
+    {
+      "id": "present_continuous",
+      "name": "Present Continuous",
+      "level": 12,
+      "section": "intermediate"
+    },
+    {
+      "id": "past_tense_1",
+      "name": "Past Tense: Perfeito",
+      "level": 12,
+      "section": "intermediate"
+    },
+    {
+      "id": "past_tense_2",
+      "name": "Past Tense: Imperfeito",
+      "level": 13,
+      "section": "intermediate"
+    },
+    {
+      "id": "present_perfect",
+      "name": "Present Perfect / Compostos",
+      "level": 13,
       "section": "intermediate"
     },
     {
@@ -101,6 +251,18 @@
       "section": "intermediate"
     },
     {
+      "id": "appointments",
+      "name": "Appointments",
+      "level": 14,
+      "section": "intermediate"
+    },
+    {
+      "id": "comparatives",
+      "name": "Comparatives",
+      "level": 15,
+      "section": "intermediate"
+    },
+    {
       "id": "superlatives",
       "name": "Superlatives",
       "level": 15,
@@ -113,15 +275,63 @@
       "section": "intermediate"
     },
     {
+      "id": "at_the_doctor",
+      "name": "At the Doctor",
+      "level": 16,
+      "section": "intermediate"
+    },
+    {
+      "id": "travel",
+      "name": "Travel",
+      "level": 17,
+      "section": "advanced"
+    },
+    {
       "id": "hotel",
       "name": "At the Hotel",
       "level": 17,
       "section": "advanced"
     },
     {
+      "id": "sightseeing",
+      "name": "Sightseeing",
+      "level": 17,
+      "section": "advanced"
+    },
+    {
+      "id": "hobbies",
+      "name": "Hobbies",
+      "level": 18,
+      "section": "advanced"
+    },
+    {
       "id": "sports",
       "name": "Sports",
       "level": 18,
+      "section": "advanced"
+    },
+    {
+      "id": "music_movies",
+      "name": "Music & Movies",
+      "level": 18,
+      "section": "advanced"
+    },
+    {
+      "id": "work",
+      "name": "Work & Profession",
+      "level": 19,
+      "section": "advanced"
+    },
+    {
+      "id": "office",
+      "name": "Office Vocabulary",
+      "level": 19,
+      "section": "advanced"
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "level": 20,
       "section": "advanced"
     },
     {
@@ -134,6 +344,60 @@
       "id": "emotions",
       "name": "Feelings & Emotions",
       "level": 21,
+      "section": "advanced"
+    },
+    {
+      "id": "opinions",
+      "name": "Giving Opinions",
+      "level": 21,
+      "section": "advanced"
+    },
+    {
+      "id": "debating",
+      "name": "Debating",
+      "level": 21,
+      "section": "advanced"
+    },
+    {
+      "id": "conditional",
+      "name": "Conditional Tense",
+      "level": 22,
+      "section": "advanced"
+    },
+    {
+      "id": "subjunctive",
+      "name": "Subjunctive Mood",
+      "level": 23,
+      "section": "advanced"
+    },
+    {
+      "id": "passive_voice",
+      "name": "Passive Voice",
+      "level": 23,
+      "section": "advanced"
+    },
+    {
+      "id": "phrasal_expressions",
+      "name": "Phrasal Expressions",
+      "level": 24,
+      "section": "advanced"
+    },
+    {
+      "id": "idioms",
+      "name": "Idioms",
+      "level": 24,
+      "section": "advanced"
+    },
+    {
+      "id": "slang",
+      "name": "Slang & Colloquialisms",
+      "level": 24,
+      "section": "advanced"
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Traditions",
+      "level": 25,
       "section": "advanced"
     },
     {

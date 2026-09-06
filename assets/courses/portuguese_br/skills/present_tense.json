@@ -1,0 +1,85 @@
+{
+  "id": "present_tense",
+  "name": "Presente do Indicativo",
+  "description": "Conjugação regular (-ar, -er, -ir) e verbos essenciais no quotidiano",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_pt_pres_1",
+      "type": "translateThis",
+      "question": "Eu falo português e moro em Coimbra",
+      "options": [],
+      "correctAnswer": "I speak Portuguese and live in Coimbra"
+    },
+    {
+      "id": "ex_pt_pres_2",
+      "type": "fillInBlank",
+      "question": "Nós ___ num restaurante perto do mar aos domingos.",
+      "options": [
+        "comemos",
+        "come",
+        "comem",
+        "comi"
+      ],
+      "correctAnswer": "comemos"
+    },
+    {
+      "id": "ex_pt_pres_3",
+      "type": "multipleChoice",
+      "question": "Qual é a terminação de 1ª pessoa plural dos verbos regulares em -ar?",
+      "options": [
+        "-amos",
+        "-emos",
+        "-imos",
+        "-am"
+      ],
+      "correctAnswer": "-amos"
+    },
+    {
+      "id": "ex_pt_pres_4",
+      "type": "matchPairs",
+      "question": "Relacione os verbos conjugados",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Eu abro",
+            "native": "I open"
+          },
+          {
+            "target": "Tu escreves",
+            "native": "You write"
+          },
+          {
+            "target": "Nós aprendemos",
+            "native": "We learn"
+          },
+          {
+            "target": "Eles partem",
+            "native": "They leave / depart"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_pres_5",
+      "type": "translateThis",
+      "question": "O que você faz nos fins de semana?",
+      "options": [],
+      "correctAnswer": "What do you do on weekends?"
+    },
+    {
+      "id": "ex_pt_pres_6",
+      "type": "fillInBlank",
+      "question": "Ele sempre ___ a verdade.",
+      "options": [
+        "diz",
+        "fala",
+        "quer",
+        "vai"
+      ],
+      "correctAnswer": "diz"
+    }
+  ]
+}

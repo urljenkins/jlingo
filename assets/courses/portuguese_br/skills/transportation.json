@@ -1,0 +1,85 @@
+{
+  "id": "transportation",
+  "name": "Transportes",
+  "description": "Meios de transporte terrestres, marítimos e aéreos",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_pt_trans_1",
+      "type": "translateThis",
+      "question": "Viajo de trem todas as semanas",
+      "options": [],
+      "correctAnswer": "I travel by train every week"
+    },
+    {
+      "id": "ex_pt_trans_2",
+      "type": "multipleChoice",
+      "question": "No Brasil, o veículo sobre trilhos intercidades é o:",
+      "options": [
+        "Trem",
+        "Carro",
+        "Bicicleta",
+        "Barco"
+      ],
+      "correctAnswer": "Trem"
+    },
+    {
+      "id": "ex_pt_trans_3",
+      "type": "fillInBlank",
+      "question": "Vou para a ilha de barco ou de ___ .",
+      "options": [
+        "avião",
+        "bicicleta",
+        "metrô",
+        "trem"
+      ],
+      "correctAnswer": "avião"
+    },
+    {
+      "id": "ex_pt_trans_4",
+      "type": "matchPairs",
+      "question": "Relacione os meios de transporte",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O ônibus (ônibus)",
+            "native": "The bus"
+          },
+          {
+            "target": "O elétrico (bonde)",
+            "native": "The tram"
+          },
+          {
+            "target": "O táxi",
+            "native": "The taxi"
+          },
+          {
+            "target": "A carruagem",
+            "native": "The carriage / rail car"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_trans_5",
+      "type": "translateThis",
+      "question": "Gosto de andar de bicicleta à beira-mar",
+      "options": [],
+      "correctAnswer": "I like to ride a bike by the sea"
+    },
+    {
+      "id": "ex_pt_trans_6",
+      "type": "multipleChoice",
+      "question": "Como se chama o condutor de um avião?",
+      "options": [
+        "Piloto",
+        "Motorista",
+        "Maquinista",
+        "Capitão"
+      ],
+      "correctAnswer": "Piloto"
+    }
+  ]
+}

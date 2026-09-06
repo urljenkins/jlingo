@@ -1,0 +1,85 @@
+{
+  "id": "opinions",
+  "name": "Expressar Opiniões",
+  "description": "Acho que, na minha opinião, concordar, discordar e pontos de vista",
+  "level": 21,
+  "exercises": [
+    {
+      "id": "ex_pt_op_1",
+      "type": "translateThis",
+      "question": "Na minha opinião, esta é a solução mais eficaz",
+      "options": [],
+      "correctAnswer": "In my opinion, this is the most effective solution"
+    },
+    {
+      "id": "ex_pt_op_2",
+      "type": "multipleChoice",
+      "question": "Como se expressa acordo total com uma afirmação?",
+      "options": [
+        "Concordo plenamente",
+        "Discordo em absoluto",
+        "Não tenho certeza",
+        "Talvez não"
+      ],
+      "correctAnswer": "Concordo plenamente"
+    },
+    {
+      "id": "ex_pt_op_3",
+      "type": "fillInBlank",
+      "question": "Do meu ponto de ___, devemos analisar os prós e os contras.",
+      "options": [
+        "vista",
+        "olhar",
+        "lado",
+        "modo"
+      ],
+      "correctAnswer": "vista"
+    },
+    {
+      "id": "ex_pt_op_4",
+      "type": "matchPairs",
+      "question": "Relacione as expressões de opinião",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Parece-me que...",
+            "native": "It seems to me that..."
+          },
+          {
+            "target": "Não tenho a certeza...",
+            "native": "I am not sure..."
+          },
+          {
+            "target": "Tens toda a razão",
+            "native": "You are totally right"
+          },
+          {
+            "target": "Discordo educadamente",
+            "native": "I politely disagree"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_op_5",
+      "type": "translateThis",
+      "question": "Acho que devemos investir mais na educação",
+      "options": [],
+      "correctAnswer": "I think we should invest more in education"
+    },
+    {
+      "id": "ex_pt_op_6",
+      "type": "multipleChoice",
+      "question": "Qual expressão introduz uma perspectiva pessoal?",
+      "options": [
+        "A meu ver",
+        "Sem dúvida",
+        "Nem por isso",
+        "De modo algum"
+      ],
+      "correctAnswer": "A meu ver"
+    }
+  ]
+}

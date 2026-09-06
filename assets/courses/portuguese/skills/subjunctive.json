@@ -1,0 +1,85 @@
+{
+  "id": "subjunctive",
+  "name": "Modo Conjuntivo (Subjuntivo)",
+  "description": "Desejos, dúvidas, incertezas e expressões impessoais (é preciso que, duvido que)",
+  "level": 23,
+  "exercises": [
+    {
+      "id": "ex_pt_subj_1",
+      "type": "translateThis",
+      "question": "Espero que tenhas uma boa viagem",
+      "options": [],
+      "correctAnswer": "I hope you have a good trip"
+    },
+    {
+      "id": "ex_pt_subj_2",
+      "type": "multipleChoice",
+      "question": "Qual forma verbal completa: \"É importante que nós ___ todos os dias\"?",
+      "options": [
+        "pratiquemos",
+        "praticamos",
+        "praticar",
+        "praticavam"
+      ],
+      "correctAnswer": "pratiquemos"
+    },
+    {
+      "id": "ex_pt_subj_3",
+      "type": "fillInBlank",
+      "question": "Duvido que ele ___ amanhã à conferência.",
+      "options": [
+        "venha",
+        "vem",
+        "veio",
+        "vinha"
+      ],
+      "correctAnswer": "venha"
+    },
+    {
+      "id": "ex_pt_subj_4",
+      "type": "matchPairs",
+      "question": "Relacione os gatilhos do conjuntivo",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Talvez...",
+            "native": "Maybe / Perhaps (triggers subjunctive)"
+          },
+          {
+            "target": "Embora...",
+            "native": "Although (triggers subjunctive)"
+          },
+          {
+            "target": "Para que...",
+            "native": "So that (triggers subjunctive)"
+          },
+          {
+            "target": "Oxalá / Tomara...",
+            "native": "Hopefully / God grant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_subj_5",
+      "type": "translateThis",
+      "question": "Embora seja difícil, vamos tentar vencer o desafio",
+      "options": [],
+      "correctAnswer": "Although it is difficult, we will try to overcome the challenge"
+    },
+    {
+      "id": "ex_pt_subj_6",
+      "type": "multipleChoice",
+      "question": "No conjuntivo presente do verbo \"ir\", para a 1ª pessoa plural temos:",
+      "options": [
+        "Vamos / Vades",
+        "Venhamos",
+        "Fossemos",
+        "Vamos (indicativo)"
+      ],
+      "correctAnswer": "Vamos / Vades"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "present_continuous",
+  "name": "Presente Contínuo: Estar a + Infinitivo",
+  "description": "Ações em curso em português europeu (estar a cantar) e brasileiro (estar cantando)",
+  "level": 12,
+  "exercises": [
+    {
+      "id": "ex_pt_pcont_1",
+      "type": "translateThis",
+      "question": "Estou a estudar português agora mesmo",
+      "options": [],
+      "correctAnswer": "I am studying Portuguese right now"
+    },
+    {
+      "id": "ex_pt_pcont_2",
+      "type": "multipleChoice",
+      "question": "Como se expressa a ação contínua em Portugal?",
+      "options": [
+        "Estar a + Infinitivo (ex: Estou a comer)",
+        "Estar + Gerúndio apenas",
+        "Haver de + Infinitivo",
+        "Ter de + Particípio"
+      ],
+      "correctAnswer": "Estar a + Infinitivo (ex: Estou a comer)"
+    },
+    {
+      "id": "ex_pt_pcont_3",
+      "type": "fillInBlank",
+      "question": "O que vocês estão ___ fazer?",
+      "options": [
+        "a",
+        "de",
+        "em",
+        "por"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": "ex_pt_pcont_4",
+      "type": "matchPairs",
+      "question": "Relacione as ações contínuas",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Está a chover",
+            "native": "It is raining"
+          },
+          {
+            "target": "Estamos a preparar o almoço",
+            "native": "We are preparing lunch"
+          },
+          {
+            "target": "Ela está a falar ao telemóvel",
+            "native": "She is talking on her phone"
+          },
+          {
+            "target": "Eles estão a trabalhar",
+            "native": "They are working"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_pcont_5",
+      "type": "translateThis",
+      "question": "Não posso falar agora, estou a conduzir",
+      "options": [],
+      "correctAnswer": "I cannot talk right now, I am driving"
+    },
+    {
+      "id": "ex_pt_pcont_6",
+      "type": "multipleChoice",
+      "question": "No Brasil, \"Estou a trabalhar\" diz-se habitualmente:",
+      "options": [
+        "Estou trabalhando",
+        "Estou trabalhado",
+        "Fico a trabalhar",
+        "Estou por trabalhar"
+      ],
+      "correctAnswer": "Estou trabalhando"
+    }
+  ]
+}

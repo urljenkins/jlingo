@@ -256,6 +256,8 @@ class WelcomeScreen extends StatelessWidget {
       case 'french':
         return '🇫🇷';
       case 'portuguese':
+        return '🇵🇹';
+      case 'portuguese_br':
         return '🇧🇷';
       case 'dutch':
         return '🇳🇱';
@@ -276,6 +278,8 @@ class WelcomeScreen extends StatelessWidget {
         return 'French';
       case 'portuguese':
         return 'Portuguese';
+      case 'portuguese_br':
+        return 'Brazilian Portuguese';
       case 'dutch':
         return 'Dutch';
       case 'japanese':

@@ -1,0 +1,85 @@
+{
+  "id": "services",
+  "name": "Serviços Públicos & Bancos",
+  "description": "Ir aos correios, agências bancárias, farmácias e resolver burocracias",
+  "level": 10,
+  "exercises": [
+    {
+      "id": "ex_pt_serv_1",
+      "type": "translateThis",
+      "question": "Preciso de enviar uma carta registada nos correios",
+      "options": [],
+      "correctAnswer": "I need to send a registered letter at the post office"
+    },
+    {
+      "id": "ex_pt_serv_2",
+      "type": "multipleChoice",
+      "question": "Como se chama o multibanco / caixa eletrônico em Portugal?",
+      "options": [
+        "Multibanco",
+        "Caixa postal",
+        "Balcão único",
+        "Câmara municipal"
+      ],
+      "correctAnswer": "Multibanco"
+    },
+    {
+      "id": "ex_pt_serv_3",
+      "type": "fillInBlank",
+      "question": "Vou à farmácia comprar um ___ para a dor de cabeça.",
+      "options": [
+        "medicamento",
+        "envelope",
+        "selo",
+        "talhete"
+      ],
+      "correctAnswer": "medicamento"
+    },
+    {
+      "id": "ex_pt_serv_4",
+      "type": "matchPairs",
+      "question": "Relacione os serviços públicos",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Os CTT (Correios)",
+            "native": "Post office"
+          },
+          {
+            "target": "O banco",
+            "native": "The bank"
+          },
+          {
+            "target": "A esquadra de polícia",
+            "native": "Police station"
+          },
+          {
+            "target": "A lavandaria",
+            "native": "Laundromat"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_serv_5",
+      "type": "translateThis",
+      "question": "Onde posso levantar dinheiro com cartão?",
+      "options": [],
+      "correctAnswer": "Where can I withdraw money with a card?"
+    },
+    {
+      "id": "ex_pt_serv_6",
+      "type": "multipleChoice",
+      "question": "O que significa a expressão \"levantar dinheiro\"?",
+      "options": [
+        "Withdraw cash",
+        "Deposit money",
+        "Count coins",
+        "Lose a wallet"
+      ],
+      "correctAnswer": "Withdraw cash"
+    }
+  ]
+}

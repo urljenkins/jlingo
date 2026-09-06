@@ -1,0 +1,77 @@
+{
+  "id": "future_tense",
+  "name": "Futuro",
+  "description": "Aprende a expressar acções futuras",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_fut_1",
+      "type": "multipleChoice",
+      "question": "Quais são as formas comuns de expressar o futuro em português?",
+      "options": [
+        "ir + a + infinitivo e futuro simples",
+        "ser + infinitivo e estar + gerúndio",
+        "haber + particípio e presente",
+        "Nenhuma das anteriores"
+      ],
+      "correctAnswer": "ir + a + infinitivo e futuro simples"
+    },
+    {
+      "id": "ex_fut_2",
+      "type": "matchPairs",
+      "question": "Associe as conjugações do futuro (FALAR)",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Eu falarei",
+            "native": "I will speak"
+          },
+          {
+            "target": "Tu falarás",
+            "native": "You will speak"
+          },
+          {
+            "target": "Ele falará",
+            "native": "He will speak"
+          },
+          {
+            "target": "Nós falaremos",
+            "native": "We will speak"
+          },
+          {
+            "target": "Eles falarão",
+            "native": "They will speak"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fut_3",
+      "type": "translateThis",
+      "question": "Amanhã irei ao cinema",
+      "options": [],
+      "correctAnswer": "Tomorrow I will go to the cinema"
+    },
+    {
+      "id": "ex_fut_4",
+      "type": "fillInBlank",
+      "question": "Vou ___ estudar esta noite",
+      "options": [
+        "a",
+        "de",
+        "que",
+        "em"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": "ex_fut_5",
+      "type": "speakThis",
+      "question": "No próximo ano viajarei a Portugal",
+      "options": [],
+      "correctAnswer": "No próximo ano viajarei a Portugal"
+    }
+  ]
+}

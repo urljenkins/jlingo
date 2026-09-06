@@ -161,7 +161,8 @@ class LanguageSelectionScreen extends StatelessWidget {
       'french': 'French',
       'german': 'German',
       'dutch': 'Dutch',
-      'portuguese': 'Portuguese',
+      'portuguese': 'Portuguese (Portugal)',
+      'portuguese_br': 'Portuguese (Brazil)',
       'japanese': 'Japanese',
       'chinese': 'Chinese',
     };
@@ -176,6 +177,7 @@ class LanguageSelectionScreen extends StatelessWidget {
       'german': Icons.directions_car, // Engineering/Cars
       'dutch': Icons.wb_sunny, // Windmills (Sun for fields)
       'portuguese': Icons.beach_access, // Beaches
+      'portuguese_br': Icons.forest, // Amazon / Brazil
       'japanese': Icons.architecture, // Temples
       'chinese': Icons.translate, // Calligraphy
     };
@@ -190,6 +192,7 @@ class LanguageSelectionScreen extends StatelessWidget {
       'german': '🇩🇪',
       'dutch': '🇳🇱',
       'portuguese': '🇵🇹',
+      'portuguese_br': '🇧🇷',
       'japanese': '🇯🇵',
       'chinese': '🇨🇳',
     };

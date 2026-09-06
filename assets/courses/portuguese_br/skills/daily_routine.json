@@ -1,0 +1,85 @@
+{
+  "id": "daily_routine",
+  "name": "Rotina Diária",
+  "description": "Descrever o seu dia, horários de trabalho, hábitos e afazeres",
+  "level": 8,
+  "exercises": [
+    {
+      "id": "ex_pt_rout_1",
+      "type": "translateThis",
+      "question": "Acordo às sete da manhã todos os dias",
+      "options": [],
+      "correctAnswer": "I wake up at seven in the morning every day"
+    },
+    {
+      "id": "ex_pt_rout_2",
+      "type": "multipleChoice",
+      "question": "O que fazemos normalmente antes de dormir?",
+      "options": [
+        "Deitar-se / Ir para a cama",
+        "Tomar o café da manhã",
+        "Ir para o trabalho",
+        "Fazer almoço"
+      ],
+      "correctAnswer": "Deitar-se / Ir para a cama"
+    },
+    {
+      "id": "ex_pt_rout_3",
+      "type": "fillInBlank",
+      "question": "Depois de acordar, tomo logo um ___ rápido.",
+      "options": [
+        "duche (ou banho)",
+        "jantar",
+        "sono",
+        "cama"
+      ],
+      "correctAnswer": "duche (ou banho)"
+    },
+    {
+      "id": "ex_pt_rout_4",
+      "type": "matchPairs",
+      "question": "Relacione as ações da rotina",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Lavar os dentes",
+            "native": "Brush teeth"
+          },
+          {
+            "target": "Vestir a roupa",
+            "native": "Get dressed"
+          },
+          {
+            "target": "Sair de casa",
+            "native": "Leave the house"
+          },
+          {
+            "target": "Voltar do trabalho",
+            "native": "Return from work"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_rout_5",
+      "type": "translateThis",
+      "question": "Costumo ler um livro antes de adormecer",
+      "options": [],
+      "correctAnswer": "I usually read a book before falling asleep"
+    },
+    {
+      "id": "ex_pt_rout_6",
+      "type": "multipleChoice",
+      "question": "Como se traduz \"I brush my teeth\"?",
+      "options": [
+        "Lavo os dentes",
+        "Como os dentes",
+        "Acordo os dentes",
+        "Visto os dentes"
+      ],
+      "correctAnswer": "Lavo os dentes"
+    }
+  ]
+}

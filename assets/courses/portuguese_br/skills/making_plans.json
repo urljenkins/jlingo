@@ -1,0 +1,77 @@
+{
+  "id": "making_plans",
+  "name": "Fazer Planos",
+  "description": "Aprende a fazer sugestões e convites",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_mp_1",
+      "type": "multipleChoice",
+      "question": "Como se sugere 'Vamos'?",
+      "options": [
+        "Vamos",
+        "Vou",
+        "Vais",
+        "Vão"
+      ],
+      "correctAnswer": "Vamos"
+    },
+    {
+      "id": "ex_mp_2",
+      "type": "matchPairs",
+      "question": "Associe frases para combinar planos",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Gostarias de...?",
+            "native": "Would you like to...?"
+          },
+          {
+            "target": "Que te parece se...?",
+            "native": "What do you think if...?"
+          },
+          {
+            "target": "Porque não...?",
+            "native": "Why don't we...?"
+          },
+          {
+            "target": "Podemos...",
+            "native": "We can..."
+          },
+          {
+            "target": "Vemo-nos às...?",
+            "native": "Shall we meet at...?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_mp_3",
+      "type": "translateThis",
+      "question": "Apetece-te ir ao cinema?",
+      "options": [],
+      "correctAnswer": "Do you feel like going to the cinema?"
+    },
+    {
+      "id": "ex_mp_4",
+      "type": "fillInBlank",
+      "question": "___ vamos jantar esta noite?",
+      "options": [
+        "Onde",
+        "O que",
+        "Quem",
+        "Quanto"
+      ],
+      "correctAnswer": "Onde"
+    },
+    {
+      "id": "ex_mp_5",
+      "type": "speakThis",
+      "question": "Boa ideia! Vemo-nos às oito",
+      "options": [],
+      "correctAnswer": "Boa ideia! Vemo-nos às oito"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "office",
+  "name": "No Escritório",
+  "description": "Ambiente de trabalho, reuniões de equipa, e-mails e equipamentos",
+  "level": 19,
+  "exercises": [
+    {
+      "id": "ex_pt_off_1",
+      "type": "translateThis",
+      "question": "Enviei o relatório financeiro por correio eletrónico",
+      "options": [],
+      "correctAnswer": "I sent the financial report by email"
+    },
+    {
+      "id": "ex_pt_off_2",
+      "type": "multipleChoice",
+      "question": "O que significa a sigla \"reunião por videoconferência\"?",
+      "options": [
+        "Video conference meeting",
+        "Lunch break",
+        "Phone call",
+        "Coffee break"
+      ],
+      "correctAnswer": "Video conference meeting"
+    },
+    {
+      "id": "ex_pt_off_3",
+      "type": "fillInBlank",
+      "question": "A impressora ficou sem ___ e papel.",
+      "options": [
+        "tinteiro (ou tinta)",
+        "ecrã",
+        "rato",
+        "teclado"
+      ],
+      "correctAnswer": "tinteiro (ou tinta)"
+    },
+    {
+      "id": "ex_pt_off_4",
+      "type": "matchPairs",
+      "question": "Relacione itens de escritório",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "A sala de reuniões",
+            "native": "Meeting room"
+          },
+          {
+            "target": "O prazo de entrega (deadline)",
+            "native": "Deadline"
+          },
+          {
+            "target": "Os colegas de trabalho",
+            "native": "Colleagues"
+          },
+          {
+            "target": "A folha de cálculo",
+            "native": "Spreadsheet"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_off_5",
+      "type": "translateThis",
+      "question": "Temos de cumprir os prazos estabelecidos pelo cliente",
+      "options": [],
+      "correctAnswer": "We have to meet the deadlines set by the client"
+    },
+    {
+      "id": "ex_pt_off_6",
+      "type": "multipleChoice",
+      "question": "Como se encerra um e-mail profissional em português?",
+      "options": [
+        "Com os melhores cumprimentos / Atenciosamente",
+        "Tchauzinho",
+        "Até logo",
+        "Beijinhos"
+      ],
+      "correctAnswer": "Com os melhores cumprimentos / Atenciosamente"
+    }
+  ]
+}

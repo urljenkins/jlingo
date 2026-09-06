@@ -1,0 +1,85 @@
+{
+  "id": "comparatives",
+  "name": "Comparativos",
+  "description": "Comparar coisas e pessoas (mais... do que, menos... do que, tão... como)",
+  "level": 15,
+  "exercises": [
+    {
+      "id": "ex_pt_comp_1",
+      "type": "translateThis",
+      "question": "Lisboa é mais antiga do que muitas capitais europeias",
+      "options": [],
+      "correctAnswer": "Lisbon is older than many European capitals"
+    },
+    {
+      "id": "ex_pt_comp_2",
+      "type": "multipleChoice",
+      "question": "Qual é a forma comparativa irregular correta para \"bom\"?",
+      "options": [
+        "Melhor",
+        "Mais bom",
+        "Ótimo",
+        "Mais bem"
+      ],
+      "correctAnswer": "Melhor"
+    },
+    {
+      "id": "ex_pt_comp_3",
+      "type": "fillInBlank",
+      "question": "Este comboio é ___ rápido como o avião neste percurso.",
+      "options": [
+        "tão",
+        "mais",
+        "muito",
+        "tanto"
+      ],
+      "correctAnswer": "tão"
+    },
+    {
+      "id": "ex_pt_comp_4",
+      "type": "matchPairs",
+      "question": "Relacione os comparativos irregulares",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Mau / Ruim -> Pior",
+            "native": "Worse"
+          },
+          {
+            "target": "Grande -> Maior",
+            "native": "Bigger / Greater"
+          },
+          {
+            "target": "Pequeno -> Menor",
+            "native": "Smaller"
+          },
+          {
+            "target": "Bom -> Melhor",
+            "native": "Better"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_comp_5",
+      "type": "translateThis",
+      "question": "Ele trabalha tanto como o seu colega",
+      "options": [],
+      "correctAnswer": "He works as much as his colleague"
+    },
+    {
+      "id": "ex_pt_comp_6",
+      "type": "multipleChoice",
+      "question": "Como se expressa inferioridade em português?",
+      "options": [
+        "Menos ... do que",
+        "Mais ... que",
+        "Tão ... como",
+        "Melhor ... de"
+      ],
+      "correctAnswer": "Menos ... do que"
+    }
+  ]
+}

@@ -32,6 +32,7 @@ class CourseProvider extends ChangeNotifier {
       'french',
       'dutch',
       'portuguese',
+      'portuguese_br',
       'japanese',
       'chinese'
     ];
@@ -72,6 +73,7 @@ class CourseProvider extends ChangeNotifier {
       final jsonString = await rootBundle.loadString(
           'assets/courses/$_currentLanguageCode/skills/$skillId.json');
       final jsonData = jsonDecode(jsonString) as Map<String, dynamic>;
+      _applyCourseLanguages(jsonData);
       final skill = Skill.fromJson(jsonData);
       _loadedSkills[skillId] = skill;
       notifyListeners();
@@ -79,6 +81,26 @@ class CourseProvider extends ChangeNotifier {
     } catch (e) {
       debugPrint('Error loading skill $skillId: $e');
       return null;
+    }
+  }
+
+  /// Stamps the course's languages onto exercises that omit them.
+  ///
+  /// Most exercises carry no `targetLanguage`, so TTS would fall back to the
+  /// widget default of es-ES and read Portuguese or Japanese aloud with a
+  /// Castilian voice. Regional courses depend on this too: pt-BR and pt-PT
+  /// share skill content but must not share a voice.
+  void _applyCourseLanguages(Map<String, dynamic> skillJson) {
+    final manifest = _currentManifest;
+    if (manifest == null) return;
+
+    final exercises = skillJson['exercises'];
+    if (exercises is! List) return;
+
+    for (final exercise in exercises) {
+      if (exercise is! Map<String, dynamic>) continue;
+      exercise['targetLanguage'] ??= manifest.targetLanguage;
+      exercise['nativeLanguage'] ??= manifest.nativeLanguage;
     }
   }
 

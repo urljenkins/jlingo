@@ -1,0 +1,85 @@
+{
+  "id": "grammar_articles",
+  "name": "Gramática: Artigos & Contrações",
+  "description": "Artigos definidos, indefinidos e contrações fundamentais (do, da, no, na, ao, à)",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_pt_art_1",
+      "type": "fillInBlank",
+      "question": "Vou ___ supermercado fazer compras (a + o).",
+      "options": [
+        "ao",
+        "no",
+        "do",
+        "pelo"
+      ],
+      "correctAnswer": "ao"
+    },
+    {
+      "id": "ex_pt_art_2",
+      "type": "translateThis",
+      "question": "O livro está na mesa",
+      "options": [],
+      "correctAnswer": "The book is on the table"
+    },
+    {
+      "id": "ex_pt_art_3",
+      "type": "multipleChoice",
+      "question": "A contração de \"de + as\" resulta em:",
+      "options": [
+        "Das",
+        "Nas",
+        "Pelas",
+        "Às"
+      ],
+      "correctAnswer": "Das"
+    },
+    {
+      "id": "ex_pt_art_4",
+      "type": "matchPairs",
+      "question": "Relacione as preposições e suas contrações",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "em + um",
+            "native": "num"
+          },
+          {
+            "target": "em + uma",
+            "native": "numa"
+          },
+          {
+            "target": "de + este",
+            "native": "deste"
+          },
+          {
+            "target": "por + o",
+            "native": "pelo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_art_5",
+      "type": "fillInBlank",
+      "question": "Eles vivem ___ casa bonita no centro.",
+      "options": [
+        "numa",
+        "dum",
+        "pela",
+        "à"
+      ],
+      "correctAnswer": "numa"
+    },
+    {
+      "id": "ex_pt_art_6",
+      "type": "translateThis",
+      "question": "O carro do professor é azul",
+      "options": [],
+      "correctAnswer": "The teacher's car is blue"
+    }
+  ]
+}

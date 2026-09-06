@@ -1,0 +1,85 @@
+{
+  "id": "grammar_tener",
+  "name": "Gramática: Ter (To Have)",
+  "description": "O verbo ter no presente, expressar posse, idade e sensações físicas",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_pt_ter_1",
+      "type": "translateThis",
+      "question": "Eu tenho vinte e cinco anos",
+      "options": [],
+      "correctAnswer": "I am twenty-five years old"
+    },
+    {
+      "id": "ex_pt_ter_2",
+      "type": "multipleChoice",
+      "question": "Como se conjuga o verbo ter para \"nós\" no presente?",
+      "options": [
+        "Temos",
+        "Têm",
+        "Tendes",
+        "Tens"
+      ],
+      "correctAnswer": "Temos"
+    },
+    {
+      "id": "ex_pt_ter_3",
+      "type": "fillInBlank",
+      "question": "Eles ___ dois carros e uma casa no campo.",
+      "options": [
+        "têm",
+        "tem",
+        "temos",
+        "tenho"
+      ],
+      "correctAnswer": "têm"
+    },
+    {
+      "id": "ex_pt_ter_4",
+      "type": "matchPairs",
+      "question": "Relacione as expressões com o verbo ter",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Ter fome",
+            "native": "To be hungry"
+          },
+          {
+            "target": "Ter sono",
+            "native": "To be sleepy"
+          },
+          {
+            "target": "Ter razão",
+            "native": "To be right"
+          },
+          {
+            "target": "Ter frio",
+            "native": "To be cold"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_ter_5",
+      "type": "translateThis",
+      "question": "Temos muito trabalho para fazer hoje",
+      "options": [],
+      "correctAnswer": "We have a lot of work to do today"
+    },
+    {
+      "id": "ex_pt_ter_6",
+      "type": "multipleChoice",
+      "question": "Em português europeu, a terceira pessoa do plural é escrita:",
+      "options": [
+        "Eles têm (com acento circunflexo)",
+        "Eles tem (sem acento)",
+        "Eles têem",
+        "Eles teem"
+      ],
+      "correctAnswer": "Eles têm (com acento circunflexo)"
+    }
+  ]
+}

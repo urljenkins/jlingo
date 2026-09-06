@@ -1,0 +1,85 @@
+{
+  "id": "appointments",
+  "name": "Compromissos & Agendamentos",
+  "description": "Marcar reuniões, consultas médicas e confirmar disponibilidades",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_pt_app_1",
+      "type": "translateThis",
+      "question": "Gostaria de marcar uma consulta para a próxima terça-feira",
+      "options": [],
+      "correctAnswer": "I would like to make an appointment for next Tuesday"
+    },
+    {
+      "id": "ex_pt_app_2",
+      "type": "multipleChoice",
+      "question": "Como se pergunta a alguém se está livre numa data?",
+      "options": [
+        "Está disponível na sexta-feira?",
+        "Qual o seu número?",
+        "Onde foi a reunião?",
+        "De quem é a agenda?"
+      ],
+      "correctAnswer": "Está disponível na sexta-feira?"
+    },
+    {
+      "id": "ex_pt_app_3",
+      "type": "fillInBlank",
+      "question": "Infelizmente tenho um compromisso inadiável, preciso de ___ o horário.",
+      "options": [
+        "adiar (ou alterar)",
+        "esquecer",
+        "fechar",
+        "parar"
+      ],
+      "correctAnswer": "adiar (ou alterar)"
+    },
+    {
+      "id": "ex_pt_app_4",
+      "type": "matchPairs",
+      "question": "Relacione termos de agendamento",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Marcar uma consulta",
+            "native": "To make an appointment"
+          },
+          {
+            "target": "Desmarcar / Cancelar",
+            "native": "To cancel"
+          },
+          {
+            "target": "Ficar combinado",
+            "native": "To be agreed upon"
+          },
+          {
+            "target": "Atrasar-se",
+            "native": "To be running late"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_app_5",
+      "type": "translateThis",
+      "question": "Fica combinado às dez da manhã na receção",
+      "options": [],
+      "correctAnswer": "It is agreed for ten in the morning at reception"
+    },
+    {
+      "id": "ex_pt_app_6",
+      "type": "multipleChoice",
+      "question": "O que significa a expressão portuguesa \"Fica combinado\"?",
+      "options": [
+        "It is agreed / It is a deal",
+        "It is canceled",
+        "It is dangerous",
+        "It is impossible"
+      ],
+      "correctAnswer": "It is agreed / It is a deal"
+    }
+  ]
+}

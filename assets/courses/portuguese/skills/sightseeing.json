@@ -1,0 +1,85 @@
+{
+  "id": "sightseeing",
+  "name": "Passeios & Atrações",
+  "description": "Monumentos, castelos, miradouros e roteiros turísticos",
+  "level": 17,
+  "exercises": [
+    {
+      "id": "ex_pt_sight_1",
+      "type": "translateThis",
+      "question": "Este miradouro tem uma vista deslumbrante sobre o rio Tejo",
+      "options": [],
+      "correctAnswer": "This viewpoint has a stunning view over the Tagus river"
+    },
+    {
+      "id": "ex_pt_sight_2",
+      "type": "multipleChoice",
+      "question": "O que é um \"miradouro\" em cidades portuguesas?",
+      "options": [
+        "A scenic viewpoint / look-out",
+        "A metro station",
+        "A souvenir shop",
+        "A beach café"
+      ],
+      "correctAnswer": "A scenic viewpoint / look-out"
+    },
+    {
+      "id": "ex_pt_sight_3",
+      "type": "fillInBlank",
+      "question": "Visitámos o Mosteiro dos Jerónimos e a Torre de ___ em Belém.",
+      "options": [
+        "Belém",
+        "Lisboa",
+        "Sintra",
+        "Porto"
+      ],
+      "correctAnswer": "Belém"
+    },
+    {
+      "id": "ex_pt_sight_4",
+      "type": "matchPairs",
+      "question": "Relacione as atrações turísticas",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "O castelo medieval",
+            "native": "The medieval castle"
+          },
+          {
+            "target": "A catedral / Sé",
+            "native": "The cathedral"
+          },
+          {
+            "target": "O museu de arte",
+            "native": "The art museum"
+          },
+          {
+            "target": "O centro histórico",
+            "native": "The historic center"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pt_sight_5",
+      "type": "translateThis",
+      "question": "Vale a pena fazer uma visita guiada com um especialista",
+      "options": [],
+      "correctAnswer": "It is worth taking a guided tour with a specialist"
+    },
+    {
+      "id": "ex_pt_sight_6",
+      "type": "multipleChoice",
+      "question": "O que significa a expressão portuguesa \"Vale a pena\"?",
+      "options": [
+        "It is worth it",
+        "It is very painful",
+        "It costs too much",
+        "It is forbidden"
+      ],
+      "correctAnswer": "It is worth it"
+    }
+  ]
+}

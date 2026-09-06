@@ -14,7 +14,7 @@
                 "No entiendo"
             ],
             "correctAnswer": "Bien, gracias",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "topic": "At the Café",
@@ -52,7 +52,7 @@
                 "Hasta luego"
             ],
             "correctAnswer": "Una hamburguesa, por favor",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "topic": "Restaurant Ordering",
@@ -91,7 +91,7 @@
                 "Una mariposa"
             ],
             "correctAnswer": "Un gato negro",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "title": "El Gato del Parque",
@@ -138,7 +138,7 @@
                 "En una tienda"
             ],
             "correctAnswer": "En un restaurante",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "title": "El Trabajo de Pedro",
@@ -180,7 +180,7 @@
             "question": "Me gusta mucho leer libros en español.",
             "options": [],
             "correctAnswer": "I really like to read books in Spanish.",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "direction": "toNative",
@@ -202,7 +202,7 @@
             "question": "The weather is beautiful today.",
             "options": [],
             "correctAnswer": "El clima está hermoso hoy.",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "direction": "toTarget",
@@ -225,7 +225,7 @@
             "question": "Ayer fui al supermercado con mi madre. Compramos muchas frutas y verduras. Mi favorita es la manzana roja.",
             "options": [],
             "correctAnswer": "Yesterday I went to the supermarket with my mother. We bought many fruits and vegetables. My favorite is the red apple.",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "direction": "toNative",
@@ -252,7 +252,7 @@
                 "perro"
             ],
             "correctAnswer": "pez,vive",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "blanks": [
@@ -289,7 +289,7 @@
                 "duerme"
             ],
             "correctAnswer": "escucha,hace",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "blanks": [
@@ -328,7 +328,7 @@
                 "niños"
             ],
             "correctAnswer": "plaza,vendedores,frutas",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "blanks": [
@@ -373,7 +373,7 @@
                 "Gracias, adiós"
             ],
             "correctAnswer": "Siga recto y luego a la izquierda",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "topic": "Asking for Directions",
@@ -412,7 +412,7 @@
                 "Hacía viento"
             ],
             "correctAnswer": "Estaba lloviendo",
-            "targetLanguage": "es-ES",
+            "targetLanguage": "es-419",
             "nativeLanguage": "en-US",
             "metadata": {
                 "title": "Un Día de Lluvia",

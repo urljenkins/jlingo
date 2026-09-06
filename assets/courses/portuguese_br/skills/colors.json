@@ -1,0 +1,81 @@
+{
+  "id": "colors",
+  "name": "Cores",
+  "description": "Aprende os nomes das cores em Português",
+  "level": 4,
+  "exercises": [
+    {
+      "id": "ex_col_1",
+      "type": "multipleChoice",
+      "question": "Como se diz 'red' em português?",
+      "options": [
+        "Vermelho",
+        "Azul",
+        "Verde",
+        "Amarelo"
+      ],
+      "correctAnswer": "Vermelho"
+    },
+    {
+      "id": "ex_col_2",
+      "type": "translateThis",
+      "question": "Azul",
+      "options": [],
+      "correctAnswer": "Blue"
+    },
+    {
+      "id": "ex_col_3",
+      "type": "matchPairs",
+      "question": "Associe as cores",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Vermelho",
+            "native": "Red"
+          },
+          {
+            "target": "Azul",
+            "native": "Blue"
+          },
+          {
+            "target": "Verde",
+            "native": "Green"
+          },
+          {
+            "target": "Amarelo",
+            "native": "Yellow"
+          },
+          {
+            "target": "Preto",
+            "native": "Black"
+          },
+          {
+            "target": "Branco",
+            "native": "White"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_col_4",
+      "type": "fillInBlank",
+      "question": "A camisa é ___",
+      "options": [
+        "azul",
+        "azuis",
+        "azula",
+        "azulo"
+      ],
+      "correctAnswer": "azul"
+    },
+    {
+      "id": "ex_col_5",
+      "type": "speakThis",
+      "question": "O carro vermelho",
+      "options": [],
+      "correctAnswer": "O carro vermelho"
+    }
+  ]
+}
