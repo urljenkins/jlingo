@@ -13,7 +13,11 @@
       "exampleSentence": "Bonjour, comment allez-vous ?",
       "exampleTranslation": "Hello, how are you?",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_greet_2",
@@ -23,7 +27,10 @@
       "exampleSentence": "Bonsoir, madame.",
       "exampleTranslation": "Good evening, madam.",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_greet_3",
@@ -33,7 +40,11 @@
       "exampleSentence": "Merci beaucoup pour votre aide.",
       "exampleTranslation": "Thank you very much for your help.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_greet_4",
@@ -43,7 +54,10 @@
       "exampleSentence": "De rien, c'est normal.",
       "exampleTranslation": "You're welcome, it's normal.",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_greet_5",
@@ -53,7 +67,12 @@
       "exampleSentence": "Un café, s'il vous plaît.",
       "exampleTranslation": "A coffee, please.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "formal", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "formal",
+        "essential"
+      ]
     },
     {
       "id": "fc_intro_1",
@@ -63,7 +82,11 @@
       "exampleSentence": "Je m'appelle Marie.",
       "exampleTranslation": "My name is Marie.",
       "category": "Introduction",
-      "tags": ["basic", "introduction", "essential"]
+      "tags": [
+        "basic",
+        "introduction",
+        "essential"
+      ]
     },
     {
       "id": "fc_intro_2",
@@ -73,7 +96,10 @@
       "exampleSentence": "Enchanté de faire votre connaissance.",
       "exampleTranslation": "Nice to meet you.",
       "category": "Introduction",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_basic_1",
@@ -83,7 +109,10 @@
       "exampleSentence": "Oui, je comprends.",
       "exampleTranslation": "Yes, I understand.",
       "category": "Basics",
-      "tags": ["basic", "essential"]
+      "tags": [
+        "basic",
+        "essential"
+      ]
     },
     {
       "id": "fc_basic_2",
@@ -93,7 +122,10 @@
       "exampleSentence": "Non, merci.",
       "exampleTranslation": "No, thank you.",
       "category": "Basics",
-      "tags": ["basic", "essential"]
+      "tags": [
+        "basic",
+        "essential"
+      ]
     },
     {
       "id": "fc_basic_3",
@@ -103,7 +135,10 @@
       "exampleSentence": "Peut-être demain.",
       "exampleTranslation": "Maybe tomorrow.",
       "category": "Basics",
-      "tags": ["basic", "useful"]
+      "tags": [
+        "basic",
+        "useful"
+      ]
     },
     {
       "id": "fc_comm_1",
@@ -113,7 +148,11 @@
       "exampleSentence": "Désolé, je ne comprends pas.",
       "exampleTranslation": "Sorry, I don't understand.",
       "category": "Communication",
-      "tags": ["basic", "useful", "essential"]
+      "tags": [
+        "basic",
+        "useful",
+        "essential"
+      ]
     },
     {
       "id": "fc_comm_2",
@@ -123,7 +162,10 @@
       "exampleSentence": "Parlez-vous anglais, s'il vous plaît ?",
       "exampleTranslation": "Do you speak English, please?",
       "category": "Communication",
-      "tags": ["useful", "travel"]
+      "tags": [
+        "useful",
+        "travel"
+      ]
     },
     {
       "id": "fc_comm_3",
@@ -133,7 +175,10 @@
       "exampleSentence": "Comment dit-on 'hello' en français ?",
       "exampleTranslation": "How do you say 'hello' in French?",
       "category": "Communication",
-      "tags": ["useful", "learning"]
+      "tags": [
+        "useful",
+        "learning"
+      ]
     },
     {
       "id": "fc_num_1",
@@ -143,7 +188,10 @@
       "exampleSentence": "J'ai un frère.",
       "exampleTranslation": "I have one brother.",
       "category": "Numbers",
-      "tags": ["basic", "numbers"]
+      "tags": [
+        "basic",
+        "numbers"
+      ]
     },
     {
       "id": "fc_num_2",
@@ -153,7 +201,10 @@
       "exampleSentence": "Deux cafés, s'il vous plaît.",
       "exampleTranslation": "Two coffees, please.",
       "category": "Numbers",
-      "tags": ["basic", "numbers"]
+      "tags": [
+        "basic",
+        "numbers"
+      ]
     },
     {
       "id": "fc_food_1",
@@ -163,7 +214,10 @@
       "exampleSentence": "Je voudrais du pain, s'il vous plaît.",
       "exampleTranslation": "I would like some bread, please.",
       "category": "Food",
-      "tags": ["food", "essential"]
+      "tags": [
+        "food",
+        "essential"
+      ]
     },
     {
       "id": "fc_food_2",
@@ -173,7 +227,11 @@
       "exampleSentence": "Une bouteille d'eau, s'il vous plaît.",
       "exampleTranslation": "A bottle of water, please.",
       "category": "Food",
-      "tags": ["food", "essential", "travel"]
+      "tags": [
+        "food",
+        "essential",
+        "travel"
+      ]
     },
     {
       "id": "fc_food_3",
@@ -183,7 +241,10 @@
       "exampleSentence": "Un verre de vin rouge, s'il vous plaît.",
       "exampleTranslation": "A glass of red wine, please.",
       "category": "Food",
-      "tags": ["food", "drink"]
+      "tags": [
+        "food",
+        "drink"
+      ]
     },
     {
       "id": "fc_travel_1",
@@ -193,7 +254,11 @@
       "exampleSentence": "Où est la gare ?",
       "exampleTranslation": "Where is the train station?",
       "category": "Travel",
-      "tags": ["travel", "essential", "useful"]
+      "tags": [
+        "travel",
+        "essential",
+        "useful"
+      ]
     },
     {
       "id": "fc_travel_2",
@@ -203,7 +268,1828 @@
       "exampleSentence": "Je vais à la gare.",
       "exampleTranslation": "I'm going to the train station.",
       "category": "Travel",
-      "tags": ["travel", "transport"]
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_fr_num_3",
+      "front": "Trois",
+      "back": "Three",
+      "pronunciation": "/tʁwa/",
+      "exampleSentence": "Il est trois heures.",
+      "exampleTranslation": "It is three o'clock.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_4",
+      "front": "Quatre",
+      "back": "Four",
+      "pronunciation": "/katʁ/",
+      "exampleSentence": "Quatre personnes.",
+      "exampleTranslation": "Four people.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_5",
+      "front": "Cinq",
+      "back": "Five",
+      "pronunciation": "/sɛ̃k/",
+      "exampleSentence": "Cinq minutes.",
+      "exampleTranslation": "Five minutes.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_6",
+      "front": "Six",
+      "back": "Six",
+      "pronunciation": "/sis/",
+      "exampleSentence": "Six euros.",
+      "exampleTranslation": "Six euros.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_7",
+      "front": "Sept",
+      "back": "Seven",
+      "pronunciation": "/sɛt/",
+      "exampleSentence": "Sept jours par semaine.",
+      "exampleTranslation": "Seven days a week.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_8",
+      "front": "Huit",
+      "back": "Eight",
+      "pronunciation": "/ɥit/",
+      "exampleSentence": "Le train de huit heures.",
+      "exampleTranslation": "The eight o'clock train.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_9",
+      "front": "Neuf",
+      "back": "Nine",
+      "pronunciation": "/nœf/",
+      "exampleSentence": "Il a neuf ans.",
+      "exampleTranslation": "He is nine years old.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_10",
+      "front": "Dix",
+      "back": "Ten",
+      "pronunciation": "/dis/",
+      "exampleSentence": "Dix euros, s'il vous plaît.",
+      "exampleTranslation": "Ten euros, please.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_20",
+      "front": "Vingt",
+      "back": "Twenty",
+      "pronunciation": "/vɛ̃/",
+      "exampleSentence": "Vingt minutes d'attente.",
+      "exampleTranslation": "Twenty minutes of waiting.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_num_100",
+      "front": "Cent",
+      "back": "One hundred",
+      "pronunciation": "/sɑ̃/",
+      "exampleSentence": "Cent pour cent.",
+      "exampleTranslation": "One hundred percent.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_fr_time_1",
+      "front": "Lundi",
+      "back": "Monday",
+      "pronunciation": "/lœ̃.di/",
+      "exampleSentence": "Lundi je travaille.",
+      "exampleTranslation": "On Monday I work.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_fr_time_2",
+      "front": "Mardi",
+      "back": "Tuesday",
+      "pronunciation": "/maʁ.di/",
+      "exampleSentence": "On se voit mardi.",
+      "exampleTranslation": "We'll see each other Tuesday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_fr_time_3",
+      "front": "Mercredi",
+      "back": "Wednesday",
+      "pronunciation": "/mɛʁ.kʁə.di/",
+      "exampleSentence": "Mercredi est libre.",
+      "exampleTranslation": "Wednesday is free.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_fr_time_4",
+      "front": "Jeudi",
+      "back": "Thursday",
+      "pronunciation": "/ʒø.di/",
+      "exampleSentence": "Jeudi prochain.",
+      "exampleTranslation": "Next Thursday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_fr_time_5",
+      "front": "Vendredi",
+      "back": "Friday",
+      "pronunciation": "/vɑ̃.dʁə.di/",
+      "exampleSentence": "Vendredi soir.",
+      "exampleTranslation": "Friday evening.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_fr_time_6",
+      "front": "Samedi",
+      "back": "Saturday",
+      "pronunciation": "/sam.di/",
+      "exampleSentence": "Samedi je me repose.",
+      "exampleTranslation": "On Saturday I rest.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_fr_time_7",
+      "front": "Dimanche",
+      "back": "Sunday",
+      "pronunciation": "/di.mɑ̃ʃ/",
+      "exampleSentence": "Dimanche en famille.",
+      "exampleTranslation": "Sunday with family.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_fr_time_8",
+      "front": "Aujourd'hui",
+      "back": "Today",
+      "pronunciation": "/o.ʒuʁ.dɥi/",
+      "exampleSentence": "Aujourd'hui il fait beau.",
+      "exampleTranslation": "Today the weather is nice.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_time_9",
+      "front": "Demain",
+      "back": "Tomorrow",
+      "pronunciation": "/də.mɛ̃/",
+      "exampleSentence": "Je t'appelle demain.",
+      "exampleTranslation": "I'll call you tomorrow.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_time_10",
+      "front": "Hier",
+      "back": "Yesterday",
+      "pronunciation": "/jɛʁ/",
+      "exampleSentence": "Hier j'étais malade.",
+      "exampleTranslation": "Yesterday I was sick.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_time_11",
+      "front": "Maintenant",
+      "back": "Now",
+      "pronunciation": "/mɛ̃t.nɑ̃/",
+      "exampleSentence": "Je ne peux pas maintenant.",
+      "exampleTranslation": "I can't right now.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_time_12",
+      "front": "Toujours",
+      "back": "Always",
+      "pronunciation": "/tu.ʒuʁ/",
+      "exampleSentence": "J'arrive toujours tôt.",
+      "exampleTranslation": "I always arrive early.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_fr_time_13",
+      "front": "Jamais",
+      "back": "Never",
+      "pronunciation": "/ʒa.mɛ/",
+      "exampleSentence": "Je n'y suis jamais allé.",
+      "exampleTranslation": "I have never been there.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_fr_time_14",
+      "front": "La semaine",
+      "back": "The week",
+      "pronunciation": "/la sə.mɛn/",
+      "exampleSentence": "La semaine dernière.",
+      "exampleTranslation": "Last week.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_time_15",
+      "front": "Le mois",
+      "back": "The month",
+      "pronunciation": "/lə mwa/",
+      "exampleSentence": "Le mois prochain.",
+      "exampleTranslation": "Next month.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_time_16",
+      "front": "L'année",
+      "back": "The year",
+      "pronunciation": "/la.ne/",
+      "exampleSentence": "Bonne année !",
+      "exampleTranslation": "Happy new year!",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_1",
+      "front": "La famille",
+      "back": "The family",
+      "pronunciation": "/la fa.mij/",
+      "exampleSentence": "Ma famille est grande.",
+      "exampleTranslation": "My family is big.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_2",
+      "front": "La mère",
+      "back": "The mother",
+      "pronunciation": "/la mɛʁ/",
+      "exampleSentence": "Ma mère cuisine bien.",
+      "exampleTranslation": "My mother cooks well.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_3",
+      "front": "Le père",
+      "back": "The father",
+      "pronunciation": "/lə pɛʁ/",
+      "exampleSentence": "Mon père travaille ici.",
+      "exampleTranslation": "My father works here.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_4",
+      "front": "Le frère",
+      "back": "The brother",
+      "pronunciation": "/lə fʁɛʁ/",
+      "exampleSentence": "J'ai un petit frère.",
+      "exampleTranslation": "I have a little brother.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_5",
+      "front": "La sœur",
+      "back": "The sister",
+      "pronunciation": "/la sœʁ/",
+      "exampleSentence": "Ma sœur est médecin.",
+      "exampleTranslation": "My sister is a doctor.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_6",
+      "front": "Le fils",
+      "back": "The son",
+      "pronunciation": "/lə fis/",
+      "exampleSentence": "Son fils a cinq ans.",
+      "exampleTranslation": "Their son is five.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_7",
+      "front": "La fille",
+      "back": "The daughter / girl",
+      "pronunciation": "/la fij/",
+      "exampleSentence": "Ma fille va à l'école.",
+      "exampleTranslation": "My daughter goes to school.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_8",
+      "front": "L'ami",
+      "back": "The friend",
+      "pronunciation": "/la.mi/",
+      "exampleSentence": "C'est mon meilleur ami.",
+      "exampleTranslation": "He is my best friend.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_9",
+      "front": "L'enfant",
+      "back": "The child",
+      "pronunciation": "/lɑ̃.fɑ̃/",
+      "exampleSentence": "L'enfant joue dehors.",
+      "exampleTranslation": "The child plays outside.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_10",
+      "front": "La femme",
+      "back": "The woman / wife",
+      "pronunciation": "/la fam/",
+      "exampleSentence": "Cette femme est avocate.",
+      "exampleTranslation": "That woman is a lawyer.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_11",
+      "front": "L'homme",
+      "back": "The man",
+      "pronunciation": "/lɔm/",
+      "exampleSentence": "L'homme lit le journal.",
+      "exampleTranslation": "The man reads the newspaper.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_fam_12",
+      "front": "Les gens",
+      "back": "The people",
+      "pronunciation": "/le ʒɑ̃/",
+      "exampleSentence": "Il y a beaucoup de gens.",
+      "exampleTranslation": "There are a lot of people.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_food_12",
+      "front": "Le café",
+      "back": "The coffee",
+      "pronunciation": "/lə ka.fe/",
+      "exampleSentence": "Je bois un café le matin.",
+      "exampleTranslation": "I drink a coffee in the morning.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_fr_food_13",
+      "front": "Le lait",
+      "back": "The milk",
+      "pronunciation": "/lə lɛ/",
+      "exampleSentence": "Du lait dans le thé ?",
+      "exampleTranslation": "Milk in the tea?",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_fr_food_14",
+      "front": "La viande",
+      "back": "The meat",
+      "pronunciation": "/la vjɑ̃d/",
+      "exampleSentence": "Je ne mange pas de viande.",
+      "exampleTranslation": "I don't eat meat.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_food_15",
+      "front": "Le poisson",
+      "back": "The fish",
+      "pronunciation": "/lə pwa.sɔ̃/",
+      "exampleSentence": "Le poisson est frais.",
+      "exampleTranslation": "The fish is fresh.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_food_16",
+      "front": "Le fromage",
+      "back": "The cheese",
+      "pronunciation": "/lə fʁɔ.maʒ/",
+      "exampleSentence": "Ce fromage est excellent.",
+      "exampleTranslation": "This cheese is excellent.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_food_17",
+      "front": "Les légumes",
+      "back": "The vegetables",
+      "pronunciation": "/le le.ɡym/",
+      "exampleSentence": "Je mange des légumes.",
+      "exampleTranslation": "I eat vegetables.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_food_18",
+      "front": "L'œuf",
+      "back": "The egg",
+      "pronunciation": "/lœf/",
+      "exampleSentence": "Deux œufs, s'il vous plaît.",
+      "exampleTranslation": "Two eggs, please.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_food_19",
+      "front": "Le petit-déjeuner",
+      "back": "The breakfast",
+      "pronunciation": "/lə pə.ti de.ʒœ.ne/",
+      "exampleSentence": "Le petit-déjeuner est à huit heures.",
+      "exampleTranslation": "Breakfast is at eight.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_fr_food_20",
+      "front": "Le déjeuner",
+      "back": "The lunch",
+      "pronunciation": "/lə de.ʒœ.ne/",
+      "exampleSentence": "Le déjeuner est prêt.",
+      "exampleTranslation": "Lunch is ready.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_fr_food_21",
+      "front": "Le dîner",
+      "back": "The dinner",
+      "pronunciation": "/lə di.ne/",
+      "exampleSentence": "Le dîner est léger.",
+      "exampleTranslation": "Dinner is light.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_fr_food_22",
+      "front": "L'addition",
+      "back": "The bill",
+      "pronunciation": "/la.di.sjɔ̃/",
+      "exampleSentence": "L'addition, s'il vous plaît.",
+      "exampleTranslation": "The bill, please.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "restaurant",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_1",
+      "front": "Être",
+      "back": "To be",
+      "pronunciation": "/ɛtʁ/",
+      "exampleSentence": "Je veux être professeur.",
+      "exampleTranslation": "I want to be a teacher.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_2",
+      "front": "Avoir",
+      "back": "To have",
+      "pronunciation": "/a.vwaʁ/",
+      "exampleSentence": "Avoir de la patience.",
+      "exampleTranslation": "To have patience.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_3",
+      "front": "Faire",
+      "back": "To do / to make",
+      "pronunciation": "/fɛʁ/",
+      "exampleSentence": "Qu'est-ce que tu vas faire ?",
+      "exampleTranslation": "What are you going to do?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_4",
+      "front": "Aller",
+      "back": "To go",
+      "pronunciation": "/a.le/",
+      "exampleSentence": "Je veux aller avec toi.",
+      "exampleTranslation": "I want to go with you.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_5",
+      "front": "Pouvoir",
+      "back": "To be able to",
+      "pronunciation": "/pu.vwaʁ/",
+      "exampleSentence": "Je ne peux pas venir.",
+      "exampleTranslation": "I can't come.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_6",
+      "front": "Vouloir",
+      "back": "To want",
+      "pronunciation": "/vu.lwaʁ/",
+      "exampleSentence": "Je veux apprendre le français.",
+      "exampleTranslation": "I want to learn French.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_7",
+      "front": "Savoir",
+      "back": "To know (facts)",
+      "pronunciation": "/sa.vwaʁ/",
+      "exampleSentence": "Je ne sais pas.",
+      "exampleTranslation": "I don't know.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_8",
+      "front": "Connaître",
+      "back": "To know (people)",
+      "pronunciation": "/kɔ.nɛtʁ/",
+      "exampleSentence": "Je voudrais connaître Paris.",
+      "exampleTranslation": "I'd like to get to know Paris.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_9",
+      "front": "Dire",
+      "back": "To say",
+      "pronunciation": "/diʁ/",
+      "exampleSentence": "Qu'est-ce que tu veux dire ?",
+      "exampleTranslation": "What do you mean?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_10",
+      "front": "Voir",
+      "back": "To see",
+      "pronunciation": "/vwaʁ/",
+      "exampleSentence": "Je veux voir ce film.",
+      "exampleTranslation": "I want to see this film.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_11",
+      "front": "Donner",
+      "back": "To give",
+      "pronunciation": "/dɔ.ne/",
+      "exampleSentence": "Tu peux me donner le sel ?",
+      "exampleTranslation": "Can you give me the salt?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_12",
+      "front": "Parler",
+      "back": "To speak",
+      "pronunciation": "/paʁ.le/",
+      "exampleSentence": "Je parle un peu français.",
+      "exampleTranslation": "I speak a little French.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_13",
+      "front": "Manger",
+      "back": "To eat",
+      "pronunciation": "/mɑ̃.ʒe/",
+      "exampleSentence": "On va manger ensemble.",
+      "exampleTranslation": "We're going to eat together.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_14",
+      "front": "Boire",
+      "back": "To drink",
+      "pronunciation": "/bwaʁ/",
+      "exampleSentence": "Tu veux boire quelque chose ?",
+      "exampleTranslation": "Do you want something to drink?",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_15",
+      "front": "Habiter",
+      "back": "To live",
+      "pronunciation": "/a.bi.te/",
+      "exampleSentence": "J'habite à Lyon.",
+      "exampleTranslation": "I live in Lyon.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_16",
+      "front": "Travailler",
+      "back": "To work",
+      "pronunciation": "/tʁa.va.je/",
+      "exampleSentence": "Je travaille à la maison.",
+      "exampleTranslation": "I work at home.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_17",
+      "front": "Étudier",
+      "back": "To study",
+      "pronunciation": "/e.ty.dje/",
+      "exampleSentence": "J'étudie le soir.",
+      "exampleTranslation": "I study in the evening.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_18",
+      "front": "Comprendre",
+      "back": "To understand",
+      "pronunciation": "/kɔ̃.pʁɑ̃dʁ/",
+      "exampleSentence": "Je ne comprends pas.",
+      "exampleTranslation": "I don't understand.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_19",
+      "front": "Venir",
+      "back": "To come",
+      "pronunciation": "/və.niʁ/",
+      "exampleSentence": "Tu peux venir demain ?",
+      "exampleTranslation": "Can you come tomorrow?",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_20",
+      "front": "Partir",
+      "back": "To leave",
+      "pronunciation": "/paʁ.tiʁ/",
+      "exampleSentence": "Je pars à six heures.",
+      "exampleTranslation": "I leave at six.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_21",
+      "front": "Arriver",
+      "back": "To arrive",
+      "pronunciation": "/a.ʁi.ve/",
+      "exampleSentence": "Le train arrive en retard.",
+      "exampleTranslation": "The train arrives late.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_22",
+      "front": "Acheter",
+      "back": "To buy",
+      "pronunciation": "/aʃ.te/",
+      "exampleSentence": "Je veux acheter un cadeau.",
+      "exampleTranslation": "I want to buy a gift.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_23",
+      "front": "Payer",
+      "back": "To pay",
+      "pronunciation": "/pe.je/",
+      "exampleSentence": "Je peux payer par carte ?",
+      "exampleTranslation": "Can I pay by card?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_24",
+      "front": "Aider",
+      "back": "To help",
+      "pronunciation": "/e.de/",
+      "exampleSentence": "Tu peux m'aider ?",
+      "exampleTranslation": "Can you help me?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_25",
+      "front": "Chercher",
+      "back": "To look for",
+      "pronunciation": "/ʃɛʁ.ʃe/",
+      "exampleSentence": "Je cherche la gare.",
+      "exampleTranslation": "I'm looking for the station.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_26",
+      "front": "Écouter",
+      "back": "To listen",
+      "pronunciation": "/e.ku.te/",
+      "exampleSentence": "J'écoute de la musique.",
+      "exampleTranslation": "I listen to music.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_27",
+      "front": "Lire",
+      "back": "To read",
+      "pronunciation": "/liʁ/",
+      "exampleSentence": "Je lis avant de dormir.",
+      "exampleTranslation": "I read before sleeping.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_28",
+      "front": "Écrire",
+      "back": "To write",
+      "pronunciation": "/e.kʁiʁ/",
+      "exampleSentence": "J'écris un mail.",
+      "exampleTranslation": "I'm writing an email.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_29",
+      "front": "Attendre",
+      "back": "To wait",
+      "pronunciation": "/a.tɑ̃dʁ/",
+      "exampleSentence": "Attends-moi ici.",
+      "exampleTranslation": "Wait for me here.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_fr_verb_30",
+      "front": "Prendre",
+      "back": "To take",
+      "pronunciation": "/pʁɑ̃dʁ/",
+      "exampleSentence": "Je prends le bus.",
+      "exampleTranslation": "I take the bus.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_11",
+      "front": "L'aéroport",
+      "back": "The airport",
+      "pronunciation": "/la.e.ʁɔ.pɔʁ/",
+      "exampleSentence": "Je vais à l'aéroport.",
+      "exampleTranslation": "I'm going to the airport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_12",
+      "front": "L'hôtel",
+      "back": "The hotel",
+      "pronunciation": "/lo.tɛl/",
+      "exampleSentence": "L'hôtel est tout près.",
+      "exampleTranslation": "The hotel is very close.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_13",
+      "front": "La rue",
+      "back": "The street",
+      "pronunciation": "/la ʁy/",
+      "exampleSentence": "J'habite dans cette rue.",
+      "exampleTranslation": "I live on this street.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_14",
+      "front": "À gauche",
+      "back": "On the left",
+      "pronunciation": "/a ɡoʃ/",
+      "exampleSentence": "Tournez à gauche.",
+      "exampleTranslation": "Turn left.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_15",
+      "front": "À droite",
+      "back": "On the right",
+      "pronunciation": "/a dʁwat/",
+      "exampleSentence": "C'est à droite.",
+      "exampleTranslation": "It's on the right.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_16",
+      "front": "Près",
+      "back": "Near",
+      "pronunciation": "/pʁɛ/",
+      "exampleSentence": "C'est tout près.",
+      "exampleTranslation": "It's very near.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_17",
+      "front": "Loin",
+      "back": "Far",
+      "pronunciation": "/lwɛ̃/",
+      "exampleSentence": "La plage est loin.",
+      "exampleTranslation": "The beach is far.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_18",
+      "front": "La voiture",
+      "back": "The car",
+      "pronunciation": "/la vwa.tyʁ/",
+      "exampleSentence": "J'y vais en voiture.",
+      "exampleTranslation": "I'm going by car.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_19",
+      "front": "Le train",
+      "back": "The train",
+      "pronunciation": "/lə tʁɛ̃/",
+      "exampleSentence": "Le train part maintenant.",
+      "exampleTranslation": "The train leaves now.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_20",
+      "front": "L'avion",
+      "back": "The plane",
+      "pronunciation": "/la.vjɔ̃/",
+      "exampleSentence": "L'avion est en retard.",
+      "exampleTranslation": "The plane is late.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_21",
+      "front": "Les bagages",
+      "back": "The luggage",
+      "pronunciation": "/le ba.ɡaʒ/",
+      "exampleSentence": "Où sont mes bagages ?",
+      "exampleTranslation": "Where is my luggage?",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_trav_22",
+      "front": "Le passeport",
+      "back": "The passport",
+      "pronunciation": "/lə pas.pɔʁ/",
+      "exampleSentence": "J'ai besoin de mon passeport.",
+      "exampleTranslation": "I need my passport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_1",
+      "front": "Bon",
+      "back": "Good",
+      "pronunciation": "/bɔ̃/",
+      "exampleSentence": "C'est un bon livre.",
+      "exampleTranslation": "It's a good book.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_2",
+      "front": "Mauvais",
+      "back": "Bad",
+      "pronunciation": "/mo.vɛ/",
+      "exampleSentence": "Il fait mauvais.",
+      "exampleTranslation": "The weather is bad.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_3",
+      "front": "Grand",
+      "back": "Big / tall",
+      "pronunciation": "/ɡʁɑ̃/",
+      "exampleSentence": "La maison est grande.",
+      "exampleTranslation": "The house is big.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_4",
+      "front": "Petit",
+      "back": "Small",
+      "pronunciation": "/pə.ti/",
+      "exampleSentence": "C'est une petite voiture.",
+      "exampleTranslation": "It's a small car.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_5",
+      "front": "Nouveau",
+      "back": "New",
+      "pronunciation": "/nu.vo/",
+      "exampleSentence": "J'ai un nouveau téléphone.",
+      "exampleTranslation": "I have a new phone.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_6",
+      "front": "Vieux",
+      "back": "Old",
+      "pronunciation": "/vjø/",
+      "exampleSentence": "C'est un vieux bâtiment.",
+      "exampleTranslation": "It's an old building.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_7",
+      "front": "Cher",
+      "back": "Expensive / dear",
+      "pronunciation": "/ʃɛʁ/",
+      "exampleSentence": "Cet hôtel est cher.",
+      "exampleTranslation": "This hotel is expensive.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_8",
+      "front": "Facile",
+      "back": "Easy",
+      "pronunciation": "/fa.sil/",
+      "exampleSentence": "L'examen était facile.",
+      "exampleTranslation": "The exam was easy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_9",
+      "front": "Difficile",
+      "back": "Difficult",
+      "pronunciation": "/di.fi.sil/",
+      "exampleSentence": "C'est difficile à expliquer.",
+      "exampleTranslation": "It's hard to explain.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_10",
+      "front": "Beau",
+      "back": "Beautiful",
+      "pronunciation": "/bo/",
+      "exampleSentence": "Quel beau paysage.",
+      "exampleTranslation": "What a beautiful landscape.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_11",
+      "front": "Heureux",
+      "back": "Happy",
+      "pronunciation": "/œ.ʁø/",
+      "exampleSentence": "Je suis très heureux.",
+      "exampleTranslation": "I am very happy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_12",
+      "front": "Fatigué",
+      "back": "Tired",
+      "pronunciation": "/fa.ti.ɡe/",
+      "exampleSentence": "Je suis fatigué aujourd'hui.",
+      "exampleTranslation": "I'm tired today.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_13",
+      "front": "Malade",
+      "back": "Sick",
+      "pronunciation": "/ma.lad/",
+      "exampleSentence": "Mon fils est malade.",
+      "exampleTranslation": "My son is sick.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "health"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_14",
+      "front": "Rapide",
+      "back": "Fast",
+      "pronunciation": "/ʁa.pid/",
+      "exampleSentence": "Le train est rapide.",
+      "exampleTranslation": "The train is fast.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_adj_15",
+      "front": "Lent",
+      "back": "Slow",
+      "pronunciation": "/lɑ̃/",
+      "exampleSentence": "Le service est lent.",
+      "exampleTranslation": "The service is slow.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_fr_q_1",
+      "front": "Quoi ?",
+      "back": "What?",
+      "pronunciation": "/kwa/",
+      "exampleSentence": "Quoi ? Je n'ai pas entendu.",
+      "exampleTranslation": "What? I didn't hear.",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_q_2",
+      "front": "Qui ?",
+      "back": "Who?",
+      "pronunciation": "/ki/",
+      "exampleSentence": "Qui est-ce ?",
+      "exampleTranslation": "Who is it?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_q_3",
+      "front": "Où ?",
+      "back": "Where?",
+      "pronunciation": "/u/",
+      "exampleSentence": "Où habites-tu ?",
+      "exampleTranslation": "Where do you live?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_q_4",
+      "front": "Quand ?",
+      "back": "When?",
+      "pronunciation": "/kɑ̃/",
+      "exampleSentence": "Quand arrives-tu ?",
+      "exampleTranslation": "When do you arrive?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_q_5",
+      "front": "Pourquoi ?",
+      "back": "Why?",
+      "pronunciation": "/puʁ.kwa/",
+      "exampleSentence": "Pourquoi pas ?",
+      "exampleTranslation": "Why not?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_q_6",
+      "front": "Comment ?",
+      "back": "How?",
+      "pronunciation": "/kɔ.mɑ̃/",
+      "exampleSentence": "Comment ça se dit ?",
+      "exampleTranslation": "How do you say that?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_q_7",
+      "front": "Combien ?",
+      "back": "How much?",
+      "pronunciation": "/kɔ̃.bjɛ̃/",
+      "exampleSentence": "Combien ça coûte ?",
+      "exampleTranslation": "How much does it cost?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_conn_1",
+      "front": "Mais",
+      "back": "But",
+      "pronunciation": "/mɛ/",
+      "exampleSentence": "Je veux, mais je ne peux pas.",
+      "exampleTranslation": "I want to, but I can't.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_conn_2",
+      "front": "Parce que",
+      "back": "Because",
+      "pronunciation": "/paʁs kə/",
+      "exampleSentence": "Je reste parce qu'il pleut.",
+      "exampleTranslation": "I'm staying because it's raining.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_conn_3",
+      "front": "Aussi",
+      "back": "Also / too",
+      "pronunciation": "/o.si/",
+      "exampleSentence": "Moi aussi.",
+      "exampleTranslation": "Me too.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_fr_conn_4",
+      "front": "Bien que",
+      "back": "Although",
+      "pronunciation": "/bjɛ̃ kə/",
+      "exampleSentence": "Bien qu'il soit tard, je sors.",
+      "exampleTranslation": "Although it's late, I'm going out.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "formal"
+      ]
+    },
+    {
+      "id": "fc_fr_conn_5",
+      "front": "Alors",
+      "back": "So / then",
+      "pronunciation": "/a.lɔʁ/",
+      "exampleSentence": "Alors, on fait quoi ?",
+      "exampleTranslation": "So, what do we do?",
+      "category": "Connectors",
+      "tags": [
+        "connectors"
+      ]
+    },
+    {
+      "id": "fc_fr_conn_6",
+      "front": "Cependant",
+      "back": "However",
+      "pronunciation": "/sə.pɑ̃.dɑ̃/",
+      "exampleSentence": "Cependant, je ne suis pas d'accord.",
+      "exampleTranslation": "However, I don't agree.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "formal"
+      ]
+    },
+    {
+      "id": "fc_fr_phr_3",
+      "front": "Je suis désolé",
+      "back": "I'm sorry",
+      "pronunciation": "/ʒə sɥi de.zɔ.le/",
+      "exampleSentence": "Je suis désolé, je suis en retard.",
+      "exampleTranslation": "I'm sorry, I'm late.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_fr_phr_4",
+      "front": "Excusez-moi",
+      "back": "Excuse me",
+      "pronunciation": "/ɛks.ky.ze mwa/",
+      "exampleSentence": "Excusez-moi, je peux passer ?",
+      "exampleTranslation": "Excuse me, may I get by?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_fr_phr_7",
+      "front": "Combien ça coûte ?",
+      "back": "How much does it cost?",
+      "pronunciation": "/kɔ̃.bjɛ̃ sa kut/",
+      "exampleSentence": "Combien ça coûte, s'il vous plaît ?",
+      "exampleTranslation": "How much does this cost, please?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_fr_phr_8",
+      "front": "Où sont les toilettes ?",
+      "back": "Where is the bathroom?",
+      "pronunciation": "/u sɔ̃ le twa.lɛt/",
+      "exampleSentence": "Pardon, où sont les toilettes ?",
+      "exampleTranslation": "Excuse me, where is the bathroom?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_fr_phr_9",
+      "front": "Plus lentement, s'il vous plaît",
+      "back": "Slower, please",
+      "pronunciation": "/ply lɑ̃t.mɑ̃/",
+      "exampleSentence": "Pouvez-vous parler plus lentement ?",
+      "exampleTranslation": "Can you speak more slowly?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_fr_phr_10",
+      "front": "Pouvez-vous m'aider ?",
+      "back": "Can you help me?",
+      "pronunciation": "/pu.ve vu me.de/",
+      "exampleSentence": "Excusez-moi, pouvez-vous m'aider ?",
+      "exampleTranslation": "Excuse me, can you help me?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_fr_phr_11",
+      "front": "À bientôt",
+      "back": "See you soon",
+      "pronunciation": "/a bjɛ̃.to/",
+      "exampleSentence": "À bientôt !",
+      "exampleTranslation": "See you soon!",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "greetings"
+      ]
+    },
+    {
+      "id": "fc_fr_home_1",
+      "front": "La maison",
+      "back": "The house",
+      "pronunciation": "/la mɛ.zɔ̃/",
+      "exampleSentence": "Ma maison est petite.",
+      "exampleTranslation": "My house is small.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_2",
+      "front": "La porte",
+      "back": "The door",
+      "pronunciation": "/la pɔʁt/",
+      "exampleSentence": "Ferme la porte.",
+      "exampleTranslation": "Close the door.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_3",
+      "front": "La fenêtre",
+      "back": "The window",
+      "pronunciation": "/la fə.nɛtʁ/",
+      "exampleSentence": "Ouvre la fenêtre.",
+      "exampleTranslation": "Open the window.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_4",
+      "front": "La table",
+      "back": "The table",
+      "pronunciation": "/la tabl/",
+      "exampleSentence": "Le livre est sur la table.",
+      "exampleTranslation": "The book is on the table.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_5",
+      "front": "La chaise",
+      "back": "The chair",
+      "pronunciation": "/la ʃɛz/",
+      "exampleSentence": "Assieds-toi sur la chaise.",
+      "exampleTranslation": "Sit on the chair.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_6",
+      "front": "Le lit",
+      "back": "The bed",
+      "pronunciation": "/lə li/",
+      "exampleSentence": "Le lit est confortable.",
+      "exampleTranslation": "The bed is comfortable.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_7",
+      "front": "Le livre",
+      "back": "The book",
+      "pronunciation": "/lə livʁ/",
+      "exampleSentence": "Je lis un livre intéressant.",
+      "exampleTranslation": "I'm reading an interesting book.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_8",
+      "front": "Le téléphone",
+      "back": "The telephone",
+      "pronunciation": "/lə te.le.fɔn/",
+      "exampleSentence": "Mon téléphone ne marche pas.",
+      "exampleTranslation": "My phone doesn't work.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_9",
+      "front": "L'argent",
+      "back": "The money",
+      "pronunciation": "/laʁ.ʒɑ̃/",
+      "exampleSentence": "Je n'ai pas d'argent.",
+      "exampleTranslation": "I don't have money.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_home_10",
+      "front": "Le travail",
+      "back": "The work / job",
+      "pronunciation": "/lə tʁa.vaj/",
+      "exampleSentence": "J'aime mon travail.",
+      "exampleTranslation": "I like my job.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_fr_col_1",
+      "front": "Rouge",
+      "back": "Red",
+      "pronunciation": "/ʁuʒ/",
+      "exampleSentence": "La voiture est rouge.",
+      "exampleTranslation": "The car is red.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_fr_col_2",
+      "front": "Bleu",
+      "back": "Blue",
+      "pronunciation": "/blø/",
+      "exampleSentence": "Le ciel est bleu.",
+      "exampleTranslation": "The sky is blue.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_fr_col_3",
+      "front": "Vert",
+      "back": "Green",
+      "pronunciation": "/vɛʁ/",
+      "exampleSentence": "J'aime le vert.",
+      "exampleTranslation": "I like green.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_fr_col_4",
+      "front": "Jaune",
+      "back": "Yellow",
+      "pronunciation": "/ʒon/",
+      "exampleSentence": "Le soleil est jaune.",
+      "exampleTranslation": "The sun is yellow.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_fr_col_5",
+      "front": "Noir",
+      "back": "Black",
+      "pronunciation": "/nwaʁ/",
+      "exampleSentence": "Je porte un manteau noir.",
+      "exampleTranslation": "I'm wearing a black coat.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_fr_col_6",
+      "front": "Blanc",
+      "back": "White",
+      "pronunciation": "/blɑ̃/",
+      "exampleSentence": "Le mur est blanc.",
+      "exampleTranslation": "The wall is white.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
     }
   ]
 }

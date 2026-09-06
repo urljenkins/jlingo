@@ -132,6 +132,161 @@
             "question": "Mucho gusto",
             "options": [],
             "correctAnswer": "Mucho gusto"
+        },
+        {
+            "type": "translateThis",
+            "question": "Buenas noches",
+            "options": [],
+            "correctAnswer": "Good night",
+            "id": "ex_b1_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Good afternoon' in Spanish?",
+            "options": [
+                "Buenas tardes",
+                "Buenos días",
+                "Buenas noches",
+                "Hola"
+            ],
+            "correctAnswer": "Buenas tardes",
+            "id": "ex_b1_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿Cómo ___ usted?",
+            "options": [
+                "está",
+                "estás",
+                "es",
+                "eres"
+            ],
+            "correctAnswer": "está",
+            "id": "ex_b1_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Cómo te llamas?",
+            "options": [],
+            "correctAnswer": "What is your name?",
+            "id": "ex_b1_4"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does '¿Qué tal?' mean?",
+            "options": [
+                "How's it going?",
+                "Goodbye",
+                "Thank you",
+                "Please"
+            ],
+            "correctAnswer": "How's it going?",
+            "id": "ex_b1_5"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match the polite phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Por favor",
+                        "native": "Please"
+                    },
+                    {
+                        "target": "De nada",
+                        "native": "You're welcome"
+                    },
+                    {
+                        "target": "Perdón",
+                        "native": "Excuse me"
+                    },
+                    {
+                        "target": "Con permiso",
+                        "native": "Excuse me (to pass by)"
+                    }
+                ]
+            },
+            "id": "ex_b1_6"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Buenos días a todos",
+            "options": [],
+            "correctAnswer": "Buenos días a todos",
+            "id": "ex_b1_7"
+        },
+        {
+            "type": "speakThis",
+            "question": "Buenas tardes, ¿cómo está usted?",
+            "options": [],
+            "correctAnswer": "Buenas tardes, ¿cómo está usted?",
+            "id": "ex_b1_8"
+        },
+        {
+            "type": "translateThis",
+            "question": "Sí",
+            "options": [],
+            "correctAnswer": "Yes",
+            "id": "ex_b1_13"
+        },
+        {
+            "type": "translateThis",
+            "question": "No",
+            "options": [],
+            "correctAnswer": "No",
+            "id": "ex_b1_14"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Welcome'?",
+            "options": [
+                "Bienvenido",
+                "Adiós",
+                "Gracias",
+                "Hola"
+            ],
+            "correctAnswer": "Bienvenido",
+            "id": "ex_b1_15"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Muchas ___",
+            "options": [
+                "gracias",
+                "hola",
+                "adiós",
+                "por favor"
+            ],
+            "correctAnswer": "gracias",
+            "id": "ex_b1_16"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Con permiso",
+            "options": [],
+            "correctAnswer": "Con permiso",
+            "id": "ex_b1_17"
+        },
+        {
+            "type": "translateThis",
+            "question": "Está bien",
+            "options": [],
+            "correctAnswer": "That's fine / OK",
+            "id": "ex_b1_18"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'Vale' mean in Spanish (Spain)?",
+            "options": [
+                "OK / alright",
+                "Goodbye",
+                "Please",
+                "Sorry"
+            ],
+            "correctAnswer": "OK / alright",
+            "id": "ex_b1_19"
         }
     ]
 }

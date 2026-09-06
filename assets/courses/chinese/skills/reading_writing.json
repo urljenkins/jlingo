@@ -1,7 +1,97 @@
 {
   "id": "reading_writing",
   "name": "Reading & Writing",
-  "description": "TODO: reading and writing exercises",
+  "description": "Practice reading Chinese characters, stroke orders, short dialogues, and comprehension",
   "level": 5,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_rw_1",
+      "type": "multipleChoice",
+      "question": "What is the basic rule for Chinese character stroke order?",
+      "options": [
+        "Top to bottom, left to right",
+        "Bottom to top, right to left",
+        "Outside last, inside first",
+        "Random order"
+      ],
+      "correctAnswer": "Top to bottom, left to right",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rw_2",
+      "type": "translateThis",
+      "question": "我很喜欢看书",
+      "options": [],
+      "correctAnswer": "I really like reading books",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rw_3",
+      "type": "fillInBlank",
+      "question": "你会写汉 ___ 吗？(Can you write Chinese characters?)",
+      "options": [
+        "字",
+        "话",
+        "语",
+        "音"
+      ],
+      "correctAnswer": "字",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rw_4",
+      "type": "matchPairs",
+      "question": "Match Chinese radicals with their meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "氵 (三点水)",
+            "native": "Water related"
+          },
+          {
+            "target": "亻 (单立人)",
+            "native": "Person related"
+          },
+          {
+            "target": "木 (木字旁)",
+            "native": "Tree / wood related"
+          },
+          {
+            "target": "口 (口字旁)",
+            "native": "Mouth / speech related"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_rw_5",
+      "type": "speakThis",
+      "question": "我会读中文",
+      "options": [],
+      "correctAnswer": "我会读中文",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rw_6",
+      "type": "multipleChoice",
+      "question": "What does '看报纸' mean?",
+      "options": [
+        "Read the newspaper",
+        "Watch television",
+        "Write an email",
+        "Read a story"
+      ],
+      "correctAnswer": "Read the newspaper",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

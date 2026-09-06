@@ -1,7 +1,97 @@
 {
   "id": "drinks",
   "name": "Drinks",
-  "description": "TODO: drinks vocabulary",
+  "description": "Learn beverage vocabulary, tea varieties, coffee, water, and ordering drinks",
   "level": 5,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_drk_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Water' in Chinese?",
+      "options": [
+        "水",
+        "茶",
+        "牛奶",
+        "果汁"
+      ],
+      "correctAnswer": "水",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_drk_2",
+      "type": "translateThis",
+      "question": "绿茶",
+      "options": [],
+      "correctAnswer": "Green tea",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_drk_3",
+      "type": "fillInBlank",
+      "question": "请给我一杯 ___。(Please give me a cup of coffee.)",
+      "options": [
+        "咖啡",
+        "饭",
+        "肉",
+        "碗"
+      ],
+      "correctAnswer": "咖啡",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_drk_4",
+      "type": "matchPairs",
+      "question": "Match Chinese beverages",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "茶",
+            "native": "Tea"
+          },
+          {
+            "target": "牛奶",
+            "native": "Milk"
+          },
+          {
+            "target": "果汁",
+            "native": "Juice"
+          },
+          {
+            "target": "啤酒",
+            "native": "Beer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_drk_5",
+      "type": "speakThis",
+      "question": "我想喝水",
+      "options": [],
+      "correctAnswer": "我想喝水",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_drk_6",
+      "type": "multipleChoice",
+      "question": "What is the verb for 'to drink' in Chinese?",
+      "options": [
+        "喝 (hē)",
+        "吃 (chī)",
+        "买 (mǎi)",
+        "看 (kàn)"
+      ],
+      "correctAnswer": "喝 (hē)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

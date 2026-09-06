@@ -1,7 +1,97 @@
 {
   "id": "weather",
   "name": "Weather",
-  "description": "TODO: weather vocabulary",
+  "description": "Learn to discuss weather, temperatures, rain, snow, and sunny days in Mandarin Chinese",
   "level": 6,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_wea_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'How is the weather today?' in Chinese?",
+      "options": [
+        "今天天气怎么样？",
+        "今天几月几号？",
+        "你在做什么？",
+        "这是谁的？"
+      ],
+      "correctAnswer": "今天天气怎么样？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_wea_2",
+      "type": "translateThis",
+      "question": "今天天气很好",
+      "options": [],
+      "correctAnswer": "The weather is very good today",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_wea_3",
+      "type": "fillInBlank",
+      "question": "外面正在下 ___。(It is raining outside.)",
+      "options": [
+        "雨",
+        "热",
+        "天",
+        "冷"
+      ],
+      "correctAnswer": "雨",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_wea_4",
+      "type": "matchPairs",
+      "question": "Match weather conditions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "晴天",
+            "native": "Sunny day"
+          },
+          {
+            "target": "下雨",
+            "native": "Raining"
+          },
+          {
+            "target": "下雪",
+            "native": "Snowing"
+          },
+          {
+            "target": "刮风",
+            "native": "Windy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_wea_5",
+      "type": "speakThis",
+      "question": "明天会很冷",
+      "options": [],
+      "correctAnswer": "明天会很冷",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_wea_6",
+      "type": "multipleChoice",
+      "question": "What does '很热' (hěn rè) mean?",
+      "options": [
+        "Very hot",
+        "Very cold",
+        "Very cloudy",
+        "Very nice"
+      ],
+      "correctAnswer": "Very hot",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

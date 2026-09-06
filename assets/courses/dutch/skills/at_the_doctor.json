@@ -1,8 +1,97 @@
 {
   "id": "at_the_doctor",
   "name": "At the Doctor",
-  "description": "Learn vocabulary for medical visits",
+  "description": "Learn to speak with the general practitioner (huisarts), describe illnesses, and get prescriptions",
   "level": 16,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_doc_1",
+      "type": "multipleChoice",
+      "question": "In the Dutch medical system, who is the primary gatekeeper doctor you visit first?",
+      "options": [
+        "De huisarts (family doctor/GP)",
+        "De specialist",
+        "De chirurg",
+        "De tandarts"
+      ],
+      "correctAnswer": "De huisarts (family doctor/GP)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_doc_2",
+      "type": "translateThis",
+      "question": "Ik heb koorts en keelpijn",
+      "options": [],
+      "correctAnswer": "I have a fever and sore throat",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_doc_3",
+      "type": "fillInBlank",
+      "question": "De dokter schrijft een ___ voor. (recept - prescription)",
+      "options": [
+        "recept",
+        "brief",
+        "kaart",
+        "boek"
+      ],
+      "correctAnswer": "recept",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_doc_4",
+      "type": "matchPairs",
+      "question": "Match medical symptoms in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Koorts",
+            "native": "Fever"
+          },
+          {
+            "target": "Verkoudheid",
+            "native": "Common cold"
+          },
+          {
+            "target": "Hoesten",
+            "native": "To cough"
+          },
+          {
+            "target": "Duizelig",
+            "native": "Dizzy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_doc_5",
+      "type": "speakThis",
+      "question": "Beterschap!",
+      "options": [],
+      "correctAnswer": "Beterschap!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_doc_6",
+      "type": "multipleChoice",
+      "question": "What is the standard Dutch phrase to wish someone recovery from illness?",
+      "options": [
+        "Beterschap!",
+        "Gefeliciteerd!",
+        "Smakelijk!",
+        "Tot ziens!"
+      ],
+      "correctAnswer": "Beterschap!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "phrasal_expressions",
   "name": "Phrasal Expressions",
-  "description": "Learn common verb + preposition combinations",
+  "description": "Learn common Dutch collocations, pronominal adverbs (erover, ermee), and set expressions",
   "level": 23,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_pe_1",
+      "type": "multipleChoice",
+      "question": "In Dutch, what combines with prepositions when referring to things (e.g. 'over het' -> 'erover')?",
+      "options": [
+        "er / hier / daar",
+        "het / dit / dat",
+        "wie / wat",
+        "iets / niets"
+      ],
+      "correctAnswer": "er / hier / daar",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pe_2",
+      "type": "translateThis",
+      "question": "Ik hou er rekening mee",
+      "options": [],
+      "correctAnswer": "I take it into account",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pe_3",
+      "type": "fillInBlank",
+      "question": "We moeten er nog eens goed over ___ (nadenken - think over).",
+      "options": [
+        "nadenken",
+        "kijken",
+        "eten",
+        "lopen"
+      ],
+      "correctAnswer": "nadenken",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pe_4",
+      "type": "matchPairs",
+      "question": "Match Dutch pronominal adverbs",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ermee",
+            "native": "with it / with that"
+          },
+          {
+            "target": "ervan",
+            "native": "of it / from it"
+          },
+          {
+            "target": "ernaar",
+            "native": "to it / towards it"
+          },
+          {
+            "target": "erover",
+            "native": "about it"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pe_5",
+      "type": "speakThis",
+      "question": "Daar ben ik het volkomen mee eens",
+      "options": [],
+      "correctAnswer": "Daar ben ik het volkomen mee eens",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pe_6",
+      "type": "multipleChoice",
+      "question": "What does 'terugkomen op' mean in a conversation?",
+      "options": [
+        "To return to a topic / revisit",
+        "To walk backwards",
+        "To cancel",
+        "To agree"
+      ],
+      "correctAnswer": "To return to a topic / revisit",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

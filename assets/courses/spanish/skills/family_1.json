@@ -113,6 +113,162 @@
             "question": "La abuela",
             "options": [],
             "correctAnswer": "La abuela"
+        },
+        {
+            "type": "translateThis",
+            "question": "Tío",
+            "options": [],
+            "correctAnswer": "Uncle",
+            "id": "ex_fam_11"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Aunt' in Spanish?",
+            "options": [
+                "Tía",
+                "Tío",
+                "Prima",
+                "Primo"
+            ],
+            "correctAnswer": "Tía",
+            "id": "ex_fam_12"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Mi ___ es el hermano de mi padre (uncle)",
+            "options": [
+                "tío",
+                "tía",
+                "primo",
+                "abuelo"
+            ],
+            "correctAnswer": "tío",
+            "id": "ex_fam_13"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match extended family members",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Tío",
+                        "native": "Uncle"
+                    },
+                    {
+                        "target": "Tía",
+                        "native": "Aunt"
+                    },
+                    {
+                        "target": "Primo",
+                        "native": "Cousin (male)"
+                    },
+                    {
+                        "target": "Prima",
+                        "native": "Cousin (female)"
+                    },
+                    {
+                        "target": "Sobrino",
+                        "native": "Nephew"
+                    },
+                    {
+                        "target": "Sobrina",
+                        "native": "Niece"
+                    }
+                ]
+            },
+            "id": "ex_fam_14"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Mis primos viven en Madrid",
+            "options": [],
+            "correctAnswer": "Mis primos viven en Madrid",
+            "id": "ex_fam_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los padres",
+            "options": [],
+            "correctAnswer": "The parents",
+            "id": "ex_fam_16"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'Los abuelos' mean?",
+            "options": [
+                "The grandparents",
+                "The parents",
+                "The cousins",
+                "The siblings"
+            ],
+            "correctAnswer": "The grandparents",
+            "id": "ex_fam_17"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Mi ___ tiene tres hijos (my sister)",
+            "options": [
+                "hermana",
+                "hermano",
+                "madre",
+                "padre"
+            ],
+            "correctAnswer": "hermana",
+            "id": "ex_fam_18"
+        },
+        {
+            "type": "speakThis",
+            "question": "Toda mi familia se reúne los domingos",
+            "options": [],
+            "correctAnswer": "Toda mi familia se reúne los domingos",
+            "id": "ex_fam_19"
+        },
+        {
+            "type": "translateThis",
+            "question": "Esposo",
+            "options": [],
+            "correctAnswer": "Husband",
+            "id": "ex_fam_20"
+        },
+        {
+            "type": "translateThis",
+            "question": "Esposa",
+            "options": [],
+            "correctAnswer": "Wife",
+            "id": "ex_fam_21"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Wife' in Spanish?",
+            "options": [
+                "Esposa",
+                "Esposo",
+                "Hermana",
+                "Hija"
+            ],
+            "correctAnswer": "Esposa",
+            "id": "ex_fam_22"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Mi esposo trabaja mucho",
+            "options": [],
+            "correctAnswer": "Mi esposo trabaja mucho",
+            "id": "ex_fam_23"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Somos una familia ___ (big)",
+            "options": [
+                "grande",
+                "pequeña",
+                "vieja",
+                "nueva"
+            ],
+            "correctAnswer": "grande",
+            "id": "ex_fam_24"
         }
     ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "numbers_2",
   "name": "Numbers 2",
-  "description": "Learn numbers 11-20",
+  "description": "Learn numbers 11 through 100, tens, and inverted units-first counting in Dutch",
   "level": 3,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_num2_1",
+      "type": "multipleChoice",
+      "question": "In Dutch, how is '25' constructed linguistically?",
+      "options": [
+        "vijfentwintig (five-and-twenty)",
+        "twintigvijf (twenty-five)",
+        "twee-vijf",
+        "vijftwintig"
+      ],
+      "correctAnswer": "vijfentwintig (five-and-twenty)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_num2_2",
+      "type": "translateThis",
+      "question": "Twaalf",
+      "options": [],
+      "correctAnswer": "Twelve",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_num2_3",
+      "type": "fillInBlank",
+      "question": "Tien plus tien is ___ (20)",
+      "options": [
+        "twintig",
+        "dertig",
+        "twaalf",
+        "veertig"
+      ],
+      "correctAnswer": "twintig",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_num2_4",
+      "type": "matchPairs",
+      "question": "Match numbers with Dutch words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Elf",
+            "native": "Eleven (11)"
+          },
+          {
+            "target": "Twintig",
+            "native": "Twenty (20)"
+          },
+          {
+            "target": "Vijftig",
+            "native": "Fifty (50)"
+          },
+          {
+            "target": "Honderd",
+            "native": "One hundred (100)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_num2_5",
+      "type": "speakThis",
+      "question": "Drieëndertig",
+      "options": [],
+      "correctAnswer": "Drieëndertig",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_num2_6",
+      "type": "multipleChoice",
+      "question": "What number is 'zestig'?",
+      "options": [
+        "60",
+        "70",
+        "16",
+        "66"
+      ],
+      "correctAnswer": "60",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "subjunctive",
   "name": "Subjunctive Mood",
-  "description": "Learn the subjunctive for wishes, doubts, and emotions",
+  "description": "Learn fixed subjunctive formulaic expressions (aanvoegende wijs: 'Leve de Koning', 'Koste wat het kost')",
   "level": 22,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_sbj_1",
+      "type": "multipleChoice",
+      "question": "In contemporary Dutch, where does the archaic subjunctive (aanvoegende wijs) still actively persist?",
+      "options": [
+        "In fixed traditional formulas and idioms (e.g. 'Leve de koning!')",
+        "In everyday conversation",
+        "In newspaper headlines only",
+        "It has completely vanished"
+      ],
+      "correctAnswer": "In fixed traditional formulas and idioms (e.g. 'Leve de koning!')",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sbj_2",
+      "type": "translateThis",
+      "question": "Koste wat het kost, wij gaan door",
+      "options": [],
+      "correctAnswer": "Whatever the cost, we carry on",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sbj_3",
+      "type": "fillInBlank",
+      "question": "God ___ dank dat alles goed is afgelopen! (zijd / zij)",
+      "options": [
+        "zij",
+        "is",
+        "was",
+        "ben"
+      ],
+      "correctAnswer": "zij",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sbj_4",
+      "type": "matchPairs",
+      "question": "Match Dutch traditional subjunctive idioms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Leve de koning!",
+            "native": "Long live the king!"
+          },
+          {
+            "target": "Koste wat het kost",
+            "native": "At all costs / come what may"
+          },
+          {
+            "target": "Als het ware",
+            "native": "As it were"
+          },
+          {
+            "target": "Het ga je goed",
+            "native": "Farewell / may it go well with you"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_sbj_5",
+      "type": "speakThis",
+      "question": "Het zij zo, we moeten het accepteren",
+      "options": [],
+      "correctAnswer": "Het zij zo, we moeten het accepteren",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sbj_6",
+      "type": "multipleChoice",
+      "question": "What does the fixed phrase 'Het zij zo' mean?",
+      "options": [
+        "So be it / let it be",
+        "Never mind",
+        "No problem",
+        "Right now"
+      ],
+      "correctAnswer": "So be it / let it be",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

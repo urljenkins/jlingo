@@ -1,7 +1,97 @@
 {
   "id": "adjectives_1",
   "name": "Common Adjectives",
-  "description": "TODO: common adjectives",
+  "description": "Learn common descriptive adjectives and the connector 很 (hěn) in Chinese sentences",
   "level": 6,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_adj1_1",
+      "type": "multipleChoice",
+      "question": "In basic Chinese, which adverb is customary when linking a subject to an adjective predicate (e.g. 'He is tall')?",
+      "options": [
+        "很 (hěn)",
+        "是 (shì)",
+        "有 (yǒu)",
+        "在 (zài)"
+      ],
+      "correctAnswer": "很 (hěn)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_adj1_2",
+      "type": "translateThis",
+      "question": "这个房间很大",
+      "options": [],
+      "correctAnswer": "This room is very big",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_adj1_3",
+      "type": "fillInBlank",
+      "question": "苹果很 ___。(The apple is sweet.)",
+      "options": [
+        "甜",
+        "远",
+        "高",
+        "新"
+      ],
+      "correctAnswer": "甜",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_adj1_4",
+      "type": "matchPairs",
+      "question": "Match opposite adjectives",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "大",
+            "native": "Big"
+          },
+          {
+            "target": "小",
+            "native": "Small"
+          },
+          {
+            "target": "多",
+            "native": "Many / much"
+          },
+          {
+            "target": "少",
+            "native": "Few / little"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_adj1_5",
+      "type": "speakThis",
+      "question": "这里的风景真美丽",
+      "options": [],
+      "correctAnswer": "这里的风景真美丽",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_adj1_6",
+      "type": "multipleChoice",
+      "question": "What is the antonym of '快' (fast)?",
+      "options": [
+        "慢 (slow)",
+        "远 (far)",
+        "高 (tall)",
+        "低 (low)"
+      ],
+      "correctAnswer": "慢 (slow)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

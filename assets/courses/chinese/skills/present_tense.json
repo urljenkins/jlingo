@@ -1,7 +1,97 @@
 {
   "id": "present_tense",
   "name": "Present Tense",
-  "description": "TODO: present tense exercises",
+  "description": "Learn basic verb usage and habitual actions in Mandarin Chinese (verbs do not conjugate)",
   "level": 7,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_pt_1",
+      "type": "multipleChoice",
+      "question": "Do Chinese verbs change their endings (conjugate) for different grammatical persons?",
+      "options": [
+        "No, verbs remain unchanged for all subjects",
+        "Yes, they add endings for 'he/she'",
+        "Yes, they change based on plural subjects",
+        "Only irregular verbs change"
+      ],
+      "correctAnswer": "No, verbs remain unchanged for all subjects",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt_2",
+      "type": "translateThis",
+      "question": "他每天学习汉语",
+      "options": [],
+      "correctAnswer": "He studies Chinese every day",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt_3",
+      "type": "fillInBlank",
+      "question": "我 ___ 住在北京。(I currently live in Beijing.)",
+      "options": [
+        "现在",
+        "昨天",
+        "明天",
+        "去年"
+      ],
+      "correctAnswer": "现在",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt_4",
+      "type": "matchPairs",
+      "question": "Match common Chinese verbs",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "去 (qù)",
+            "native": "To go"
+          },
+          {
+            "target": "来 (lái)",
+            "native": "To come"
+          },
+          {
+            "target": "看 (kàn)",
+            "native": "To look / see / watch"
+          },
+          {
+            "target": "听 (tīng)",
+            "native": "To listen / hear"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pt_5",
+      "type": "speakThis",
+      "question": "我们常常一起喝咖啡",
+      "options": [],
+      "correctAnswer": "我们常常一起喝咖啡",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'often' in Chinese?",
+      "options": [
+        "常常 (chángcháng)",
+        "偶尔 (ǒu'ěr)",
+        "从不 (cóngbù)",
+        "刚才 (gāngcái)"
+      ],
+      "correctAnswer": "常常 (chángcháng)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

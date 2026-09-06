@@ -13,7 +13,10 @@
       "exampleSentence": "こんにちは、お元気ですか？",
       "exampleTranslation": "Hello, how are you?",
       "category": "Greetings",
-      "tags": ["basic", "essential"]
+      "tags": [
+        "basic",
+        "essential"
+      ]
     },
     {
       "id": "fc_ja_2",
@@ -23,7 +26,10 @@
       "exampleSentence": "皆さん、おはようございます！",
       "exampleTranslation": "Good morning, everyone!",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_ja_3",
@@ -33,7 +39,11 @@
       "exampleSentence": "ご親切にありがとうございます。",
       "exampleTranslation": "Thank you very much for your kindness.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_ja_4",
@@ -43,7 +53,10 @@
       "exampleSentence": "いえいえ、どういたしまして。",
       "exampleTranslation": "No problem, you're welcome.",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_ja_5",
@@ -53,7 +66,11 @@
       "exampleSentence": "お水を一杯お願いします。",
       "exampleTranslation": "A glass of water, please.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_ja_6",
@@ -63,7 +80,10 @@
       "exampleSentence": "はじめまして、田中と申します。",
       "exampleTranslation": "Nice to meet you, my name is Tanaka.",
       "category": "Introductions",
-      "tags": ["basic", "introductions"]
+      "tags": [
+        "basic",
+        "introductions"
+      ]
     },
     {
       "id": "fc_ja_7",
@@ -73,7 +93,10 @@
       "exampleSentence": "冷たい水を飲みたいです。",
       "exampleTranslation": "I want to drink cold water.",
       "category": "Food & Drink",
-      "tags": ["nouns", "food"]
+      "tags": [
+        "nouns",
+        "food"
+      ]
     },
     {
       "id": "fc_ja_8",
@@ -83,7 +106,1841 @@
       "exampleSentence": "朝食に焼きたてのパンを食べます。",
       "exampleTranslation": "I eat freshly baked bread for breakfast.",
       "category": "Food & Drink",
-      "tags": ["nouns", "food"]
+      "tags": [
+        "nouns",
+        "food"
+      ]
+    },
+    {
+      "id": "fc_ja_num_1",
+      "front": "一 (ichi)",
+      "back": "One",
+      "pronunciation": "/i.tɕi/",
+      "exampleSentence": "一つください。",
+      "exampleTranslation": "One, please.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_2",
+      "front": "二 (ni)",
+      "back": "Two",
+      "pronunciation": "/ɲi/",
+      "exampleSentence": "二人です。",
+      "exampleTranslation": "We are two people.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_3",
+      "front": "三 (san)",
+      "back": "Three",
+      "pronunciation": "/saɴ/",
+      "exampleSentence": "三時です。",
+      "exampleTranslation": "It is three o'clock.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_4",
+      "front": "四 (yon)",
+      "back": "Four",
+      "pronunciation": "/joɴ/",
+      "exampleSentence": "四人家族です。",
+      "exampleTranslation": "We are a family of four.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_5",
+      "front": "五 (go)",
+      "back": "Five",
+      "pronunciation": "/ɡo/",
+      "exampleSentence": "五分待ってください。",
+      "exampleTranslation": "Please wait five minutes.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_6",
+      "front": "六 (roku)",
+      "back": "Six",
+      "pronunciation": "/ɾo.kɯ/",
+      "exampleSentence": "六時に会いましょう。",
+      "exampleTranslation": "Let's meet at six.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_7",
+      "front": "七 (nana)",
+      "back": "Seven",
+      "pronunciation": "/na.na/",
+      "exampleSentence": "七日間です。",
+      "exampleTranslation": "It is seven days.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_8",
+      "front": "八 (hachi)",
+      "back": "Eight",
+      "pronunciation": "/ha.tɕi/",
+      "exampleSentence": "八時の電車です。",
+      "exampleTranslation": "It's the eight o'clock train.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_9",
+      "front": "九 (kyuu)",
+      "back": "Nine",
+      "pronunciation": "/kʲɯː/",
+      "exampleSentence": "九歳です。",
+      "exampleTranslation": "He is nine years old.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_10",
+      "front": "十 (juu)",
+      "back": "Ten",
+      "pronunciation": "/dʑɯː/",
+      "exampleSentence": "十分あります。",
+      "exampleTranslation": "We have ten minutes.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_100",
+      "front": "百 (hyaku)",
+      "back": "One hundred",
+      "pronunciation": "/ça.kɯ/",
+      "exampleSentence": "百円です。",
+      "exampleTranslation": "It is one hundred yen.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_num_1000",
+      "front": "千 (sen)",
+      "back": "One thousand",
+      "pronunciation": "/seɴ/",
+      "exampleSentence": "千円札です。",
+      "exampleTranslation": "It's a thousand-yen note.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_ja_time_1",
+      "front": "月曜日 (getsuyoubi)",
+      "back": "Monday",
+      "pronunciation": "/ɡe.tsɯ.joː.bi/",
+      "exampleSentence": "月曜日に働きます。",
+      "exampleTranslation": "I work on Monday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_ja_time_2",
+      "front": "火曜日 (kayoubi)",
+      "back": "Tuesday",
+      "pronunciation": "/ka.joː.bi/",
+      "exampleSentence": "火曜日に会いましょう。",
+      "exampleTranslation": "Let's meet on Tuesday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_ja_time_3",
+      "front": "水曜日 (suiyoubi)",
+      "back": "Wednesday",
+      "pronunciation": "/sɯi.joː.bi/",
+      "exampleSentence": "水曜日は暇です。",
+      "exampleTranslation": "I'm free on Wednesday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_ja_time_4",
+      "front": "木曜日 (mokuyoubi)",
+      "back": "Thursday",
+      "pronunciation": "/mo.kɯ.joː.bi/",
+      "exampleSentence": "来週の木曜日です。",
+      "exampleTranslation": "It's next Thursday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_ja_time_5",
+      "front": "金曜日 (kinyoubi)",
+      "back": "Friday",
+      "pronunciation": "/kiɴ.joː.bi/",
+      "exampleSentence": "金曜日の夜です。",
+      "exampleTranslation": "It's Friday night.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_ja_time_6",
+      "front": "土曜日 (doyoubi)",
+      "back": "Saturday",
+      "pronunciation": "/do.joː.bi/",
+      "exampleSentence": "土曜日は休みます。",
+      "exampleTranslation": "I rest on Saturday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_ja_time_7",
+      "front": "日曜日 (nichiyoubi)",
+      "back": "Sunday",
+      "pronunciation": "/ɲi.tɕi.joː.bi/",
+      "exampleSentence": "日曜日は家族と過ごします。",
+      "exampleTranslation": "I spend Sunday with family.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_ja_time_8",
+      "front": "今日 (kyou)",
+      "back": "Today",
+      "pronunciation": "/kʲoː/",
+      "exampleSentence": "今日は暑いです。",
+      "exampleTranslation": "Today is hot.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_time_9",
+      "front": "明日 (ashita)",
+      "back": "Tomorrow",
+      "pronunciation": "/a.ɕi.ta/",
+      "exampleSentence": "明日電話します。",
+      "exampleTranslation": "I'll call tomorrow.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_time_10",
+      "front": "昨日 (kinou)",
+      "back": "Yesterday",
+      "pronunciation": "/ki.noː/",
+      "exampleSentence": "昨日は病気でした。",
+      "exampleTranslation": "Yesterday I was sick.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_time_11",
+      "front": "今 (ima)",
+      "back": "Now",
+      "pronunciation": "/i.ma/",
+      "exampleSentence": "今はできません。",
+      "exampleTranslation": "I can't right now.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_time_12",
+      "front": "いつも (itsumo)",
+      "back": "Always",
+      "pronunciation": "/i.tsɯ.mo/",
+      "exampleSentence": "いつも早く来ます。",
+      "exampleTranslation": "I always come early.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_ja_time_13",
+      "front": "週 (shuu)",
+      "back": "Week",
+      "pronunciation": "/ɕɯː/",
+      "exampleSentence": "先週は忙しかったです。",
+      "exampleTranslation": "Last week was busy.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_time_14",
+      "front": "月 (tsuki)",
+      "back": "Month",
+      "pronunciation": "/tsɯ.ki/",
+      "exampleSentence": "来月旅行します。",
+      "exampleTranslation": "I'm travelling next month.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_time_15",
+      "front": "年 (toshi)",
+      "back": "Year",
+      "pronunciation": "/to.ɕi/",
+      "exampleSentence": "あけましておめでとう。",
+      "exampleTranslation": "Happy new year.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_1",
+      "front": "家族 (kazoku)",
+      "back": "Family",
+      "pronunciation": "/ka.zo.kɯ/",
+      "exampleSentence": "家族は大きいです。",
+      "exampleTranslation": "My family is big.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_2",
+      "front": "母 (haha)",
+      "back": "Mother",
+      "pronunciation": "/ha.ha/",
+      "exampleSentence": "母は料理が上手です。",
+      "exampleTranslation": "My mother cooks well.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_3",
+      "front": "父 (chichi)",
+      "back": "Father",
+      "pronunciation": "/tɕi.tɕi/",
+      "exampleSentence": "父はここで働いています。",
+      "exampleTranslation": "My father works here.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_4",
+      "front": "兄 (ani)",
+      "back": "Older brother",
+      "pronunciation": "/a.ɲi/",
+      "exampleSentence": "兄は医者です。",
+      "exampleTranslation": "My older brother is a doctor.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_5",
+      "front": "姉 (ane)",
+      "back": "Older sister",
+      "pronunciation": "/a.ne/",
+      "exampleSentence": "姉は学生です。",
+      "exampleTranslation": "My older sister is a student.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_6",
+      "front": "弟 (otouto)",
+      "back": "Younger brother",
+      "pronunciation": "/o.toː.to/",
+      "exampleSentence": "弟は五歳です。",
+      "exampleTranslation": "My younger brother is five.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_7",
+      "front": "妹 (imouto)",
+      "back": "Younger sister",
+      "pronunciation": "/i.moː.to/",
+      "exampleSentence": "妹は学校に行きます。",
+      "exampleTranslation": "My younger sister goes to school.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_8",
+      "front": "友達 (tomodachi)",
+      "back": "Friend",
+      "pronunciation": "/to.mo.da.tɕi/",
+      "exampleSentence": "彼は親友です。",
+      "exampleTranslation": "He is my best friend.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_9",
+      "front": "子供 (kodomo)",
+      "back": "Child",
+      "pronunciation": "/ko.do.mo/",
+      "exampleSentence": "子供が公園で遊んでいます。",
+      "exampleTranslation": "The child is playing in the park.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_10",
+      "front": "女性 (josei)",
+      "back": "Woman",
+      "pronunciation": "/dʑo.seː/",
+      "exampleSentence": "あの女性は先生です。",
+      "exampleTranslation": "That woman is a teacher.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_11",
+      "front": "男性 (dansei)",
+      "back": "Man",
+      "pronunciation": "/daɴ.seː/",
+      "exampleSentence": "男性が新聞を読んでいます。",
+      "exampleTranslation": "The man is reading a newspaper.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_fam_12",
+      "front": "人 (hito)",
+      "back": "Person",
+      "pronunciation": "/çi.to/",
+      "exampleSentence": "人が多いです。",
+      "exampleTranslation": "There are many people.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_food_12",
+      "front": "コーヒー (koohii)",
+      "back": "Coffee",
+      "pronunciation": "/koː.çiː/",
+      "exampleSentence": "朝コーヒーを飲みます。",
+      "exampleTranslation": "I drink coffee in the morning.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_ja_food_13",
+      "front": "お茶 (ocha)",
+      "back": "Tea",
+      "pronunciation": "/o.tɕa/",
+      "exampleSentence": "お茶はいかがですか。",
+      "exampleTranslation": "Would you like some tea?",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_ja_food_14",
+      "front": "肉 (niku)",
+      "back": "Meat",
+      "pronunciation": "/ɲi.kɯ/",
+      "exampleSentence": "肉は食べません。",
+      "exampleTranslation": "I don't eat meat.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_food_15",
+      "front": "魚 (sakana)",
+      "back": "Fish",
+      "pronunciation": "/sa.ka.na/",
+      "exampleSentence": "魚が新鮮です。",
+      "exampleTranslation": "The fish is fresh.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_food_16",
+      "front": "ご飯 (gohan)",
+      "back": "Rice / meal",
+      "pronunciation": "/ɡo.haɴ/",
+      "exampleSentence": "ご飯を食べましょう。",
+      "exampleTranslation": "Let's eat.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_food_17",
+      "front": "野菜 (yasai)",
+      "back": "Vegetables",
+      "pronunciation": "/ja.saː.i/",
+      "exampleSentence": "毎日野菜を食べます。",
+      "exampleTranslation": "I eat vegetables every day.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_food_18",
+      "front": "卵 (tamago)",
+      "back": "Egg",
+      "pronunciation": "/ta.ma.ɡo/",
+      "exampleSentence": "卵を二つください。",
+      "exampleTranslation": "Two eggs, please.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_food_19",
+      "front": "朝ご飯 (asagohan)",
+      "back": "Breakfast",
+      "pronunciation": "/a.sa.ɡo.haɴ/",
+      "exampleSentence": "朝ご飯は八時です。",
+      "exampleTranslation": "Breakfast is at eight.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_ja_food_20",
+      "front": "昼ご飯 (hirugohan)",
+      "back": "Lunch",
+      "pronunciation": "/çi.ɾɯ.ɡo.haɴ/",
+      "exampleSentence": "昼ご飯ができました。",
+      "exampleTranslation": "Lunch is ready.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_ja_food_21",
+      "front": "晩ご飯 (bangohan)",
+      "back": "Dinner",
+      "pronunciation": "/baɴ.ɡo.haɴ/",
+      "exampleSentence": "晩ご飯は軽いです。",
+      "exampleTranslation": "Dinner is light.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_ja_food_22",
+      "front": "お会計 (okaikei)",
+      "back": "The bill",
+      "pronunciation": "/o.kaː.i.keː/",
+      "exampleSentence": "お会計をお願いします。",
+      "exampleTranslation": "The bill, please.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "restaurant",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_1",
+      "front": "です (desu)",
+      "back": "To be (polite)",
+      "pronunciation": "/de.sɯ/",
+      "exampleSentence": "学生です。",
+      "exampleTranslation": "I am a student.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_2",
+      "front": "ある (aru)",
+      "back": "To exist (things)",
+      "pronunciation": "/a.ɾɯ/",
+      "exampleSentence": "時間があります。",
+      "exampleTranslation": "I have time.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_3",
+      "front": "いる (iru)",
+      "back": "To exist (people)",
+      "pronunciation": "/i.ɾɯ/",
+      "exampleSentence": "家にいます。",
+      "exampleTranslation": "I am at home.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_4",
+      "front": "する (suru)",
+      "back": "To do",
+      "pronunciation": "/sɯ.ɾɯ/",
+      "exampleSentence": "何をしますか。",
+      "exampleTranslation": "What will you do?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_5",
+      "front": "行く (iku)",
+      "back": "To go",
+      "pronunciation": "/i.kɯ/",
+      "exampleSentence": "一緒に行きたいです。",
+      "exampleTranslation": "I want to go together.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_6",
+      "front": "来る (kuru)",
+      "back": "To come",
+      "pronunciation": "/kɯ.ɾɯ/",
+      "exampleSentence": "明日来られますか。",
+      "exampleTranslation": "Can you come tomorrow?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_7",
+      "front": "できる (dekiru)",
+      "back": "To be able to",
+      "pronunciation": "/de.ki.ɾɯ/",
+      "exampleSentence": "今日はできません。",
+      "exampleTranslation": "I can't today.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_8",
+      "front": "わかる (wakaru)",
+      "back": "To understand",
+      "pronunciation": "/ɰa.ka.ɾɯ/",
+      "exampleSentence": "よくわかりません。",
+      "exampleTranslation": "I don't understand well.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_9",
+      "front": "知る (shiru)",
+      "back": "To know",
+      "pronunciation": "/ɕi.ɾɯ/",
+      "exampleSentence": "答えを知りません。",
+      "exampleTranslation": "I don't know the answer.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_10",
+      "front": "言う (iu)",
+      "back": "To say",
+      "pronunciation": "/i.ɯ/",
+      "exampleSentence": "何と言いましたか。",
+      "exampleTranslation": "What did you say?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_11",
+      "front": "見る (miru)",
+      "back": "To see / watch",
+      "pronunciation": "/mi.ɾɯ/",
+      "exampleSentence": "その映画を見たいです。",
+      "exampleTranslation": "I want to see that film.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_12",
+      "front": "聞く (kiku)",
+      "back": "To listen / ask",
+      "pronunciation": "/ki.kɯ/",
+      "exampleSentence": "音楽を聞きます。",
+      "exampleTranslation": "I listen to music.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_13",
+      "front": "話す (hanasu)",
+      "back": "To speak",
+      "pronunciation": "/ha.na.sɯ/",
+      "exampleSentence": "日本語を少し話します。",
+      "exampleTranslation": "I speak a little Japanese.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_14",
+      "front": "食べる (taberu)",
+      "back": "To eat",
+      "pronunciation": "/ta.be.ɾɯ/",
+      "exampleSentence": "一緒に食べましょう。",
+      "exampleTranslation": "Let's eat together.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_15",
+      "front": "飲む (nomu)",
+      "back": "To drink",
+      "pronunciation": "/no.mɯ/",
+      "exampleSentence": "何か飲みますか。",
+      "exampleTranslation": "Will you drink something?",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_16",
+      "front": "住む (sumu)",
+      "back": "To live",
+      "pronunciation": "/sɯ.mɯ/",
+      "exampleSentence": "東京に住んでいます。",
+      "exampleTranslation": "I live in Tokyo.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_17",
+      "front": "働く (hataraku)",
+      "back": "To work",
+      "pronunciation": "/ha.ta.ɾa.kɯ/",
+      "exampleSentence": "家で働いています。",
+      "exampleTranslation": "I work at home.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_18",
+      "front": "勉強する (benkyou suru)",
+      "back": "To study",
+      "pronunciation": "/beɴ.kʲoː sɯ.ɾɯ/",
+      "exampleSentence": "夜勉強します。",
+      "exampleTranslation": "I study at night.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_19",
+      "front": "買う (kau)",
+      "back": "To buy",
+      "pronunciation": "/ka.ɯ/",
+      "exampleSentence": "お土産を買いたいです。",
+      "exampleTranslation": "I want to buy a souvenir.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_20",
+      "front": "払う (harau)",
+      "back": "To pay",
+      "pronunciation": "/ha.ɾa.ɯ/",
+      "exampleSentence": "カードで払えますか。",
+      "exampleTranslation": "Can I pay by card?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_21",
+      "front": "手伝う (tetsudau)",
+      "back": "To help",
+      "pronunciation": "/te.tsɯ.da.ɯ/",
+      "exampleSentence": "手伝ってくれますか。",
+      "exampleTranslation": "Can you help me?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_22",
+      "front": "探す (sagasu)",
+      "back": "To look for",
+      "pronunciation": "/sa.ɡa.sɯ/",
+      "exampleSentence": "駅を探しています。",
+      "exampleTranslation": "I'm looking for the station.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_23",
+      "front": "読む (yomu)",
+      "back": "To read",
+      "pronunciation": "/jo.mɯ/",
+      "exampleSentence": "寝る前に読みます。",
+      "exampleTranslation": "I read before sleeping.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_24",
+      "front": "書く (kaku)",
+      "back": "To write",
+      "pronunciation": "/ka.kɯ/",
+      "exampleSentence": "メールを書きます。",
+      "exampleTranslation": "I'm writing an email.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_25",
+      "front": "待つ (matsu)",
+      "back": "To wait",
+      "pronunciation": "/ma.tsɯ/",
+      "exampleSentence": "ここで待ってください。",
+      "exampleTranslation": "Please wait here.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_26",
+      "front": "会う (au)",
+      "back": "To meet",
+      "pronunciation": "/a.ɯ/",
+      "exampleSentence": "友達に会います。",
+      "exampleTranslation": "I'm meeting a friend.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_27",
+      "front": "帰る (kaeru)",
+      "back": "To return home",
+      "pronunciation": "/ka.e.ɾɯ/",
+      "exampleSentence": "六時に帰ります。",
+      "exampleTranslation": "I go home at six.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_verb_28",
+      "front": "入る (hairu)",
+      "back": "To enter",
+      "pronunciation": "/haː.i.ɾɯ/",
+      "exampleSentence": "部屋に入ります。",
+      "exampleTranslation": "I enter the room.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_10",
+      "front": "駅 (eki)",
+      "back": "Station",
+      "pronunciation": "/e.ki/",
+      "exampleSentence": "駅はどこですか。",
+      "exampleTranslation": "Where is the station?",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_11",
+      "front": "空港 (kuukou)",
+      "back": "Airport",
+      "pronunciation": "/kɯː.koː/",
+      "exampleSentence": "空港へ行きます。",
+      "exampleTranslation": "I'm going to the airport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_12",
+      "front": "ホテル (hoteru)",
+      "back": "Hotel",
+      "pronunciation": "/ho.te.ɾɯ/",
+      "exampleSentence": "ホテルは近いです。",
+      "exampleTranslation": "The hotel is close.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_13",
+      "front": "道 (michi)",
+      "back": "Road / way",
+      "pronunciation": "/mi.tɕi/",
+      "exampleSentence": "この道をまっすぐです。",
+      "exampleTranslation": "Straight along this road.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_14",
+      "front": "左 (hidari)",
+      "back": "Left",
+      "pronunciation": "/çi.da.ɾi/",
+      "exampleSentence": "左に曲がってください。",
+      "exampleTranslation": "Please turn left.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_15",
+      "front": "右 (migi)",
+      "back": "Right",
+      "pronunciation": "/mi.ɡi/",
+      "exampleSentence": "右にあります。",
+      "exampleTranslation": "It's on the right.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_16",
+      "front": "近い (chikai)",
+      "back": "Near",
+      "pronunciation": "/tɕi.kaː.i/",
+      "exampleSentence": "とても近いです。",
+      "exampleTranslation": "It is very near.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_17",
+      "front": "遠い (tooi)",
+      "back": "Far",
+      "pronunciation": "/toː.i/",
+      "exampleSentence": "海は遠いです。",
+      "exampleTranslation": "The sea is far.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_18",
+      "front": "車 (kuruma)",
+      "back": "Car",
+      "pronunciation": "/kɯ.ɾɯ.ma/",
+      "exampleSentence": "車で行きます。",
+      "exampleTranslation": "I go by car.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_19",
+      "front": "電車 (densha)",
+      "back": "Train",
+      "pronunciation": "/deɴ.ɕa/",
+      "exampleSentence": "電車が来ます。",
+      "exampleTranslation": "The train is coming.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_20",
+      "front": "飛行機 (hikouki)",
+      "back": "Airplane",
+      "pronunciation": "/çi.koː.ki/",
+      "exampleSentence": "飛行機が遅れています。",
+      "exampleTranslation": "The plane is delayed.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_21",
+      "front": "荷物 (nimotsu)",
+      "back": "Luggage",
+      "pronunciation": "/ɲi.mo.tsɯ/",
+      "exampleSentence": "荷物はどこですか。",
+      "exampleTranslation": "Where is my luggage?",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_trav_22",
+      "front": "パスポート (pasupooto)",
+      "back": "Passport",
+      "pronunciation": "/pa.sɯ.poː.to/",
+      "exampleSentence": "パスポートが必要です。",
+      "exampleTranslation": "I need my passport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_1",
+      "front": "いい (ii)",
+      "back": "Good",
+      "pronunciation": "/iː/",
+      "exampleSentence": "いい本です。",
+      "exampleTranslation": "It's a good book.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_2",
+      "front": "悪い (warui)",
+      "back": "Bad",
+      "pronunciation": "/ɰa.ɾɯ.i/",
+      "exampleSentence": "天気が悪いです。",
+      "exampleTranslation": "The weather is bad.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_3",
+      "front": "大きい (ookii)",
+      "back": "Big",
+      "pronunciation": "/oː.kiː/",
+      "exampleSentence": "家が大きいです。",
+      "exampleTranslation": "The house is big.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_4",
+      "front": "小さい (chiisai)",
+      "back": "Small",
+      "pronunciation": "/tɕiː.saː.i/",
+      "exampleSentence": "小さい車です。",
+      "exampleTranslation": "It's a small car.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_5",
+      "front": "新しい (atarashii)",
+      "back": "New",
+      "pronunciation": "/a.ta.ɾa.ɕiː/",
+      "exampleSentence": "新しい電話です。",
+      "exampleTranslation": "It's a new phone.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_6",
+      "front": "古い (furui)",
+      "back": "Old",
+      "pronunciation": "/ɸɯ.ɾɯ.i/",
+      "exampleSentence": "古い建物です。",
+      "exampleTranslation": "It's an old building.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_7",
+      "front": "高い (takai)",
+      "back": "Expensive / tall",
+      "pronunciation": "/ta.kaː.i/",
+      "exampleSentence": "このホテルは高いです。",
+      "exampleTranslation": "This hotel is expensive.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_8",
+      "front": "安い (yasui)",
+      "back": "Cheap",
+      "pronunciation": "/ja.sɯ.i/",
+      "exampleSentence": "とても安いです。",
+      "exampleTranslation": "It's very cheap.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_9",
+      "front": "易しい (yasashii)",
+      "back": "Easy",
+      "pronunciation": "/ja.sa.ɕiː/",
+      "exampleSentence": "試験は易しかったです。",
+      "exampleTranslation": "The exam was easy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_10",
+      "front": "難しい (muzukashii)",
+      "back": "Difficult",
+      "pronunciation": "/mɯ.zɯ.ka.ɕiː/",
+      "exampleSentence": "説明が難しいです。",
+      "exampleTranslation": "It's hard to explain.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_11",
+      "front": "きれい (kirei)",
+      "back": "Pretty / clean",
+      "pronunciation": "/ki.ɾeː/",
+      "exampleSentence": "きれいな服ですね。",
+      "exampleTranslation": "What pretty clothes.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_12",
+      "front": "嬉しい (ureshii)",
+      "back": "Happy",
+      "pronunciation": "/ɯ.ɾe.ɕiː/",
+      "exampleSentence": "とても嬉しいです。",
+      "exampleTranslation": "I am very happy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_13",
+      "front": "疲れた (tsukareta)",
+      "back": "Tired",
+      "pronunciation": "/tsɯ.ka.ɾe.ta/",
+      "exampleSentence": "今日は疲れました。",
+      "exampleTranslation": "I'm tired today.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_14",
+      "front": "忙しい (isogashii)",
+      "back": "Busy",
+      "pronunciation": "/i.so.ɡa.ɕiː/",
+      "exampleSentence": "今週は忙しいです。",
+      "exampleTranslation": "This week is busy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_15",
+      "front": "速い (hayai)",
+      "back": "Fast",
+      "pronunciation": "/ha.jaː.i/",
+      "exampleSentence": "電車は速いです。",
+      "exampleTranslation": "The train is fast.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_adj_16",
+      "front": "遅い (osoi)",
+      "back": "Slow / late",
+      "pronunciation": "/o.soː.i/",
+      "exampleSentence": "サービスが遅いです。",
+      "exampleTranslation": "The service is slow.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_ja_q_1",
+      "front": "何 (nani)",
+      "back": "What",
+      "pronunciation": "/na.ɲi/",
+      "exampleSentence": "何が欲しいですか。",
+      "exampleTranslation": "What do you want?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_q_2",
+      "front": "誰 (dare)",
+      "back": "Who",
+      "pronunciation": "/da.ɾe/",
+      "exampleSentence": "あの人は誰ですか。",
+      "exampleTranslation": "Who is that person?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_q_3",
+      "front": "どこ (doko)",
+      "back": "Where",
+      "pronunciation": "/do.ko/",
+      "exampleSentence": "どこに住んでいますか。",
+      "exampleTranslation": "Where do you live?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_q_4",
+      "front": "いつ (itsu)",
+      "back": "When",
+      "pronunciation": "/i.tsɯ/",
+      "exampleSentence": "いつ着きますか。",
+      "exampleTranslation": "When do you arrive?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_q_5",
+      "front": "なぜ (naze)",
+      "back": "Why",
+      "pronunciation": "/na.ze/",
+      "exampleSentence": "なぜ来ないのですか。",
+      "exampleTranslation": "Why aren't you coming?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_q_6",
+      "front": "どう (dou)",
+      "back": "How",
+      "pronunciation": "/doː/",
+      "exampleSentence": "どう言いますか。",
+      "exampleTranslation": "How do you say it?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_q_7",
+      "front": "いくら (ikura)",
+      "back": "How much",
+      "pronunciation": "/i.kɯ.ɾa/",
+      "exampleSentence": "いくらですか。",
+      "exampleTranslation": "How much is it?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_conn_1",
+      "front": "でも (demo)",
+      "back": "But",
+      "pronunciation": "/de.mo/",
+      "exampleSentence": "行きたい、でもできません。",
+      "exampleTranslation": "I want to go, but I can't.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_conn_2",
+      "front": "から (kara)",
+      "back": "Because / from",
+      "pronunciation": "/ka.ɾa/",
+      "exampleSentence": "雨だから行きません。",
+      "exampleTranslation": "I'm not going because it's raining.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_conn_3",
+      "front": "も (mo)",
+      "back": "Also / too",
+      "pronunciation": "/mo/",
+      "exampleSentence": "私も行きます。",
+      "exampleTranslation": "I'll go too.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_ja_conn_4",
+      "front": "そして (soshite)",
+      "back": "And then",
+      "pronunciation": "/so.ɕi.te/",
+      "exampleSentence": "そして家に帰りました。",
+      "exampleTranslation": "And then I went home.",
+      "category": "Connectors",
+      "tags": [
+        "connectors"
+      ]
+    },
+    {
+      "id": "fc_ja_conn_5",
+      "front": "しかし (shikashi)",
+      "back": "However",
+      "pronunciation": "/ɕi.ka.ɕi/",
+      "exampleSentence": "しかし、賛成しません。",
+      "exampleTranslation": "However, I don't agree.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "formal"
+      ]
+    },
+    {
+      "id": "fc_ja_phr_2",
+      "front": "どういたしまして (dou itashimashite)",
+      "back": "You're welcome",
+      "pronunciation": "/doː i.ta.ɕi.ma.ɕi.te/",
+      "exampleSentence": "「ありがとう」「どういたしまして」",
+      "exampleTranslation": "\"Thanks.\" \"You're welcome.\"",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_ja_phr_3",
+      "front": "すみません (sumimasen)",
+      "back": "Excuse me / sorry",
+      "pronunciation": "/sɯ.mi.ma.seɴ/",
+      "exampleSentence": "すみません、遅れました。",
+      "exampleTranslation": "Sorry, I'm late.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_ja_phr_4",
+      "front": "わかりません (wakarimasen)",
+      "back": "I don't understand",
+      "pronunciation": "/ɰa.ka.ɾi.ma.seɴ/",
+      "exampleSentence": "すみません、わかりません。",
+      "exampleTranslation": "Sorry, I don't understand.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_ja_phr_5",
+      "front": "英語を話せますか (eigo o hanasemasu ka)",
+      "back": "Do you speak English?",
+      "pronunciation": "/eː.ɡo o ha.na.se.ma.sɯ ka/",
+      "exampleSentence": "すみません、英語を話せますか。",
+      "exampleTranslation": "Excuse me, do you speak English?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_ja_phr_6",
+      "front": "トイレはどこですか (toire wa doko desu ka)",
+      "back": "Where is the bathroom?",
+      "pronunciation": "/to.i.ɾe ɰa do.ko de.sɯ ka/",
+      "exampleSentence": "すみません、トイレはどこですか。",
+      "exampleTranslation": "Excuse me, where is the bathroom?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_ja_phr_7",
+      "front": "もっとゆっくりお願いします",
+      "back": "Slower, please",
+      "pronunciation": "/mo.tːo jɯ.kːɯ.ɾi/",
+      "exampleSentence": "もっとゆっくりお願いします。",
+      "exampleTranslation": "More slowly, please.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_ja_phr_8",
+      "front": "助けてください (tasukete kudasai)",
+      "back": "Please help me",
+      "pronunciation": "/ta.sɯ.ke.te kɯ.da.saː.i/",
+      "exampleSentence": "すみません、助けてください。",
+      "exampleTranslation": "Excuse me, please help me.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_ja_phr_9",
+      "front": "また後で (mata atode)",
+      "back": "See you later",
+      "pronunciation": "/ma.ta a.to.de/",
+      "exampleSentence": "また後で！",
+      "exampleTranslation": "See you later!",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "greetings"
+      ]
+    },
+    {
+      "id": "fc_ja_home_1",
+      "front": "家 (ie)",
+      "back": "House",
+      "pronunciation": "/i.e/",
+      "exampleSentence": "家は小さいです。",
+      "exampleTranslation": "My house is small.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_2",
+      "front": "ドア (doa)",
+      "back": "Door",
+      "pronunciation": "/do.a/",
+      "exampleSentence": "ドアを閉めてください。",
+      "exampleTranslation": "Please close the door.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_3",
+      "front": "窓 (mado)",
+      "back": "Window",
+      "pronunciation": "/ma.do/",
+      "exampleSentence": "窓を開けてください。",
+      "exampleTranslation": "Please open the window.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_4",
+      "front": "テーブル (teeburu)",
+      "back": "Table",
+      "pronunciation": "/teː.bɯ.ɾɯ/",
+      "exampleSentence": "本はテーブルの上です。",
+      "exampleTranslation": "The book is on the table.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_5",
+      "front": "椅子 (isu)",
+      "back": "Chair",
+      "pronunciation": "/i.sɯ/",
+      "exampleSentence": "椅子に座ってください。",
+      "exampleTranslation": "Please sit on the chair.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_6",
+      "front": "ベッド (beddo)",
+      "back": "Bed",
+      "pronunciation": "/be.dːo/",
+      "exampleSentence": "ベッドは快適です。",
+      "exampleTranslation": "The bed is comfortable.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_7",
+      "front": "本 (hon)",
+      "back": "Book",
+      "pronunciation": "/hoɴ/",
+      "exampleSentence": "面白い本を読みます。",
+      "exampleTranslation": "I read an interesting book.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_8",
+      "front": "電話 (denwa)",
+      "back": "Telephone",
+      "pronunciation": "/deɴ.ɰa/",
+      "exampleSentence": "電話が使えません。",
+      "exampleTranslation": "My phone doesn't work.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_9",
+      "front": "お金 (okane)",
+      "back": "Money",
+      "pronunciation": "/o.ka.ne/",
+      "exampleSentence": "お金がありません。",
+      "exampleTranslation": "I don't have money.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_home_10",
+      "front": "仕事 (shigoto)",
+      "back": "Work / job",
+      "pronunciation": "/ɕi.ɡo.to/",
+      "exampleSentence": "仕事が好きです。",
+      "exampleTranslation": "I like my job.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_ja_col_1",
+      "front": "赤 (aka)",
+      "back": "Red",
+      "pronunciation": "/a.ka/",
+      "exampleSentence": "車は赤です。",
+      "exampleTranslation": "The car is red.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_ja_col_2",
+      "front": "青 (ao)",
+      "back": "Blue",
+      "pronunciation": "/a.o/",
+      "exampleSentence": "空は青いです。",
+      "exampleTranslation": "The sky is blue.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_ja_col_3",
+      "front": "緑 (midori)",
+      "back": "Green",
+      "pronunciation": "/mi.do.ɾi/",
+      "exampleSentence": "緑が好きです。",
+      "exampleTranslation": "I like green.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_ja_col_4",
+      "front": "黄色 (kiiro)",
+      "back": "Yellow",
+      "pronunciation": "/kiː.ɾo/",
+      "exampleSentence": "太陽は黄色です。",
+      "exampleTranslation": "The sun is yellow.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_ja_col_5",
+      "front": "黒 (kuro)",
+      "back": "Black",
+      "pronunciation": "/kɯ.ɾo/",
+      "exampleSentence": "黒いコートを着ます。",
+      "exampleTranslation": "I wear a black coat.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_ja_col_6",
+      "front": "白 (shiro)",
+      "back": "White",
+      "pronunciation": "/ɕi.ɾo/",
+      "exampleSentence": "壁は白いです。",
+      "exampleTranslation": "The wall is white.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
     }
   ]
 }

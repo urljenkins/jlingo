@@ -1,8 +1,97 @@
 {
   "id": "passive_voice",
   "name": "Passive Voice",
-  "description": "Learn to form and use passive constructions",
+  "description": "Learn Dutch passive constructions using 'worden' (present/imperfect) and 'zijn' (perfect)",
   "level": 23,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_pas_1",
+      "type": "multipleChoice",
+      "question": "Which auxiliary verb forms the dynamic present passive ('is being done') in Dutch?",
+      "options": [
+        "worden (bv. de brief wordt geschreven)",
+        "zijn",
+        "hebben",
+        "mogen"
+      ],
+      "correctAnswer": "worden (bv. de brief wordt geschreven)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pas_2",
+      "type": "translateThis",
+      "question": "Het huis werd vorig jaar gebouwd",
+      "options": [],
+      "correctAnswer": "The house was built last year",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pas_3",
+      "type": "fillInBlank",
+      "question": "De vergadering ___ geopend door de voorzitter. (wordt / is)",
+      "options": [
+        "wordt",
+        "heeft",
+        "doet",
+        "maakt"
+      ],
+      "correctAnswer": "wordt",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pas_4",
+      "type": "matchPairs",
+      "question": "Match active and passive equivalents in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "wordt gemaakt",
+            "native": "is being made (present passive)"
+          },
+          {
+            "target": "werd gemaakt",
+            "native": "was made (imperfect passive)"
+          },
+          {
+            "target": "is gemaakt",
+            "native": "has been made (completed passive)"
+          },
+          {
+            "target": "door (de auteur)",
+            "native": "by (the author - agent)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pas_5",
+      "type": "speakThis",
+      "question": "Er wordt aan een oplossing gewerkt",
+      "options": [],
+      "correctAnswer": "Er wordt aan een oplossing gewerkt",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pas_6",
+      "type": "multipleChoice",
+      "question": "Which preposition introduces the agent who performs the action in a Dutch passive sentence ('by X')?",
+      "options": [
+        "door",
+        "bij",
+        "met",
+        "van"
+      ],
+      "correctAnswer": "door",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

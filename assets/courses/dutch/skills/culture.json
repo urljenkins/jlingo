@@ -1,8 +1,97 @@
 {
   "id": "culture",
   "name": "Culture & Traditions",
-  "description": "Learn about Dutch-speaking cultures and traditions",
+  "description": "Learn Dutch traditions, King's Day (Koningsdag), Sinterklaas, bicycles, and polder consensus model",
   "level": 25,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_cul_1",
+      "type": "multipleChoice",
+      "question": "What national holiday is celebrated on April 27th where everyone wears orange?",
+      "options": [
+        "Koningsdag (King's Day)",
+        "Bevrijdingsdag",
+        "Sinterklaas",
+        "Nieuwjaarsdag"
+      ],
+      "correctAnswer": "Koningsdag (King's Day)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_cul_2",
+      "type": "translateThis",
+      "question": "Op Koningsdag kleurt het hele land oranje",
+      "options": [],
+      "correctAnswer": "On King's Day the whole country turns orange",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_cul_3",
+      "type": "fillInBlank",
+      "question": "Op 5 december vieren we ___ met cadeautjes en gedichten. (Sinterklaas)",
+      "options": [
+        "Sinterklaas",
+        "Pasen",
+        "Kerst",
+        "Carnaval"
+      ],
+      "correctAnswer": "Sinterklaas",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_cul_4",
+      "type": "matchPairs",
+      "question": "Match Dutch cultural institutions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Poldermodel",
+            "native": "Consensus-based decision-making"
+          },
+          {
+            "target": "Vrijmarkt",
+            "native": "Nationwide flea market on King's Day"
+          },
+          {
+            "target": "Kruidnoten",
+            "native": "Spiced mini cookies for Sinterklaas"
+          },
+          {
+            "target": "Beschuit met muisjes",
+            "native": "Rusk with aniseed sprinkles for newborn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_cul_5",
+      "type": "speakThis",
+      "question": "Fijne Koningsdag allemaal!",
+      "options": [],
+      "correctAnswer": "Fijne Koningsdag allemaal!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_cul_6",
+      "type": "multipleChoice",
+      "question": "What is the traditional treat eaten to celebrate the birth of a baby in the Netherlands?",
+      "options": [
+        "Beschuit met muisjes",
+        "Stroopwafel",
+        "Poffertjes",
+        "Drop"
+      ],
+      "correctAnswer": "Beschuit met muisjes",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

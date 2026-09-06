@@ -1,7 +1,97 @@
 {
   "id": "grammar_1",
   "name": "Grammar: Pronouns",
-  "description": "TODO: grammar content",
+  "description": "Learn personal pronouns (I, you, he, she, we, they) and the plural suffix 们 (men)",
   "level": 2,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_gr1_1",
+      "type": "multipleChoice",
+      "question": "Which suffix is added to personal pronouns to make them plural in Chinese?",
+      "options": [
+        "们 (men)",
+        "的 (de)",
+        "个 (ge)",
+        "了 (le)"
+      ],
+      "correctAnswer": "们 (men)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_gr1_2",
+      "type": "translateThis",
+      "question": "我们",
+      "options": [],
+      "correctAnswer": "We",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_gr1_3",
+      "type": "fillInBlank",
+      "question": "___ 都是学生。(They are all students.)",
+      "options": [
+        "他们",
+        "你",
+        "我",
+        "他"
+      ],
+      "correctAnswer": "他们",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_gr1_4",
+      "type": "matchPairs",
+      "question": "Match the Chinese pronouns with English",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "我",
+            "native": "I / me"
+          },
+          {
+            "target": "你",
+            "native": "You"
+          },
+          {
+            "target": "他",
+            "native": "He / him"
+          },
+          {
+            "target": "你们",
+            "native": "You (plural)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_gr1_5",
+      "type": "speakThis",
+      "question": "我们是朋友",
+      "options": [],
+      "correctAnswer": "我们是朋友",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_gr1_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'She' in Chinese characters?",
+      "options": [
+        "她",
+        "他",
+        "它",
+        "你"
+      ],
+      "correctAnswer": "她",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

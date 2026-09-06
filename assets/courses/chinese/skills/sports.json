@@ -1,7 +1,97 @@
 {
   "id": "sports",
   "name": "Sports",
-  "description": "TODO: sports vocabulary",
+  "description": "Learn sports vocabulary, ping pong (table tennis), basketball, football, and verbs 打 and 踢",
   "level": 18,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_spt_1",
+      "type": "multipleChoice",
+      "question": "Which verb is used for playing soccer / football in Chinese (kicking)?",
+      "options": [
+        "踢 (tī)",
+        "打 (dǎ)",
+        "跑 (pǎo)",
+        "游 (yóu)"
+      ],
+      "correctAnswer": "踢 (tī)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_spt_2",
+      "type": "translateThis",
+      "question": "乒乓球是中国的国球",
+      "options": [],
+      "correctAnswer": "Table tennis is China's national ball game",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_spt_3",
+      "type": "fillInBlank",
+      "question": "我们周末去打 ___ 吧。(Let's play basketball this weekend.)",
+      "options": [
+        "篮球",
+        "足球",
+        "游泳",
+        "跑步"
+      ],
+      "correctAnswer": "篮球",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_spt_4",
+      "type": "matchPairs",
+      "question": "Match popular sports in China",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "乒乓球",
+            "native": "Table tennis / Ping-pong"
+          },
+          {
+            "target": "羽毛球",
+            "native": "Badminton"
+          },
+          {
+            "target": "足球",
+            "native": "Football / soccer"
+          },
+          {
+            "target": "游泳",
+            "native": "Swimming"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_spt_5",
+      "type": "speakThis",
+      "question": "我每天早上坚持游泳",
+      "options": [],
+      "correctAnswer": "我每天早上坚持游泳",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_spt_6",
+      "type": "multipleChoice",
+      "question": "What does '健身房' (jiànshēnfáng) mean?",
+      "options": [
+        "Gym / fitness center",
+        "Stadium",
+        "Swimming pool",
+        "Playground"
+      ],
+      "correctAnswer": "Gym / fitness center",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

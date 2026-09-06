@@ -1,7 +1,97 @@
 {
   "id": "at_the_doctor",
   "name": "At the Doctor",
-  "description": "TODO: doctor/medical phrases",
+  "description": "Learn to describe symptoms (fever, cough, cold), take medicine, and speak with doctors",
   "level": 16,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_doc_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'To have a fever' in Chinese?",
+      "options": [
+        "发烧 (fāshāo)",
+        "咳嗽 (késou)",
+        "感冒 (gǎnmào)",
+        "打针 (dǎzhēn)"
+      ],
+      "correctAnswer": "发烧 (fāshāo)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_doc_2",
+      "type": "translateThis",
+      "question": "这种药一天吃三次",
+      "options": [],
+      "correctAnswer": "Take this medicine three times a day",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_doc_3",
+      "type": "fillInBlank",
+      "question": "你哪里不 ___？(Where do you feel uncomfortable/unwell?)",
+      "options": [
+        "舒服",
+        "高兴",
+        "难过",
+        "安静"
+      ],
+      "correctAnswer": "舒服",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_doc_4",
+      "type": "matchPairs",
+      "question": "Match medical symptoms and treatments",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "医生",
+            "native": "Doctor"
+          },
+          {
+            "target": "护士",
+            "native": "Nurse"
+          },
+          {
+            "target": "吃药",
+            "native": "To take medicine"
+          },
+          {
+            "target": "打针",
+            "native": "To get an injection / shot"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_doc_5",
+      "type": "speakThis",
+      "question": "我感冒了，需要休息",
+      "options": [],
+      "correctAnswer": "我感冒了，需要休息",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_doc_6",
+      "type": "multipleChoice",
+      "question": "What is a '医院' (yīyuàn)?",
+      "options": [
+        "Hospital",
+        "School",
+        "Hotel",
+        "Cinema"
+      ],
+      "correctAnswer": "Hospital",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

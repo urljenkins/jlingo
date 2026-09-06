@@ -1,7 +1,97 @@
 {
   "id": "getting_around",
   "name": "Getting Around",
-  "description": "TODO: navigation and getting around phrases",
+  "description": "Learn to ask for directions, navigate streets, and use public transit in China",
   "level": 9,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_ga_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Turn left' in Chinese?",
+      "options": [
+        "向左拐 (xiàng zuǒ guǎi)",
+        "向右拐 (xiàng yòu guǎi)",
+        "直走 (zhí zǒu)",
+        "停车 (tíngchē)"
+      ],
+      "correctAnswer": "向左拐 (xiàng zuǒ guǎi)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ga_2",
+      "type": "translateThis",
+      "question": "火车站怎么走？",
+      "options": [],
+      "correctAnswer": "How do I get to the train station?",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ga_3",
+      "type": "fillInBlank",
+      "question": "我坐 ___ 去机场。(I take a taxi to the airport.)",
+      "options": [
+        "出租车",
+        "饭店",
+        "学校",
+        "公园"
+      ],
+      "correctAnswer": "出租车",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ga_4",
+      "type": "matchPairs",
+      "question": "Match transportation terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "地铁",
+            "native": "Subway / metro"
+          },
+          {
+            "target": "公交车",
+            "native": "Public bus"
+          },
+          {
+            "target": "出租车",
+            "native": "Taxi"
+          },
+          {
+            "target": "高铁",
+            "native": "High-speed train"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_ga_5",
+      "type": "speakThis",
+      "question": "请问最近的地铁站在哪里？",
+      "options": [],
+      "correctAnswer": "请问最近的地铁站在哪里？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ga_6",
+      "type": "multipleChoice",
+      "question": "How do you ask 'Excuse me, may I ask...' politely?",
+      "options": [
+        "请问 (qǐngwèn)",
+        "谢谢",
+        "对不起",
+        "再见"
+      ],
+      "correctAnswer": "请问 (qǐngwèn)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

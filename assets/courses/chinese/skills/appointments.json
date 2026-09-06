@@ -1,7 +1,97 @@
 {
   "id": "appointments",
   "name": "Appointments",
-  "description": "TODO: appointment vocabulary",
+  "description": "Learn to make, reschedule, and cancel appointments (约会 yuēhuì) with clinics, clients, or friends",
   "level": 14,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_app_1",
+      "type": "multipleChoice",
+      "question": "Which verb means 'to make an appointment' in Chinese?",
+      "options": [
+        "预约 (yùyuē)",
+        "预定 (yùdìng)",
+        "决定 (juédìng)",
+        "打算 (dǎsuàn)"
+      ],
+      "correctAnswer": "预约 (yùyuē)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_app_2",
+      "type": "translateThis",
+      "question": "我想改一下预约时间",
+      "options": [],
+      "correctAnswer": "I would like to change the appointment time",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_app_3",
+      "type": "fillInBlank",
+      "question": "请问李大夫今天下午有 ___ 吗？(Is Dr. Li available?)",
+      "options": [
+        "时间",
+        "钱",
+        "车",
+        "病"
+      ],
+      "correctAnswer": "时间",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_app_4",
+      "type": "matchPairs",
+      "question": "Match appointment terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "准时",
+            "native": "Punctual / on time"
+          },
+          {
+            "target": "推迟",
+            "native": "Postpone"
+          },
+          {
+            "target": "取消",
+            "native": "Cancel"
+          },
+          {
+            "target": "提前",
+            "native": "Advance / move earlier"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_app_5",
+      "type": "speakThis",
+      "question": "明天上午十点准时见",
+      "options": [],
+      "correctAnswer": "明天上午十点准时见",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_app_6",
+      "type": "multipleChoice",
+      "question": "What does '迟到' (chídào) mean?",
+      "options": [
+        "To arrive late",
+        "To leave early",
+        "To arrive on time",
+        "To cancel"
+      ],
+      "correctAnswer": "To arrive late",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

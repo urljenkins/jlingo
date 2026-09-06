@@ -1,8 +1,97 @@
 {
   "id": "office",
   "name": "Office Vocabulary",
-  "description": "Learn vocabulary for the workplace",
+  "description": "Learn Dutch office life, meetings (vergaderen), email etiquette, deadlines, and reports",
   "level": 19,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_off_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'To hold a meeting' in Dutch?",
+      "options": [
+        "Vergaderen",
+        "Schrijven",
+        "Werken",
+        "Praten"
+      ],
+      "correctAnswer": "Vergaderen",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_off_2",
+      "type": "translateThis",
+      "question": "De deadline is aanstaande vrijdag",
+      "options": [],
+      "correctAnswer": "The deadline is this coming Friday",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_off_3",
+      "type": "fillInBlank",
+      "question": "De bijlage is toegevoegd aan deze ___ (e-mail / e-mailbericht).",
+      "options": [
+        "e-mail",
+        "vergadering",
+        "telefoon",
+        "kantoor"
+      ],
+      "correctAnswer": "e-mail",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_off_4",
+      "type": "matchPairs",
+      "question": "Match Dutch office terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Vergaderzaal",
+            "native": "Meeting room"
+          },
+          {
+            "target": "Collega",
+            "native": "Colleague / coworker"
+          },
+          {
+            "target": "Verslag",
+            "native": "Minutes / report"
+          },
+          {
+            "target": "Bijlage",
+            "native": "Attachment"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_off_5",
+      "type": "speakThis",
+      "question": "Kunnen we een korte pauze houden?",
+      "options": [],
+      "correctAnswer": "Kunnen we een korte pauze houden?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_off_6",
+      "type": "multipleChoice",
+      "question": "What is 'overwerken'?",
+      "options": [
+        "Working overtime",
+        "Taking a sick day",
+        "Working remotely",
+        "Retiring"
+      ],
+      "correctAnswer": "Working overtime",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

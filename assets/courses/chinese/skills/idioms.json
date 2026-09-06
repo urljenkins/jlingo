@@ -1,7 +1,97 @@
 {
   "id": "idioms",
   "name": "Idioms",
-  "description": "TODO: idioms and common expressions",
+  "description": "Learn essential Chinese four-character idioms (成语 chéngyǔ) and their historical stories",
   "level": 24,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_idm_1",
+      "type": "multipleChoice",
+      "question": "What idiom means 'drawing legs on a snake' (ruining something by doing unnecessary extra work)?",
+      "options": [
+        "画蛇添足 (huàshétiānzú)",
+        "守株待兔",
+        "对牛弹琴",
+        "盲人摸象"
+      ],
+      "correctAnswer": "画蛇添足 (huàshétiānzú)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_idm_2",
+      "type": "translateThis",
+      "question": "塞翁失马，焉知非福",
+      "options": [],
+      "correctAnswer": "A blessing in disguise (the old man lost his horse)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_idm_3",
+      "type": "fillInBlank",
+      "question": "只要坚持不懈，就能愚公 ___ 山。(move the mountain)",
+      "options": [
+        "移",
+        "爬",
+        "看",
+        "跑"
+      ],
+      "correctAnswer": "移",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_idm_4",
+      "type": "matchPairs",
+      "question": "Match famous Chengyu with their meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "入乡随俗",
+            "native": "When in Rome, do as the Romans do"
+          },
+          {
+            "target": "拔苗助长",
+            "native": "Spoiling things through over-enthusiasm"
+          },
+          {
+            "target": "掩耳盗铃",
+            "native": "Deceiving oneself (covering ears to steal a bell)"
+          },
+          {
+            "target": "半途而废",
+            "native": "Giving up halfway"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_idm_5",
+      "type": "speakThis",
+      "question": "做事情千万不能半途而废",
+      "options": [],
+      "correctAnswer": "做事情千万不能半途而废",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_idm_6",
+      "type": "multipleChoice",
+      "question": "What does '一石二鸟' mean?",
+      "options": [
+        "Kill two birds with one stone",
+        "Throw a stone into water",
+        "Two birds singing",
+        "A heavy burden"
+      ],
+      "correctAnswer": "Kill two birds with one stone",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

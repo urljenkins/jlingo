@@ -1,8 +1,97 @@
 {
   "id": "grammar_ser_estar",
   "name": "Grammar: Core Verbs",
-  "description": "Learn the two Dutch verbs for 'to be'",
+  "description": "Master the core auxiliary and linking verbs in Dutch: 'zijn' (to be) and 'worden' (to become)",
   "level": 7,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_gse_1",
+      "type": "multipleChoice",
+      "question": "How do you conjugate 'zijn' (to be) for 'ik' (I) in the present tense?",
+      "options": [
+        "ben",
+        "bent",
+        "is",
+        "zijn"
+      ],
+      "correctAnswer": "ben",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_gse_2",
+      "type": "translateThis",
+      "question": "Hij is dokter",
+      "options": [],
+      "correctAnswer": "He is a doctor",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_gse_3",
+      "type": "fillInBlank",
+      "question": "Jij ___ erg aardig. (You are)",
+      "options": [
+        "bent",
+        "ben",
+        "is",
+        "zijn"
+      ],
+      "correctAnswer": "bent",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_gse_4",
+      "type": "matchPairs",
+      "question": "Match present conjugations of 'zijn'",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ik ben",
+            "native": "I am"
+          },
+          {
+            "target": "jij bent",
+            "native": "you are"
+          },
+          {
+            "target": "hij is",
+            "native": "he is"
+          },
+          {
+            "target": "wij zijn",
+            "native": "we are"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_gse_5",
+      "type": "speakThis",
+      "question": "Wij zijn klaar voor vertrek",
+      "options": [],
+      "correctAnswer": "Wij zijn klaar voor vertrek",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_gse_6",
+      "type": "multipleChoice",
+      "question": "What is the verb 'worden' used for?",
+      "options": [
+        "To become / passive voice marker",
+        "To have",
+        "To go",
+        "To say"
+      ],
+      "correctAnswer": "To become / passive voice marker",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

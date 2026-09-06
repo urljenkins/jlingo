@@ -1,8 +1,97 @@
 {
   "id": "future_tense",
   "name": "Future Tense",
-  "description": "Learn to express future actions",
+  "description": "Learn the future tense in Dutch using 'zullen' and 'gaan + infinitive'",
   "level": 14,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_ft_1",
+      "type": "multipleChoice",
+      "question": "Which auxiliary verb expresses formal future predictions and promises in Dutch?",
+      "options": [
+        "zullen (zal/zullen)",
+        "mogen",
+        "willen",
+        "kunnen"
+      ],
+      "correctAnswer": "zullen (zal/zullen)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ft_2",
+      "type": "translateThis",
+      "question": "Morgen gaat het sneeuwen",
+      "options": [],
+      "correctAnswer": "Tomorrow it is going to snow",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ft_3",
+      "type": "fillInBlank",
+      "question": "Ik ___ je vanavond bellen. (will / promise)",
+      "options": [
+        "zal",
+        "ben",
+        "heb",
+        "moet"
+      ],
+      "correctAnswer": "zal",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ft_4",
+      "type": "matchPairs",
+      "question": "Match future expressions in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ik zal",
+            "native": "I will"
+          },
+          {
+            "target": "wij zullen",
+            "native": "we will"
+          },
+          {
+            "target": "gaan verhuizen",
+            "native": "going to move house"
+          },
+          {
+            "target": "volgend jaar",
+            "native": "next year"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_ft_5",
+      "type": "speakThis",
+      "question": "We gaan straks koffie drinken",
+      "options": [],
+      "correctAnswer": "We gaan straks koffie drinken",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ft_6",
+      "type": "multipleChoice",
+      "question": "How is informal future intent ('going to do X') most often expressed in spoken Dutch?",
+      "options": [
+        "gaan + infinitive (ik ga slapen)",
+        "zijn + voltooid deelwoord",
+        "hebben + infinitive",
+        "zullen + voltooid deelwoord"
+      ],
+      "correctAnswer": "gaan + infinitive (ik ga slapen)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

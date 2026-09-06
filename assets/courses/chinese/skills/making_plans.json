@@ -1,7 +1,97 @@
 {
   "id": "making_plans",
   "name": "Making Plans",
-  "description": "TODO: planning phrases",
+  "description": "Learn to propose outings, accept invitations, schedule meetings, and negotiate times",
   "level": 14,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_mp_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'Are you free this weekend?' in Chinese?",
+      "options": [
+        "这个周末你有空吗？",
+        "这个周末你几点起？",
+        "这是你的周末吗？",
+        "周末天气好吗？"
+      ],
+      "correctAnswer": "这个周末你有空吗？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_mp_2",
+      "type": "translateThis",
+      "question": "我们一起去看电影怎么样？",
+      "options": [],
+      "correctAnswer": "How about we go watch a movie together?",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_mp_3",
+      "type": "fillInBlank",
+      "question": "太好了，一言为 ___！(It's a deal / settled!)",
+      "options": [
+        "定",
+        "好",
+        "行",
+        "去"
+      ],
+      "correctAnswer": "定",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_mp_4",
+      "type": "matchPairs",
+      "question": "Match invitation and response phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "有空",
+            "native": "Have free time"
+          },
+          {
+            "target": "没问题",
+            "native": "No problem"
+          },
+          {
+            "target": "改天吧",
+            "native": "Another day perhaps"
+          },
+          {
+            "target": "怎么样？",
+            "native": "How about it?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_mp_5",
+      "type": "speakThis",
+      "question": "星期六下午见",
+      "options": [],
+      "correctAnswer": "星期六下午见",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_mp_6",
+      "type": "multipleChoice",
+      "question": "What is an enthusiastic way to accept an idea in Chinese?",
+      "options": [
+        "好主意！ (Good idea!)",
+        "随便",
+        "别去",
+        "不知道"
+      ],
+      "correctAnswer": "好主意！ (Good idea!)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

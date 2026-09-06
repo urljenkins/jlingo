@@ -1,7 +1,97 @@
 {
   "id": "food",
   "name": "Food",
-  "description": "TODO: food vocabulary",
+  "description": "Learn food vocabulary, meals, staple foods, and fruits in Mandarin Chinese",
   "level": 5,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_food_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Rice' (cooked rice) in Chinese?",
+      "options": [
+        "米饭",
+        "面条",
+        "包子",
+        "面包"
+      ],
+      "correctAnswer": "米饭",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_food_2",
+      "type": "translateThis",
+      "question": "苹果",
+      "options": [],
+      "correctAnswer": "Apple",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_food_3",
+      "type": "fillInBlank",
+      "question": "我喜欢吃 ___。(I like eating noodles.)",
+      "options": [
+        "面条",
+        "水",
+        "茶",
+        "杯子"
+      ],
+      "correctAnswer": "面条",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_food_4",
+      "type": "matchPairs",
+      "question": "Match Chinese food items with English",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "米饭",
+            "native": "Rice"
+          },
+          {
+            "target": "面包",
+            "native": "Bread"
+          },
+          {
+            "target": "鸡蛋",
+            "native": "Egg"
+          },
+          {
+            "target": "牛肉",
+            "native": "Beef"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_food_5",
+      "type": "speakThis",
+      "question": "中国菜很好吃",
+      "options": [],
+      "correctAnswer": "中国菜很好吃",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_food_6",
+      "type": "multipleChoice",
+      "question": "What does '好吃' (hǎochī) mean?",
+      "options": [
+        "Delicious / Tasty",
+        "Expensive",
+        "Cold",
+        "Sweet"
+      ],
+      "correctAnswer": "Delicious / Tasty",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

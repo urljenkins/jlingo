@@ -1,8 +1,97 @@
 {
   "id": "food",
   "name": "Food",
-  "description": "Learn common food items",
+  "description": "Learn Dutch food vocabulary, traditional dishes, bakery items, and groceries",
   "level": 5,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_food_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Bread' in Dutch?",
+      "options": [
+        "Brood",
+        "Kaas",
+        "Melk",
+        "Appel"
+      ],
+      "correctAnswer": "Brood",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_food_2",
+      "type": "translateThis",
+      "question": "De kaas is lekker",
+      "options": [],
+      "correctAnswer": "The cheese is tasty",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_food_3",
+      "type": "fillInBlank",
+      "question": "Ik eet graag aardappelen met ___ (vegetables).",
+      "options": [
+        "groenten",
+        "brood",
+        "koffie",
+        "fruit"
+      ],
+      "correctAnswer": "groenten",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_food_4",
+      "type": "matchPairs",
+      "question": "Match Dutch food terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Kaas",
+            "native": "Cheese"
+          },
+          {
+            "target": "Vlees",
+            "native": "Meat"
+          },
+          {
+            "target": "Vis",
+            "native": "Fish"
+          },
+          {
+            "target": "Boter",
+            "native": "Butter"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_food_5",
+      "type": "speakThis",
+      "question": "Eet smakelijk!",
+      "options": [],
+      "correctAnswer": "Eet smakelijk!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_food_6",
+      "type": "multipleChoice",
+      "question": "What is the famous Dutch waffle with syrup called?",
+      "options": [
+        "Stroopwafel",
+        "Poffertje",
+        "Oliebol",
+        "Appeltaart"
+      ],
+      "correctAnswer": "Stroopwafel",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

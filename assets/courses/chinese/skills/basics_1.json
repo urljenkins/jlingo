@@ -1,105 +1,161 @@
 {
   "id": "basics_1",
-  "name": "基础 1",
-  "description": "学习基本问候与自我介绍",
+  "name": "Basics 1",
+  "description": "Learn essential greetings, thank you, and goodbyes in Mandarin Chinese",
   "level": 1,
   "exercises": [
     {
-      "id": "ex_1",
+      "id": "ex_zh_b1_1",
       "type": "translateThis",
-      "question": "Hola",
+      "question": "你好",
       "options": [],
-      "correctAnswer": "你好"
+      "correctAnswer": "Hello",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_2",
+      "id": "ex_zh_b1_2",
       "type": "multipleChoice",
-      "question": "'Gracias' 是什么意思？",
+      "question": "What does '谢谢' (Xièxie) mean?",
       "options": [
-        "谢谢",
-        "请",
-        "再见",
+        "Thank you",
+        "Please",
+        "Goodbye",
+        "Hello"
+      ],
+      "correctAnswer": "Thank you",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_b1_3",
+      "type": "fillInBlank",
+      "question": "早上 ___ (Good morning)",
+      "options": [
+        "好",
+        "见",
+        "谢",
+        "你"
+      ],
+      "correctAnswer": "好",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_b1_4",
+      "type": "translateThis",
+      "question": "再见",
+      "options": [],
+      "correctAnswer": "Goodbye",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_b1_5",
+      "type": "multipleChoice",
+      "question": "How do you say 'Good night' in Chinese?",
+      "options": [
+        "晚安",
+        "早上好",
+        "下午好",
         "你好"
       ],
-      "correctAnswer": "谢谢"
+      "correctAnswer": "晚安",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_3",
-      "type": "fillInBlank",
-      "question": "Buenos ___",
-      "options": ["días", "noches", "tardes", "hola"],
-      "correctAnswer": "días"
-    },
-    {
-      "id": "ex_4",
-      "type": "translateThis",
-      "question": "Adiós",
-      "options": [],
-      "correctAnswer": "再见"
-    },
-    {
-      "id": "ex_5",
-      "type": "multipleChoice",
-      "question": "如何用西班牙语说 '晚安'？",
-      "options": ["Buenas noches", "Buenos días", "Buenas tardes", "Hola"],
-      "correctAnswer": "Buenas noches"
-    },
-    {
-      "id": "ex_6",
+      "id": "ex_zh_b1_6",
       "type": "matchPairs",
-      "question": "将西班牙词与其英文翻译配对",
+      "question": "Match the Chinese greetings with English",
       "options": [],
       "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
       "metadata": {
         "pairs": [
-          {"target": "Hola", "native": "Hello"},
-          {"target": "Adiós", "native": "Goodbye"},
-          {"target": "Gracias", "native": "Thank you"},
-          {"target": "Por favor", "native": "Please"}
+          {
+            "target": "你好",
+            "native": "Hello"
+          },
+          {
+            "target": "再见",
+            "native": "Goodbye"
+          },
+          {
+            "target": "谢谢",
+            "native": "Thank you"
+          },
+          {
+            "target": "不客气",
+            "native": "You're welcome"
+          }
         ]
       }
     },
     {
-      "id": "ex_7",
+      "id": "ex_zh_b1_7",
       "type": "listeningComprehension",
-      "question": "Buenas tardes",
+      "question": "下午好",
       "options": [],
-      "correctAnswer": "Buenas tardes"
+      "correctAnswer": "下午好",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_8",
+      "id": "ex_zh_b1_8",
       "type": "speakThis",
-      "question": "Hola, ¿cómo estás?",
+      "question": "你好，你好吗？",
       "options": [],
-      "correctAnswer": "Hola, ¿cómo estás?"
+      "correctAnswer": "你好，你好吗？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_b1_9",
+      "id": "ex_zh_b1_9",
       "type": "translateThis",
-      "question": "Por favor",
+      "question": "请",
       "options": [],
-      "correctAnswer": "请"
+      "correctAnswer": "Please",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_b1_10",
+      "id": "ex_zh_b1_10",
       "type": "multipleChoice",
-      "question": "如何用西班牙语说 '打扰一下' (Excuse me)？",
-      "options": ["Perdón", "Hola", "Gracias", "Adiós"],
-      "correctAnswer": "Perdón"
+      "question": "How do you say 'Excuse me' / 'Sorry' in Chinese?",
+      "options": [
+        "对不起",
+        "你好",
+        "谢谢",
+        "再见"
+      ],
+      "correctAnswer": "对不起",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_b1_11",
+      "id": "ex_zh_b1_11",
       "type": "fillInBlank",
-      "question": "De ___",
-      "options": ["nada", "todo", "algo", "poco"],
-      "correctAnswer": "nada"
+      "question": "不 ___ (You are welcome)",
+      "options": [
+        "客气",
+        "好",
+        "对",
+        "行"
+      ],
+      "correctAnswer": "客气",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_b1_12",
+      "id": "ex_zh_b1_12",
       "type": "listeningComprehension",
-      "question": "Mucho gusto",
+      "question": "很高兴认识你",
       "options": [],
-      "correctAnswer": "Mucho gusto"
+      "correctAnswer": "很高兴认识你",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     }
   ]
 }

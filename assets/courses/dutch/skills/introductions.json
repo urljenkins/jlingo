@@ -1,8 +1,98 @@
 {
   "id": "introductions",
   "name": "Introductions",
-  "description": "Learn to introduce yourself and ask about others",
+  "description": "Learn to introduce yourself, ask names, and state where you come from",
   "level": 1,
   "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_intro_1",
+      "type": "translateThis",
+      "question": "Ik kom uit Nederland",
+      "options": [],
+      "correctAnswer": "I come from the Netherlands",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_intro_2",
+      "type": "multipleChoice",
+      "question": "How do you ask 'What is your name?' formally in Dutch?",
+      "options": [
+        "Wat is uw naam?",
+        "Hoe heet je?",
+        "Wie ben jij?",
+        "Waar woon je?"
+      ],
+      "correctAnswer": "Wat is uw naam?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_intro_3",
+      "type": "fillInBlank",
+      "question": "Mijn naam ___ Emma.",
+      "options": [
+        "is",
+        "ben",
+        "zijn",
+        "heet"
+      ],
+      "correctAnswer": "is",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_intro_4",
+      "type": "matchPairs",
+      "question": "Match the introduction expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Ik heet",
+            "native": "My name is"
+          },
+          {
+            "target": "Ik kom uit",
+            "native": "I come from"
+          },
+          {
+            "target": "Aangenaam",
+            "native": "Nice to meet you"
+          },
+          {
+            "target": "Waar woon je?",
+            "native": "Where do you live?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_intro_5",
+      "type": "speakThis",
+      "question": "Aangenaam kennis te maken",
+      "options": [],
+      "correctAnswer": "Aangenaam kennis te maken",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_intro_6",
+      "type": "fillInBlank",
+      "question": "Ik ___ in Amsterdam.",
+      "options": [
+        "woon",
+        "kom",
+        "heet",
+        "ben"
+      ],
+      "correctAnswer": "woon",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

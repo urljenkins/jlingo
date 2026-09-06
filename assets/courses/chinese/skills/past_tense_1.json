@@ -1,7 +1,97 @@
 {
   "id": "past_tense_1",
   "name": "Past Tense: Preterite",
-  "description": "TODO: past tense exercises",
+  "description": "Learn completed action markers with particle 了 (le) and past time words",
   "level": 12,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_pt1_1",
+      "type": "multipleChoice",
+      "question": "Which particle is placed after a verb in Chinese to indicate completion of an action?",
+      "options": [
+        "了 (le)",
+        "过 (guo)",
+        "着 (zhe)",
+        "的 (de)"
+      ],
+      "correctAnswer": "了 (le)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt1_2",
+      "type": "translateThis",
+      "question": "我昨天买了一本书",
+      "options": [],
+      "correctAnswer": "I bought a book yesterday",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt1_3",
+      "type": "fillInBlank",
+      "question": "他吃 ___ 晚饭就出去了。(He ate dinner and then went out.)",
+      "options": [
+        "了",
+        "吗",
+        "呢",
+        "把"
+      ],
+      "correctAnswer": "了",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt1_4",
+      "type": "matchPairs",
+      "question": "Match completed actions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "吃了",
+            "native": "Ate / has eaten"
+          },
+          {
+            "target": "去了",
+            "native": "Went / has gone"
+          },
+          {
+            "target": "到了",
+            "native": "Arrived"
+          },
+          {
+            "target": "买了",
+            "native": "Bought"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pt1_5",
+      "type": "speakThis",
+      "question": "我已经吃过了",
+      "options": [],
+      "correctAnswer": "我已经吃过了",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt1_6",
+      "type": "multipleChoice",
+      "question": "How do you negate a completed past action in Chinese?",
+      "options": [
+        "没 (méi) + Verb (drop 'le')",
+        "不 (bù) + Verb + le",
+        "未 (wèi) + le",
+        "别 (bié) + Verb"
+      ],
+      "correctAnswer": "没 (méi) + Verb (drop 'le')",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

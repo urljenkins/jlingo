@@ -1,8 +1,97 @@
 {
   "id": "clothing",
   "name": "Clothing",
-  "description": "Learn vocabulary for clothes and accessories",
+  "description": "Learn vocabulary for garments, shoes, coats, and wearing/putting on clothes in Dutch",
   "level": 6,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_clo_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Pants / Trousers' in Dutch?",
+      "options": [
+        "Broek",
+        "Overhemd",
+        "Schoenen",
+        "Jas"
+      ],
+      "correctAnswer": "Broek",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_clo_2",
+      "type": "translateThis",
+      "question": "Een warme jas",
+      "options": [],
+      "correctAnswer": "A warm coat",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_clo_3",
+      "type": "fillInBlank",
+      "question": "Zij draagt een mooie ___ (skirt).",
+      "options": [
+        "rok",
+        "jurk",
+        "schoen",
+        "hoed"
+      ],
+      "correctAnswer": "rok",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_clo_4",
+      "type": "matchPairs",
+      "question": "Match Dutch clothing items",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Overhemd",
+            "native": "Shirt (buttoned)"
+          },
+          {
+            "target": "Trui",
+            "native": "Sweater"
+          },
+          {
+            "target": "Schoenen",
+            "native": "Shoes"
+          },
+          {
+            "target": "Jurk",
+            "native": "Dress"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_clo_5",
+      "type": "speakThis",
+      "question": "Trek je jas aan",
+      "options": [],
+      "correctAnswer": "Trek je jas aan",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_clo_6",
+      "type": "multipleChoice",
+      "question": "Which verb means 'to wear' in Dutch?",
+      "options": [
+        "Dragen",
+        "Aantrekken",
+        "Kopen",
+        "Wassen"
+      ],
+      "correctAnswer": "Dragen",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

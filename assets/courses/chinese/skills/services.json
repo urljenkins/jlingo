@@ -1,7 +1,97 @@
 {
   "id": "services",
   "name": "Services",
-  "description": "TODO: service-related phrases",
+  "description": "Learn vocabulary for post offices, banks, barbershops, and asking for assistance",
   "level": 10,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_srv_1",
+      "type": "multipleChoice",
+      "question": "Where do you go to send a parcel or letter in China?",
+      "options": [
+        "邮局 (yóujú)",
+        "银行 (yínháng)",
+        "医院 (yīyuàn)",
+        "药店 (yàodiàn)"
+      ],
+      "correctAnswer": "邮局 (yóujú)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_srv_2",
+      "type": "translateThis",
+      "question": "我想换一些人民币",
+      "options": [],
+      "correctAnswer": "I want to exchange some RMB",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_srv_3",
+      "type": "fillInBlank",
+      "question": "您需要什么 ___？(What help/service do you need?)",
+      "options": [
+        "帮助",
+        "衣服",
+        "饭菜",
+        "时间"
+      ],
+      "correctAnswer": "帮助",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_srv_4",
+      "type": "matchPairs",
+      "question": "Match service locations",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "银行",
+            "native": "Bank"
+          },
+          {
+            "target": "理发店",
+            "native": "Barbershop / hair salon"
+          },
+          {
+            "target": "洗衣店",
+            "native": "Laundromat / dry cleaners"
+          },
+          {
+            "target": "药店",
+            "native": "Pharmacy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_srv_5",
+      "type": "speakThis",
+      "question": "请帮我寄这个包裹",
+      "options": [],
+      "correctAnswer": "请帮我寄这个包裹",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_srv_6",
+      "type": "multipleChoice",
+      "question": "What is an 'ATM' (自动取款机) primarily used for?",
+      "options": [
+        "Withdraw cash",
+        "Buy food",
+        "Rent a bicycle",
+        "Send a mail"
+      ],
+      "correctAnswer": "Withdraw cash",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

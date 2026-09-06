@@ -1,7 +1,97 @@
 {
   "id": "emotions",
   "name": "Feelings & Emotions",
-  "description": "TODO: emotions vocabulary",
+  "description": "Express happiness, sadness, excitement, anxiety, calm, and psychological states in Chinese",
   "level": 21,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_emo_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Anxious / nervous' in Chinese?",
+      "options": [
+        "紧张 (jǐnzhāng)",
+        "高兴 (gāoxìng)",
+        "兴奋 (xīngfèn)",
+        "难过 (nánguò)"
+      ],
+      "correctAnswer": "紧张 (jǐnzhāng)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_emo_2",
+      "type": "translateThis",
+      "question": "听到这个好消息我感到非常高兴",
+      "options": [],
+      "correctAnswer": "I felt very happy hearing this good news",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_emo_3",
+      "type": "fillInBlank",
+      "question": "别生气，请保持 ___。(calm / peaceful)",
+      "options": [
+        "冷静",
+        "着急",
+        "难过",
+        "害怕"
+      ],
+      "correctAnswer": "冷静",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_emo_4",
+      "type": "matchPairs",
+      "question": "Match emotions in Chinese",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "快乐",
+            "native": "Happy / joyful"
+          },
+          {
+            "target": "悲伤",
+            "native": "Sad / grief-stricken"
+          },
+          {
+            "target": "愤怒",
+            "native": "Angry / furious"
+          },
+          {
+            "target": "惊讶",
+            "native": "Surprised / astonished"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_emo_5",
+      "type": "speakThis",
+      "question": "今天我的心情特别好",
+      "options": [],
+      "correctAnswer": "今天我的心情特别好",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_emo_6",
+      "type": "multipleChoice",
+      "question": "What does '羡慕' (xiànmù) mean?",
+      "options": [
+        "To envy / admire",
+        "To hate",
+        "To pity",
+        "To trust"
+      ],
+      "correctAnswer": "To envy / admire",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

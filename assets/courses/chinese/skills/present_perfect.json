@@ -1,7 +1,97 @@
 {
   "id": "present_perfect",
   "name": "Present Perfect",
-  "description": "TODO: present perfect exercises",
+  "description": "Learn already-completed actions with current relevance using 已经...了 (yǐjīng...le)",
   "level": 13,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_pp_1",
+      "type": "multipleChoice",
+      "question": "Which pair of words forms the standard pattern for 'already ... done' in Chinese?",
+      "options": [
+        "已经 ... 了 (yǐjīng ... le)",
+        "就要 ... 了",
+        "正在 ... 呢",
+        "如果 ... 就"
+      ],
+      "correctAnswer": "已经 ... 了 (yǐjīng ... le)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pp_2",
+      "type": "translateThis",
+      "question": "我已经做完作业了",
+      "options": [],
+      "correctAnswer": "I have already finished my homework",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pp_3",
+      "type": "fillInBlank",
+      "question": "飞机已经 ___ 了。(The plane has already taken off.)",
+      "options": [
+        "起飞",
+        "睡觉",
+        "吃饭",
+        "跑步"
+      ],
+      "correctAnswer": "起飞",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pp_4",
+      "type": "matchPairs",
+      "question": "Match present perfect expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "已经到了",
+            "native": "Has already arrived"
+          },
+          {
+            "target": "已经好了",
+            "native": "Is already ready/done"
+          },
+          {
+            "target": "还没来",
+            "native": "Has not come yet"
+          },
+          {
+            "target": "刚走",
+            "native": "Just left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pp_5",
+      "type": "speakThis",
+      "question": "我已经准备好了",
+      "options": [],
+      "correctAnswer": "我已经准备好了",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pp_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'not yet' in Chinese?",
+      "options": [
+        "还没 (hái méi)",
+        "不再 (bú zài)",
+        "已经 (yǐjīng)",
+        "快要 (kuàiyào)"
+      ],
+      "correctAnswer": "还没 (hái méi)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

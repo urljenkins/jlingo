@@ -13,7 +13,10 @@
       "exampleSentence": "Hallo, hoe gaat het met jou?",
       "exampleTranslation": "Hello, how are you doing?",
       "category": "Greetings",
-      "tags": ["basic", "essential"]
+      "tags": [
+        "basic",
+        "essential"
+      ]
     },
     {
       "id": "fc_nl_2",
@@ -23,7 +26,10 @@
       "exampleSentence": "Goedemorgen, een fijne dag gewenst!",
       "exampleTranslation": "Good morning, have a nice day!",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_nl_3",
@@ -33,7 +39,11 @@
       "exampleSentence": "Hartelijk dank voor je hulp.",
       "exampleTranslation": "Thank you very much for your help.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_nl_4",
@@ -43,7 +53,10 @@
       "exampleSentence": "Geen probleem, graag gedaan!",
       "exampleTranslation": "No problem, you're welcome!",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_nl_5",
@@ -53,7 +66,11 @@
       "exampleSentence": "Een kop koffie, alstublieft.",
       "exampleTranslation": "A cup of coffee, please.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_nl_6",
@@ -63,7 +80,10 @@
       "exampleSentence": "Hallo, ik heet Peter en ik woon in Amsterdam.",
       "exampleTranslation": "Hello, my name is Peter and I live in Amsterdam.",
       "category": "Introductions",
-      "tags": ["basic", "introductions"]
+      "tags": [
+        "basic",
+        "introductions"
+      ]
     },
     {
       "id": "fc_nl_7",
@@ -73,7 +93,10 @@
       "exampleSentence": "Mag ik een glas water?",
       "exampleTranslation": "May I have a glass of water?",
       "category": "Food & Drink",
-      "tags": ["nouns", "food"]
+      "tags": [
+        "nouns",
+        "food"
+      ]
     },
     {
       "id": "fc_nl_8",
@@ -83,7 +106,1932 @@
       "exampleSentence": "We eten vers brood bij het ontbijt.",
       "exampleTranslation": "We eat fresh bread at breakfast.",
       "category": "Food & Drink",
-      "tags": ["nouns", "food"]
+      "tags": [
+        "nouns",
+        "food"
+      ]
+    },
+    {
+      "id": "fc_nl_num_1",
+      "front": "Een",
+      "back": "One",
+      "pronunciation": "/eːn/",
+      "exampleSentence": "Ik heb een broer.",
+      "exampleTranslation": "I have one brother.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_2",
+      "front": "Twee",
+      "back": "Two",
+      "pronunciation": "/tʋeː/",
+      "exampleSentence": "Twee koffie, alstublieft.",
+      "exampleTranslation": "Two coffees, please.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_3",
+      "front": "Drie",
+      "back": "Three",
+      "pronunciation": "/dri/",
+      "exampleSentence": "Het is drie uur.",
+      "exampleTranslation": "It is three o'clock.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_4",
+      "front": "Vier",
+      "back": "Four",
+      "pronunciation": "/vir/",
+      "exampleSentence": "Vier personen.",
+      "exampleTranslation": "Four people.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_5",
+      "front": "Vijf",
+      "back": "Five",
+      "pronunciation": "/vɛif/",
+      "exampleSentence": "Vijf minuten.",
+      "exampleTranslation": "Five minutes.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_6",
+      "front": "Zes",
+      "back": "Six",
+      "pronunciation": "/zɛs/",
+      "exampleSentence": "Zes euro.",
+      "exampleTranslation": "Six euros.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_7",
+      "front": "Zeven",
+      "back": "Seven",
+      "pronunciation": "/ˈzeː.və(n)/",
+      "exampleSentence": "Zeven dagen per week.",
+      "exampleTranslation": "Seven days a week.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_8",
+      "front": "Acht",
+      "back": "Eight",
+      "pronunciation": "/ɑxt/",
+      "exampleSentence": "De trein van acht uur.",
+      "exampleTranslation": "The eight o'clock train.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_9",
+      "front": "Negen",
+      "back": "Nine",
+      "pronunciation": "/ˈneː.ɣə(n)/",
+      "exampleSentence": "Hij is negen jaar.",
+      "exampleTranslation": "He is nine years old.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_10",
+      "front": "Tien",
+      "back": "Ten",
+      "pronunciation": "/tin/",
+      "exampleSentence": "Tien euro, alstublieft.",
+      "exampleTranslation": "Ten euros, please.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_20",
+      "front": "Twintig",
+      "back": "Twenty",
+      "pronunciation": "/ˈtʋɪn.təx/",
+      "exampleSentence": "Twintig minuten.",
+      "exampleTranslation": "Twenty minutes.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_num_100",
+      "front": "Honderd",
+      "back": "One hundred",
+      "pronunciation": "/ˈɦɔn.dərt/",
+      "exampleSentence": "Honderd procent.",
+      "exampleTranslation": "One hundred percent.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_nl_time_1",
+      "front": "Maandag",
+      "back": "Monday",
+      "pronunciation": "/ˈmaːn.dɑx/",
+      "exampleSentence": "Maandag werk ik.",
+      "exampleTranslation": "On Monday I work.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_nl_time_2",
+      "front": "Dinsdag",
+      "back": "Tuesday",
+      "pronunciation": "/ˈdɪns.dɑx/",
+      "exampleSentence": "Tot dinsdag.",
+      "exampleTranslation": "See you Tuesday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_nl_time_3",
+      "front": "Woensdag",
+      "back": "Wednesday",
+      "pronunciation": "/ˈʋuns.dɑx/",
+      "exampleSentence": "Woensdag ben ik vrij.",
+      "exampleTranslation": "Wednesday I'm free.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_nl_time_4",
+      "front": "Donderdag",
+      "back": "Thursday",
+      "pronunciation": "/ˈdɔn.dər.dɑx/",
+      "exampleSentence": "Volgende donderdag.",
+      "exampleTranslation": "Next Thursday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_nl_time_5",
+      "front": "Vrijdag",
+      "back": "Friday",
+      "pronunciation": "/ˈvrɛi.dɑx/",
+      "exampleSentence": "Vrijdagavond.",
+      "exampleTranslation": "Friday evening.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_nl_time_6",
+      "front": "Zaterdag",
+      "back": "Saturday",
+      "pronunciation": "/ˈzaː.tər.dɑx/",
+      "exampleSentence": "Zaterdag rust ik uit.",
+      "exampleTranslation": "On Saturday I rest.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_nl_time_7",
+      "front": "Zondag",
+      "back": "Sunday",
+      "pronunciation": "/ˈzɔn.dɑx/",
+      "exampleSentence": "Zondag met de familie.",
+      "exampleTranslation": "Sunday with the family.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_nl_time_8",
+      "front": "Vandaag",
+      "back": "Today",
+      "pronunciation": "/vɑnˈdaːx/",
+      "exampleSentence": "Vandaag is het warm.",
+      "exampleTranslation": "Today it is warm.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_time_9",
+      "front": "Morgen",
+      "back": "Tomorrow",
+      "pronunciation": "/ˈmɔr.ɣə(n)/",
+      "exampleSentence": "Ik bel je morgen.",
+      "exampleTranslation": "I'll call you tomorrow.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_time_10",
+      "front": "Gisteren",
+      "back": "Yesterday",
+      "pronunciation": "/ˈɣɪs.tə.rə(n)/",
+      "exampleSentence": "Gisteren was ik ziek.",
+      "exampleTranslation": "Yesterday I was sick.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_time_11",
+      "front": "Nu",
+      "back": "Now",
+      "pronunciation": "/ny/",
+      "exampleSentence": "Nu kan ik niet.",
+      "exampleTranslation": "I can't right now.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_time_12",
+      "front": "Altijd",
+      "back": "Always",
+      "pronunciation": "/ˈɑl.tɛit/",
+      "exampleSentence": "Ik kom altijd vroeg.",
+      "exampleTranslation": "I always arrive early.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_nl_time_13",
+      "front": "Nooit",
+      "back": "Never",
+      "pronunciation": "/noːit/",
+      "exampleSentence": "Ik ben er nooit geweest.",
+      "exampleTranslation": "I have never been there.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_nl_time_14",
+      "front": "De week",
+      "back": "The week",
+      "pronunciation": "/də ʋeːk/",
+      "exampleSentence": "Vorige week.",
+      "exampleTranslation": "Last week.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_time_15",
+      "front": "De maand",
+      "back": "The month",
+      "pronunciation": "/də maːnt/",
+      "exampleSentence": "Volgende maand.",
+      "exampleTranslation": "Next month.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_time_16",
+      "front": "Het jaar",
+      "back": "The year",
+      "pronunciation": "/ɦət jaːr/",
+      "exampleSentence": "Gelukkig nieuwjaar!",
+      "exampleTranslation": "Happy new year!",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_1",
+      "front": "De familie",
+      "back": "The family",
+      "pronunciation": "/də faːˈmi.li/",
+      "exampleSentence": "Mijn familie is groot.",
+      "exampleTranslation": "My family is big.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_2",
+      "front": "De moeder",
+      "back": "The mother",
+      "pronunciation": "/də ˈmu.dər/",
+      "exampleSentence": "Mijn moeder kookt goed.",
+      "exampleTranslation": "My mother cooks well.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_3",
+      "front": "De vader",
+      "back": "The father",
+      "pronunciation": "/də ˈvaː.dər/",
+      "exampleSentence": "Mijn vader werkt hier.",
+      "exampleTranslation": "My father works here.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_4",
+      "front": "De broer",
+      "back": "The brother",
+      "pronunciation": "/də brur/",
+      "exampleSentence": "Ik heb een jongere broer.",
+      "exampleTranslation": "I have a younger brother.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_5",
+      "front": "De zus",
+      "back": "The sister",
+      "pronunciation": "/də zʏs/",
+      "exampleSentence": "Mijn zus is arts.",
+      "exampleTranslation": "My sister is a doctor.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_6",
+      "front": "De zoon",
+      "back": "The son",
+      "pronunciation": "/də zoːn/",
+      "exampleSentence": "Hun zoon is vijf.",
+      "exampleTranslation": "Their son is five.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_7",
+      "front": "De dochter",
+      "back": "The daughter",
+      "pronunciation": "/də ˈdɔx.tər/",
+      "exampleSentence": "Mijn dochter gaat naar school.",
+      "exampleTranslation": "My daughter goes to school.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_8",
+      "front": "De vriend",
+      "back": "The friend",
+      "pronunciation": "/də vrint/",
+      "exampleSentence": "Hij is mijn beste vriend.",
+      "exampleTranslation": "He is my best friend.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_9",
+      "front": "Het kind",
+      "back": "The child",
+      "pronunciation": "/ɦət kɪnt/",
+      "exampleSentence": "Het kind speelt buiten.",
+      "exampleTranslation": "The child plays outside.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_10",
+      "front": "De vrouw",
+      "back": "The woman / wife",
+      "pronunciation": "/də vrɑu/",
+      "exampleSentence": "Die vrouw is advocaat.",
+      "exampleTranslation": "That woman is a lawyer.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_11",
+      "front": "De man",
+      "back": "The man / husband",
+      "pronunciation": "/də mɑn/",
+      "exampleSentence": "De man leest de krant.",
+      "exampleTranslation": "The man reads the newspaper.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_fam_12",
+      "front": "De mensen",
+      "back": "The people",
+      "pronunciation": "/də ˈmɛn.sə(n)/",
+      "exampleSentence": "Er zijn veel mensen.",
+      "exampleTranslation": "There are many people.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_food_12",
+      "front": "De koffie",
+      "back": "The coffee",
+      "pronunciation": "/də ˈkɔ.fi/",
+      "exampleSentence": "Ik drink 's ochtends koffie.",
+      "exampleTranslation": "I drink coffee in the morning.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_nl_food_13",
+      "front": "De melk",
+      "back": "The milk",
+      "pronunciation": "/də mɛlk/",
+      "exampleSentence": "Melk in de thee?",
+      "exampleTranslation": "Milk in the tea?",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_nl_food_14",
+      "front": "Het vlees",
+      "back": "The meat",
+      "pronunciation": "/ɦət vleːs/",
+      "exampleSentence": "Ik eet geen vlees.",
+      "exampleTranslation": "I don't eat meat.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_food_15",
+      "front": "De vis",
+      "back": "The fish",
+      "pronunciation": "/də vɪs/",
+      "exampleSentence": "De vis is vers.",
+      "exampleTranslation": "The fish is fresh.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_food_16",
+      "front": "De kaas",
+      "back": "The cheese",
+      "pronunciation": "/də kaːs/",
+      "exampleSentence": "Deze kaas is lekker.",
+      "exampleTranslation": "This cheese is tasty.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_food_17",
+      "front": "De groente",
+      "back": "The vegetables",
+      "pronunciation": "/də ˈɣrun.tə/",
+      "exampleSentence": "Ik eet elke dag groente.",
+      "exampleTranslation": "I eat vegetables every day.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_food_18",
+      "front": "Het ei",
+      "back": "The egg",
+      "pronunciation": "/ɦət ɛi/",
+      "exampleSentence": "Twee eieren, graag.",
+      "exampleTranslation": "Two eggs, please.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_food_19",
+      "front": "Het ontbijt",
+      "back": "The breakfast",
+      "pronunciation": "/ɦət ɔntˈbɛit/",
+      "exampleSentence": "Het ontbijt is om acht uur.",
+      "exampleTranslation": "Breakfast is at eight.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_nl_food_20",
+      "front": "De lunch",
+      "back": "The lunch",
+      "pronunciation": "/də lʏnʃ/",
+      "exampleSentence": "De lunch is klaar.",
+      "exampleTranslation": "Lunch is ready.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_nl_food_21",
+      "front": "Het avondeten",
+      "back": "The dinner",
+      "pronunciation": "/ɦət ˈaː.vɔntˌeː.tə(n)/",
+      "exampleSentence": "Het avondeten is licht.",
+      "exampleTranslation": "Dinner is light.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_nl_food_22",
+      "front": "De rekening",
+      "back": "The bill",
+      "pronunciation": "/də ˈreː.kə.nɪŋ/",
+      "exampleSentence": "De rekening, alstublieft.",
+      "exampleTranslation": "The bill, please.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "restaurant",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_1",
+      "front": "Zijn",
+      "back": "To be",
+      "pronunciation": "/zɛin/",
+      "exampleSentence": "Ik wil leraar zijn.",
+      "exampleTranslation": "I want to be a teacher.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_2",
+      "front": "Hebben",
+      "back": "To have",
+      "pronunciation": "/ˈɦɛ.bə(n)/",
+      "exampleSentence": "Geduld hebben is moeilijk.",
+      "exampleTranslation": "Having patience is difficult.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_3",
+      "front": "Doen",
+      "back": "To do",
+      "pronunciation": "/dun/",
+      "exampleSentence": "Wat ga je doen?",
+      "exampleTranslation": "What are you going to do?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_4",
+      "front": "Gaan",
+      "back": "To go",
+      "pronunciation": "/ɣaːn/",
+      "exampleSentence": "Ik wil met je gaan.",
+      "exampleTranslation": "I want to go with you.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_5",
+      "front": "Kunnen",
+      "back": "To be able to",
+      "pronunciation": "/ˈkʏ.nə(n)/",
+      "exampleSentence": "Ik kan vandaag niet.",
+      "exampleTranslation": "I can't today.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_6",
+      "front": "Willen",
+      "back": "To want",
+      "pronunciation": "/ˈʋɪ.lə(n)/",
+      "exampleSentence": "Ik wil Nederlands leren.",
+      "exampleTranslation": "I want to learn Dutch.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_7",
+      "front": "Weten",
+      "back": "To know (facts)",
+      "pronunciation": "/ˈʋeː.tə(n)/",
+      "exampleSentence": "Ik weet het niet.",
+      "exampleTranslation": "I don't know.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_8",
+      "front": "Kennen",
+      "back": "To know (people)",
+      "pronunciation": "/ˈkɛ.nə(n)/",
+      "exampleSentence": "Ik wil Amsterdam leren kennen.",
+      "exampleTranslation": "I want to get to know Amsterdam.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_9",
+      "front": "Zeggen",
+      "back": "To say",
+      "pronunciation": "/ˈzɛ.ɣə(n)/",
+      "exampleSentence": "Wat bedoel je?",
+      "exampleTranslation": "What do you mean?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_10",
+      "front": "Zien",
+      "back": "To see",
+      "pronunciation": "/zin/",
+      "exampleSentence": "Ik wil die film zien.",
+      "exampleTranslation": "I want to see that film.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_11",
+      "front": "Geven",
+      "back": "To give",
+      "pronunciation": "/ˈɣeː.və(n)/",
+      "exampleSentence": "Kun je me het zout geven?",
+      "exampleTranslation": "Can you give me the salt?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_12",
+      "front": "Spreken",
+      "back": "To speak",
+      "pronunciation": "/ˈspreː.kə(n)/",
+      "exampleSentence": "Ik spreek een beetje Nederlands.",
+      "exampleTranslation": "I speak a little Dutch.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_13",
+      "front": "Eten",
+      "back": "To eat",
+      "pronunciation": "/ˈeː.tə(n)/",
+      "exampleSentence": "We gaan samen eten.",
+      "exampleTranslation": "We're going to eat together.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_14",
+      "front": "Drinken",
+      "back": "To drink",
+      "pronunciation": "/ˈdrɪŋ.kə(n)/",
+      "exampleSentence": "Wil je iets drinken?",
+      "exampleTranslation": "Do you want something to drink?",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_15",
+      "front": "Wonen",
+      "back": "To live / reside",
+      "pronunciation": "/ˈʋoː.nə(n)/",
+      "exampleSentence": "Ik woon in Utrecht.",
+      "exampleTranslation": "I live in Utrecht.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_16",
+      "front": "Werken",
+      "back": "To work",
+      "pronunciation": "/ˈʋɛr.kə(n)/",
+      "exampleSentence": "Ik werk thuis.",
+      "exampleTranslation": "I work at home.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_17",
+      "front": "Studeren",
+      "back": "To study",
+      "pronunciation": "/styˈdeː.rə(n)/",
+      "exampleSentence": "Ik studeer 's avonds.",
+      "exampleTranslation": "I study in the evening.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_18",
+      "front": "Begrijpen",
+      "back": "To understand",
+      "pronunciation": "/bəˈɣrɛi.pə(n)/",
+      "exampleSentence": "Ik begrijp het niet.",
+      "exampleTranslation": "I don't understand.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_19",
+      "front": "Komen",
+      "back": "To come",
+      "pronunciation": "/ˈkoː.mə(n)/",
+      "exampleSentence": "Kun je morgen komen?",
+      "exampleTranslation": "Can you come tomorrow?",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_20",
+      "front": "Vertrekken",
+      "back": "To leave / depart",
+      "pronunciation": "/vərˈtrɛ.kə(n)/",
+      "exampleSentence": "Ik vertrek om zes uur.",
+      "exampleTranslation": "I leave at six.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_21",
+      "front": "Aankomen",
+      "back": "To arrive",
+      "pronunciation": "/ˈaːnˌkoː.mə(n)/",
+      "exampleSentence": "De trein komt te laat aan.",
+      "exampleTranslation": "The train arrives late.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_22",
+      "front": "Kopen",
+      "back": "To buy",
+      "pronunciation": "/ˈkoː.pə(n)/",
+      "exampleSentence": "Ik wil een cadeau kopen.",
+      "exampleTranslation": "I want to buy a gift.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_23",
+      "front": "Betalen",
+      "back": "To pay",
+      "pronunciation": "/bəˈtaː.lə(n)/",
+      "exampleSentence": "Kan ik met kaart betalen?",
+      "exampleTranslation": "Can I pay by card?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_24",
+      "front": "Helpen",
+      "back": "To help",
+      "pronunciation": "/ˈɦɛl.pə(n)/",
+      "exampleSentence": "Kun je me helpen?",
+      "exampleTranslation": "Can you help me?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_25",
+      "front": "Zoeken",
+      "back": "To look for",
+      "pronunciation": "/ˈzu.kə(n)/",
+      "exampleSentence": "Ik zoek het station.",
+      "exampleTranslation": "I'm looking for the station.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_26",
+      "front": "Luisteren",
+      "back": "To listen",
+      "pronunciation": "/ˈlœys.tə.rə(n)/",
+      "exampleSentence": "Ik luister naar muziek.",
+      "exampleTranslation": "I listen to music.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_27",
+      "front": "Lezen",
+      "back": "To read",
+      "pronunciation": "/ˈleː.zə(n)/",
+      "exampleSentence": "Ik lees voor het slapen.",
+      "exampleTranslation": "I read before sleeping.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_28",
+      "front": "Schrijven",
+      "back": "To write",
+      "pronunciation": "/ˈsxrɛi.və(n)/",
+      "exampleSentence": "Ik schrijf een e-mail.",
+      "exampleTranslation": "I'm writing an email.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_29",
+      "front": "Wachten",
+      "back": "To wait",
+      "pronunciation": "/ˈʋɑx.tə(n)/",
+      "exampleSentence": "Wacht hier op mij.",
+      "exampleTranslation": "Wait for me here.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_nl_verb_30",
+      "front": "Nemen",
+      "back": "To take",
+      "pronunciation": "/ˈneː.mə(n)/",
+      "exampleSentence": "Ik neem de bus.",
+      "exampleTranslation": "I take the bus.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_10",
+      "front": "Het station",
+      "back": "The station",
+      "pronunciation": "/ɦət staːˈʃɔn/",
+      "exampleSentence": "Waar is het station?",
+      "exampleTranslation": "Where is the station?",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_11",
+      "front": "De luchthaven",
+      "back": "The airport",
+      "pronunciation": "/də ˈlʏxtˌɦaː.və(n)/",
+      "exampleSentence": "Ik ga naar de luchthaven.",
+      "exampleTranslation": "I'm going to the airport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_12",
+      "front": "Het hotel",
+      "back": "The hotel",
+      "pronunciation": "/ɦət ɦoːˈtɛl/",
+      "exampleSentence": "Het hotel is dichtbij.",
+      "exampleTranslation": "The hotel is nearby.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_13",
+      "front": "De straat",
+      "back": "The street",
+      "pronunciation": "/də straːt/",
+      "exampleSentence": "Ik woon in deze straat.",
+      "exampleTranslation": "I live on this street.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_14",
+      "front": "Links",
+      "back": "Left",
+      "pronunciation": "/lɪŋks/",
+      "exampleSentence": "Ga links.",
+      "exampleTranslation": "Go left.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_15",
+      "front": "Rechts",
+      "back": "Right",
+      "pronunciation": "/rɛxts/",
+      "exampleSentence": "Het is rechts.",
+      "exampleTranslation": "It's on the right.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_16",
+      "front": "Dichtbij",
+      "back": "Near",
+      "pronunciation": "/ˈdɪxtˌbɛi/",
+      "exampleSentence": "Het is heel dichtbij.",
+      "exampleTranslation": "It's very near.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_17",
+      "front": "Ver",
+      "back": "Far",
+      "pronunciation": "/vɛr/",
+      "exampleSentence": "Het strand is ver.",
+      "exampleTranslation": "The beach is far.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_18",
+      "front": "De auto",
+      "back": "The car",
+      "pronunciation": "/də ˈɑu.toː/",
+      "exampleSentence": "Ik ga met de auto.",
+      "exampleTranslation": "I go by car.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_19",
+      "front": "De trein",
+      "back": "The train",
+      "pronunciation": "/də trɛin/",
+      "exampleSentence": "De trein vertrekt nu.",
+      "exampleTranslation": "The train leaves now.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_20",
+      "front": "Het vliegtuig",
+      "back": "The plane",
+      "pronunciation": "/ɦət ˈvlixˌtœyx/",
+      "exampleSentence": "Het vliegtuig is te laat.",
+      "exampleTranslation": "The plane is late.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_21",
+      "front": "De bagage",
+      "back": "The luggage",
+      "pronunciation": "/də baːˈɣaː.ʒə/",
+      "exampleSentence": "Waar is mijn bagage?",
+      "exampleTranslation": "Where is my luggage?",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_22",
+      "front": "Het paspoort",
+      "back": "The passport",
+      "pronunciation": "/ɦət ˈpɑsˌpoːrt/",
+      "exampleSentence": "Ik heb mijn paspoort nodig.",
+      "exampleTranslation": "I need my passport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_trav_23",
+      "front": "De fiets",
+      "back": "The bicycle",
+      "pronunciation": "/də fits/",
+      "exampleSentence": "Ik ga met de fiets.",
+      "exampleTranslation": "I go by bike.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_1",
+      "front": "Goed",
+      "back": "Good",
+      "pronunciation": "/ɣut/",
+      "exampleSentence": "Het is een goed boek.",
+      "exampleTranslation": "It's a good book.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_2",
+      "front": "Slecht",
+      "back": "Bad",
+      "pronunciation": "/slɛxt/",
+      "exampleSentence": "Het weer is slecht.",
+      "exampleTranslation": "The weather is bad.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_3",
+      "front": "Groot",
+      "back": "Big",
+      "pronunciation": "/ɣroːt/",
+      "exampleSentence": "Het huis is groot.",
+      "exampleTranslation": "The house is big.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_4",
+      "front": "Klein",
+      "back": "Small",
+      "pronunciation": "/klɛin/",
+      "exampleSentence": "Het is een kleine auto.",
+      "exampleTranslation": "It's a small car.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_5",
+      "front": "Nieuw",
+      "back": "New",
+      "pronunciation": "/niʋ/",
+      "exampleSentence": "Ik heb een nieuwe telefoon.",
+      "exampleTranslation": "I have a new phone.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_6",
+      "front": "Oud",
+      "back": "Old",
+      "pronunciation": "/ɑut/",
+      "exampleSentence": "Het is een oud gebouw.",
+      "exampleTranslation": "It's an old building.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_7",
+      "front": "Duur",
+      "back": "Expensive",
+      "pronunciation": "/dyr/",
+      "exampleSentence": "Dit hotel is duur.",
+      "exampleTranslation": "This hotel is expensive.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_8",
+      "front": "Goedkoop",
+      "back": "Cheap",
+      "pronunciation": "/ɣutˈkoːp/",
+      "exampleSentence": "Het is heel goedkoop.",
+      "exampleTranslation": "It's very cheap.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_9",
+      "front": "Makkelijk",
+      "back": "Easy",
+      "pronunciation": "/ˈmɑ.kə.lək/",
+      "exampleSentence": "Het examen was makkelijk.",
+      "exampleTranslation": "The exam was easy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_10",
+      "front": "Moeilijk",
+      "back": "Difficult",
+      "pronunciation": "/ˈmui.lək/",
+      "exampleSentence": "Het is moeilijk uit te leggen.",
+      "exampleTranslation": "It's hard to explain.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_11",
+      "front": "Mooi",
+      "back": "Beautiful",
+      "pronunciation": "/moːi/",
+      "exampleSentence": "Wat een mooie jurk.",
+      "exampleTranslation": "What a beautiful dress.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_12",
+      "front": "Blij",
+      "back": "Happy",
+      "pronunciation": "/blɛi/",
+      "exampleSentence": "Ik ben heel blij.",
+      "exampleTranslation": "I am very happy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_13",
+      "front": "Moe",
+      "back": "Tired",
+      "pronunciation": "/mu/",
+      "exampleSentence": "Ik ben moe vandaag.",
+      "exampleTranslation": "I'm tired today.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_14",
+      "front": "Ziek",
+      "back": "Sick",
+      "pronunciation": "/zik/",
+      "exampleSentence": "Mijn zoon is ziek.",
+      "exampleTranslation": "My son is sick.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "health"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_15",
+      "front": "Snel",
+      "back": "Fast",
+      "pronunciation": "/snɛl/",
+      "exampleSentence": "De trein is snel.",
+      "exampleTranslation": "The train is fast.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_adj_16",
+      "front": "Langzaam",
+      "back": "Slow",
+      "pronunciation": "/ˈlɑŋˌzaːm/",
+      "exampleSentence": "De service is langzaam.",
+      "exampleTranslation": "The service is slow.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_nl_q_1",
+      "front": "Wat?",
+      "back": "What?",
+      "pronunciation": "/ʋɑt/",
+      "exampleSentence": "Wat wil je?",
+      "exampleTranslation": "What do you want?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_q_2",
+      "front": "Wie?",
+      "back": "Who?",
+      "pronunciation": "/ʋi/",
+      "exampleSentence": "Wie is dat?",
+      "exampleTranslation": "Who is that?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_q_3",
+      "front": "Waar?",
+      "back": "Where?",
+      "pronunciation": "/ʋaːr/",
+      "exampleSentence": "Waar woon je?",
+      "exampleTranslation": "Where do you live?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_q_4",
+      "front": "Wanneer?",
+      "back": "When?",
+      "pronunciation": "/ʋɑˈneːr/",
+      "exampleSentence": "Wanneer kom je aan?",
+      "exampleTranslation": "When do you arrive?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_q_5",
+      "front": "Waarom?",
+      "back": "Why?",
+      "pronunciation": "/ʋaːˈrɔm/",
+      "exampleSentence": "Waarom niet?",
+      "exampleTranslation": "Why not?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_q_6",
+      "front": "Hoe?",
+      "back": "How?",
+      "pronunciation": "/ɦu/",
+      "exampleSentence": "Hoe zeg je dat?",
+      "exampleTranslation": "How do you say that?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_q_7",
+      "front": "Hoeveel?",
+      "back": "How much?",
+      "pronunciation": "/ɦuˈveːl/",
+      "exampleSentence": "Hoeveel kost het?",
+      "exampleTranslation": "How much does it cost?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_conn_1",
+      "front": "Maar",
+      "back": "But",
+      "pronunciation": "/maːr/",
+      "exampleSentence": "Ik wil, maar ik kan niet.",
+      "exampleTranslation": "I want to, but I can't.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_conn_2",
+      "front": "Omdat",
+      "back": "Because",
+      "pronunciation": "/ɔmˈdɑt/",
+      "exampleSentence": "Ik blijf omdat het regent.",
+      "exampleTranslation": "I'm staying because it's raining.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_conn_3",
+      "front": "Ook",
+      "back": "Also / too",
+      "pronunciation": "/oːk/",
+      "exampleSentence": "Ik ook.",
+      "exampleTranslation": "Me too.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_nl_conn_4",
+      "front": "Hoewel",
+      "back": "Although",
+      "pronunciation": "/ɦuˈʋɛl/",
+      "exampleSentence": "Hoewel het laat is, ga ik uit.",
+      "exampleTranslation": "Although it's late, I'm going out.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "formal"
+      ]
+    },
+    {
+      "id": "fc_nl_conn_5",
+      "front": "Dus",
+      "back": "So",
+      "pronunciation": "/dʏs/",
+      "exampleSentence": "Dus, wat doen we?",
+      "exampleTranslation": "So, what do we do?",
+      "category": "Connectors",
+      "tags": [
+        "connectors"
+      ]
+    },
+    {
+      "id": "fc_nl_conn_6",
+      "front": "Echter",
+      "back": "However",
+      "pronunciation": "/ˈɛx.tər/",
+      "exampleSentence": "Echter, ik ben het niet eens.",
+      "exampleTranslation": "However, I don't agree.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "formal"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_1",
+      "front": "Alstublieft",
+      "back": "Please (formal)",
+      "pronunciation": "/ɑls.tyˈblift/",
+      "exampleSentence": "Een koffie, alstublieft.",
+      "exampleTranslation": "A coffee, please.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_3",
+      "front": "Het spijt me",
+      "back": "I'm sorry",
+      "pronunciation": "/ɦət spɛit mə/",
+      "exampleSentence": "Het spijt me, ik ben laat.",
+      "exampleTranslation": "I'm sorry, I'm late.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_4",
+      "front": "Sorry",
+      "back": "Excuse me / sorry",
+      "pronunciation": "/ˈsɔ.ri/",
+      "exampleSentence": "Sorry, mag ik erlangs?",
+      "exampleTranslation": "Sorry, may I get by?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_5",
+      "front": "Ik begrijp het niet",
+      "back": "I don't understand",
+      "pronunciation": "/ɪk bəˈɣrɛip ɦət nit/",
+      "exampleSentence": "Sorry, ik begrijp het niet.",
+      "exampleTranslation": "Sorry, I don't understand.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_6",
+      "front": "Spreekt u Engels?",
+      "back": "Do you speak English?",
+      "pronunciation": "/spreːkt y ˈɛŋ.əls/",
+      "exampleSentence": "Sorry, spreekt u Engels?",
+      "exampleTranslation": "Excuse me, do you speak English?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_7",
+      "front": "Hoeveel kost het?",
+      "back": "How much does it cost?",
+      "pronunciation": "/ɦuˈveːl kɔst ɦət/",
+      "exampleSentence": "Hoeveel kost dit?",
+      "exampleTranslation": "How much does this cost?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_8",
+      "front": "Waar is het toilet?",
+      "back": "Where is the bathroom?",
+      "pronunciation": "/ʋaːr ɪs ɦət tʋaːˈlɛt/",
+      "exampleSentence": "Sorry, waar is het toilet?",
+      "exampleTranslation": "Excuse me, where is the bathroom?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_9",
+      "front": "Langzamer, alstublieft",
+      "back": "Slower, please",
+      "pronunciation": "/ˈlɑŋ.zaː.mər/",
+      "exampleSentence": "Kunt u langzamer spreken?",
+      "exampleTranslation": "Can you speak more slowly?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_10",
+      "front": "Kunt u mij helpen?",
+      "back": "Can you help me?",
+      "pronunciation": "/kʏnt y mɛi ˈɦɛl.pə(n)/",
+      "exampleSentence": "Sorry, kunt u mij helpen?",
+      "exampleTranslation": "Excuse me, can you help me?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_nl_phr_11",
+      "front": "Tot ziens",
+      "back": "Goodbye",
+      "pronunciation": "/tɔt zins/",
+      "exampleSentence": "Tot ziens!",
+      "exampleTranslation": "Goodbye!",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "greetings"
+      ]
+    },
+    {
+      "id": "fc_nl_home_1",
+      "front": "Het huis",
+      "back": "The house",
+      "pronunciation": "/ɦət ɦœys/",
+      "exampleSentence": "Mijn huis is klein.",
+      "exampleTranslation": "My house is small.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_2",
+      "front": "De deur",
+      "back": "The door",
+      "pronunciation": "/də døːr/",
+      "exampleSentence": "Doe de deur dicht.",
+      "exampleTranslation": "Close the door.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_3",
+      "front": "Het raam",
+      "back": "The window",
+      "pronunciation": "/ɦət raːm/",
+      "exampleSentence": "Doe het raam open.",
+      "exampleTranslation": "Open the window.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_4",
+      "front": "De tafel",
+      "back": "The table",
+      "pronunciation": "/də ˈtaː.fəl/",
+      "exampleSentence": "Het boek ligt op de tafel.",
+      "exampleTranslation": "The book is on the table.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_5",
+      "front": "De stoel",
+      "back": "The chair",
+      "pronunciation": "/də stul/",
+      "exampleSentence": "Ga op de stoel zitten.",
+      "exampleTranslation": "Sit on the chair.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_6",
+      "front": "Het bed",
+      "back": "The bed",
+      "pronunciation": "/ɦət bɛt/",
+      "exampleSentence": "Het bed is comfortabel.",
+      "exampleTranslation": "The bed is comfortable.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_7",
+      "front": "Het boek",
+      "back": "The book",
+      "pronunciation": "/ɦət buk/",
+      "exampleSentence": "Ik lees een interessant boek.",
+      "exampleTranslation": "I'm reading an interesting book.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_8",
+      "front": "De telefoon",
+      "back": "The telephone",
+      "pronunciation": "/də teː.ləˈfoːn/",
+      "exampleSentence": "Mijn telefoon werkt niet.",
+      "exampleTranslation": "My phone doesn't work.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_9",
+      "front": "Het geld",
+      "back": "The money",
+      "pronunciation": "/ɦət ɣɛlt/",
+      "exampleSentence": "Ik heb geen geld.",
+      "exampleTranslation": "I don't have money.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_home_10",
+      "front": "Het werk",
+      "back": "The work / job",
+      "pronunciation": "/ɦət ʋɛrk/",
+      "exampleSentence": "Ik hou van mijn werk.",
+      "exampleTranslation": "I like my job.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_nl_col_1",
+      "front": "Rood",
+      "back": "Red",
+      "pronunciation": "/roːt/",
+      "exampleSentence": "De auto is rood.",
+      "exampleTranslation": "The car is red.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_nl_col_2",
+      "front": "Blauw",
+      "back": "Blue",
+      "pronunciation": "/blɑu/",
+      "exampleSentence": "De lucht is blauw.",
+      "exampleTranslation": "The sky is blue.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_nl_col_3",
+      "front": "Groen",
+      "back": "Green",
+      "pronunciation": "/ɣrun/",
+      "exampleSentence": "Ik hou van groen.",
+      "exampleTranslation": "I like green.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_nl_col_4",
+      "front": "Geel",
+      "back": "Yellow",
+      "pronunciation": "/ɣeːl/",
+      "exampleSentence": "De zon is geel.",
+      "exampleTranslation": "The sun is yellow.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_nl_col_5",
+      "front": "Zwart",
+      "back": "Black",
+      "pronunciation": "/zʋɑrt/",
+      "exampleSentence": "Ik draag een zwarte jas.",
+      "exampleTranslation": "I'm wearing a black coat.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_nl_col_6",
+      "front": "Wit",
+      "back": "White",
+      "pronunciation": "/ʋɪt/",
+      "exampleSentence": "De muur is wit.",
+      "exampleTranslation": "The wall is white.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
     }
   ]
 }

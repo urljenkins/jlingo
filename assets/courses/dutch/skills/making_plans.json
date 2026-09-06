@@ -1,8 +1,97 @@
 {
   "id": "making_plans",
   "name": "Making Plans",
-  "description": "Learn to make suggestions and invitations",
+  "description": "Learn to propose activities, negotiate meeting times, agree, and make social appointments",
   "level": 14,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_mp_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'Shall we have a cup of coffee together?' in Dutch?",
+      "options": [
+        "Zullen we samen koffie drinken?",
+        "Moet je koffie drinken?",
+        "Waar is de koffie?",
+        "Drink je thee?"
+      ],
+      "correctAnswer": "Zullen we samen koffie drinken?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_mp_2",
+      "type": "translateThis",
+      "question": "Heb je zin om mee te gaan?",
+      "options": [],
+      "correctAnswer": "Do you feel like coming along?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_mp_3",
+      "type": "fillInBlank",
+      "question": "Dat ___ me een uitstekend plan! (sounds)",
+      "options": [
+        "lijkt",
+        "kijkt",
+        "ziet",
+        "hoort"
+      ],
+      "correctAnswer": "lijkt",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_mp_4",
+      "type": "matchPairs",
+      "question": "Match planning and social agreement phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Zin in",
+            "native": "In the mood for / fancy"
+          },
+          {
+            "target": "Afgesproken!",
+            "native": "Agreed / deal!"
+          },
+          {
+            "target": "Helaas kan ik niet",
+            "native": "Unfortunately I can't"
+          },
+          {
+            "target": "Schikt het jou?",
+            "native": "Does it suit you?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_mp_5",
+      "type": "speakThis",
+      "question": "Tot vanavond om acht uur!",
+      "options": [],
+      "correctAnswer": "Tot vanavond om acht uur!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_mp_6",
+      "type": "multipleChoice",
+      "question": "What is the quintessential Dutch concept of cozy, warm, conviviality?",
+      "options": [
+        "Gezelligheid",
+        "Nuchterheid",
+        "Zuinigheid",
+        "Netheid"
+      ],
+      "correctAnswer": "Gezelligheid",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

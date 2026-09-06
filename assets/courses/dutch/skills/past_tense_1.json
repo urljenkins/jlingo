@@ -1,8 +1,97 @@
 {
   "id": "past_tense_1",
   "name": "Past Tense: Simple Past",
-  "description": "Learn the simple past tense for completed actions",
+  "description": "Learn the simple past tense (o.v.t.) using 't kofschip rule (-te / -de) in Dutch",
   "level": 12,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_pt1_1",
+      "type": "multipleChoice",
+      "question": "What mnemonic is famously used in Dutch to determine if regular verbs take -te(n) in the past tense?",
+      "options": [
+        "'t kofschip (or 't fokschaap)",
+        "het groene boekje",
+        "stam plus t",
+        "de klinkerdans"
+      ],
+      "correctAnswer": "'t kofschip (or 't fokschaap)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt1_2",
+      "type": "translateThis",
+      "question": "Ik werkte gisteren thuis",
+      "options": [],
+      "correctAnswer": "I worked at home yesterday",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt1_3",
+      "type": "fillInBlank",
+      "question": "Zij ___ vorig jaar in Amsterdam. (wonen -> lived)",
+      "options": [
+        "woonde",
+        "woonden",
+        "woont",
+        "gewoond"
+      ],
+      "correctAnswer": "woonde",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt1_4",
+      "type": "matchPairs",
+      "question": "Match present and simple past forms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "maken -> maakte",
+            "native": "make -> made"
+          },
+          {
+            "target": "horen -> hoorde",
+            "native": "hear -> heard"
+          },
+          {
+            "target": "zijn -> was",
+            "native": "be -> was"
+          },
+          {
+            "target": "hebben -> had",
+            "native": "have -> had"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pt1_5",
+      "type": "speakThis",
+      "question": "Gisteren was het een zonnige dag",
+      "options": [],
+      "correctAnswer": "Gisteren was het een zonnige dag",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt1_6",
+      "type": "multipleChoice",
+      "question": "What is the past tense of 'gaan' (to go) for 'ik'?",
+      "options": [
+        "ging",
+        "gingen",
+        "gaat",
+        "gegaan"
+      ],
+      "correctAnswer": "ging",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

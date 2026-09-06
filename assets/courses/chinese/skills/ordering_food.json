@@ -1,7 +1,97 @@
 {
   "id": "ordering_food",
   "name": "Ordering Food",
-  "description": "TODO: ordering food phrases",
+  "description": "Learn to order dishes, ask for recommendations, specify spice levels, and request takeout",
   "level": 11,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_ordf_1",
+      "type": "multipleChoice",
+      "question": "How do you ask for a dish 'not spicy' in Chinese?",
+      "options": [
+        "不要辣 (bú yào là)",
+        "微辣 (wēi là)",
+        "特辣 (tè là)",
+        "多放辣 (duō fàng là)"
+      ],
+      "correctAnswer": "不要辣 (bú yào là)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ordf_2",
+      "type": "translateThis",
+      "question": "你推荐什么特色菜？",
+      "options": [],
+      "correctAnswer": "What special dish do you recommend?",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ordf_3",
+      "type": "fillInBlank",
+      "question": "请把剩下的菜 ___。(Please pack the leftovers for takeout.)",
+      "options": [
+        "打包",
+        "买单",
+        "吃了",
+        "倒了"
+      ],
+      "correctAnswer": "打包",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ordf_4",
+      "type": "matchPairs",
+      "question": "Match flavors in Chinese cooking",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "酸 (suān)",
+            "native": "Sour"
+          },
+          {
+            "target": "甜 (tián)",
+            "native": "Sweet"
+          },
+          {
+            "target": "苦 (kǔ)",
+            "native": "Bitter"
+          },
+          {
+            "target": "辣 (là)",
+            "native": "Spicy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_ordf_5",
+      "type": "speakThis",
+      "question": "我们要一份宫保鸡丁",
+      "options": [],
+      "correctAnswer": "我们要一份宫保鸡丁",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ordf_6",
+      "type": "multipleChoice",
+      "question": "What is '宫保鸡丁' (Gōngbǎo jīdīng)?",
+      "options": [
+        "Kung Pao Chicken",
+        "Peking Duck",
+        "Sweet and Sour Pork",
+        "Dumplings"
+      ],
+      "correctAnswer": "Kung Pao Chicken",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

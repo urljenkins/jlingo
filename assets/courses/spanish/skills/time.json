@@ -8,7 +8,12 @@
             "id": "ex_time_1",
             "type": "multipleChoice",
             "question": "How do you ask 'What time is it?'",
-            "options": ["¿Qué hora es?", "¿Cuánto tiempo?", "¿Qué día es?", "¿Cuándo es?"],
+            "options": [
+                "¿Qué hora es?",
+                "¿Cuánto tiempo?",
+                "¿Qué día es?",
+                "¿Cuándo es?"
+            ],
             "correctAnswer": "¿Qué hora es?"
         },
         {
@@ -22,7 +27,12 @@
             "id": "ex_time_3",
             "type": "fillInBlank",
             "question": "Es la ___ de la tarde",
-            "options": ["una", "uno", "las", "los"],
+            "options": [
+                "una",
+                "uno",
+                "las",
+                "los"
+            ],
             "correctAnswer": "una"
         },
         {
@@ -33,10 +43,22 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "Y media", "native": "And half (30 mins)"},
-                    {"target": "Y cuarto", "native": "And quarter (15 mins)"},
-                    {"target": "Menos cuarto", "native": "Quarter to"},
-                    {"target": "En punto", "native": "On the dot"}
+                    {
+                        "target": "Y media",
+                        "native": "And half (30 mins)"
+                    },
+                    {
+                        "target": "Y cuarto",
+                        "native": "And quarter (15 mins)"
+                    },
+                    {
+                        "target": "Menos cuarto",
+                        "native": "Quarter to"
+                    },
+                    {
+                        "target": "En punto",
+                        "native": "On the dot"
+                    }
                 ]
             }
         },
@@ -44,8 +66,123 @@
             "id": "ex_time_5",
             "type": "multipleChoice",
             "question": "How do you say '8:30'?",
-            "options": ["Las ocho y media", "Las ocho y treinta", "Ocho y media", "Both A and B"],
+            "options": [
+                "Las ocho y media",
+                "Las ocho y treinta",
+                "Ocho y media",
+                "Both A and B"
+            ],
             "correctAnswer": "Both A and B"
+        },
+        {
+            "type": "translateThis",
+            "question": "Son las cinco de la tarde",
+            "options": [],
+            "correctAnswer": "It's five in the afternoon",
+            "id": "ex_time_6"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'It's midnight'?",
+            "options": [
+                "Es medianoche",
+                "Es mediodía",
+                "Son las doce",
+                "Es la una"
+            ],
+            "correctAnswer": "Es medianoche",
+            "id": "ex_time_7"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Son las diez y ___ (quarter)",
+            "options": [
+                "cuarto",
+                "media",
+                "menos",
+                "punto"
+            ],
+            "correctAnswer": "cuarto",
+            "id": "ex_time_8"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match time-of-day words",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "La mañana",
+                        "native": "Morning"
+                    },
+                    {
+                        "target": "La tarde",
+                        "native": "Afternoon"
+                    },
+                    {
+                        "target": "La noche",
+                        "native": "Night"
+                    },
+                    {
+                        "target": "El mediodía",
+                        "native": "Noon"
+                    }
+                ]
+            },
+            "id": "ex_time_9"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Es la una y media",
+            "options": [],
+            "correctAnswer": "Es la una y media",
+            "id": "ex_time_10"
+        },
+        {
+            "type": "speakThis",
+            "question": "¿A qué hora es la reunión?",
+            "options": [],
+            "correctAnswer": "¿A qué hora es la reunión?",
+            "id": "ex_time_11"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you ask 'At what time?'",
+            "options": [
+                "¿A qué hora?",
+                "¿Qué hora es?",
+                "¿Cuándo es?",
+                "¿Qué día es?"
+            ],
+            "correctAnswer": "¿A qué hora?",
+            "id": "ex_time_12"
+        },
+        {
+            "type": "translateThis",
+            "question": "Llego a las nueve en punto",
+            "options": [],
+            "correctAnswer": "I arrive at nine o'clock sharp",
+            "id": "ex_time_13"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Es ___ de la mañana (seven)",
+            "options": [
+                "las siete",
+                "la siete",
+                "siete",
+                "una siete"
+            ],
+            "correctAnswer": "las siete",
+            "id": "ex_time_14"
+        },
+        {
+            "type": "translateThis",
+            "question": "Faltan diez minutos para las ocho",
+            "options": [],
+            "correctAnswer": "It's ten minutes to eight",
+            "id": "ex_time_15"
         }
     ]
 }

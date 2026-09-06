@@ -8,7 +8,12 @@
             "id": "ex_an_1",
             "type": "multipleChoice",
             "question": "How do you say 'dog' in Spanish?",
-            "options": ["Perro", "Gato", "Pájaro", "Pez"],
+            "options": [
+                "Perro",
+                "Gato",
+                "Pájaro",
+                "Pez"
+            ],
             "correctAnswer": "Perro"
         },
         {
@@ -19,12 +24,30 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "Perro", "native": "Dog"},
-                    {"target": "Gato", "native": "Cat"},
-                    {"target": "Pájaro", "native": "Bird"},
-                    {"target": "Pez", "native": "Fish"},
-                    {"target": "Caballo", "native": "Horse"},
-                    {"target": "Vaca", "native": "Cow"}
+                    {
+                        "target": "Perro",
+                        "native": "Dog"
+                    },
+                    {
+                        "target": "Gato",
+                        "native": "Cat"
+                    },
+                    {
+                        "target": "Pájaro",
+                        "native": "Bird"
+                    },
+                    {
+                        "target": "Pez",
+                        "native": "Fish"
+                    },
+                    {
+                        "target": "Caballo",
+                        "native": "Horse"
+                    },
+                    {
+                        "target": "Vaca",
+                        "native": "Cow"
+                    }
                 ]
             }
         },
@@ -39,15 +62,143 @@
             "id": "ex_an_4",
             "type": "fillInBlank",
             "question": "El ___ vuela",
-            "options": ["pájaro", "perro", "pez", "gato"],
+            "options": [
+                "pájaro",
+                "perro",
+                "pez",
+                "gato"
+            ],
             "correctAnswer": "pájaro"
         },
         {
             "id": "ex_an_5",
             "type": "multipleChoice",
             "question": "Which animal says 'miau' in Spanish?",
-            "options": ["Gato", "Perro", "Vaca", "Caballo"],
+            "options": [
+                "Gato",
+                "Perro",
+                "Vaca",
+                "Caballo"
+            ],
             "correctAnswer": "Gato"
+        },
+        {
+            "type": "translateThis",
+            "question": "Ratón",
+            "options": [],
+            "correctAnswer": "Mouse",
+            "id": "ex_an_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "León",
+            "options": [],
+            "correctAnswer": "Lion",
+            "id": "ex_an_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Rabbit' in Spanish?",
+            "options": [
+                "Conejo",
+                "Ratón",
+                "Oso",
+                "Tigre"
+            ],
+            "correctAnswer": "Conejo",
+            "id": "ex_an_8"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El ___ es el rey de la selva (lion)",
+            "options": [
+                "león",
+                "tigre",
+                "oso",
+                "elefante"
+            ],
+            "correctAnswer": "león",
+            "id": "ex_an_9"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match more animals",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "León",
+                        "native": "Lion"
+                    },
+                    {
+                        "target": "Oso",
+                        "native": "Bear"
+                    },
+                    {
+                        "target": "Conejo",
+                        "native": "Rabbit"
+                    },
+                    {
+                        "target": "Rana",
+                        "native": "Frog"
+                    },
+                    {
+                        "target": "Serpiente",
+                        "native": "Snake"
+                    },
+                    {
+                        "target": "Tortuga",
+                        "native": "Turtle"
+                    }
+                ]
+            },
+            "id": "ex_an_10"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El oso duerme en invierno",
+            "options": [],
+            "correctAnswer": "El oso duerme en invierno",
+            "id": "ex_an_11"
+        },
+        {
+            "type": "speakThis",
+            "question": "El perro es el mejor amigo del hombre",
+            "options": [],
+            "correctAnswer": "El perro es el mejor amigo del hombre",
+            "id": "ex_an_12"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which animal is known for being slow and has a shell?",
+            "options": [
+                "Tortuga",
+                "Conejo",
+                "Rana",
+                "Ratón"
+            ],
+            "correctAnswer": "Tortuga",
+            "id": "ex_an_13"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los pájaros cantan por la mañana",
+            "options": [],
+            "correctAnswer": "The birds sing in the morning",
+            "id": "ex_an_14"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La ___ salta muy alto (frog)",
+            "options": [
+                "rana",
+                "tortuga",
+                "vaca",
+                "gallina"
+            ],
+            "correctAnswer": "rana",
+            "id": "ex_an_15"
         }
     ]
 }

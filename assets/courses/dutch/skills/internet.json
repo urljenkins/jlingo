@@ -1,8 +1,97 @@
 {
   "id": "internet",
   "name": "Internet & Social Media",
-  "description": "Learn vocabulary for online communication",
+  "description": "Learn internet vocabulary, cybersecurity, social networks, downloading, and wifi connection",
   "level": 20,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_net_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Password' in Dutch?",
+      "options": [
+        "Het wachtwoord",
+        "De gebruikersnaam",
+        "De website",
+        "De browser"
+      ],
+      "correctAnswer": "Het wachtwoord",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_net_2",
+      "type": "translateThis",
+      "question": "Wat is het wifi-wachtwoord?",
+      "options": [],
+      "correctAnswer": "What is the Wi-Fi password?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_net_3",
+      "type": "fillInBlank",
+      "question": "Je kunt het bestand eenvoudig ___ (downloaden).",
+      "options": [
+        "downloaden",
+        "verwijderen",
+        "wissen",
+        "afsluiten"
+      ],
+      "correctAnswer": "downloaden",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_net_4",
+      "type": "matchPairs",
+      "question": "Match internet and digital actions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Opslaan",
+            "native": "To save (a file)"
+          },
+          {
+            "target": "Verwijderen",
+            "native": "To delete"
+          },
+          {
+            "target": "Delen",
+            "native": "To share"
+          },
+          {
+            "target": "Inloggen",
+            "native": "To log in"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_net_5",
+      "type": "speakThis",
+      "question": "De internetverbinding is erg snel",
+      "options": [],
+      "correctAnswer": "De internetverbinding is erg snel",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_net_6",
+      "type": "multipleChoice",
+      "question": "What is 'sociale media' in Dutch?",
+      "options": [
+        "Social media",
+        "Newspapers",
+        "Television channels",
+        "Postcards"
+      ],
+      "correctAnswer": "Social media",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,53 +1,97 @@
 {
   "id": "alphabet",
-  "name": "字母与发音",
-  "description": "学习西班牙语发音与元音的基础（已从西班牙语内容机译）",
+  "name": "Alphabet & Sounds",
+  "description": "Learn Chinese Pinyin, tones (four tones), and essential sound initials/finals",
   "level": 1,
   "exercises": [
     {
-      "id": "ex_alp_1",
+      "id": "ex_zh_alp_1",
       "type": "multipleChoice",
-      "question": "哪个字母发出类似 canyon 中 'ny' 的音？",
+      "question": "How many standard tones are there in Mandarin Chinese Pinyin?",
       "options": [
-        "Ñ",
-        "N",
-        "RR",
-        "LL"
+        "4 tones (plus neutral tone)",
+        "2 tones",
+        "6 tones",
+        "8 tones"
       ],
-      "correctAnswer": "Ñ"
+      "correctAnswer": "4 tones (plus neutral tone)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_alp_2",
-      "type": "listeningComprehension",
-      "question": "A",
-      "options": [],
-      "correctAnswer": "A"
-    },
-    {
-      "id": "ex_alp_3",
-      "type": "listeningComprehension",
-      "question": "E",
-      "options": [],
-      "correctAnswer": "E"
-    },
-    {
-      "id": "ex_alp_4",
+      "id": "ex_zh_alp_2",
       "type": "multipleChoice",
-      "question": "双写 'L' (LL) 的发音如何？",
+      "question": "Which mark indicates the first (high level) tone on 'ma'?",
       "options": [
-        "Y 音",
-        "L 音",
-        "R 音",
-        "S 音"
+        "mā",
+        "má",
+        "mǎ",
+        "mà"
       ],
-      "correctAnswer": "Y 音"
+      "correctAnswer": "mā",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_alp_5",
+      "id": "ex_zh_alp_3",
+      "type": "matchPairs",
+      "question": "Match the Pinyin tones with their descriptions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "mā (1st tone)",
+            "native": "High and level (mother)"
+          },
+          {
+            "target": "má (2nd tone)",
+            "native": "Rising (hemp)"
+          },
+          {
+            "target": "mǎ (3rd tone)",
+            "native": "Falling and rising (horse)"
+          },
+          {
+            "target": "mà (4th tone)",
+            "native": "Sharp falling (scold)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_alp_4",
       "type": "translateThis",
-      "question": "El niño",
+      "question": "你好",
       "options": [],
-      "correctAnswer": "男孩"
+      "correctAnswer": "Hello",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_alp_5",
+      "type": "speakThis",
+      "question": "你好",
+      "options": [],
+      "correctAnswer": "你好",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_alp_6",
+      "type": "multipleChoice",
+      "question": "In Pinyin, which initial consonant sounds like 'ts' in 'cats'?",
+      "options": [
+        "c",
+        "z",
+        "s",
+        "ch"
+      ],
+      "correctAnswer": "c",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     }
   ]
 }

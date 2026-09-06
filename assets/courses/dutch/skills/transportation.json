@@ -1,8 +1,97 @@
 {
   "id": "transportation",
   "name": "Transportation",
-  "description": "Learn vocabulary for getting around",
+  "description": "Learn Dutch vocabulary for cycling, trains (NS), ferries, and airport travel",
   "level": 9,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_tr_1",
+      "type": "multipleChoice",
+      "question": "What is the primary mode of everyday transport in Dutch cities?",
+      "options": [
+        "De fiets (bicycle)",
+        "De metro",
+        "De auto",
+        "De taxi"
+      ],
+      "correctAnswer": "De fiets (bicycle)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_tr_2",
+      "type": "translateThis",
+      "question": "Ik fiets naar school",
+      "options": [],
+      "correctAnswer": "I cycle to school",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_tr_3",
+      "type": "fillInBlank",
+      "question": "Het vliegtuig vertrekt vanaf ___ (Schiphol airport).",
+      "options": [
+        "de luchthaven",
+        "het station",
+        "de haven",
+        "het plein"
+      ],
+      "correctAnswer": "de luchthaven",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_tr_4",
+      "type": "matchPairs",
+      "question": "Match Dutch vehicle terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Vliegtuig",
+            "native": "Airplane"
+          },
+          {
+            "target": "Veerboot",
+            "native": "Ferry"
+          },
+          {
+            "target": "Tram",
+            "native": "Tram / streetcar"
+          },
+          {
+            "target": "Auto",
+            "native": "Car"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_tr_5",
+      "type": "speakThis",
+      "question": "Een enkeltje naar Den Haag alstublieft",
+      "options": [],
+      "correctAnswer": "Een enkeltje naar Den Haag alstublieft",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_tr_6",
+      "type": "multipleChoice",
+      "question": "What is a return ticket called in Dutch?",
+      "options": [
+        "Retour",
+        "Enkeltje",
+        "Dagkaart",
+        "Ritkaart"
+      ],
+      "correctAnswer": "Retour",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

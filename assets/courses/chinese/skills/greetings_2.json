@@ -1,44 +1,97 @@
 {
   "id": "greetings_2",
-  "name": "问候 2",
-  "description": "更多常用问候与礼貌用语",
+  "name": "Greetings 2",
+  "description": "More common greetings, polite phrases, and daily check-ins",
   "level": 1,
   "exercises": [
     {
-      "id": "ex_g2_1",
+      "id": "ex_zh_g2_1",
       "type": "translateThis",
-      "question": "Encantado",
+      "question": "很高兴认识你",
       "options": [],
-      "correctAnswer": "很高兴认识你"
+      "correctAnswer": "Nice to meet you",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_g2_2",
+      "id": "ex_zh_g2_2",
       "type": "multipleChoice",
-      "question": "'¿Qué pasa?' 是什么意思？",
-      "options": ["怎么了？", "你好吗？", "再见", "请"],
-      "correctAnswer": "怎么了？"
+      "question": "What does '最近怎么样？' (Zuìjìn zěnmeyàng?) mean?",
+      "options": [
+        "How have you been lately?",
+        "Where are you going?",
+        "What time is it?",
+        "Who are you?"
+      ],
+      "correctAnswer": "How have you been lately?",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_g2_3",
+      "id": "ex_zh_g2_3",
       "type": "fillInBlank",
-      "question": "___ luego",
-      "options": ["Hasta", "Hola", "Adiós", "Gracias"],
-      "correctAnswer": "Hasta"
+      "question": "明天 ___！ (See you tomorrow!)",
+      "options": [
+        "见",
+        "好",
+        "去",
+        "谢"
+      ],
+      "correctAnswer": "见",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_g2_4",
+      "id": "ex_zh_g2_4",
       "type": "matchPairs",
-      "question": "配对短语",
+      "question": "Match polite Chinese phrases with English",
       "options": [],
       "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
       "metadata": {
         "pairs": [
-          {"target": "Hasta mañana", "native": "See you tomorrow"},
-          {"target": "Buenas tardes", "native": "Good afternoon"},
-          {"target": "Lo siento", "native": "I'm sorry"},
-          {"target": "Perdón", "native": "Excuse me"}
+          {
+            "target": "明天见",
+            "native": "See you tomorrow"
+          },
+          {
+            "target": "下午好",
+            "native": "Good afternoon"
+          },
+          {
+            "target": "不好意思",
+            "native": "Excuse me / Sorry"
+          },
+          {
+            "target": "没事",
+            "native": "No problem / It's fine"
+          }
         ]
       }
+    },
+    {
+      "id": "ex_zh_g2_5",
+      "type": "speakThis",
+      "question": "明天见！",
+      "options": [],
+      "correctAnswer": "明天见！",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_g2_6",
+      "type": "multipleChoice",
+      "question": "Which response is appropriate when someone says '谢谢'?",
+      "options": [
+        "不客气",
+        "再见",
+        "请问",
+        "好的"
+      ],
+      "correctAnswer": "不客气",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     }
   ]
 }

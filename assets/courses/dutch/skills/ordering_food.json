@@ -1,8 +1,97 @@
 {
   "id": "ordering_food",
   "name": "Ordering Food",
-  "description": "Learn to order food and express dietary needs",
+  "description": "Learn to order courses, specify dietary restrictions (vegetarisch), and choose drinks",
   "level": 11,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_ordf_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'I would like...' politely when ordering?",
+      "options": [
+        "Ik wil graag...",
+        "Ik moet...",
+        "Geef mij...",
+        "Ik heb..."
+      ],
+      "correctAnswer": "Ik wil graag...",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ordf_2",
+      "type": "translateThis",
+      "question": "Heeft u vegetarische gerechten?",
+      "options": [],
+      "correctAnswer": "Do you have vegetarian dishes?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ordf_3",
+      "type": "fillInBlank",
+      "question": "Als voorgerecht neem ik de ___ (soup).",
+      "options": [
+        "soep",
+        "vis",
+        "wijn",
+        "taart"
+      ],
+      "correctAnswer": "soep",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ordf_4",
+      "type": "matchPairs",
+      "question": "Match course names",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Voorgerecht",
+            "native": "Appetizer / starter"
+          },
+          {
+            "target": "Hoofdgerecht",
+            "native": "Main course"
+          },
+          {
+            "target": "Nagerecht / toetje",
+            "native": "Dessert"
+          },
+          {
+            "target": "Drankje",
+            "native": "Beverage / drink"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_ordf_5",
+      "type": "speakThis",
+      "question": "Ik neem de dagschotel",
+      "options": [],
+      "correctAnswer": "Ik neem de dagschotel",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ordf_6",
+      "type": "multipleChoice",
+      "question": "What is 'de fooi'?",
+      "options": [
+        "Tip (gratuity)",
+        "Receipt",
+        "Menu",
+        "Discount"
+      ],
+      "correctAnswer": "Tip (gratuity)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

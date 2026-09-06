@@ -1,7 +1,97 @@
 {
   "id": "hobbies",
   "name": "Hobbies",
-  "description": "TODO: hobbies vocabulary",
+  "description": "Learn to talk about personal interests, photography, cooking, reading, and painting",
   "level": 18,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_hob_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Hobby / interest' in Chinese?",
+      "options": [
+        "爱好 (àihào)",
+        "工作 (gōngzuò)",
+        "学习 (xuéxí)",
+        "生活 (shēnghuó)"
+      ],
+      "correctAnswer": "爱好 (àihào)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_hob_2",
+      "type": "translateThis",
+      "question": "我的爱好是摄影和画画",
+      "options": [],
+      "correctAnswer": "My hobbies are photography and drawing",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_hob_3",
+      "type": "fillInBlank",
+      "question": "你在业余时间喜欢做 ___？(What do you like to do in your free time?)",
+      "options": [
+        "什么",
+        "怎么",
+        "哪里",
+        "谁"
+      ],
+      "correctAnswer": "什么",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_hob_4",
+      "type": "matchPairs",
+      "question": "Match hobby activities",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "弹钢琴",
+            "native": "To play piano"
+          },
+          {
+            "target": "下棋",
+            "native": "To play chess"
+          },
+          {
+            "target": "旅游",
+            "native": "To travel"
+          },
+          {
+            "target": "园艺",
+            "native": "Gardening"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_hob_5",
+      "type": "speakThis",
+      "question": "弹吉他是我的爱好",
+      "options": [],
+      "correctAnswer": "弹吉他是我的爱好",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_hob_6",
+      "type": "multipleChoice",
+      "question": "What does '书法' (shūfǎ) mean?",
+      "options": [
+        "Calligraphy",
+        "Cooking",
+        "Origami",
+        "Singing"
+      ],
+      "correctAnswer": "Calligraphy",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

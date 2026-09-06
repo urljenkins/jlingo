@@ -1,7 +1,97 @@
 {
   "id": "transportation",
   "name": "Transportation",
-  "description": "TODO: transportation vocabulary",
+  "description": "Learn transportation modes, buying tickets, stations, airports, and verbs 坐 and 骑",
   "level": 9,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_tr_1",
+      "type": "multipleChoice",
+      "question": "Which verb is used for riding a bicycle or motorcycle in Chinese?",
+      "options": [
+        "骑 (qí)",
+        "坐 (zuò)",
+        "开 (kāi)",
+        "走 (zǒu)"
+      ],
+      "correctAnswer": "骑 (qí)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_tr_2",
+      "type": "translateThis",
+      "question": "我坐飞机去上海",
+      "options": [],
+      "correctAnswer": "I take an airplane to Shanghai",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_tr_3",
+      "type": "fillInBlank",
+      "question": "请出示您的车 ___。(Please show your ticket.)",
+      "options": [
+        "票",
+        "卡",
+        "本",
+        "书"
+      ],
+      "correctAnswer": "票",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_tr_4",
+      "type": "matchPairs",
+      "question": "Match vehicle types",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "飞机",
+            "native": "Airplane"
+          },
+          {
+            "target": "火车",
+            "native": "Train"
+          },
+          {
+            "target": "自行车",
+            "native": "Bicycle"
+          },
+          {
+            "target": "轮船",
+            "native": "Ship / boat"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_tr_5",
+      "type": "speakThis",
+      "question": "买一张去北京的高铁票",
+      "options": [],
+      "correctAnswer": "买一张去北京的高铁票",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_tr_6",
+      "type": "multipleChoice",
+      "question": "What is '飞机场' (fēijīchǎng)?",
+      "options": [
+        "Airport",
+        "Railway station",
+        "Bus terminal",
+        "Harbor"
+      ],
+      "correctAnswer": "Airport",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

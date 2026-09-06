@@ -1,7 +1,97 @@
 {
   "id": "family_1",
   "name": "Family",
-  "description": "TODO: family vocabulary",
+  "description": "Learn words for family members and relatives in Mandarin Chinese",
   "level": 2,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_fam_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Mother' in Chinese?",
+      "options": [
+        "妈妈",
+        "爸爸",
+        "哥哥",
+        "姐姐"
+      ],
+      "correctAnswer": "妈妈",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_fam_2",
+      "type": "translateThis",
+      "question": "爸爸",
+      "options": [],
+      "correctAnswer": "Father",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_fam_3",
+      "type": "fillInBlank",
+      "question": "我的 ___ 叫小红。(My younger sister is called Xiao Hong.)",
+      "options": [
+        "妹妹",
+        "哥哥",
+        "爷爷",
+        "爸爸"
+      ],
+      "correctAnswer": "妹妹",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_fam_4",
+      "type": "matchPairs",
+      "question": "Match the family members",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "哥哥",
+            "native": "Older brother"
+          },
+          {
+            "target": "弟弟",
+            "native": "Younger brother"
+          },
+          {
+            "target": "姐姐",
+            "native": "Older sister"
+          },
+          {
+            "target": "妹妹",
+            "native": "Younger sister"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_fam_5",
+      "type": "speakThis",
+      "question": "我爱我的家人",
+      "options": [],
+      "correctAnswer": "我爱我的家人",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_fam_6",
+      "type": "multipleChoice",
+      "question": "What does '儿子' (érzi) mean?",
+      "options": [
+        "Son",
+        "Daughter",
+        "Grandfather",
+        "Uncle"
+      ],
+      "correctAnswer": "Son",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "sightseeing",
   "name": "Sightseeing",
-  "description": "Learn vocabulary for tourist activities",
+  "description": "Learn Dutch tourist landmarks (canals, windmills, museums like Rijksmuseum), and tours",
   "level": 17,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_sight_1",
+      "type": "multipleChoice",
+      "question": "What iconic boat tour is famous along Amsterdam's canals?",
+      "options": [
+        "De rondvaart (canal cruise)",
+        "De veerpont",
+        "Het zeilen",
+        "De kano"
+      ],
+      "correctAnswer": "De rondvaart (canal cruise)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sight_2",
+      "type": "translateThis",
+      "question": "De molens van Kinderdijk zijn prachtig",
+      "options": [],
+      "correctAnswer": "The windmills of Kinderdijk are wonderful",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sight_3",
+      "type": "fillInBlank",
+      "question": "We gaan schilderijen bekijken in het ___ (museum).",
+      "options": [
+        "museum",
+        "stadion",
+        "strand",
+        "bos"
+      ],
+      "correctAnswer": "museum",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sight_4",
+      "type": "matchPairs",
+      "question": "Match famous Dutch sights",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "De gracht",
+            "native": "Canal"
+          },
+          {
+            "target": "De windmolen",
+            "native": "Windmill"
+          },
+          {
+            "target": "Het museum",
+            "native": "Museum"
+          },
+          {
+            "target": "Het paleis",
+            "native": "Palace"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_sight_5",
+      "type": "speakThis",
+      "question": "Kunt u een foto van ons maken?",
+      "options": [],
+      "correctAnswer": "Kunt u een foto van ons maken?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sight_6",
+      "type": "multipleChoice",
+      "question": "What does 'bezienswaardigheid' mean?",
+      "options": [
+        "Sight / tourist attraction",
+        "Souvenir",
+        "Ticket office",
+        "Map"
+      ],
+      "correctAnswer": "Sight / tourist attraction",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

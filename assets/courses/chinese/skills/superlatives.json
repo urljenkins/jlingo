@@ -1,7 +1,97 @@
 {
   "id": "superlatives",
   "name": "Superlatives",
-  "description": "TODO: superlative forms and examples",
+  "description": "Learn superlative expressions using 最 (zuì - the most / -est) and 第一 (number one)",
   "level": 15,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_sup_1",
+      "type": "multipleChoice",
+      "question": "Which word is placed before an adjective or psychological verb to mean 'most / best / -est'?",
+      "options": [
+        "最 (zuì)",
+        "更 (gèng)",
+        "挺 (tǐng)",
+        "极 (jí)"
+      ],
+      "correctAnswer": "最 (zuì)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sup_2",
+      "type": "translateThis",
+      "question": "这是世界上最高的大楼",
+      "options": [],
+      "correctAnswer": "This is the tallest building in the world",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sup_3",
+      "type": "fillInBlank",
+      "question": "我 ___ 喜欢吃火锅。(I like eating hot pot the most.)",
+      "options": [
+        "最",
+        "比",
+        "一",
+        "第"
+      ],
+      "correctAnswer": "最",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sup_4",
+      "type": "matchPairs",
+      "question": "Match superlative phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "最好",
+            "native": "The best"
+          },
+          {
+            "target": "最大",
+            "native": "The biggest"
+          },
+          {
+            "target": "最快",
+            "native": "The fastest"
+          },
+          {
+            "target": "最有名",
+            "native": "The most famous"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_sup_5",
+      "type": "speakThis",
+      "question": "健康是最重要的",
+      "options": [],
+      "correctAnswer": "健康是最重要的",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sup_6",
+      "type": "multipleChoice",
+      "question": "What does '好极了' (hǎojíle) mean?",
+      "options": [
+        "Extremely good / excellent",
+        "Not good at all",
+        "Average",
+        "Bad"
+      ],
+      "correctAnswer": "Extremely good / excellent",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

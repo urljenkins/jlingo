@@ -1,7 +1,97 @@
 {
   "id": "time",
   "name": "Telling Time",
-  "description": "TODO: telling time exercises",
+  "description": "Learn to tell time, ask what time it is, and use hours and minutes",
   "level": 4,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_time_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'What time is it now?' in Chinese?",
+      "options": [
+        "现在几点？",
+        "今天几号？",
+        "你在哪里？",
+        "这是什么？"
+      ],
+      "correctAnswer": "现在几点？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_time_2",
+      "type": "translateThis",
+      "question": "三点整",
+      "options": [],
+      "correctAnswer": "Three o'clock",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_time_3",
+      "type": "fillInBlank",
+      "question": "两点 ___ (2:30 / half past two)",
+      "options": [
+        "半",
+        "分",
+        "刻",
+        "点"
+      ],
+      "correctAnswer": "半",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_time_4",
+      "type": "matchPairs",
+      "question": "Match time expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "点 (diǎn)",
+            "native": "O'clock / hour"
+          },
+          {
+            "target": "分 (fēn)",
+            "native": "Minute"
+          },
+          {
+            "target": "半 (bàn)",
+            "native": "Half (30 min)"
+          },
+          {
+            "target": "刻 (kè)",
+            "native": "Quarter (15 min)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_time_5",
+      "type": "speakThis",
+      "question": "现在八点半",
+      "options": [],
+      "correctAnswer": "现在八点半",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_time_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'Morning' (forenoon)?",
+      "options": [
+        "上午",
+        "下午",
+        "晚上",
+        "中午"
+      ],
+      "correctAnswer": "上午",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

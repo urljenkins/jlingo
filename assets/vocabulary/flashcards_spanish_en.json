@@ -13,7 +13,10 @@
       "exampleSentence": "¡Hola! ¿Cómo estás?",
       "exampleTranslation": "Hello! How are you?",
       "category": "Greetings",
-      "tags": ["basic", "essential"]
+      "tags": [
+        "basic",
+        "essential"
+      ]
     },
     {
       "id": "fc_es_greet_2",
@@ -23,7 +26,10 @@
       "exampleSentence": "Buenos días a todos.",
       "exampleTranslation": "Good morning everyone.",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_es_greet_3",
@@ -33,7 +39,11 @@
       "exampleSentence": "Muchas gracias por tu ayuda.",
       "exampleTranslation": "Thank you very much for your help.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_es_greet_4",
@@ -43,7 +53,10 @@
       "exampleSentence": "No te preocupes, de nada.",
       "exampleTranslation": "Don't worry, you're welcome.",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_es_greet_5",
@@ -53,7 +66,11 @@
       "exampleSentence": "Un café con leche, por favor.",
       "exampleTranslation": "A coffee with milk, please.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_es_intro_1",
@@ -63,7 +80,10 @@
       "exampleSentence": "Me llamo Carlos y soy de Madrid.",
       "exampleTranslation": "My name is Carlos and I am from Madrid.",
       "category": "Introductions",
-      "tags": ["basic", "introductions"]
+      "tags": [
+        "basic",
+        "introductions"
+      ]
     },
     {
       "id": "fc_es_intro_2",
@@ -73,7 +93,10 @@
       "exampleSentence": "Mucho gusto, ¿cómo te llamas?",
       "exampleTranslation": "Nice to meet you, what is your name?",
       "category": "Introductions",
-      "tags": ["basic", "questions"]
+      "tags": [
+        "basic",
+        "questions"
+      ]
     },
     {
       "id": "fc_es_intro_3",
@@ -83,7 +106,10 @@
       "exampleSentence": "Mucho gusto en conocerte.",
       "exampleTranslation": "Nice to meet you.",
       "category": "Introductions",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_es_food_1",
@@ -93,7 +119,10 @@
       "exampleSentence": "Bebo un vaso de agua fresca.",
       "exampleTranslation": "I drink a glass of cool water.",
       "category": "Food & Drink",
-      "tags": ["nouns", "food"]
+      "tags": [
+        "nouns",
+        "food"
+      ]
     },
     {
       "id": "fc_es_food_2",
@@ -103,7 +132,10 @@
       "exampleSentence": "Compramos pan caliente en la panadería.",
       "exampleTranslation": "We buy warm bread at the bakery.",
       "category": "Food & Drink",
-      "tags": ["nouns", "food"]
+      "tags": [
+        "nouns",
+        "food"
+      ]
     },
     {
       "id": "fc_es_travel_1",
@@ -113,7 +145,10 @@
       "exampleSentence": "El tren llega a la estación central.",
       "exampleTranslation": "The train arrives at the central station.",
       "category": "Travel",
-      "tags": ["travel", "nouns"]
+      "tags": [
+        "travel",
+        "nouns"
+      ]
     },
     {
       "id": "fc_es_travel_2",
@@ -123,7 +158,1943 @@
       "exampleSentence": "¿Dónde puedo comprar un billete de autobús?",
       "exampleTranslation": "Where can I buy a bus ticket?",
       "category": "Travel",
-      "tags": ["travel", "nouns"]
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_num_1",
+      "front": "Uno",
+      "back": "One",
+      "pronunciation": "/ˈu.no/",
+      "exampleSentence": "Solo tengo uno.",
+      "exampleTranslation": "I only have one.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_2",
+      "front": "Dos",
+      "back": "Two",
+      "pronunciation": "/dos/",
+      "exampleSentence": "Quiero dos, por favor.",
+      "exampleTranslation": "I want two, please.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_3",
+      "front": "Tres",
+      "back": "Three",
+      "pronunciation": "/tɾes/",
+      "exampleSentence": "Tengo tres hermanos.",
+      "exampleTranslation": "I have three brothers.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_4",
+      "front": "Cuatro",
+      "back": "Four",
+      "pronunciation": "/ˈkwa.tɾo/",
+      "exampleSentence": "Son las cuatro.",
+      "exampleTranslation": "It is four o'clock.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_5",
+      "front": "Cinco",
+      "back": "Five",
+      "pronunciation": "/ˈsiŋ.ko/",
+      "exampleSentence": "Cinco euros, por favor.",
+      "exampleTranslation": "Five euros, please.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_6",
+      "front": "Seis",
+      "back": "Six",
+      "pronunciation": "/sejs/",
+      "exampleSentence": "Hay seis sillas.",
+      "exampleTranslation": "There are six chairs.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_7",
+      "front": "Siete",
+      "back": "Seven",
+      "pronunciation": "/ˈsje.te/",
+      "exampleSentence": "Trabajo siete horas.",
+      "exampleTranslation": "I work seven hours.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_8",
+      "front": "Ocho",
+      "back": "Eight",
+      "pronunciation": "/ˈo.tʃo/",
+      "exampleSentence": "El tren sale a las ocho.",
+      "exampleTranslation": "The train leaves at eight.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_9",
+      "front": "Nueve",
+      "back": "Nine",
+      "pronunciation": "/ˈnwe.βe/",
+      "exampleSentence": "Tiene nueve años.",
+      "exampleTranslation": "He is nine years old.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_10",
+      "front": "Diez",
+      "back": "Ten",
+      "pronunciation": "/djes/",
+      "exampleSentence": "Diez minutos más.",
+      "exampleTranslation": "Ten more minutes.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_20",
+      "front": "Veinte",
+      "back": "Twenty",
+      "pronunciation": "/ˈbejn.te/",
+      "exampleSentence": "Cuesta veinte euros.",
+      "exampleTranslation": "It costs twenty euros.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_50",
+      "front": "Cincuenta",
+      "back": "Fifty",
+      "pronunciation": "/siŋˈkwen.ta/",
+      "exampleSentence": "Hay cincuenta personas.",
+      "exampleTranslation": "There are fifty people.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_100",
+      "front": "Cien",
+      "back": "One hundred",
+      "pronunciation": "/sjen/",
+      "exampleSentence": "Cien años de soledad.",
+      "exampleTranslation": "One hundred years of solitude.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_num_1000",
+      "front": "Mil",
+      "back": "One thousand",
+      "pronunciation": "/mil/",
+      "exampleSentence": "Mil gracias.",
+      "exampleTranslation": "A thousand thanks.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_es_time_1",
+      "front": "El lunes",
+      "back": "Monday",
+      "pronunciation": "/el ˈlu.nes/",
+      "exampleSentence": "El lunes empiezo el curso.",
+      "exampleTranslation": "On Monday I start the course.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_es_time_2",
+      "front": "El martes",
+      "back": "Tuesday",
+      "pronunciation": "/el ˈmaɾ.tes/",
+      "exampleSentence": "Nos vemos el martes.",
+      "exampleTranslation": "See you on Tuesday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_es_time_3",
+      "front": "El miércoles",
+      "back": "Wednesday",
+      "pronunciation": "/el ˈmjeɾ.ko.les/",
+      "exampleSentence": "El miércoles tengo cita.",
+      "exampleTranslation": "On Wednesday I have an appointment.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_es_time_4",
+      "front": "El jueves",
+      "back": "Thursday",
+      "pronunciation": "/el ˈxwe.βes/",
+      "exampleSentence": "El jueves es festivo.",
+      "exampleTranslation": "Thursday is a holiday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_es_time_5",
+      "front": "El viernes",
+      "back": "Friday",
+      "pronunciation": "/el ˈbjeɾ.nes/",
+      "exampleSentence": "Los viernes salgo con amigos.",
+      "exampleTranslation": "On Fridays I go out with friends.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_es_time_6",
+      "front": "El sábado",
+      "back": "Saturday",
+      "pronunciation": "/el ˈsa.βa.ðo/",
+      "exampleSentence": "El sábado descanso.",
+      "exampleTranslation": "On Saturday I rest.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_es_time_7",
+      "front": "El domingo",
+      "back": "Sunday",
+      "pronunciation": "/el doˈmiŋ.ɡo/",
+      "exampleSentence": "El domingo como con la familia.",
+      "exampleTranslation": "On Sunday I eat with my family.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_es_time_8",
+      "front": "Hoy",
+      "back": "Today",
+      "pronunciation": "/oj/",
+      "exampleSentence": "Hoy hace calor.",
+      "exampleTranslation": "Today it is hot.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_time_9",
+      "front": "Mañana",
+      "back": "Tomorrow",
+      "pronunciation": "/maˈɲa.na/",
+      "exampleSentence": "Mañana te llamo.",
+      "exampleTranslation": "I will call you tomorrow.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_time_10",
+      "front": "Ayer",
+      "back": "Yesterday",
+      "pronunciation": "/aˈʝeɾ/",
+      "exampleSentence": "Ayer fui al mercado.",
+      "exampleTranslation": "Yesterday I went to the market.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_time_11",
+      "front": "Ahora",
+      "back": "Now",
+      "pronunciation": "/aˈo.ɾa/",
+      "exampleSentence": "Ahora no puedo.",
+      "exampleTranslation": "I can't right now.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_time_12",
+      "front": "Siempre",
+      "back": "Always",
+      "pronunciation": "/ˈsjem.pɾe/",
+      "exampleSentence": "Siempre llego temprano.",
+      "exampleTranslation": "I always arrive early.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_es_time_13",
+      "front": "Nunca",
+      "back": "Never",
+      "pronunciation": "/ˈnuŋ.ka/",
+      "exampleSentence": "Nunca he estado allí.",
+      "exampleTranslation": "I have never been there.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_es_time_14",
+      "front": "La semana",
+      "back": "The week",
+      "pronunciation": "/la seˈma.na/",
+      "exampleSentence": "La semana pasada llovió.",
+      "exampleTranslation": "Last week it rained.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_time_15",
+      "front": "El mes",
+      "back": "The month",
+      "pronunciation": "/el mes/",
+      "exampleSentence": "El mes que viene viajo.",
+      "exampleTranslation": "Next month I travel.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_time_16",
+      "front": "El año",
+      "back": "The year",
+      "pronunciation": "/el ˈa.ɲo/",
+      "exampleSentence": "Feliz año nuevo.",
+      "exampleTranslation": "Happy new year.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_1",
+      "front": "La familia",
+      "back": "The family",
+      "pronunciation": "/la faˈmi.lja/",
+      "exampleSentence": "Mi familia es grande.",
+      "exampleTranslation": "My family is big.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_2",
+      "front": "La madre",
+      "back": "The mother",
+      "pronunciation": "/la ˈma.ðɾe/",
+      "exampleSentence": "Mi madre cocina muy bien.",
+      "exampleTranslation": "My mother cooks very well.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_3",
+      "front": "El padre",
+      "back": "The father",
+      "pronunciation": "/el ˈpa.ðɾe/",
+      "exampleSentence": "Mi padre trabaja aquí.",
+      "exampleTranslation": "My father works here.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_4",
+      "front": "El hermano",
+      "back": "The brother",
+      "pronunciation": "/el eɾˈma.no/",
+      "exampleSentence": "Tengo un hermano menor.",
+      "exampleTranslation": "I have a younger brother.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_5",
+      "front": "La hermana",
+      "back": "The sister",
+      "pronunciation": "/la eɾˈma.na/",
+      "exampleSentence": "Mi hermana estudia medicina.",
+      "exampleTranslation": "My sister studies medicine.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_6",
+      "front": "El hijo",
+      "back": "The son",
+      "pronunciation": "/el ˈi.xo/",
+      "exampleSentence": "Su hijo tiene cinco años.",
+      "exampleTranslation": "Their son is five years old.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_7",
+      "front": "La hija",
+      "back": "The daughter",
+      "pronunciation": "/la ˈi.xa/",
+      "exampleSentence": "Mi hija va al colegio.",
+      "exampleTranslation": "My daughter goes to school.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_8",
+      "front": "El amigo",
+      "back": "The friend",
+      "pronunciation": "/el aˈmi.ɣo/",
+      "exampleSentence": "Es mi mejor amigo.",
+      "exampleTranslation": "He is my best friend.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_9",
+      "front": "El niño",
+      "back": "The child / boy",
+      "pronunciation": "/el ˈni.ɲo/",
+      "exampleSentence": "El niño juega en el parque.",
+      "exampleTranslation": "The child plays in the park.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_10",
+      "front": "La mujer",
+      "back": "The woman / wife",
+      "pronunciation": "/la muˈxeɾ/",
+      "exampleSentence": "Esa mujer es doctora.",
+      "exampleTranslation": "That woman is a doctor.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_11",
+      "front": "El hombre",
+      "back": "The man",
+      "pronunciation": "/el ˈom.bɾe/",
+      "exampleSentence": "El hombre lee el periódico.",
+      "exampleTranslation": "The man reads the newspaper.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_fam_12",
+      "front": "La gente",
+      "back": "The people",
+      "pronunciation": "/la ˈxen.te/",
+      "exampleSentence": "Hay mucha gente hoy.",
+      "exampleTranslation": "There are many people today.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_food_12",
+      "front": "El café",
+      "back": "The coffee",
+      "pronunciation": "/el kaˈfe/",
+      "exampleSentence": "Tomo café por la mañana.",
+      "exampleTranslation": "I drink coffee in the morning.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_es_food_13",
+      "front": "La leche",
+      "back": "The milk",
+      "pronunciation": "/la ˈle.tʃe/",
+      "exampleSentence": "No me gusta la leche fría.",
+      "exampleTranslation": "I don't like cold milk.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_es_food_14",
+      "front": "La carne",
+      "back": "The meat",
+      "pronunciation": "/la ˈkaɾ.ne/",
+      "exampleSentence": "No como carne.",
+      "exampleTranslation": "I don't eat meat.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_food_15",
+      "front": "El pescado",
+      "back": "The fish",
+      "pronunciation": "/el pesˈka.ðo/",
+      "exampleSentence": "El pescado está fresco.",
+      "exampleTranslation": "The fish is fresh.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_food_16",
+      "front": "La fruta",
+      "back": "The fruit",
+      "pronunciation": "/la ˈfɾu.ta/",
+      "exampleSentence": "La fruta es sana.",
+      "exampleTranslation": "Fruit is healthy.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_food_17",
+      "front": "La verdura",
+      "back": "The vegetable",
+      "pronunciation": "/la beɾˈðu.ɾa/",
+      "exampleSentence": "Como verdura cada día.",
+      "exampleTranslation": "I eat vegetables every day.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_food_18",
+      "front": "El arroz",
+      "back": "The rice",
+      "pronunciation": "/el aˈros/",
+      "exampleSentence": "El arroz con pollo es típico.",
+      "exampleTranslation": "Rice with chicken is typical.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_food_19",
+      "front": "El huevo",
+      "back": "The egg",
+      "pronunciation": "/el ˈwe.βo/",
+      "exampleSentence": "Quiero dos huevos.",
+      "exampleTranslation": "I want two eggs.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_food_20",
+      "front": "El queso",
+      "back": "The cheese",
+      "pronunciation": "/el ˈke.so/",
+      "exampleSentence": "Este queso es fuerte.",
+      "exampleTranslation": "This cheese is strong.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_food_21",
+      "front": "El desayuno",
+      "back": "The breakfast",
+      "pronunciation": "/el de.saˈʝu.no/",
+      "exampleSentence": "El desayuno es a las ocho.",
+      "exampleTranslation": "Breakfast is at eight.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_es_food_22",
+      "front": "La comida",
+      "back": "The food / lunch",
+      "pronunciation": "/la koˈmi.ða/",
+      "exampleSentence": "La comida está lista.",
+      "exampleTranslation": "The food is ready.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_es_food_23",
+      "front": "La cena",
+      "back": "The dinner",
+      "pronunciation": "/la ˈse.na/",
+      "exampleSentence": "La cena es ligera.",
+      "exampleTranslation": "Dinner is light.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_es_food_24",
+      "front": "La cuenta",
+      "back": "The bill",
+      "pronunciation": "/la ˈkwen.ta/",
+      "exampleSentence": "La cuenta, por favor.",
+      "exampleTranslation": "The bill, please.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "restaurant",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_1",
+      "front": "Ser",
+      "back": "To be (permanent)",
+      "pronunciation": "/seɾ/",
+      "exampleSentence": "Quiero ser profesor.",
+      "exampleTranslation": "I want to be a teacher.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_2",
+      "front": "Estar",
+      "back": "To be (state)",
+      "pronunciation": "/esˈtaɾ/",
+      "exampleSentence": "Voy a estar en casa.",
+      "exampleTranslation": "I am going to be at home.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_3",
+      "front": "Tener",
+      "back": "To have",
+      "pronunciation": "/teˈneɾ/",
+      "exampleSentence": "Tener paciencia es difícil.",
+      "exampleTranslation": "Having patience is difficult.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_4",
+      "front": "Hacer",
+      "back": "To do / to make",
+      "pronunciation": "/aˈseɾ/",
+      "exampleSentence": "¿Qué vas a hacer?",
+      "exampleTranslation": "What are you going to do?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_5",
+      "front": "Ir",
+      "back": "To go",
+      "pronunciation": "/iɾ/",
+      "exampleSentence": "Quiero ir contigo.",
+      "exampleTranslation": "I want to go with you.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_6",
+      "front": "Poder",
+      "back": "To be able to",
+      "pronunciation": "/poˈðeɾ/",
+      "exampleSentence": "No puedo ir hoy.",
+      "exampleTranslation": "I can't go today.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_7",
+      "front": "Querer",
+      "back": "To want / to love",
+      "pronunciation": "/keˈɾeɾ/",
+      "exampleSentence": "Quiero aprender español.",
+      "exampleTranslation": "I want to learn Spanish.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_8",
+      "front": "Saber",
+      "back": "To know (facts)",
+      "pronunciation": "/saˈβeɾ/",
+      "exampleSentence": "No sé la respuesta.",
+      "exampleTranslation": "I don't know the answer.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_9",
+      "front": "Conocer",
+      "back": "To know (people/places)",
+      "pronunciation": "/ko.noˈseɾ/",
+      "exampleSentence": "Quiero conocer Madrid.",
+      "exampleTranslation": "I want to get to know Madrid.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_10",
+      "front": "Decir",
+      "back": "To say / to tell",
+      "pronunciation": "/deˈsiɾ/",
+      "exampleSentence": "¿Qué quieres decir?",
+      "exampleTranslation": "What do you mean?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_11",
+      "front": "Ver",
+      "back": "To see",
+      "pronunciation": "/beɾ/",
+      "exampleSentence": "Quiero ver esa película.",
+      "exampleTranslation": "I want to see that film.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_12",
+      "front": "Dar",
+      "back": "To give",
+      "pronunciation": "/daɾ/",
+      "exampleSentence": "¿Me puedes dar la sal?",
+      "exampleTranslation": "Can you give me the salt?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_13",
+      "front": "Hablar",
+      "back": "To speak",
+      "pronunciation": "/aˈβlaɾ/",
+      "exampleSentence": "Hablo un poco de español.",
+      "exampleTranslation": "I speak a little Spanish.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_14",
+      "front": "Comer",
+      "back": "To eat",
+      "pronunciation": "/koˈmeɾ/",
+      "exampleSentence": "Vamos a comer juntos.",
+      "exampleTranslation": "Let's eat together.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_15",
+      "front": "Beber",
+      "back": "To drink",
+      "pronunciation": "/beˈβeɾ/",
+      "exampleSentence": "¿Quieres beber algo?",
+      "exampleTranslation": "Do you want to drink something?",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_16",
+      "front": "Vivir",
+      "back": "To live",
+      "pronunciation": "/biˈβiɾ/",
+      "exampleSentence": "Vivo en Barcelona.",
+      "exampleTranslation": "I live in Barcelona.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_17",
+      "front": "Trabajar",
+      "back": "To work",
+      "pronunciation": "/tɾa.βaˈxaɾ/",
+      "exampleSentence": "Trabajo desde casa.",
+      "exampleTranslation": "I work from home.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_18",
+      "front": "Estudiar",
+      "back": "To study",
+      "pronunciation": "/es.tuˈðjaɾ/",
+      "exampleSentence": "Estudio por la noche.",
+      "exampleTranslation": "I study at night.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_19",
+      "front": "Necesitar",
+      "back": "To need",
+      "pronunciation": "/ne.se.siˈtaɾ/",
+      "exampleSentence": "Necesito ayuda.",
+      "exampleTranslation": "I need help.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_20",
+      "front": "Entender",
+      "back": "To understand",
+      "pronunciation": "/en.tenˈdeɾ/",
+      "exampleSentence": "No entiendo bien.",
+      "exampleTranslation": "I don't understand well.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_21",
+      "front": "Venir",
+      "back": "To come",
+      "pronunciation": "/beˈniɾ/",
+      "exampleSentence": "¿Puedes venir mañana?",
+      "exampleTranslation": "Can you come tomorrow?",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_22",
+      "front": "Salir",
+      "back": "To leave / go out",
+      "pronunciation": "/saˈliɾ/",
+      "exampleSentence": "Salgo a las seis.",
+      "exampleTranslation": "I leave at six.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_23",
+      "front": "Llegar",
+      "back": "To arrive",
+      "pronunciation": "/ʎeˈɣaɾ/",
+      "exampleSentence": "El tren llega tarde.",
+      "exampleTranslation": "The train arrives late.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_24",
+      "front": "Comprar",
+      "back": "To buy",
+      "pronunciation": "/komˈpɾaɾ/",
+      "exampleSentence": "Quiero comprar un regalo.",
+      "exampleTranslation": "I want to buy a gift.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_25",
+      "front": "Pagar",
+      "back": "To pay",
+      "pronunciation": "/paˈɣaɾ/",
+      "exampleSentence": "¿Puedo pagar con tarjeta?",
+      "exampleTranslation": "Can I pay by card?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_26",
+      "front": "Ayudar",
+      "back": "To help",
+      "pronunciation": "/a.ʝuˈðaɾ/",
+      "exampleSentence": "¿Me puedes ayudar?",
+      "exampleTranslation": "Can you help me?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_verb_27",
+      "front": "Buscar",
+      "back": "To look for",
+      "pronunciation": "/busˈkaɾ/",
+      "exampleSentence": "Busco la estación.",
+      "exampleTranslation": "I'm looking for the station.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_28",
+      "front": "Escuchar",
+      "back": "To listen",
+      "pronunciation": "/es.kuˈtʃaɾ/",
+      "exampleSentence": "Escucho música.",
+      "exampleTranslation": "I listen to music.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_29",
+      "front": "Leer",
+      "back": "To read",
+      "pronunciation": "/leˈeɾ/",
+      "exampleSentence": "Leo antes de dormir.",
+      "exampleTranslation": "I read before sleeping.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_verb_30",
+      "front": "Escribir",
+      "back": "To write",
+      "pronunciation": "/es.kɾiˈβiɾ/",
+      "exampleSentence": "Escribo un correo.",
+      "exampleTranslation": "I'm writing an email.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_es_trav_11",
+      "front": "El aeropuerto",
+      "back": "The airport",
+      "pronunciation": "/el a.e.ɾoˈpweɾ.to/",
+      "exampleSentence": "Voy al aeropuerto.",
+      "exampleTranslation": "I'm going to the airport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_trav_12",
+      "front": "El hotel",
+      "back": "The hotel",
+      "pronunciation": "/el oˈtel/",
+      "exampleSentence": "El hotel está cerca.",
+      "exampleTranslation": "The hotel is nearby.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_trav_13",
+      "front": "La calle",
+      "back": "The street",
+      "pronunciation": "/la ˈka.ʎe/",
+      "exampleSentence": "Vivo en esta calle.",
+      "exampleTranslation": "I live on this street.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_trav_14",
+      "front": "Izquierda",
+      "back": "Left",
+      "pronunciation": "/isˈkjeɾ.ða/",
+      "exampleSentence": "Gire a la izquierda.",
+      "exampleTranslation": "Turn left.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_es_trav_15",
+      "front": "Derecha",
+      "back": "Right",
+      "pronunciation": "/deˈɾe.tʃa/",
+      "exampleSentence": "Está a la derecha.",
+      "exampleTranslation": "It is on the right.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_es_trav_16",
+      "front": "Cerca",
+      "back": "Near",
+      "pronunciation": "/ˈseɾ.ka/",
+      "exampleSentence": "Está muy cerca.",
+      "exampleTranslation": "It is very near.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_es_trav_17",
+      "front": "Lejos",
+      "back": "Far",
+      "pronunciation": "/ˈle.xos/",
+      "exampleSentence": "La playa está lejos.",
+      "exampleTranslation": "The beach is far.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_es_trav_18",
+      "front": "El coche",
+      "back": "The car",
+      "pronunciation": "/el ˈko.tʃe/",
+      "exampleSentence": "Voy en coche.",
+      "exampleTranslation": "I go by car.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_es_trav_19",
+      "front": "El tren",
+      "back": "The train",
+      "pronunciation": "/el tɾen/",
+      "exampleSentence": "El tren sale ahora.",
+      "exampleTranslation": "The train leaves now.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_es_trav_20",
+      "front": "El avión",
+      "back": "The plane",
+      "pronunciation": "/el aˈβjon/",
+      "exampleSentence": "El avión llega tarde.",
+      "exampleTranslation": "The plane arrives late.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_es_trav_21",
+      "front": "El equipaje",
+      "back": "The luggage",
+      "pronunciation": "/el e.kiˈpa.xe/",
+      "exampleSentence": "¿Dónde está mi equipaje?",
+      "exampleTranslation": "Where is my luggage?",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_trav_22",
+      "front": "El pasaporte",
+      "back": "The passport",
+      "pronunciation": "/el pa.saˈpoɾ.te/",
+      "exampleSentence": "Necesito mi pasaporte.",
+      "exampleTranslation": "I need my passport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_adj_1",
+      "front": "Bueno",
+      "back": "Good",
+      "pronunciation": "/ˈbwe.no/",
+      "exampleSentence": "Es un buen libro.",
+      "exampleTranslation": "It is a good book.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_adj_2",
+      "front": "Malo",
+      "back": "Bad",
+      "pronunciation": "/ˈma.lo/",
+      "exampleSentence": "Hace mal tiempo.",
+      "exampleTranslation": "The weather is bad.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_adj_3",
+      "front": "Grande",
+      "back": "Big",
+      "pronunciation": "/ˈɡɾan.de/",
+      "exampleSentence": "La casa es grande.",
+      "exampleTranslation": "The house is big.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_adj_4",
+      "front": "Pequeño",
+      "back": "Small",
+      "pronunciation": "/peˈke.ɲo/",
+      "exampleSentence": "Es un coche pequeño.",
+      "exampleTranslation": "It is a small car.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_adj_5",
+      "front": "Nuevo",
+      "back": "New",
+      "pronunciation": "/ˈnwe.βo/",
+      "exampleSentence": "Tengo un móvil nuevo.",
+      "exampleTranslation": "I have a new phone.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_adj_6",
+      "front": "Viejo",
+      "back": "Old",
+      "pronunciation": "/ˈbje.xo/",
+      "exampleSentence": "Es un edificio viejo.",
+      "exampleTranslation": "It is an old building.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_adj_7",
+      "front": "Caro",
+      "back": "Expensive",
+      "pronunciation": "/ˈka.ɾo/",
+      "exampleSentence": "Este hotel es caro.",
+      "exampleTranslation": "This hotel is expensive.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_es_adj_8",
+      "front": "Barato",
+      "back": "Cheap",
+      "pronunciation": "/baˈɾa.to/",
+      "exampleSentence": "Es muy barato.",
+      "exampleTranslation": "It is very cheap.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_es_adj_9",
+      "front": "Fácil",
+      "back": "Easy",
+      "pronunciation": "/ˈfa.sil/",
+      "exampleSentence": "El examen fue fácil.",
+      "exampleTranslation": "The exam was easy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_adj_10",
+      "front": "Difícil",
+      "back": "Difficult",
+      "pronunciation": "/diˈfi.sil/",
+      "exampleSentence": "Es difícil de explicar.",
+      "exampleTranslation": "It is hard to explain.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_adj_11",
+      "front": "Bonito",
+      "back": "Pretty / nice",
+      "pronunciation": "/boˈni.to/",
+      "exampleSentence": "Qué vestido tan bonito.",
+      "exampleTranslation": "What a pretty dress.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_adj_12",
+      "front": "Feliz",
+      "back": "Happy",
+      "pronunciation": "/feˈlis/",
+      "exampleSentence": "Estoy muy feliz.",
+      "exampleTranslation": "I am very happy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_es_adj_13",
+      "front": "Cansado",
+      "back": "Tired",
+      "pronunciation": "/kanˈsa.ðo/",
+      "exampleSentence": "Estoy cansado hoy.",
+      "exampleTranslation": "I am tired today.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_es_adj_14",
+      "front": "Enfermo",
+      "back": "Sick",
+      "pronunciation": "/enˈfeɾ.mo/",
+      "exampleSentence": "Mi hijo está enfermo.",
+      "exampleTranslation": "My son is sick.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "health"
+      ]
+    },
+    {
+      "id": "fc_es_adj_15",
+      "front": "Rápido",
+      "back": "Fast",
+      "pronunciation": "/ˈra.pi.ðo/",
+      "exampleSentence": "El tren es rápido.",
+      "exampleTranslation": "The train is fast.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_adj_16",
+      "front": "Lento",
+      "back": "Slow",
+      "pronunciation": "/ˈlen.to/",
+      "exampleSentence": "El servicio es lento.",
+      "exampleTranslation": "The service is slow.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_es_q_1",
+      "front": "¿Qué?",
+      "back": "What?",
+      "pronunciation": "/ke/",
+      "exampleSentence": "¿Qué quieres?",
+      "exampleTranslation": "What do you want?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_q_2",
+      "front": "¿Quién?",
+      "back": "Who?",
+      "pronunciation": "/kjen/",
+      "exampleSentence": "¿Quién es él?",
+      "exampleTranslation": "Who is he?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_q_3",
+      "front": "¿Dónde?",
+      "back": "Where?",
+      "pronunciation": "/ˈdon.de/",
+      "exampleSentence": "¿Dónde vives?",
+      "exampleTranslation": "Where do you live?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_q_4",
+      "front": "¿Cuándo?",
+      "back": "When?",
+      "pronunciation": "/ˈkwan.do/",
+      "exampleSentence": "¿Cuándo llegas?",
+      "exampleTranslation": "When do you arrive?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_q_5",
+      "front": "¿Por qué?",
+      "back": "Why?",
+      "pronunciation": "/poɾ ˈke/",
+      "exampleSentence": "¿Por qué no vienes?",
+      "exampleTranslation": "Why don't you come?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_q_6",
+      "front": "¿Cómo?",
+      "back": "How?",
+      "pronunciation": "/ˈko.mo/",
+      "exampleSentence": "¿Cómo se dice?",
+      "exampleTranslation": "How do you say it?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_q_7",
+      "front": "¿Cuánto?",
+      "back": "How much?",
+      "pronunciation": "/ˈkwan.to/",
+      "exampleSentence": "¿Cuánto cuesta?",
+      "exampleTranslation": "How much does it cost?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_conn_1",
+      "front": "Pero",
+      "back": "But",
+      "pronunciation": "/ˈpe.ɾo/",
+      "exampleSentence": "Quiero ir, pero no puedo.",
+      "exampleTranslation": "I want to go, but I can't.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_conn_2",
+      "front": "Porque",
+      "back": "Because",
+      "pronunciation": "/ˈpoɾ.ke/",
+      "exampleSentence": "No voy porque llueve.",
+      "exampleTranslation": "I'm not going because it's raining.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_conn_3",
+      "front": "También",
+      "back": "Also / too",
+      "pronunciation": "/tamˈbjen/",
+      "exampleSentence": "Yo también quiero.",
+      "exampleTranslation": "I want to as well.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_es_conn_4",
+      "front": "Aunque",
+      "back": "Although",
+      "pronunciation": "/ˈawŋ.ke/",
+      "exampleSentence": "Aunque es tarde, salgo.",
+      "exampleTranslation": "Although it's late, I'm going out.",
+      "category": "Connectors",
+      "tags": [
+        "connectors"
+      ]
+    },
+    {
+      "id": "fc_es_conn_5",
+      "front": "Entonces",
+      "back": "So / then",
+      "pronunciation": "/enˈton.ses/",
+      "exampleSentence": "Entonces, ¿qué hacemos?",
+      "exampleTranslation": "So, what do we do?",
+      "category": "Connectors",
+      "tags": [
+        "connectors"
+      ]
+    },
+    {
+      "id": "fc_es_conn_6",
+      "front": "Sin embargo",
+      "back": "However",
+      "pronunciation": "/sin emˈbaɾ.ɣo/",
+      "exampleSentence": "Sin embargo, no estoy de acuerdo.",
+      "exampleTranslation": "However, I don't agree.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "formal"
+      ]
+    },
+    {
+      "id": "fc_es_phr_3",
+      "front": "Lo siento",
+      "back": "I'm sorry",
+      "pronunciation": "/lo ˈsjen.to/",
+      "exampleSentence": "Lo siento, llego tarde.",
+      "exampleTranslation": "I'm sorry, I'm late.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_es_phr_4",
+      "front": "Perdón",
+      "back": "Excuse me / sorry",
+      "pronunciation": "/peɾˈðon/",
+      "exampleSentence": "Perdón, ¿puedo pasar?",
+      "exampleTranslation": "Excuse me, may I get by?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_es_phr_5",
+      "front": "No entiendo",
+      "back": "I don't understand",
+      "pronunciation": "/no enˈtjen.do/",
+      "exampleSentence": "Lo siento, no entiendo.",
+      "exampleTranslation": "Sorry, I don't understand.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_es_phr_6",
+      "front": "¿Habla inglés?",
+      "back": "Do you speak English?",
+      "pronunciation": "/ˈa.βla iŋˈɡles/",
+      "exampleSentence": "Perdón, ¿habla inglés?",
+      "exampleTranslation": "Excuse me, do you speak English?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_es_phr_7",
+      "front": "¿Cuánto cuesta?",
+      "back": "How much does it cost?",
+      "pronunciation": "/ˈkwan.to ˈkwes.ta/",
+      "exampleSentence": "¿Cuánto cuesta esto?",
+      "exampleTranslation": "How much does this cost?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_es_phr_8",
+      "front": "¿Dónde está el baño?",
+      "back": "Where is the bathroom?",
+      "pronunciation": "/ˈdon.de esˈta el ˈba.ɲo/",
+      "exampleSentence": "Perdone, ¿dónde está el baño?",
+      "exampleTranslation": "Excuse me, where is the bathroom?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_es_phr_9",
+      "front": "Más despacio, por favor",
+      "back": "Slower, please",
+      "pronunciation": "/mas desˈpa.sjo/",
+      "exampleSentence": "¿Puede hablar más despacio, por favor?",
+      "exampleTranslation": "Can you speak more slowly, please?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_es_phr_10",
+      "front": "¿Me puede ayudar?",
+      "back": "Can you help me?",
+      "pronunciation": "/me ˈpwe.ðe a.ʝuˈðaɾ/",
+      "exampleSentence": "Disculpe, ¿me puede ayudar?",
+      "exampleTranslation": "Excuse me, can you help me?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_es_phr_11",
+      "front": "Hasta luego",
+      "back": "See you later",
+      "pronunciation": "/ˈas.ta ˈlwe.ɣo/",
+      "exampleSentence": "Hasta luego, nos vemos.",
+      "exampleTranslation": "See you later, bye.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "greetings"
+      ]
+    },
+    {
+      "id": "fc_es_home_1",
+      "front": "La casa",
+      "back": "The house",
+      "pronunciation": "/la ˈka.sa/",
+      "exampleSentence": "Mi casa es pequeña.",
+      "exampleTranslation": "My house is small.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_2",
+      "front": "La puerta",
+      "back": "The door",
+      "pronunciation": "/la ˈpweɾ.ta/",
+      "exampleSentence": "Cierra la puerta.",
+      "exampleTranslation": "Close the door.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_3",
+      "front": "La ventana",
+      "back": "The window",
+      "pronunciation": "/la benˈta.na/",
+      "exampleSentence": "Abre la ventana.",
+      "exampleTranslation": "Open the window.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_4",
+      "front": "La mesa",
+      "back": "The table",
+      "pronunciation": "/la ˈme.sa/",
+      "exampleSentence": "El libro está en la mesa.",
+      "exampleTranslation": "The book is on the table.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_5",
+      "front": "La silla",
+      "back": "The chair",
+      "pronunciation": "/la ˈsi.ʎa/",
+      "exampleSentence": "Siéntate en la silla.",
+      "exampleTranslation": "Sit on the chair.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_6",
+      "front": "La cama",
+      "back": "The bed",
+      "pronunciation": "/la ˈka.ma/",
+      "exampleSentence": "La cama es cómoda.",
+      "exampleTranslation": "The bed is comfortable.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_7",
+      "front": "El libro",
+      "back": "The book",
+      "pronunciation": "/el ˈli.βɾo/",
+      "exampleSentence": "Leo un libro interesante.",
+      "exampleTranslation": "I'm reading an interesting book.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_8",
+      "front": "El teléfono",
+      "back": "The telephone",
+      "pronunciation": "/el teˈle.fo.no/",
+      "exampleSentence": "Mi teléfono no funciona.",
+      "exampleTranslation": "My phone doesn't work.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_9",
+      "front": "El dinero",
+      "back": "The money",
+      "pronunciation": "/el diˈne.ɾo/",
+      "exampleSentence": "No tengo dinero.",
+      "exampleTranslation": "I don't have money.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_home_10",
+      "front": "El trabajo",
+      "back": "The work / job",
+      "pronunciation": "/el tɾaˈβa.xo/",
+      "exampleSentence": "Me gusta mi trabajo.",
+      "exampleTranslation": "I like my job.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_es_col_1",
+      "front": "Rojo",
+      "back": "Red",
+      "pronunciation": "/ˈro.xo/",
+      "exampleSentence": "El coche es rojo.",
+      "exampleTranslation": "The car is red.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_es_col_2",
+      "front": "Azul",
+      "back": "Blue",
+      "pronunciation": "/aˈsul/",
+      "exampleSentence": "El cielo es azul.",
+      "exampleTranslation": "The sky is blue.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_es_col_3",
+      "front": "Verde",
+      "back": "Green",
+      "pronunciation": "/ˈbeɾ.ðe/",
+      "exampleSentence": "Me gusta el verde.",
+      "exampleTranslation": "I like green.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_es_col_4",
+      "front": "Amarillo",
+      "back": "Yellow",
+      "pronunciation": "/a.maˈɾi.ʎo/",
+      "exampleSentence": "El sol es amarillo.",
+      "exampleTranslation": "The sun is yellow.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_es_col_5",
+      "front": "Negro",
+      "back": "Black",
+      "pronunciation": "/ˈne.ɣɾo/",
+      "exampleSentence": "Llevo un abrigo negro.",
+      "exampleTranslation": "I'm wearing a black coat.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_es_col_6",
+      "front": "Blanco",
+      "back": "White",
+      "pronunciation": "/ˈblaŋ.ko/",
+      "exampleSentence": "La pared es blanca.",
+      "exampleTranslation": "The wall is white.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
     }
   ]
 }

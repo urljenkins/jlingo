@@ -1,7 +1,97 @@
 {
   "id": "hotel",
   "name": "At the Hotel",
-  "description": "TODO: hotel-related phrases",
+  "description": "Learn to check in, check out, request room service, and ask for keys or Wi-Fi passwords",
   "level": 17,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_hot_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'I have a reservation' at a Chinese hotel?",
+      "options": [
+        "我有预订",
+        "我要买票",
+        "这是我的家",
+        "退房"
+      ],
+      "correctAnswer": "我有预订",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_hot_2",
+      "type": "translateThis",
+      "question": "请问退房时间是几点？",
+      "options": [],
+      "correctAnswer": "What time is check-out?",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_hot_3",
+      "type": "fillInBlank",
+      "question": "这是您的房 ___。(Here is your room card / key.)",
+      "options": [
+        "卡",
+        "票",
+        "书",
+        "本"
+      ],
+      "correctAnswer": "卡",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_hot_4",
+      "type": "matchPairs",
+      "question": "Match hotel amenities and terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "前台",
+            "native": "Front desk / reception"
+          },
+          {
+            "target": "单人间",
+            "native": "Single room"
+          },
+          {
+            "target": "双人间",
+            "native": "Double room"
+          },
+          {
+            "target": "押金",
+            "native": "Deposit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_hot_5",
+      "type": "speakThis",
+      "question": "房间里有无线网络吗？",
+      "options": [],
+      "correctAnswer": "房间里有无线网络吗？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_hot_6",
+      "type": "multipleChoice",
+      "question": "What is '退房' (tuìfáng)?",
+      "options": [
+        "Check out",
+        "Check in",
+        "Cancel room",
+        "Clean room"
+      ],
+      "correctAnswer": "Check out",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

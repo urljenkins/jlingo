@@ -1,7 +1,97 @@
 {
   "id": "slang",
   "name": "Slang & Colloquialisms",
-  "description": "TODO: slang and colloquial language",
+  "description": "Learn contemporary Chinese buzzwords, youth slang, internet expressions, and humor",
   "level": 24,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_slg_1",
+      "type": "multipleChoice",
+      "question": "What popular contemporary slang term describes 'lying flat' (stepping away from rat-race burnout)?",
+      "options": [
+        "躺平 (tǎngpíng)",
+        "内卷 (nèijuǎn)",
+        "给力 (gěilì)",
+        "打卡 (dǎkǎ)"
+      ],
+      "correctAnswer": "躺平 (tǎngpíng)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_slg_2",
+      "type": "translateThis",
+      "question": "太给力了！",
+      "options": [],
+      "correctAnswer": "Awesome / so empowering!",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_slg_3",
+      "type": "fillInBlank",
+      "question": "我们去这家网红餐厅 ___ 吧！(check in / share photo)",
+      "options": [
+        "打卡",
+        "躺平",
+        "开会",
+        "退房"
+      ],
+      "correctAnswer": "打卡",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_slg_4",
+      "type": "matchPairs",
+      "question": "Match internet buzzwords",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "内卷",
+            "native": "Involution (intense rat-race competition)"
+          },
+          {
+            "target": "点赞",
+            "native": "Give a thumbs-up / like"
+          },
+          {
+            "target": "吃瓜群众",
+            "native": "Onlookers watching drama unfold"
+          },
+          {
+            "target": "学霸",
+            "native": "Straight-A student / academic ace"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_slg_5",
+      "type": "speakThis",
+      "question": "这首歌真的太上头了",
+      "options": [],
+      "correctAnswer": "这首歌真的太上头了",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_slg_6",
+      "type": "multipleChoice",
+      "question": "What does '上头' (shàngtóu) mean when referring to music or shows?",
+      "options": [
+        "Addictive / catchy / obsessed with it",
+        "Boring",
+        "Too loud",
+        "Very quiet"
+      ],
+      "correctAnswer": "Addictive / catchy / obsessed with it",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

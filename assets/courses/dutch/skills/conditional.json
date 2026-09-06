@@ -1,8 +1,97 @@
 {
   "id": "conditional",
   "name": "Conditional Tense",
-  "description": "Learn to express hypothetical situations",
+  "description": "Learn hypothetical conditional sentences with 'zouden + infinitive' and 'als...dan' in Dutch",
   "level": 22,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_cnd_1",
+      "type": "multipleChoice",
+      "question": "Which past form of 'zullen' is used to form the conditional ('would do') in Dutch?",
+      "options": [
+        "zou / zouden",
+        "zal / zult",
+        "had / hadden",
+        "was / waren"
+      ],
+      "correctAnswer": "zou / zouden",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_cnd_2",
+      "type": "translateThis",
+      "question": "Als ik rijk was, zou ik een reis om de wereld maken",
+      "options": [],
+      "correctAnswer": "If I were rich, I would travel around the world",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_cnd_3",
+      "type": "fillInBlank",
+      "question": "Wat ___ jij doen in mijn situatie? (would)",
+      "options": [
+        "zou",
+        "zal",
+        "moet",
+        "kan"
+      ],
+      "correctAnswer": "zou",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_cnd_4",
+      "type": "matchPairs",
+      "question": "Match conditional structures in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "als...dan",
+            "native": "if...then"
+          },
+          {
+            "target": "ik zou willen",
+            "native": "I would like to"
+          },
+          {
+            "target": "stelselmatig",
+            "native": "systematically"
+          },
+          {
+            "target": "aannemelijk",
+            "native": "plausible / probable"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_cnd_5",
+      "type": "speakThis",
+      "question": "Ik zou het heel anders hebben aangepakt",
+      "options": [],
+      "correctAnswer": "Ik zou het heel anders hebben aangepakt",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_cnd_6",
+      "type": "multipleChoice",
+      "question": "How do you form the past conditional ('would have done') in Dutch?",
+      "options": [
+        "zou(den) + voltooid deelwoord + hebben/zijn",
+        "zal + voltooid deelwoord",
+        "had + gaan",
+        "was + infinitive"
+      ],
+      "correctAnswer": "zou(den) + voltooid deelwoord + hebben/zijn",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

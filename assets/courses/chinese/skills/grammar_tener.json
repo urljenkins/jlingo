@@ -1,7 +1,97 @@
 {
   "id": "grammar_tener",
   "name": "Grammar: Tener (To Have)",
-  "description": "TODO: grammar notes",
+  "description": "Learn the verb 有 (yǒu - to have/possess) and its negative form 没有 (méiyǒu)",
   "level": 7,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_ten_1",
+      "type": "multipleChoice",
+      "question": "How do you negate the verb '有' (to have) in Chinese?",
+      "options": [
+        "没有 (méiyǒu)",
+        "不有 (bù yǒu)",
+        "未有 (wèiyǒu)",
+        "莫有 (mòyǒu)"
+      ],
+      "correctAnswer": "没有 (méiyǒu)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ten_2",
+      "type": "translateThis",
+      "question": "我有两个哥哥",
+      "options": [],
+      "correctAnswer": "I have two older brothers",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ten_3",
+      "type": "fillInBlank",
+      "question": "你 ___ 时间吗？(Do you have time?)",
+      "options": [
+        "有",
+        "是",
+        "在",
+        "去"
+      ],
+      "correctAnswer": "有",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ten_4",
+      "type": "matchPairs",
+      "question": "Match possession phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "有",
+            "native": "To have"
+          },
+          {
+            "target": "没有",
+            "native": "Do not have"
+          },
+          {
+            "target": "有人",
+            "native": "There is someone / occupied"
+          },
+          {
+            "target": "有名",
+            "native": "Famous (having fame)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_ten_5",
+      "type": "speakThis",
+      "question": "我没有自行车",
+      "options": [],
+      "correctAnswer": "我没有自行车",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ten_6",
+      "type": "multipleChoice",
+      "question": "What does '桌子上有书' mean?",
+      "options": [
+        "There are books on the table (existential 'yǒu')",
+        "The table reads a book",
+        "I have a table and book",
+        "The book is under the table"
+      ],
+      "correctAnswer": "There are books on the table (existential 'yǒu')",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,8 +1,98 @@
 {
   "id": "greetings_2",
   "name": "Greetings 2",
-  "description": "More common greetings and polite phrases",
+  "description": "More common greetings, polite phrases, and daily farewells",
   "level": 1,
   "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_g2_1",
+      "type": "translateThis",
+      "question": "Aangenaam",
+      "options": [],
+      "correctAnswer": "Pleased to meet you",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_g2_2",
+      "type": "multipleChoice",
+      "question": "What does 'Hoe gaat het?' mean in Dutch?",
+      "options": [
+        "How are you?",
+        "Where are you going?",
+        "What time is it?",
+        "Goodbye"
+      ],
+      "correctAnswer": "How are you?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_g2_3",
+      "type": "fillInBlank",
+      "question": "Tot ___! (See you later!)",
+      "options": [
+        "straks",
+        "goed",
+        "dank",
+        "hallo"
+      ],
+      "correctAnswer": "straks",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_g2_4",
+      "type": "matchPairs",
+      "question": "Match the Dutch polite phrases with English",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Tot ziens",
+            "native": "Goodbye"
+          },
+          {
+            "target": "Tot straks",
+            "native": "See you soon"
+          },
+          {
+            "target": "Alsjeblieft",
+            "native": "Please"
+          },
+          {
+            "target": "Graag gedaan",
+            "native": "You are welcome"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_g2_5",
+      "type": "multipleChoice",
+      "question": "How do you say 'Excuse me' or 'Sorry' in Dutch?",
+      "options": [
+        "Pardon",
+        "Alsjeblieft",
+        "Dank je",
+        "Goedemiddag"
+      ],
+      "correctAnswer": "Pardon",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_g2_6",
+      "type": "speakThis",
+      "question": "Fijne dag verder!",
+      "options": [],
+      "correctAnswer": "Fijne dag verder!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

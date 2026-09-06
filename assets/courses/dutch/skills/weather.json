@@ -1,8 +1,97 @@
 {
   "id": "weather",
   "name": "Weather",
-  "description": "Learn to talk about weather and climate",
+  "description": "Learn to describe the weather, rain, wind, clouds, and seasonal temperatures in the Netherlands",
   "level": 6,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_wea_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'It is raining' in Dutch?",
+      "options": [
+        "Het regent",
+        "Het sneeuwt",
+        "Het waait",
+        "De zon schijnt"
+      ],
+      "correctAnswer": "Het regent",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_wea_2",
+      "type": "translateThis",
+      "question": "Het is koud vandaag",
+      "options": [],
+      "correctAnswer": "It is cold today",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_wea_3",
+      "type": "fillInBlank",
+      "question": "De zon ___ aan de hemel. (shines)",
+      "options": [
+        "schijnt",
+        "regent",
+        "waait",
+        "valt"
+      ],
+      "correctAnswer": "schijnt",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_wea_4",
+      "type": "matchPairs",
+      "question": "Match Dutch weather conditions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Zonnig",
+            "native": "Sunny"
+          },
+          {
+            "target": "Bewolkt",
+            "native": "Cloudy"
+          },
+          {
+            "target": "Wind",
+            "native": "Wind"
+          },
+          {
+            "target": "Sneeuw",
+            "native": "Snow"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_wea_5",
+      "type": "speakThis",
+      "question": "Wat voor weer wordt het morgen?",
+      "options": [],
+      "correctAnswer": "Wat voor weer wordt het morgen?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_wea_6",
+      "type": "multipleChoice",
+      "question": "What is 'de paraplu' used for?",
+      "options": [
+        "Protection from rain (umbrella)",
+        "Sunscreen",
+        "Swimming",
+        "Riding a bicycle"
+      ],
+      "correctAnswer": "Protection from rain (umbrella)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

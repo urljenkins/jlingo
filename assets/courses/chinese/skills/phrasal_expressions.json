@@ -1,7 +1,97 @@
 {
   "id": "phrasal_expressions",
   "name": "Phrasal Expressions",
-  "description": "TODO: phrasal expressions (language-specific)",
+  "description": "Learn fixed four-character phrases, paired adverbs, and colloquial multi-word expressions",
   "level": 23,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_pe_1",
+      "type": "multipleChoice",
+      "question": "What does the expression '乱七八糟' (luànqībāzāo) mean?",
+      "options": [
+        "In a huge mess / chaotic",
+        "Extremely neat",
+        "Very expensive",
+        "Quiet and peaceful"
+      ],
+      "correctAnswer": "In a huge mess / chaotic",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pe_2",
+      "type": "translateThis",
+      "question": "不管怎样，我们都要试一试",
+      "options": [],
+      "correctAnswer": "No matter what, we must give it a try",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pe_3",
+      "type": "fillInBlank",
+      "question": "这个房间简直是 ___ 七八糟。(messy)",
+      "options": [
+        "乱",
+        "大",
+        "好",
+        "小"
+      ],
+      "correctAnswer": "乱",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pe_4",
+      "type": "matchPairs",
+      "question": "Match common Chinese set expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "莫名其妙",
+            "native": "Baffling / without rhyme or reason"
+          },
+          {
+            "target": "马马虎虎",
+            "native": "So-so / careless"
+          },
+          {
+            "target": "讨价还价",
+            "native": "Bargaining back and forth"
+          },
+          {
+            "target": "自言自语",
+            "native": "Talking to oneself"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pe_5",
+      "type": "speakThis",
+      "question": "总的来说，进展还算顺利",
+      "options": [],
+      "correctAnswer": "总的来说，进展还算顺利",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pe_6",
+      "type": "multipleChoice",
+      "question": "What does '丢三落四' (diūsān làsì) describe?",
+      "options": [
+        "Forgetful / scatterbrained",
+        "Meticulous",
+        "Polite",
+        "Wealthy"
+      ],
+      "correctAnswer": "Forgetful / scatterbrained",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

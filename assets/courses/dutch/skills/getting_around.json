@@ -1,8 +1,97 @@
 {
   "id": "getting_around",
   "name": "Getting Around",
-  "description": "Learn to ask for directions and use transportation",
+  "description": "Learn to ask for directions, navigate Dutch towns, use OV-chipkaart, and locate stations",
   "level": 9,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_ga_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Turn left' in Dutch?",
+      "options": [
+        "Sla linksaf",
+        "Sla rechtsaf",
+        "Ga rechtdoor",
+        "Stop hier"
+      ],
+      "correctAnswer": "Sla linksaf",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ga_2",
+      "type": "translateThis",
+      "question": "Waar is het station?",
+      "options": [],
+      "correctAnswer": "Where is the station?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ga_3",
+      "type": "fillInBlank",
+      "question": "Ik ga met de ___ naar mijn werk. (train)",
+      "options": [
+        "trein",
+        "auto",
+        "fiets",
+        "boot"
+      ],
+      "correctAnswer": "trein",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ga_4",
+      "type": "matchPairs",
+      "question": "Match Dutch transit terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Spoor",
+            "native": "Platform / track"
+          },
+          {
+            "target": "Halte",
+            "native": "Bus/tram stop"
+          },
+          {
+            "target": "Trein",
+            "native": "Train"
+          },
+          {
+            "target": "Overstappen",
+            "native": "To transfer / change trains"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_ga_5",
+      "type": "speakThis",
+      "question": "Pardon, waar is de bushalte?",
+      "options": [],
+      "correctAnswer": "Pardon, waar is de bushalte?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ga_6",
+      "type": "multipleChoice",
+      "question": "What is the public transit card called in the Netherlands?",
+      "options": [
+        "OV-chipkaart",
+        "NS-kaart",
+        "Buspas",
+        "Eurocard"
+      ],
+      "correctAnswer": "OV-chipkaart",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

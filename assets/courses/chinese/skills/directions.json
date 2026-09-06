@@ -1,7 +1,97 @@
 {
   "id": "directions",
   "name": "Directions",
-  "description": "TODO: directions vocabulary",
+  "description": "Learn spatial vocabulary, cardinal directions, left, right, straight ahead, and proximity",
   "level": 9,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_dir_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Straight ahead' in Chinese?",
+      "options": [
+        "一直往前走",
+        "向后转",
+        "向左拐",
+        "向右拐"
+      ],
+      "correctAnswer": "一直往前走",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dir_2",
+      "type": "translateThis",
+      "question": "银行在超市旁边",
+      "options": [],
+      "correctAnswer": "The bank is next to the supermarket",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dir_3",
+      "type": "fillInBlank",
+      "question": "学校离这里很 ___。(The school is very close to here.)",
+      "options": [
+        "近",
+        "远",
+        "高",
+        "慢"
+      ],
+      "correctAnswer": "近",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dir_4",
+      "type": "matchPairs",
+      "question": "Match the cardinal directions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "东 (dōng)",
+            "native": "East"
+          },
+          {
+            "target": "南 (nán)",
+            "native": "South"
+          },
+          {
+            "target": "西 (xī)",
+            "native": "West"
+          },
+          {
+            "target": "北 (běi)",
+            "native": "North"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_dir_5",
+      "type": "speakThis",
+      "question": "往右拐就到了",
+      "options": [],
+      "correctAnswer": "往右拐就到了",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dir_6",
+      "type": "multipleChoice",
+      "question": "What does '对面' (duìmiàn) mean?",
+      "options": [
+        "Opposite / across from",
+        "Inside",
+        "Behind",
+        "In front of"
+      ],
+      "correctAnswer": "Opposite / across from",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

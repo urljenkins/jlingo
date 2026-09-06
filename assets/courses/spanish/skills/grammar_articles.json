@@ -8,14 +8,24 @@
             "id": "ex_art_1",
             "type": "multipleChoice",
             "question": "Which is the definite article for 'the book' (masculine)?",
-            "options": ["El libro", "La libro", "Un libro", "Una libro"],
+            "options": [
+                "El libro",
+                "La libro",
+                "Un libro",
+                "Una libro"
+            ],
             "correctAnswer": "El libro"
         },
         {
             "id": "ex_art_2",
             "type": "fillInBlank",
             "question": "___ casa es grande",
-            "options": ["La", "El", "Un", "Los"],
+            "options": [
+                "La",
+                "El",
+                "Un",
+                "Los"
+            ],
             "correctAnswer": "La"
         },
         {
@@ -26,10 +36,22 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "El", "native": "The (masc. sing.)"},
-                    {"target": "La", "native": "The (fem. sing.)"},
-                    {"target": "Los", "native": "The (masc. pl.)"},
-                    {"target": "Las", "native": "The (fem. pl.)"}
+                    {
+                        "target": "El",
+                        "native": "The (masc. sing.)"
+                    },
+                    {
+                        "target": "La",
+                        "native": "The (fem. sing.)"
+                    },
+                    {
+                        "target": "Los",
+                        "native": "The (masc. pl.)"
+                    },
+                    {
+                        "target": "Las",
+                        "native": "The (fem. pl.)"
+                    }
                 ]
             }
         },
@@ -37,7 +59,12 @@
             "id": "ex_art_4",
             "type": "multipleChoice",
             "question": "How do you say 'a woman'?",
-            "options": ["Una mujer", "Un mujer", "La mujer", "El mujer"],
+            "options": [
+                "Una mujer",
+                "Un mujer",
+                "La mujer",
+                "El mujer"
+            ],
             "correctAnswer": "Una mujer"
         },
         {
@@ -46,6 +73,121 @@
             "question": "Unos libros",
             "options": [],
             "correctAnswer": "Some books"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which is correct for 'the books' (masc. plural)?",
+            "options": [
+                "Los libros",
+                "Las libros",
+                "El libros",
+                "Un libros"
+            ],
+            "correctAnswer": "Los libros",
+            "id": "ex_art_6"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ mesas son nuevas (The - fem. pl.)",
+            "options": [
+                "Las",
+                "Los",
+                "Un",
+                "Una"
+            ],
+            "correctAnswer": "Las",
+            "id": "ex_art_7"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los estudiantes",
+            "options": [],
+            "correctAnswer": "The students",
+            "id": "ex_art_8"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match article + noun combinations",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "El perro",
+                        "native": "The dog"
+                    },
+                    {
+                        "target": "La casa",
+                        "native": "The house"
+                    },
+                    {
+                        "target": "Los niños",
+                        "native": "The children"
+                    },
+                    {
+                        "target": "Las flores",
+                        "native": "The flowers"
+                    }
+                ]
+            },
+            "id": "ex_art_9"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'some flowers' (unas/unos)?",
+            "options": [
+                "Unas flores",
+                "Unos flores",
+                "Las flores",
+                "El flores"
+            ],
+            "correctAnswer": "Unas flores",
+            "id": "ex_art_10"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Un hombre y una mujer",
+            "options": [],
+            "correctAnswer": "Un hombre y una mujer",
+            "id": "ex_art_11"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Quiero ___ café (a - masc.)",
+            "options": [
+                "un",
+                "una",
+                "el",
+                "la"
+            ],
+            "correctAnswer": "un",
+            "id": "ex_art_12"
+        },
+        {
+            "type": "translateThis",
+            "question": "Una mesa",
+            "options": [],
+            "correctAnswer": "A table",
+            "id": "ex_art_13"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which article agrees with 'problema' (masculine despite ending in -a)?",
+            "options": [
+                "El problema",
+                "La problema",
+                "Un problema femenina",
+                "Las problema"
+            ],
+            "correctAnswer": "El problema",
+            "id": "ex_art_14"
+        },
+        {
+            "type": "speakThis",
+            "question": "El agua está fría",
+            "options": [],
+            "correctAnswer": "El agua está fría",
+            "id": "ex_art_15"
         }
     ]
 }

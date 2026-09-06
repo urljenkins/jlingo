@@ -1,8 +1,97 @@
 {
   "id": "technology",
   "name": "Technology",
-  "description": "Learn vocabulary for technology and devices",
+  "description": "Learn Dutch technology vocabulary, artificial intelligence, software, hardware, and sustainability",
   "level": 20,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_tech_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Artificial Intelligence' in Dutch?",
+      "options": [
+        "Kunstmatige intelligentie (AI)",
+        "Digitale techniek",
+        "Computersoftware",
+        "Netwerkanalyse"
+      ],
+      "correctAnswer": "Kunstmatige intelligentie (AI)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_tech_2",
+      "type": "translateThis",
+      "question": "Mijn laptopaccu is bijna leeg",
+      "options": [],
+      "correctAnswer": "My laptop battery is almost empty",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_tech_3",
+      "type": "fillInBlank",
+      "question": "We moeten de software zo snel mogelijk ___ (updaten / bijwerken).",
+      "options": [
+        "updaten",
+        "verwijderen",
+        "sluiten",
+        "wissen"
+      ],
+      "correctAnswer": "updaten",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_tech_4",
+      "type": "matchPairs",
+      "question": "Match tech terms in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Het scherm",
+            "native": "The screen / display"
+          },
+          {
+            "target": "Het toetsenbord",
+            "native": "The keyboard"
+          },
+          {
+            "target": "De oplader",
+            "native": "The charger"
+          },
+          {
+            "target": "De harde schijf",
+            "native": "The hard drive"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_tech_5",
+      "type": "speakThis",
+      "question": "Innovatie is de motor van de economie",
+      "options": [],
+      "correctAnswer": "Innovatie is de motor van de economie",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_tech_6",
+      "type": "multipleChoice",
+      "question": "What does 'draadloos' mean?",
+      "options": [
+        "Wireless",
+        "Wired",
+        "Broken",
+        "Fast"
+      ],
+      "correctAnswer": "Wireless",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

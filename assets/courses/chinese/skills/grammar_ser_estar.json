@@ -1,7 +1,97 @@
 {
   "id": "grammar_ser_estar",
   "name": "Grammar: Ser & Estar",
-  "description": "TODO: grammar notes (adapt to Chinese equivalents)",
+  "description": "Learn the Chinese equivalents of 'to be' using 是 (shì - identification) and 在 (zài - location)",
   "level": 7,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_gse_1",
+      "type": "multipleChoice",
+      "question": "Which verb is used in Chinese to equate identity (e.g. 'I am a teacher')?",
+      "options": [
+        "是 (shì)",
+        "在 (zài)",
+        "有 (yǒu)",
+        "去 (qù)"
+      ],
+      "correctAnswer": "是 (shì)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_gse_2",
+      "type": "translateThis",
+      "question": "我在家",
+      "options": [],
+      "correctAnswer": "I am at home",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_gse_3",
+      "type": "fillInBlank",
+      "question": "他 ___ 中国人。(He is Chinese.)",
+      "options": [
+        "是",
+        "在",
+        "有",
+        "好"
+      ],
+      "correctAnswer": "是",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_gse_4",
+      "type": "matchPairs",
+      "question": "Match the verbs for 'to be / to exist'",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "是 (shì)",
+            "native": "To be (identity/equality)"
+          },
+          {
+            "target": "在 (zài)",
+            "native": "To be at/in (location)"
+          },
+          {
+            "target": "不是 (bú shì)",
+            "native": "Is not / are not"
+          },
+          {
+            "target": "不在 (bú zài)",
+            "native": "Not at / absent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_gse_5",
+      "type": "speakThis",
+      "question": "老师在办公室里",
+      "options": [],
+      "correctAnswer": "老师在办公室里",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_gse_6",
+      "type": "multipleChoice",
+      "question": "Which word indicates location ('at / in')?",
+      "options": [
+        "在 (zài)",
+        "是 (shì)",
+        "为 (wéi)",
+        "得 (de)"
+      ],
+      "correctAnswer": "在 (zài)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,7 +1,97 @@
 {
   "id": "present_continuous",
   "name": "Present Continuous",
-  "description": "TODO: present continuous constructs",
+  "description": "Learn ongoing actions using 正在 (zhèngzài) and the aspect particle 呢 (ne)",
   "level": 12,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_pc_1",
+      "type": "multipleChoice",
+      "question": "Which marker is placed before a verb in Chinese to express the ongoing continuous aspect (-ing)?",
+      "options": [
+        "正在 (zhèngzài)",
+        "已经 (yǐjīng)",
+        "曾经 (céngjīng)",
+        "就要 (jiùyào)"
+      ],
+      "correctAnswer": "正在 (zhèngzài)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pc_2",
+      "type": "translateThis",
+      "question": "他正在看书呢",
+      "options": [],
+      "correctAnswer": "He is reading a book right now",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pc_3",
+      "type": "fillInBlank",
+      "question": "你正在做 ___ 呢？(What are you doing?)",
+      "options": [
+        "什么",
+        "哪儿",
+        "谁",
+        "几"
+      ],
+      "correctAnswer": "什么",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pc_4",
+      "type": "matchPairs",
+      "question": "Match ongoing action structures",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "正在吃饭",
+            "native": "In the middle of eating"
+          },
+          {
+            "target": "正在打电话",
+            "native": "On the phone right now"
+          },
+          {
+            "target": "正在开车",
+            "native": "Currently driving"
+          },
+          {
+            "target": "在听音乐",
+            "native": "Listening to music"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pc_5",
+      "type": "speakThis",
+      "question": "我正在学中文",
+      "options": [],
+      "correctAnswer": "我正在学中文",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pc_6",
+      "type": "multipleChoice",
+      "question": "How do you negate an ongoing action in Chinese ('not currently doing')?",
+      "options": [
+        "没在 (méi zài)",
+        "不在 (bú zài)",
+        "别在 (bié zài)",
+        "非在 (fēi zài)"
+      ],
+      "correctAnswer": "没在 (méi zài)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

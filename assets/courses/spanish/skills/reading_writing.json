@@ -8,16 +8,37 @@
             "id": "rw_dialogue_1",
             "type": "interactiveDialogue",
             "question": "Practice a conversation at a café",
-            "options": ["Bien, gracias", "Adiós", "No entiendo"],
+            "options": [
+                "Bien, gracias",
+                "Adiós",
+                "No entiendo"
+            ],
             "correctAnswer": "Bien, gracias",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
             "metadata": {
                 "topic": "At the Café",
                 "dialogue": [
-                    {"speaker": "A", "text": "¡Hola! ¿Cómo estás?", "isNative": true},
-                    {"speaker": "B", "text": "___", "isUserTurn": true, "options": ["Bien, gracias", "Adiós", "No entiendo"]},
-                    {"speaker": "A", "text": "¡Qué bueno! ¿Quieres un café?", "isNative": true}
+                    {
+                        "speaker": "A",
+                        "text": "¡Hola! ¿Cómo estás?",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "B",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "Bien, gracias",
+                            "Adiós",
+                            "No entiendo"
+                        ]
+                    },
+                    {
+                        "speaker": "A",
+                        "text": "¡Qué bueno! ¿Quieres un café?",
+                        "isNative": true
+                    }
                 ]
             }
         },
@@ -25,16 +46,37 @@
             "id": "rw_dialogue_2",
             "type": "interactiveDialogue",
             "question": "Practice ordering at a restaurant",
-            "options": ["Una hamburguesa, por favor", "El baño", "Hasta luego"],
+            "options": [
+                "Una hamburguesa, por favor",
+                "El baño",
+                "Hasta luego"
+            ],
             "correctAnswer": "Una hamburguesa, por favor",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
             "metadata": {
                 "topic": "Restaurant Ordering",
                 "dialogue": [
-                    {"speaker": "Waiter", "text": "Buenas tardes. ¿Qué desea pedir?", "isNative": true},
-                    {"speaker": "You", "text": "___", "isUserTurn": true, "options": ["Una hamburguesa, por favor", "El baño", "Hasta luego"]},
-                    {"speaker": "Waiter", "text": "Excelente elección. ¿Algo para beber?", "isNative": true}
+                    {
+                        "speaker": "Waiter",
+                        "text": "Buenas tardes. ¿Qué desea pedir?",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "You",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "Una hamburguesa, por favor",
+                            "El baño",
+                            "Hasta luego"
+                        ]
+                    },
+                    {
+                        "speaker": "Waiter",
+                        "text": "Excelente elección. ¿Algo para beber?",
+                        "isNative": true
+                    }
                 ]
             }
         },
@@ -42,7 +84,12 @@
             "id": "rw_story_1",
             "type": "storyLesson",
             "question": "¿Qué vio María en el parque?",
-            "options": ["Un gato negro", "Un perro grande", "Un pájaro azul", "Una mariposa"],
+            "options": [
+                "Un gato negro",
+                "Un perro grande",
+                "Un pájaro azul",
+                "Una mariposa"
+            ],
             "correctAnswer": "Un gato negro",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
@@ -51,11 +98,31 @@
                 "level": "A1",
                 "story": "María caminaba por el parque en un día soleado. Los pájaros cantaban en los árboles y el viento era suave. De repente, vio un gato negro sentado en un banco. El gato tenía ojos verdes muy brillantes. María se acercó lentamente y el gato empezó a ronronear. Desde ese día, María visita el parque todos los días para ver a su nuevo amigo.",
                 "vocabulary": [
-                    {"word": "caminaba", "translation": "was walking", "highlight": true},
-                    {"word": "soleado", "translation": "sunny", "highlight": true},
-                    {"word": "gato", "translation": "cat", "highlight": true},
-                    {"word": "ojos", "translation": "eyes", "highlight": true},
-                    {"word": "ronronear", "translation": "to purr", "highlight": true}
+                    {
+                        "word": "caminaba",
+                        "translation": "was walking",
+                        "highlight": true
+                    },
+                    {
+                        "word": "soleado",
+                        "translation": "sunny",
+                        "highlight": true
+                    },
+                    {
+                        "word": "gato",
+                        "translation": "cat",
+                        "highlight": true
+                    },
+                    {
+                        "word": "ojos",
+                        "translation": "eyes",
+                        "highlight": true
+                    },
+                    {
+                        "word": "ronronear",
+                        "translation": "to purr",
+                        "highlight": true
+                    }
                 ],
                 "question": "¿Qué vio María en el parque?"
             }
@@ -64,7 +131,12 @@
             "id": "rw_story_2",
             "type": "storyLesson",
             "question": "¿Dónde trabaja Pedro?",
-            "options": ["En un restaurante", "En un hospital", "En una escuela", "En una tienda"],
+            "options": [
+                "En un restaurante",
+                "En un hospital",
+                "En una escuela",
+                "En una tienda"
+            ],
             "correctAnswer": "En un restaurante",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
@@ -73,11 +145,31 @@
                 "level": "A1",
                 "story": "Pedro trabaja en un restaurante pequeño en el centro de la ciudad. Él es el cocinero principal. Todos los días, Pedro llega muy temprano para preparar los ingredientes frescos. Sus platos favoritos son la paella y las tapas. Los clientes siempre dicen que la comida de Pedro es deliciosa.",
                 "vocabulary": [
-                    {"word": "trabaja", "translation": "works", "highlight": true},
-                    {"word": "restaurante", "translation": "restaurant", "highlight": true},
-                    {"word": "cocinero", "translation": "cook/chef", "highlight": true},
-                    {"word": "temprano", "translation": "early", "highlight": true},
-                    {"word": "deliciosa", "translation": "delicious", "highlight": true}
+                    {
+                        "word": "trabaja",
+                        "translation": "works",
+                        "highlight": true
+                    },
+                    {
+                        "word": "restaurante",
+                        "translation": "restaurant",
+                        "highlight": true
+                    },
+                    {
+                        "word": "cocinero",
+                        "translation": "cook/chef",
+                        "highlight": true
+                    },
+                    {
+                        "word": "temprano",
+                        "translation": "early",
+                        "highlight": true
+                    },
+                    {
+                        "word": "deliciosa",
+                        "translation": "delicious",
+                        "highlight": true
+                    }
                 ],
                 "question": "¿Dónde trabaja Pedro?"
             }
@@ -93,8 +185,14 @@
             "metadata": {
                 "direction": "toNative",
                 "sourceText": "Me gusta mucho leer libros en español.",
-                "hints": ["'Me gusta' means 'I like'", "'mucho' emphasizes 'a lot' or 'really'"],
-                "acceptableAnswers": ["I like reading books in Spanish a lot", "I really enjoy reading books in Spanish"],
+                "hints": [
+                    "'Me gusta' means 'I like'",
+                    "'mucho' emphasizes 'a lot' or 'really'"
+                ],
+                "acceptableAnswers": [
+                    "I like reading books in Spanish a lot",
+                    "I really enjoy reading books in Spanish"
+                ],
                 "difficulty": "sentence"
             }
         },
@@ -109,8 +207,15 @@
             "metadata": {
                 "direction": "toTarget",
                 "sourceText": "The weather is beautiful today.",
-                "hints": ["'weather' can be 'clima' or 'tiempo'", "'beautiful' = 'hermoso' or 'bonito'"],
-                "acceptableAnswers": ["Hace buen tiempo hoy", "El tiempo está hermoso hoy", "El clima es hermoso hoy"],
+                "hints": [
+                    "'weather' can be 'clima' or 'tiempo'",
+                    "'beautiful' = 'hermoso' or 'bonito'"
+                ],
+                "acceptableAnswers": [
+                    "Hace buen tiempo hoy",
+                    "El tiempo está hermoso hoy",
+                    "El clima es hermoso hoy"
+                ],
                 "difficulty": "sentence"
             }
         },
@@ -125,8 +230,14 @@
             "metadata": {
                 "direction": "toNative",
                 "sourceText": "Ayer fui al supermercado con mi madre. Compramos muchas frutas y verduras. Mi favorita es la manzana roja.",
-                "hints": ["'Ayer' means 'yesterday'", "'fui' is past tense of 'ir' (to go)", "'compramos' = 'we bought'"],
-                "acceptableAnswers": ["Yesterday I went to the supermarket with my mom. We bought a lot of fruits and vegetables. My favorite is the red apple."],
+                "hints": [
+                    "'Ayer' means 'yesterday'",
+                    "'fui' is past tense of 'ir' (to go)",
+                    "'compramos' = 'we bought'"
+                ],
+                "acceptableAnswers": [
+                    "Yesterday I went to the supermarket with my mom. We bought a lot of fruits and vegetables. My favorite is the red apple."
+                ],
                 "difficulty": "paragraph"
             }
         },
@@ -134,14 +245,35 @@
             "id": "rw_cloze_1",
             "type": "clozeTest",
             "question": "El ___ es un animal que ___ en el agua.",
-            "options": ["pez", "vive", "corre", "perro"],
+            "options": [
+                "pez",
+                "vive",
+                "corre",
+                "perro"
+            ],
             "correctAnswer": "pez,vive",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
             "metadata": {
                 "blanks": [
-                    {"index": 0, "answer": "pez", "options": ["pez", "perro", "gato"]},
-                    {"index": 1, "answer": "vive", "options": ["vive", "corre", "duerme"]}
+                    {
+                        "index": 0,
+                        "answer": "pez",
+                        "options": [
+                            "pez",
+                            "perro",
+                            "gato"
+                        ]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "vive",
+                        "options": [
+                            "vive",
+                            "corre",
+                            "duerme"
+                        ]
+                    }
                 ],
                 "context": "Complete the sentence about animals and where they live."
             }
@@ -150,14 +282,35 @@
             "id": "rw_cloze_2",
             "type": "clozeTest",
             "question": "Mi hermana ___ música mientras ___ su tarea.",
-            "options": ["escucha", "hace", "come", "duerme"],
+            "options": [
+                "escucha",
+                "hace",
+                "come",
+                "duerme"
+            ],
             "correctAnswer": "escucha,hace",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
             "metadata": {
                 "blanks": [
-                    {"index": 0, "answer": "escucha", "options": ["escucha", "come", "duerme"]},
-                    {"index": 1, "answer": "hace", "options": ["hace", "ve", "lee"]}
+                    {
+                        "index": 0,
+                        "answer": "escucha",
+                        "options": [
+                            "escucha",
+                            "come",
+                            "duerme"
+                        ]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "hace",
+                        "options": [
+                            "hace",
+                            "ve",
+                            "lee"
+                        ]
+                    }
                 ],
                 "context": "Complete the sentence about daily activities."
             }
@@ -166,15 +319,46 @@
             "id": "rw_cloze_3",
             "type": "clozeTest",
             "question": "En la ___, hay muchos ___ que venden ___ frescas.",
-            "options": ["plaza", "vendedores", "frutas", "libros", "parque", "niños"],
+            "options": [
+                "plaza",
+                "vendedores",
+                "frutas",
+                "libros",
+                "parque",
+                "niños"
+            ],
             "correctAnswer": "plaza,vendedores,frutas",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
             "metadata": {
                 "blanks": [
-                    {"index": 0, "answer": "plaza", "options": ["plaza", "parque", "casa"]},
-                    {"index": 1, "answer": "vendedores", "options": ["vendedores", "niños", "perros"]},
-                    {"index": 2, "answer": "frutas", "options": ["frutas", "libros", "coches"]}
+                    {
+                        "index": 0,
+                        "answer": "plaza",
+                        "options": [
+                            "plaza",
+                            "parque",
+                            "casa"
+                        ]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "vendedores",
+                        "options": [
+                            "vendedores",
+                            "niños",
+                            "perros"
+                        ]
+                    },
+                    {
+                        "index": 2,
+                        "answer": "frutas",
+                        "options": [
+                            "frutas",
+                            "libros",
+                            "coches"
+                        ]
+                    }
                 ],
                 "context": "Complete the sentence about a market scene."
             }
@@ -183,16 +367,37 @@
             "id": "rw_dialogue_3",
             "type": "interactiveDialogue",
             "question": "Practice asking for directions",
-            "options": ["Siga recto y luego a la izquierda", "Tengo hambre", "Gracias, adiós"],
+            "options": [
+                "Siga recto y luego a la izquierda",
+                "Tengo hambre",
+                "Gracias, adiós"
+            ],
             "correctAnswer": "Siga recto y luego a la izquierda",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
             "metadata": {
                 "topic": "Asking for Directions",
                 "dialogue": [
-                    {"speaker": "Tourist", "text": "Disculpe, ¿cómo llego al museo?", "isNative": true},
-                    {"speaker": "Local", "text": "___", "isUserTurn": true, "options": ["Siga recto y luego a la izquierda", "Tengo hambre", "Gracias, adiós"]},
-                    {"speaker": "Tourist", "text": "¡Muchas gracias por su ayuda!", "isNative": true}
+                    {
+                        "speaker": "Tourist",
+                        "text": "Disculpe, ¿cómo llego al museo?",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "Local",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "Siga recto y luego a la izquierda",
+                            "Tengo hambre",
+                            "Gracias, adiós"
+                        ]
+                    },
+                    {
+                        "speaker": "Tourist",
+                        "text": "¡Muchas gracias por su ayuda!",
+                        "isNative": true
+                    }
                 ]
             }
         },
@@ -200,7 +405,12 @@
             "id": "rw_story_3",
             "type": "storyLesson",
             "question": "¿Qué tiempo hacía cuando Ana salió de casa?",
-            "options": ["Estaba lloviendo", "Hacía sol", "Estaba nevando", "Hacía viento"],
+            "options": [
+                "Estaba lloviendo",
+                "Hacía sol",
+                "Estaba nevando",
+                "Hacía viento"
+            ],
             "correctAnswer": "Estaba lloviendo",
             "targetLanguage": "es-ES",
             "nativeLanguage": "en-US",
@@ -209,14 +419,320 @@
                 "level": "A2",
                 "story": "Ana se despertó temprano por la mañana. Cuando miró por la ventana, vio que estaba lloviendo mucho. Decidió llevar su paraguas azul. Caminó hacia la parada del autobús mientras escuchaba la lluvia caer. En el autobús, conoció a una señora mayor que había olvidado su paraguas. Ana, siendo muy amable, compartió su paraguas con ella hasta la siguiente parada.",
                 "vocabulary": [
-                    {"word": "lloviendo", "translation": "raining", "highlight": true},
-                    {"word": "paraguas", "translation": "umbrella", "highlight": true},
-                    {"word": "parada", "translation": "stop/station", "highlight": true},
-                    {"word": "señora", "translation": "lady/woman", "highlight": true},
-                    {"word": "compartió", "translation": "shared", "highlight": true}
+                    {
+                        "word": "lloviendo",
+                        "translation": "raining",
+                        "highlight": true
+                    },
+                    {
+                        "word": "paraguas",
+                        "translation": "umbrella",
+                        "highlight": true
+                    },
+                    {
+                        "word": "parada",
+                        "translation": "stop/station",
+                        "highlight": true
+                    },
+                    {
+                        "word": "señora",
+                        "translation": "lady/woman",
+                        "highlight": true
+                    },
+                    {
+                        "word": "compartió",
+                        "translation": "shared",
+                        "highlight": true
+                    }
                 ],
                 "question": "¿Qué tiempo hacía cuando Ana salió de casa?"
             }
+        },
+        {
+            "type": "storyLesson",
+            "question": "¿Qué compró Luis en la tienda?",
+            "options": [
+                "Un libro",
+                "Una camisa",
+                "Un zapato",
+                "Un sombrero"
+            ],
+            "correctAnswer": "Un libro",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "title": "La Tienda de Libros",
+                "level": "A1",
+                "story": "Luis fue a la tienda después de la escuela. Quería comprar un regalo para su hermana. Vio muchos libros de colores en la estantería. Eligió un libro sobre animales porque a su hermana le encantan los gatos y los perros. El vendedor le dijo que costaba ocho euros. Luis pagó y salió muy contento.",
+                "vocabulary": [
+                    {
+                        "word": "estantería",
+                        "translation": "shelf",
+                        "highlight": true
+                    },
+                    {
+                        "word": "regalo",
+                        "translation": "gift",
+                        "highlight": true
+                    },
+                    {
+                        "word": "eligió",
+                        "translation": "chose",
+                        "highlight": true
+                    },
+                    {
+                        "word": "costaba",
+                        "translation": "cost",
+                        "highlight": true
+                    },
+                    {
+                        "word": "contento",
+                        "translation": "happy",
+                        "highlight": true
+                    }
+                ],
+                "question": "¿Qué compró Luis en la tienda?"
+            },
+            "id": "rw_ex_1"
+        },
+        {
+            "type": "storyLesson",
+            "question": "¿A qué hora empieza la clase?",
+            "options": [
+                "A las nueve",
+                "A las ocho",
+                "A las diez",
+                "A las once"
+            ],
+            "correctAnswer": "A las nueve",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "title": "El Primer Día de Clases",
+                "level": "A1",
+                "story": "Hoy es el primer día de clases para Sofía. Se despierta temprano y se pone su uniforme nuevo. Su madre le prepara el desayuno: pan con mantequilla y un vaso de leche. La clase empieza a las nueve, así que Sofía camina rápido a la escuela. Está un poco nerviosa pero también muy emocionada de conocer a sus compañeros.",
+                "vocabulary": [
+                    {
+                        "word": "uniforme",
+                        "translation": "uniform",
+                        "highlight": true
+                    },
+                    {
+                        "word": "desayuno",
+                        "translation": "breakfast",
+                        "highlight": true
+                    },
+                    {
+                        "word": "mantequilla",
+                        "translation": "butter",
+                        "highlight": true
+                    },
+                    {
+                        "word": "nerviosa",
+                        "translation": "nervous",
+                        "highlight": true
+                    },
+                    {
+                        "word": "emocionada",
+                        "translation": "excited",
+                        "highlight": true
+                    }
+                ],
+                "question": "¿A qué hora empieza la clase?"
+            },
+            "id": "rw_ex_2"
+        },
+        {
+            "type": "clozeTest",
+            "question": "Los ___ juegan en el ___ después de la escuela.",
+            "options": [
+                "niños",
+                "parque",
+                "libros",
+                "carro"
+            ],
+            "correctAnswer": "niños,parque",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "niños",
+                        "options": [
+                            "niños",
+                            "libros",
+                            "gatos"
+                        ]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "parque",
+                        "options": [
+                            "parque",
+                            "carro",
+                            "libro"
+                        ]
+                    }
+                ],
+                "context": "Complete the sentence about children's activities."
+            },
+            "id": "rw_ex_3"
+        },
+        {
+            "type": "clozeTest",
+            "question": "Mi padre ___ el periódico y mi madre ___ café por la mañana.",
+            "options": [
+                "lee",
+                "toma",
+                "escribe",
+                "corre"
+            ],
+            "correctAnswer": "lee,toma",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "lee",
+                        "options": [
+                            "lee",
+                            "escribe",
+                            "corre"
+                        ]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "toma",
+                        "options": [
+                            "toma",
+                            "escribe",
+                            "duerme"
+                        ]
+                    }
+                ],
+                "context": "Complete the sentence about morning habits."
+            },
+            "id": "rw_ex_4"
+        },
+        {
+            "type": "translationExercise",
+            "question": "Los fines de semana, mi familia y yo vamos a la playa.",
+            "options": [],
+            "correctAnswer": "On weekends, my family and I go to the beach.",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "direction": "toNative",
+                "sourceText": "Los fines de semana, mi familia y yo vamos a la playa.",
+                "hints": [
+                    "'Los fines de semana' means 'on weekends'",
+                    "'vamos' is from 'ir' (to go)"
+                ],
+                "acceptableAnswers": [
+                    "On the weekends, my family and I go to the beach."
+                ],
+                "difficulty": "sentence"
+            },
+            "id": "rw_ex_5"
+        },
+        {
+            "type": "translationExercise",
+            "question": "I have two brothers and one sister.",
+            "options": [],
+            "correctAnswer": "Tengo dos hermanos y una hermana.",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "direction": "toTarget",
+                "sourceText": "I have two brothers and one sister.",
+                "hints": [
+                    "'Tengo' means 'I have'",
+                    "'hermanos' can mean brothers or siblings"
+                ],
+                "acceptableAnswers": [
+                    "Tengo dos hermanos y una hermana."
+                ],
+                "difficulty": "sentence"
+            },
+            "id": "rw_ex_6"
+        },
+        {
+            "type": "interactiveDialogue",
+            "question": "Practice a conversation: Meeting a New Neighbor",
+            "options": [
+                "Mucho gusto, soy Carlos",
+                "No hablo español",
+                "Adiós"
+            ],
+            "correctAnswer": "Mucho gusto, soy Carlos",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "topic": "Meeting a New Neighbor",
+                "dialogue": [
+                    {
+                        "speaker": "Neighbor",
+                        "text": "Hola, soy tu nuevo vecino. ¿Cómo te llamas?",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "You",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "Mucho gusto, soy Carlos",
+                            "No hablo español",
+                            "Adiós"
+                        ]
+                    },
+                    {
+                        "speaker": "Neighbor",
+                        "text": "¡Encantado, Carlos! Bienvenido al barrio.",
+                        "isNative": true
+                    }
+                ]
+            },
+            "id": "rw_ex_7"
+        },
+        {
+            "type": "interactiveDialogue",
+            "question": "Practice a conversation: Buying Fruit at the Market",
+            "options": [
+                "Quisiera un kilo de manzanas",
+                "No me gusta la fruta",
+                "¿Dónde está el baño?"
+            ],
+            "correctAnswer": "Quisiera un kilo de manzanas",
+            "targetLanguage": "es-ES",
+            "nativeLanguage": "en-US",
+            "metadata": {
+                "topic": "Buying Fruit at the Market",
+                "dialogue": [
+                    {
+                        "speaker": "Vendedor",
+                        "text": "Buenos días, ¿qué necesita?",
+                        "isNative": true
+                    },
+                    {
+                        "speaker": "You",
+                        "text": "___",
+                        "isUserTurn": true,
+                        "options": [
+                            "Quisiera un kilo de manzanas",
+                            "No me gusta la fruta",
+                            "¿Dónde está el baño?"
+                        ]
+                    },
+                    {
+                        "speaker": "Vendedor",
+                        "text": "Muy bien, son tres euros.",
+                        "isNative": true
+                    }
+                ]
+            },
+            "id": "rw_ex_8"
         }
     ]
 }

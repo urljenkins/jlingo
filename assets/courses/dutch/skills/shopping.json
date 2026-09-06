@@ -1,8 +1,97 @@
 {
   "id": "shopping",
   "name": "Shopping",
-  "description": "Learn vocabulary for shopping and buying things",
+  "description": "Learn to ask prices, sizes, opening hours, and paying with pin (pinnen) in the Netherlands",
   "level": 10,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_shop_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'How much does this cost?' in Dutch?",
+      "options": [
+        "Hoeveel kost dit?",
+        "Wat is dit?",
+        "Waar koop je dit?",
+        "Hoe laat is het?"
+      ],
+      "correctAnswer": "Hoeveel kost dit?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_shop_2",
+      "type": "translateThis",
+      "question": "Mag ik pinnen?",
+      "options": [],
+      "correctAnswer": "Can I pay by card?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_shop_3",
+      "type": "fillInBlank",
+      "question": "Heeft u dit in een andere ___? (size)",
+      "options": [
+        "maat",
+        "kleur",
+        "winkel",
+        "stad"
+      ],
+      "correctAnswer": "maat",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_shop_4",
+      "type": "matchPairs",
+      "question": "Match Dutch retail terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Kopen",
+            "native": "To buy"
+          },
+          {
+            "target": "Verkopen",
+            "native": "To sell"
+          },
+          {
+            "target": "Korting",
+            "native": "Discount"
+          },
+          {
+            "target": "Kassabon",
+            "native": "Receipt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_shop_5",
+      "type": "speakThis",
+      "question": "Ik wil deze schoenen passen",
+      "options": [],
+      "correctAnswer": "Ik wil deze schoenen passen",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_shop_6",
+      "type": "multipleChoice",
+      "question": "In the Netherlands, what does 'pinnen' mean?",
+      "options": [
+        "To pay using a debit card with PIN",
+        "To write a cheque",
+        "To pay in cash",
+        "To barter"
+      ],
+      "correctAnswer": "To pay using a debit card with PIN",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

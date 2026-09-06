@@ -1,8 +1,97 @@
 {
   "id": "at_the_market",
   "name": "At the Market",
-  "description": "Learn vocabulary for the supermarket and local markets",
+  "description": "Learn Dutch outdoor market culture (de markt), buying cheese, herring, and produce",
   "level": 10,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_mkt_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'A kilo of apples, please' in Dutch?",
+      "options": [
+        "Een kilo appels, alstublieft",
+        "Veel appels graag",
+        "Appels en peren",
+        "Hoe duur zijn appels?"
+      ],
+      "correctAnswer": "Een kilo appels, alstublieft",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_mkt_2",
+      "type": "translateThis",
+      "question": "Verse Hollandse haring",
+      "options": [],
+      "correctAnswer": "Fresh Dutch herring",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_mkt_3",
+      "type": "fillInBlank",
+      "question": "Mag ik een stukje ___ proeven? (cheese)",
+      "options": [
+        "kaas",
+        "brood",
+        "vlees",
+        "vis"
+      ],
+      "correctAnswer": "kaas",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_mkt_4",
+      "type": "matchPairs",
+      "question": "Match Dutch market items",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Kraam",
+            "native": "Market stall"
+          },
+          {
+            "target": "Aardbeien",
+            "native": "Strawberries"
+          },
+          {
+            "target": "Bloemen",
+            "native": "Flowers"
+          },
+          {
+            "target": "Tulpen",
+            "native": "Tulips"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_mkt_5",
+      "type": "speakThis",
+      "question": "Deze bloemen ruiken heerlijk",
+      "options": [],
+      "correctAnswer": "Deze bloemen ruiken heerlijk",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_mkt_6",
+      "type": "multipleChoice",
+      "question": "What is 'haring happen'?",
+      "options": [
+        "Eating raw herring holding it by the tail",
+        "Fishing in the canals",
+        "Cooking fish soup",
+        "Catching herring with a net"
+      ],
+      "correctAnswer": "Eating raw herring holding it by the tail",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

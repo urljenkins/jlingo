@@ -1,8 +1,97 @@
 {
   "id": "current_events",
   "name": "Current Events",
-  "description": "Learn vocabulary for discussing news and society",
+  "description": "Read Dutch news (NOS Journaal), societal debates, climate change, and European affairs",
   "level": 25,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_ce_1",
+      "type": "multipleChoice",
+      "question": "What is the public news broadcaster known by all Dutch households?",
+      "options": [
+        "NOS Journaal",
+        "BBC",
+        "CNN",
+        "RTL Nieuws"
+      ],
+      "correctAnswer": "NOS Journaal",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ce_2",
+      "type": "translateThis",
+      "question": "De regering presenteert nieuwe klimaatplannen",
+      "options": [],
+      "correctAnswer": "The government presents new climate plans",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ce_3",
+      "type": "fillInBlank",
+      "question": "De energietransitie vraagt om aanzienlijke ___ (investeringen - investments).",
+      "options": [
+        "investeringen",
+        "vertragingen",
+        "beperkingen",
+        "vakanties"
+      ],
+      "correctAnswer": "investeringen",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ce_4",
+      "type": "matchPairs",
+      "question": "Match current events terminology in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Klimaatverandering",
+            "native": "Climate change"
+          },
+          {
+            "target": "Woningmarkt",
+            "native": "Housing market"
+          },
+          {
+            "target": "Verkiezingen",
+            "native": "Elections"
+          },
+          {
+            "target": "Duurzaamheid",
+            "native": "Sustainability"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_ce_5",
+      "type": "speakThis",
+      "question": "Het debat over de energietransitie gaat door",
+      "options": [],
+      "correctAnswer": "Het debat over de energietransitie gaat door",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ce_6",
+      "type": "multipleChoice",
+      "question": "What is 'de Tweede Kamer' in Dutch governance?",
+      "options": [
+        "The House of Representatives / main legislative chamber",
+        "The Senate",
+        "The Royal Palace",
+        "The Supreme Court"
+      ],
+      "correctAnswer": "The House of Representatives / main legislative chamber",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

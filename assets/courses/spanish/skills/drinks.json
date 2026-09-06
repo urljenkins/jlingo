@@ -8,7 +8,12 @@
             "id": "ex_dr_1",
             "type": "multipleChoice",
             "question": "How do you say 'water' in Spanish?",
-            "options": ["Agua", "Leche", "Café", "Jugo"],
+            "options": [
+                "Agua",
+                "Leche",
+                "Café",
+                "Jugo"
+            ],
             "correctAnswer": "Agua"
         },
         {
@@ -19,12 +24,30 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "Agua", "native": "Water"},
-                    {"target": "Leche", "native": "Milk"},
-                    {"target": "Café", "native": "Coffee"},
-                    {"target": "Té", "native": "Tea"},
-                    {"target": "Jugo", "native": "Juice"},
-                    {"target": "Cerveza", "native": "Beer"}
+                    {
+                        "target": "Agua",
+                        "native": "Water"
+                    },
+                    {
+                        "target": "Leche",
+                        "native": "Milk"
+                    },
+                    {
+                        "target": "Café",
+                        "native": "Coffee"
+                    },
+                    {
+                        "target": "Té",
+                        "native": "Tea"
+                    },
+                    {
+                        "target": "Jugo",
+                        "native": "Juice"
+                    },
+                    {
+                        "target": "Cerveza",
+                        "native": "Beer"
+                    }
                 ]
             }
         },
@@ -39,7 +62,12 @@
             "id": "ex_dr_4",
             "type": "fillInBlank",
             "question": "Quiero un ___ de naranja",
-            "options": ["jugo", "agua", "leche", "café"],
+            "options": [
+                "jugo",
+                "agua",
+                "leche",
+                "café"
+            ],
             "correctAnswer": "jugo"
         },
         {
@@ -48,6 +76,109 @@
             "question": "Un café con leche, por favor",
             "options": [],
             "correctAnswer": "Un café con leche, por favor"
+        },
+        {
+            "type": "translateThis",
+            "question": "Refresco",
+            "options": [],
+            "correctAnswer": "Soda/soft drink",
+            "id": "ex_dr_6"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Wine' in Spanish?",
+            "options": [
+                "Vino",
+                "Cerveza",
+                "Jugo",
+                "Agua"
+            ],
+            "correctAnswer": "Vino",
+            "id": "ex_dr_7"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Quiero un vaso de ___ fría (water)",
+            "options": [
+                "agua",
+                "leche",
+                "vino",
+                "café"
+            ],
+            "correctAnswer": "agua",
+            "id": "ex_dr_8"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match more drinks",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Vino",
+                        "native": "Wine"
+                    },
+                    {
+                        "target": "Refresco",
+                        "native": "Soda"
+                    },
+                    {
+                        "target": "Chocolate caliente",
+                        "native": "Hot chocolate"
+                    },
+                    {
+                        "target": "Limonada",
+                        "native": "Lemonade"
+                    }
+                ]
+            },
+            "id": "ex_dr_9"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Una copa de vino",
+            "options": [],
+            "correctAnswer": "Una copa de vino",
+            "id": "ex_dr_10"
+        },
+        {
+            "type": "speakThis",
+            "question": "¿Quieres un refresco?",
+            "options": [],
+            "correctAnswer": "¿Quieres un refresco?",
+            "id": "ex_dr_11"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'Chocolate caliente' mean?",
+            "options": [
+                "Hot chocolate",
+                "Cold chocolate",
+                "Chocolate milk",
+                "Hot coffee"
+            ],
+            "correctAnswer": "Hot chocolate",
+            "id": "ex_dr_12"
+        },
+        {
+            "type": "translateThis",
+            "question": "Prefiero el té sin azúcar",
+            "options": [],
+            "correctAnswer": "I prefer tea without sugar",
+            "id": "ex_dr_13"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El café con ___ es mi favorito (milk)",
+            "options": [
+                "leche",
+                "agua",
+                "hielo",
+                "azúcar"
+            ],
+            "correctAnswer": "leche",
+            "id": "ex_dr_14"
         }
     ]
 }

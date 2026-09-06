@@ -1,7 +1,97 @@
 {
   "id": "conditional",
   "name": "Conditional Tense",
-  "description": "TODO: conditional structures",
+  "description": "Learn conditional sentences using 如果/要是...就... (if...then...) and hypothetical constructions",
   "level": 22,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_cnd_1",
+      "type": "multipleChoice",
+      "question": "What is the standard pair for 'If ... then ...' in Chinese?",
+      "options": [
+        "如果 ... 就 ... (rúguǒ ... jiù ...)",
+        "虽然 ... 但是",
+        "因为 ... 所以",
+        "只要 ... 却"
+      ],
+      "correctAnswer": "如果 ... 就 ... (rúguǒ ... jiù ...)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_cnd_2",
+      "type": "translateThis",
+      "question": "如果有机会，我想去留学",
+      "options": [],
+      "correctAnswer": "If there is an opportunity, I want to study abroad",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_cnd_3",
+      "type": "fillInBlank",
+      "question": "要是明天下雨，我们 ___ 不去爬山了。(then)",
+      "options": [
+        "就",
+        "也",
+        "还",
+        "再"
+      ],
+      "correctAnswer": "就",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_cnd_4",
+      "type": "matchPairs",
+      "question": "Match conditional connectors",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "假若 / 倘若",
+            "native": "If / supposing (formal)"
+          },
+          {
+            "target": "只要...就...",
+            "native": "As long as ... then ..."
+          },
+          {
+            "target": "只有...才...",
+            "native": "Only if ... then ..."
+          },
+          {
+            "target": "除非...否则...",
+            "native": "Unless ... otherwise ..."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_cnd_5",
+      "type": "speakThis",
+      "question": "如果我是你，我也会这么做",
+      "options": [],
+      "correctAnswer": "如果我是你，我也会这么做",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_cnd_6",
+      "type": "multipleChoice",
+      "question": "What does '只有努力学习，才能取得好成绩' emphasize?",
+      "options": [
+        "Only with diligent study can good grades be achieved (sole prerequisite)",
+        "Studying is easy",
+        "Grades do not matter",
+        "It is already done"
+      ],
+      "correctAnswer": "Only with diligent study can good grades be achieved (sole prerequisite)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

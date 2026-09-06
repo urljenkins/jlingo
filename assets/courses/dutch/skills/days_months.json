@@ -1,8 +1,97 @@
 {
   "id": "days_months",
   "name": "Days & Months",
-  "description": "Learn days of the week and months of the year",
+  "description": "Learn the days of the week, months of the year, and date prepositions in Dutch",
   "level": 4,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_dm_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Monday' in Dutch?",
+      "options": [
+        "Maandag",
+        "Dinsdag",
+        "Woensdag",
+        "Vrijdag"
+      ],
+      "correctAnswer": "Maandag",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dm_2",
+      "type": "translateThis",
+      "question": "Januari",
+      "options": [],
+      "correctAnswer": "January",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dm_3",
+      "type": "fillInBlank",
+      "question": "Het weekend begint op ___ (Saturday).",
+      "options": [
+        "zaterdag",
+        "maandag",
+        "woensdag",
+        "donderdag"
+      ],
+      "correctAnswer": "zaterdag",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dm_4",
+      "type": "matchPairs",
+      "question": "Match Dutch days and months",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Vrijdag",
+            "native": "Friday"
+          },
+          {
+            "target": "Zondag",
+            "native": "Sunday"
+          },
+          {
+            "target": "Mei",
+            "native": "May"
+          },
+          {
+            "target": "Augustus",
+            "native": "August"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_dm_5",
+      "type": "speakThis",
+      "question": "Tot maandag!",
+      "options": [],
+      "correctAnswer": "Tot maandag!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dm_6",
+      "type": "multipleChoice",
+      "question": "What preposition is used before days of the week in Dutch (e.g. 'on Monday')?",
+      "options": [
+        "op (op maandag)",
+        "in",
+        "aan",
+        "bij"
+      ],
+      "correctAnswer": "op (op maandag)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

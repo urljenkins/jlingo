@@ -1,8 +1,97 @@
 {
   "id": "reflexive_verbs",
   "name": "Reflexive Verbs",
-  "description": "Learn verbs that reflect back to the subject",
+  "description": "Learn Dutch reflexive pronouns (me, je, zich, ons) and verbs like 'zich wassen'",
   "level": 8,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_rv_1",
+      "type": "multipleChoice",
+      "question": "Which reflexive pronoun accompanies 'hij' (he) and 'zij' (they)?",
+      "options": [
+        "zich",
+        "hem",
+        "haar",
+        "hen"
+      ],
+      "correctAnswer": "zich",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rv_2",
+      "type": "translateThis",
+      "question": "Ik was me elke ochtend",
+      "options": [],
+      "correctAnswer": "I wash myself every morning",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rv_3",
+      "type": "fillInBlank",
+      "question": "Wij verheugen ___ op de vakantie. (ourselves)",
+      "options": [
+        "ons",
+        "zich",
+        "me",
+        "je"
+      ],
+      "correctAnswer": "ons",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rv_4",
+      "type": "matchPairs",
+      "question": "Match Dutch reflexive pronouns",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ik was me",
+            "native": "I wash myself"
+          },
+          {
+            "target": "jij wast je",
+            "native": "you wash yourself"
+          },
+          {
+            "target": "hij wast zich",
+            "native": "he washes himself"
+          },
+          {
+            "target": "wij wassen ons",
+            "native": "we wash ourselves"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_rv_5",
+      "type": "speakThis",
+      "question": "Voel je je goed vandaag?",
+      "options": [],
+      "correctAnswer": "Voel je je goed vandaag?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rv_6",
+      "type": "multipleChoice",
+      "question": "What does 'zich herinneren' mean?",
+      "options": [
+        "To remember",
+        "To forget",
+        "To apologize",
+        "To introduce oneself"
+      ],
+      "correctAnswer": "To remember",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

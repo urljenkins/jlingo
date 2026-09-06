@@ -1,7 +1,97 @@
 {
   "id": "office",
   "name": "Office Vocabulary",
-  "description": "TODO: office vocabulary",
+  "description": "Learn office supplies, sending emails, holding meetings, printers, and corporate communication",
   "level": 19,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_off_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Meeting / Conference' in Chinese?",
+      "options": [
+        "会议 (huìyì)",
+        "文件 (wénjiàn)",
+        "邮件 (yóujiàn)",
+        "报告 (bàogào)"
+      ],
+      "correctAnswer": "会议 (huìyì)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_off_2",
+      "type": "translateThis",
+      "question": "请打印这份报告",
+      "options": [],
+      "correctAnswer": "Please print this report",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_off_3",
+      "type": "fillInBlank",
+      "question": "我把方案发到您的电子 ___ 了。(email)",
+      "options": [
+        "邮件",
+        "合同",
+        "名片",
+        "桌子"
+      ],
+      "correctAnswer": "邮件",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_off_4",
+      "type": "matchPairs",
+      "question": "Match office items and concepts",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "打印机",
+            "native": "Printer"
+          },
+          {
+            "target": "会议室",
+            "native": "Conference / meeting room"
+          },
+          {
+            "target": "同事",
+            "native": "Colleague / coworker"
+          },
+          {
+            "target": "合同",
+            "native": "Contract"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_off_5",
+      "type": "speakThis",
+      "question": "下午两点开部门例会",
+      "options": [],
+      "correctAnswer": "下午两点开部门例会",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_off_6",
+      "type": "multipleChoice",
+      "question": "What does '加班' (jiābān) mean?",
+      "options": [
+        "To work overtime",
+        "To take a vacation",
+        "To quit a job",
+        "To get a promotion"
+      ],
+      "correctAnswer": "To work overtime",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

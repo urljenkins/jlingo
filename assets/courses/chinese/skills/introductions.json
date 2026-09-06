@@ -1,51 +1,97 @@
 {
   "id": "introductions",
-  "name": "自我介绍",
-  "description": "学习如何介绍自己并询问他人",
+  "name": "Introductions",
+  "description": "Learn to introduce yourself, state your name and nationality in Chinese",
   "level": 1,
   "exercises": [
     {
-      "id": "ex_intro_1",
+      "id": "ex_zh_intro_1",
       "type": "translateThis",
-      "question": "Me llamo María",
+      "question": "我叫玛丽亚",
       "options": [],
-      "correctAnswer": "我叫玛丽亚"
+      "correctAnswer": "My name is Maria",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_intro_2",
+      "id": "ex_zh_intro_2",
       "type": "multipleChoice",
-      "question": "如何用礼貌的方式问 '你叫什么名字？'？",
-      "options": ["¿Cómo se llama?", "¿Cómo te llamas?", "¿Qué tal?", "¿De dónde eres?"],
-      "correctAnswer": "¿Cómo se llama?"
+      "question": "How do you ask 'What is your name?' politely in Chinese?",
+      "options": [
+        "您贵姓？",
+        "你是谁？",
+        "去哪里？",
+        "吃了吗？"
+      ],
+      "correctAnswer": "您贵姓？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_intro_3",
+      "id": "ex_zh_intro_3",
       "type": "fillInBlank",
-      "question": "Soy ___ Estados Unidos",
-      "options": ["de", "en", "a", "con"],
-      "correctAnswer": "de"
+      "question": "我 ___ 美国人。(I am American.)",
+      "options": [
+        "是",
+        "叫",
+        "有",
+        "去"
+      ],
+      "correctAnswer": "是",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_intro_4",
+      "id": "ex_zh_intro_4",
       "type": "matchPairs",
-      "question": "配对自我介绍短语",
+      "question": "Match Chinese introduction phrases with English",
       "options": [],
       "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
       "metadata": {
         "pairs": [
-          {"target": "Me llamo", "native": "My name is"},
-          {"target": "Soy de", "native": "I am from"},
-          {"target": "Mucho gusto", "native": "Nice to meet you"},
-          {"target": "Encantado", "native": "Pleased to meet you"}
+          {
+            "target": "我叫",
+            "native": "My name is"
+          },
+          {
+            "target": "我是",
+            "native": "I am"
+          },
+          {
+            "target": "很高兴认识你",
+            "native": "Nice to meet you"
+          },
+          {
+            "target": "你叫什么名字？",
+            "native": "What is your name?"
+          }
         ]
       }
     },
     {
-      "id": "ex_intro_5",
+      "id": "ex_zh_intro_5",
       "type": "speakThis",
-      "question": "Mucho gusto",
+      "question": "很高兴认识你",
       "options": [],
-      "correctAnswer": "Mucho gusto"
+      "correctAnswer": "很高兴认识你",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_intro_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'I am Chinese'?",
+      "options": [
+        "我是中国人",
+        "我是美国人",
+        "我叫中国人",
+        "我去中国"
+      ],
+      "correctAnswer": "我是中国人",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     }
   ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "reading_writing",
   "name": "Reading & Writing",
-  "description": "Practice reading comprehension through dialogues, stories, and fill-in-the-blank exercises",
+  "description": "Practice reading Dutch texts, spelling rules (open/closed syllables), and writing messages",
   "level": 5,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_rw_1",
+      "type": "multipleChoice",
+      "question": "In Dutch spelling, why is the 'a' doubled in 'praten' -> 'ik praat'?",
+      "options": [
+        "To keep the long vowel sound in a closed syllable",
+        "Because it is irregular",
+        "It is optional",
+        "To indicate plural"
+      ],
+      "correctAnswer": "To keep the long vowel sound in a closed syllable",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rw_2",
+      "type": "translateThis",
+      "question": "Ik lees een Nederlands boek",
+      "options": [],
+      "correctAnswer": "I read a Dutch book",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rw_3",
+      "type": "fillInBlank",
+      "question": "Hij schrijft een ___ naar zijn vriend. (letter)",
+      "options": [
+        "brief",
+        "boek",
+        "krant",
+        "krantje"
+      ],
+      "correctAnswer": "brief",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rw_4",
+      "type": "matchPairs",
+      "question": "Match Dutch reading terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Lezen",
+            "native": "To read"
+          },
+          {
+            "target": "Schrijven",
+            "native": "To write"
+          },
+          {
+            "target": "De krant",
+            "native": "The newspaper"
+          },
+          {
+            "target": "Het verhaal",
+            "native": "The story"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_rw_5",
+      "type": "speakThis",
+      "question": "Ik schrijf elke dag",
+      "options": [],
+      "correctAnswer": "Ik schrijf elke dag",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rw_6",
+      "type": "multipleChoice",
+      "question": "What is 'het tijdschrift' in English?",
+      "options": [
+        "The magazine",
+        "The notebook",
+        "The letter",
+        "The dictionary"
+      ],
+      "correctAnswer": "The magazine",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "slang",
   "name": "Slang & Colloquialisms",
-  "description": "Learn informal Dutch expressions",
+  "description": "Learn contemporary Dutch colloquialisms, student slang, gezellig, and Amsterdam/Rotterdam vernacular",
   "level": 24,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_slg_1",
+      "type": "multipleChoice",
+      "question": "What colloquial exclamation expresses enthusiasm, approval, or excellence in Dutch?",
+      "options": [
+        "Gaaf! / Tof!",
+        "Lelijk",
+        "Slecht",
+        "Dom"
+      ],
+      "correctAnswer": "Gaaf! / Tof!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_slg_2",
+      "type": "translateThis",
+      "question": "Dat is echt niet te doen",
+      "options": [],
+      "correctAnswer": "That is really impossible / ridiculous",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_slg_3",
+      "type": "fillInBlank",
+      "question": "Zullen we vanmiddag even een terrasje ___? (pakken - sit on a café terrace)",
+      "options": [
+        "pakken",
+        "lopen",
+        "zetten",
+        "brengen"
+      ],
+      "correctAnswer": "pakken",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_slg_4",
+      "type": "matchPairs",
+      "question": "Match informal Dutch words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Gezellig",
+            "native": "Cozy, friendly, nice ambiance"
+          },
+          {
+            "target": "Doei / doeg",
+            "native": "Bye / see ya"
+          },
+          {
+            "target": "Geen probleem",
+            "native": "No problem"
+          },
+          {
+            "target": "Borrelen",
+            "native": "Having drinks with snacks"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_slg_5",
+      "type": "speakThis",
+      "question": "Wat een gedoe allemaal!",
+      "options": [],
+      "correctAnswer": "Wat een gedoe allemaal!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_slg_6",
+      "type": "multipleChoice",
+      "question": "What is a 'borrel' in Dutch culture?",
+      "options": [
+        "An informal gathering for drinks and snacks after work",
+        "A formal funeral",
+        "A bike race",
+        "A grocery store"
+      ],
+      "correctAnswer": "An informal gathering for drinks and snacks after work",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

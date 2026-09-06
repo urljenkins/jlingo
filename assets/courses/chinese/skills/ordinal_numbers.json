@@ -1,7 +1,97 @@
 {
   "id": "ordinal_numbers",
   "name": "Ordinal Numbers",
-  "description": "TODO: ordinal numbers",
+  "description": "Learn ordinal numbers using the 第 (dì) prefix in Mandarin Chinese",
   "level": 3,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_ord_1",
+      "type": "multipleChoice",
+      "question": "Which prefix turns a cardinal number into an ordinal number in Chinese?",
+      "options": [
+        "第 (dì)",
+        "头 (tóu)",
+        "初 (chū)",
+        "前 (qián)"
+      ],
+      "correctAnswer": "第 (dì)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ord_2",
+      "type": "translateThis",
+      "question": "第一",
+      "options": [],
+      "correctAnswer": "First",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ord_3",
+      "type": "fillInBlank",
+      "question": "他是 ___ 名。(He is in second place.)",
+      "options": [
+        "第二",
+        "两",
+        "个",
+        "第一"
+      ],
+      "correctAnswer": "第二",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ord_4",
+      "type": "matchPairs",
+      "question": "Match ordinal numbers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "第一",
+            "native": "First"
+          },
+          {
+            "target": "第二",
+            "native": "Second"
+          },
+          {
+            "target": "第三",
+            "native": "Third"
+          },
+          {
+            "target": "第四",
+            "native": "Fourth"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_ord_5",
+      "type": "speakThis",
+      "question": "这是第一次",
+      "options": [],
+      "correctAnswer": "这是第一次",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ord_6",
+      "type": "multipleChoice",
+      "question": "What does '第五课' mean?",
+      "options": [
+        "Lesson 5 (Fifth lesson)",
+        "Five lessons",
+        "Lesson 4",
+        "Fifth book"
+      ],
+      "correctAnswer": "Lesson 5 (Fifth lesson)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

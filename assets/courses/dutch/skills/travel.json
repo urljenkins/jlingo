@@ -1,8 +1,97 @@
 {
   "id": "travel",
   "name": "Travel",
-  "description": "Learn essential travel vocabulary",
+  "description": "Learn Dutch travel vocabulary, booking holidays (op vakantie gaan), boarding, and accommodations",
   "level": 17,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_trv_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Passport' in Dutch?",
+      "options": [
+        "Paspoort",
+        "Rijbewijs",
+        "Kaartje",
+        "Koffer"
+      ],
+      "correctAnswer": "Paspoort",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_trv_2",
+      "type": "translateThis",
+      "question": "Goede reis!",
+      "options": [],
+      "correctAnswer": "Have a good journey!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_trv_3",
+      "type": "fillInBlank",
+      "question": "In de zomer gaan we op ___ naar Spanje. (holiday)",
+      "options": [
+        "vakantie",
+        "reis",
+        "werk",
+        "school"
+      ],
+      "correctAnswer": "vakantie",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_trv_4",
+      "type": "matchPairs",
+      "question": "Match travel terms in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Reizen",
+            "native": "To travel"
+          },
+          {
+            "target": "De koffer",
+            "native": "The suitcase"
+          },
+          {
+            "target": "De douane",
+            "native": "The customs"
+          },
+          {
+            "target": "De instapkaart",
+            "native": "The boarding pass"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_trv_5",
+      "type": "speakThis",
+      "question": "Fijne vakantie gewenst!",
+      "options": [],
+      "correctAnswer": "Fijne vakantie gewenst!",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_trv_6",
+      "type": "multipleChoice",
+      "question": "What is 'de bagage'?",
+      "options": [
+        "Luggage / baggage",
+        "Ticket",
+        "Passport",
+        "Seat"
+      ],
+      "correctAnswer": "Luggage / baggage",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

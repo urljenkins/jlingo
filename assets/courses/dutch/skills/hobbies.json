@@ -1,8 +1,97 @@
 {
   "id": "hobbies",
   "name": "Hobbies",
-  "description": "Learn to talk about hobbies and free time activities",
+  "description": "Learn vocabulary for leisure activities, gardening (tuinieren), reading, and playing musical instruments",
   "level": 18,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_hob_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'My hobby is reading' in Dutch?",
+      "options": [
+        "Mijn hobby is lezen",
+        "Mijn werk is schrijven",
+        "Ik hou van slapen",
+        "Ik ga fietsen"
+      ],
+      "correctAnswer": "Mijn hobby is lezen",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_hob_2",
+      "type": "translateThis",
+      "question": "Hij speelt piano in zijn vrije tijd",
+      "options": [],
+      "correctAnswer": "He plays piano in his free time",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_hob_3",
+      "type": "fillInBlank",
+      "question": "In het weekend ga ik graag in de tuin ___ (gardening / tuinieren).",
+      "options": [
+        "tuinieren",
+        "werken",
+        "zwemmen",
+        "rijden"
+      ],
+      "correctAnswer": "tuinieren",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_hob_4",
+      "type": "matchPairs",
+      "question": "Match Dutch hobby activities",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Schilderen",
+            "native": "Painting"
+          },
+          {
+            "target": "Koken",
+            "native": "Cooking"
+          },
+          {
+            "target": "Fotografie",
+            "native": "Photography"
+          },
+          {
+            "target": "Wandelen",
+            "native": "Hiking / walking"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_hob_5",
+      "type": "speakThis",
+      "question": "Wat doe je het liefst in je vrije tijd?",
+      "options": [],
+      "correctAnswer": "Wat doe je het liefst in je vrije tijd?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_hob_6",
+      "type": "multipleChoice",
+      "question": "What is 'de vrije tijd'?",
+      "options": [
+        "Free time / leisure",
+        "Work hours",
+        "School time",
+        "Vacation day"
+      ],
+      "correctAnswer": "Free time / leisure",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

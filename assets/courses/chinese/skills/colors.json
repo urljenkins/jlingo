@@ -1,7 +1,97 @@
 {
   "id": "colors",
   "name": "Colors",
-  "description": "TODO: colors vocabulary",
+  "description": "Learn colors and descriptive adjectives for objects",
   "level": 4,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_col_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Red' in Chinese?",
+      "options": [
+        "红色",
+        "蓝色",
+        "绿色",
+        "黄色"
+      ],
+      "correctAnswer": "红色",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_col_2",
+      "type": "translateThis",
+      "question": "蓝色",
+      "options": [],
+      "correctAnswer": "Blue",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_col_3",
+      "type": "fillInBlank",
+      "question": "白色的 ___ (white cat)",
+      "options": [
+        "猫",
+        "红",
+        "大",
+        "好"
+      ],
+      "correctAnswer": "猫",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_col_4",
+      "type": "matchPairs",
+      "question": "Match colors with Chinese names",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "红色",
+            "native": "Red"
+          },
+          {
+            "target": "绿色",
+            "native": "Green"
+          },
+          {
+            "target": "黄色",
+            "native": "Yellow"
+          },
+          {
+            "target": "黑色",
+            "native": "Black"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_col_5",
+      "type": "speakThis",
+      "question": "我喜欢白色",
+      "options": [],
+      "correctAnswer": "我喜欢白色",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_col_6",
+      "type": "multipleChoice",
+      "question": "What color is '白色'?",
+      "options": [
+        "White",
+        "Black",
+        "Brown",
+        "Purple"
+      ],
+      "correctAnswer": "White",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

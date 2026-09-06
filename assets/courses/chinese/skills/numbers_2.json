@@ -1,7 +1,97 @@
 {
   "id": "numbers_2",
   "name": "Numbers 2",
-  "description": "TODO: extended numbers and counting",
+  "description": "Learn numbers 11 through 100, tens, and counting large values",
   "level": 3,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_num2_1",
+      "type": "multipleChoice",
+      "question": "How do you write 'twenty' (20) in Chinese?",
+      "options": [
+        "二十",
+        "十二",
+        "两",
+        "二"
+      ],
+      "correctAnswer": "二十",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_num2_2",
+      "type": "translateThis",
+      "question": "十五",
+      "options": [],
+      "correctAnswer": "Fifteen",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_num2_3",
+      "type": "fillInBlank",
+      "question": "三十 加 二十 等于 ___ (50)",
+      "options": [
+        "五十",
+        "四十",
+        "六十",
+        "十五"
+      ],
+      "correctAnswer": "五十",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_num2_4",
+      "type": "matchPairs",
+      "question": "Match numbers with Chinese characters",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "十一",
+            "native": "Eleven (11)"
+          },
+          {
+            "target": "二十五",
+            "native": "Twenty-five (25)"
+          },
+          {
+            "target": "七十",
+            "native": "Seventy (70)"
+          },
+          {
+            "target": "一百",
+            "native": "One hundred (100)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_num2_5",
+      "type": "speakThis",
+      "question": "九十九",
+      "options": [],
+      "correctAnswer": "九十九",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_num2_6",
+      "type": "multipleChoice",
+      "question": "What number is '八十八'?",
+      "options": [
+        "88",
+        "78",
+        "80",
+        "98"
+      ],
+      "correctAnswer": "88",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,7 +1,97 @@
 {
   "id": "internet",
   "name": "Internet & Social Media",
-  "description": "TODO: internet and social media vocabulary",
+  "description": "Learn internet vocabulary, social platforms (WeChat, Weibo), downloading, and passwords",
   "level": 20,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_net_1",
+      "type": "multipleChoice",
+      "question": "What is China's most widespread multi-purpose messaging and payment app?",
+      "options": [
+        "微信 (WeChat)",
+        "微博 (Weibo)",
+        "抖音 (Douyin)",
+        "小红书 (Xiaohongshu)"
+      ],
+      "correctAnswer": "微信 (WeChat)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_net_2",
+      "type": "translateThis",
+      "question": "请问这里的无线网络密码是多少？",
+      "options": [],
+      "correctAnswer": "What is the Wi-Fi password here?",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_net_3",
+      "type": "fillInBlank",
+      "question": "你可以从应用商店 ___ 这个软件。(download)",
+      "options": [
+        "下载",
+        "上传",
+        "关机",
+        "删除"
+      ],
+      "correctAnswer": "下载",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_net_4",
+      "type": "matchPairs",
+      "question": "Match internet and social media terms",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "网站",
+            "native": "Website"
+          },
+          {
+            "target": "密码",
+            "native": "Password"
+          },
+          {
+            "target": "点赞",
+            "native": "To like (a post)"
+          },
+          {
+            "target": "分享",
+            "native": "To share"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_net_5",
+      "type": "speakThis",
+      "question": "我们扫码加个微信好友吧",
+      "options": [],
+      "correctAnswer": "我们扫码加个微信好友吧",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_net_6",
+      "type": "multipleChoice",
+      "question": "What does '扫二维码' (sǎo èrwéimǎ) mean?",
+      "options": [
+        "Scan a QR code",
+        "Enter a PIN",
+        "Send an email",
+        "Connect to Wi-Fi"
+      ],
+      "correctAnswer": "Scan a QR code",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

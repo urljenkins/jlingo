@@ -1,8 +1,97 @@
 {
   "id": "debating",
   "name": "Debating",
-  "description": "Learn to agree, disagree, and debate politely",
+  "description": "Learn debate structure, formal concessions (weliswaar...maar), rebuttal, and persuasive argumentation",
   "level": 21,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_deb_1",
+      "type": "multipleChoice",
+      "question": "Which pair of adverbs forms a formal concession ('admittedly ... but nevertheless') in Dutch?",
+      "options": [
+        "weliswaar ... maar / toch",
+        "zowel ... als",
+        "noch ... noch",
+        "of ... of"
+      ],
+      "correctAnswer": "weliswaar ... maar / toch",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_deb_2",
+      "type": "translateThis",
+      "question": "Het argument houdt geen stand",
+      "options": [],
+      "correctAnswer": "The argument does not hold up",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_deb_3",
+      "type": "fillInBlank",
+      "question": "De feiten spreken voor ___ (zich - themselves).",
+      "options": [
+        "zich",
+        "hen",
+        "haar",
+        "ons"
+      ],
+      "correctAnswer": "zich",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_deb_4",
+      "type": "matchPairs",
+      "question": "Match debating transitions in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Aan de ene kant",
+            "native": "On the one hand"
+          },
+          {
+            "target": "Aan de andere kant",
+            "native": "On the other hand"
+          },
+          {
+            "target": "Desalniettemin",
+            "native": "Nevertheless / nonetheless"
+          },
+          {
+            "target": "Kortom",
+            "native": "In short / in brief"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_deb_5",
+      "type": "speakThis",
+      "question": "We moeten alle kanten van de zaak bekijken",
+      "options": [],
+      "correctAnswer": "We moeten alle kanten van de zaak bekijken",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_deb_6",
+      "type": "multipleChoice",
+      "question": "What does 'het standpunt' mean?",
+      "options": [
+        "Standpoint / point of view",
+        "Opponent",
+        "Speech",
+        "Audience"
+      ],
+      "correctAnswer": "Standpoint / point of view",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

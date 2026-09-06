@@ -8,7 +8,12 @@
             "id": "ex_col_1",
             "type": "multipleChoice",
             "question": "How do you say 'red' in Spanish?",
-            "options": ["Rojo", "Azul", "Verde", "Amarillo"],
+            "options": [
+                "Rojo",
+                "Azul",
+                "Verde",
+                "Amarillo"
+            ],
             "correctAnswer": "Rojo"
         },
         {
@@ -26,12 +31,30 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "Rojo", "native": "Red"},
-                    {"target": "Azul", "native": "Blue"},
-                    {"target": "Verde", "native": "Green"},
-                    {"target": "Amarillo", "native": "Yellow"},
-                    {"target": "Negro", "native": "Black"},
-                    {"target": "Blanco", "native": "White"}
+                    {
+                        "target": "Rojo",
+                        "native": "Red"
+                    },
+                    {
+                        "target": "Azul",
+                        "native": "Blue"
+                    },
+                    {
+                        "target": "Verde",
+                        "native": "Green"
+                    },
+                    {
+                        "target": "Amarillo",
+                        "native": "Yellow"
+                    },
+                    {
+                        "target": "Negro",
+                        "native": "Black"
+                    },
+                    {
+                        "target": "Blanco",
+                        "native": "White"
+                    }
                 ]
             }
         },
@@ -39,7 +62,12 @@
             "id": "ex_col_4",
             "type": "fillInBlank",
             "question": "La camisa es ___",
-            "options": ["azul", "azules", "azula", "azulo"],
+            "options": [
+                "azul",
+                "azules",
+                "azula",
+                "azulo"
+            ],
             "correctAnswer": "azul"
         },
         {
@@ -48,6 +76,127 @@
             "question": "El carro rojo",
             "options": [],
             "correctAnswer": "El carro rojo"
+        },
+        {
+            "type": "translateThis",
+            "question": "Verde",
+            "options": [],
+            "correctAnswer": "Green",
+            "id": "ex_col_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Amarillo",
+            "options": [],
+            "correctAnswer": "Yellow",
+            "id": "ex_col_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'purple' in Spanish?",
+            "options": [
+                "Morado",
+                "Rosado",
+                "Café",
+                "Gris"
+            ],
+            "correctAnswer": "Morado",
+            "id": "ex_col_8"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El cielo es ___",
+            "options": [
+                "azul",
+                "verde",
+                "rojo",
+                "negro"
+            ],
+            "correctAnswer": "azul",
+            "id": "ex_col_9"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match more colors",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Morado",
+                        "native": "Purple"
+                    },
+                    {
+                        "target": "Rosado",
+                        "native": "Pink"
+                    },
+                    {
+                        "target": "Gris",
+                        "native": "Gray"
+                    },
+                    {
+                        "target": "Café",
+                        "native": "Brown"
+                    },
+                    {
+                        "target": "Naranja",
+                        "native": "Orange"
+                    }
+                ]
+            },
+            "id": "ex_col_10"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Naranja",
+            "options": [],
+            "correctAnswer": "Naranja",
+            "id": "ex_col_11"
+        },
+        {
+            "type": "speakThis",
+            "question": "Me gusta el color verde",
+            "options": [],
+            "correctAnswer": "Me gusta el color verde",
+            "id": "ex_col_12"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'gray'?",
+            "options": [
+                "Gris",
+                "Café",
+                "Negro",
+                "Blanco"
+            ],
+            "correctAnswer": "Gris",
+            "id": "ex_col_13"
+        },
+        {
+            "type": "translateThis",
+            "question": "Las flores son rosadas",
+            "options": [],
+            "correctAnswer": "The flowers are pink",
+            "id": "ex_col_14"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Mis zapatos son ___ (black)",
+            "options": [
+                "negros",
+                "negra",
+                "negro",
+                "negras"
+            ],
+            "correctAnswer": "negros",
+            "id": "ex_col_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un cielo naranja al atardecer",
+            "options": [],
+            "correctAnswer": "An orange sky at sunset",
+            "id": "ex_col_16"
         }
     ]
 }

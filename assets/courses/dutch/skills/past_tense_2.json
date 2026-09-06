@@ -1,8 +1,97 @@
 {
   "id": "past_tense_2",
   "name": "Past Tense: Imperfect",
-  "description": "Learn the imperfect tense for ongoing or habitual past actions",
+  "description": "Learn the imperfect tense (o.v.t.) of strong and irregular verbs (liep, vond, zag, kwam)",
   "level": 13,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_pt2_1",
+      "type": "multipleChoice",
+      "question": "What is the imperfect past tense of 'zien' (to see) for 'hij'?",
+      "options": [
+        "zag",
+        "ziet",
+        "gezien",
+        "zaagt"
+      ],
+      "correctAnswer": "zag",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt2_2",
+      "type": "translateThis",
+      "question": "Zij liepen door het bos",
+      "options": [],
+      "correctAnswer": "They walked through the forest",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt2_3",
+      "type": "fillInBlank",
+      "question": "Vroeger ___ ik veel boeken. (lezen -> read in past)",
+      "options": [
+        "las",
+        "lees",
+        "leest",
+        "gelezen"
+      ],
+      "correctAnswer": "las",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt2_4",
+      "type": "matchPairs",
+      "question": "Match strong verb past forms in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "vinden -> vond",
+            "native": "find -> found"
+          },
+          {
+            "target": "komen -> kwam",
+            "native": "come -> came"
+          },
+          {
+            "target": "nemen -> nam",
+            "native": "take -> took"
+          },
+          {
+            "target": "eten -> at",
+            "native": "eat -> ate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pt2_5",
+      "type": "speakThis",
+      "question": "Toen ik klein was woonde ik in Rotterdam",
+      "options": [],
+      "correctAnswer": "Toen ik klein was woonde ik in Rotterdam",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt2_6",
+      "type": "multipleChoice",
+      "question": "What conjunction introduces a specific single past event ('when')?",
+      "options": [
+        "toen",
+        "wanneer",
+        "als",
+        "omdat"
+      ],
+      "correctAnswer": "toen",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

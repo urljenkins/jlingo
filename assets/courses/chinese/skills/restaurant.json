@@ -1,7 +1,97 @@
 {
   "id": "restaurant",
   "name": "At the Restaurant",
-  "description": "TODO: restaurant phrases",
+  "description": "Learn to reserve tables, call the waitstaff (服务员), and navigate a Chinese restaurant",
   "level": 11,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_rest_1",
+      "type": "multipleChoice",
+      "question": "How do you politely call the waiter or waitress in a Chinese restaurant?",
+      "options": [
+        "服务员 (fúwùyuán)",
+        "老板 (lǎobǎn)",
+        "师傅 (shīfu)",
+        "同志 (tóngzhì)"
+      ],
+      "correctAnswer": "服务员 (fúwùyuán)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rest_2",
+      "type": "translateThis",
+      "question": "请给我们看菜单",
+      "options": [],
+      "correctAnswer": "Please show us the menu",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rest_3",
+      "type": "fillInBlank",
+      "question": "我们两位，有 ___ 吗？(Two of us, is there a table/seat?)",
+      "options": [
+        "位子",
+        "菜",
+        "水",
+        "钱"
+      ],
+      "correctAnswer": "位子",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rest_4",
+      "type": "matchPairs",
+      "question": "Match restaurant tableware",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "筷子",
+            "native": "Chopsticks"
+          },
+          {
+            "target": "勺子",
+            "native": "Spoon"
+          },
+          {
+            "target": "碗",
+            "native": "Bowl"
+          },
+          {
+            "target": "盘子",
+            "native": "Plate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_rest_5",
+      "type": "speakThis",
+      "question": "买单，谢谢",
+      "options": [],
+      "correctAnswer": "买单，谢谢",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rest_6",
+      "type": "multipleChoice",
+      "question": "What phrase is used to ask for the bill at a restaurant?",
+      "options": [
+        "买单 (mǎidān)",
+        "点菜 (diǎncài)",
+        "上菜 (shàngcài)",
+        "打包 (dǎbāo)"
+      ],
+      "correctAnswer": "买单 (mǎidān)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

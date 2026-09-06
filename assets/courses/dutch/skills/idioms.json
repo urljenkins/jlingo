@@ -1,8 +1,97 @@
 {
   "id": "idioms",
   "name": "Idioms",
-  "description": "Learn common Dutch idiomatic expressions",
+  "description": "Learn rich Dutch proverbs and idioms involving water, butter, monkeys, and cows",
   "level": 24,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_idm_1",
+      "type": "multipleChoice",
+      "question": "What does the idiom 'Nu komt de aap uit de mouw' mean?",
+      "options": [
+        "Now the true motive/secret is revealed (the monkey comes out of the sleeve)",
+        "Someone bought an animal",
+        "A magician did a trick",
+        "It is raining heavily"
+      ],
+      "correctAnswer": "Now the true motive/secret is revealed (the monkey comes out of the sleeve)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_idm_2",
+      "type": "translateThis",
+      "question": "Helaas, pindakaas!",
+      "options": [],
+      "correctAnswer": "Too bad, that's life! (peanuts)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_idm_3",
+      "type": "fillInBlank",
+      "question": "Hij viel met zijn neus in de ___ (boter - fell into good fortune).",
+      "options": [
+        "boter",
+        "kaas",
+        "melk",
+        "soep"
+      ],
+      "correctAnswer": "boter",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_idm_4",
+      "type": "matchPairs",
+      "question": "Match colorful Dutch idioms with their meaning",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Met de neus in de boter vallen",
+            "native": "To be exceptionally lucky"
+          },
+          {
+            "target": "Een appeltje voor de dorst",
+            "native": "A nest egg / saving for a rainy day"
+          },
+          {
+            "target": "Oude koeien uit de sloot halen",
+            "native": "Dredging up old quarrels"
+          },
+          {
+            "target": "Door de mand vallen",
+            "native": "To be exposed / found out"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_idm_5",
+      "type": "speakThis",
+      "question": "Dat is een fluitje van een cent",
+      "options": [],
+      "correctAnswer": "Dat is een fluitje van een cent",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_idm_6",
+      "type": "multipleChoice",
+      "question": "What does 'een fluitje van een cent' mean?",
+      "options": [
+        "A piece of cake / very easy",
+        "Expensive",
+        "Noisy",
+        "Useless"
+      ],
+      "correctAnswer": "A piece of cake / very easy",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

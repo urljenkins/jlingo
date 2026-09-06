@@ -1,7 +1,97 @@
 {
   "id": "reflexive_verbs",
   "name": "Reflexive Verbs",
-  "description": "TODO: reflexive verbs (adapt for Chinese)",
+  "description": "Learn to express self-directed actions using 自己 (zìjǐ - oneself) in Chinese",
   "level": 8,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_rv_1",
+      "type": "multipleChoice",
+      "question": "Which word is used in Chinese to express 'oneself / self'?",
+      "options": [
+        "自己 (zìjǐ)",
+        "人家 (rénjia)",
+        "彼此 (bǐcǐ)",
+        "互相 (hùxiāng)"
+      ],
+      "correctAnswer": "自己 (zìjǐ)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rv_2",
+      "type": "translateThis",
+      "question": "我自己做饭",
+      "options": [],
+      "correctAnswer": "I cook by myself",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rv_3",
+      "type": "fillInBlank",
+      "question": "照顾好你 ___。(Take good care of yourself.)",
+      "options": [
+        "自己",
+        "他们",
+        "别人",
+        "我们"
+      ],
+      "correctAnswer": "自己",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rv_4",
+      "type": "matchPairs",
+      "question": "Match reflexive combinations",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "我自己",
+            "native": "Myself"
+          },
+          {
+            "target": "你自己",
+            "native": "Yourself"
+          },
+          {
+            "target": "他自己",
+            "native": "Himself"
+          },
+          {
+            "target": "互相帮助",
+            "native": "Help each other"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_rv_5",
+      "type": "speakThis",
+      "question": "我相信我自己",
+      "options": [],
+      "correctAnswer": "我相信我自己",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rv_6",
+      "type": "multipleChoice",
+      "question": "What does '亲自动手' mean?",
+      "options": [
+        "Do it oneself / hands-on",
+        "Ask someone to help",
+        "Watch quietly",
+        "Give up"
+      ],
+      "correctAnswer": "Do it oneself / hands-on",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

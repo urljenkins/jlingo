@@ -52,6 +52,11 @@ class FlashcardProvider extends ChangeNotifier {
         _decks = decoded
             .map((d) => FlashcardDeck.fromJson(d as Map<String, dynamic>))
             .toList();
+        // Saved decks are a snapshot from whenever the course was first
+        // opened. Adopt any cards added to the bundled deck since then, or a
+        // learner would be stuck with the deck the app shipped with on the
+        // day they installed it.
+        await _adoptNewBundledCards(courseId);
       } catch (e) {
         // Corrupt or old-format data must not brick startup.
         debugPrint('Error loading flashcard decks for $courseId: $e');
@@ -244,6 +249,36 @@ class FlashcardProvider extends ChangeNotifier {
   void updateSettings({int? newCardsPerDay, int? reviewCardsPerDay}) {
     if (newCardsPerDay != null) _newCardsPerDay = newCardsPerDay;
     if (reviewCardsPerDay != null) _reviewCardsPerDay = reviewCardsPerDay;
+    notifyListeners();
+  }
+
+  /// Adds cards present in the bundled deck but missing from the saved one.
+  ///
+  /// Review state lives on the card, so merging by id keeps every ease
+  /// factor, interval and lapse count the learner has built up. Cards are
+  /// only ever added: one removed from the asset stays put rather than
+  /// discarding the history attached to it.
+  Future<void> _adoptNewBundledCards(String courseId) async {
+    final bundled = await _bundledDeck(courseId);
+    if (bundled == null || bundled.cards.isEmpty) return;
+
+    final index = _decks.indexWhere((d) => d.id == bundled.id);
+    if (index == -1) {
+      _decks = [..._decks, bundled];
+      await _saveDecks(courseId);
+      notifyListeners();
+      return;
+    }
+
+    final saved = _decks[index];
+    final known = saved.cards.map((c) => c.id).toSet();
+    final additions =
+        bundled.cards.where((c) => !known.contains(c.id)).toList();
+    if (additions.isEmpty) return;
+
+    _decks = [..._decks]..[index] =
+        saved.copyWith(cards: [...saved.cards, ...additions]);
+    await _saveDecks(courseId);
     notifyListeners();
   }
 

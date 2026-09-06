@@ -15,14 +15,24 @@
             "id": "ex_intro_2",
             "type": "multipleChoice",
             "question": "How do you ask 'What is your name?' formally?",
-            "options": ["¿Cómo se llama?", "¿Cómo te llamas?", "¿Qué tal?", "¿De dónde eres?"],
+            "options": [
+                "¿Cómo se llama?",
+                "¿Cómo te llamas?",
+                "¿Qué tal?",
+                "¿De dónde eres?"
+            ],
             "correctAnswer": "¿Cómo se llama?"
         },
         {
             "id": "ex_intro_3",
             "type": "fillInBlank",
             "question": "Soy ___ Estados Unidos",
-            "options": ["de", "en", "a", "con"],
+            "options": [
+                "de",
+                "en",
+                "a",
+                "con"
+            ],
             "correctAnswer": "de"
         },
         {
@@ -33,10 +43,22 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "Me llamo", "native": "My name is"},
-                    {"target": "Soy de", "native": "I am from"},
-                    {"target": "Mucho gusto", "native": "Nice to meet you"},
-                    {"target": "Encantado", "native": "Pleased to meet you"}
+                    {
+                        "target": "Me llamo",
+                        "native": "My name is"
+                    },
+                    {
+                        "target": "Soy de",
+                        "native": "I am from"
+                    },
+                    {
+                        "target": "Mucho gusto",
+                        "native": "Nice to meet you"
+                    },
+                    {
+                        "target": "Encantado",
+                        "native": "Pleased to meet you"
+                    }
                 ]
             }
         },
@@ -46,6 +68,128 @@
             "question": "Mucho gusto",
             "options": [],
             "correctAnswer": "Mucho gusto"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you ask 'Where are you from?' informally?",
+            "options": [
+                "¿De dónde eres?",
+                "¿De dónde es?",
+                "¿Cómo te llamas?",
+                "¿Cuántos años tienes?"
+            ],
+            "correctAnswer": "¿De dónde eres?",
+            "id": "ex_intro_6"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Tengo veinte ___",
+            "options": [
+                "años",
+                "meses",
+                "días",
+                "horas"
+            ],
+            "correctAnswer": "años",
+            "id": "ex_intro_7"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Cuántos años tienes?",
+            "options": [],
+            "correctAnswer": "How old are you?",
+            "id": "ex_intro_8"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match the introduction phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "¿Cuántos años tienes?",
+                        "native": "How old are you?"
+                    },
+                    {
+                        "target": "Tengo treinta años",
+                        "native": "I am thirty years old"
+                    },
+                    {
+                        "target": "¿A qué te dedicas?",
+                        "native": "What do you do for a living?"
+                    },
+                    {
+                        "target": "Soy profesor",
+                        "native": "I am a teacher"
+                    }
+                ]
+            },
+            "id": "ex_intro_9"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Me llamo Ana y soy de México",
+            "options": [],
+            "correctAnswer": "Me llamo Ana y soy de México",
+            "id": "ex_intro_10"
+        },
+        {
+            "type": "translateThis",
+            "question": "Soy estudiante",
+            "options": [],
+            "correctAnswer": "I am a student",
+            "id": "ex_intro_11"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you introduce someone else, e.g. 'This is my friend Juan'?",
+            "options": [
+                "Este es mi amigo Juan",
+                "Yo soy Juan",
+                "Mi amigo es Juan es",
+                "Juan es"
+            ],
+            "correctAnswer": "Este es mi amigo Juan",
+            "id": "ex_intro_12"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿A qué te ___?",
+            "options": [
+                "dedicas",
+                "llamas",
+                "gustas",
+                "vas"
+            ],
+            "correctAnswer": "dedicas",
+            "id": "ex_intro_13"
+        },
+        {
+            "type": "speakThis",
+            "question": "Encantado de conocerte",
+            "options": [],
+            "correctAnswer": "Encantado de conocerte",
+            "id": "ex_intro_14"
+        },
+        {
+            "type": "translateThis",
+            "question": "Igualmente",
+            "options": [],
+            "correctAnswer": "Likewise",
+            "id": "ex_intro_15"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is a good response to 'Mucho gusto'?",
+            "options": [
+                "Igualmente",
+                "Adiós",
+                "Perdón",
+                "Gracias por nada"
+            ],
+            "correctAnswer": "Igualmente",
+            "id": "ex_intro_16"
         }
     ]
 }

@@ -1,7 +1,97 @@
 {
   "id": "sightseeing",
   "name": "Sightseeing",
-  "description": "TODO: sightseeing vocabulary",
+  "description": "Learn sightseeing vocabulary, famous landmarks (Forbidden City, Great Wall), and taking photos",
   "level": 17,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_sight_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'Could you please take a picture of us?' in Chinese?",
+      "options": [
+        "能帮我们拍张照吗？",
+        "请把照片给我",
+        "这里可以停车吗？",
+        "这是风景吗？"
+      ],
+      "correctAnswer": "能帮我们拍张照吗？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sight_2",
+      "type": "translateThis",
+      "question": "万里长城非常壮观",
+      "options": [],
+      "correctAnswer": "The Great Wall is very spectacular",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sight_3",
+      "type": "fillInBlank",
+      "question": "故宫是北京著名的名胜古 ___。(The Forbidden City is a famous historic site in Beijing.)",
+      "options": [
+        "迹",
+        "城",
+        "山",
+        "海"
+      ],
+      "correctAnswer": "迹",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sight_4",
+      "type": "matchPairs",
+      "question": "Match famous Chinese attractions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "长城",
+            "native": "Great Wall"
+          },
+          {
+            "target": "故宫",
+            "native": "Forbidden City"
+          },
+          {
+            "target": "兵马俑",
+            "native": "Terracotta Warriors"
+          },
+          {
+            "target": "西湖",
+            "native": "West Lake"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_sight_5",
+      "type": "speakThis",
+      "question": "这里的门票是多少钱？",
+      "options": [],
+      "correctAnswer": "这里的门票是多少钱？",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sight_6",
+      "type": "multipleChoice",
+      "question": "What is '门票' (ménpiào)?",
+      "options": [
+        "Admission ticket / entrance ticket",
+        "Train ticket",
+        "Receipt",
+        "Passport"
+      ],
+      "correctAnswer": "Admission ticket / entrance ticket",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

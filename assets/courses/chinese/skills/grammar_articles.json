@@ -1,7 +1,97 @@
 {
   "id": "grammar_articles",
   "name": "Grammar: Articles",
-  "description": "TODO: grammar articles content",
+  "description": "Understand classifiers and demonstratives (这 zhè, 那 nà, 个 gè) in place of articles",
   "level": 2,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_art_1",
+      "type": "multipleChoice",
+      "question": "How does Chinese express 'this' and 'that' without definite articles?",
+      "options": [
+        "Using '这' (zhè) for this and '那' (nà) for that",
+        "Using 'el' and 'la'",
+        "Using prefixes on nouns",
+        "Articles are identical to English"
+      ],
+      "correctAnswer": "Using '这' (zhè) for this and '那' (nà) for that",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_art_2",
+      "type": "fillInBlank",
+      "question": "___ 是一本书。(This is a book.)",
+      "options": [
+        "这",
+        "哪",
+        "谁",
+        "吗"
+      ],
+      "correctAnswer": "这",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_art_3",
+      "type": "matchPairs",
+      "question": "Match demonstratives and classifiers",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "这个",
+            "native": "This one"
+          },
+          {
+            "target": "那个",
+            "native": "That one"
+          },
+          {
+            "target": "哪个",
+            "native": "Which one"
+          },
+          {
+            "target": "一个",
+            "native": "A / an (one unit)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_art_4",
+      "type": "translateThis",
+      "question": "那个人是谁？",
+      "options": [],
+      "correctAnswer": "Who is that person?",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_art_5",
+      "type": "speakThis",
+      "question": "我要这个",
+      "options": [],
+      "correctAnswer": "我要这个",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_art_6",
+      "type": "multipleChoice",
+      "question": "What is the most common general measure word in Chinese?",
+      "options": [
+        "个 (gè)",
+        "只 (zhī)",
+        "本 (běn)",
+        "张 (zhāng)"
+      ],
+      "correctAnswer": "个 (gè)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

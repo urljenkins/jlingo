@@ -1,8 +1,97 @@
 {
   "id": "adjectives_1",
   "name": "Common Adjectives",
-  "description": "Learn basic adjectives to describe things",
+  "description": "Learn common descriptive adjectives and adjective inflection with -e in Dutch",
   "level": 6,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_adj1_1",
+      "type": "multipleChoice",
+      "question": "When does an adjective NOT receive an -e ending in Dutch?",
+      "options": [
+        "With an indefinite singular het-noun (een groot huis)",
+        "With any de-noun",
+        "In plural nouns",
+        "After definite articles"
+      ],
+      "correctAnswer": "With an indefinite singular het-noun (een groot huis)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_adj1_2",
+      "type": "translateThis",
+      "question": "Een mooie stad",
+      "options": [],
+      "correctAnswer": "A beautiful city",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_adj1_3",
+      "type": "fillInBlank",
+      "question": "Dit gebouw is heel ___ (old).",
+      "options": [
+        "oud",
+        "oude",
+        "nieuwe",
+        "kleine"
+      ],
+      "correctAnswer": "oud",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_adj1_4",
+      "type": "matchPairs",
+      "question": "Match opposite adjectives in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Groot",
+            "native": "Big / large"
+          },
+          {
+            "target": "Klein",
+            "native": "Small / little"
+          },
+          {
+            "target": "Goed",
+            "native": "Good"
+          },
+          {
+            "target": "Slecht",
+            "native": "Bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_adj1_5",
+      "type": "speakThis",
+      "question": "Nederland is een klein land",
+      "options": [],
+      "correctAnswer": "Nederland is een klein land",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_adj1_6",
+      "type": "multipleChoice",
+      "question": "What is the opposite of 'duur' (expensive)?",
+      "options": [
+        "Goedkoop (cheap)",
+        "Mooi (pretty)",
+        "Snel (fast)",
+        "Warm (warm)"
+      ],
+      "correctAnswer": "Goedkoop (cheap)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

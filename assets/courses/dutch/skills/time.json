@@ -1,8 +1,97 @@
 {
   "id": "time",
   "name": "Telling Time",
-  "description": "Learn to tell time and express duration",
+  "description": "Learn to tell time in Dutch, using half (half uur vóór), over, and voor",
   "level": 4,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_time_1",
+      "type": "multipleChoice",
+      "question": "In Dutch, what does 'half drie' mean?",
+      "options": [
+        "2:30 (half an hour before three)",
+        "3:30 (half past three)",
+        "3:00",
+        "2:15"
+      ],
+      "correctAnswer": "2:30 (half an hour before three)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_time_2",
+      "type": "translateThis",
+      "question": "Hoe laat is het?",
+      "options": [],
+      "correctAnswer": "What time is it?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_time_3",
+      "type": "fillInBlank",
+      "question": "Het is tien ___ twee. (10 past 2)",
+      "options": [
+        "over",
+        "voor",
+        "half",
+        "na"
+      ],
+      "correctAnswer": "over",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_time_4",
+      "type": "matchPairs",
+      "question": "Match Dutch time expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "uur",
+            "native": "o'clock / hour"
+          },
+          {
+            "target": "kwart over",
+            "native": "quarter past"
+          },
+          {
+            "target": "kwart voor",
+            "native": "quarter to"
+          },
+          {
+            "target": "half",
+            "native": "half (before next hour)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_time_5",
+      "type": "speakThis",
+      "question": "Het is drie uur",
+      "options": [],
+      "correctAnswer": "Het is drie uur",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_time_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'quarter past eight' in Dutch?",
+      "options": [
+        "Kwart over acht",
+        "Kwart voor acht",
+        "Half acht",
+        "Acht uur"
+      ],
+      "correctAnswer": "Kwart over acht",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

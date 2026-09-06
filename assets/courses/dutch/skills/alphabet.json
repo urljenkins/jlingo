@@ -1,8 +1,98 @@
 {
   "id": "alphabet",
   "name": "Alphabet & Sounds",
-  "description": "Learn the basics of Dutch pronunciation and vowels",
+  "description": "Learn Dutch vowels, diphthongs (ui, ij, oe, eu), and gutteral 'g' sounds",
   "level": 1,
   "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_alp_1",
+      "type": "multipleChoice",
+      "question": "Which combination of letters produces the uniquely Dutch diphthong in 'huis' (house)?",
+      "options": [
+        "ui",
+        "oe",
+        "eu",
+        "ij"
+      ],
+      "correctAnswer": "ui",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_alp_2",
+      "type": "translateThis",
+      "question": "Het huis",
+      "options": [],
+      "correctAnswer": "The house",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_alp_3",
+      "type": "multipleChoice",
+      "question": "How is the Dutch letter 'G' typically pronounced in standard Northern Dutch?",
+      "options": [
+        "A throaty, guttural fricative (like Scottish 'loch')",
+        "Like an English hard 'g' as in 'goat'",
+        "Like an English soft 'g' as in 'gem'",
+        "Completely silent"
+      ],
+      "correctAnswer": "A throaty, guttural fricative (like Scottish 'loch')",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_alp_4",
+      "type": "matchPairs",
+      "question": "Match the Dutch vowel sounds with example words",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ui",
+            "native": "huis (house)"
+          },
+          {
+            "target": "oe",
+            "native": "boek (book)"
+          },
+          {
+            "target": "ij",
+            "native": "ijs (ice/ice cream)"
+          },
+          {
+            "target": "eu",
+            "native": "leuk (nice/fun)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_alp_5",
+      "type": "fillInBlank",
+      "question": "Het boek ligt op het ___ (ice)",
+      "options": [
+        "ijs",
+        "huis",
+        "uur",
+        "oog"
+      ],
+      "correctAnswer": "ijs",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_alp_6",
+      "type": "speakThis",
+      "question": "Goedemorgen",
+      "options": [],
+      "correctAnswer": "Goedemorgen",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

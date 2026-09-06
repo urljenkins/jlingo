@@ -1,7 +1,97 @@
 {
   "id": "clothing",
   "name": "Clothing",
-  "description": "TODO: clothing vocabulary",
+  "description": "Learn vocabulary for clothes, shoes, hats, and the verb 穿 (chuān)",
   "level": 6,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_clo_1",
+      "type": "multipleChoice",
+      "question": "Which verb is used in Chinese to mean 'to wear clothes'?",
+      "options": [
+        "穿 (chuān)",
+        "戴 (dài)",
+        "吃 (chī)",
+        "看 (kàn)"
+      ],
+      "correctAnswer": "穿 (chuān)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_clo_2",
+      "type": "translateThis",
+      "question": "黑色的鞋子",
+      "options": [],
+      "correctAnswer": "Black shoes",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_clo_3",
+      "type": "fillInBlank",
+      "question": "她穿了一件红色的 ___。(She wore a red skirt.)",
+      "options": [
+        "裙子",
+        "鞋子",
+        "帽子",
+        "眼睛"
+      ],
+      "correctAnswer": "裙子",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_clo_4",
+      "type": "matchPairs",
+      "question": "Match clothing items",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "衣服",
+            "native": "Clothes"
+          },
+          {
+            "target": "裤子",
+            "native": "Pants / trousers"
+          },
+          {
+            "target": "鞋子",
+            "native": "Shoes"
+          },
+          {
+            "target": "帽子",
+            "native": "Hat"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_clo_5",
+      "type": "speakThis",
+      "question": "这件衣服真漂亮",
+      "options": [],
+      "correctAnswer": "这件衣服真漂亮",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_clo_6",
+      "type": "multipleChoice",
+      "question": "What measure word is used for coats, shirts, and upper garments?",
+      "options": [
+        "件 (jiàn)",
+        "条 (tiáo)",
+        "双 (shuāng)",
+        "只 (zhī)"
+      ],
+      "correctAnswer": "件 (jiàn)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

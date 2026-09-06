@@ -1,8 +1,97 @@
 {
   "id": "grammar_tener",
   "name": "Grammar: Have/Own",
-  "description": "Learn the verb tener and its expressions",
+  "description": "Learn the verb 'hebben' (to have), expressions of possession, and physical sensations",
   "level": 7,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_ten_1",
+      "type": "multipleChoice",
+      "question": "How do you conjugate 'hebben' for 'jij' (you) in standard Dutch?",
+      "options": [
+        "hebt",
+        "heb",
+        "heeft",
+        "hebben"
+      ],
+      "correctAnswer": "hebt",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ten_2",
+      "type": "translateThis",
+      "question": "Ik heb honger",
+      "options": [],
+      "correctAnswer": "I am hungry",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ten_3",
+      "type": "fillInBlank",
+      "question": "Zij ___ twee katten. (She has)",
+      "options": [
+        "heeft",
+        "hebt",
+        "heb",
+        "hebben"
+      ],
+      "correctAnswer": "heeft",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ten_4",
+      "type": "matchPairs",
+      "question": "Match 'hebben' conjugations",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ik heb",
+            "native": "I have"
+          },
+          {
+            "target": "jij hebt",
+            "native": "you have"
+          },
+          {
+            "target": "hij heeft",
+            "native": "he has"
+          },
+          {
+            "target": "wij hebben",
+            "native": "we have"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_ten_5",
+      "type": "speakThis",
+      "question": "Heb je dorst?",
+      "options": [],
+      "correctAnswer": "Heb je dorst?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_ten_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'I have cold' / 'I am cold' using hebben/zijn in Dutch?",
+      "options": [
+        "Ik heb het koud",
+        "Ik ben koud",
+        "Ik maak koud",
+        "Ik voel koud"
+      ],
+      "correctAnswer": "Ik heb het koud",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,7 +1,97 @@
 {
   "id": "culture",
   "name": "Culture & Traditions",
-  "description": "TODO: culture and traditions content",
+  "description": "Learn about traditional Chinese festivals (Spring Festival, Mid-Autumn), tea culture, and calligraphy",
   "level": 25,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_cul_1",
+      "type": "multipleChoice",
+      "question": "What is the most important traditional holiday in China, celebrating the Lunar New Year?",
+      "options": [
+        "春节 (Chūnjié / Spring Festival)",
+        "中秋节 (Mid-Autumn)",
+        "端午节 (Dragon Boat)",
+        "清明节 (Qingming)"
+      ],
+      "correctAnswer": "春节 (Chūnjié / Spring Festival)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_cul_2",
+      "type": "translateThis",
+      "question": "中秋节有吃月饼赏月的传统",
+      "options": [],
+      "correctAnswer": "During the Mid-Autumn Festival there is a tradition of eating mooncakes and admiring the full moon",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_cul_3",
+      "type": "fillInBlank",
+      "question": "端午节人们赛龙舟、吃 ___。(zongzi / sticky rice dumplings)",
+      "options": [
+        "粽子",
+        "月饼",
+        "饺子",
+        "汤圆"
+      ],
+      "correctAnswer": "粽子",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_cul_4",
+      "type": "matchPairs",
+      "question": "Match Chinese cultural traditions with foods",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "春节",
+            "native": "饺子 (Dumplings)"
+          },
+          {
+            "target": "中秋节",
+            "native": "月饼 (Mooncakes)"
+          },
+          {
+            "target": "端午节",
+            "native": "粽子 (Zongzi)"
+          },
+          {
+            "target": "元宵节",
+            "native": "汤圆 (Tangyuan / Sweet dumplings)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_cul_5",
+      "type": "speakThis",
+      "question": "新年快乐，恭喜发财！",
+      "options": [],
+      "correctAnswer": "新年快乐，恭喜发财！",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_cul_6",
+      "type": "multipleChoice",
+      "question": "What does a red envelope ('红包' hóngbāo) contain during Chinese New Year?",
+      "options": [
+        "Lucky money (cash gift)",
+        "Candy",
+        "Tea leaves",
+        "Couplets"
+      ],
+      "correctAnswer": "Lucky money (cash gift)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

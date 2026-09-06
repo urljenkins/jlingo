@@ -1,7 +1,97 @@
 {
   "id": "days_months",
   "name": "Days & Months",
-  "description": "TODO: days and months",
+  "description": "Learn the days of the week, months of the year, and date expressions",
   "level": 4,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_dm_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Monday' in Chinese?",
+      "options": [
+        "星期一",
+        "星期二",
+        "星期日",
+        "星期五"
+      ],
+      "correctAnswer": "星期一",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dm_2",
+      "type": "translateThis",
+      "question": "一月",
+      "options": [],
+      "correctAnswer": "January",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dm_3",
+      "type": "fillInBlank",
+      "question": "今天星期 ___ (Wednesday)",
+      "options": [
+        "三",
+        "四",
+        "五",
+        "日"
+      ],
+      "correctAnswer": "三",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dm_4",
+      "type": "matchPairs",
+      "question": "Match weekdays and months",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "星期六",
+            "native": "Saturday"
+          },
+          {
+            "target": "星期日",
+            "native": "Sunday"
+          },
+          {
+            "target": "五月",
+            "native": "May"
+          },
+          {
+            "target": "十二月",
+            "native": "December"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_dm_5",
+      "type": "speakThis",
+      "question": "今天是星期天",
+      "options": [],
+      "correctAnswer": "今天是星期天",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dm_6",
+      "type": "multipleChoice",
+      "question": "What is '明天' in English?",
+      "options": [
+        "Tomorrow",
+        "Yesterday",
+        "Today",
+        "Next week"
+      ],
+      "correctAnswer": "Tomorrow",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

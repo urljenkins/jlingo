@@ -139,6 +139,64 @@ void main() {
       }
     });
 
+    test('flashcard ids and prompts are unique within a deck', () {
+      // A duplicate id collides in the SRS merge and in saved review state; a
+      // duplicate front shows the learner the same prompt twice.
+      for (final file in vocabularyFiles('flashcards_')) {
+        final json =
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+        json.putIfAbsent('createdAt', () => DateTime.now().toIso8601String());
+        final cards = FlashcardDeck.fromJson(json).cards;
+
+        final ids = cards.map((c) => c.id).toList();
+        expect(ids.toSet().length, ids.length,
+            reason: '${file.path} has duplicate card ids');
+
+        final fronts = cards.map((c) => c.front).toList();
+        expect(fronts.toSet().length, fronts.length,
+            reason: '${file.path} shows the same prompt twice');
+      }
+    });
+
+    test('every flashcard carries the fields the study screen renders', () {
+      for (final file in vocabularyFiles('flashcards_')) {
+        final json =
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+        json.putIfAbsent('createdAt', () => DateTime.now().toIso8601String());
+
+        for (final card in FlashcardDeck.fromJson(json).cards) {
+          final where = '${file.path} card ${card.id}';
+          expect(card.front.trim(), isNotEmpty, reason: '$where has no front');
+          expect(card.back.trim(), isNotEmpty, reason: '$where has no back');
+          expect(card.category.trim(), isNotEmpty,
+              reason: '$where has no category');
+          // An example without its translation renders as an untranslated
+          // sentence, which is worse than showing none at all.
+          if (card.exampleSentence != null) {
+            expect(card.exampleTranslation?.trim(), isNotEmpty,
+                reason: '$where has an example with no translation');
+          }
+        }
+      }
+    });
+
+    test('bundled cards ship with no review state baked in', () {
+      // Review state is per learner. A card authored with a non-default ease
+      // factor or a nextReviewDate would start everyone mid-schedule.
+      for (final file in vocabularyFiles('flashcards_')) {
+        final json =
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+        json.putIfAbsent('createdAt', () => DateTime.now().toIso8601String());
+
+        for (final card in FlashcardDeck.fromJson(json).cards) {
+          expect(card.isNew, isTrue,
+              reason: '${file.path} card ${card.id} ships pre-reviewed');
+          expect(card.easeFactor, 2.5,
+              reason: '${file.path} card ${card.id} has a custom ease factor');
+        }
+      }
+    });
+
     test('every bundled word list decodes', () {
       for (final file in vocabularyFiles('word_of_day_')) {
         final json =
@@ -260,6 +318,15 @@ void main() {
           reason: '$language/$id.json failed to decode - usually an exercise '
               '"type" that is not in the ExerciseType enum',
         );
+      }
+    });
+
+    test('every skill has at least one exercise', () {
+      for (final (language, id, file) in allSkillFiles()) {
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        expect(skill.exercises, isNotEmpty,
+            reason: '$language/$id.json has no exercises');
       }
     });
 

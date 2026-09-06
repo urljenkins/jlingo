@@ -1,8 +1,97 @@
 {
   "id": "services",
   "name": "Services",
-  "description": "Learn vocabulary for banks, post offices, and other services",
+  "description": "Learn vocabulary for the post office (PostNL), bank, pharmacy (apotheek), and town hall (gemeente)",
   "level": 10,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_srv_1",
+      "type": "multipleChoice",
+      "question": "Where do you go to register your address or get official documents in the Netherlands?",
+      "options": [
+        "De gemeente (town hall)",
+        "De apotheek",
+        "De bank",
+        "Het postkantoor"
+      ],
+      "correctAnswer": "De gemeente (town hall)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_srv_2",
+      "type": "translateThis",
+      "question": "Ik wil een pakket versturen",
+      "options": [],
+      "correctAnswer": "I want to send a package",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_srv_3",
+      "type": "fillInBlank",
+      "question": "Ik haal mijn medicijnen bij de ___ (pharmacy).",
+      "options": [
+        "apotheek",
+        "bakker",
+        "slager",
+        "bank"
+      ],
+      "correctAnswer": "apotheek",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_srv_4",
+      "type": "matchPairs",
+      "question": "Match Dutch service institutions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Postkantoor",
+            "native": "Post office"
+          },
+          {
+            "target": "Apotheek",
+            "native": "Pharmacy"
+          },
+          {
+            "target": "Gemeente",
+            "native": "Municipality / town hall"
+          },
+          {
+            "target": "Kapper",
+            "native": "Hairdresser / barber"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_srv_5",
+      "type": "speakThis",
+      "question": "Kunt u mij alstublieft helpen?",
+      "options": [],
+      "correctAnswer": "Kunt u mij alstublieft helpen?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_srv_6",
+      "type": "multipleChoice",
+      "question": "What is 'de kapper'?",
+      "options": [
+        "Hairdresser",
+        "Baker",
+        "Mechanic",
+        "Dentist"
+      ],
+      "correctAnswer": "Hairdresser",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

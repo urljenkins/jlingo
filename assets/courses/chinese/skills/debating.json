@@ -1,7 +1,97 @@
 {
   "id": "debating",
   "name": "Debating",
-  "description": "TODO: debating vocabulary and structures",
+  "description": "Learn debate connectors, counter-arguments, logical assertions, and rhetorical persuasion",
   "level": 21,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_deb_1",
+      "type": "multipleChoice",
+      "question": "Which conjunction pair expresses 'not only ... but also' in formal discourse?",
+      "options": [
+        "不仅 ... 而且 (bùjǐn ... érqiě)",
+        "虽然 ... 但是",
+        "因为 ... 所以",
+        "只要 ... 就"
+      ],
+      "correctAnswer": "不仅 ... 而且 (bùjǐn ... érqiě)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_deb_2",
+      "type": "translateThis",
+      "question": "事实胜于雄辩",
+      "options": [],
+      "correctAnswer": "Facts speak louder than words",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_deb_3",
+      "type": "fillInBlank",
+      "question": "毋庸置 ___，这一举措带来了深远影响。(doubt / dispute)",
+      "options": [
+        "疑",
+        "问",
+        "听",
+        "见"
+      ],
+      "correctAnswer": "疑",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_deb_4",
+      "type": "matchPairs",
+      "question": "Match debating transitions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "恰恰相反",
+            "native": "Quite on the contrary"
+          },
+          {
+            "target": "不可否认",
+            "native": "Undeniable that"
+          },
+          {
+            "target": "总而言之",
+            "native": "In summary / all in all"
+          },
+          {
+            "target": "显而易见",
+            "native": "Obvious / self-evident"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_deb_5",
+      "type": "speakThis",
+      "question": "我们必须客观地看待这个问题",
+      "options": [],
+      "correctAnswer": "我们必须客观地看待这个问题",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_deb_6",
+      "type": "multipleChoice",
+      "question": "What is '辩论' (biànlùn)?",
+      "options": [
+        "Debate / argument",
+        "Agreement",
+        "Silence",
+        "Translation"
+      ],
+      "correctAnswer": "Debate / argument",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

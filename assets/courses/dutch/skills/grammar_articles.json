@@ -1,8 +1,97 @@
 {
   "id": "grammar_articles",
   "name": "Grammar: Articles",
-  "description": "Learn definite and indefinite articles in Dutch",
+  "description": "Learn definite articles (de, het) and indefinite article (een) in Dutch",
   "level": 2,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_art_1",
+      "type": "multipleChoice",
+      "question": "What are the two definite articles in Dutch ('the')?",
+      "options": [
+        "de and het",
+        "le and la",
+        "el and la",
+        "der and das"
+      ],
+      "correctAnswer": "de and het",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_art_2",
+      "type": "fillInBlank",
+      "question": "___ boek is interessant. (The book - neuter noun)",
+      "options": [
+        "Het",
+        "De",
+        "Een",
+        "Die"
+      ],
+      "correctAnswer": "Het",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_art_3",
+      "type": "matchPairs",
+      "question": "Match Dutch nouns with their correct definite article",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "de man",
+            "native": "the man"
+          },
+          {
+            "target": "het kind",
+            "native": "the child"
+          },
+          {
+            "target": "de vrouw",
+            "native": "the woman"
+          },
+          {
+            "target": "het huis",
+            "native": "the house"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_art_4",
+      "type": "translateThis",
+      "question": "Een appel",
+      "options": [],
+      "correctAnswer": "An apple",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_art_5",
+      "type": "speakThis",
+      "question": "De zon schijnt",
+      "options": [],
+      "correctAnswer": "De zon schijnt",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_art_6",
+      "type": "multipleChoice",
+      "question": "Which article is ALWAYS used for plural nouns in Dutch?",
+      "options": [
+        "de",
+        "het",
+        "een",
+        "den"
+      ],
+      "correctAnswer": "de",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "daily_routine",
   "name": "Daily Routine",
-  "description": "Learn to talk about your daily activities and reflexive verbs",
+  "description": "Learn daily routine actions, separable verbs (opstaan), and time scheduling in Dutch",
   "level": 8,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_dr_1",
+      "type": "multipleChoice",
+      "question": "How do you conjugate separable verb 'opstaan' (to get up) for 'ik' in present tense?",
+      "options": [
+        "Ik sta op",
+        "Ik opsta",
+        "Ik sta",
+        "Ik opstaan"
+      ],
+      "correctAnswer": "Ik sta op",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dr_2",
+      "type": "translateThis",
+      "question": "Ik poets mijn tanden",
+      "options": [],
+      "correctAnswer": "I brush my teeth",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dr_3",
+      "type": "fillInBlank",
+      "question": "Om zeven uur ___ ik op. (get)",
+      "options": [
+        "sta",
+        "lig",
+        "ga",
+        "kom"
+      ],
+      "correctAnswer": "sta",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dr_4",
+      "type": "matchPairs",
+      "question": "Match Dutch daily routine verbs",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "opstaan",
+            "native": "to get up"
+          },
+          {
+            "target": "ontbijten",
+            "native": "to eat breakfast"
+          },
+          {
+            "target": "douchen",
+            "native": "to take a shower"
+          },
+          {
+            "target": "naar bed gaan",
+            "native": "to go to bed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_dr_5",
+      "type": "speakThis",
+      "question": "Ik ga om elf uur slapen",
+      "options": [],
+      "correctAnswer": "Ik ga om elf uur slapen",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dr_6",
+      "type": "multipleChoice",
+      "question": "What is 'ontbijt'?",
+      "options": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Snack"
+      ],
+      "correctAnswer": "Breakfast",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "superlatives",
   "name": "Superlatives",
-  "description": "Learn to express 'the most' and 'the least'",
+  "description": "Learn Dutch superlative adjectives (-st suffix) and 'het meest / het best'",
   "level": 15,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_sup_1",
+      "type": "multipleChoice",
+      "question": "What suffix is added to regular adjectives in Dutch to form the superlative ('-est')?",
+      "options": [
+        "-st (bv. kleinste / het kleinst)",
+        "-er",
+        "-end",
+        "-e"
+      ],
+      "correctAnswer": "-st (bv. kleinste / het kleinst)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sup_2",
+      "type": "translateThis",
+      "question": "Dit is het oudste huis van de stad",
+      "options": [],
+      "correctAnswer": "This is the oldest house in the city",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sup_3",
+      "type": "fillInBlank",
+      "question": "Wie is de ___ van de klas? (smartest / slimste)",
+      "options": [
+        "slimste",
+        "slimmer",
+        "slimst",
+        "slim"
+      ],
+      "correctAnswer": "slimste",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sup_4",
+      "type": "matchPairs",
+      "question": "Match irregular superlatives in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "goed -> best",
+            "native": "good -> best"
+          },
+          {
+            "target": "veel -> meest",
+            "native": "much -> most"
+          },
+          {
+            "target": "weinig -> minst",
+            "native": "little -> least"
+          },
+          {
+            "target": "graag -> liefst",
+            "native": "gladly -> preferably/most of all"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_sup_5",
+      "type": "speakThis",
+      "question": "Dat vind ik het allerbelangrijkst",
+      "options": [],
+      "correctAnswer": "Dat vind ik het allerbelangrijkst",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sup_6",
+      "type": "multipleChoice",
+      "question": "What prefix can be attached to superlatives for extra emphasis ('very best of all')?",
+      "options": [
+        "aller- (het allerbeste)",
+        "oer-",
+        "kei-",
+        "over-"
+      ],
+      "correctAnswer": "aller- (het allerbeste)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

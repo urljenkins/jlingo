@@ -1,7 +1,97 @@
 {
   "id": "subjunctive",
   "name": "Subjunctive Mood",
-  "description": "TODO: subjunctive (adapt where applicable)",
+  "description": "Learn to express wishes, doubts, recommendations, and desires (希望, 建议, 愿) in Chinese",
   "level": 22,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_sbj_1",
+      "type": "multipleChoice",
+      "question": "How does Chinese convey subjunctive ideas like wishes or recommendations without inflectional mood endings?",
+      "options": [
+        "Using modal verbs and semantic verbs like 希望 (hope), 建议 (suggest), 祝 (wish)",
+        "Changing verb vowel endings",
+        "Adding -ing",
+        "Dropping the subject"
+      ],
+      "correctAnswer": "Using modal verbs and semantic verbs like 希望 (hope), 建议 (suggest), 祝 (wish)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sbj_2",
+      "type": "translateThis",
+      "question": "我希望你能尽快康复",
+      "options": [],
+      "correctAnswer": "I hope you can recover as soon as possible",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sbj_3",
+      "type": "fillInBlank",
+      "question": "我 ___ 你明天早点出发。(advise / suggest)",
+      "options": [
+        "建议",
+        "命令",
+        "觉得",
+        "知道"
+      ],
+      "correctAnswer": "建议",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sbj_4",
+      "type": "matchPairs",
+      "question": "Match volition and wish verbs",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "希望",
+            "native": "To hope / wish"
+          },
+          {
+            "target": "但愿",
+            "native": "If only / would that"
+          },
+          {
+            "target": "建议",
+            "native": "To suggest / advise"
+          },
+          {
+            "target": "宁愿",
+            "native": "Would rather / prefer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_sbj_5",
+      "type": "speakThis",
+      "question": "但愿一切顺利",
+      "options": [],
+      "correctAnswer": "但愿一切顺利",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sbj_6",
+      "type": "multipleChoice",
+      "question": "What does '但愿如此' (dànyuàn rúcǐ) mean?",
+      "options": [
+        "Hopefully so / let's hope it is like that",
+        "Certainly not",
+        "Impossible",
+        "No way"
+      ],
+      "correctAnswer": "Hopefully so / let's hope it is like that",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

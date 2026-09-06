@@ -94,6 +94,139 @@
             "question": "Nueve",
             "options": [],
             "correctAnswer": "Nueve"
+        },
+        {
+            "type": "translateThis",
+            "question": "Dos",
+            "options": [],
+            "correctAnswer": "Two",
+            "id": "ex_n_1"
+        },
+        {
+            "type": "translateThis",
+            "question": "Tres",
+            "options": [],
+            "correctAnswer": "Three",
+            "id": "ex_n_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Seis",
+            "options": [],
+            "correctAnswer": "Six",
+            "id": "ex_n_3"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What number is 'Cuatro'?",
+            "options": [
+                "4",
+                "6",
+                "8",
+                "2"
+            ],
+            "correctAnswer": "4",
+            "id": "ex_n_4"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Cinco más cinco es ___",
+            "options": [
+                "diez",
+                "ocho",
+                "nueve",
+                "siete"
+            ],
+            "correctAnswer": "diez",
+            "id": "ex_n_5"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match numbers 6-10",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Seis",
+                        "native": "Six"
+                    },
+                    {
+                        "target": "Siete",
+                        "native": "Seven"
+                    },
+                    {
+                        "target": "Ocho",
+                        "native": "Eight"
+                    },
+                    {
+                        "target": "Nueve",
+                        "native": "Nine"
+                    },
+                    {
+                        "target": "Diez",
+                        "native": "Ten"
+                    }
+                ]
+            },
+            "id": "ex_n_6"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Tres, dos, uno",
+            "options": [],
+            "correctAnswer": "Tres, dos, uno",
+            "id": "ex_n_7"
+        },
+        {
+            "type": "speakThis",
+            "question": "Uno, dos, tres, cuatro, cinco",
+            "options": [],
+            "correctAnswer": "Uno, dos, tres, cuatro, cinco",
+            "id": "ex_n_8"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What comes after 'seis'?",
+            "options": [
+                "Siete",
+                "Ocho",
+                "Cinco",
+                "Nueve"
+            ],
+            "correctAnswer": "Siete",
+            "id": "ex_n_9"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Tengo ___ hermanos (three)",
+            "options": [
+                "tres",
+                "dos",
+                "cuatro",
+                "uno"
+            ],
+            "correctAnswer": "tres",
+            "id": "ex_n_10"
+        },
+        {
+            "type": "translateThis",
+            "question": "Cero",
+            "options": [],
+            "correctAnswer": "Zero",
+            "id": "ex_n_11"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'zero' in Spanish?",
+            "options": [
+                "Cero",
+                "Uno",
+                "Diez",
+                "Nada"
+            ],
+            "correctAnswer": "Cero",
+            "id": "ex_n_12"
         }
     ]
 }

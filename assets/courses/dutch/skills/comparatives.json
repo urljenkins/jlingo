@@ -1,8 +1,97 @@
 {
   "id": "comparatives",
   "name": "Comparatives",
-  "description": "Learn to compare things using más, menos, tan",
+  "description": "Learn Dutch comparative adjectives (-er suffix), dan (than), and equality with 'even ... als'",
   "level": 15,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_comp_1",
+      "type": "multipleChoice",
+      "question": "Which word is used in Dutch after a comparative adjective to mean 'than' (e.g. groter ...)?",
+      "options": [
+        "dan (groter dan)",
+        "als",
+        "van",
+        "toe"
+      ],
+      "correctAnswer": "dan (groter dan)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_comp_2",
+      "type": "translateThis",
+      "question": "Treinen zijn sneller dan bussen",
+      "options": [],
+      "correctAnswer": "Trains are faster than buses",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_comp_3",
+      "type": "fillInBlank",
+      "question": "Dit boek is ___ dan dat boek. (more interesting / interessanter)",
+      "options": [
+        "interessanter",
+        "interessant",
+        "interessantst",
+        "meer"
+      ],
+      "correctAnswer": "interessanter",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_comp_4",
+      "type": "matchPairs",
+      "question": "Match adjectives and their comparatives",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "groot -> groter",
+            "native": "big -> bigger"
+          },
+          {
+            "target": "klein -> kleiner",
+            "native": "small -> smaller"
+          },
+          {
+            "target": "goed -> beter",
+            "native": "good -> better"
+          },
+          {
+            "target": "veel -> meer",
+            "native": "much -> more"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_comp_5",
+      "type": "speakThis",
+      "question": "Mijn broer is groter dan ik",
+      "options": [],
+      "correctAnswer": "Mijn broer is groter dan ik",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_comp_6",
+      "type": "multipleChoice",
+      "question": "How do you express equal comparison ('as fast as') in standard Dutch?",
+      "options": [
+        "even snel als",
+        "zo snel dan",
+        "even snel dan",
+        "meer snel als"
+      ],
+      "correctAnswer": "even snel als",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

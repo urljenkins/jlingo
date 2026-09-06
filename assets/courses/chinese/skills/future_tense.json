@@ -1,7 +1,97 @@
 {
   "id": "future_tense",
   "name": "Future Tense",
-  "description": "TODO: future tense exercises",
+  "description": "Learn to express future intent, plans, and events using 要 (yào), 会 (huì), and 将 (jiāng)",
   "level": 14,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_ft_1",
+      "type": "multipleChoice",
+      "question": "Which modal verb frequently indicates future likelihood or 'will' in Chinese?",
+      "options": [
+        "会 (huì)",
+        "在 (zài)",
+        "过 (guo)",
+        "了 (le)"
+      ],
+      "correctAnswer": "会 (huì)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ft_2",
+      "type": "translateThis",
+      "question": "明天会下雨",
+      "options": [],
+      "correctAnswer": "It will rain tomorrow",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ft_3",
+      "type": "fillInBlank",
+      "question": "我打算下个月 ___ 中国。(I plan to go to China next month.)",
+      "options": [
+        "去",
+        "是",
+        "在",
+        "做"
+      ],
+      "correctAnswer": "去",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ft_4",
+      "type": "matchPairs",
+      "question": "Match future expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "打算",
+            "native": "To plan to"
+          },
+          {
+            "target": "快要...了",
+            "native": "About to (very soon)"
+          },
+          {
+            "target": "下星期",
+            "native": "Next week"
+          },
+          {
+            "target": "明年",
+            "native": "Next year"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_ft_5",
+      "type": "speakThis",
+      "question": "我们明天见",
+      "options": [],
+      "correctAnswer": "我们明天见",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_ft_6",
+      "type": "multipleChoice",
+      "question": "What does '快要下课了' mean?",
+      "options": [
+        "Class is about to end soon",
+        "Class has started",
+        "No class today",
+        "Class is boring"
+      ],
+      "correctAnswer": "Class is about to end soon",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

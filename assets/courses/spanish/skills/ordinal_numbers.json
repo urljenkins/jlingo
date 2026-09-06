@@ -15,7 +15,12 @@
             "id": "ex_ord_2",
             "type": "multipleChoice",
             "question": "How do you say 'second' in Spanish?",
-            "options": ["Segundo", "Dos", "Tercero", "Cuarto"],
+            "options": [
+                "Segundo",
+                "Dos",
+                "Tercero",
+                "Cuarto"
+            ],
             "correctAnswer": "Segundo"
         },
         {
@@ -26,11 +31,26 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "Primero", "native": "First"},
-                    {"target": "Segundo", "native": "Second"},
-                    {"target": "Tercero", "native": "Third"},
-                    {"target": "Cuarto", "native": "Fourth"},
-                    {"target": "Quinto", "native": "Fifth"}
+                    {
+                        "target": "Primero",
+                        "native": "First"
+                    },
+                    {
+                        "target": "Segundo",
+                        "native": "Second"
+                    },
+                    {
+                        "target": "Tercero",
+                        "native": "Third"
+                    },
+                    {
+                        "target": "Cuarto",
+                        "native": "Fourth"
+                    },
+                    {
+                        "target": "Quinto",
+                        "native": "Fifth"
+                    }
                 ]
             }
         },
@@ -38,7 +58,12 @@
             "id": "ex_ord_4",
             "type": "fillInBlank",
             "question": "Es mi ___ día de trabajo",
-            "options": ["primer", "uno", "primera", "un"],
+            "options": [
+                "primer",
+                "uno",
+                "primera",
+                "un"
+            ],
             "correctAnswer": "primer"
         },
         {
@@ -47,6 +72,120 @@
             "question": "La tercera calle",
             "options": [],
             "correctAnswer": "The third street"
+        },
+        {
+            "type": "translateThis",
+            "question": "Cuarto",
+            "options": [],
+            "correctAnswer": "Fourth",
+            "id": "ex_ord_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Quinto",
+            "options": [],
+            "correctAnswer": "Fifth",
+            "id": "ex_ord_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'tenth' in Spanish?",
+            "options": [
+                "Décimo",
+                "Noveno",
+                "Octavo",
+                "Séptimo"
+            ],
+            "correctAnswer": "Décimo",
+            "id": "ex_ord_8"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Vivo en el ___ piso (fifth)",
+            "options": [
+                "quinto",
+                "cinco",
+                "quinta",
+                "cinco piso"
+            ],
+            "correctAnswer": "quinto",
+            "id": "ex_ord_9"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match ordinals 6th-10th",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Sexto",
+                        "native": "Sixth"
+                    },
+                    {
+                        "target": "Séptimo",
+                        "native": "Seventh"
+                    },
+                    {
+                        "target": "Octavo",
+                        "native": "Eighth"
+                    },
+                    {
+                        "target": "Noveno",
+                        "native": "Ninth"
+                    },
+                    {
+                        "target": "Décimo",
+                        "native": "Tenth"
+                    }
+                ]
+            },
+            "id": "ex_ord_10"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Es la primera vez",
+            "options": [],
+            "correctAnswer": "Es la primera vez",
+            "id": "ex_ord_11"
+        },
+        {
+            "type": "speakThis",
+            "question": "Es mi segundo idioma",
+            "options": [],
+            "correctAnswer": "Es mi segundo idioma",
+            "id": "ex_ord_12"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'the fourth floor'?",
+            "options": [
+                "El cuarto piso",
+                "El cuatro piso",
+                "La cuarta piso",
+                "El piso cuatro"
+            ],
+            "correctAnswer": "El cuarto piso",
+            "id": "ex_ord_13"
+        },
+        {
+            "type": "translateThis",
+            "question": "La segunda puerta a la derecha",
+            "options": [],
+            "correctAnswer": "The second door on the right",
+            "id": "ex_ord_14"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Ella llegó en ___ lugar (third)",
+            "options": [
+                "tercer",
+                "tercero",
+                "tercera",
+                "tres"
+            ],
+            "correctAnswer": "tercer",
+            "id": "ex_ord_15"
         }
     ]
 }

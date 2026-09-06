@@ -13,7 +13,10 @@
       "exampleSentence": "你好！很高兴认识你。",
       "exampleTranslation": "Hello! Very glad to meet you.",
       "category": "Greetings",
-      "tags": ["basic", "essential"]
+      "tags": [
+        "basic",
+        "essential"
+      ]
     },
     {
       "id": "fc_zh_2",
@@ -23,7 +26,10 @@
       "exampleSentence": "老师，早上好！",
       "exampleTranslation": "Teacher, good morning!",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_zh_3",
@@ -33,7 +39,11 @@
       "exampleSentence": "非常感谢你的帮助，谢谢！",
       "exampleTranslation": "Thank you very much for your help!",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_zh_4",
@@ -43,7 +53,10 @@
       "exampleSentence": "不用谢，不客气！",
       "exampleTranslation": "No need to thank me, you're welcome!",
       "category": "Greetings",
-      "tags": ["basic", "polite"]
+      "tags": [
+        "basic",
+        "polite"
+      ]
     },
     {
       "id": "fc_zh_5",
@@ -53,7 +66,11 @@
       "exampleSentence": "请给我一杯水。",
       "exampleTranslation": "Please give me a glass of water.",
       "category": "Greetings",
-      "tags": ["basic", "polite", "essential"]
+      "tags": [
+        "basic",
+        "polite",
+        "essential"
+      ]
     },
     {
       "id": "fc_zh_6",
@@ -63,7 +80,10 @@
       "exampleSentence": "你好，我叫李明。",
       "exampleTranslation": "Hello, my name is Li Ming.",
       "category": "Introductions",
-      "tags": ["basic", "introductions"]
+      "tags": [
+        "basic",
+        "introductions"
+      ]
     },
     {
       "id": "fc_zh_7",
@@ -73,7 +93,10 @@
       "exampleSentence": "我想要喝温开水。",
       "exampleTranslation": "I would like to drink warm boiled water.",
       "category": "Food & Drink",
-      "tags": ["nouns", "food"]
+      "tags": [
+        "nouns",
+        "food"
+      ]
     },
     {
       "id": "fc_zh_8",
@@ -83,7 +106,1869 @@
       "exampleSentence": "早上吃面包和喝牛奶。",
       "exampleTranslation": "Eat bread and drink milk in the morning.",
       "category": "Food & Drink",
-      "tags": ["nouns", "food"]
+      "tags": [
+        "nouns",
+        "food"
+      ]
+    },
+    {
+      "id": "fc_zh_num_1",
+      "front": "一 (yī)",
+      "back": "One",
+      "pronunciation": "/i/",
+      "exampleSentence": "我有一个哥哥。",
+      "exampleTranslation": "I have one older brother.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_2",
+      "front": "二 (èr)",
+      "back": "Two",
+      "pronunciation": "/aɚ/",
+      "exampleSentence": "两个人。",
+      "exampleTranslation": "Two people.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_3",
+      "front": "三 (sān)",
+      "back": "Three",
+      "pronunciation": "/san/",
+      "exampleSentence": "三点了。",
+      "exampleTranslation": "It is three o'clock.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_4",
+      "front": "四 (sì)",
+      "back": "Four",
+      "pronunciation": "/sɹ̩/",
+      "exampleSentence": "四个人。",
+      "exampleTranslation": "Four people.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_5",
+      "front": "五 (wǔ)",
+      "back": "Five",
+      "pronunciation": "/u/",
+      "exampleSentence": "五分钟。",
+      "exampleTranslation": "Five minutes.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_6",
+      "front": "六 (liù)",
+      "back": "Six",
+      "pronunciation": "/ljoʊ/",
+      "exampleSentence": "六块钱。",
+      "exampleTranslation": "Six yuan.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_7",
+      "front": "七 (qī)",
+      "back": "Seven",
+      "pronunciation": "/tɕʰi/",
+      "exampleSentence": "一周七天。",
+      "exampleTranslation": "Seven days a week.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_8",
+      "front": "八 (bā)",
+      "back": "Eight",
+      "pronunciation": "/pa/",
+      "exampleSentence": "八点的火车。",
+      "exampleTranslation": "The eight o'clock train.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_9",
+      "front": "九 (jiǔ)",
+      "back": "Nine",
+      "pronunciation": "/tɕjoʊ/",
+      "exampleSentence": "他九岁。",
+      "exampleTranslation": "He is nine years old.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_10",
+      "front": "十 (shí)",
+      "back": "Ten",
+      "pronunciation": "/ʂɻ̩/",
+      "exampleSentence": "十块钱。",
+      "exampleTranslation": "Ten yuan.",
+      "category": "Numbers",
+      "tags": [
+        "basic",
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_100",
+      "front": "百 (bǎi)",
+      "back": "Hundred",
+      "pronunciation": "/paɪ/",
+      "exampleSentence": "一百块。",
+      "exampleTranslation": "One hundred yuan.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_num_1000",
+      "front": "千 (qiān)",
+      "back": "Thousand",
+      "pronunciation": "/tɕʰjɛn/",
+      "exampleSentence": "一千块。",
+      "exampleTranslation": "One thousand yuan.",
+      "category": "Numbers",
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "fc_zh_time_1",
+      "front": "星期一 (xīngqīyī)",
+      "back": "Monday",
+      "pronunciation": "/ɕiŋ tɕʰi i/",
+      "exampleSentence": "星期一我工作。",
+      "exampleTranslation": "On Monday I work.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_zh_time_2",
+      "front": "星期二 (xīngqī'èr)",
+      "back": "Tuesday",
+      "pronunciation": "/ɕiŋ tɕʰi aɚ/",
+      "exampleSentence": "星期二见。",
+      "exampleTranslation": "See you Tuesday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_zh_time_3",
+      "front": "星期三 (xīngqīsān)",
+      "back": "Wednesday",
+      "pronunciation": "/ɕiŋ tɕʰi san/",
+      "exampleSentence": "星期三我有空。",
+      "exampleTranslation": "I'm free on Wednesday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_zh_time_4",
+      "front": "星期四 (xīngqīsì)",
+      "back": "Thursday",
+      "pronunciation": "/ɕiŋ tɕʰi sɹ̩/",
+      "exampleSentence": "下星期四。",
+      "exampleTranslation": "Next Thursday.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_zh_time_5",
+      "front": "星期五 (xīngqīwǔ)",
+      "back": "Friday",
+      "pronunciation": "/ɕiŋ tɕʰi u/",
+      "exampleSentence": "星期五晚上。",
+      "exampleTranslation": "Friday evening.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_zh_time_6",
+      "front": "星期六 (xīngqīliù)",
+      "back": "Saturday",
+      "pronunciation": "/ɕiŋ tɕʰi ljoʊ/",
+      "exampleSentence": "星期六我休息。",
+      "exampleTranslation": "On Saturday I rest.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_zh_time_7",
+      "front": "星期天 (xīngqītiān)",
+      "back": "Sunday",
+      "pronunciation": "/ɕiŋ tɕʰi tʰjɛn/",
+      "exampleSentence": "星期天和家人在一起。",
+      "exampleTranslation": "Sunday with family.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "fc_zh_time_8",
+      "front": "今天 (jīntiān)",
+      "back": "Today",
+      "pronunciation": "/tɕin tʰjɛn/",
+      "exampleSentence": "今天很热。",
+      "exampleTranslation": "Today is hot.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_time_9",
+      "front": "明天 (míngtiān)",
+      "back": "Tomorrow",
+      "pronunciation": "/miŋ tʰjɛn/",
+      "exampleSentence": "明天我给你打电话。",
+      "exampleTranslation": "I'll call you tomorrow.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_time_10",
+      "front": "昨天 (zuótiān)",
+      "back": "Yesterday",
+      "pronunciation": "/tswo tʰjɛn/",
+      "exampleSentence": "昨天我生病了。",
+      "exampleTranslation": "Yesterday I was sick.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_time_11",
+      "front": "现在 (xiànzài)",
+      "back": "Now",
+      "pronunciation": "/ɕjɛn tsaɪ/",
+      "exampleSentence": "现在不行。",
+      "exampleTranslation": "Not right now.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_time_12",
+      "front": "总是 (zǒngshì)",
+      "back": "Always",
+      "pronunciation": "/tsʊŋ ʂɻ̩/",
+      "exampleSentence": "我总是很早到。",
+      "exampleTranslation": "I always arrive early.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_zh_time_13",
+      "front": "从不 (cóngbù)",
+      "back": "Never",
+      "pronunciation": "/tsʰʊŋ pu/",
+      "exampleSentence": "我从不去那里。",
+      "exampleTranslation": "I never go there.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "adverbs"
+      ]
+    },
+    {
+      "id": "fc_zh_time_14",
+      "front": "星期 (xīngqī)",
+      "back": "Week",
+      "pronunciation": "/ɕiŋ tɕʰi/",
+      "exampleSentence": "上个星期很忙。",
+      "exampleTranslation": "Last week was busy.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_time_15",
+      "front": "月 (yuè)",
+      "back": "Month",
+      "pronunciation": "/ɥɛ/",
+      "exampleSentence": "下个月我去旅行。",
+      "exampleTranslation": "Next month I travel.",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_time_16",
+      "front": "年 (nián)",
+      "back": "Year",
+      "pronunciation": "/njɛn/",
+      "exampleSentence": "新年快乐！",
+      "exampleTranslation": "Happy new year!",
+      "category": "Time & Days",
+      "tags": [
+        "time",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_1",
+      "front": "家庭 (jiātíng)",
+      "back": "Family",
+      "pronunciation": "/tɕja tʰiŋ/",
+      "exampleSentence": "我的家庭很大。",
+      "exampleTranslation": "My family is big.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_2",
+      "front": "妈妈 (māma)",
+      "back": "Mother",
+      "pronunciation": "/ma ma/",
+      "exampleSentence": "妈妈做饭很好吃。",
+      "exampleTranslation": "Mum cooks very well.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_3",
+      "front": "爸爸 (bàba)",
+      "back": "Father",
+      "pronunciation": "/pa pa/",
+      "exampleSentence": "爸爸在这里工作。",
+      "exampleTranslation": "Dad works here.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_4",
+      "front": "哥哥 (gēge)",
+      "back": "Older brother",
+      "pronunciation": "/kɤ kɤ/",
+      "exampleSentence": "哥哥是医生。",
+      "exampleTranslation": "My older brother is a doctor.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_5",
+      "front": "姐姐 (jiějie)",
+      "back": "Older sister",
+      "pronunciation": "/tɕjɛ tɕjɛ/",
+      "exampleSentence": "姐姐是学生。",
+      "exampleTranslation": "My older sister is a student.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_6",
+      "front": "弟弟 (dìdi)",
+      "back": "Younger brother",
+      "pronunciation": "/ti ti/",
+      "exampleSentence": "弟弟五岁。",
+      "exampleTranslation": "My younger brother is five.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_7",
+      "front": "妹妹 (mèimei)",
+      "back": "Younger sister",
+      "pronunciation": "/meɪ meɪ/",
+      "exampleSentence": "妹妹上学了。",
+      "exampleTranslation": "My younger sister goes to school.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_8",
+      "front": "朋友 (péngyǒu)",
+      "back": "Friend",
+      "pronunciation": "/pʰɤŋ joʊ/",
+      "exampleSentence": "他是我最好的朋友。",
+      "exampleTranslation": "He is my best friend.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_9",
+      "front": "孩子 (háizi)",
+      "back": "Child",
+      "pronunciation": "/xaɪ tsɹ̩/",
+      "exampleSentence": "孩子在公园玩。",
+      "exampleTranslation": "The child plays in the park.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_10",
+      "front": "女人 (nǚrén)",
+      "back": "Woman",
+      "pronunciation": "/ny ʐən/",
+      "exampleSentence": "那个女人是律师。",
+      "exampleTranslation": "That woman is a lawyer.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_11",
+      "front": "男人 (nánrén)",
+      "back": "Man",
+      "pronunciation": "/nan ʐən/",
+      "exampleSentence": "男人在看报纸。",
+      "exampleTranslation": "The man is reading a newspaper.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_fam_12",
+      "front": "人 (rén)",
+      "back": "Person / people",
+      "pronunciation": "/ʐən/",
+      "exampleSentence": "今天人很多。",
+      "exampleTranslation": "There are many people today.",
+      "category": "Family & People",
+      "tags": [
+        "family",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_food_12",
+      "front": "咖啡 (kāfēi)",
+      "back": "Coffee",
+      "pronunciation": "/kʰa feɪ/",
+      "exampleSentence": "我早上喝咖啡。",
+      "exampleTranslation": "I drink coffee in the morning.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_zh_food_13",
+      "front": "茶 (chá)",
+      "back": "Tea",
+      "pronunciation": "/ʈʂʰa/",
+      "exampleSentence": "要喝茶吗？",
+      "exampleTranslation": "Would you like tea?",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "drinks"
+      ]
+    },
+    {
+      "id": "fc_zh_food_14",
+      "front": "肉 (ròu)",
+      "back": "Meat",
+      "pronunciation": "/ʐoʊ/",
+      "exampleSentence": "我不吃肉。",
+      "exampleTranslation": "I don't eat meat.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_food_15",
+      "front": "鱼 (yú)",
+      "back": "Fish",
+      "pronunciation": "/y/",
+      "exampleSentence": "鱼很新鲜。",
+      "exampleTranslation": "The fish is fresh.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_food_16",
+      "front": "米饭 (mǐfàn)",
+      "back": "Rice",
+      "pronunciation": "/mi fan/",
+      "exampleSentence": "我要一碗米饭。",
+      "exampleTranslation": "I want a bowl of rice.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_food_17",
+      "front": "蔬菜 (shūcài)",
+      "back": "Vegetables",
+      "pronunciation": "/ʂu tsʰaɪ/",
+      "exampleSentence": "我每天吃蔬菜。",
+      "exampleTranslation": "I eat vegetables every day.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_food_18",
+      "front": "鸡蛋 (jīdàn)",
+      "back": "Egg",
+      "pronunciation": "/tɕi tan/",
+      "exampleSentence": "请给我两个鸡蛋。",
+      "exampleTranslation": "Two eggs, please.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_food_19",
+      "front": "早饭 (zǎofàn)",
+      "back": "Breakfast",
+      "pronunciation": "/tsaʊ fan/",
+      "exampleSentence": "早饭是八点。",
+      "exampleTranslation": "Breakfast is at eight.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_zh_food_20",
+      "front": "午饭 (wǔfàn)",
+      "back": "Lunch",
+      "pronunciation": "/u fan/",
+      "exampleSentence": "午饭准备好了。",
+      "exampleTranslation": "Lunch is ready.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_zh_food_21",
+      "front": "晚饭 (wǎnfàn)",
+      "back": "Dinner",
+      "pronunciation": "/wan fan/",
+      "exampleSentence": "晚饭很清淡。",
+      "exampleTranslation": "Dinner is light.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "meals"
+      ]
+    },
+    {
+      "id": "fc_zh_food_22",
+      "front": "买单 (mǎidān)",
+      "back": "The bill",
+      "pronunciation": "/maɪ tan/",
+      "exampleSentence": "买单，谢谢。",
+      "exampleTranslation": "The bill, thank you.",
+      "category": "Food & Drink",
+      "tags": [
+        "food",
+        "restaurant",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_1",
+      "front": "是 (shì)",
+      "back": "To be",
+      "pronunciation": "/ʂɻ̩/",
+      "exampleSentence": "我是学生。",
+      "exampleTranslation": "I am a student.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_2",
+      "front": "有 (yǒu)",
+      "back": "To have",
+      "pronunciation": "/joʊ/",
+      "exampleSentence": "我有时间。",
+      "exampleTranslation": "I have time.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_3",
+      "front": "做 (zuò)",
+      "back": "To do / make",
+      "pronunciation": "/tswo/",
+      "exampleSentence": "你要做什么？",
+      "exampleTranslation": "What are you going to do?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_4",
+      "front": "去 (qù)",
+      "back": "To go",
+      "pronunciation": "/tɕʰy/",
+      "exampleSentence": "我想和你去。",
+      "exampleTranslation": "I want to go with you.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_5",
+      "front": "来 (lái)",
+      "back": "To come",
+      "pronunciation": "/laɪ/",
+      "exampleSentence": "你明天能来吗？",
+      "exampleTranslation": "Can you come tomorrow?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_6",
+      "front": "能 (néng)",
+      "back": "To be able to",
+      "pronunciation": "/nɤŋ/",
+      "exampleSentence": "我今天不能去。",
+      "exampleTranslation": "I can't go today.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_7",
+      "front": "想 (xiǎng)",
+      "back": "To want / think",
+      "pronunciation": "/ɕjaŋ/",
+      "exampleSentence": "我想学中文。",
+      "exampleTranslation": "I want to learn Chinese.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_8",
+      "front": "知道 (zhīdào)",
+      "back": "To know",
+      "pronunciation": "/ʈʂɻ̩ taʊ/",
+      "exampleSentence": "我不知道答案。",
+      "exampleTranslation": "I don't know the answer.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_9",
+      "front": "认识 (rènshi)",
+      "back": "To know (people)",
+      "pronunciation": "/ʐən ʂɻ̩/",
+      "exampleSentence": "很高兴认识你。",
+      "exampleTranslation": "Nice to meet you.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_10",
+      "front": "说 (shuō)",
+      "back": "To speak / say",
+      "pronunciation": "/ʂwo/",
+      "exampleSentence": "你说什么？",
+      "exampleTranslation": "What did you say?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_11",
+      "front": "看 (kàn)",
+      "back": "To see / watch",
+      "pronunciation": "/kʰan/",
+      "exampleSentence": "我想看那部电影。",
+      "exampleTranslation": "I want to see that film.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_12",
+      "front": "给 (gěi)",
+      "back": "To give",
+      "pronunciation": "/keɪ/",
+      "exampleSentence": "请给我盐。",
+      "exampleTranslation": "Please give me the salt.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_13",
+      "front": "吃 (chī)",
+      "back": "To eat",
+      "pronunciation": "/ʈʂʰɻ̩/",
+      "exampleSentence": "我们一起吃饭吧。",
+      "exampleTranslation": "Let's eat together.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_14",
+      "front": "喝 (hē)",
+      "back": "To drink",
+      "pronunciation": "/xɤ/",
+      "exampleSentence": "你要喝什么？",
+      "exampleTranslation": "What do you want to drink?",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_15",
+      "front": "住 (zhù)",
+      "back": "To live",
+      "pronunciation": "/ʈʂu/",
+      "exampleSentence": "我住在北京。",
+      "exampleTranslation": "I live in Beijing.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_16",
+      "front": "工作 (gōngzuò)",
+      "back": "To work",
+      "pronunciation": "/kʊŋ tswo/",
+      "exampleSentence": "我在家工作。",
+      "exampleTranslation": "I work at home.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_17",
+      "front": "学习 (xuéxí)",
+      "back": "To study",
+      "pronunciation": "/ɕɥɛ ɕi/",
+      "exampleSentence": "我晚上学习。",
+      "exampleTranslation": "I study at night.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_18",
+      "front": "需要 (xūyào)",
+      "back": "To need",
+      "pronunciation": "/ɕy jaʊ/",
+      "exampleSentence": "我需要帮助。",
+      "exampleTranslation": "I need help.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_19",
+      "front": "明白 (míngbai)",
+      "back": "To understand",
+      "pronunciation": "/miŋ paɪ/",
+      "exampleSentence": "我不明白。",
+      "exampleTranslation": "I don't understand.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_20",
+      "front": "买 (mǎi)",
+      "back": "To buy",
+      "pronunciation": "/maɪ/",
+      "exampleSentence": "我想买礼物。",
+      "exampleTranslation": "I want to buy a gift.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_21",
+      "front": "付钱 (fùqián)",
+      "back": "To pay",
+      "pronunciation": "/fu tɕʰjɛn/",
+      "exampleSentence": "可以刷卡付钱吗？",
+      "exampleTranslation": "Can I pay by card?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_22",
+      "front": "帮助 (bāngzhù)",
+      "back": "To help",
+      "pronunciation": "/paŋ ʈʂu/",
+      "exampleSentence": "你能帮助我吗？",
+      "exampleTranslation": "Can you help me?",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_23",
+      "front": "找 (zhǎo)",
+      "back": "To look for",
+      "pronunciation": "/ʈʂaʊ/",
+      "exampleSentence": "我在找车站。",
+      "exampleTranslation": "I'm looking for the station.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_24",
+      "front": "听 (tīng)",
+      "back": "To listen",
+      "pronunciation": "/tʰiŋ/",
+      "exampleSentence": "我听音乐。",
+      "exampleTranslation": "I listen to music.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_25",
+      "front": "读 (dú)",
+      "back": "To read",
+      "pronunciation": "/tu/",
+      "exampleSentence": "我睡前读书。",
+      "exampleTranslation": "I read before sleeping.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_26",
+      "front": "写 (xiě)",
+      "back": "To write",
+      "pronunciation": "/ɕjɛ/",
+      "exampleSentence": "我在写邮件。",
+      "exampleTranslation": "I'm writing an email.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_27",
+      "front": "等 (děng)",
+      "back": "To wait",
+      "pronunciation": "/tɤŋ/",
+      "exampleSentence": "请在这里等我。",
+      "exampleTranslation": "Please wait for me here.",
+      "category": "Verbs",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "fc_zh_verb_28",
+      "front": "坐 (zuò)",
+      "back": "To sit / take (transport)",
+      "pronunciation": "/tswo/",
+      "exampleSentence": "我坐公共汽车。",
+      "exampleTranslation": "I take the bus.",
+      "category": "Verbs",
+      "tags": [
+        "verbs",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_10",
+      "front": "车站 (chēzhàn)",
+      "back": "Station",
+      "pronunciation": "/ʈʂʰɤ ʈʂan/",
+      "exampleSentence": "车站在哪里？",
+      "exampleTranslation": "Where is the station?",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_11",
+      "front": "机场 (jīchǎng)",
+      "back": "Airport",
+      "pronunciation": "/tɕi ʈʂʰaŋ/",
+      "exampleSentence": "我去机场。",
+      "exampleTranslation": "I'm going to the airport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_12",
+      "front": "酒店 (jiǔdiàn)",
+      "back": "Hotel",
+      "pronunciation": "/tɕjoʊ tjɛn/",
+      "exampleSentence": "酒店很近。",
+      "exampleTranslation": "The hotel is close.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_13",
+      "front": "街道 (jiēdào)",
+      "back": "Street",
+      "pronunciation": "/tɕjɛ taʊ/",
+      "exampleSentence": "我住在这条街。",
+      "exampleTranslation": "I live on this street.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_14",
+      "front": "左边 (zuǒbian)",
+      "back": "Left",
+      "pronunciation": "/tswo pjɛn/",
+      "exampleSentence": "请往左边走。",
+      "exampleTranslation": "Please go left.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_15",
+      "front": "右边 (yòubian)",
+      "back": "Right",
+      "pronunciation": "/joʊ pjɛn/",
+      "exampleSentence": "在右边。",
+      "exampleTranslation": "It's on the right.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_16",
+      "front": "近 (jìn)",
+      "back": "Near",
+      "pronunciation": "/tɕin/",
+      "exampleSentence": "很近。",
+      "exampleTranslation": "It's very near.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_17",
+      "front": "远 (yuǎn)",
+      "back": "Far",
+      "pronunciation": "/ɥɛn/",
+      "exampleSentence": "海边很远。",
+      "exampleTranslation": "The seaside is far.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "directions"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_18",
+      "front": "汽车 (qìchē)",
+      "back": "Car",
+      "pronunciation": "/tɕʰi ʈʂʰɤ/",
+      "exampleSentence": "我开汽车去。",
+      "exampleTranslation": "I go by car.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_19",
+      "front": "火车 (huǒchē)",
+      "back": "Train",
+      "pronunciation": "/xwo ʈʂʰɤ/",
+      "exampleSentence": "火车现在开。",
+      "exampleTranslation": "The train leaves now.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_20",
+      "front": "飞机 (fēijī)",
+      "back": "Airplane",
+      "pronunciation": "/feɪ tɕi/",
+      "exampleSentence": "飞机晚点了。",
+      "exampleTranslation": "The plane is delayed.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "transport"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_21",
+      "front": "行李 (xíngli)",
+      "back": "Luggage",
+      "pronunciation": "/ɕiŋ li/",
+      "exampleSentence": "我的行李在哪里？",
+      "exampleTranslation": "Where is my luggage?",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_trav_22",
+      "front": "护照 (hùzhào)",
+      "back": "Passport",
+      "pronunciation": "/xu ʈʂaʊ/",
+      "exampleSentence": "我需要护照。",
+      "exampleTranslation": "I need my passport.",
+      "category": "Travel",
+      "tags": [
+        "travel",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_1",
+      "front": "好 (hǎo)",
+      "back": "Good",
+      "pronunciation": "/xaʊ/",
+      "exampleSentence": "这是一本好书。",
+      "exampleTranslation": "This is a good book.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_2",
+      "front": "坏 (huài)",
+      "back": "Bad",
+      "pronunciation": "/xwaɪ/",
+      "exampleSentence": "天气很坏。",
+      "exampleTranslation": "The weather is bad.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_3",
+      "front": "大 (dà)",
+      "back": "Big",
+      "pronunciation": "/ta/",
+      "exampleSentence": "房子很大。",
+      "exampleTranslation": "The house is big.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_4",
+      "front": "小 (xiǎo)",
+      "back": "Small",
+      "pronunciation": "/ɕjaʊ/",
+      "exampleSentence": "这是小汽车。",
+      "exampleTranslation": "It's a small car.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_5",
+      "front": "新 (xīn)",
+      "back": "New",
+      "pronunciation": "/ɕin/",
+      "exampleSentence": "我有新手机。",
+      "exampleTranslation": "I have a new phone.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_6",
+      "front": "旧 (jiù)",
+      "back": "Old (things)",
+      "pronunciation": "/tɕjoʊ/",
+      "exampleSentence": "这是旧楼。",
+      "exampleTranslation": "This is an old building.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_7",
+      "front": "贵 (guì)",
+      "back": "Expensive",
+      "pronunciation": "/kweɪ/",
+      "exampleSentence": "这家酒店很贵。",
+      "exampleTranslation": "This hotel is expensive.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_8",
+      "front": "便宜 (piányi)",
+      "back": "Cheap",
+      "pronunciation": "/pʰjɛn i/",
+      "exampleSentence": "很便宜。",
+      "exampleTranslation": "It's very cheap.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "shopping"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_9",
+      "front": "容易 (róngyì)",
+      "back": "Easy",
+      "pronunciation": "/ʐʊŋ i/",
+      "exampleSentence": "考试很容易。",
+      "exampleTranslation": "The exam was easy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_10",
+      "front": "难 (nán)",
+      "back": "Difficult",
+      "pronunciation": "/nan/",
+      "exampleSentence": "很难解释。",
+      "exampleTranslation": "It's hard to explain.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_11",
+      "front": "漂亮 (piàoliang)",
+      "back": "Pretty",
+      "pronunciation": "/pʰjaʊ ljaŋ/",
+      "exampleSentence": "这条裙子很漂亮。",
+      "exampleTranslation": "This dress is very pretty.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_12",
+      "front": "高兴 (gāoxìng)",
+      "back": "Happy",
+      "pronunciation": "/kaʊ ɕiŋ/",
+      "exampleSentence": "我很高兴。",
+      "exampleTranslation": "I am very happy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_13",
+      "front": "累 (lèi)",
+      "back": "Tired",
+      "pronunciation": "/leɪ/",
+      "exampleSentence": "我今天很累。",
+      "exampleTranslation": "I'm very tired today.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives",
+        "emotions"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_14",
+      "front": "忙 (máng)",
+      "back": "Busy",
+      "pronunciation": "/maŋ/",
+      "exampleSentence": "这星期很忙。",
+      "exampleTranslation": "This week is busy.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_15",
+      "front": "快 (kuài)",
+      "back": "Fast",
+      "pronunciation": "/kʰwaɪ/",
+      "exampleSentence": "火车很快。",
+      "exampleTranslation": "The train is fast.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_adj_16",
+      "front": "慢 (màn)",
+      "back": "Slow",
+      "pronunciation": "/man/",
+      "exampleSentence": "服务很慢。",
+      "exampleTranslation": "The service is slow.",
+      "category": "Adjectives",
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "fc_zh_q_1",
+      "front": "什么 (shénme)",
+      "back": "What",
+      "pronunciation": "/ʂən mɤ/",
+      "exampleSentence": "你要什么？",
+      "exampleTranslation": "What do you want?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_q_2",
+      "front": "谁 (shéi)",
+      "back": "Who",
+      "pronunciation": "/ʂeɪ/",
+      "exampleSentence": "他是谁？",
+      "exampleTranslation": "Who is he?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_q_3",
+      "front": "哪里 (nǎlǐ)",
+      "back": "Where",
+      "pronunciation": "/na li/",
+      "exampleSentence": "你住在哪里？",
+      "exampleTranslation": "Where do you live?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_q_4",
+      "front": "什么时候 (shénme shíhou)",
+      "back": "When",
+      "pronunciation": "/ʂən mɤ ʂɻ̩ xoʊ/",
+      "exampleSentence": "你什么时候到？",
+      "exampleTranslation": "When do you arrive?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_q_5",
+      "front": "为什么 (wèishénme)",
+      "back": "Why",
+      "pronunciation": "/weɪ ʂən mɤ/",
+      "exampleSentence": "为什么不来？",
+      "exampleTranslation": "Why aren't you coming?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_q_6",
+      "front": "怎么 (zěnme)",
+      "back": "How",
+      "pronunciation": "/tsən mɤ/",
+      "exampleSentence": "这个怎么说？",
+      "exampleTranslation": "How do you say this?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_q_7",
+      "front": "多少钱 (duōshao qián)",
+      "back": "How much",
+      "pronunciation": "/two ʂaʊ tɕʰjɛn/",
+      "exampleSentence": "这个多少钱？",
+      "exampleTranslation": "How much is this?",
+      "category": "Questions",
+      "tags": [
+        "questions",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_conn_1",
+      "front": "但是 (dànshì)",
+      "back": "But",
+      "pronunciation": "/tan ʂɻ̩/",
+      "exampleSentence": "我想去，但是不能。",
+      "exampleTranslation": "I want to go, but I can't.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_conn_2",
+      "front": "因为 (yīnwèi)",
+      "back": "Because",
+      "pronunciation": "/in weɪ/",
+      "exampleSentence": "因为下雨，我不去。",
+      "exampleTranslation": "Because it's raining, I'm not going.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_conn_3",
+      "front": "也 (yě)",
+      "back": "Also / too",
+      "pronunciation": "/jɛ/",
+      "exampleSentence": "我也想去。",
+      "exampleTranslation": "I want to go too.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "essential"
+      ]
+    },
+    {
+      "id": "fc_zh_conn_4",
+      "front": "虽然 (suīrán)",
+      "back": "Although",
+      "pronunciation": "/sweɪ ʐan/",
+      "exampleSentence": "虽然很晚，我还是出去。",
+      "exampleTranslation": "Although it's late, I'm going out.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "formal"
+      ]
+    },
+    {
+      "id": "fc_zh_conn_5",
+      "front": "所以 (suǒyǐ)",
+      "back": "So / therefore",
+      "pronunciation": "/swo i/",
+      "exampleSentence": "所以我们怎么做？",
+      "exampleTranslation": "So what do we do?",
+      "category": "Connectors",
+      "tags": [
+        "connectors"
+      ]
+    },
+    {
+      "id": "fc_zh_conn_6",
+      "front": "然而 (rán'ér)",
+      "back": "However",
+      "pronunciation": "/ʐan aɚ/",
+      "exampleSentence": "然而，我不同意。",
+      "exampleTranslation": "However, I don't agree.",
+      "category": "Connectors",
+      "tags": [
+        "connectors",
+        "formal"
+      ]
+    },
+    {
+      "id": "fc_zh_phr_3",
+      "front": "对不起 (duìbùqǐ)",
+      "back": "I'm sorry",
+      "pronunciation": "/tweɪ pu tɕʰi/",
+      "exampleSentence": "对不起，我迟到了。",
+      "exampleTranslation": "Sorry, I'm late.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_zh_phr_4",
+      "front": "不好意思 (bù hǎoyìsi)",
+      "back": "Excuse me",
+      "pronunciation": "/pu xaʊ i sɹ̩/",
+      "exampleSentence": "不好意思，请让一下。",
+      "exampleTranslation": "Excuse me, may I get by?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "polite"
+      ]
+    },
+    {
+      "id": "fc_zh_phr_5",
+      "front": "我不明白 (wǒ bù míngbai)",
+      "back": "I don't understand",
+      "pronunciation": "/wo pu miŋ paɪ/",
+      "exampleSentence": "对不起，我不明白。",
+      "exampleTranslation": "Sorry, I don't understand.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_zh_phr_6",
+      "front": "你会说英语吗 (nǐ huì shuō yīngyǔ ma)",
+      "back": "Do you speak English?",
+      "pronunciation": "/ni xweɪ ʂwo iŋ y ma/",
+      "exampleSentence": "请问，你会说英语吗？",
+      "exampleTranslation": "Excuse me, do you speak English?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_zh_phr_7",
+      "front": "洗手间在哪里 (xǐshǒujiān zài nǎlǐ)",
+      "back": "Where is the bathroom?",
+      "pronunciation": "/ɕi ʂoʊ tɕjɛn tsaɪ na li/",
+      "exampleSentence": "请问，洗手间在哪里？",
+      "exampleTranslation": "Excuse me, where is the bathroom?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_zh_phr_8",
+      "front": "请说慢一点 (qǐng shuō màn yīdiǎn)",
+      "back": "Please speak slower",
+      "pronunciation": "/tɕʰiŋ ʂwo man i tjɛn/",
+      "exampleSentence": "请说慢一点。",
+      "exampleTranslation": "Please speak more slowly.",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_zh_phr_9",
+      "front": "你能帮我吗 (nǐ néng bāng wǒ ma)",
+      "back": "Can you help me?",
+      "pronunciation": "/ni nɤŋ paŋ wo ma/",
+      "exampleSentence": "不好意思，你能帮我吗？",
+      "exampleTranslation": "Excuse me, can you help me?",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "survival"
+      ]
+    },
+    {
+      "id": "fc_zh_phr_10",
+      "front": "回头见 (huítóu jiàn)",
+      "back": "See you later",
+      "pronunciation": "/xweɪ tʰoʊ tɕjɛn/",
+      "exampleSentence": "回头见！",
+      "exampleTranslation": "See you later!",
+      "category": "Phrases",
+      "tags": [
+        "essential",
+        "greetings"
+      ]
+    },
+    {
+      "id": "fc_zh_home_1",
+      "front": "房子 (fángzi)",
+      "back": "House",
+      "pronunciation": "/faŋ tsɹ̩/",
+      "exampleSentence": "我的房子很小。",
+      "exampleTranslation": "My house is small.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_2",
+      "front": "门 (mén)",
+      "back": "Door",
+      "pronunciation": "/mən/",
+      "exampleSentence": "请关门。",
+      "exampleTranslation": "Please close the door.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_3",
+      "front": "窗户 (chuānghu)",
+      "back": "Window",
+      "pronunciation": "/ʈʂʰwaŋ xu/",
+      "exampleSentence": "请开窗户。",
+      "exampleTranslation": "Please open the window.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_4",
+      "front": "桌子 (zhuōzi)",
+      "back": "Table",
+      "pronunciation": "/ʈʂwo tsɹ̩/",
+      "exampleSentence": "书在桌子上。",
+      "exampleTranslation": "The book is on the table.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_5",
+      "front": "椅子 (yǐzi)",
+      "back": "Chair",
+      "pronunciation": "/i tsɹ̩/",
+      "exampleSentence": "请坐在椅子上。",
+      "exampleTranslation": "Please sit on the chair.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_6",
+      "front": "床 (chuáng)",
+      "back": "Bed",
+      "pronunciation": "/ʈʂʰwaŋ/",
+      "exampleSentence": "床很舒服。",
+      "exampleTranslation": "The bed is comfortable.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_7",
+      "front": "书 (shū)",
+      "back": "Book",
+      "pronunciation": "/ʂu/",
+      "exampleSentence": "我读一本好书。",
+      "exampleTranslation": "I'm reading a good book.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_8",
+      "front": "手机 (shǒujī)",
+      "back": "Mobile phone",
+      "pronunciation": "/ʂoʊ tɕi/",
+      "exampleSentence": "我的手机坏了。",
+      "exampleTranslation": "My phone is broken.",
+      "category": "Home",
+      "tags": [
+        "home",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_9",
+      "front": "钱 (qián)",
+      "back": "Money",
+      "pronunciation": "/tɕʰjɛn/",
+      "exampleSentence": "我没有钱。",
+      "exampleTranslation": "I don't have money.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_home_10",
+      "front": "工作 (gōngzuò) [名]",
+      "back": "Work / job (noun)",
+      "pronunciation": "/kʊŋ tswo/",
+      "exampleSentence": "我喜欢我的工作。",
+      "exampleTranslation": "I like my job.",
+      "category": "Home",
+      "tags": [
+        "essential",
+        "nouns"
+      ]
+    },
+    {
+      "id": "fc_zh_col_1",
+      "front": "红色 (hóngsè)",
+      "back": "Red",
+      "pronunciation": "/xʊŋ sɤ/",
+      "exampleSentence": "车是红色的。",
+      "exampleTranslation": "The car is red.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_zh_col_2",
+      "front": "蓝色 (lánsè)",
+      "back": "Blue",
+      "pronunciation": "/lan sɤ/",
+      "exampleSentence": "天空是蓝色的。",
+      "exampleTranslation": "The sky is blue.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_zh_col_3",
+      "front": "绿色 (lǜsè)",
+      "back": "Green",
+      "pronunciation": "/ly sɤ/",
+      "exampleSentence": "我喜欢绿色。",
+      "exampleTranslation": "I like green.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_zh_col_4",
+      "front": "黄色 (huángsè)",
+      "back": "Yellow",
+      "pronunciation": "/xwaŋ sɤ/",
+      "exampleSentence": "太阳是黄色的。",
+      "exampleTranslation": "The sun is yellow.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_zh_col_5",
+      "front": "黑色 (hēisè)",
+      "back": "Black",
+      "pronunciation": "/xeɪ sɤ/",
+      "exampleSentence": "我穿黑色大衣。",
+      "exampleTranslation": "I wear a black coat.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
+    },
+    {
+      "id": "fc_zh_col_6",
+      "front": "白色 (báisè)",
+      "back": "White",
+      "pronunciation": "/paɪ sɤ/",
+      "exampleSentence": "墙是白色的。",
+      "exampleTranslation": "The wall is white.",
+      "category": "Colors",
+      "tags": [
+        "colors"
+      ]
     }
   ]
 }

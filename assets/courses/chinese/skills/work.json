@@ -1,7 +1,97 @@
 {
   "id": "work",
   "name": "Work & Profession",
-  "description": "TODO: work vocabulary",
+  "description": "Learn professional titles, careers, job applications, resumes, and interview terminology",
   "level": 19,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_wrk_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Engineer' in Chinese?",
+      "options": [
+        "工程师 (gōngchéngshī)",
+        "律师 (lǜshī)",
+        "医生 (yīshēng)",
+        "老师 (lǎoshī)"
+      ],
+      "correctAnswer": "工程师 (gōngchéngshī)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_wrk_2",
+      "type": "translateThis",
+      "question": "他在一家跨国公司工作",
+      "options": [],
+      "correctAnswer": "He works at a multinational company",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_wrk_3",
+      "type": "fillInBlank",
+      "question": "明天上午我有一个工作 ___。(interview)",
+      "options": [
+        "面试",
+        "开会",
+        "旅游",
+        "看病"
+      ],
+      "correctAnswer": "面试",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_wrk_4",
+      "type": "matchPairs",
+      "question": "Match professions in Chinese",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "律师",
+            "native": "Lawyer / attorney"
+          },
+          {
+            "target": "会计师",
+            "native": "Accountant"
+          },
+          {
+            "target": "经理",
+            "native": "Manager"
+          },
+          {
+            "target": "记者",
+            "native": "Journalist / reporter"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_wrk_5",
+      "type": "speakThis",
+      "question": "请发一份您的个人简历",
+      "options": [],
+      "correctAnswer": "请发一份您的个人简历",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_wrk_6",
+      "type": "multipleChoice",
+      "question": "What is '简历' (jiǎnlì)?",
+      "options": [
+        "Resume / CV",
+        "Contract",
+        "Salary",
+        "Business card"
+      ],
+      "correctAnswer": "Resume / CV",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,7 +1,97 @@
 {
   "id": "comparatives",
   "name": "Comparatives",
-  "description": "TODO: comparatives",
+  "description": "Learn the comparative structure using 比 (bǐ - X 比 Y + Adjective) and comparisons of equality",
   "level": 15,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_comp_1",
+      "type": "multipleChoice",
+      "question": "Which preposition marks comparison in 'A is bigger than B' (A 比 B 大)?",
+      "options": [
+        "比 (bǐ)",
+        "跟 (gēn)",
+        "和 (hé)",
+        "像 (xiàng)"
+      ],
+      "correctAnswer": "比 (bǐ)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_comp_2",
+      "type": "translateThis",
+      "question": "哥哥比弟弟高",
+      "options": [],
+      "correctAnswer": "The older brother is taller than the younger brother",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_comp_3",
+      "type": "fillInBlank",
+      "question": "今天比昨天 ___。(Today is colder than yesterday.)",
+      "options": [
+        "冷",
+        "是",
+        "有",
+        "在"
+      ],
+      "correctAnswer": "冷",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_comp_4",
+      "type": "matchPairs",
+      "question": "Match comparative patterns",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "A 比 B 大",
+            "native": "A is bigger than B"
+          },
+          {
+            "target": "A 没有 B 大",
+            "native": "A is not as big as B"
+          },
+          {
+            "target": "A 和 B 一样",
+            "native": "A and B are the same"
+          },
+          {
+            "target": "更便宜",
+            "native": "Even cheaper"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_comp_5",
+      "type": "speakThis",
+      "question": "高铁比汽车快得多",
+      "options": [],
+      "correctAnswer": "高铁比汽车快得多",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_comp_6",
+      "type": "multipleChoice",
+      "question": "Which adverb means 'even more' before an adjective (e.g. even faster)?",
+      "options": [
+        "更 (gèng)",
+        "最 (zuì)",
+        "太 (tài)",
+        "很 (hěn)"
+      ],
+      "correctAnswer": "更 (gèng)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

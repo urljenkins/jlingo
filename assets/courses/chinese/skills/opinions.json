@@ -1,7 +1,97 @@
 {
   "id": "opinions",
   "name": "Giving Opinions",
-  "description": "TODO: opinion phrases",
+  "description": "Learn to express personal perspectives, agreement, disagreement, and nuances of judgement",
   "level": 21,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_opn_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'In my opinion...' in Chinese?",
+      "options": [
+        "依我看 / 在我看来",
+        "随便你",
+        "没所谓",
+        "不管怎样"
+      ],
+      "correctAnswer": "依我看 / 在我看来",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_opn_2",
+      "type": "translateThis",
+      "question": "我认为这个方案非常合理",
+      "options": [],
+      "correctAnswer": "I think this plan is very reasonable",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_opn_3",
+      "type": "fillInBlank",
+      "question": "我完全 ___ 你的看法。(agree with)",
+      "options": [
+        "同意",
+        "反对",
+        "怀疑",
+        "忘记"
+      ],
+      "correctAnswer": "同意",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_opn_4",
+      "type": "matchPairs",
+      "question": "Match opinion-giving expressions",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "我认为",
+            "native": "I think / believe"
+          },
+          {
+            "target": "我觉得",
+            "native": "I feel that"
+          },
+          {
+            "target": "我赞成",
+            "native": "I approve / support"
+          },
+          {
+            "target": "我反对",
+            "native": "I oppose / disagree"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_opn_5",
+      "type": "speakThis",
+      "question": "各人有各人的看法",
+      "options": [],
+      "correctAnswer": "各人有各人的看法",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_opn_6",
+      "type": "multipleChoice",
+      "question": "What phrase introduces a contrast ('on the other hand')?",
+      "options": [
+        "另一方面 (lìng yì fāngmiàn)",
+        "总而言之",
+        "首先",
+        "比如说"
+      ],
+      "correctAnswer": "另一方面 (lìng yì fāngmiàn)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

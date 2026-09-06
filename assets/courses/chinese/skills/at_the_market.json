@@ -1,7 +1,97 @@
 {
   "id": "at_the_market",
   "name": "At the Market",
-  "description": "TODO: market vocabulary",
+  "description": "Learn market vocabulary, fresh produce, weights (斤 jīn), and bargaining phrases",
   "level": 10,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_mkt_1",
+      "type": "multipleChoice",
+      "question": "In Chinese markets, what is the traditional standard unit of weight (1 斤 = 500 grams)?",
+      "options": [
+        "斤 (jīn)",
+        "公斤 (gōngjīn)",
+        "克 (kè)",
+        "两 (liǎng)"
+      ],
+      "correctAnswer": "斤 (jīn)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_mkt_2",
+      "type": "translateThis",
+      "question": "西红柿一斤多少钱？",
+      "options": [],
+      "correctAnswer": "How much is half a kilo of tomatoes?",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_mkt_3",
+      "type": "fillInBlank",
+      "question": "这些水果很 ___。(These fruits are very fresh.)",
+      "options": [
+        "新鲜",
+        "高兴",
+        "客气",
+        "认真"
+      ],
+      "correctAnswer": "新鲜",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_mkt_4",
+      "type": "matchPairs",
+      "question": "Match market vegetables and fruits",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "蔬菜",
+            "native": "Vegetables"
+          },
+          {
+            "target": "土豆",
+            "native": "Potato"
+          },
+          {
+            "target": "西瓜",
+            "native": "Watermelon"
+          },
+          {
+            "target": "香蕉",
+            "native": "Banana"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_mkt_5",
+      "type": "speakThis",
+      "question": "给我来两斤苹果",
+      "options": [],
+      "correctAnswer": "给我来两斤苹果",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_mkt_6",
+      "type": "multipleChoice",
+      "question": "What is '菜市场' (càishìchǎng)?",
+      "options": [
+        "Farmer's market / food market",
+        "Department store",
+        "Bookstore",
+        "Pharmacy"
+      ],
+      "correctAnswer": "Farmer's market / food market",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -1,8 +1,97 @@
 {
   "id": "present_continuous",
   "name": "Present Continuous",
-  "description": "Learn to express ongoing actions (estar + gerund)",
+  "description": "Learn Dutch continuous structures using 'zijn aan het + infinitive' and positional verbs",
   "level": 12,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_pc_1",
+      "type": "multipleChoice",
+      "question": "How is the present continuous ('to be doing something') typically formed in Dutch?",
+      "options": [
+        "zijn + aan het + infinitive (ik ben aan het lezen)",
+        "zijn + gerundium (-ing)",
+        "hebben + voltooid deelwoord",
+        "gaan + infinitive"
+      ],
+      "correctAnswer": "zijn + aan het + infinitive (ik ben aan het lezen)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pc_2",
+      "type": "translateThis",
+      "question": "Zij zijn aan het koken",
+      "options": [],
+      "correctAnswer": "They are cooking",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pc_3",
+      "type": "fillInBlank",
+      "question": "Ik ben een brief aan het ___ (writing).",
+      "options": [
+        "schrijven",
+        "geschreven",
+        "schrijft",
+        "schrijf"
+      ],
+      "correctAnswer": "schrijven",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pc_4",
+      "type": "matchPairs",
+      "question": "Match continuous structures",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "aan het werk",
+            "native": "at work / working"
+          },
+          {
+            "target": "aan het eten",
+            "native": "eating"
+          },
+          {
+            "target": "aan het fietsen",
+            "native": "cycling"
+          },
+          {
+            "target": "aan het praten",
+            "native": "talking"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pc_5",
+      "type": "speakThis",
+      "question": "Wat ben je nu aan het doen?",
+      "options": [],
+      "correctAnswer": "Wat ben je nu aan het doen?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pc_6",
+      "type": "multipleChoice",
+      "question": "Which positional verb can also convey continuous aspect (e.g. 'Hij zit een boek te lezen')?",
+      "options": [
+        "zitten (to sit)",
+        "hebben",
+        "mogen",
+        "hoeven"
+      ],
+      "correctAnswer": "zitten (to sit)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

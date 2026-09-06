@@ -1,8 +1,97 @@
 {
   "id": "sports",
   "name": "Sports",
-  "description": "Learn vocabulary for sports and exercise",
+  "description": "Learn sports vocabulary, Dutch speed skating (schaatsen), football, field hockey, and fitness",
   "level": 18,
-  "section": "advanced",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_spt_1",
+      "type": "multipleChoice",
+      "question": "Which winter sport is deeply rooted in Dutch national sporting culture?",
+      "options": [
+        "Schaatsen (ice skating)",
+        "Skiën",
+        "Snowboarden",
+        "IJshockey"
+      ],
+      "correctAnswer": "Schaatsen (ice skating)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_spt_2",
+      "type": "translateThis",
+      "question": "Voetbal is erg populair in Nederland",
+      "options": [],
+      "correctAnswer": "Football is very popular in the Netherlands",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_spt_3",
+      "type": "fillInBlank",
+      "question": "Elke zaterdag speel ik ___ bij de club. (tennis)",
+      "options": [
+        "tennis",
+        "schaatsen",
+        "zwemmen",
+        "rennen"
+      ],
+      "correctAnswer": "tennis",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_spt_4",
+      "type": "matchPairs",
+      "question": "Match sports in Dutch",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Voetbal",
+            "native": "Football / soccer"
+          },
+          {
+            "target": "Hockey",
+            "native": "Field hockey"
+          },
+          {
+            "target": "Zwemmen",
+            "native": "Swimming"
+          },
+          {
+            "target": "Wielrennen",
+            "native": "Road cycling"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_spt_5",
+      "type": "speakThis",
+      "question": "Wie heeft de wedstrijd gewonnen?",
+      "options": [],
+      "correctAnswer": "Wie heeft de wedstrijd gewonnen?",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_spt_6",
+      "type": "multipleChoice",
+      "question": "What does 'de wedstrijd' mean?",
+      "options": [
+        "The match / game / contest",
+        "The ball",
+        "The athlete",
+        "The stadium"
+      ],
+      "correctAnswer": "The match / game / contest",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

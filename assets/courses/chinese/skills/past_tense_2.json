@@ -1,7 +1,97 @@
 {
   "id": "past_tense_2",
   "name": "Past Tense: Imperfect",
-  "description": "TODO: past tense exercises",
+  "description": "Express past experiences and habits using experiential particle 过 (guo) and 以前 (yǐqián)",
   "level": 13,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_pt2_1",
+      "type": "multipleChoice",
+      "question": "Which aspect particle denotes having experienced an action in the past ('have ever done')?",
+      "options": [
+        "过 (guo)",
+        "了 (le)",
+        "着 (zhe)",
+        "在 (zài)"
+      ],
+      "correctAnswer": "过 (guo)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt2_2",
+      "type": "translateThis",
+      "question": "我去过北京两次",
+      "options": [],
+      "correctAnswer": "I have been to Beijing twice",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt2_3",
+      "type": "fillInBlank",
+      "question": "你吃 ___ 北京烤鸭吗？(Have you ever eaten Peking duck?)",
+      "options": [
+        "过",
+        "了",
+        "在",
+        "着"
+      ],
+      "correctAnswer": "过",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt2_4",
+      "type": "matchPairs",
+      "question": "Match past experiential phrases",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "去过",
+            "native": "Have been to"
+          },
+          {
+            "target": "看过",
+            "native": "Have seen / read"
+          },
+          {
+            "target": "没吃过",
+            "native": "Have never eaten"
+          },
+          {
+            "target": "听说过",
+            "native": "Have heard of"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pt2_5",
+      "type": "speakThis",
+      "question": "我以前常常去那家书店",
+      "options": [],
+      "correctAnswer": "我以前常常去那家书店",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt2_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'formerly / in the past' in Chinese?",
+      "options": [
+        "以前 (yǐqián)",
+        "以后 (yǐhòu)",
+        "现在 (xiànzài)",
+        "将来 (jiānglái)"
+      ],
+      "correctAnswer": "以前 (yǐqián)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

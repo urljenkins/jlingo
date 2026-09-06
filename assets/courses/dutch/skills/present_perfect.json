@@ -1,8 +1,97 @@
 {
   "id": "present_perfect",
   "name": "Present Perfect",
-  "description": "Learn to express past actions with present relevance",
+  "description": "Learn the voltooid tegenwoordige tijd (v.t.t.) using hebben/zijn + voltooid deelwoord (ge-...-d/t)",
   "level": 13,
-  "section": "intermediate",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_pp_1",
+      "type": "multipleChoice",
+      "question": "Which auxiliary verb is used for verbs of motion and state change in the perfect tense in Dutch?",
+      "options": [
+        "zijn (bv. ik ben gegaan)",
+        "hebben",
+        "worden",
+        "zullen"
+      ],
+      "correctAnswer": "zijn (bv. ik ben gegaan)",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pp_2",
+      "type": "translateThis",
+      "question": "Ik heb mijn sleutels gevonden",
+      "options": [],
+      "correctAnswer": "I have found my keys",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pp_3",
+      "type": "fillInBlank",
+      "question": "Wij hebben heerlijk ___ (gegeten - eaten).",
+      "options": [
+        "gegeten",
+        "eten",
+        "at",
+        "aten"
+      ],
+      "correctAnswer": "gegeten",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pp_4",
+      "type": "matchPairs",
+      "question": "Match infinitives and past participles",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "maken -> gemaakt",
+            "native": "make -> made"
+          },
+          {
+            "target": "werken -> gewerkt",
+            "native": "work -> worked"
+          },
+          {
+            "target": "gaan -> gegaan",
+            "native": "go -> gone"
+          },
+          {
+            "target": "zien -> gezien",
+            "native": "see -> seen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pp_5",
+      "type": "speakThis",
+      "question": "Ik ben naar Amsterdam geweest",
+      "options": [],
+      "correctAnswer": "Ik ben naar Amsterdam geweest",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pp_6",
+      "type": "multipleChoice",
+      "question": "Where does the past participle (voltooid deelwoord) typically go in a Dutch main clause?",
+      "options": [
+        "At the very end of the sentence",
+        "Directly after the subject",
+        "At the start",
+        "Before the object"
+      ],
+      "correctAnswer": "At the very end of the sentence",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

@@ -8,7 +8,12 @@
             "id": "ex_dm_1",
             "type": "multipleChoice",
             "question": "How do you say 'Monday' in Spanish?",
-            "options": ["Lunes", "Martes", "Domingo", "Viernes"],
+            "options": [
+                "Lunes",
+                "Martes",
+                "Domingo",
+                "Viernes"
+            ],
             "correctAnswer": "Lunes"
         },
         {
@@ -19,13 +24,34 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "Lunes", "native": "Monday"},
-                    {"target": "Martes", "native": "Tuesday"},
-                    {"target": "Miércoles", "native": "Wednesday"},
-                    {"target": "Jueves", "native": "Thursday"},
-                    {"target": "Viernes", "native": "Friday"},
-                    {"target": "Sábado", "native": "Saturday"},
-                    {"target": "Domingo", "native": "Sunday"}
+                    {
+                        "target": "Lunes",
+                        "native": "Monday"
+                    },
+                    {
+                        "target": "Martes",
+                        "native": "Tuesday"
+                    },
+                    {
+                        "target": "Miércoles",
+                        "native": "Wednesday"
+                    },
+                    {
+                        "target": "Jueves",
+                        "native": "Thursday"
+                    },
+                    {
+                        "target": "Viernes",
+                        "native": "Friday"
+                    },
+                    {
+                        "target": "Sábado",
+                        "native": "Saturday"
+                    },
+                    {
+                        "target": "Domingo",
+                        "native": "Sunday"
+                    }
                 ]
             }
         },
@@ -44,12 +70,30 @@
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
-                    {"target": "Enero", "native": "January"},
-                    {"target": "Febrero", "native": "February"},
-                    {"target": "Marzo", "native": "March"},
-                    {"target": "Abril", "native": "April"},
-                    {"target": "Mayo", "native": "May"},
-                    {"target": "Junio", "native": "June"}
+                    {
+                        "target": "Enero",
+                        "native": "January"
+                    },
+                    {
+                        "target": "Febrero",
+                        "native": "February"
+                    },
+                    {
+                        "target": "Marzo",
+                        "native": "March"
+                    },
+                    {
+                        "target": "Abril",
+                        "native": "April"
+                    },
+                    {
+                        "target": "Mayo",
+                        "native": "May"
+                    },
+                    {
+                        "target": "Junio",
+                        "native": "June"
+                    }
                 ]
             }
         },
@@ -57,8 +101,138 @@
             "id": "ex_dm_5",
             "type": "fillInBlank",
             "question": "Hoy es ___ 15 de marzo",
-            "options": ["el", "la", "un", "una"],
+            "options": [
+                "el",
+                "la",
+                "un",
+                "una"
+            ],
             "correctAnswer": "el"
+        },
+        {
+            "type": "translateThis",
+            "question": "Sábado",
+            "options": [],
+            "correctAnswer": "Saturday",
+            "id": "ex_dm_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Domingo",
+            "options": [],
+            "correctAnswer": "Sunday",
+            "id": "ex_dm_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which day comes after 'Miércoles'?",
+            "options": [
+                "Jueves",
+                "Viernes",
+                "Martes",
+                "Sábado"
+            ],
+            "correctAnswer": "Jueves",
+            "id": "ex_dm_8"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Hoy es ___ (Friday)",
+            "options": [
+                "viernes",
+                "jueves",
+                "sábado",
+                "lunes"
+            ],
+            "correctAnswer": "viernes",
+            "id": "ex_dm_9"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match remaining months",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Julio",
+                        "native": "July"
+                    },
+                    {
+                        "target": "Agosto",
+                        "native": "August"
+                    },
+                    {
+                        "target": "Septiembre",
+                        "native": "September"
+                    },
+                    {
+                        "target": "Octubre",
+                        "native": "October"
+                    },
+                    {
+                        "target": "Noviembre",
+                        "native": "November"
+                    },
+                    {
+                        "target": "Diciembre",
+                        "native": "December"
+                    }
+                ]
+            },
+            "id": "ex_dm_10"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El fin de semana",
+            "options": [],
+            "correctAnswer": "El fin de semana",
+            "id": "ex_dm_11"
+        },
+        {
+            "type": "speakThis",
+            "question": "Mi cumpleaños es en diciembre",
+            "options": [],
+            "correctAnswer": "Mi cumpleaños es en diciembre",
+            "id": "ex_dm_12"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'El fin de semana' mean?",
+            "options": [
+                "The weekend",
+                "The weekday",
+                "The month",
+                "The holiday"
+            ],
+            "correctAnswer": "The weekend",
+            "id": "ex_dm_13"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los días de la semana",
+            "options": [],
+            "correctAnswer": "The days of the week",
+            "id": "ex_dm_14"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Diciembre es el ___ mes del año (twelfth)",
+            "options": [
+                "doceavo",
+                "décimo",
+                "onceavo",
+                "noveno"
+            ],
+            "correctAnswer": "doceavo",
+            "id": "ex_dm_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "Nací en el mes de julio",
+            "options": [],
+            "correctAnswer": "I was born in the month of July",
+            "id": "ex_dm_16"
         }
     ]
 }

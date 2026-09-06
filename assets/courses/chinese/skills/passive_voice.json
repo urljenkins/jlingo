@@ -1,7 +1,97 @@
 {
   "id": "passive_voice",
   "name": "Passive Voice",
-  "description": "TODO: passive voice (adapt for Chinese structures)",
+  "description": "Learn the Chinese passive marker 被 (bèi - X 被 Y + verb) and indirect passives",
   "level": 23,
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_zh_pas_1",
+      "type": "multipleChoice",
+      "question": "What is the primary passive voice preposition in Chinese?",
+      "options": [
+        "被 (bèi)",
+        "把 (bǎ)",
+        "给 (gěi)",
+        "让 (ràng)"
+      ],
+      "correctAnswer": "被 (bèi)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pas_2",
+      "type": "translateThis",
+      "question": "自行车被小偷偷走了",
+      "options": [],
+      "correctAnswer": "The bicycle was stolen by a thief",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pas_3",
+      "type": "fillInBlank",
+      "question": "他的手机 ___ 摔坏了。(was dropped and broken)",
+      "options": [
+        "被",
+        "把",
+        "是",
+        "在"
+      ],
+      "correctAnswer": "被",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pas_4",
+      "type": "matchPairs",
+      "question": "Match passive markers and usages",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "被",
+            "native": "By (standard passive marker)"
+          },
+          {
+            "target": "让",
+            "native": "By (colloquial passive marker)"
+          },
+          {
+            "target": "叫",
+            "native": "By (spoken passive marker)"
+          },
+          {
+            "target": "受人尊敬",
+            "native": "To be respected by people"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pas_5",
+      "type": "speakThis",
+      "question": "这个问题已经被解决了",
+      "options": [],
+      "correctAnswer": "这个问题已经被解决了",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pas_6",
+      "type": "multipleChoice",
+      "question": "In traditional Chinese usage, did '被' sentences predominantly carry an adverse or neutral/positive tone?",
+      "options": [
+        "Historically adverse/unfortunate events, now also neutral",
+        "Exclusively positive achievements",
+        "Only for cooking",
+        "Never used with people"
+      ],
+      "correctAnswer": "Historically adverse/unfortunate events, now also neutral",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }

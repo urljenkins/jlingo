@@ -1,8 +1,97 @@
 {
   "id": "family_1",
   "name": "Family",
-  "description": "Learn words for family members",
+  "description": "Learn words for family members and relatives in Dutch",
   "level": 2,
-  "section": "foundational",
-  "exercises": []
+  "exercises": [
+    {
+      "id": "ex_nl_fam_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'Mother' in Dutch?",
+      "options": [
+        "Moeder",
+        "Vader",
+        "Broer",
+        "Zus"
+      ],
+      "correctAnswer": "Moeder",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_fam_2",
+      "type": "translateThis",
+      "question": "Mijn vader",
+      "options": [],
+      "correctAnswer": "My father",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_fam_3",
+      "type": "fillInBlank",
+      "question": "Mijn ___ heet Anna. (My sister)",
+      "options": [
+        "zus",
+        "broer",
+        "zoon",
+        "opa"
+      ],
+      "correctAnswer": "zus",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_fam_4",
+      "type": "matchPairs",
+      "question": "Match Dutch family members",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Zoon",
+            "native": "Son"
+          },
+          {
+            "target": "Dochter",
+            "native": "Daughter"
+          },
+          {
+            "target": "Opa",
+            "native": "Grandfather"
+          },
+          {
+            "target": "Oma",
+            "native": "Grandmother"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_fam_5",
+      "type": "speakThis",
+      "question": "Ik hou van mijn familie",
+      "options": [],
+      "correctAnswer": "Ik hou van mijn familie",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_fam_6",
+      "type": "multipleChoice",
+      "question": "What does 'Ouders' mean?",
+      "options": [
+        "Parents",
+        "Grandparents",
+        "Children",
+        "Siblings"
+      ],
+      "correctAnswer": "Parents",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    }
+  ]
 }
