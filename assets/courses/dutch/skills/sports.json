@@ -1,6 +1,7 @@
 {
   "id": "sports",
   "name": "Sports",
+  "description": "Learn vocabulary for sports and exercise",
   "level": 18,
   "section": "advanced",
   "exercises": []

@@ -1,6 +1,7 @@
 {
   "id": "family_1",
   "name": "Family",
+  "description": "Learn words for family members",
   "level": 2,
   "section": "foundational",
   "exercises": []

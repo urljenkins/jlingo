@@ -1,6 +1,7 @@
 {
   "id": "passive_voice",
   "name": "Passive Voice",
+  "description": "Learn to form and use passive constructions",
   "level": 23,
   "section": "advanced",
   "exercises": []

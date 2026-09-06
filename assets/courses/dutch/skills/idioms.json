@@ -1,6 +1,7 @@
 {
   "id": "idioms",
   "name": "Idioms",
+  "description": "Learn common Dutch idiomatic expressions",
   "level": 24,
   "section": "advanced",
   "exercises": []

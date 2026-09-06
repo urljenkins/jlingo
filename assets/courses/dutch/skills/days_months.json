@@ -1,6 +1,7 @@
 {
   "id": "days_months",
   "name": "Days & Months",
+  "description": "Learn days of the week and months of the year",
   "level": 4,
   "section": "foundational",
   "exercises": []

@@ -1,6 +1,7 @@
 {
   "id": "ordering_food",
   "name": "Ordering Food",
+  "description": "Learn to order food and express dietary needs",
   "level": 11,
   "section": "intermediate",
   "exercises": []

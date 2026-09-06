@@ -120,9 +120,15 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
     });
 
     if (_hasNativeAudio) {
-      await _audioPlayer.play(AssetSource(widget.exercise.audioPath!));
+      try {
+        await _audioPlayer.play(AssetSource(widget.exercise.audioPath!));
+      } catch (e) {
+        // Asset missing or unplayable - fall back to line-by-line TTS.
+        debugPrint('Dialogue audio failed for ${widget.exercise.id}: $e');
+        await _playCurrentLine();
+      }
     } else {
-      _playCurrentLine();
+      await _playCurrentLine();
     }
   }
 

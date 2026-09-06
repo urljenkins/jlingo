@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../providers/course_provider.dart';
 import '../providers/vocabulary_provider.dart';
 import '../models/picture_dictionary.dart';
 
@@ -12,6 +13,11 @@ class PictureDictionaryScreen extends StatefulWidget {
 }
 
 class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
+  /// The active course id. Per-course state (reviews, saved words) must be
+  /// keyed to it, never to a placeholder, or writes land under a different
+  /// key than reads.
+  String? get _courseId => context.read<CourseProvider>().currentManifest?.id;
+
   final TextEditingController _searchController = TextEditingController();
   bool _isSearching = false;
 
@@ -20,8 +26,10 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final provider = context.read<VocabularyProvider>();
+      final courseId = context.read<CourseProvider>().currentManifest?.id;
+      if (courseId == null) return;
       if (provider.pictureDictionary == null) {
-        provider.loadVocabularyData('default_course');
+        provider.loadVocabularyData(courseId);
       }
     });
   }
@@ -39,7 +47,13 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
       body: Consumer<VocabularyProvider>(
         builder: (context, provider, _) {
           if (provider.pictureDictionary == null) {
-            return const Center(child: CircularProgressIndicator());
+            if (!provider.isLoaded) {
+              return const Center(child: CircularProgressIndicator());
+            }
+            return const _VocabularyEmptyState(
+              icon: Icons.photo_library_outlined,
+              message: 'No picture dictionary for this language yet.',
+            );
           }
 
           // If searching, show search results
@@ -93,7 +107,9 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                 } else {
                   provider.selectTopic('');
                   // Reset currentTopic by reloading
-                  provider.loadVocabularyData('default_course');
+                  if (_courseId != null) {
+                    provider.loadVocabularyData(_courseId!);
+                  }
                 }
               },
             );
@@ -460,9 +476,10 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                   size: 28,
                 ),
                 onPressed: () {
-                  if (!isLearned) {
+                  final id = _courseId;
+                  if (!isLearned && id != null) {
                     provider.markWordAsLearned(
-                      'default_course',
+                      id,
                       topicId,
                       entry.id,
                     );
@@ -597,11 +614,14 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
                       const SizedBox(width: 12),
                       ElevatedButton.icon(
                         onPressed: () {
-                          provider.markWordAsLearned(
-                            'default_course',
-                            topicId,
-                            entry.id,
-                          );
+                          final id = _courseId;
+                          if (id != null) {
+                            provider.markWordAsLearned(
+                              id,
+                              topicId,
+                              entry.id,
+                            );
+                          }
                           Navigator.pop(context);
                         },
                         icon: const Icon(Icons.check),
@@ -730,5 +750,33 @@ class _PictureDictionaryScreenState extends State<PictureDictionaryScreen> {
       default:
         return const Color(0xFF00FF85);
     }
+  }
+}
+
+class _VocabularyEmptyState extends StatelessWidget {
+  final IconData icon;
+  final String message;
+
+  const _VocabularyEmptyState({required this.icon, required this.message});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 48, color: Colors.white38),
+            const SizedBox(height: 16),
+            Text(
+              message,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 16, color: Colors.white60),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -1,0 +1,85 @@
+{
+  "id": "basics_2",
+  "name": "Basics 2",
+  "description": "Learn basic phrases and common words",
+  "level": 2,
+  "exercises": [
+    {
+      "id": "ex_9",
+      "type": "translateThis",
+      "question": "Como está?",
+      "options": [],
+      "correctAnswer": "How are you?"
+    },
+    {
+      "id": "ex_10",
+      "type": "multipleChoice",
+      "question": "What does 'Eu' mean?",
+      "options": [
+        "I",
+        "You",
+        "He",
+        "She"
+      ],
+      "correctAnswer": "I"
+    },
+    {
+      "id": "ex_11",
+      "type": "fillInBlank",
+      "question": "Eu ___ Maria",
+      "options": [
+        "sou",
+        "chamo",
+        "tenho",
+        "estou"
+      ],
+      "correctAnswer": "sou"
+    },
+    {
+      "id": "ex_12",
+      "type": "translateThis",
+      "question": "Muito prazer",
+      "options": [],
+      "correctAnswer": "Nice to meet you"
+    },
+    {
+      "id": "ex_13",
+      "type": "multipleChoice",
+      "question": "How do you say 'I am' in Portuguese?",
+      "options": [
+        "Eu sou",
+        "Tu és",
+        "Ele é",
+        "Nós somos"
+      ],
+      "correctAnswer": "Eu sou"
+    },
+    {
+      "id": "ex_14",
+      "type": "matchPairs",
+      "question": "Match the pronouns",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Eu",
+            "native": "I"
+          },
+          {
+            "target": "Tu",
+            "native": "You"
+          },
+          {
+            "target": "Ele",
+            "native": "He"
+          },
+          {
+            "target": "Ela",
+            "native": "She"
+          }
+        ]
+      }
+    }
+  ]
+}

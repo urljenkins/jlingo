@@ -1,6 +1,7 @@
 {
   "id": "restaurant",
   "name": "At the Restaurant",
+  "description": "Learn vocabulary for dining out",
   "level": 11,
   "section": "intermediate",
   "exercises": []

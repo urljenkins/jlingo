@@ -1,8 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/onboarding_provider.dart';
 import '../../providers/course_provider.dart';
-import '../../providers/progress_provider.dart';
+import '../../services/course_bootstrap.dart';
 import '../../models/user_profile.dart';
 import '../../widgets/responsive/responsive_layout.dart';
 import '../../widgets/responsive/desktop_scaffold.dart';
@@ -75,8 +77,8 @@ class OnboardingCompleteScreen extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Theme.of(context).colorScheme.primary.withOpacity(0.2),
-            Theme.of(context).colorScheme.secondary.withOpacity(0.2),
+            Theme.of(context).colorScheme.primary.withValues(alpha: 0.2),
+            Theme.of(context).colorScheme.secondary.withValues(alpha: 0.2),
           ],
         ),
         shape: BoxShape.circle,
@@ -104,7 +106,7 @@ class OnboardingCompleteScreen extends StatelessWidget {
         color: const Color(0xFF1A1A1A),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
+          color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3),
         ),
       ),
       child: Column(
@@ -132,8 +134,11 @@ class OnboardingCompleteScreen extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Theme.of(context).colorScheme.primary.withOpacity(0.3),
-                  Theme.of(context).colorScheme.secondary.withOpacity(0.3),
+                  Theme.of(context).colorScheme.primary.withValues(alpha: 0.3),
+                  Theme.of(context)
+                      .colorScheme
+                      .secondary
+                      .withValues(alpha: 0.3),
                 ],
               ),
               borderRadius: BorderRadius.circular(24),
@@ -220,8 +225,10 @@ class OnboardingCompleteScreen extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
-                  color:
-                      Theme.of(context).colorScheme.primary.withOpacity(0.15),
+                  color: Theme.of(context)
+                      .colorScheme
+                      .primary
+                      .withValues(alpha: 0.15),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Row(
@@ -395,8 +402,14 @@ class OnboardingCompleteScreen extends StatelessWidget {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                    Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                    Theme.of(context)
+                        .colorScheme
+                        .primary
+                        .withValues(alpha: 0.1),
+                    Theme.of(context)
+                        .colorScheme
+                        .secondary
+                        .withValues(alpha: 0.1),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(12),
@@ -536,26 +549,28 @@ class OnboardingCompleteScreen extends StatelessWidget {
     BuildContext context,
     OnboardingProvider provider,
   ) async {
+    // Resolve providers before any async gap.
+    final courseProvider = context.read<CourseProvider>();
+
     // Complete onboarding
     await provider.completeOnboarding();
 
-    // Load progress for the selected course
-    final courseProvider = context.read<CourseProvider>();
-    final progressProvider = context.read<ProgressProvider>();
-
-    if (courseProvider.currentManifest != null) {
-      await progressProvider.loadProgress(courseProvider.currentManifest!.id);
+    // Load the selected course's data so the home screen opens populated.
+    final manifest = courseProvider.currentManifest;
+    if (manifest != null) {
+      if (!context.mounted) return;
+      await CourseBootstrap.loadCourseData(context, manifest.id);
     }
 
     if (!context.mounted) return;
 
     // Navigate to home screen
-    Navigator.of(context).pushAndRemoveUntil(
+    unawaited(Navigator.of(context).pushAndRemoveUntil(
       PageRouteBuilder<void>(
         pageBuilder: (context, _, __) => const HomeScreen(),
         transitionDuration: Duration.zero,
       ),
       (route) => false,
-    );
+    ));
   }
 }

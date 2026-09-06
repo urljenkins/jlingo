@@ -474,7 +474,7 @@ class SkillTreeNode extends StatelessWidget {
 /// Full skill tree visualization
 class SkillTreeView extends StatelessWidget {
   final List<ProgressionPath> paths;
-  final Function(String skillId)? onSkillTap;
+  final void Function(String skillId)? onSkillTap;
   final String? selectedSkillId;
 
   const SkillTreeView({

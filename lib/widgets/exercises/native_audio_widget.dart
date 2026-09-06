@@ -88,7 +88,15 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
 
     if (_hasNativeAudio) {
       // Play pre-recorded native speaker audio
-      await _audioPlayer.play(AssetSource(widget.exercise.audioPath!));
+      try {
+        await _audioPlayer.play(AssetSource(widget.exercise.audioPath!));
+      } catch (e) {
+        // Asset missing or unplayable - fall back to TTS so the exercise
+        // does not stay stuck in the playing state.
+        debugPrint('Native audio failed for ${widget.exercise.id}: $e');
+        await _tts.speak(widget.exercise.question);
+        if (mounted) setState(() => _isPlaying = false);
+      }
     } else {
       // Fallback to TTS
       await _tts.speak(widget.exercise.question);

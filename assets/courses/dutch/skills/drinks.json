@@ -1,6 +1,7 @@
 {
   "id": "drinks",
   "name": "Drinks",
+  "description": "Learn vocabulary for beverages",
   "level": 5,
   "section": "foundational",
   "exercises": []

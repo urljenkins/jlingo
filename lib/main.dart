@@ -7,6 +7,9 @@ import 'providers/course_provider.dart';
 import 'providers/flashcard_provider.dart';
 import 'providers/vocabulary_provider.dart';
 import 'providers/gamification_provider.dart';
+import 'providers/book_provider.dart';
+import 'providers/onboarding_provider.dart';
+import 'providers/settings_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,32 +30,7 @@ class LinguaSprintApp extends StatefulWidget {
   State<LinguaSprintApp> createState() => _LinguaSprintAppState();
 }
 
-class _LinguaSprintAppState extends State<LinguaSprintApp>
-    with WidgetsBindingObserver {
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addObserver(this);
-  }
-
-  @override
-  void dispose() {
-    WidgetsBinding.instance.removeObserver(this);
-    super.dispose();
-  }
-
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    super.didChangeAppLifecycleState(state);
-    if (state == AppLifecycleState.paused ||
-        state == AppLifecycleState.inactive) {
-      // Force rebuild or keep alive if needed.
-      // In Flutter desktop, simply having the observer can prevent some sleep issues,
-      // but we explicitly call setState to ensure the UI stays 'warm'.
-      setState(() {});
-    }
-  }
-
+class _LinguaSprintAppState extends State<LinguaSprintApp> {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -62,6 +40,9 @@ class _LinguaSprintAppState extends State<LinguaSprintApp>
         ChangeNotifierProvider(create: (_) => FlashcardProvider()),
         ChangeNotifierProvider(create: (_) => VocabularyProvider()),
         ChangeNotifierProvider(create: (_) => GamificationProvider()),
+        ChangeNotifierProvider(create: (_) => BookProvider()),
+        ChangeNotifierProvider(create: (_) => OnboardingProvider()),
+        ChangeNotifierProvider(create: (_) => SettingsProvider()),
       ],
       child: MaterialApp(
         title: 'Lingua Sprint',

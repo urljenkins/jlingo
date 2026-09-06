@@ -4,11 +4,65 @@
   "targetLanguage": "ja-JP",
   "nativeLanguage": "en-US",
   "skills": [
-    { "id": "basics_1", "path": "skills/basics_1.json" },
-    { "id": "basics_2", "path": "skills/basics_2.json" },
-    { "id": "numbers", "path": "skills/numbers.json" },
-    { "id": "colors", "path": "skills/colors.json" },
-    { "id": "food", "path": "skills/food.json" },
-    { "id": "family_1", "path": "skills/family_1.json" }
+    {
+      "id": "basics_1",
+      "name": "Basics 1",
+      "level": 1,
+      "path": "skills/basics_1.json"
+    },
+    {
+      "id": "basics_2",
+      "name": "Basics 2",
+      "level": 2,
+      "path": "skills/basics_2.json"
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "level": 3,
+      "path": "skills/numbers.json"
+    },
+    {
+      "id": "colors",
+      "name": "Colors",
+      "level": 2,
+      "path": "skills/colors.json"
+    },
+    {
+      "id": "food",
+      "name": "Food",
+      "level": 2,
+      "path": "skills/food.json"
+    },
+    {
+      "id": "family_1",
+      "name": "Family 1",
+      "level": 2,
+      "path": "skills/family_1.json"
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Getting Around",
+      "level": 3,
+      "path": "skills/travel.json"
+    },
+    {
+      "id": "listening_pronunciation",
+      "name": "Listening & Pronunciation",
+      "level": 3,
+      "path": "skills/listening_pronunciation.json"
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Traditions",
+      "level": 4,
+      "path": "skills/culture.json"
+    },
+    {
+      "id": "reading_writing",
+      "name": "Reading & Writing",
+      "level": 4,
+      "path": "skills/reading_writing.json"
+    }
   ]
 }

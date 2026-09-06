@@ -15,7 +15,7 @@ import '../../models/exercise.dart';
 /// }
 class ClozeTestWidget extends StatefulWidget {
   final Exercise exercise;
-  final Function(bool) onAnswer;
+  final void Function(bool) onAnswer;
 
   const ClozeTestWidget({
     super.key,

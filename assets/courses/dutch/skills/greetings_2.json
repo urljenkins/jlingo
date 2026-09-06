@@ -1,6 +1,7 @@
 {
   "id": "greetings_2",
   "name": "Greetings 2",
+  "description": "More common greetings and polite phrases",
   "level": 1,
   "section": "foundational",
   "exercises": []

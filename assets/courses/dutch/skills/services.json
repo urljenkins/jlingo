@@ -1,6 +1,7 @@
 {
   "id": "services",
   "name": "Services",
+  "description": "Learn vocabulary for banks, post offices, and other services",
   "level": 10,
   "section": "intermediate",
   "exercises": []

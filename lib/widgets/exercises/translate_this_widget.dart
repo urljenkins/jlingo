@@ -3,7 +3,7 @@ import '../../models/exercise.dart';
 
 class TranslateThisWidget extends StatefulWidget {
   final Exercise exercise;
-  final Function(bool) onAnswer;
+  final void Function(bool) onAnswer;
 
   const TranslateThisWidget({
     super.key,
@@ -80,8 +80,8 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
               filled: true,
               fillColor: _showFeedback
                   ? (_isCorrect
-                      ? const Color(0xFF00FF85).withOpacity(0.1)
-                      : const Color(0xFFFF4757).withOpacity(0.1))
+                      ? const Color(0xFF00FF85).withValues(alpha: 0.1)
+                      : const Color(0xFFFF4757).withValues(alpha: 0.1))
                   : const Color(0xFF2A2A2A),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),

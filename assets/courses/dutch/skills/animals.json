@@ -1,6 +1,7 @@
 {
   "id": "animals",
   "name": "Animals",
+  "description": "Learn common animal names",
   "level": 5,
   "section": "foundational",
   "exercises": []

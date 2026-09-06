@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
@@ -5,10 +7,18 @@ import 'package:flutter_tts/flutter_tts.dart';
 class AudioService {
   static final AudioService _instance = AudioService._internal();
   factory AudioService() => _instance;
-  AudioService._internal();
+
+  AudioService._internal() {
+    // Subscribe once: this is a singleton, so subscribing per playback call
+    // would accumulate listeners for the lifetime of the app.
+    _completeSubscription = _audioPlayer.onPlayerComplete.listen((_) {
+      _isPlaying = false;
+    });
+  }
 
   final FlutterTts _tts = FlutterTts();
   final AudioPlayer _audioPlayer = AudioPlayer();
+  late final StreamSubscription<void> _completeSubscription;
 
   bool _isPlaying = false;
   double _speechRate = 0.5;
@@ -53,18 +63,12 @@ class AudioService {
   Future<void> playAssetAudio(String assetPath) async {
     _isPlaying = true;
     await _audioPlayer.play(AssetSource(assetPath));
-    _audioPlayer.onPlayerComplete.listen((_) {
-      _isPlaying = false;
-    });
   }
 
   /// Play native audio from URL
   Future<void> playUrlAudio(String url) async {
     _isPlaying = true;
     await _audioPlayer.play(UrlSource(url));
-    _audioPlayer.onPlayerComplete.listen((_) {
-      _isPlaying = false;
-    });
   }
 
   /// Pause audio playback
@@ -115,6 +119,7 @@ class AudioService {
 
   /// Dispose resources
   Future<void> dispose() async {
+    await _completeSubscription.cancel();
     await _tts.stop();
     await _audioPlayer.dispose();
   }

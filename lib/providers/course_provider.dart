@@ -25,7 +25,6 @@ class CourseProvider extends ChangeNotifier {
     _availableLanguages = [
       'spanish',
       'french',
-      'german',
       'dutch',
       'portuguese',
       'japanese',

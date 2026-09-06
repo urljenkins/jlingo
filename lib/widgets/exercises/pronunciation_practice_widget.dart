@@ -101,6 +101,7 @@ class _PronunciationPracticeWidgetState
 
     await _speech.listen(
       onResult: (result) {
+        if (!mounted) return;
         setState(() {
           _recognizedText = result.recognizedWords;
           _confidence = result.confidence;
@@ -117,6 +118,7 @@ class _PronunciationPracticeWidgetState
     _pulseController.reset();
 
     await _speech.stop();
+    if (!mounted) return;
     setState(() => _isListening = false);
 
     if (_recognizedText.isNotEmpty) {
@@ -277,7 +279,7 @@ class _PronunciationPracticeWidgetState
 
   @override
   void dispose() {
-    _speech.stop();
+    unawaited(_speech.cancel());
     _tts.stop();
     _pulseController.dispose();
     _waveController.dispose();

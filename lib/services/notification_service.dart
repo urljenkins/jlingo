@@ -79,55 +79,39 @@ class NotificationService {
 
     final time = await getNotificationTime();
 
-    if (kDebugMode) {
-      print(
-          '📅 Word of Day notification scheduled for ${time.hour}:${time.minute.toString().padLeft(2, '0')}');
-    }
-
-    // TODO: Implement actual notification scheduling
-    // This requires adding flutter_local_notifications package
+    // Not yet implemented: scheduling needs flutter_local_notifications.
+    // The preference is persisted, so enabling this later will pick up the
+    // user's existing choice and time.
+    debugPrint('Word of Day notification requested for $time '
+        '(scheduling not implemented)');
   }
 
   /// Cancel the Word of the Day notification
   Future<void> cancelWordOfDayNotification() async {
-    if (kDebugMode) {
-      print('🔕 Word of Day notification cancelled');
-    }
-
-    // TODO: Implement actual notification cancellation
-    // await flutterLocalNotificationsPlugin.cancel(0);
+    debugPrint('Word of Day notification cancelled '
+        '(scheduling not implemented)');
   }
 
   /// Show an immediate notification (for testing)
   Future<void> showTestNotification(WordOfDay word) async {
-    if (kDebugMode) {
-      print('🔔 Test notification: ${word.word} - ${word.translation}');
-    }
-
-    // TODO: Implement actual notification display
-    // await flutterLocalNotificationsPlugin.show(
-    //   0,
-    //   'Word of the Day: ${word.word}',
-    //   word.translation,
-    //   notificationDetails,
-    // );
+    debugPrint('Test notification: ${word.word} - ${word.translation} '
+        '(display not implemented)');
   }
 
   /// Initialize the notification service
   ///
   /// Call this on app startup to set up notification channels and permissions.
   Future<void> initialize() async {
-    // Request notification permissions if needed
-    // Set up notification channels for Android
-    // Initialize flutter_local_notifications plugin
-
-    if (kDebugMode) {
-      print('📱 Notification service initialized');
-    }
-
-    // Schedule notification if enabled
+    // Once flutter_local_notifications is added, this is where permissions
+    // and the Android notification channel are set up.
     await scheduleWordOfDayNotification();
   }
+
+  /// Whether notifications can actually be delivered on this build.
+  ///
+  /// Scheduling is not wired up yet, so the settings toggle only records a
+  /// preference. Callers should use this to avoid promising delivery.
+  bool get isDeliverySupported => false;
 }
 
 /// TimeOfDay class for notification scheduling

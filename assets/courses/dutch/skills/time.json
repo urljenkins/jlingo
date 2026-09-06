@@ -1,6 +1,7 @@
 {
   "id": "time",
   "name": "Telling Time",
+  "description": "Learn to tell time and express duration",
   "level": 4,
   "section": "foundational",
   "exercises": []

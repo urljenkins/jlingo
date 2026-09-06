@@ -1,6 +1,7 @@
 {
   "id": "music_movies",
   "name": "Music & Movies",
+  "description": "Learn vocabulary for entertainment",
   "level": 18,
   "section": "advanced",
   "exercises": []

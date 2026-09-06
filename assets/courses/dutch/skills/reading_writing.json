@@ -1,6 +1,7 @@
 {
   "id": "reading_writing",
   "name": "Reading & Writing",
+  "description": "Practice reading comprehension through dialogues, stories, and fill-in-the-blank exercises",
   "level": 5,
   "section": "foundational",
   "exercises": []

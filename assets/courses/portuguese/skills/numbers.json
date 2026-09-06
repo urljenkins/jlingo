@@ -1,0 +1,66 @@
+{
+  "id": "numbers",
+  "name": "Numbers",
+  "description": "Learn numbers 1-10",
+  "level": 3,
+  "exercises": [
+    {
+      "id": "ex_15",
+      "type": "translateThis",
+      "question": "Um",
+      "options": [],
+      "correctAnswer": "One"
+    },
+    {
+      "id": "ex_16",
+      "type": "multipleChoice",
+      "question": "What number is 'Cinco'?",
+      "options": [
+        "5",
+        "3",
+        "7",
+        "9"
+      ],
+      "correctAnswer": "5"
+    },
+    {
+      "id": "ex_17",
+      "type": "fillInBlank",
+      "question": "Dois mais dois é ___",
+      "options": [
+        "quatro",
+        "três",
+        "cinco",
+        "seis"
+      ],
+      "correctAnswer": "quatro"
+    },
+    {
+      "id": "ex_18",
+      "type": "matchPairs",
+      "question": "Match the numbers",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Um",
+            "native": "One"
+          },
+          {
+            "target": "Dois",
+            "native": "Two"
+          },
+          {
+            "target": "Três",
+            "native": "Three"
+          },
+          {
+            "target": "Quatro",
+            "native": "Four"
+          }
+        ]
+      }
+    }
+  ]
+}

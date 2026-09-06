@@ -3,16 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
 import '../providers/course_provider.dart';
-import '../providers/flashcard_provider.dart';
-import '../providers/vocabulary_provider.dart';
 import '../providers/gamification_provider.dart';
 import '../models/exercise.dart';
 import '../models/course_manifest.dart';
 import '../models/gamification.dart';
 import '../widgets/gamification/xp_widgets.dart'; // For XPProgressBar
 import 'language_selection_screen.dart';
+import '../utils/language_display.dart';
 import 'lesson_screen.dart';
 import 'vocabulary_screen.dart';
+import 'book_library_screen.dart';
+import 'settings_screen.dart';
+import '../providers/onboarding_provider.dart';
+import '../providers/settings_provider.dart';
+import 'onboarding/welcome_screen.dart';
+import '../services/course_bootstrap.dart';
 import '../widgets/responsive/responsive_layout.dart';
 import '../widgets/responsive/desktop_scaffold.dart';
 import 'package:flutter/services.dart';
@@ -39,42 +44,39 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _initializeApp() async {
     final courseProvider = context.read<CourseProvider>();
-    final progressProvider = context.read<ProgressProvider>();
-    final flashcardProvider = context.read<FlashcardProvider>();
-    final vocabularyProvider = context.read<VocabularyProvider>();
-    final gamificationProvider = context.read<GamificationProvider>();
-    await courseProvider.loadAvailableLanguages();
+    final onboardingProvider = context.read<OnboardingProvider>();
+    final settingsProvider = context.read<SettingsProvider>();
+    await Future.wait([
+      courseProvider.loadAvailableLanguages(),
+      settingsProvider.loadSettings(),
+    ]);
 
-    if (courseProvider.currentManifest == null) {
-      final savedLanguage = await courseProvider.getSavedLanguage();
-      if (savedLanguage != null) {
-        await courseProvider.loadCourse(savedLanguage);
-        if (courseProvider.currentManifest != null) {
-          await progressProvider
-              .loadProgress(courseProvider.currentManifest!.id);
-          // Load gamification data
-          await gamificationProvider
-              .loadGamificationData(courseProvider.currentManifest!.id);
-          // Load vocabulary data
-          await flashcardProvider.loadDecks(courseProvider.currentManifest!.id);
-          await vocabularyProvider
-              .loadVocabularyData(courseProvider.currentManifest!.id);
-        }
-      }
-    }
+    if (!mounted) return;
+    await CourseBootstrap.restoreSavedCourse(context);
+    if (!mounted) return;
 
     setState(() => _isLoading = false);
 
-    // Navigate to language selection if no course is loaded
-    if (mounted && courseProvider.currentManifest == null) {
-      // ignore: unawaited_futures
-      Navigator.of(context).pushReplacement(
-        PageRouteBuilder<void>(
-          pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
-          transitionDuration: Duration.zero,
-        ),
-      );
-    }
+    if (courseProvider.currentManifest != null) return;
+
+    // No course yet: first-time users go through onboarding (which picks a
+    // language itself), returning users straight back to language selection.
+    // The provider loads the profile in its constructor; await it directly
+    // so we branch on a settled value rather than polling isLoading.
+    await onboardingProvider.loadProfile();
+    if (!mounted) return;
+
+    final Widget next = onboardingProvider.isOnboardingComplete
+        ? const LanguageSelectionScreen()
+        : const WelcomeScreen();
+
+    // ignore: unawaited_futures
+    Navigator.of(context).pushReplacement(
+      PageRouteBuilder<void>(
+        pageBuilder: (context, _, __) => next,
+        transitionDuration: Duration.zero,
+      ),
+    );
   }
 
   Future<void> _startLesson(String skillId) async {
@@ -257,7 +259,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         return ResponsiveLayout(
           mobileScaffold: MobileScaffold(
-            topBar: _buildHomeTopBar(userLevel, streakInfo),
+            topBar: _buildHomeTopBar(userLevel, streakInfo, manifest),
             body: bodyContent,
           ),
           desktopScaffold: DesktopScaffold(
@@ -286,14 +288,24 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: _navigateToVocabulary,
                   ),
                   ListTile(
+                    leading: const Icon(Icons.menu_book),
+                    title: const Text('Books'),
+                    onTap: _navigateToBookLibrary,
+                  ),
+                  ListTile(
                     leading: const Icon(Icons.language),
                     title: const Text('Languages'),
                     onTap: _navigateToLanguageSelection,
                   ),
+                  ListTile(
+                    leading: const Icon(Icons.settings),
+                    title: const Text('Settings'),
+                    onTap: _navigateToSettings,
+                  ),
                 ],
               ),
             ),
-            topBar: _buildHomeTopBar(userLevel, streakInfo),
+            topBar: _buildHomeTopBar(userLevel, streakInfo, manifest),
             body: bodyContent,
           ),
         );
@@ -301,10 +313,28 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  void _navigateToSettings() {
+    unawaited(Navigator.of(context).push(
+      PageRouteBuilder<void>(
+        pageBuilder: (context, _, __) => const SettingsScreen(),
+        transitionDuration: Duration.zero,
+      ),
+    ));
+  }
+
   void _navigateToLanguageSelection() {
     unawaited(Navigator.of(context).pushReplacement(
       PageRouteBuilder<void>(
         pageBuilder: (context, _, __) => const LanguageSelectionScreen(),
+        transitionDuration: Duration.zero,
+      ),
+    ));
+  }
+
+  void _navigateToBookLibrary() {
+    unawaited(Navigator.of(context).push(
+      PageRouteBuilder<void>(
+        pageBuilder: (context, _, __) => const BookLibraryScreen(),
         transitionDuration: Duration.zero,
       ),
     ));
@@ -333,27 +363,34 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildHomeTopBar(UserLevel userLevel, StreakInfo streakInfo) {
+  Widget _buildHomeTopBar(
+      UserLevel userLevel, StreakInfo streakInfo, CourseManifest manifest) {
+    final streakMonitoringEnabled =
+        context.watch<SettingsProvider>().streakMonitoringEnabled;
+
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Streak
-          Row(
-            children: [
-              const Icon(Icons.local_fire_department,
-                  color: Color(0xFFFF6B35), size: 28),
-              const SizedBox(width: 8),
-              Text(
-                'Day ${streakInfo.currentStreak}',
-                style:
-                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-            ],
-          ),
+          // Streak (conditionally displayed based on Settings)
+          if (streakMonitoringEnabled)
+            Row(
+              children: [
+                const Icon(Icons.local_fire_department,
+                    color: Color(0xFFFF6B35), size: 28),
+                const SizedBox(width: 8),
+                Text(
+                  'Day ${streakInfo.currentStreak}',
+                  style: const TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ],
+            )
+          else
+            const SizedBox.shrink(),
 
-          // XP + vocabulary + language switch
+          // XP + vocabulary + settings + language switch
           Row(
             children: [
               const Icon(Icons.star, color: Color(0xFFFFD700), size: 28),
@@ -363,17 +400,54 @@ class _HomeScreenState extends State<HomeScreen> {
                 style:
                     const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: 8),
               IconButton(
                 icon: const Icon(Icons.library_books),
                 tooltip: 'Vocabulary',
                 onPressed: _navigateToVocabulary,
               ),
-              const SizedBox(width: 4),
+              const SizedBox(width: 2),
               IconButton(
-                icon: const Icon(Icons.language),
-                tooltip: 'Change language',
-                onPressed: _navigateToLanguageSelection,
+                icon: const Icon(Icons.menu_book),
+                tooltip: 'Books',
+                onPressed: _navigateToBookLibrary,
+              ),
+              const SizedBox(width: 2),
+              IconButton(
+                icon: const Icon(Icons.settings),
+                tooltip: 'Settings',
+                onPressed: _navigateToSettings,
+              ),
+              const SizedBox(width: 4),
+              // Current language, tappable to switch.
+              Tooltip(
+                message: 'Change language',
+                child: InkWell(
+                  onTap: _navigateToLanguageSelection,
+                  borderRadius: BorderRadius.circular(20),
+                  child: Padding(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          LanguageDisplay.flag(manifest.targetLanguage),
+                          style: const TextStyle(fontSize: 20),
+                        ),
+                        const SizedBox(width: 6),
+                        Text(
+                          LanguageDisplay.name(manifest.targetLanguage),
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const Icon(Icons.arrow_drop_down, size: 20),
+                      ],
+                    ),
+                  ),
+                ),
               ),
             ],
           ),

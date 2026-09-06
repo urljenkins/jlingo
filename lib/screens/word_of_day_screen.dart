@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../providers/course_provider.dart';
 import '../providers/vocabulary_provider.dart';
 import '../models/word_of_day.dart';
 
@@ -12,6 +13,11 @@ class WordOfDayScreen extends StatefulWidget {
 
 class _WordOfDayScreenState extends State<WordOfDayScreen>
     with SingleTickerProviderStateMixin {
+  /// The active course id. Per-course state (reviews, saved words) must be
+  /// keyed to it, never to a placeholder, or writes land under a different
+  /// key than reads.
+  String? get _courseId => context.read<CourseProvider>().currentManifest?.id;
+
   late TabController _tabController;
 
   @override
@@ -21,8 +27,10 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final provider = context.read<VocabularyProvider>();
+      final courseId = context.read<CourseProvider>().currentManifest?.id;
+      if (courseId == null) return;
       if (provider.todaysWord == null) {
-        provider.loadVocabularyData('default_course');
+        provider.loadVocabularyData(courseId);
       }
     });
   }
@@ -54,7 +62,27 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
       body: Consumer<VocabularyProvider>(
         builder: (context, provider, _) {
           if (provider.todaysWord == null) {
-            return const Center(child: CircularProgressIndicator());
+            if (!provider.isLoaded) {
+              return const Center(child: CircularProgressIndicator());
+            }
+            return const Center(
+              child: Padding(
+                padding: EdgeInsets.all(32),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.menu_book_outlined,
+                        size: 48, color: Colors.white38),
+                    SizedBox(height: 16),
+                    Text(
+                      'No word of the day for this language yet.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 16, color: Colors.white60),
+                    ),
+                  ],
+                ),
+              ),
+            );
           }
 
           return TabBarView(
@@ -226,7 +254,8 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
                 size: 30,
               ),
               onPressed: () {
-                provider.toggleSaveWord('default_course', word.id);
+                final id = _courseId;
+                if (id != null) provider.toggleSaveWord(id, word.id);
               },
             ),
           ],
@@ -525,7 +554,8 @@ class _WordOfDayScreenState extends State<WordOfDayScreen>
         trailing: IconButton(
           icon: const Icon(Icons.bookmark, color: Color(0xFFFFD700)),
           onPressed: () {
-            provider.toggleSaveWord('default_course', word.id);
+            final id = _courseId;
+            if (id != null) provider.toggleSaveWord(id, word.id);
           },
         ),
       ),

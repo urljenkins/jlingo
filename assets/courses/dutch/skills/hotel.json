@@ -1,6 +1,7 @@
 {
   "id": "hotel",
   "name": "At the Hotel",
+  "description": "Learn vocabulary for hotel stays",
   "level": 17,
   "section": "advanced",
   "exercises": []

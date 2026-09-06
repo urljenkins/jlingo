@@ -1,6 +1,7 @@
 {
   "id": "at_the_market",
   "name": "At the Market",
+  "description": "Learn vocabulary for the supermarket and local markets",
   "level": 10,
   "section": "intermediate",
   "exercises": []

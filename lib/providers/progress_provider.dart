@@ -13,8 +13,14 @@ class ProgressProvider extends ChangeNotifier {
     final progressJson = prefs.getString('progress_$courseId');
 
     if (progressJson != null) {
-      _progress = UserProgress.fromJson(
-          jsonDecode(progressJson) as Map<String, dynamic>);
+      try {
+        _progress = UserProgress.fromJson(
+            jsonDecode(progressJson) as Map<String, dynamic>);
+      } catch (e) {
+        // Corrupt or old-format data must not brick startup.
+        debugPrint('Error loading progress for $courseId: $e');
+        _progress = UserProgress(courseId: courseId);
+      }
     } else {
       _progress = UserProgress(courseId: courseId);
     }
@@ -31,48 +37,8 @@ class ProgressProvider extends ChangeNotifier {
     );
   }
 
-  void updateStreak() {
-    if (_progress == null) return;
-
-    final now = DateTime.now();
-    final lastStudy = _progress!.lastStudyDate;
-
-    int newStreak = _progress!.currentStreak;
-
-    if (lastStudy == null) {
-      newStreak = 1;
-    } else {
-      final daysSinceLastStudy = now.difference(lastStudy).inDays;
-      if (daysSinceLastStudy == 0) {
-        // Same day, no change
-      } else if (daysSinceLastStudy == 1) {
-        // Consecutive day
-        newStreak++;
-      } else {
-        // Streak broken
-        newStreak = 1;
-      }
-    }
-
-    _progress = _progress!.copyWith(
-      currentStreak: newStreak,
-      lastStudyDate: now,
-    );
-
-    unawaited(saveProgress());
-    notifyListeners();
-  }
-
-  void addPoints(int points) {
-    if (_progress == null) return;
-
-    _progress = _progress!.copyWith(
-      totalPoints: _progress!.totalPoints + points,
-    );
-
-    unawaited(saveProgress());
-    notifyListeners();
-  }
+  // Streak and points are owned by GamificationProvider; this provider
+  // tracks skill mastery, exercise stats and achievements only.
 
   void updateSkillMastery(String skillId, double percentage) {
     if (_progress == null) return;
@@ -113,7 +79,8 @@ class ProgressProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void checkAndUnlockAchievements() {
+  /// [currentStreak] comes from GamificationProvider, the owner of streak state.
+  void checkAndUnlockAchievements({int currentStreak = 0}) {
     if (_progress == null) return;
 
     final stats = _progress!.exerciseStats;
@@ -131,7 +98,7 @@ class ProgressProvider extends ChangeNotifier {
     }
 
     // 5-Day Streak
-    if (_progress!.currentStreak >= 5 &&
+    if (currentStreak >= 5 &&
         !_progress!.achievements.any((a) => a.id == 'five_day_streak')) {
       unlockAchievement(Achievement(
         id: 'five_day_streak',

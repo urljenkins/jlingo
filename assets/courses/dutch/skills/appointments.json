@@ -1,6 +1,7 @@
 {
   "id": "appointments",
   "name": "Appointments",
+  "description": "Learn to schedule and manage appointments",
   "level": 14,
   "section": "intermediate",
   "exercises": []

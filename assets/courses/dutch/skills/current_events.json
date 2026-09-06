@@ -1,6 +1,7 @@
 {
   "id": "current_events",
   "name": "Current Events",
+  "description": "Learn vocabulary for discussing news and society",
   "level": 25,
   "section": "advanced",
   "exercises": []

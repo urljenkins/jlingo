@@ -1,6 +1,7 @@
 {
   "id": "grammar_articles",
   "name": "Grammar: Articles",
+  "description": "Learn definite and indefinite articles in Dutch",
   "level": 2,
   "section": "foundational",
   "exercises": []

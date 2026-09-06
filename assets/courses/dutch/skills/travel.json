@@ -1,6 +1,7 @@
 {
   "id": "travel",
   "name": "Travel",
+  "description": "Learn essential travel vocabulary",
   "level": 17,
   "section": "advanced",
   "exercises": []

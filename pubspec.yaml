@@ -33,6 +33,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  yaml: ^3.1.2
   build_runner: ^2.4.0
   json_serializable: ^6.7.0
 
@@ -46,8 +47,12 @@ flutter:
     - assets/courses/french/
     - assets/courses/french/skills/
     - assets/courses/chinese/
+    - assets/courses/chinese/skills/
     - assets/courses/dutch/
+    - assets/courses/dutch/skills/
     - assets/courses/japanese/
+    - assets/courses/japanese/skills/
     - assets/courses/portuguese/
+    - assets/courses/portuguese/skills/
     - assets/vocabulary/
     - assets/books/

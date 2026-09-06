@@ -1,6 +1,7 @@
 {
   "id": "transportation",
   "name": "Transportation",
+  "description": "Learn vocabulary for getting around",
   "level": 9,
   "section": "intermediate",
   "exercises": []

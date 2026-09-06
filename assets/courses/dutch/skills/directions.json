@@ -1,6 +1,7 @@
 {
   "id": "directions",
   "name": "Directions",
+  "description": "Learn to ask for and give directions",
   "level": 9,
   "section": "intermediate",
   "exercises": []

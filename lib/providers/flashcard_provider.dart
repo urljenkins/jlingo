@@ -1,6 +1,8 @@
-import 'package:flutter/foundation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
+
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/flashcard.dart';
 
 class FlashcardProvider extends ChangeNotifier {
@@ -45,13 +47,20 @@ class FlashcardProvider extends ChangeNotifier {
     final decksJson = prefs.getString('flashcard_decks_$courseId');
 
     if (decksJson != null) {
-      final List<dynamic> decoded = jsonDecode(decksJson) as List<dynamic>;
-      _decks = decoded
-          .map((d) => FlashcardDeck.fromJson(d as Map<String, dynamic>))
-          .toList();
+      try {
+        final List<dynamic> decoded = jsonDecode(decksJson) as List<dynamic>;
+        _decks = decoded
+            .map((d) => FlashcardDeck.fromJson(d as Map<String, dynamic>))
+            .toList();
+      } catch (e) {
+        // Corrupt or old-format data must not brick startup.
+        debugPrint('Error loading flashcard decks for $courseId: $e');
+        _decks = await _initialDecks(courseId);
+        await _saveDecks(courseId);
+      }
     } else {
-      // Initialize with default deck containing sample vocabulary
-      _decks = [_createSampleDeck(courseId)];
+      // Seed from the course's bundled starter deck, if it has one.
+      _decks = await _initialDecks(courseId);
       await _saveDecks(courseId);
     }
 
@@ -75,9 +84,15 @@ class FlashcardProvider extends ChangeNotifier {
     final statsJson = prefs.getString(statsKey);
 
     if (statsJson != null) {
-      final stats = jsonDecode(statsJson) as Map<String, dynamic>;
-      _cardsReviewedToday = stats['reviewed'] as int? ?? 0;
-      _correctAnswersToday = stats['correct'] as int? ?? 0;
+      try {
+        final stats = jsonDecode(statsJson) as Map<String, dynamic>;
+        _cardsReviewedToday = stats['reviewed'] as int? ?? 0;
+        _correctAnswersToday = stats['correct'] as int? ?? 0;
+      } catch (e) {
+        debugPrint('Error loading flashcard stats for $courseId: $e');
+        _cardsReviewedToday = 0;
+        _correctAnswersToday = 0;
+      }
     } else {
       _cardsReviewedToday = 0;
       _correctAnswersToday = 0;
@@ -232,120 +247,29 @@ class FlashcardProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  FlashcardDeck _createSampleDeck(String courseId) {
-    return FlashcardDeck(
-      id: 'default_deck',
-      name: 'Core Vocabulary',
-      description: 'Essential words and phrases for beginners',
-      targetLanguage: 'target',
-      nativeLanguage: 'native',
-      cards: _sampleFlashcards,
-      createdAt: DateTime.now(),
-    );
+  Future<List<FlashcardDeck>> _initialDecks(String courseId) async {
+    final deck = await _bundledDeck(courseId);
+    return deck == null ? <FlashcardDeck>[] : [deck];
   }
 
-  List<Flashcard> get _sampleFlashcards => [
-        Flashcard(
-          id: 'fc_1',
-          front: 'Bonjour',
-          back: 'Hello / Good day',
-          pronunciation: '/bɔ̃.ʒuʁ/',
-          exampleSentence: 'Bonjour, comment allez-vous ?',
-          exampleTranslation: 'Hello, how are you?',
-          category: 'Greetings',
-          tags: ['basic', 'polite'],
-        ),
-        Flashcard(
-          id: 'fc_2',
-          front: 'Merci',
-          back: 'Thank you',
-          pronunciation: '/mɛʁ.si/',
-          exampleSentence: 'Merci beaucoup pour votre aide.',
-          exampleTranslation: 'Thank you very much for your help.',
-          category: 'Greetings',
-          tags: ['basic', 'polite'],
-        ),
-        Flashcard(
-          id: 'fc_3',
-          front: 'Au revoir',
-          back: 'Goodbye',
-          pronunciation: '/o ʁə.vwaʁ/',
-          exampleSentence: 'Au revoir, à demain !',
-          exampleTranslation: 'Goodbye, see you tomorrow!',
-          category: 'Greetings',
-          tags: ['basic', 'polite'],
-        ),
-        Flashcard(
-          id: 'fc_4',
-          front: 'S\'il vous plaît',
-          back: 'Please (formal)',
-          pronunciation: '/sil vu plɛ/',
-          exampleSentence: 'Un café, s\'il vous plaît.',
-          exampleTranslation: 'A coffee, please.',
-          category: 'Greetings',
-          tags: ['basic', 'polite', 'formal'],
-        ),
-        Flashcard(
-          id: 'fc_5',
-          front: 'Excusez-moi',
-          back: 'Excuse me',
-          pronunciation: '/ɛk.sky.ze mwa/',
-          exampleSentence: 'Excusez-moi, où est la gare ?',
-          exampleTranslation: 'Excuse me, where is the train station?',
-          category: 'Greetings',
-          tags: ['basic', 'polite'],
-        ),
-        Flashcard(
-          id: 'fc_6',
-          front: 'Je m\'appelle',
-          back: 'My name is',
-          pronunciation: '/ʒə ma.pɛl/',
-          exampleSentence: 'Je m\'appelle Marie.',
-          exampleTranslation: 'My name is Marie.',
-          category: 'Introduction',
-          tags: ['basic', 'introduction'],
-        ),
-        Flashcard(
-          id: 'fc_7',
-          front: 'Comment ça va ?',
-          back: 'How are you? (informal)',
-          pronunciation: '/kɔ.mɑ̃ sa va/',
-          exampleSentence: 'Salut ! Comment ça va ?',
-          exampleTranslation: 'Hi! How are you?',
-          category: 'Greetings',
-          tags: ['basic', 'informal'],
-        ),
-        Flashcard(
-          id: 'fc_8',
-          front: 'Oui',
-          back: 'Yes',
-          pronunciation: '/wi/',
-          exampleSentence: 'Oui, je comprends.',
-          exampleTranslation: 'Yes, I understand.',
-          category: 'Basics',
-          tags: ['basic', 'essential'],
-        ),
-        Flashcard(
-          id: 'fc_9',
-          front: 'Non',
-          back: 'No',
-          pronunciation: '/nɔ̃/',
-          exampleSentence: 'Non, merci.',
-          exampleTranslation: 'No, thank you.',
-          category: 'Basics',
-          tags: ['basic', 'essential'],
-        ),
-        Flashcard(
-          id: 'fc_10',
-          front: 'Je ne comprends pas',
-          back: 'I don\'t understand',
-          pronunciation: '/ʒə nə kɔ̃.pʁɑ̃ pa/',
-          exampleSentence: 'Désolé, je ne comprends pas.',
-          exampleTranslation: 'Sorry, I don\'t understand.',
-          category: 'Communication',
-          tags: ['basic', 'useful'],
-        ),
-      ];
+  /// Loads the course's bundled starter deck.
+  ///
+  /// Returns null when a course has no authored flashcards yet, so learners
+  /// see an honest empty state rather than another language's cards.
+  Future<FlashcardDeck?> _bundledDeck(String courseId) async {
+    try {
+      final raw = await rootBundle
+          .loadString('assets/vocabulary/flashcards_$courseId.json');
+      final json = jsonDecode(raw) as Map<String, dynamic>;
+      // createdAt is per-install state rather than authored content, so the
+      // bundled asset omits it and we stamp it on first load.
+      json.putIfAbsent('createdAt', () => DateTime.now().toIso8601String());
+      return FlashcardDeck.fromJson(json);
+    } catch (e) {
+      debugPrint('No bundled flashcard deck for $courseId: $e');
+      return null;
+    }
+  }
 
   // Get deck statistics
   Map<String, dynamic> getDeckStatistics(String deckId) {

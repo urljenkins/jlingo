@@ -1,10 +1,11 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import '../../models/exercise.dart';
 
 class SpeakThisWidget extends StatefulWidget {
   final Exercise exercise;
-  final Function(bool) onAnswer;
+  final void Function(bool) onAnswer;
 
   const SpeakThisWidget({
     super.key,
@@ -31,6 +32,15 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
 
   Future<void> _initializeSpeech() async {
     await _speech.initialize();
+    if (mounted) setState(() {});
+  }
+
+  @override
+  void dispose() {
+    // Stop the recognizer so it does not keep listening after the exercise
+    // has been left.
+    unawaited(_speech.cancel());
+    super.dispose();
   }
 
   Future<void> _startListening() async {
@@ -48,6 +58,7 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
 
     await _speech.listen(
       onResult: (result) {
+        if (!mounted) return;
         setState(() {
           _recognizedText = result.recognizedWords;
         });
@@ -56,15 +67,16 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
     );
 
     // Auto-stop after 3 seconds
-    Future.delayed(const Duration(seconds: 3), () {
-      if (_isListening) {
-        _stopListening();
+    unawaited(Future<void>.delayed(const Duration(seconds: 3), () {
+      if (mounted && _isListening) {
+        unawaited(_stopListening());
       }
-    });
+    }));
   }
 
   Future<void> _stopListening() async {
     await _speech.stop();
+    if (!mounted) return;
     setState(() => _isListening = false);
 
     if (_recognizedText.isNotEmpty) {
@@ -82,11 +94,11 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
 
     setState(() => _showFeedback = true);
 
-    Future.delayed(const Duration(milliseconds: 1200), () {
+    unawaited(Future<void>.delayed(const Duration(milliseconds: 1200), () {
       if (mounted) {
         widget.onAnswer(_isCorrect);
       }
-    });
+    }));
   }
 
   double _calculateSimilarity(String a, String b) {
@@ -152,8 +164,8 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
                 height: 100,
                 decoration: BoxDecoration(
                   color: _isListening
-                      ? const Color(0xFFFF4757).withOpacity(0.2)
-                      : const Color(0xFF00D9FF).withOpacity(0.2),
+                      ? const Color(0xFFFF4757).withValues(alpha: 0.2)
+                      : const Color(0xFF00D9FF).withValues(alpha: 0.2),
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: _isListening

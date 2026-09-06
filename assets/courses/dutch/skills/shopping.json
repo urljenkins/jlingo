@@ -1,6 +1,7 @@
 {
   "id": "shopping",
   "name": "Shopping",
+  "description": "Learn vocabulary for shopping and buying things",
   "level": 10,
   "section": "intermediate",
   "exercises": []

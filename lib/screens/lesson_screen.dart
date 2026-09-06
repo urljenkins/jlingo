@@ -7,6 +7,7 @@ import '../models/gamification.dart';
 import '../providers/progress_provider.dart';
 import '../providers/gamification_provider.dart';
 import '../providers/course_provider.dart';
+import '../providers/settings_provider.dart';
 import 'package:flutter/services.dart';
 import '../widgets/exercises/exercise_renderer_registry.dart';
 import '../widgets/responsive/responsive_layout.dart';
@@ -73,14 +74,11 @@ class _LessonScreenState extends State<LessonScreen> {
         description: 'Correct answer',
       );
 
+      if (!mounted) return;
+
       setState(() {
         _totalXPEarned += result.totalXP;
       });
-
-      if (!mounted) return;
-
-      // Update legacy points for compatibility
-      context.read<ProgressProvider>().addPoints(result.totalXP);
 
       // Update exercise stats
       context.read<ProgressProvider>().incrementExerciseStat(
@@ -121,10 +119,16 @@ class _LessonScreenState extends State<LessonScreen> {
     final progressProvider = context.read<ProgressProvider>();
     final gamificationProvider = context.read<GamificationProvider>();
     final courseProvider = context.read<CourseProvider>();
+    final settingsProvider = context.read<SettingsProvider>();
     final courseId = courseProvider.currentManifest?.id ?? '';
 
-    // Record study activity for streak
-    await gamificationProvider.recordStudyActivity(courseId);
+    // Record study activity for streak if streak monitoring is enabled
+    int newStreak = 0;
+    if (settingsProvider.streakMonitoringEnabled) {
+      final streakResult =
+          await gamificationProvider.recordStudyActivity(courseId);
+      newStreak = streakResult.newStreak;
+    }
 
     // Award lesson completion bonus
     final completionResult = await gamificationProvider.awardXP(
@@ -156,8 +160,9 @@ class _LessonScreenState extends State<LessonScreen> {
     final newMastery = (currentMastery + masteryGain).clamp(0.0, 100.0);
 
     progressProvider.updateSkillMastery(widget.skill.id, newMastery);
-    progressProvider.updateStreak();
-    progressProvider.checkAndUnlockAchievements();
+    progressProvider.checkAndUnlockAchievements(
+      currentStreak: newStreak,
+    );
 
     // Show completion dialog
     if (!mounted) return;

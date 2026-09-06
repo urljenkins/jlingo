@@ -8,6 +8,10 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Lingua Sprint uses the microphone so you can practise pronunciation in speaking exercises.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Lingua Sprint uses speech recognition to check the pronunciation of your spoken answers.</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>

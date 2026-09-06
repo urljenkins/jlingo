@@ -1,6 +1,7 @@
 {
   "id": "weather",
   "name": "Weather",
+  "description": "Learn to talk about weather and climate",
   "level": 6,
   "section": "foundational",
   "exercises": []

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/course_provider.dart';
-import '../providers/progress_provider.dart';
+import '../services/course_bootstrap.dart';
 import 'home_screen.dart';
 import '../widgets/responsive/responsive_layout.dart';
 import '../widgets/responsive/desktop_scaffold.dart';
@@ -142,14 +142,11 @@ class LanguageSelectionScreen extends StatelessWidget {
   }
 
   Future<void> _selectLanguage(BuildContext context, String language) async {
-    final courseProvider = context.read<CourseProvider>();
-    final progressProvider = context.read<ProgressProvider>();
+    // Loads every per-course provider, not just progress, so switching
+    // language does not leave gamification or vocabulary on the old course.
+    final loaded = await CourseBootstrap.selectLanguage(context, language);
 
-    await courseProvider.loadCourse(language);
-
-    if (courseProvider.currentManifest != null) {
-      await progressProvider.loadProgress(courseProvider.currentManifest!.id);
-
+    if (loaded) {
       if (context.mounted) {
         unawaited(Navigator.of(context).pushReplacement(
           PageRouteBuilder<void>(

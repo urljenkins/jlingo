@@ -161,8 +161,8 @@ void main() {
       expect(skill.level, 2);
     });
 
-    test('contains 9 exercises', () {
-      expect(skill.exercises.length, 9);
+    test('contains 10 exercises', () {
+      expect(skill.exercises.length, 10);
     });
 
     test('matchPairs exercise has travel vocabulary pairs', () {

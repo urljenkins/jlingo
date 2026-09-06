@@ -150,9 +150,9 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.2),
+          color: color.withValues(alpha: 0.2),
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: color.withOpacity(0.5)),
+          border: Border.all(color: color.withValues(alpha: 0.5)),
         ),
         child: Text(
           label,
@@ -180,16 +180,16 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
         if (_showFeedback) {
           if (isCorrect) {
             backgroundColor =
-                Theme.of(context).colorScheme.secondary.withOpacity(0.2);
+                Theme.of(context).colorScheme.secondary.withValues(alpha: 0.2);
             borderColor = Theme.of(context).colorScheme.secondary;
           } else if (isSelected && !isCorrect) {
             backgroundColor =
-                Theme.of(context).colorScheme.error.withOpacity(0.2);
+                Theme.of(context).colorScheme.error.withValues(alpha: 0.2);
             borderColor = Theme.of(context).colorScheme.error;
           }
         } else if (isSelected) {
           backgroundColor =
-              Theme.of(context).colorScheme.primary.withOpacity(0.2);
+              Theme.of(context).colorScheme.primary.withValues(alpha: 0.2);
           borderColor = Theme.of(context).colorScheme.primary;
         }
 
@@ -257,8 +257,8 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: _isCorrect
-            ? Theme.of(context).colorScheme.secondary.withOpacity(0.1)
-            : Theme.of(context).colorScheme.error.withOpacity(0.1),
+            ? Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1)
+            : Theme.of(context).colorScheme.error.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Row(
@@ -299,7 +299,7 @@ class _LevelQuizScreenState extends State<LevelQuizScreen> {
       child: Text(
         'Skip quiz & start as beginner',
         style: TextStyle(
-          color: Theme.of(context).colorScheme.primary.withOpacity(0.7),
+          color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.7),
         ),
       ),
     );

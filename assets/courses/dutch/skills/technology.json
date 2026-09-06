@@ -1,6 +1,7 @@
 {
   "id": "technology",
   "name": "Technology",
+  "description": "Learn vocabulary for technology and devices",
   "level": 20,
   "section": "advanced",
   "exercises": []

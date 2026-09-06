@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
@@ -168,8 +169,10 @@ class GamificationProvider extends ChangeNotifier {
       _userLevel = UserLevel.fromXP(_userLevel.currentXP + dailyGoalBonus);
     }
 
-    await _saveGamificationData(courseId);
+    // State is already updated in memory: notify and return immediately so the
+    // lesson can advance, and let the prefs writes settle in the background.
     notifyListeners();
+    unawaited(_saveGamificationData(courseId));
 
     return XPGainResult(
       baseXP: baseAmount,

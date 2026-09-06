@@ -3,7 +3,7 @@ import '../../models/exercise.dart';
 
 class FillBlankWidget extends StatefulWidget {
   final Exercise exercise;
-  final Function(bool) onAnswer;
+  final void Function(bool) onAnswer;
 
   const FillBlankWidget({
     super.key,
@@ -93,9 +93,9 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
                 decoration: BoxDecoration(
                   color: _showFeedback
                       ? (_isCorrect
-                          ? const Color(0xFF00FF85).withOpacity(0.2)
-                          : const Color(0xFFFF4757).withOpacity(0.2))
-                      : const Color(0xFF00D9FF).withOpacity(0.2),
+                          ? const Color(0xFF00FF85).withValues(alpha: 0.2)
+                          : const Color(0xFFFF4757).withValues(alpha: 0.2))
+                      : const Color(0xFF00D9FF).withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(4),
                   border: Border.all(
                     color: _showFeedback
@@ -143,10 +143,12 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
                 Color borderColor = Colors.transparent;
 
                 if (_showFeedback && isCorrectAnswer) {
-                  backgroundColor = const Color(0xFF00FF85).withOpacity(0.2);
+                  backgroundColor =
+                      const Color(0xFF00FF85).withValues(alpha: 0.2);
                   borderColor = const Color(0xFF00FF85);
                 } else if (isSelected) {
-                  backgroundColor = const Color(0xFF00D9FF).withOpacity(0.2);
+                  backgroundColor =
+                      const Color(0xFF00D9FF).withValues(alpha: 0.2);
                   borderColor = const Color(0xFF00D9FF);
                 }
 

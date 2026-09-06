@@ -1,6 +1,7 @@
 {
   "id": "sightseeing",
   "name": "Sightseeing",
+  "description": "Learn vocabulary for tourist activities",
   "level": 17,
   "section": "advanced",
   "exercises": []

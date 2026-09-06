@@ -1,6 +1,7 @@
 {
   "id": "clothing",
   "name": "Clothing",
+  "description": "Learn vocabulary for clothes and accessories",
   "level": 6,
   "section": "foundational",
   "exercises": []

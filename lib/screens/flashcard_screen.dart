@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../providers/course_provider.dart';
 import '../providers/flashcard_provider.dart';
 import '../models/flashcard.dart';
 
@@ -12,14 +13,19 @@ class FlashcardScreen extends StatefulWidget {
 }
 
 class _FlashcardScreenState extends State<FlashcardScreen> {
+  /// The active course id. Per-course state (reviews, saved words) must be
+  /// keyed to it, never to a placeholder, or writes land under a different
+  /// key than reads.
+  String? get _courseId => context.read<CourseProvider>().currentManifest?.id;
+
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final provider = context.read<FlashcardProvider>();
-      if (provider.decks.isEmpty) {
-        // Load decks with a default course ID - this should come from CourseProvider
-        unawaited(provider.loadDecks('default_course'));
+      final courseId = context.read<CourseProvider>().currentManifest?.id;
+      if (provider.decks.isEmpty && courseId != null) {
+        unawaited(provider.loadDecks(courseId));
       }
     });
   }
@@ -411,7 +417,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 'Again',
                 const Color(0xFFFF4757),
                 Icons.refresh,
-                () => provider.answerCard(SRSQuality.again, 'default_course'),
+                () {
+                  final id = _courseId;
+                  if (id != null) provider.answerCard(SRSQuality.again, id);
+                },
               ),
             ),
             const SizedBox(width: 8),
@@ -420,7 +429,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 'Hard',
                 const Color(0xFFFF9F43),
                 Icons.trending_down,
-                () => provider.answerCard(SRSQuality.hard, 'default_course'),
+                () {
+                  final id = _courseId;
+                  if (id != null) provider.answerCard(SRSQuality.hard, id);
+                },
               ),
             ),
             const SizedBox(width: 8),
@@ -429,7 +441,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 'Good',
                 const Color(0xFF00D9FF),
                 Icons.check,
-                () => provider.answerCard(SRSQuality.good, 'default_course'),
+                () {
+                  final id = _courseId;
+                  if (id != null) provider.answerCard(SRSQuality.good, id);
+                },
               ),
             ),
             const SizedBox(width: 8),
@@ -438,7 +453,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 'Easy',
                 const Color(0xFF00FF85),
                 Icons.check_circle,
-                () => provider.answerCard(SRSQuality.easy, 'default_course'),
+                () {
+                  final id = _courseId;
+                  if (id != null) provider.answerCard(SRSQuality.easy, id);
+                },
               ),
             ),
           ],
@@ -674,13 +692,15 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                if (nameController.text.isNotEmpty) {
+                final manifest =
+                    context.read<CourseProvider>().currentManifest;
+                if (nameController.text.isNotEmpty && manifest != null) {
                   unawaited(context.read<FlashcardProvider>().createDeck(
-                        courseId: 'default_course',
+                        courseId: manifest.id,
                         name: nameController.text,
                         description: descController.text,
-                        targetLanguage: 'target',
-                        nativeLanguage: 'native',
+                        targetLanguage: manifest.targetLanguage,
+                        nativeLanguage: manifest.nativeLanguage,
                       ));
                   Navigator.pop(context);
                 }

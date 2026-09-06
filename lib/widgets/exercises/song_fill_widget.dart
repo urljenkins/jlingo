@@ -29,7 +29,6 @@ class _SongFillWidgetState extends State<SongFillWidget>
   bool _isPlaying = false;
   bool _showFeedback = false;
   bool _isCorrect = false;
-  bool _hasListened = false;
   int _playCount = 0;
   double _progress = 0.0;
   Duration _duration = Duration.zero;
@@ -212,12 +211,9 @@ class _SongFillWidgetState extends State<SongFillWidget>
       for (int i = _currentLineIndex; i < _lyrics.length && _isPlaying; i++) {
         setState(() => _currentLineIndex = i);
         await _tts.speak(_lyrics[i].text);
-        await Future.delayed(const Duration(milliseconds: 500));
+        await Future<void>.delayed(const Duration(milliseconds: 500));
       }
-      setState(() {
-        _isPlaying = false;
-        _hasListened = true;
-      });
+      setState(() => _isPlaying = false);
     }
   }
 
@@ -232,8 +228,14 @@ class _SongFillWidgetState extends State<SongFillWidget>
 
   Future<void> _restart() async {
     if (_hasNativeAudio) {
-      await _audioPlayer.seek(Duration.zero);
-      await _audioPlayer.play(AssetSource(widget.exercise.audioPath!));
+      try {
+        await _audioPlayer.seek(Duration.zero);
+        await _audioPlayer.play(AssetSource(widget.exercise.audioPath!));
+      } catch (e) {
+        debugPrint('Song audio failed for ${widget.exercise.id}: $e');
+        if (mounted) setState(() => _isPlaying = false);
+        return;
+      }
     } else {
       setState(() => _currentLineIndex = 0);
     }

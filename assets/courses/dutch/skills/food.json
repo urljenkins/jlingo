@@ -1,6 +1,7 @@
 {
   "id": "food",
   "name": "Food",
+  "description": "Learn common food items",
   "level": 5,
   "section": "foundational",
   "exercises": []

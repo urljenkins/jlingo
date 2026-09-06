@@ -36,6 +36,7 @@ lib/
 | `VocabularyProvider` | Word of Day, Picture Dictionary |
 | `BookProvider` | Bilingual books, reading progress |
 | `OnboardingProvider` | Level quiz, goals, user profile |
+| `SettingsProvider` | App preferences (streak monitoring, notifications, TTS speech rate) |
 
 ## Asset Structure
 - `assets/courses/<lang>/manifest.json` — `CourseManifest` with `SkillHeader` list (lightweight)
@@ -50,6 +51,7 @@ lib/
 | Vocabulary hub | `screens/vocabulary_screen.dart` |
 | Flashcard review | `screens/flashcard_screen.dart` |
 | Bilingual reading | `screens/book_reader_screen.dart` |
+| Application settings | `screens/settings_screen.dart` |
 
 ## Models (JSON-serializable)
 `UserProgress`, `CourseManifest`/`SkillHeader`, `Skill`, `Exercise` (14 `ExerciseType` values), `UserLevel`, `StreakInfo`, `DailyGoal`, `XPEvent`, `ProgressionPath`, `Flashcard`/`FlashcardDeck`, `WordOfDay`, `PictureDictionaryTopic`, `BilingualBook`/`BookProgress`, `UserProfile`

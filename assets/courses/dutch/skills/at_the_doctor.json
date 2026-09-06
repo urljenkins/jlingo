@@ -1,6 +1,7 @@
 {
   "id": "at_the_doctor",
   "name": "At the Doctor",
+  "description": "Learn vocabulary for medical visits",
   "level": 16,
   "section": "intermediate",
   "exercises": []
