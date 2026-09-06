@@ -1,0 +1,170 @@
+{
+  "id": "c_level_mastery",
+  "name": "C1/C2 Mastery Capstone",
+  "description": "Master advanced Chinese chengyu, classical prose markers, rhetorical balance, and formal discourse",
+  "level": 26,
+  "exercises": [
+    {
+      "id": "ex_zh_c_1",
+      "type": "multipleChoice",
+      "question": "在正式学术或外交公文中，哪种成语最适于表达“经过深思熟虑后采取周密举措”？",
+      "options": [
+        "深谋远虑",
+        "马马虎虎",
+        "走马观花",
+        "随波逐流"
+      ],
+      "correctAnswer": "深谋远虑"
+    },
+    {
+      "id": "ex_zh_c_2",
+      "type": "fillInBlank",
+      "question": "鉴于形势之严峻，我们___采取切实有效之应对措施，以防事态进一步恶化。",
+      "options": ["亟须", "还要", "可能", "随便"],
+      "correctAnswer": "亟须"
+    },
+    {
+      "id": "ex_zh_c_3",
+      "type": "matchPairs",
+      "question": "将高级成语与其深刻哲理意义相匹配",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "卧薪尝胆", "native": "Enduring hardships to achieve ultimate goal"},
+          {"target": "高瞻远瞩", "native": "Farsighted and having grand vision"},
+          {"target": "厚积薄发", "native": "Accumulate deeply to unleash profound output"},
+          {"target": "沧海一粟", "native": "A drop in the ocean (insignificance)"},
+          {"target": "居安思危", "native": "Be vigilant in times of peace"}
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_c_4",
+      "type": "translationExercise",
+      "question": "翻译成英文：“倘若忽视文化传统之内在根基，盲目附和外来思潮，势必导致精神家园之迷失。”",
+      "options": [],
+      "correctAnswer": "If we ignore the inherent foundations of cultural tradition and blindly echo foreign trends, it will inevitably lead to the loss of our spiritual home.",
+      "metadata": {
+        "direction": "toNative",
+        "sourceText": "倘若忽视文化传统之内在根基，盲目附和外来思潮，势必导致精神家园之迷失。",
+        "acceptableAnswers": [
+          "Should we overlook the intrinsic foundations of cultural tradition and blindly follow foreign trends, a loss of our spiritual homeland is inevitable."
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_c_5",
+      "type": "interactiveDialogue",
+      "question": "在经济政策学术研讨会上发表高阶评述",
+      "options": [
+        "恕我直言，这一推论似乎低估了周期性波动与结构性矛盾的叠加效应。",
+        "我觉得你说得不对。",
+        "我不知道。"
+      ],
+      "correctAnswer": "恕我直言，这一推论似乎低估了周期性波动与结构性矛盾的叠加效应。",
+      "metadata": {
+        "dialogue": [
+          {"speaker": "李教授", "text": "短期流动性扩张足以从根本上化解实体产业的技术瓶颈。", "isNative": true},
+          {"speaker": "学者", "text": "___", "isUserTurn": true, "options": [
+            "恕我直言，这一推论似乎低估了周期性波动与结构性矛盾的叠加效应。",
+            "我觉得你说得不对。",
+            "我不知道。"
+          ]},
+          {"speaker": "李教授", "text": "所言极是，总量政策确实难以替代针对供给侧的内生动力培育。", "isNative": true}
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_c_6",
+      "type": "clozeTest",
+      "question": "请选用最恰切的文言文关联词补全论述：“理论之价值___在于阐释世界，___在于指导实践；二者相辅相成，不可偏废。”",
+      "options": ["固然", "更"],
+      "correctAnswer": "固然",
+      "metadata": {
+        "context": "哲学认识论论述",
+        "blanks": [
+          {
+            "index": 0,
+            "answer": "固然",
+            "options": ["固然", "虽然", "因为"]
+          },
+          {
+            "index": 1,
+            "answer": "更",
+            "options": ["更", "也很", "不"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_c_7",
+      "type": "storyLesson",
+      "question": "文章作者对于中国古代水墨画艺术的核心见解是什么？",
+      "options": [
+        "重在以神写形、借物抒怀，追求意境的超然与空灵。",
+        "追求完全逼真的光学写实技巧。",
+        "仅用来装饰墙面，不具备哲学深度。",
+        "机械照搬西方透视原理。"
+      ],
+      "correctAnswer": "重在以神写形、借物抒怀，追求意境的超然与空灵。",
+      "metadata": {
+        "title": "中国古典美学的意境之辨",
+        "level": "C1/C2",
+        "story": "中国传统书画之精髓，非在拘泥于形貌之逼肖，而在乎气韵之生动。画家濡毫挥洒之间，山川草木皆具生命律动。计白当黑之虚实相生，不仅拓展了审美想象之空间，更熔铸了天人合一之哲思，使观者于方寸之间得见万千气象。",
+        "vocabulary": [
+          {"word": "气韵", "translation": "spiritual rhythm / artistic vitality", "highlight": true},
+          {"word": "虚实相生", "translation": "interplay between void and substance", "highlight": true},
+          {"word": "天人合一", "translation": "harmony between humanity and nature", "highlight": true}
+        ],
+        "question": "文章作者对于中国古代水墨画艺术的核心见解是什么？"
+      }
+    },
+    {
+      "id": "ex_zh_c_8",
+      "type": "dialogueListening",
+      "question": "发言人所阐述的战略重点是什么？",
+      "options": [
+        "兼顾长远基础研发与关键产业链的自主韧性建设。",
+        "立即削减所有科研经费以应对短期困难。",
+        "全面放弃传统工业。",
+        "禁止一切国际学术合作交流。"
+      ],
+      "correctAnswer": "兼顾长远基础研发与关键产业链的自主韧性建设。",
+      "metadata": {
+        "type": "dialogue",
+        "comprehensionQuestion": "发言人所阐述的战略重点是什么？",
+        "options": [
+          "兼顾长远基础研发与关键产业链的自主韧性建设。",
+          "立即削减所有科研经费以应对短期困难。",
+          "全面放弃传统工业。",
+          "禁止一切国际学术合作交流。"
+        ],
+        "correctOptionIndex": 0,
+        "dialogue": [
+          {"speaker": "主持人", "text": "面对复杂多变的外部环境，科技战略应如何实现攻守平衡？"},
+          {"speaker": "战略顾问", "text": "既要立足前沿保持基础研究之战略定力，更需铸牢关键技术自主自强之产业链韧性。"}
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_c_9",
+      "type": "multipleChoice",
+      "question": "下列古汉语句式中，哪一句属于表示双重否定以加强肯定语气的典范？",
+      "options": [
+        "无独有偶，莫不皆然",
+        "不可以这样说话",
+        "绝对不是这样的",
+        "根本没有关联"
+      ],
+      "correctAnswer": "无独有偶，莫不皆然"
+    },
+    {
+      "id": "ex_zh_c_10",
+      "type": "speakThis",
+      "question": "博观而约取，厚积而薄发，乃为学治道之至理名言。",
+      "options": [],
+      "correctAnswer": "博观而约取，厚积而薄发，乃为学治道之至理名言。"
+    }
+  ]
+}

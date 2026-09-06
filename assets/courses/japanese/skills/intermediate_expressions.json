@@ -1,0 +1,62 @@
+{
+  "id": "intermediate_expressions",
+  "name": "Intermediate Expressions",
+  "description": "Express opinions, reasons, conditions, and potential actions",
+  "level": 8,
+  "exercises": [
+    {
+      "id": "ex_ja_ie_1",
+      "type": "multipleChoice",
+      "question": "Which sentence pattern means 'I think that...' in Japanese?",
+      "options": ["〜と思います", "〜に行きます", "〜が好きです", "〜ができます"],
+      "correctAnswer": "〜と思います",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_ie_2",
+      "type": "fillInBlank",
+      "question": "明日は雨が降る___もしれません。",
+      "options": ["かも", "から", "ので", "けど"],
+      "correctAnswer": "かも",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_ie_3",
+      "type": "matchPairs",
+      "question": "Match Japanese grammar markers with their English meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "〜なければならない", "native": "must do"},
+          {"target": "〜たことがある", "native": "have experienced"},
+          {"target": "〜たほうがいい", "native": "had better do"},
+          {"target": "〜てもいい", "native": "may do (permission)"},
+          {"target": "〜ことができる", "native": "can do (ability)"}
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_ie_4",
+      "type": "translateThis",
+      "question": "日本語を上手に話せるようになりたいです",
+      "options": [],
+      "correctAnswer": "I want to become able to speak Japanese well",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_ie_5",
+      "type": "speakThis",
+      "question": "自分の意見をはっきり伝えることが大切です",
+      "options": [],
+      "correctAnswer": "自分の意見をはっきり伝えることが大切です",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

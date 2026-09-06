@@ -70,6 +70,8 @@
     { "id": "idioms", "name": "Idioms", "level": 24, "section": "advanced" },
     { "id": "slang", "name": "Slang & Colloquialisms", "level": 24, "section": "advanced" },
     { "id": "culture", "name": "Culture & Traditions", "level": 25, "section": "advanced" },
-    { "id": "current_events", "name": "Current Events", "level": 25, "section": "advanced" }
+    { "id": "current_events", "name": "Current Events", "level": 25, "section": "advanced" },
+    { "id": "c_level_mastery", "name": "C1/C2 Mastery Capstone", "level": 26, "section": "mastery" },
+    { "id": "literatuur_filosofie", "name": "Literatuur & Filosofie", "level": 27, "section": "mastery" }
   ]
 }

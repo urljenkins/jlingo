@@ -1,0 +1,170 @@
+{
+    "id": "rhetoric_discourse",
+    "name": "Rhetoric & Discourse",
+    "description": "Master advanced rhetorical structures, stylistic inversions, and persuasive argumentation in Spanish",
+    "level": 27,
+    "exercises": [
+        {
+            "id": "ex_sp_rd_1",
+            "type": "multipleChoice",
+            "question": "¿Qué recurso retórico predomina en 'Ni la elocuencia de su alegato, ni la contundencia de las pruebas lograron doblegar el escepticismo del tribunal'?",
+            "options": [
+                "Polisíndeton enfático",
+                "Metáfora coloquial",
+                "Hipérbaton humorístico",
+                "Oxímoron restrictivo"
+            ],
+            "correctAnswer": "Polisíndeton enfático"
+        },
+        {
+            "id": "ex_sp_rd_2",
+            "type": "fillInBlank",
+            "question": "___ las circunstancias lo exigieren con rigor, la junta directiva adoptará medidas excepcionales.",
+            "options": ["Caso de que", "Porque", "Ya que", "Como"],
+            "correctAnswer": "Caso de que"
+        },
+        {
+            "id": "ex_sp_rd_3",
+            "type": "matchPairs",
+            "question": "Empareja los marcadores metadiscursivos con su función retórica",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "A mayor abundamiento", "native": "Furthermore / in further support"},
+                    {"target": "Dicho lo cual", "native": "Having said that"},
+                    {"target": "En puridad", "native": "Strictly speaking / in all rigor"},
+                    {"target": "A saber", "native": "Namely / that is to say"},
+                    {"target": "Antes bien", "native": "Rather / on the contrary"}
+                ]
+            }
+        },
+        {
+            "id": "ex_sp_rd_4",
+            "type": "translationExercise",
+            "question": "Traduce al inglés: 'Lejos de retractarse de sus asertos, el ensayista redundó en las implicaciones ontológicas de su tesis.'",
+            "options": [],
+            "correctAnswer": "Far from retracting his assertions, the essayist reiterated the ontological implications of his thesis.",
+            "metadata": {
+                "direction": "toNative",
+                "sourceText": "Lejos de retractarse de sus asertos, el ensayista redundó en las implicaciones ontológicas de su tesis.",
+                "acceptableAnswers": [
+                    "Far from retracting his assertions, the essayist elaborated on the ontological implications of his thesis."
+                ]
+            }
+        },
+        {
+            "id": "ex_sp_rd_5",
+            "type": "interactiveDialogue",
+            "question": "Intervén en una réplica formal durante una deliberación académica",
+            "options": [
+                "Convendría ponderar si dicha premisa no incurre en una petición de principio.",
+                "Eso no tiene sentido.",
+                "Me parece una tontería."
+            ],
+            "correctAnswer": "Convendría ponderar si dicha premisa no incurre en una petición de principio.",
+            "metadata": {
+                "dialogue": [
+                    {"speaker": "Decano", "text": "La eficacia del modelo se colige de su propia implementación sistemática.", "isNative": true},
+                    {"speaker": "Colega", "text": "___", "isUserTurn": true, "options": [
+                        "Convendría ponderar si dicha premisa no incurre en una petición de principio.",
+                        "Eso no tiene sentido.",
+                        "Me parece una tontería."
+                    ]},
+                    {"speaker": "Decano", "text": "Ciertamente, una rigurosa demostración empírica despejaría cualquier sospecha de circularidad lógica.", "isNative": true}
+                ]
+            }
+        },
+        {
+            "id": "ex_sp_rd_6",
+            "type": "clozeTest",
+            "question": "Completa el fragmento ensayístico: 'El tratado no persigue zanjar la polémica; antes bien, pretende suscitar un escrutinio más desapasionado. ___, la hermenéutica aplicada dista de ser unívoca; ___, cada lectura enriquece la exégesis.'",
+            "options": ["Ahora bien", "con todo"],
+            "correctAnswer": "Ahora bien",
+            "metadata": {
+                "context": "Prosa académica formal",
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "Ahora bien",
+                        "options": ["Ahora bien", "Pero", "Porque"]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "con todo",
+                        "options": ["con todo", "a lo mejor", "por si acaso"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_sp_rd_7",
+            "type": "storyLesson",
+            "question": "¿Cuál es la reflexión del orador sobre el valor de la ambivalencia léxica?",
+            "options": [
+                "Que enriquece la densidad interpretativa de la literatura frente a la univocidad técnica.",
+                "Que arruina cualquier intento de comunicación humana.",
+                "Que solo debe emplearse en contratos administrativos.",
+                "Que denota una pobreza vocabular insalvable."
+            ],
+            "correctAnswer": "Que enriquece la densidad interpretativa de la literatura frente a la univocidad técnica.",
+            "metadata": {
+                "title": "La densidad polisémica del lenguaje",
+                "level": "C2",
+                "story": "La pretensión de despojar al vocablo poético de sus resonancias polisémicas confina la lengua a un árido utilitarismo. En el territorio de la estética literaria, la penumbra de la connotación opera como catalizador hermenéutico: no oscurece el mensaje, sino que convoca al lector a una coautoría intelectual sin la cual la experiencia poética se desvanece.",
+                "vocabulary": [
+                    {"word": "polisémicas", "translation": "polysemic / having multiple meanings", "highlight": true},
+                    {"word": "utilitarismo", "translation": "utilitarianism", "highlight": true},
+                    {"word": "connotación", "translation": "connotation", "highlight": true}
+                ],
+                "question": "¿Cuál es la reflexión del orador sobre el valor de la ambivalencia léxica?"
+            }
+        },
+        {
+            "id": "ex_sp_rd_8",
+            "type": "dialogueListening",
+            "question": "¿Qué reproche velado hace la ponente respecto a la argumentación del proyecto?",
+            "options": [
+                "Que carece de solidez conceptual al soslayar los dilemas éticos subyacentes.",
+                "Que el presupuesto económico es desorbitado.",
+                "Que el calendario de ejecución es demasiado extenso.",
+                "Que no incluye a personal técnico cualificado."
+            ],
+            "correctAnswer": "Que carece de solidez conceptual al soslayar los dilemas éticos subyacentes.",
+            "metadata": {
+                "type": "dialogue",
+                "comprehensionQuestion": "¿Qué reproche velado hace la ponente respecto a la argumentación del proyecto?",
+                "options": [
+                    "Que carece de solidez conceptual al soslayar los dilemas éticos subyacentes.",
+                    "Que el presupuesto económico es desorbitado.",
+                    "Que el calendario de ejecución es demasiado extenso.",
+                    "Que no incluye a personal técnico cualificado."
+                ],
+                "correctOptionIndex": 0,
+                "dialogue": [
+                    {"speaker": "Ponente A", "text": "La viabilidad del algoritmo está refrendada por simulaciones estadísticas incontrovertibles."},
+                    {"speaker": "Dra. Ortiz", "text": "Sin embargo, eludir el cuestionamiento deontológico previo desnaturaliza el propósito mismo de la investigación."}
+                ]
+            }
+        },
+        {
+            "id": "ex_sp_rd_9",
+            "type": "multipleChoice",
+            "question": "¿Cuál de las siguientes oraciones ejemplifica una correlación concesiva de registro sumamente culto?",
+            "options": [
+                "Por menguadas que fueren sus prerrogativas, no capitulará jamás ante presiones espurias.",
+                "Aunque tiene poco dinero, no va a ceder.",
+                "Por más que le insistas, dice que no.",
+                "A pesar de que no quiere, lo hará."
+            ],
+            "correctAnswer": "Por menguadas que fueren sus prerrogativas, no capitulará jamás ante presiones espurias."
+        },
+        {
+            "id": "ex_sp_rd_10",
+            "type": "speakThis",
+            "question": "Semejante interpretación soslaya deliberadamente los matices sustanciales del debate epistémico.",
+            "options": [],
+            "correctAnswer": "Semejante interpretación soslaya deliberadamente los matices sustanciales del debate epistémico."
+        }
+    ]
+}

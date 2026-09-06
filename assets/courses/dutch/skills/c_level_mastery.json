@@ -1,0 +1,170 @@
+{
+    "id": "c_level_mastery",
+    "name": "C1/C2 Mastery Capstone",
+    "description": "Master advanced Dutch pragmatics, idiomatic nuances, formal administrative registers, and rhetorical discourse",
+    "level": 26,
+    "exercises": [
+        {
+            "id": "ex_nl_c_1",
+            "type": "multipleChoice",
+            "question": "Welk voegwoordelijk bijwoord drukt in een formeel betoog een scherpe, weloverwogen tegenwerping uit?",
+            "options": [
+                "Desalniettemin",
+                "Maar ja",
+                "Nou en",
+                "Trouwens"
+            ],
+            "correctAnswer": "Desalniettemin"
+        },
+        {
+            "id": "ex_nl_c_2",
+            "type": "fillInBlank",
+            "question": "Hadden wij dit tijdig voorzien, dan ___ wij ons nimmer in dit netelige parket laten manoeuvreren.",
+            "options": ["hadden", "hebben", "zullen", "zouden"],
+            "correctAnswer": "hadden"
+        },
+        {
+            "id": "ex_nl_c_3",
+            "type": "matchPairs",
+            "question": "Koppel de geavanceerde Nederlandse idiomen aan hun pragmatische betekenis",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Spijkers op laag water zoeken", "native": "Cavil / raise petty objections"},
+                    {"target": "Het kind met het badwater weggooien", "native": "Throw the baby out with the bathwater"},
+                    {"target": "De vinger op de zere plek leggen", "native": "Put one's finger on the sore spot"},
+                    {"target": "Eieren voor zijn geld kiezen", "native": "Compromise / settle for less"},
+                    {"target": "Kort door de bocht", "native": "Overhasty / simplistic generalization"}
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_c_4",
+            "type": "translationExercise",
+            "question": "Vertaal naar het Engels: 'Gelet op de precaire sociaaleconomische conjunctuur, noopt de situatie tot een grondige herbezinning op het vigerende beleid.'",
+            "options": [],
+            "correctAnswer": "In view of the precarious socio-economic climate, the situation calls for a thorough reconsideration of the current policy.",
+            "metadata": {
+                "direction": "toNative",
+                "sourceText": "Gelet op de precaire sociaaleconomische conjunctuur, noopt de situatie tot een grondige herbezinning op het vigerende beleid.",
+                "acceptableAnswers": [
+                    "Given the precarious socio-economic climate, the situation necessitates a thorough reconsideration of the prevailing policy."
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_c_5",
+            "type": "interactiveDialogue",
+            "question": "Neem deel aan een academisch debat over institutionele besluitvorming",
+            "options": [
+                "Mag ik opmerken dat deze gevolgtrekking voorbijgaat aan wezenlijke empirische tegenwerpingen?",
+                "Ik ben het er niet mee eens.",
+                "Dat klopt helemaal niet."
+            ],
+            "correctAnswer": "Mag ik opmerken dat deze gevolgtrekking voorbijgaat aan wezenlijke empirische tegenwerpingen?",
+            "metadata": {
+                "dialogue": [
+                    {"speaker": "Prof. Van Dijk", "text": "De centralisatie van bevoegdheden garandeert onomstotelijk een grotere bestuurlijke slagkracht.", "isNative": true},
+                    {"speaker": "Collega", "text": "___", "isUserTurn": true, "options": [
+                        "Mag ik opmerken dat deze gevolgtrekking voorbijgaat aan wezenlijke empirische tegenwerpingen?",
+                        "Ik ben het er niet mee eens.",
+                        "Dat klopt helemaal niet."
+                    ]},
+                    {"speaker": "Prof. Van Dijk", "text": "Een terecht punt van kritiek; de democratische legitimiteit dient gewaarborgd te blijven.", "isNative": true}
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_c_6",
+            "type": "clozeTest",
+            "question": "Vul de juiste formele connectieven in: 'Het voorstel getuigt van visie; ___, de financiële onderbouwing blijft uiterst wankel. Het verdient ___, aanbeveling om nader beraad te plegen.'",
+            "options": ["echter", "derhalve"],
+            "correctAnswer": "echter",
+            "metadata": {
+                "context": "Formeel beleidsadvies",
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "echter",
+                        "options": ["echter", "maar", "want"]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "derhalve",
+                        "options": ["derhalve", "misschien", "toch"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_c_7",
+            "type": "storyLesson",
+            "question": "Wat is de kernboodschap van het essay omtrent cultureel erfgoed?",
+            "options": [
+                "Erfgoed is geen statisch monument, maar een dynamisch proces van maatschappelijke zingeving.",
+                "Oude gebouwen moeten zo snel mogelijk worden gesloopt.",
+                "Geschiedenis heeft geen enkele invloed op het heden.",
+                "Alleen musea mogen erfgoed beheren."
+            ],
+            "correctAnswer": "Erfgoed is geen statisch monument, maar een dynamisch proces van maatschappelijke zingeving.",
+            "metadata": {
+                "title": "Het fluïde karakter van herinnering",
+                "level": "C1/C2",
+                "story": "De verleiding is groot om cultureel erfgoed te beschouwen als een onveranderlijke verzameling relikwieën uit het verleden. In werkelijkheid is elke herinnering een constructie die onlosmakelijk verbonden is met de noden van het heden. Door het verleden voortdurend kritisch te bevragen, blazen we nieuw leven in verhalen die anders tot dorre nostalgie zouden verworden.",
+                "vocabulary": [
+                    {"word": "relikwieën", "translation": "relics", "highlight": true},
+                    {"word": "constructie", "translation": "construction / mental construct", "highlight": true},
+                    {"word": "nostalgie", "translation": "nostalgia", "highlight": true}
+                ],
+                "question": "Wat is de kernboodschap van het essay omtrent cultureel erfgoed?"
+            }
+        },
+        {
+            "id": "ex_nl_c_8",
+            "type": "dialogueListening",
+            "question": "Welk standpunt verdedigt de woordvoerder tijdens de persconferentie?",
+            "options": [
+                "Hij maant aan tot prudentie en gedegen onafhankelijk feitenonderzoek.",
+                "Hij kondigt het onmiddellijke vertrek van het kabinet aan.",
+                "Hij ontkent dat er überhaupt sprake is van een probleem.",
+                "Hij legt de schuld integraal bij buitenlandse mogendheden."
+            ],
+            "correctAnswer": "Hij maant aan tot prudentie en gedegen onafhankelijk feitenonderzoek.",
+            "metadata": {
+                "type": "dialogue",
+                "comprehensionQuestion": "Welk standpunt verdedigt de woordvoerder tijdens de persconferentie?",
+                "options": [
+                    "Hij maant aan tot prudentie en gedegen onafhankelijk feitenonderzoek.",
+                    "Hij kondigt het onmiddellijke vertrek van het kabinet aan.",
+                    "Hij ontkent dat er überhaupt sprake is van een probleem.",
+                    "Hij legt de schuld integraal bij buitenlandse mogendheden."
+                ],
+                "correctOptionIndex": 0,
+                "dialogue": [
+                    {"speaker": "Verslaggever", "text": "Is het rapport niet een vernietigend oordeel over het gevoerde toezichtbeleid?"},
+                    {"speaker": "Woordvoerder", "text": "Laten we waken voor overhaaste conclusies; een nauwgezette analyse van de toedracht is thans geboden."}
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_c_9",
+            "type": "multipleChoice",
+            "question": "Wat betekent de archaïsche uitdrukking 'te elfder ure'?",
+            "options": [
+                "Op het allerlaatste moment",
+                "Om precies elf uur 's avonds",
+                "Na rijp beraad",
+                "Veel te vroeg"
+            ],
+            "correctAnswer": "Op het allerlaatste moment"
+        },
+        {
+            "id": "ex_nl_c_10",
+            "type": "speakThis",
+            "question": "Het strekt ten zeerste tot aanbeveling de vigerende jurisprudentie nauwlettend te bestuderen.",
+            "options": [],
+            "correctAnswer": "Het strekt ten zeerste tot aanbeveling de vigerende jurisprudentie nauwlettend te bestuderen."
+        }
+    ]
+}

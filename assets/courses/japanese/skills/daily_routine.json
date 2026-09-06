@@ -1,0 +1,67 @@
+{
+  "id": "daily_routine",
+  "name": "Daily Routine & Te-form",
+  "description": "Learn daily activities, time expressions, and connective verb forms (te-form)",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_ja_dr_1",
+      "type": "translateThis",
+      "question": "毎朝七時に起きます",
+      "options": [],
+      "correctAnswer": "I wake up at seven every morning",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_dr_2",
+      "type": "fillInBlank",
+      "question": "朝ご飯を___、学校へ行きます。",
+      "options": ["食べて", "食べる", "食べた", "食べます"],
+      "correctAnswer": "食べて",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_dr_3",
+      "type": "matchPairs",
+      "question": "Match the Japanese daily activities with their English meanings",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "起きる", "native": "to wake up"},
+          {"target": "寝る", "native": "to go to sleep"},
+          {"target": "顔を洗う", "native": "to wash face"},
+          {"target": "お風呂に入る", "native": "to take a bath"},
+          {"target": "歯を磨く", "native": "to brush teeth"}
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_dr_4",
+      "type": "multipleChoice",
+      "question": "What does 'シャワーを浴びてから出かけます' mean?",
+      "options": [
+        "I go out after taking a shower",
+        "I take a shower before going to bed",
+        "I wake up and wash my face",
+        "I take a bath in the morning"
+      ],
+      "correctAnswer": "I go out after taking a shower",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_dr_5",
+      "type": "speakThis",
+      "question": "今日も一日頑張りましょう",
+      "options": [],
+      "correctAnswer": "今日も一日頑張りましょう",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

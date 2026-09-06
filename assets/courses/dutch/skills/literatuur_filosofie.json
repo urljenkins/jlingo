@@ -1,0 +1,170 @@
+{
+    "id": "literatuur_filosofie",
+    "name": "Literatuur & Filosofie",
+    "description": "Verken hoogstaande literaire essays, stilistische nuances, filosofisch discours en historische retoriek in het Nederlands",
+    "level": 27,
+    "exercises": [
+        {
+            "id": "ex_nl_lf_1",
+            "type": "multipleChoice",
+            "question": "Welk stijlfiguur kenmerkt Multatuli's beroemde slotrede in 'Max Havelaar'?",
+            "options": [
+                "Een vlammende apostrofe (directe aanspreking van het staatshoofd)",
+                "Een komische woordspeling",
+                "Een droge zakelijke opsomming",
+                "Een kinderlijk rijm"
+            ],
+            "correctAnswer": "Een vlammende apostrofe (directe aanspreking van het staatshoofd)"
+        },
+        {
+            "id": "ex_nl_lf_2",
+            "type": "fillInBlank",
+            "question": "Hoe men het ook wendt of ___, de ethische implicaties van deze theorie zijn onontkoombaar.",
+            "options": ["keert", "draait", "loopt", "ziet"],
+            "correctAnswer": "keert"
+        },
+        {
+            "id": "ex_nl_lf_3",
+            "type": "matchPairs",
+            "question": "Verbind de filosofische begrippen met hun analytische betekenis",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Determinisme", "native": "Philosophical doctrine that all events are predetermined"},
+                    {"target": "Hermeneutiek", "native": "Theory and methodology of interpretation"},
+                    {"target": "Verlichting", "native": "Intellectual movement prioritizing reason (Enlightenment)"},
+                    {"target": "Ontologie", "native": "Branch of metaphysics dealing with the nature of being"},
+                    {"target": "Epistemologie", "native": "Theory of knowledge / epistemology"}
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_lf_4",
+            "type": "translationExercise",
+            "question": "Vertaal naar het Engels: 'Verre van de rede te verheffen tot een absolute maatstaf, ontmaskert de essayist de blinde vlekken van het verlichtingsdenken.'",
+            "options": [],
+            "correctAnswer": "Far from elevating reason to an absolute standard, the essayist exposes the blind spots of Enlightenment thought.",
+            "metadata": {
+                "direction": "toNative",
+                "sourceText": "Verre van de rede te verheffen tot een absolute maatstaf, ontmaskert de essayist de blinde vlekken van het verlichtingsdenken.",
+                "acceptableAnswers": [
+                    "Far from elevating reason to an absolute standard, the essayist unmasks the blind spots of Enlightenment thinking."
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_lf_5",
+            "type": "interactiveDialogue",
+            "question": "Draag bij aan een filosofisch symposium over taal en werkelijkheid",
+            "options": [
+                "Deze visie veronachtzaamt de constitutieve rol die taalmetaforen spelen in onze waarneming.",
+                "Dat slaat nergens op.",
+                "Ik weet het niet."
+            ],
+            "correctAnswer": "Deze visie veronachtzaamt de constitutieve rol die taalmetaforen spelen in onze waarneming.",
+            "metadata": {
+                "dialogue": [
+                    {"speaker": "Prof. De Boer", "text": "Taal is louter een neutraal instrument dat feiten uit de fysieke wereld registreert.", "isNative": true},
+                    {"speaker": "Onderzoeker", "text": "___", "isUserTurn": true, "options": [
+                        "Deze visie veronachtzaamt de constitutieve rol die taalmetaforen spelen in onze waarneming.",
+                        "Dat slaat nergens op.",
+                        "Ik weet het niet."
+                    ]},
+                    {"speaker": "Prof. De Boer", "text": "Een treffende tegenwerping; de taalfilosofie toont inderdaad aan dat taal de werkelijkheid mede construeert.", "isNative": true}
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_lf_6",
+            "type": "clozeTest",
+            "question": "Vul de passende formele signaalwoorden in: 'De auteur schuwt de controverse geenszins; ___ zoekt hij bewust het scherpst van de snede op. Het werk dwingt de lezer ___, tot zelfreflectie.'",
+            "options": ["integendeel", "zodoende"],
+            "correctAnswer": "integendeel",
+            "metadata": {
+                "context": "Literaire essayistiek",
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "integendeel",
+                        "options": ["integendeel", "maar", "want"]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "zodoende",
+                        "options": ["zodoende", "misschien", "toevallig"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_lf_7",
+            "type": "storyLesson",
+            "question": "Wat betoogt de schrijver omtrent de maatschappelijke betekenis van fictie?",
+            "options": [
+                "Fictie opent empathische verbeeldingsruimtes die bureaucratische rigiditeit doorbreken.",
+                "Fictie is nutteloze tijdverspilling zonder economisch nut.",
+                "Romans moeten uitsluitend feitelijke historische kronieken zijn.",
+                "Literatuur moet door de staat worden gecensureerd."
+            ],
+            "correctAnswer": "Fictie opent empathische verbeeldingsruimtes die bureaucratische rigiditeit doorbreken.",
+            "metadata": {
+                "title": "De subversieve kracht van de roman",
+                "level": "C2",
+                "story": "Wie meent dat de roman slechts een aangenaam tijdverdrijf is voor ledige uren, miskent de ontwrichtende kracht van het vertelde woord. Fictie gunt ons een blik in het innerlijk van de ander, overbrugt afgronden van onbegrip en legt getuigenis af van menselijke feilbaarheid. In een wereld bezeten van meetbaarheid blijft het literaire verhaal een toevluchtsoord voor het ongrijpbare.",
+                "vocabulary": [
+                    {"word": "ontwrichtende", "translation": "disruptive / subversive", "highlight": true},
+                    {"word": "feilbaarheid", "translation": "fallibility", "highlight": true},
+                    {"word": "ongrijpbare", "translation": "intangible / elusive", "highlight": true}
+                ],
+                "question": "Wat betoogt de schrijver omtrent de maatschappelijke betekenis van fictie?"
+            }
+        },
+        {
+            "id": "ex_nl_lf_8",
+            "type": "dialogueListening",
+            "question": "Welk bezwaar formuleert de commentator tegen een puur technocratische besluitvorming?",
+            "options": [
+                "Dat het de morele en existentiële dimensie van menselijke keuzes reduceert tot kille cijfers.",
+                "Dat computers te traag rekenen.",
+                "Dat ambtenaren te veel salaris ontvangen.",
+                "Dat wiskunde geen nuttige wetenschap is."
+            ],
+            "correctAnswer": "Dat het de morele en existentiële dimensie van menselijke keuzes reduceert tot kille cijfers.",
+            "metadata": {
+                "type": "dialogue",
+                "comprehensionQuestion": "Welk bezwaar formuleert de commentator tegen een puur technocratische besluitvorming?",
+                "options": [
+                    "Dat het de morele en existentiële dimensie van menselijke keuzes reduceert tot kille cijfers.",
+                    "Dat computers te traag rekenen.",
+                    "Dat ambtenaren te veel salaris ontvangen.",
+                    "Dat wiskunde geen nuttige wetenschap is."
+                ],
+                "correctOptionIndex": 0,
+                "dialogue": [
+                    {"speaker": "Interviewer", "text": "Kunnen data-algoritmes ethische dilemma's in de zorg objectief beslechten?"},
+                    {"speaker": "Filosoof", "text": "Zulks veronderstellen is een gevaarlijke illusie; existentiële afwegingen vergen geweten en menselijk inlevingsvermogen, geen spreadsheet."}
+                ]
+            }
+        },
+        {
+            "id": "ex_nl_lf_9",
+            "type": "multipleChoice",
+            "question": "Wat betekent het formele werkwoord 'ontwaren' in een literaire context?",
+            "options": [
+                "Met enige moeite waarnemen of bespeuren",
+                "Vergeten",
+                "Opzettelijk verbergen",
+                "Verwoesten"
+            ],
+            "correctAnswer": "Met enige moeite waarnemen of bespeuren"
+        },
+        {
+            "id": "ex_nl_lf_10",
+            "type": "speakThis",
+            "question": "De gelaagdheid van de tekst nodigt uit tot een hermeneutische herlezing van de canon.",
+            "options": [],
+            "correctAnswer": "De gelaagdheid van de tekst nodigt uit tot een hermeneutische herlezing van de canon."
+        }
+    ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "c_level_mastery",
+  "name": "C1/C2 Mastery Capstone",
+  "description": "Master advanced keigo (honorifics), formal registers, rhetorical discourse, and nuanced Japanese expressions",
+  "level": 26,
+  "exercises": [
+    {
+      "id": "ex_ja_c_1",
+      "type": "multipleChoice",
+      "question": "ビジネスや公の場で、相手の意向を最も丁重に尋ねる敬語表現はどれですか？",
+      "options": [
+        "ご意向をお伺いしてもよろしいでしょうか",
+        "どうしたいか言ってください",
+        "聞いてもいいですか",
+        "意見を聞きたいです"
+      ],
+      "correctAnswer": "ご意向をお伺いしてもよろしいでしょうか",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_c_2",
+      "type": "fillInBlank",
+      "question": "先般の不手際につきまして、平にご容赦___存じます。",
+      "options": ["願いたく", "願うと", "願えば", "願って"],
+      "correctAnswer": "願いたく",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_c_3",
+      "type": "matchPairs",
+      "question": "高度な四字熟語とその意味を結びつけなさい",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "臨機応変", "native": "Adapting flexibly to changing circumstances"},
+          {"target": "捲土重来", "native": "Staging a fierce comeback after defeat"},
+          {"target": "温故知新", "native": "Learning from the past to understand the new"},
+          {"target": "切磋琢磨", "native": "Mutual encouragement and friendly rivalry"},
+          {"target": "虚心坦懐", "native": "With an open and candid mind"}
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_c_4",
+      "type": "translationExercise",
+      "question": "英語に翻訳しなさい:「諸般の事情を総合的に勘案した上で、慎重に対応を検討せざるを得ません。」",
+      "options": [],
+      "correctAnswer": "Having comprehensively taken all circumstances into consideration, we have no choice but to carefully consider our response.",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "direction": "toNative",
+        "sourceText": "諸般の事情を総合的に勘案した上で、慎重に対応を検討せざるを得ません。",
+        "acceptableAnswers": [
+          "Taking various circumstances comprehensively into account, we are compelled to carefully examine our response."
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_c_5",
+      "type": "interactiveDialogue",
+      "question": "政策討論会における学術的対話に参加しなさい",
+      "options": [
+        "恐れ入りますが、その仮説は長期的な統計的有意性を欠いているかと存じます。",
+        "そんなの間違っています。",
+        "よくわかりません。"
+      ],
+      "correctAnswer": "恐れ入りますが、その仮説は長期的な統計的有意性を欠いているかと存じます。",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "dialogue": [
+          {"speaker": "司会者", "text": "デジタル通貨の導入は経済格差を完全に是正すると結論づけられますか。", "isNative": true},
+          {"speaker": "参加者", "text": "___", "isUserTurn": true, "options": [
+            "恐れ入りますが、その仮説は長期的な統計的有意性を欠いているかと存じます。",
+            "そんなの間違っています。",
+            "よくわかりません。"
+          ]},
+          {"speaker": "司会者", "text": "ご指摘の通り、構造的要因を踏まえた精緻な検証が不可欠ですね。", "isNative": true}
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_c_6",
+      "type": "clozeTest",
+      "question": "学術論文の文脈に即して適切な接続語を選びなさい:「本稿の分析は示唆に富む。___、対象標本が限定的である点は否めない。___、今後の追試が俟たれる。」",
+      "options": ["とはいえ", "したがって"],
+      "correctAnswer": "とはいえ",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "context": "学術論文における考察",
+        "blanks": [
+          {
+            "index": 0,
+            "answer": "とはいえ",
+            "options": ["とはいえ", "だから", "つまり"]
+          },
+          {
+            "index": 1,
+            "answer": "したがって",
+            "options": ["したがって", "たぶん", "けれど"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_c_7",
+      "type": "storyLesson",
+      "question": "筆者が伝統芸能の継承について述べている最も核心的な論点は何か。",
+      "options": [
+        "形の踏襲にとどまらず、時代の精神を受容しながら本質を再解釈すること。",
+        "過去の様式を一切変更せずに機械的に模倣すること。",
+        "西洋の技術を取り入れて伝統を完全に廃止すること。",
+        "後継者の育成を放棄すること。"
+      ],
+      "correctAnswer": "形の踏襲にとどまらず、時代の精神を受容しながら本質を再解釈すること。",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "title": "随想：伝統の不易と流行",
+        "level": "C1/C2",
+        "story": "伝統芸能における「守破離」の教えは、単なる技法の習得プロセスを超えた精神的跳躍を示唆している。師の教えを忠実に守る段階を経て、自らの解釈を以て枠組みを破り、やがて独自の境地へと離れ行く。不易の精神を根底に据えつつ、変容を恐れぬ果敢な試みこそが、生きた文化としての命脈を保たせるのである。",
+        "vocabulary": [
+          {"word": "守破離", "translation": "three stages of mastery (obey, detach, transcend)", "highlight": true},
+          {"word": "示唆", "translation": "suggestion / implication", "highlight": true},
+          {"word": "命脈", "translation": "lifeblood / continuous thread", "highlight": true}
+        ],
+        "question": "筆者が伝統芸能の継承について述べている最も核心的な論点は何か。"
+      }
+    },
+    {
+      "id": "ex_ja_c_8",
+      "type": "dialogueListening",
+      "question": "発言者が求めている具体的な対応は何か。",
+      "options": [
+        "予断を排した客観的調査と情報開示の徹底。",
+        "即時辞任の要求。",
+        "計画の無期限延期。",
+        "責任の転嫁。"
+      ],
+      "correctAnswer": "予断を排した客観的調査と情報開示の徹底。",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "type": "dialogue",
+        "comprehensionQuestion": "発言者が求めている具体的な対応は何か。",
+        "options": [
+          "予断を排した客観的調査と情報開示の徹底。",
+          "即時辞任の要求。",
+          "計画の無期限延期。",
+          "責任の転嫁。"
+        ],
+        "correctOptionIndex": 0,
+        "dialogue": [
+          {"speaker": "委員長", "text": "今回の懸念事項について、執行部の見解を伺いたい。"},
+          {"speaker": "専門員", "text": "事態の推移を注視するとともに、予断を排した客観的な検証と迅速な情報開示が肝要であると考えます。"}
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_c_9",
+      "type": "multipleChoice",
+      "question": "「〜を余儀なくされる」という構文の意味として最も適切なものはどれですか？",
+      "options": [
+        "不本意ながら、そうせざるを得ない状況に追い込まれる",
+        "余暇を大いに楽しむことができる",
+        "自分の意思で喜んで選択する",
+        "他人に無理やり命令する"
+      ],
+      "correctAnswer": "不本意ながら、そうせざるを得ない状況に追い込まれる",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_c_10",
+      "type": "speakThis",
+      "question": "多角的な視野に立ち、本質的な課題の解決に向けて尽力いたします。",
+      "options": [],
+      "correctAnswer": "多角的な視野に立ち、本質的な課題の解決に向けて尽力いたします。",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

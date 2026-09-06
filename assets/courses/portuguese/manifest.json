@@ -141,6 +141,18 @@
       "name": "Current Events",
       "level": 25,
       "section": "advanced"
+    },
+    {
+      "id": "c_level_mastery",
+      "name": "C1/C2 Mastery Capstone",
+      "level": 26,
+      "section": "mastery"
+    },
+    {
+      "id": "literatura_retorica",
+      "name": "Literatura & Retórica",
+      "level": 27,
+      "section": "mastery"
     }
   ]
 }

@@ -405,6 +405,18 @@
             "name": "Current Events",
             "level": 25,
             "section": "advanced"
+        },
+        {
+            "id": "c_level_mastery",
+            "name": "C1/C2 Mastery Capstone",
+            "level": 26,
+            "section": "mastery"
+        },
+        {
+            "id": "rhetoric_discourse",
+            "name": "Rhetoric & Discourse",
+            "level": 27,
+            "section": "mastery"
         }
     ]
 }

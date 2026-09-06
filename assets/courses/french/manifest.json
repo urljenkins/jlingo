@@ -27,6 +27,48 @@
             "name": "Listening & Pronunciation",
             "level": 2,
             "section": "foundational"
+        },
+        {
+            "id": "food_drink",
+            "name": "Food & Dining",
+            "level": 4,
+            "section": "foundational"
+        },
+        {
+            "id": "daily_routine",
+            "name": "Daily Routine",
+            "level": 5,
+            "section": "foundational"
+        },
+        {
+            "id": "past_tense",
+            "name": "Past Tense (Passé Composé)",
+            "level": 8,
+            "section": "intermediate"
+        },
+        {
+            "id": "future_plans",
+            "name": "Future Plans",
+            "level": 14,
+            "section": "intermediate"
+        },
+        {
+            "id": "opinions_debating",
+            "name": "Opinions & Debating",
+            "level": 21,
+            "section": "advanced"
+        },
+        {
+            "id": "c_level_mastery",
+            "name": "C1/C2 Mastery Capstone",
+            "level": 26,
+            "section": "mastery"
+        },
+        {
+            "id": "litterature_philosophie",
+            "name": "Littérature & Philosophie",
+            "level": 27,
+            "section": "mastery"
         }
     ]
 }

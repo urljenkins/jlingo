@@ -1,0 +1,52 @@
+{
+    "id": "past_tense",
+    "name": "Past Tense (Passé Composé)",
+    "description": "Learn to talk about past events using the passé composé with avoir and être",
+    "level": 8,
+    "exercises": [
+        {
+            "id": "ex_fr_pt_1",
+            "type": "multipleChoice",
+            "question": "Which auxiliary verb is used with 'arriver' in passé composé?",
+            "options": ["être", "avoir", "faire", "aller"],
+            "correctAnswer": "être"
+        },
+        {
+            "id": "ex_fr_pt_2",
+            "type": "fillInBlank",
+            "question": "Hier soir, nous ___ regardé un très bon film.",
+            "options": ["avons", "sommes", "étions", "avions"],
+            "correctAnswer": "avons"
+        },
+        {
+            "id": "ex_fr_pt_3",
+            "type": "matchPairs",
+            "question": "Match French past participles with their infinitive verbs",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "fait", "native": "faire (to do/make)"},
+                    {"target": "vu", "native": "voir (to see)"},
+                    {"target": "pris", "native": "prendre (to take)"},
+                    {"target": "allé", "native": "aller (to go)"},
+                    {"target": "dit", "native": "dire (to say)"}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_pt_4",
+            "type": "translateThis",
+            "question": "Elle est arrivée à l'heure",
+            "options": [],
+            "correctAnswer": "She arrived on time"
+        },
+        {
+            "id": "ex_fr_pt_5",
+            "type": "speakThis",
+            "question": "J'ai passé une excellente journée avec mes amis",
+            "options": [],
+            "correctAnswer": "J'ai passé une excellente journée avec mes amis"
+        }
+    ]
+}

@@ -63,6 +63,30 @@
       "name": "Reading & Writing",
       "level": 4,
       "path": "skills/reading_writing.json"
+    },
+    {
+      "id": "daily_routine",
+      "name": "Daily Routine & Te-form",
+      "level": 5,
+      "path": "skills/daily_routine.json"
+    },
+    {
+      "id": "intermediate_expressions",
+      "name": "Intermediate Expressions",
+      "level": 8,
+      "path": "skills/intermediate_expressions.json"
+    },
+    {
+      "id": "c_level_mastery",
+      "name": "C1/C2 Mastery Capstone",
+      "level": 26,
+      "path": "skills/c_level_mastery.json"
+    },
+    {
+      "id": "classical_literature",
+      "name": "Classical Literature & Rhetoric",
+      "level": 27,
+      "path": "skills/classical_literature.json"
     }
   ]
 }

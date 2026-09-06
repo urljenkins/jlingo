@@ -1,0 +1,190 @@
+{
+  "id": "classical_literature",
+  "name": "Classical Literature & Rhetoric",
+  "description": "Engage with classical literary aesthetics, advanced idioms, poetic devices, and profound cultural discourse in Japanese",
+  "level": 27,
+  "exercises": [
+    {
+      "id": "ex_ja_cl_1",
+      "type": "multipleChoice",
+      "question": "日本文学における伝統的審美理念「もののあわれ」の本質的意義として最も適切なものはどれですか？",
+      "options": [
+        "移ろいゆく万物に対する深く繊細な情趣や無常観の美学",
+        "喜劇的で滑稽な笑いを中心とした庶民文化の表現",
+        "外来文化を無批判に称賛する近代主義の思考",
+        "現世の利益のみを追求する実利主義的態度"
+      ],
+      "correctAnswer": "移ろいゆく万物に対する深く繊細な情趣や無常観の美学",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_cl_2",
+      "type": "fillInBlank",
+      "question": "古人の跡を求めず、古人の___ところを求めよ。（松尾芭蕉）",
+      "options": ["求めたる", "求むる", "求める", "求めて"],
+      "correctAnswer": "求めたる",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_cl_3",
+      "type": "matchPairs",
+      "question": "高度な文語的表現とその現代的含意を結びつけなさい",
+      "options": [],
+      "correctAnswer": "",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "pairs": [
+          {"target": "幽玄", "native": "Subtle, profound grace and mysterious beauty"},
+          {"target": "侘び寂び", "native": "Beauty found in imperfection and simplicity"},
+          {"target": "風雅", "native": "Refinement and artistic elegance"},
+          {"target": "花鳥風月", "native": "Beauties of nature / poetic appreciation"},
+          {"target": "行雲流水", "native": "Floating clouds and flowing water (effortless ease)"}
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_cl_4",
+      "type": "translationExercise",
+      "question": "英語に翻訳しなさい:「形骸化した伝統をなぞるのみでは、文化の自浄作用と創造的再生は望むべくもない。」",
+      "options": [],
+      "correctAnswer": "Merely tracing fossilized traditions leaves no hope for the self-cleansing and creative renewal of culture.",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "direction": "toNative",
+        "sourceText": "形骸化した伝統をなぞるのみでは、文化の自浄作用と創造的再生は望むべくもない。",
+        "acceptableAnswers": [
+          "If one merely mimics fossilized traditions, one cannot hope for the cultural self-renewal and creative rebirth."
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_cl_5",
+      "type": "interactiveDialogue",
+      "question": "比較文学のシンポジウムにおいて修辞的見解を述べなさい",
+      "options": [
+        "行間に漂う余情の綾を掬い取ることこそが、翻訳における最大の難所であり醍醐味かと存じます。",
+        "翻訳は言葉を置き換えるだけです。",
+        "特に意見はありません。"
+      ],
+      "correctAnswer": "行間に漂う余情の綾を掬い取ることこそが、翻訳における最大の難所であり醍醐味かと存じます。",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "dialogue": [
+          {"speaker": "座長", "text": "古典詩歌の翻訳において、字義通りの正確さと詩的響きの調和は如何にして可能でしょうか。", "isNative": true},
+          {"speaker": "研究員", "text": "___", "isUserTurn": true, "options": [
+            "行間に漂う余情の綾を掬い取ることこそが、翻訳における最大の難所であり醍醐味かと存じます。",
+            "翻訳は言葉を置き換えるだけです。",
+            "特に意見はありません。"
+          ]},
+          {"speaker": "座長", "text": "実に至言ですね。原詩の佇まいそのものを移し替える繊細な感性が問われます。", "isNative": true}
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_cl_6",
+      "type": "clozeTest",
+      "question": "文芸批評の文脈に即して適切な語を選択しなさい:「作者の筆致は冷徹を極める。___、根底には生の儚さへの慈しみが潜む。___、読者は静謐な余韻に包まれるのである。」",
+      "options": ["されど", "さればこそ"],
+      "correctAnswer": "されど",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "context": "文芸批評における筆致の考察",
+        "blanks": [
+          {
+            "index": 0,
+            "answer": "されど",
+            "options": ["されど", "しかし", "だから"]
+          },
+          {
+            "index": 1,
+            "answer": "さればこそ",
+            "options": ["さればこそ", "たぶん", "やはり"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_cl_7",
+      "type": "storyLesson",
+      "question": "本稿における「余白」の哲学的解釈として最も合致するものはどれか。",
+      "options": [
+        "不在の空間が観察者の思索を喚起し、表現を真に完成へと導く触媒となること。",
+        "単に紙面を節約するための実用的な工夫であること。",
+        "未熟な絵師が描き残した過失の結果であること。",
+        "色彩の欠如を隠蔽するための技術的手段であること。"
+      ],
+      "correctAnswer": "不在の空間が観察者の思索を喚起し、表現を真に完成へと導く触媒となること。",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "title": "水墨画における余白の美学",
+        "level": "C2",
+        "story": "水墨画における「余白」は、決して描くべき対象の欠如を意味するものではない。筆を置かぬことによって生み出される無限の広がりは、見る者の想像力と共鳴し、語られざる真実を豊かに物語る。満ち足りた饒舌よりも、控えた沈黙にこそ究極の精神性が宿るという東洋の美意識がそこに結実している。",
+        "vocabulary": [
+          {"word": "余白", "translation": "blank space / meaningful void", "highlight": true},
+          {"word": "饒舌", "translation": "loquacity / excessive talkativeness", "highlight": true},
+          {"word": "美意識", "translation": "aesthetic consciousness", "highlight": true}
+        ],
+        "question": "本稿における「余白」の哲学的解釈として最も合致するものはどれか。"
+      }
+    },
+    {
+      "id": "ex_ja_cl_8",
+      "type": "dialogueListening",
+      "question": "論者が提起している批評的視点は何か。",
+      "options": [
+        "近代的合理主義の枠組みのみで伝統の精神性を裁断することの危うさ。",
+        "全ての近代建築を即時解体すべきという主張。",
+        "自然科学の成果を全面否定する立場。",
+        "伝統工芸の工業化を促進する方針。"
+      ],
+      "correctAnswer": "近代的合理主義の枠組みのみで伝統の精神性を裁断することの危うさ。",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US",
+      "metadata": {
+        "type": "dialogue",
+        "comprehensionQuestion": "論者が提起している批評的視点は何か。",
+        "options": [
+          "近代的合理主義の枠組みのみで伝統の精神性を裁断することの危うさ。",
+          "全ての近代建築を即時解体すべきという主張。",
+          "自然科学の成果を全面否定する立場。",
+          "伝統工芸の工業化を促進する方針。"
+        ],
+        "correctOptionIndex": 0,
+        "dialogue": [
+          {"speaker": "批評家", "text": "無駄を削ぎ落とす機能美こそが、現代における唯一至上の美徳ではありませんか。"},
+          {"speaker": "哲学者", "text": "機能性という単一の物差しだけで測り得ぬ、曖昧さや陰翳の内にこそ人文学的豊饒さが宿るのではないでしょうか。"}
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_cl_9",
+      "type": "multipleChoice",
+      "question": "文語表現「〜に堪えない（たえない）」が「感謝の念に堪えない」として用いられる際の適切な意味はどれですか？",
+      "options": [
+        "あまりのありがたさに胸が一杯になり、感情を抑えきれない",
+        "耐えられないほど不愉快である",
+        "我慢できずに怒り出す",
+        "価値が低くて見るに及ばない"
+      ],
+      "correctAnswer": "あまりのありがたさに胸が一杯になり、感情を抑えきれない",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_cl_10",
+      "type": "speakThis",
+      "question": "言霊の宿る言の葉を紡ぎ、深遠なる文化の真髄を後世へと継承せん。",
+      "options": [],
+      "correctAnswer": "言霊の宿る言の葉を紡ぎ、深遠なる文化の真髄を後世へと継承せん。",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    }
+  ]
+}

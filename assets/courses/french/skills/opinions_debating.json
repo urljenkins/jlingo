@@ -1,0 +1,57 @@
+{
+    "id": "opinions_debating",
+    "name": "Opinions & Debating",
+    "description": "Formulate opinions, construct arguments, and use subjunctive expressions in debates",
+    "level": 21,
+    "exercises": [
+        {
+            "id": "ex_fr_od_1",
+            "type": "multipleChoice",
+            "question": "Which phrase requires the subjunctive mood in French?",
+            "options": [
+                "Il faut que tu fasses attention",
+                "Je pense que tu as raison",
+                "Il est certain qu'il vient",
+                "Je sais qu'elle comprend"
+            ],
+            "correctAnswer": "Il faut que tu fasses attention"
+        },
+        {
+            "id": "ex_fr_od_2",
+            "type": "fillInBlank",
+            "question": "Bien que cette proposition ___ intéressante, elle présente plusieurs écueils.",
+            "options": ["soit", "est", "sera", "était"],
+            "correctAnswer": "soit"
+        },
+        {
+            "id": "ex_fr_od_3",
+            "type": "matchPairs",
+            "question": "Match debate connectors with their English meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "néanmoins", "native": "nevertheless"},
+                    {"target": "en revanche", "native": "on the other hand"},
+                    {"target": "par conséquent", "native": "consequently"},
+                    {"target": "à mon avis", "native": "in my opinion"},
+                    {"target": "d'une part", "native": "on the one hand"}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_od_4",
+            "type": "translateThis",
+            "question": "Je partage votre avis sur ce sujet complexe",
+            "options": [],
+            "correctAnswer": "I share your opinion on this complex subject"
+        },
+        {
+            "id": "ex_fr_od_5",
+            "type": "speakThis",
+            "question": "Il est primordial de concilier efficacité économique et justice sociale",
+            "options": [],
+            "correctAnswer": "Il est primordial de concilier efficacité économique et justice sociale"
+        }
+    ]
+}

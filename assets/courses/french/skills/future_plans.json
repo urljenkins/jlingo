@@ -1,0 +1,57 @@
+{
+    "id": "future_plans",
+    "name": "Future Plans",
+    "description": "Express future plans using futur simple and futur proche",
+    "level": 14,
+    "exercises": [
+        {
+            "id": "ex_fr_fp_1",
+            "type": "multipleChoice",
+            "question": "What is the futur proche form of 'I am going to travel'?",
+            "options": [
+                "Je vais voyager",
+                "Je voyage",
+                "J'ai voyagé",
+                "Je voyageais"
+            ],
+            "correctAnswer": "Je vais voyager"
+        },
+        {
+            "id": "ex_fr_fp_2",
+            "type": "fillInBlank",
+            "question": "L'année prochaine, nous ___ en France pour les vacances.",
+            "options": ["irons", "allons", "étions", "sommes"],
+            "correctAnswer": "irons"
+        },
+        {
+            "id": "ex_fr_fp_3",
+            "type": "matchPairs",
+            "question": "Match the futur simple forms with English meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "je ferai", "native": "I will do/make"},
+                    {"target": "je serai", "native": "I will be"},
+                    {"target": "j'aurai", "native": "I will have"},
+                    {"target": "je pourrai", "native": "I will be able to"},
+                    {"target": "je verrai", "native": "I will see"}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_fp_4",
+            "type": "translateThis",
+            "question": "Demain, il fera beau",
+            "options": [],
+            "correctAnswer": "Tomorrow the weather will be nice"
+        },
+        {
+            "id": "ex_fr_fp_5",
+            "type": "speakThis",
+            "question": "Nous organiserons une réunion la semaine prochaine",
+            "options": [],
+            "correctAnswer": "Nous organiserons une réunion la semaine prochaine"
+        }
+    ]
+}

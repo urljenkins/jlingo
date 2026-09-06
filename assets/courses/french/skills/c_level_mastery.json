@@ -1,0 +1,170 @@
+{
+    "id": "c_level_mastery",
+    "name": "C1/C2 Mastery Capstone",
+    "description": "Master advanced pragmatic nuances, rhetorical registers, complex syntax, and formal discourse",
+    "level": 26,
+    "exercises": [
+        {
+            "id": "ex_fr_c_1",
+            "type": "multipleChoice",
+            "question": "Dans un registre soutenu, quel tour syntaxique traduit avec élégance une concession hypothétique ?",
+            "options": [
+                "Encore eût-il fallu qu'il en fût averti",
+                "Même s'il le savait pas",
+                "Quoique c'est vrai",
+                "Pourtant il savait"
+            ],
+            "correctAnswer": "Encore eût-il fallu qu'il en fût averti"
+        },
+        {
+            "id": "ex_fr_c_2",
+            "type": "fillInBlank",
+            "question": "Loin de constituer une panacée, ce dispositif n'en demeure pas ___ sujet à caution.",
+            "options": ["moins", "plus", "trop", "assez"],
+            "correctAnswer": "moins"
+        },
+        {
+            "id": "ex_fr_c_3",
+            "type": "matchPairs",
+            "question": "Associez les expressions idiomatiques du registre soutenu à leur équivalent pragmatique",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Battre en brèche", "native": "Vigorously contest / undermine"},
+                    {"target": "Faire long feu", "native": "Fail to produce the expected effect"},
+                    {"target": "Prendre le contre-pied", "native": "Adopt the opposite view"},
+                    {"target": "Trancher le nœud gordien", "native": "Cut the Gordian knot (decisive resolution)"},
+                    {"target": "Mettre au ban", "native": "Ostracize / banish"}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_c_4",
+            "type": "translationExercise",
+            "question": "Traduisez vers l'anglais: 'Au vu des conclusions du rapport, il appert que cette controverse procède d'un malentendu conceptuel.'",
+            "options": [],
+            "correctAnswer": "In view of the report's conclusions, it appears that this controversy stems from a conceptual misunderstanding.",
+            "metadata": {
+                "direction": "toNative",
+                "sourceText": "Au vu des conclusions du rapport, il appert que cette controverse procède d'un malentendu conceptuel.",
+                "acceptableAnswers": [
+                    "In light of the report's conclusions, it appears that this controversy arises from a conceptual misunderstanding."
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_c_5",
+            "type": "interactiveDialogue",
+            "question": "Intervenez dans un débat universitaire sur l'épistémologie contemporaine",
+            "options": [
+                "Permettez-moi de nuancer: cette assertion postule une équivalence pour le moins discutable.",
+                "Je ne suis pas d'accord.",
+                "C'est faux."
+            ],
+            "correctAnswer": "Permettez-moi de nuancer: cette assertion postule une équivalence pour le moins discutable.",
+            "metadata": {
+                "dialogue": [
+                    {"speaker": "Prof. Renard", "text": "Le déterminisme technologique suffit à rendre compte des mutations sociétales majeures.", "isNative": true},
+                    {"speaker": "Intervenant", "text": "___", "isUserTurn": true, "options": [
+                        "Permettez-moi de nuancer: cette assertion postule une équivalence pour le moins discutable.",
+                        "Je ne suis pas d'accord.",
+                        "C'est faux."
+                    ]},
+                    {"speaker": "Prof. Renard", "text": "Votre objection est des plus pertinentes; l'agentivité humaine ne saurait être occultée.", "isNative": true}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_c_6",
+            "type": "clozeTest",
+            "question": "Complétez le passage avec les connecteurs adéquats: 'La thèse est séduisante; ___, son assise empirique demeure précaire. Il échet, ___, d'en circonscrire la portée.'",
+            "options": ["toutefois", "partant"],
+            "correctAnswer": "toutefois",
+            "metadata": {
+                "context": "Rhétorique académique",
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "toutefois",
+                        "options": ["toutefois", "donc", "parce que"]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "partant",
+                        "options": ["partant", "peut-être", "ainsi soit-il"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_c_7",
+            "type": "storyLesson",
+            "question": "Quelle est la réflexion principale dégagée par l'auteur à propos de l'art ?",
+            "options": [
+                "L'art transcende le fonctionnalisme utilitaire en révélant l'ambiguïté féconde du réel.",
+                "L'art doit impérativement obéir à des impératifs économiques.",
+                "La peinture figurative est la seule forme esthétique valide.",
+                "L'expérience esthétique est dépourvue de dimension intellectuelle."
+            ],
+            "correctAnswer": "L'art transcende le fonctionnalisme utilitaire en révélant l'ambiguïté féconde du réel.",
+            "metadata": {
+                "title": "Méditation sur l'expérience esthétique",
+                "level": "C1/C2",
+                "story": "Réduire la démarche artistique à une simple ornementation relève d'une myopie conceptuelle. L'art ne saurait se plier aux injonctions du pragmatisme immédiat; sa puissance réside précisément dans sa propension à suspendre nos certitudes prosaïques. En révélant les fêlures du langage, il convie la conscience à éprouver le vertige d'une vérité inachevée.",
+                "vocabulary": [
+                    {"word": "ornementation", "translation": "ornamentation / decoration", "highlight": true},
+                    {"word": "propension", "translation": "propensity / inclination", "highlight": true},
+                    {"word": "prosaïques", "translation": "prosaic / mundane", "highlight": true}
+                ],
+                "question": "Quelle est la réflexion principale dégagée par l'auteur à propos de l'art ?"
+            }
+        },
+        {
+            "id": "ex_fr_c_8",
+            "type": "dialogueListening",
+            "question": "Quelle nuance diplomatique le conférencier exprime-t-il ?",
+            "options": [
+                "Il temporise en recommandant d'approfondir les concertations multilatérales.",
+                "Il exige une rupture immédiate des relations bilatérales.",
+                "Il déclare le sommet comme un échec total et irréversible.",
+                "Il refuse catégoriquement d'écouter les délégations."
+            ],
+            "correctAnswer": "Il temporise en recommandant d'approfondir les concertations multilatérales.",
+            "metadata": {
+                "type": "dialogue",
+                "comprehensionQuestion": "Quelle nuance diplomatique le conférencier exprime-t-il ?",
+                "options": [
+                    "Il temporise en recommandant d'approfondir les concertations multilatérales.",
+                    "Il exige une rupture immédiate des relations bilatérales.",
+                    "Il déclare le sommet comme un échec total et irréversible.",
+                    "Il refuse catégoriquement d'écouter les délégations."
+                ],
+                "correctOptionIndex": 0,
+                "dialogue": [
+                    {"speaker": "Journaliste", "text": "Peut-on qualifier le communiqué conjoint de désaveu pour les négociateurs ?"},
+                    {"speaker": "Porte-parole", "text": "Gardons-nous de toute exégèse hâtive. Il convient plutôt d'y discerner une incitation féconde à prolonger le dialogue."}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_c_9",
+            "type": "multipleChoice",
+            "question": "Que signifie précisément l'adverbe 'naguère' dans la langue classique et soignée ?",
+            "options": [
+                "Il y a peu de temps (récemment)",
+                "Jamais au grand jamais",
+                "Dans un futur lointain",
+                "De façon tout à fait certaine"
+            ],
+            "correctAnswer": "Il y a peu de temps (récemment)"
+        },
+        {
+            "id": "ex_fr_c_10",
+            "type": "speakThis",
+            "question": "Il appert que les atermoiements successifs ont grevé l'efficience du projet.",
+            "options": [],
+            "correctAnswer": "Il appert que les atermoiements successifs ont grevé l'efficience du projet."
+        }
+    ]
+}

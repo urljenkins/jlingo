@@ -1,0 +1,171 @@
+{
+  "id": "classical_literature_rhetoric",
+  "name": "Classical Literature & Rhetoric",
+  "description": "Engage with classical Chinese literary aesthetics, parallel prose (pianwen), philosophical treatise analysis, and high rhetoric",
+  "level": 27,
+  "exercises": [
+    {
+      "id": "ex_zh_clr_1",
+      "type": "multipleChoice",
+      "question": "“落霞与孤鹜齐飞，秋水共长天一色”（王勃《滕王阁序》）体现了古代骈文哪种典型的修辞特征？",
+      "options": [
+        "对仗工整与声律和谐",
+        "通俗俚语与口语化",
+        "夸张怪诞与荒诞讽刺",
+        "无序罗列与句式杂糅"
+      ],
+      "correctAnswer": "对仗工整与声律和谐"
+    },
+    {
+      "id": "ex_zh_clr_2",
+      "type": "fillInBlank",
+      "question": "先天下之忧而忧，后天下之乐而___。（范仲淹《岳阳楼记》）",
+      "options": ["乐", "思", "行", "为"],
+      "correctAnswer": "乐"
+    },
+    {
+      "id": "ex_zh_clr_3",
+      "type": "matchPairs",
+      "question": "将古代经典哲学范畴与其核心主旨相匹配",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {"target": "知行合一", "native": "Unity of knowledge and action (Wang Yangming)"},
+          {"target": "逍遥游", "native": "Spiritual freedom and unfettered wandering (Zhuangzi)"},
+          {"target": "大巧若拙", "native": "Great ingenuity appears clumsy / natural simplicity"},
+          {"target": "和而不同", "native": "Harmony in diversity without uniformity"},
+          {"target": "刚柔并济", "native": "Combining firmness with flexibility"}
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_clr_4",
+      "type": "translationExercise",
+      "question": "翻译成英文：“夫唯不争，故天下莫能与之争。”（《道德经》）",
+      "options": [],
+      "correctAnswer": "It is precisely because he does not contend that none in the world can contend with him.",
+      "metadata": {
+        "direction": "toNative",
+        "sourceText": "夫唯不争，故天下莫能与之争。",
+        "acceptableAnswers": [
+          "Because he does not contend, no one in the world can compete with him.",
+          "It is because one does not struggle that no one in the world can struggle against them."
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_clr_5",
+      "type": "interactiveDialogue",
+      "question": "在古典文论研讨会上参与关于意象论的深度辩难",
+      "options": [
+        "此言得之，言有尽而意无穷，方显中国古典美学‘立象以尽意’之玄妙。",
+        "我不同意你的看法。",
+        "无所谓。"
+      ],
+      "correctAnswer": "此言得之，言有尽而意无穷，方显中国古典美学‘立象以尽意’之玄妙。",
+      "metadata": {
+        "dialogue": [
+          {"speaker": "孙教授", "text": "《文心雕龙》有云：‘神用象通，情变所孕。’文学之感染力全赖于意象之超拔。", "isNative": true},
+          {"speaker": "学者", "text": "___", "isUserTurn": true, "options": [
+            "此言得之，言有尽而意无穷，方显中国古典美学‘立象以尽意’之玄妙。",
+            "我不同意你的看法。",
+            "无所谓。"
+          ]},
+          {"speaker": "孙教授", "text": "精辟！‘象外之象、景外之景’正是中国诗性思维最具超越性的品格。", "isNative": true}
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_clr_6",
+      "type": "clozeTest",
+      "question": "填入最贴切的文言虚词以完整文意：“原夫大道之行，___天下为公；___人心不古，大道隐而天下为家。”",
+      "options": ["选贤与能", "向使"],
+      "correctAnswer": "选贤与能",
+      "metadata": {
+        "context": "先秦政论经典散文",
+        "blanks": [
+          {
+            "index": 0,
+            "answer": "选贤与能",
+            "options": ["选贤与能", "各得其所", "独善其身"]
+          },
+          {
+            "index": 1,
+            "answer": "向使",
+            "options": ["向使", "然而", "假使"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_clr_7",
+      "type": "storyLesson",
+      "question": "下述文段对于“文以载道”的核心论断是什么？",
+      "options": [
+        "文章之美必须承载人伦道德与天地常道，辞令与精神必须熔铸为一。",
+        "辞藻必须极尽华丽，内容是否真实无关紧要。",
+        "文学应当脱离所有社会责任。",
+        "古典诗歌已经完全失去了现代价值。"
+      ],
+      "correctAnswer": "文章之美必须承载人伦道德与天地常道，辞令与精神必须熔铸为一。",
+      "metadata": {
+        "title": "文以载道与辞章之辩",
+        "level": "C2",
+        "story": "文以载道，非以文饰道也。道之在文，犹规矩之在方圆。徒工绘刻者，虽藻丽缤纷，而内无筋骨，譬如绣塑偶人，动静无涉于性灵。唯圣哲之述作，辞顺而理达，情深而旨远，是以历万劫而不磨，昭百代而常新。",
+        "vocabulary": [
+          {"word": "藻丽", "translation": "ornate and splendid literary phrasing", "highlight": true},
+          {"word": "筋骨", "translation": "structural strength / moral integrity", "highlight": true},
+          {"word": "述作", "translation": "creative writing and classical authorship", "highlight": true}
+        ],
+        "question": "下述文段对于“文以载道”的核心论断是什么？"
+      }
+    },
+    {
+      "id": "ex_zh_clr_8",
+      "type": "dialogueListening",
+      "question": "讨论者强调传统书院教育的核心精神是什么？",
+      "options": [
+        "在自由讲学中兼顾身心修养与学术精进，超越科举功利。",
+        "单纯死记硬背以应付考试。",
+        "全面取消人文学科教学。",
+        "只注重商业贸易技能。"
+      ],
+      "correctAnswer": "在自由讲学中兼顾身心修养与学术精进，超越科举功利。",
+      "metadata": {
+        "type": "dialogue",
+        "comprehensionQuestion": "讨论者强调传统书院教育的核心精神是什么？",
+        "options": [
+          "在自由讲学中兼顾身心修养与学术精进，超越科举功利。",
+          "单纯死记硬背以应付考试。",
+          "全面取消人文学科教学。",
+          "只注重商业贸易技能。"
+        ],
+        "correctOptionIndex": 0,
+        "dialogue": [
+          {"speaker": "主持人", "text": "千年书院之道，对于现代高等教育究竟有何启迪？"},
+          {"speaker": "哲学教授", "text": "其贵在明道立德，在切磋问难中涵养浩然之气，而非将学术沦为争名逐利之敲门砖。"}
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_clr_9",
+      "type": "multipleChoice",
+      "question": "在典雅书面语中，“差强人意”的原义是什么？",
+      "options": [
+        "大体上还能使人满意",
+        "让人极其不满",
+        "毫无意义",
+        "十分糟糕"
+      ],
+      "correctAnswer": "大体上还能使人满意"
+    },
+    {
+      "id": "ex_zh_clr_10",
+      "type": "speakThis",
+      "question": "天地之大德曰生，圣人之大宝曰位，何以聚人曰财，何以正德曰义。",
+      "options": [],
+      "correctAnswer": "天地之大德曰生，圣人之大宝曰位，何以聚人曰财，何以正德曰义。"
+    }
+  ]
+}

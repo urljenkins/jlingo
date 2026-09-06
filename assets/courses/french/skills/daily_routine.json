@@ -1,0 +1,57 @@
+{
+    "id": "daily_routine",
+    "name": "Daily Routine",
+    "description": "Talk about daily habits, waking up, and work schedules in French",
+    "level": 5,
+    "exercises": [
+        {
+            "id": "ex_fr_dr_1",
+            "type": "translateThis",
+            "question": "Je me réveille à sept heures",
+            "options": [],
+            "correctAnswer": "I wake up at seven o'clock"
+        },
+        {
+            "id": "ex_fr_dr_2",
+            "type": "fillInBlank",
+            "question": "Tous les matins, je prends ma ___ avant de partir.",
+            "options": ["douche", "gare", "voiture", "table"],
+            "correctAnswer": "douche"
+        },
+        {
+            "id": "ex_fr_dr_3",
+            "type": "matchPairs",
+            "question": "Match daily activities with their English meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "se lever", "native": "to get up"},
+                    {"target": "s'habiller", "native": "to get dressed"},
+                    {"target": "prendre le petit déjeuner", "native": "to have breakfast"},
+                    {"target": "se coucher", "native": "to go to bed"},
+                    {"target": "travailler", "native": "to work"}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_dr_4",
+            "type": "multipleChoice",
+            "question": "What does 'À quelle heure tu commences?' mean?",
+            "options": [
+                "What time do you start?",
+                "Where are you going?",
+                "How are you doing?",
+                "What are you eating?"
+            ],
+            "correctAnswer": "What time do you start?"
+        },
+        {
+            "id": "ex_fr_dr_5",
+            "type": "speakThis",
+            "question": "Je termine ma journée de travail à dix-huit heures",
+            "options": [],
+            "correctAnswer": "Je termine ma journée de travail à dix-huit heures"
+        }
+    ]
+}

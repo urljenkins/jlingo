@@ -1,0 +1,170 @@
+{
+    "id": "litterature_philosophie",
+    "name": "Littérature & Philosophie",
+    "description": "Explore nuanced literary analysis, stylistic devices, and philosophical discourse in French",
+    "level": 27,
+    "exercises": [
+        {
+            "id": "ex_fr_lp_1",
+            "type": "multipleChoice",
+            "question": "Quelle figure de style caractérise l'expression 'Cette obscure clarté qui tombe des étoiles' (Corneille) ?",
+            "options": [
+                "Un oxymore",
+                "Une métonymie",
+                "Une anaphore",
+                "Une litote"
+            ],
+            "correctAnswer": "Un oxymore"
+        },
+        {
+            "id": "ex_fr_lp_2",
+            "type": "fillInBlank",
+            "question": "Quoi qu'on en ___, cette œuvre romanesque a bouleversé le canon esthétique du siècle.",
+            "options": ["dise", "dit", "disait", "dira"],
+            "correctAnswer": "dise"
+        },
+        {
+            "id": "ex_fr_lp_3",
+            "type": "matchPairs",
+            "question": "Reliez les concepts stylistiques et philosophiques à leur acception",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Aporie", "native": "Insoluble philosophical contradiction"},
+                    {"target": "Mise en abyme", "native": "Story within a story / self-reflection"},
+                    {"target": "Pérégrination", "native": "Long and wandering journey"},
+                    {"target": "Vacuité", "native": "Emptiness / lack of substance"},
+                    {"target": "Éphémère", "native": "Transient / short-lived"}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_lp_4",
+            "type": "translationExercise",
+            "question": "Traduisez vers l'anglais: 'Loin d'assujettir la pensée à un carcan dogmatique, le doute méthodique en libère la fécondité créatrice.'",
+            "options": [],
+            "correctAnswer": "Far from subjugating thought to a dogmatic straitjacket, methodical doubt unleashes its creative fecundity.",
+            "metadata": {
+                "direction": "toNative",
+                "sourceText": "Loin d'assujettir la pensée à un carcan dogmatique, le doute méthodique en libère la fécondité créatrice.",
+                "acceptableAnswers": [
+                    "Far from subjugating thought to a dogmatic straitjacket, methodical doubt frees its creative fertility."
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_lp_5",
+            "type": "interactiveDialogue",
+            "question": "Participez à un colloque de théorie littéraire",
+            "options": [
+                "Il me semble que cette interprétation néglige la polyphonie énonciative constitutive du roman.",
+                "C'est faux.",
+                "Je n'aime pas cette analyse."
+            ],
+            "correctAnswer": "Il me semble que cette interprétation néglige la polyphonie énonciative constitutive du roman.",
+            "metadata": {
+                "dialogue": [
+                    {"speaker": "Conférencière", "text": "Le narrateur omniscient impose ici une perspective monologique univoque.", "isNative": true},
+                    {"speaker": "Auditeur", "text": "___", "isUserTurn": true, "options": [
+                        "Il me semble que cette interprétation néglige la polyphonie énonciative constitutive du roman.",
+                        "C'est faux.",
+                        "Je n'aime pas cette analyse."
+                    ]},
+                    {"speaker": "Conférencière", "text": "C'est une nuance fondamentale: les voix des personnages subvertissent en effet l'autorité narrative.", "isNative": true}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_lp_6",
+            "type": "clozeTest",
+            "question": "Complétez l'analyse critique: 'L'écrivain récuse le réalisme naïf; ___, il scrute les faux-semblants de la mémoire. ___, le souvenir recompose le passé plutôt qu'il ne le reproduit.'",
+            "options": ["en vérité", "de fait"],
+            "correctAnswer": "en vérité",
+            "metadata": {
+                "context": "Critique littéraire",
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "en vérité",
+                        "options": ["en vérité", "mais", "parce que"]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "de fait",
+                        "options": ["de fait", "peut-être", "quand même"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_lp_7",
+            "type": "storyLesson",
+            "question": "Quel est le regard de l'auteur sur le rôle existentiel de l'écriture ?",
+            "options": [
+                "Elle constitue une quête de sens arrachant l'expérience humaine au néant du temps.",
+                "Elle sert uniquement à divertir sans susciter d'émotion.",
+                "Elle doit remplacer l'action politique concrète.",
+                "Elle se réduit à un exercice de style dépourvu de signification."
+            ],
+            "correctAnswer": "Elle constitue une quête de sens arrachant l'expérience humaine au néant du temps.",
+            "metadata": {
+                "title": "L'écriture comme résistance au temps",
+                "level": "C2",
+                "story": "Écrire ne relève point d'un vain divertissement narcissique; c'est un corps-à-corps obstiné avec l'oubli. En ciselant la phrase, l'écrivain tente d'endiguer l'érosion continue des jours. Les mots deviennent les dépositaires fragiles d'un éblouissement éphémère, soustrayant un instant de conscience au flux inexorable du néant.",
+                "vocabulary": [
+                    {"word": "ciselant", "translation": "chiseling / finely crafting", "highlight": true},
+                    {"word": "endiguer", "translation": "to stem / to hold back", "highlight": true},
+                    {"word": "dépositaires", "translation": "custodians / repositories", "highlight": true}
+                ],
+                "question": "Quel est le regard de l'auteur sur le rôle existentiel de l'écriture ?"
+            }
+        },
+        {
+            "id": "ex_fr_lp_8",
+            "type": "dialogueListening",
+            "question": "Quelle réserve majeure le professeur émet-il sur la méthodologie structuraliste ?",
+            "options": [
+                "Elle risque d'évacuer l'historicité vivante et l'intentionnalité subjective du sujet créateur.",
+                "Elle coûte trop cher à mettre en œuvre.",
+                "Elle est trop accessible au grand public.",
+                "Elle refuse toute rigueur formelle."
+            ],
+            "correctAnswer": "Elle risque d'évacuer l'historicité vivante et l'intentionnalité subjective du sujet créateur.",
+            "metadata": {
+                "type": "dialogue",
+                "comprehensionQuestion": "Quelle réserve majeure le professeur émet-il sur la méthodologie structuraliste?",
+                "options": [
+                    "Elle risque d'évacuer l'historicité vivante et l'intentionnalité subjective du sujet créateur.",
+                    "Elle coûte trop cher à mettre en œuvre.",
+                    "Elle est trop accessible au grand public.",
+                    "Elle refuse toute rigueur formelle."
+                ],
+                "correctOptionIndex": 0,
+                "dialogue": [
+                    {"speaker": "Doctorant", "text": "Le formalisme immanentiste permet une analyse textuelle rigoureuse et désincarnée."},
+                    {"speaker": "Directeur de thèse", "text": "Certes, mais poussé à l'extrême, il court le péril d'évacuer la chair historique et la pulsation vitale de l'écriture."}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_lp_9",
+            "type": "multipleChoice",
+            "question": "Que dénote la tournure littéraire 'ne pas laisser d'inquiéter' ?",
+            "options": [
+                "Continuer assurément d'inquiéter (litote marquant la persistance)",
+                "Ne susciter aucune inquiétude",
+                "Provoquer une surprise amusée",
+                "Dépendre entièrement du hasard"
+            ],
+            "correctAnswer": "Continuer assurément d'inquiéter (litote marquant la persistance)"
+        },
+        {
+            "id": "ex_fr_lp_10",
+            "type": "speakThis",
+            "question": "Toute herméneutique rigoureuse suppose d'interroger les présupposés axiologiques du discours.",
+            "options": [],
+            "correctAnswer": "Toute herméneutique rigoureuse suppose d'interroger les présupposés axiologiques du discours."
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "id": "c_level_mastery",
+    "name": "C1/C2 Mastery Capstone",
+    "description": "Master advanced pragmatic nuances, complex hypotheticals, rhetorical registers, and sophisticated discourse",
+    "level": 26,
+    "exercises": [
+        {
+            "id": "ex_c_mastery_1",
+            "type": "multipleChoice",
+            "question": "En un registro formal/jurídico, ¿qué conector expresa con mayor precisión una objeción contundente?",
+            "options": [
+                "No obstante lo cual",
+                "Pero bueno",
+                "Es que",
+                "O sea que"
+            ],
+            "correctAnswer": "No obstante lo cual"
+        },
+        {
+            "id": "ex_c_mastery_2",
+            "type": "fillInBlank",
+            "question": "De haberlo sabido con antelación, no nos ___ en semejante dilema ético.",
+            "options": [
+                "habríamos visto envueltos",
+                "hemos visto",
+                "veíamos",
+                "veremos"
+            ],
+            "correctAnswer": "habríamos visto envueltos"
+        },
+        {
+            "id": "ex_c_mastery_3",
+            "type": "matchPairs",
+            "question": "Relaciona las expresiones idiomáticas avanzadas con su matiz pragmático",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "Hacer de tripas corazón", "native": "Summon courage in adversity"},
+                    {"target": "Andarse por las ramas", "native": "Beat around the bush"},
+                    {"target": "Poner el dedo en la llaga", "native": "Hit where it hurts (pinpoint sensitive issue)"},
+                    {"target": "Dormirse en los laureles", "native": "Rest on one's laurels"},
+                    {"target": "Coger el toro por los cuernos", "native": "Take the bull by the horns"}
+                ]
+            }
+        },
+        {
+            "id": "ex_c_mastery_4",
+            "type": "translationExercise",
+            "question": "Traduce al inglés: 'A tenor de lo expuesto por la comisión, resulta imperativo reevaluar el paradigma metodológico vigente.'",
+            "options": [],
+            "correctAnswer": "In light of what was presented by the commission, it is imperative to re-evaluate the current methodological paradigm.",
+            "metadata": {
+                "direction": "toNative",
+                "sourceText": "A tenor de lo expuesto por la comisión, resulta imperativo reevaluar el paradigma metodológico vigente.",
+                "acceptableAnswers": [
+                    "In light of what has been presented by the commission, it is imperative to reevaluate the current methodological paradigm.",
+                    "According to what was stated by the commission, it is imperative to reevaluate the existing methodological paradigm."
+                ]
+            }
+        },
+        {
+            "id": "ex_c_mastery_5",
+            "type": "interactiveDialogue",
+            "question": "Participa en un debate académico sobre políticas públicas",
+            "options": [
+                "Discrepo respetuosamente; los indicadores longitudinales apuntan hacia una correlación espuria.",
+                "No me gusta tu idea.",
+                "Bueno, da igual."
+            ],
+            "correctAnswer": "Discrepo respetuosamente; los indicadores longitudinales apuntan hacia una correlación espuria.",
+            "metadata": {
+                "dialogue": [
+                    {"speaker": "Prof. Navarro", "text": "Los datos sugieren que la descentralización fiscal garantiza de forma inequívoca la eficiencia presupuestaria.", "isNative": true},
+                    {"speaker": "Colleague", "text": "___", "isUserTurn": true, "options": [
+                        "Discrepo respetuosamente; los indicadores longitudinales apuntan hacia una correlación espuria.",
+                        "No me gusta tu idea.",
+                        "Bueno, da igual."
+                    ]},
+                    {"speaker": "Prof. Navarro", "text": "Es un contraargumento perspicaz que merece un análisis más riguroso de las variables exógenas.", "isNative": true}
+                ]
+            }
+        },
+        {
+            "id": "ex_c_mastery_6",
+            "type": "clozeTest",
+            "question": "Completa el texto con los conectores discursivos idóneos: 'El informe subraya deficiencias estructurales; ___, propone medidas correctoras ineludibles. Conviene, ___, actuar con suma prudencia.'",
+            "options": ["empero", "asimismo"],
+            "correctAnswer": "empero",
+            "metadata": {
+                "context": "Discurso formal y argumentativo",
+                "blanks": [
+                    {
+                        "index": 0,
+                        "answer": "empero",
+                        "options": ["empero", "porque", "pero que"]
+                    },
+                    {
+                        "index": 1,
+                        "answer": "asimismo",
+                        "options": ["asimismo", "tal vez", "o sea"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_c_mastery_7",
+            "type": "storyLesson",
+            "question": "¿Cuál es la premisa central que postula el texto respecto al progreso tecnológico?",
+            "options": [
+                "Que su valor intrínseco queda supeditado a la reflexión ética y humanística de la sociedad.",
+                "Que cualquier innovación conlleva inevitablemente el declive económico.",
+                "Que el desarrollo técnico sustituye plenamente las ciencias humanas.",
+                "Que el avance científico carece de consecuencias morales."
+            ],
+            "correctAnswer": "Que su valor intrínseco queda supeditado a la reflexión ética y humanística de la sociedad.",
+            "metadata": {
+                "title": "Ensayo: Luces y Sombras de la Tecnociencia",
+                "level": "C1/C2",
+                "story": "El progreso técnico desprovisto de teleología humanística degenera con frecuencia en mero artificio estéril. Lejos de constituir un fin en sí misma, la sofisticación de los algoritmos contemporáneos exige una vigilancia epistemológica constante. El porvenir no dependerá de la celeridad del cómputo, sino de la lucidez con que la comunidad ética delimite los cauces del bien común.",
+                "vocabulary": [
+                    {"word": "teleología", "translation": "philosophical study of purpose/ends", "highlight": true},
+                    {"word": "epistemológica", "translation": "epistemological (relating to the theory of knowledge)", "highlight": true},
+                    {"word": "celeridad", "translation": "speed/celerity", "highlight": true}
+                ],
+                "question": "¿Cuál es la premisa central que postula el texto respecto al progreso tecnológico?"
+            }
+        },
+        {
+            "id": "ex_c_mastery_8",
+            "type": "dialogueListening",
+            "question": "¿Qué postura defiende el ponente en su alocución?",
+            "options": [
+                "Aboga por la prudencia hermenéutica ante la proliferación de conclusiones apresuradas.",
+                "Recomienda suspender toda publicación científica.",
+                "Considera irrelevante la revisión por pares.",
+                "Afirma que la certeza absoluta ya se ha alcanzado."
+            ],
+            "correctAnswer": "Aboga por la prudencia hermenéutica ante la proliferación de conclusiones apresuradas.",
+            "metadata": {
+                "type": "dialogue",
+                "comprehensionQuestion": "¿Qué postura defiende el ponente en su alocución?",
+                "options": [
+                    "Aboga por la prudencia hermenéutica ante la proliferación de conclusiones apresuradas.",
+                    "Recomienda suspender toda publicación científica.",
+                    "Considera irrelevante la revisión por pares.",
+                    "Afirma que la certeza absoluta ya se ha alcanzado."
+                ],
+                "correctOptionIndex": 0,
+                "dialogue": [
+                    {"speaker": "Moderadora", "text": "Doctor, las conclusiones preliminares han suscitado controversia en el ámbito académico."},
+                    {"speaker": "Dr. Mendoza", "text": "En efecto. Es menester mantener una cautela hermenéutica escrupulosa antes de dar por sentado un cambio de paradigma."}
+                ]
+            }
+        },
+        {
+            "id": "ex_c_mastery_9",
+            "type": "multipleChoice",
+            "question": "¿Qué matiz semántico diferencia 'por más que insistas' de 'por mucho que insistas' frente al subjuntivo?",
+            "options": [
+                "Ambas introducen una concesiva que enfatiza la ineficacia del esfuerzo sin importar su magnitud.",
+                "Una denota una causa obligatoria en el pasado.",
+                "Indican una condición temporal restrictiva.",
+                "Son exclusivamente fórmulas de despedida."
+            ],
+            "correctAnswer": "Ambas introducen una concesiva que enfatiza la ineficacia del esfuerzo sin importar su magnitud."
+        },
+        {
+            "id": "ex_c_mastery_10",
+            "type": "speakThis",
+            "question": "Acontece con frecuencia que los sofismas más sutiles se revisten de aparente rigor lógico.",
+            "options": [],
+            "correctAnswer": "Acontece con frecuencia que los sofismas más sutiles se revisten de aparente rigor lógico."
+        }
+    ]
+}

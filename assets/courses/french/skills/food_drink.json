@@ -1,0 +1,57 @@
+{
+    "id": "food_drink",
+    "name": "Food & Dining",
+    "description": "Learn vocabulary for ordering food, drinks, and dining out in French",
+    "level": 4,
+    "exercises": [
+        {
+            "id": "ex_fr_fd_1",
+            "type": "multipleChoice",
+            "question": "How do you ask for the check in a French restaurant?",
+            "options": [
+                "L'addition, s'il vous plaît",
+                "Le menu, s'il vous plaît",
+                "L'entrée, s'il vous plaît",
+                "L'eau, s'il vous plaît"
+            ],
+            "correctAnswer": "L'addition, s'il vous plaît"
+        },
+        {
+            "id": "ex_fr_fd_2",
+            "type": "fillInBlank",
+            "question": "Je voudrais un verre d'___ s'il vous plaît.",
+            "options": ["eau", "pain", "fromage", "pomme"],
+            "correctAnswer": "eau"
+        },
+        {
+            "id": "ex_fr_fd_3",
+            "type": "matchPairs",
+            "question": "Match French foods with their English meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {"target": "pain", "native": "bread"},
+                    {"target": "fromage", "native": "cheese"},
+                    {"target": "vin", "native": "wine"},
+                    {"target": "pomme", "native": "apple"},
+                    {"target": "poisson", "native": "fish"}
+                ]
+            }
+        },
+        {
+            "id": "ex_fr_fd_4",
+            "type": "translateThis",
+            "question": "Le repas est délicieux",
+            "options": [],
+            "correctAnswer": "The meal is delicious"
+        },
+        {
+            "id": "ex_fr_fd_5",
+            "type": "speakThis",
+            "question": "Une table pour deux personnes, s'il vous plaît",
+            "options": [],
+            "correctAnswer": "Une table pour deux personnes, s'il vous plaît"
+        }
+    ]
+}
