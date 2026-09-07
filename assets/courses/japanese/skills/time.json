@@ -82,6 +82,83 @@
       "correctAnswer": "電車は八時十五分に出発します",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_time_6",
+      "type": "multipleChoice",
+      "question": "How do you say 4 o'clock in Japanese (irregular pronunciation)?",
+      "options": [
+        "よじ (yoji)",
+        "よんじ (yonji)",
+        "しじ (shiji)",
+        "ななじ (nanaji)"
+      ],
+      "correctAnswer": "よじ (yoji)"
+    },
+    {
+      "id": "ex_ja_time_7",
+      "type": "translateThis",
+      "question": "いま なんじ ですか",
+      "options": [],
+      "correctAnswer": "What time is it now?"
+    },
+    {
+      "id": "ex_ja_time_8",
+      "type": "fillInBlank",
+      "question": "ぎんこう は くじ から ごじ ___ です。(The bank is from 9 to 5.)",
+      "options": [
+        "まで",
+        "より",
+        "で",
+        "へ"
+      ],
+      "correctAnswer": "まで"
+    },
+    {
+      "id": "ex_ja_time_9",
+      "type": "matchPairs",
+      "question": "Match irregular time readings",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "よじ (4:00)",
+            "native": "Four o'clock (yo-ji)"
+          },
+          {
+            "target": "しちじ (7:00)",
+            "native": "Seven o'clock (shichi-ji)"
+          },
+          {
+            "target": "くじ (9:00)",
+            "native": "Nine o'clock (ku-ji)"
+          },
+          {
+            "target": "はん (han)",
+            "native": "Half past (:30)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_time_10",
+      "type": "fillInBlank",
+      "question": "かいぎ は さんじ ___ です。(The meeting is at 3:30.)",
+      "options": [
+        "はん",
+        "ふん",
+        "ぷん",
+        "まえ"
+      ],
+      "correctAnswer": "はん"
+    },
+    {
+      "id": "ex_ja_time_11",
+      "type": "translateThis",
+      "question": "まいあさ しちじ に おきます",
+      "options": [],
+      "correctAnswer": "I wake up at seven every morning"
     }
   ]
 }

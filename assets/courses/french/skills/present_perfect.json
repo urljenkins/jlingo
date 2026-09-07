@@ -82,6 +82,83 @@
       "correctAnswer": "Nous venons tout juste de rentrer chez nous",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_pp_6",
+      "type": "multipleChoice",
+      "question": "Comment se forme le passé récent en français pour une action qui vient d'arriver?",
+      "options": [
+        "Venir de + Infinitif (ex: Je viens de manger)",
+        "Aller + Infinitif",
+        "Être en train de + Infinitif",
+        "Avoir + Participe passé"
+      ],
+      "correctAnswer": "Venir de + Infinitif (ex: Je viens de manger)"
+    },
+    {
+      "id": "ex_fr_pp_7",
+      "type": "translateThis",
+      "question": "Le train vient d'arriver en gare",
+      "options": [],
+      "correctAnswer": "The train has just arrived at the station"
+    },
+    {
+      "id": "ex_fr_pp_8",
+      "type": "fillInBlank",
+      "question": "Nous venons ___ terminer notre travail.",
+      "options": [
+        "de",
+        "à",
+        "pour",
+        "en"
+      ],
+      "correctAnswer": "de"
+    },
+    {
+      "id": "ex_fr_pp_9",
+      "type": "matchPairs",
+      "question": "Associez les formes du verbe venir au présent",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Je / Tu viens",
+            "native": "I / You come"
+          },
+          {
+            "target": "Il / Elle vient",
+            "native": "He / She comes"
+          },
+          {
+            "target": "Nous venons",
+            "native": "We come"
+          },
+          {
+            "target": "Ils viennent",
+            "native": "They come"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_pp_10",
+      "type": "fillInBlank",
+      "question": "Attention ! Ils viennent de ___ la porte.",
+      "options": [
+        "fermer",
+        "fermé",
+        "ferment",
+        "fermant"
+      ],
+      "correctAnswer": "fermer"
+    },
+    {
+      "id": "ex_fr_pp_11",
+      "type": "translateThis",
+      "question": "Je viens d'apprendre la nouvelle",
+      "options": [],
+      "correctAnswer": "I have just heard the news"
     }
   ]
 }

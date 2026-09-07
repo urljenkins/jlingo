@@ -92,6 +92,83 @@
       "correctAnswer": "At the very end of the sentence",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pp_7",
+      "type": "multipleChoice",
+      "question": "Welke werkwoorden gebruiken \"zijn\" als hulpwerkwoord in de voltooide tijd (o.v.t. / perfectum)?",
+      "options": [
+        "Werkwoorden die een verandering van plaats of toestand aangeven (gaan, komen, vertrekken, blijven, worden)",
+        "Alle overgankelijke werkwoorden",
+        "Werkwoorden die met ge- beginnen",
+        "Werkwoorden met een lijdend voorwerp"
+      ],
+      "correctAnswer": "Werkwoorden die een verandering van plaats of toestand aangeven (gaan, komen, vertrekken, blijven, worden)"
+    },
+    {
+      "id": "ex_nl_pp_8",
+      "type": "translateThis",
+      "question": "Ik heb vanochtend een lekkere koffie gedronken",
+      "options": [],
+      "correctAnswer": "I drank a tasty coffee this morning"
+    },
+    {
+      "id": "ex_nl_pp_9",
+      "type": "fillInBlank",
+      "question": "Zij is gisteren naar Utrecht ___ (voltooid deelwoord van gaan).",
+      "options": [
+        "gegaan",
+        "gegaat",
+        "geging",
+        "ging"
+      ],
+      "correctAnswer": "gegaan"
+    },
+    {
+      "id": "ex_nl_pp_10",
+      "type": "matchPairs",
+      "question": "Koppel het hulpwerkwoord aan het voltooid deelwoord",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Hebben gegeten",
+            "native": "Ate / Have eaten (action)"
+          },
+          {
+            "target": "Zijn gekomen",
+            "native": "Came / Have arrived (change of location)"
+          },
+          {
+            "target": "Hebben gewerkt",
+            "native": "Worked (activity)"
+          },
+          {
+            "target": "Zijn gebleven",
+            "native": "Stayed (state change exception)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pp_11",
+      "type": "fillInBlank",
+      "question": "Heb je de e-mail al ___ ?",
+      "options": [
+        "gelezen",
+        "geleest",
+        "lezen",
+        "leest"
+      ],
+      "correctAnswer": "gelezen"
+    },
+    {
+      "id": "ex_nl_pp_12",
+      "type": "translateThis",
+      "question": "Wij zijn om acht uur aangekomen op het vliegveld",
+      "options": [],
+      "correctAnswer": "We arrived at the airport at eight o'clock"
     }
   ]
 }

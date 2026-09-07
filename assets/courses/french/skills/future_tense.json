@@ -82,6 +82,83 @@
       "correctAnswer": "Tout ira bien, ne vous inquiétez pas",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_fut_6",
+      "type": "multipleChoice",
+      "question": "Quelle est la différence entre le futur proche et le futur simple?",
+      "options": [
+        "Le futur proche (aller + inf) est immédiat/parlé; le futur simple a des terminaisons spécifiques (-ai, -as, -a, -ons, -ez, -ont)",
+        "Le futur simple utilise seulement le verbe être",
+        "Il n'y a aucune différence d'usage",
+        "Le futur proche s'emploie uniquement dans le passé"
+      ],
+      "correctAnswer": "Le futur proche (aller + inf) est immédiat/parlé; le futur simple a des terminaisons spécifiques (-ai, -as, -a, -ons, -ez, -ont)"
+    },
+    {
+      "id": "ex_fr_fut_7",
+      "type": "translateThis",
+      "question": "Demain, je visiterai le musée du Louvre",
+      "options": [],
+      "correctAnswer": "Tomorrow, I will visit the Louvre museum"
+    },
+    {
+      "id": "ex_fr_fut_8",
+      "type": "fillInBlank",
+      "question": "L'année prochaine, nous ___ en vacances au Canada (verbe partir au futur simple).",
+      "options": [
+        "partirons",
+        "partons",
+        "partirions",
+        "partaient"
+      ],
+      "correctAnswer": "partirons"
+    },
+    {
+      "id": "ex_fr_fut_9",
+      "type": "matchPairs",
+      "question": "Associez les radicaux irréguliers du futur simple",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Être -> ser-",
+            "native": "Je serai"
+          },
+          {
+            "target": "Avoir -> aur-",
+            "native": "J'aurai"
+          },
+          {
+            "target": "Aller -> ir-",
+            "native": "J'irai"
+          },
+          {
+            "target": "Faire -> fer-",
+            "native": "Je ferai"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_fut_10",
+      "type": "fillInBlank",
+      "question": "Je vais ___ un nouveau livre ce soir (futur proche).",
+      "options": [
+        "lire",
+        "lu",
+        "lis",
+        "lirons"
+      ],
+      "correctAnswer": "lire"
+    },
+    {
+      "id": "ex_fr_fut_11",
+      "type": "translateThis",
+      "question": "Que ferez-vous le week-end prochain ?",
+      "options": [],
+      "correctAnswer": "What will you do next weekend?"
     }
   ]
 }

@@ -82,6 +82,83 @@
       "correctAnswer": "Prenez la deuxième rue à droite après le pont",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_dir_6",
+      "type": "multipleChoice",
+      "question": "Comment dit-on \"Turn left at the next intersection\" en français?",
+      "options": [
+        "Tournez à gauche au prochain carrefour",
+        "Allez tout droit vers le carrefour",
+        "Prenez à droite au feu",
+        "Traversez la rue principale"
+      ],
+      "correctAnswer": "Tournez à gauche au prochain carrefour"
+    },
+    {
+      "id": "ex_fr_dir_7",
+      "type": "translateThis",
+      "question": "Continuez tout droit pendant deux cents mètres",
+      "options": [],
+      "correctAnswer": "Continue straight ahead for two hundred meters"
+    },
+    {
+      "id": "ex_fr_dir_8",
+      "type": "fillInBlank",
+      "question": "La pharmacie se trouve en ___ de la boulangerie.",
+      "options": [
+        "face",
+        "droite",
+        "gauche",
+        "coin"
+      ],
+      "correctAnswer": "face"
+    },
+    {
+      "id": "ex_fr_dir_9",
+      "type": "matchPairs",
+      "question": "Associez les indications spatiales",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "À gauche",
+            "native": "To the left"
+          },
+          {
+            "target": "À droite",
+            "native": "To the right"
+          },
+          {
+            "target": "Tout droit",
+            "native": "Straight ahead"
+          },
+          {
+            "target": "À côté de",
+            "native": "Next to"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_dir_10",
+      "type": "fillInBlank",
+      "question": "Pardon monsieur, pour ___ à la gare s'il vous plaît ?",
+      "options": [
+        "aller",
+        "allé",
+        "allons",
+        "allez"
+      ],
+      "correctAnswer": "aller"
+    },
+    {
+      "id": "ex_fr_dir_11",
+      "type": "translateThis",
+      "question": "La station de métro est au bout de la rue",
+      "options": [],
+      "correctAnswer": "The subway station is at the end of the street"
     }
   ]
 }

@@ -92,6 +92,83 @@
       "correctAnswer": "买单 (mǎidān)",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rest_7",
+      "type": "multipleChoice",
+      "question": "How do you ask for the bill at the end of a meal in a restaurant in China?",
+      "options": [
+        "服务员，买单！(fúwùyuán, mǎidān!)",
+        "给我钱！",
+        "多少东西？",
+        "菜单，谢谢！"
+      ],
+      "correctAnswer": "服务员，买单！(fúwùyuán, mǎidān!)"
+    },
+    {
+      "id": "ex_zh_rest_8",
+      "type": "translateThis",
+      "question": "服务员，请给我们看一份菜单",
+      "options": [],
+      "correctAnswer": "Waiter, please show us a menu"
+    },
+    {
+      "id": "ex_zh_rest_9",
+      "type": "fillInBlank",
+      "question": "服务员，请问这里可以用微信或者支付宝 ___ 吗？(Waiter, can we pay with WeChat or Alipay here?)",
+      "options": [
+        "支付 (or 买单)",
+        "吃",
+        "喝",
+        "看"
+      ],
+      "correctAnswer": "支付 (or 买单)"
+    },
+    {
+      "id": "ex_zh_rest_10",
+      "type": "matchPairs",
+      "question": "Match dining and ordering phrases in Chinese",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "点菜 (diǎncài)",
+            "native": "To order food"
+          },
+          {
+            "target": "微辣 (wēilà)",
+            "native": "Mildly spicy"
+          },
+          {
+            "target": "不要香菜",
+            "native": "No cilantro / coriander"
+          },
+          {
+            "target": "打包 (dǎbāo)",
+            "native": "To get food to go / doggy bag"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_rest_11",
+      "type": "fillInBlank",
+      "question": "我们吃不完，请帮我们 ___ 吧。(We can't finish it; please help us pack it to go.)",
+      "options": [
+        "打包",
+        "点菜",
+        "买单",
+        "退货"
+      ],
+      "correctAnswer": "打包"
+    },
+    {
+      "id": "ex_zh_rest_12",
+      "type": "translateThis",
+      "question": "祝您用餐愉快！",
+      "options": [],
+      "correctAnswer": "Have a pleasant meal!"
     }
   ]
 }

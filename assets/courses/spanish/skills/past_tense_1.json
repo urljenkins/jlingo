@@ -1,52 +1,159 @@
 {
-    "id": "past_tense_1",
-    "name": "Past Tense: Preterite",
-    "description": "Learn the simple past tense for completed actions",
-    "level": 12,
-    "exercises": [
-        {
-            "id": "ex_pret_1",
-            "type": "multipleChoice",
-            "question": "When do we use the preterite tense?",
-            "options": ["For completed actions in the past", "For ongoing past actions", "For future plans", "For habitual actions"],
-            "correctAnswer": "For completed actions in the past"
-        },
-        {
-            "id": "ex_pret_2",
-            "type": "matchPairs",
-            "question": "Match HABLAR preterite conjugations",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {"target": "Yo hablé", "native": "I spoke"},
-                    {"target": "Tú hablaste", "native": "You spoke"},
-                    {"target": "Él habló", "native": "He spoke"},
-                    {"target": "Nosotros hablamos", "native": "We spoke"},
-                    {"target": "Ellos hablaron", "native": "They spoke"}
-                ]
-            }
-        },
-        {
-            "id": "ex_pret_3",
-            "type": "translateThis",
-            "question": "Ayer comí en un restaurante",
-            "options": [],
-            "correctAnswer": "Yesterday I ate at a restaurant"
-        },
-        {
-            "id": "ex_pret_4",
-            "type": "fillInBlank",
-            "question": "Ella ___ a España el año pasado",
-            "options": ["viajó", "viaja", "viajaba", "viajará"],
-            "correctAnswer": "viajó"
-        },
-        {
-            "id": "ex_pret_5",
-            "type": "multipleChoice",
-            "question": "What is the preterite of 'ir' (to go) for 'yo'?",
-            "options": ["Fui", "Iba", "Voy", "Iré"],
-            "correctAnswer": "Fui"
-        }
-    ]
+  "id": "past_tense_1",
+  "name": "Past Tense: Preterite",
+  "description": "Learn the simple past tense for completed actions",
+  "level": 12,
+  "exercises": [
+    {
+      "id": "ex_pret_1",
+      "type": "multipleChoice",
+      "question": "When do we use the preterite tense?",
+      "options": [
+        "For completed actions in the past",
+        "For ongoing past actions",
+        "For future plans",
+        "For habitual actions"
+      ],
+      "correctAnswer": "For completed actions in the past"
+    },
+    {
+      "id": "ex_pret_2",
+      "type": "matchPairs",
+      "question": "Match HABLAR preterite conjugations",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Yo hablé",
+            "native": "I spoke"
+          },
+          {
+            "target": "Tú hablaste",
+            "native": "You spoke"
+          },
+          {
+            "target": "Él habló",
+            "native": "He spoke"
+          },
+          {
+            "target": "Nosotros hablamos",
+            "native": "We spoke"
+          },
+          {
+            "target": "Ellos hablaron",
+            "native": "They spoke"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pret_3",
+      "type": "translateThis",
+      "question": "Ayer comí en un restaurante",
+      "options": [],
+      "correctAnswer": "Yesterday I ate at a restaurant"
+    },
+    {
+      "id": "ex_pret_4",
+      "type": "fillInBlank",
+      "question": "Ella ___ a España el año pasado",
+      "options": [
+        "viajó",
+        "viaja",
+        "viajaba",
+        "viajará"
+      ],
+      "correctAnswer": "viajó"
+    },
+    {
+      "id": "ex_pret_5",
+      "type": "multipleChoice",
+      "question": "What is the preterite of 'ir' (to go) for 'yo'?",
+      "options": [
+        "Fui",
+        "Iba",
+        "Voy",
+        "Iré"
+      ],
+      "correctAnswer": "Fui"
+    },
+    {
+      "id": "ex_sp_pt1_6",
+      "type": "multipleChoice",
+      "question": "¿Cuál es la forma de pretérito indefinido de vosotros para el verbo ir/ser?",
+      "options": [
+        "Fuisteis",
+        "Fueron",
+        "Fuiste",
+        "Fuimos"
+      ],
+      "correctAnswer": "Fuisteis"
+    },
+    {
+      "id": "ex_sp_pt1_7",
+      "type": "translateThis",
+      "question": "Ayer fuimos al museo del Prado y vimos obras maravillosas",
+      "options": [],
+      "correctAnswer": "Yesterday we went to the Prado Museum and saw wonderful artworks"
+    },
+    {
+      "id": "ex_sp_pt1_8",
+      "type": "fillInBlank",
+      "question": "El año pasado vosotros ___ de vacaciones a Galicia (viajar).",
+      "options": [
+        "viajasteis",
+        "viajaron",
+        "viajaste",
+        "viajáis"
+      ],
+      "correctAnswer": "viajasteis"
+    },
+    {
+      "id": "ex_sp_pt1_9",
+      "type": "matchPairs",
+      "question": "Empareja las formas de vosotros en pretérito indefinido",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Comprasteis (-ar)",
+            "native": "You all bought"
+          },
+          {
+            "target": "Comisteis (-er)",
+            "native": "You all ate"
+          },
+          {
+            "target": "Salisteis (-ir)",
+            "native": "You all went out / left"
+          },
+          {
+            "target": "Hicisteis (hacer)",
+            "native": "You all made / did"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sp_pt1_10",
+      "type": "fillInBlank",
+      "question": "Anoche no ___ dormir bien por culpa del ruido de la calle (poder).",
+      "options": [
+        "pude",
+        "pudo",
+        "pudisteis",
+        "podía"
+      ],
+      "correctAnswer": "pude"
+    },
+    {
+      "id": "ex_sp_pt1_11",
+      "type": "translateThis",
+      "question": "¿Qué comisteis ayer al mediodía?",
+      "options": [],
+      "correctAnswer": "What did you all eat yesterday at noon?"
+    }
+  ]
 }

@@ -92,6 +92,83 @@
       "correctAnswer": "gaan + infinitive (ik ga slapen)",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_fut_7",
+      "type": "multipleChoice",
+      "question": "Welk hulpwerkwoord gebruikt het Nederlands voor de toekomende tijd (future tense)?",
+      "options": [
+        "Zullen (Ik zal, wij zullen + infinitief)",
+        "Moeten",
+        "Kunnen",
+        "Zijn"
+      ],
+      "correctAnswer": "Zullen (Ik zal, wij zullen + infinitief)"
+    },
+    {
+      "id": "ex_nl_fut_8",
+      "type": "translateThis",
+      "question": "Morgen gaan we naar het strand als de zon schijnt",
+      "options": [],
+      "correctAnswer": "Tomorrow we are going to the beach if the sun shines"
+    },
+    {
+      "id": "ex_nl_fut_9",
+      "type": "fillInBlank",
+      "question": "Ik ___ je morgenochtend direct opbellen (zullen).",
+      "options": [
+        "zal",
+        "zult",
+        "zullen",
+        "zou"
+      ],
+      "correctAnswer": "zal"
+    },
+    {
+      "id": "ex_nl_fut_10",
+      "type": "matchPairs",
+      "question": "Koppel manieren om de toekomst uit te drukken in het Nederlands",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Presens + tijdsbepaling",
+            "native": "Morgen reis ik af (most common in speech)"
+          },
+          {
+            "target": "Gaan + infinitief",
+            "native": "Ik ga verhuizen (intention)"
+          },
+          {
+            "target": "Zullen + infinitief",
+            "native": "Het zal regenen (future / promise)"
+          },
+          {
+            "target": "Zouden + infinitief",
+            "native": "Conditioneel / zou willen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_fut_11",
+      "type": "fillInBlank",
+      "question": "Volgend jaar ___ zij een nieuw huis kopen.",
+      "options": [
+        "gaan",
+        "gaat",
+        "gingen",
+        "gegaan"
+      ],
+      "correctAnswer": "gaan"
+    },
+    {
+      "id": "ex_nl_fut_12",
+      "type": "translateThis",
+      "question": "Wat ga je dit weekend doen?",
+      "options": [],
+      "correctAnswer": "What are you going to do this weekend?"
     }
   ]
 }

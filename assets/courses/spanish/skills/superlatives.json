@@ -1,52 +1,154 @@
 {
-    "id": "superlatives",
-    "name": "Superlatives",
-    "description": "Learn to express 'the most' and 'the least'",
-    "level": 15,
-    "exercises": [
-        {
-            "id": "ex_sup_1",
-            "type": "multipleChoice",
-            "question": "How do you say 'the tallest'?",
-            "options": ["el más alto", "más alto que", "muy alto", "tan alto como"],
-            "correctAnswer": "el más alto"
-        },
-        {
-            "id": "ex_sup_2",
-            "type": "matchPairs",
-            "question": "Match superlative forms",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {"target": "El mejor", "native": "The best"},
-                    {"target": "El peor", "native": "The worst"},
-                    {"target": "El mayor", "native": "The oldest/biggest"},
-                    {"target": "El menor", "native": "The youngest/smallest"},
-                    {"target": "El más grande", "native": "The biggest"}
-                ]
-            }
-        },
-        {
-            "id": "ex_sup_3",
-            "type": "translateThis",
-            "question": "Es el libro más interesante del mundo",
-            "options": [],
-            "correctAnswer": "It's the most interesting book in the world"
-        },
-        {
-            "id": "ex_sup_4",
-            "type": "fillInBlank",
-            "question": "Este es el restaurante más caro ___ la ciudad",
-            "options": ["de", "en", "a", "con"],
-            "correctAnswer": "de"
-        },
-        {
-            "id": "ex_sup_5",
-            "type": "speakThis",
-            "question": "Mi hermana es la más inteligente de la familia",
-            "options": [],
-            "correctAnswer": "Mi hermana es la más inteligente de la familia"
-        }
-    ]
+  "id": "superlatives",
+  "name": "Superlatives",
+  "description": "Learn to express 'the most' and 'the least'",
+  "level": 15,
+  "exercises": [
+    {
+      "id": "ex_sup_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'the tallest'?",
+      "options": [
+        "el más alto",
+        "más alto que",
+        "muy alto",
+        "tan alto como"
+      ],
+      "correctAnswer": "el más alto"
+    },
+    {
+      "id": "ex_sup_2",
+      "type": "matchPairs",
+      "question": "Match superlative forms",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "El mejor",
+            "native": "The best"
+          },
+          {
+            "target": "El peor",
+            "native": "The worst"
+          },
+          {
+            "target": "El mayor",
+            "native": "The oldest/biggest"
+          },
+          {
+            "target": "El menor",
+            "native": "The youngest/smallest"
+          },
+          {
+            "target": "El más grande",
+            "native": "The biggest"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sup_3",
+      "type": "translateThis",
+      "question": "Es el libro más interesante del mundo",
+      "options": [],
+      "correctAnswer": "It's the most interesting book in the world"
+    },
+    {
+      "id": "ex_sup_4",
+      "type": "fillInBlank",
+      "question": "Este es el restaurante más caro ___ la ciudad",
+      "options": [
+        "de",
+        "en",
+        "a",
+        "con"
+      ],
+      "correctAnswer": "de"
+    },
+    {
+      "id": "ex_sup_5",
+      "type": "speakThis",
+      "question": "Mi hermana es la más inteligente de la familia",
+      "options": [],
+      "correctAnswer": "Mi hermana es la más inteligente de la familia"
+    },
+    {
+      "id": "ex_sp_sup_6",
+      "type": "multipleChoice",
+      "question": "¿Cuál es el superlativo absoluto irregular del adjetivo \"célebre\" o \"pobre\"?",
+      "options": [
+        "Celebérrimo y Paupérrimo (culto) / Pobrísimo",
+        "Celebrísimo y pobrísimo solamente",
+        "Más célebre que nadie",
+        "Super célebre"
+      ],
+      "correctAnswer": "Celebérrimo y Paupérrimo (culto) / Pobrísimo"
+    },
+    {
+      "id": "ex_sp_sup_7",
+      "type": "translateThis",
+      "question": "El Teide es el pico más alto de España",
+      "options": [],
+      "correctAnswer": "Mount Teide is the highest peak in Spain"
+    },
+    {
+      "id": "ex_sp_sup_8",
+      "type": "fillInBlank",
+      "question": "El examen de conducir fue ___ fácil (facilísimo).",
+      "options": [
+        "facilísimo",
+        "fácil",
+        "más fácil",
+        "tan fácil"
+      ],
+      "correctAnswer": "facilísimo"
+    },
+    {
+      "id": "ex_sp_sup_9",
+      "type": "matchPairs",
+      "question": "Empareja superlativos en España",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "La mejor paella",
+            "native": "The best paella"
+          },
+          {
+            "target": "El peor atasco",
+            "native": "The worst traffic jam"
+          },
+          {
+            "target": "Buenísimo",
+            "native": "Extremely good / delicious"
+          },
+          {
+            "target": "Carísimo",
+            "native": "Extremely expensive"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sp_sup_10",
+      "type": "fillInBlank",
+      "question": "Esta cafetería tiene los cruasanes ___ ricos del barrio.",
+      "options": [
+        "más",
+        "muy",
+        "tan",
+        "menos"
+      ],
+      "correctAnswer": "más"
+    },
+    {
+      "id": "ex_sp_sup_11",
+      "type": "translateThis",
+      "question": "Ha sido la mejor experiencia de todo el verano",
+      "options": [],
+      "correctAnswer": "It has been the best experience of the whole summer"
+    }
+  ]
 }

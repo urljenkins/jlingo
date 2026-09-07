@@ -82,6 +82,83 @@
       "correctAnswer": "夏より秋のほうが過ごしやすくて好きです",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_comp_6",
+      "type": "multipleChoice",
+      "question": "In \"A の ほう が B より [adjective] です\", what does it mean?",
+      "options": [
+        "A is more [adjective] than B",
+        "B is more [adjective] than A",
+        "Both A and B are equal",
+        "Neither A nor B is [adjective]"
+      ],
+      "correctAnswer": "A is more [adjective] than B"
+    },
+    {
+      "id": "ex_ja_comp_7",
+      "type": "translateThis",
+      "question": "ひこうき の ほう が しんかんせん より はやい です",
+      "options": [],
+      "correctAnswer": "Airplanes are faster than bullet trains"
+    },
+    {
+      "id": "ex_ja_comp_8",
+      "type": "fillInBlank",
+      "question": "いぬ と ねこ と、___ が すき ですか。(Which do you like better, dogs or cats?)",
+      "options": [
+        "どちら",
+        "だれ",
+        "どこ",
+        "なん"
+      ],
+      "correctAnswer": "どちら"
+    },
+    {
+      "id": "ex_ja_comp_9",
+      "type": "matchPairs",
+      "question": "Match comparative structures in Japanese",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "より (yori)",
+            "native": "Than (point of comparison)"
+          },
+          {
+            "target": "の ほう が (no hou ga)",
+            "native": "Side / entity that is more"
+          },
+          {
+            "target": "どちら (dochira)",
+            "native": "Which of the two"
+          },
+          {
+            "target": "ずっと (zutto)",
+            "native": "By far / Much more"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_comp_10",
+      "type": "fillInBlank",
+      "question": "きょう は きのう ___ さむい です。(Today is colder than yesterday.)",
+      "options": [
+        "より",
+        "から",
+        "まで",
+        "ほど"
+      ],
+      "correctAnswer": "より"
+    },
+    {
+      "id": "ex_ja_comp_11",
+      "type": "translateThis",
+      "question": "コーヒー の ほう が おちゃ より すき です",
+      "options": [],
+      "correctAnswer": "I like coffee better than green tea"
     }
   ]
 }

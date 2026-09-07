@@ -82,6 +82,83 @@
       "correctAnswer": "こんにちは",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_alph_6",
+      "type": "multipleChoice",
+      "question": "Which hiragana character represents the sound \"sa\"?",
+      "options": [
+        "さ",
+        "き",
+        "ち",
+        "ろ"
+      ],
+      "correctAnswer": "さ"
+    },
+    {
+      "id": "ex_ja_alph_7",
+      "type": "translateThis",
+      "question": "ねこ",
+      "options": [],
+      "correctAnswer": "Cat"
+    },
+    {
+      "id": "ex_ja_alph_8",
+      "type": "fillInBlank",
+      "question": "The dakuten (゛) changes \"ka\" (か) to \"___\" (が).",
+      "options": [
+        "ga",
+        "ba",
+        "pa",
+        "za"
+      ],
+      "correctAnswer": "ga"
+    },
+    {
+      "id": "ex_ja_alph_9",
+      "type": "matchPairs",
+      "question": "Match the katakana characters to their romaji sounds",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ア",
+            "native": "a"
+          },
+          {
+            "target": "カ",
+            "native": "ka"
+          },
+          {
+            "target": "サ",
+            "native": "sa"
+          },
+          {
+            "target": "タ",
+            "native": "ta"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_alph_10",
+      "type": "multipleChoice",
+      "question": "What is the handakuten (゜) used for on \"ha\" (は)?",
+      "options": [
+        "Changes \"ha\" to \"pa\" (ぱ)",
+        "Changes \"ha\" to \"ba\"",
+        "Changes \"ha\" to \"ma\"",
+        "Mutes the sound"
+      ],
+      "correctAnswer": "Changes \"ha\" to \"pa\" (ぱ)"
+    },
+    {
+      "id": "ex_ja_alph_11",
+      "type": "translateThis",
+      "question": "やま",
+      "options": [],
+      "correctAnswer": "Mountain"
     }
   ]
 }

@@ -92,6 +92,83 @@
       "correctAnswer": "Eat breakfast",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_rout_7",
+      "type": "multipleChoice",
+      "question": "Which sequence represents a typical morning routine in Chinese?",
+      "options": [
+        "起床、刷牙、吃早饭、去上班 (qǐchuáng, shuāyá, chī zǎofàn, qù shàngbān)",
+        "睡觉、刷牙、吃晚饭",
+        "下班、吃早饭、睡觉",
+        "穿衣服、睡觉、起床"
+      ],
+      "correctAnswer": "起床、刷牙、吃早饭、去上班 (qǐchuáng, shuāyá, chī zǎofàn, qù shàngbān)"
+    },
+    {
+      "id": "ex_zh_rout_8",
+      "type": "translateThis",
+      "question": "我洗了澡就去睡觉",
+      "options": [],
+      "correctAnswer": "I took a shower and then went to sleep"
+    },
+    {
+      "id": "ex_zh_rout_9",
+      "type": "fillInBlank",
+      "question": "晚上十一点半，我上床 ___ 。(At 11:30 PM, I go to bed to sleep.)",
+      "options": [
+        "睡觉",
+        "起床",
+        "上班",
+        "吃午饭"
+      ],
+      "correctAnswer": "睡觉"
+    },
+    {
+      "id": "ex_zh_rout_10",
+      "type": "matchPairs",
+      "question": "Match daily routine activities in Chinese",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "刷牙 (shuāyá)",
+            "native": "Brush teeth"
+          },
+          {
+            "target": "洗脸 (xǐliǎn)",
+            "native": "Wash face"
+          },
+          {
+            "target": "洗澡 (xǐzǎo)",
+            "native": "Take a bath / shower"
+          },
+          {
+            "target": "换衣服 (huàn yīfu)",
+            "native": "Change clothes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_rout_11",
+      "type": "fillInBlank",
+      "question": "他每天早上跑半个小时的 ___ 。(He runs for half an hour every morning.)",
+      "options": [
+        "步",
+        "路",
+        "饭",
+        "车"
+      ],
+      "correctAnswer": "步"
+    },
+    {
+      "id": "ex_zh_rout_12",
+      "type": "translateThis",
+      "question": "你平时几点吃晚饭？",
+      "options": [],
+      "correctAnswer": "What time do you usually eat dinner?"
     }
   ]
 }

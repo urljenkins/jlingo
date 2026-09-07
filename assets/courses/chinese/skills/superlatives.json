@@ -92,6 +92,83 @@
       "correctAnswer": "Extremely good / excellent",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_sup_7",
+      "type": "multipleChoice",
+      "question": "Which adverb is placed before an adjective to form the superlative (\"most / -est\") in Chinese?",
+      "options": [
+        "最 (zuì)",
+        "太 (tài)",
+        "很 (hěn)",
+        "更 (gèng)"
+      ],
+      "correctAnswer": "最 (zuì)"
+    },
+    {
+      "id": "ex_zh_sup_8",
+      "type": "translateThis",
+      "question": "北京烤鸭是我最喜欢的中国菜",
+      "options": [],
+      "correctAnswer": "Beijing roast duck is my favorite Chinese dish"
+    },
+    {
+      "id": "ex_zh_sup_9",
+      "type": "fillInBlank",
+      "question": "全班同学中，王明跑得 ___ 快。(Among all classmates, Wang Ming runs the fastest.)",
+      "options": [
+        "最",
+        "更",
+        "很",
+        "太"
+      ],
+      "correctAnswer": "最"
+    },
+    {
+      "id": "ex_zh_sup_10",
+      "type": "matchPairs",
+      "question": "Match superlative combinations with 最",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "最好的朋友",
+            "native": "Best friend"
+          },
+          {
+            "target": "最高的山",
+            "native": "Tallest mountain"
+          },
+          {
+            "target": "最新的手机",
+            "native": "Newest mobile phone"
+          },
+          {
+            "target": "最重要的事",
+            "native": "Most important thing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_sup_11",
+      "type": "fillInBlank",
+      "question": "这是全城 ___ 便宜的一家超市。(This is the cheapest supermarket in the whole city.)",
+      "options": [
+        "最",
+        "更",
+        "真",
+        "挺"
+      ],
+      "correctAnswer": "最"
+    },
+    {
+      "id": "ex_zh_sup_12",
+      "type": "translateThis",
+      "question": "健康是世界上最宝贵的财富",
+      "options": [],
+      "correctAnswer": "Health is the most precious treasure in the world"
     }
   ]
 }

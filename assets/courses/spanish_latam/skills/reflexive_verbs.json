@@ -1,101 +1,178 @@
 {
-    "id": "reflexive_verbs",
-    "name": "Reflexive Verbs",
-    "description": "Learn verbs that reflect back to the subject",
-    "level": 8,
-    "exercises": [
-        {
-            "id": "ex_rv_1",
-            "type": "multipleChoice",
-            "question": "Which pronoun goes with 'yo' for reflexive verbs?",
-            "options": [
-                "me",
-                "te",
-                "se",
-                "nos"
-            ],
-            "correctAnswer": "me"
-        },
-        {
-            "id": "ex_rv_2",
-            "type": "matchPairs",
-            "question": "Match reflexive pronouns",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "Me",
-                        "native": "Myself (yo)"
-                    },
-                    {
-                        "target": "Te",
-                        "native": "Yourself (tú)"
-                    },
-                    {
-                        "target": "Se",
-                        "native": "Himself/Herself"
-                    },
-                    {
-                        "target": "Nos",
-                        "native": "Ourselves"
-                    },
-                    {
-                        "target": "Se",
-                        "native": "Themselves"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "ex_rv_3",
-            "type": "translateThis",
-            "question": "Me lavo las manos",
-            "options": [],
-            "correctAnswer": "I wash my hands"
-        },
-        {
-            "id": "ex_rv_4",
-            "type": "fillInBlank",
-            "question": "Ella ___ peina el pelo",
-            "options": [
-                "se",
-                "me",
-                "te",
-                "nos"
-            ],
-            "correctAnswer": "se"
-        },
-        {
-            "id": "ex_rv_5",
-            "type": "matchPairs",
-            "question": "Match common reflexive verbs",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "Levantarse",
-                        "native": "To get up"
-                    },
-                    {
-                        "target": "Ducharse",
-                        "native": "To shower"
-                    },
-                    {
-                        "target": "Vestirse",
-                        "native": "To get dressed"
-                    },
-                    {
-                        "target": "Acostarse",
-                        "native": "To go to bed"
-                    },
-                    {
-                        "target": "Llamarse",
-                        "native": "To be called"
-                    }
-                ]
-            }
-        }
-    ]
+  "id": "reflexive_verbs",
+  "name": "Reflexive Verbs",
+  "description": "Learn verbs that reflect back to the subject",
+  "level": 8,
+  "exercises": [
+    {
+      "id": "ex_rv_1",
+      "type": "multipleChoice",
+      "question": "Which pronoun goes with 'yo' for reflexive verbs?",
+      "options": [
+        "me",
+        "te",
+        "se",
+        "nos"
+      ],
+      "correctAnswer": "me"
+    },
+    {
+      "id": "ex_rv_2",
+      "type": "matchPairs",
+      "question": "Match reflexive pronouns",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Me",
+            "native": "Myself (yo)"
+          },
+          {
+            "target": "Te",
+            "native": "Yourself (tú)"
+          },
+          {
+            "target": "Se",
+            "native": "Himself/Herself"
+          },
+          {
+            "target": "Nos",
+            "native": "Ourselves"
+          },
+          {
+            "target": "Se",
+            "native": "Themselves"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_rv_3",
+      "type": "translateThis",
+      "question": "Me lavo las manos",
+      "options": [],
+      "correctAnswer": "I wash my hands"
+    },
+    {
+      "id": "ex_rv_4",
+      "type": "fillInBlank",
+      "question": "Ella ___ peina el pelo",
+      "options": [
+        "se",
+        "me",
+        "te",
+        "nos"
+      ],
+      "correctAnswer": "se"
+    },
+    {
+      "id": "ex_rv_5",
+      "type": "matchPairs",
+      "question": "Match common reflexive verbs",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Levantarse",
+            "native": "To get up"
+          },
+          {
+            "target": "Ducharse",
+            "native": "To shower"
+          },
+          {
+            "target": "Vestirse",
+            "native": "To get dressed"
+          },
+          {
+            "target": "Acostarse",
+            "native": "To go to bed"
+          },
+          {
+            "target": "Llamarse",
+            "native": "To be called"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_latam_refl_6",
+      "type": "multipleChoice",
+      "question": "¿Dónde se coloca el pronombre reflexivo cuando se usa con un infinitivo o gerundio?",
+      "options": [
+        "Antes del verbo conjugado o pegado al final del infinitivo/gerundio (Me voy a bañar / Voy a bañarme)",
+        "Solo después del sujeto obligatoriamente",
+        "Al final de la oración siempre",
+        "No se puede usar con infinitivo"
+      ],
+      "correctAnswer": "Antes del verbo conjugado o pegado al final del infinitivo/gerundio (Me voy a bañar / Voy a bañarme)"
+    },
+    {
+      "id": "ex_latam_refl_7",
+      "type": "translateThis",
+      "question": "Ustedes se acuestan muy tarde los sábados",
+      "options": [],
+      "correctAnswer": "You all go to bed very late on Saturdays"
+    },
+    {
+      "id": "ex_latam_refl_8",
+      "type": "fillInBlank",
+      "question": "Nosotros ___ levantamos a las seis para hacer ejercicio.",
+      "options": [
+        "nos",
+        "se",
+        "me",
+        "te"
+      ],
+      "correctAnswer": "nos"
+    },
+    {
+      "id": "ex_latam_refl_9",
+      "type": "matchPairs",
+      "question": "Empareja los pronombres reflexivos con sus sujetos",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Yo -> me",
+            "native": "Myself"
+          },
+          {
+            "target": "Tú -> te (o vos te)",
+            "native": "Yourself"
+          },
+          {
+            "target": "Él / Ella / Usted -> se",
+            "native": "Himself / Herself / Yourself (formal)"
+          },
+          {
+            "target": "Ustedes -> se",
+            "native": "Yourselves (all of you)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_latam_refl_10",
+      "type": "fillInBlank",
+      "question": "Ella se ___ los dientes después de cada comida.",
+      "options": [
+        "cepilla (o lava)",
+        "come",
+        "despierta",
+        "sienta"
+      ],
+      "correctAnswer": "cepilla (o lava)"
+    },
+    {
+      "id": "ex_latam_refl_11",
+      "type": "translateThis",
+      "question": "Tengo que apurarme para no llegar tarde",
+      "options": [],
+      "correctAnswer": "I have to hurry up so I won't be late"
+    }
+  ]
 }

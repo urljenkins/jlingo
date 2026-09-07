@@ -573,6 +573,78 @@
                 "focus": "The soft 'c' before 'e' and 'i'"
             },
             "id": "lp_ex3_3"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Los colores del arcoíris son hermosos",
+            "options": [],
+            "correctAnswer": "Los colores del arcoíris son hermosos",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "los koh-LOH-res del ar-koh-EE-ris son er-MOH-sos",
+                "focus": "Diphthong in 'arcoíris'"
+            },
+            "id": "lp_ex4_1"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "¿Qué hora es en tu ciudad?",
+            "options": [],
+            "correctAnswer": "¿Qué hora es en tu ciudad?",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "keh OH-rah es en too see-oo-DAHD",
+                "focus": "Stress pattern in questions"
+            },
+            "id": "lp_ex4_2"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Buen provecho y que aproveche",
+            "options": [],
+            "correctAnswer": "Buen provecho y que aproveche",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "bwen proh-VEH-choh ee keh ah-proh-VEH-cheh",
+                "focus": "Linking words in a common dining phrase"
+            },
+            "id": "lp_ex5_1"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Los números del uno al diez",
+            "options": [],
+            "correctAnswer": "Los números del uno al diez",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "los NOO-meh-ros del OO-noh al dyes",
+                "focus": "Clear enunciation of numbers"
+            },
+            "id": "lp_ex5_2"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "El árbol genealógico de mi familia es grande",
+            "options": [],
+            "correctAnswer": "El árbol genealógico de mi familia es grande",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "el AR-bol heh-neh-ah-LOH-hee-koh deh mee fah-MEE-lyah es GRAN-deh",
+                "focus": "Multiple soft 'g' sounds"
+            },
+            "id": "lp_ex6_1"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Justo a tiempo llegamos a la fiesta",
+            "options": [],
+            "correctAnswer": "Justo a tiempo llegamos a la fiesta",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "HOO-stoh ah tee-EM-poh yeh-GAH-mos ah lah fee-ES-tah",
+                "focus": "Linking across word boundaries"
+            },
+            "id": "lp_ex8_1"
         }
     ]
 }

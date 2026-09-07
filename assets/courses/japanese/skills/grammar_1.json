@@ -83,6 +83,83 @@
       "correctAnswer": "私も日本に行きたいです",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_g1_6",
+      "type": "fillInBlank",
+      "question": "わたし___ たなか です。(As for me, I am Tanaka.)",
+      "options": [
+        "は",
+        "が",
+        "を",
+        "に"
+      ],
+      "correctAnswer": "は"
+    },
+    {
+      "id": "ex_ja_g1_7",
+      "type": "multipleChoice",
+      "question": "Which particle marks the direct object of an action verb?",
+      "options": [
+        "を (wo/o)",
+        "は (wa)",
+        "が (ga)",
+        "へ (e)"
+      ],
+      "correctAnswer": "を (wo/o)"
+    },
+    {
+      "id": "ex_ja_g1_8",
+      "type": "translateThis",
+      "question": "みずを のみます",
+      "options": [],
+      "correctAnswer": "I drink water"
+    },
+    {
+      "id": "ex_ja_g1_9",
+      "type": "matchPairs",
+      "question": "Match the fundamental Japanese particles to their grammatical roles",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "は (wa)",
+            "native": "Topic marker (\"as for...\")"
+          },
+          {
+            "target": "が (ga)",
+            "native": "Subject / focus marker"
+          },
+          {
+            "target": "を (o)",
+            "native": "Direct object marker"
+          },
+          {
+            "target": "も (mo)",
+            "native": "Inclusive marker (\"also / too\")"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_g1_10",
+      "type": "fillInBlank",
+      "question": "わたし___ がくせい です。(I am also a student.)",
+      "options": [
+        "も",
+        "を",
+        "へ",
+        "で"
+      ],
+      "correctAnswer": "も"
+    },
+    {
+      "id": "ex_ja_g1_11",
+      "type": "translateThis",
+      "question": "だれが きましたか",
+      "options": [],
+      "correctAnswer": "Who came?"
     }
   ]
 }

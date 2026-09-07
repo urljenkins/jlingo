@@ -82,6 +82,83 @@
       "correctAnswer": "Elle est toujours à l'heure",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_etre_6",
+      "type": "multipleChoice",
+      "question": "Quelle est la conjugaison correcte du verbe être avec \"vous\"?",
+      "options": [
+        "Vous êtes",
+        "Vous sommes",
+        "Vous sont",
+        "Vous étiez"
+      ],
+      "correctAnswer": "Vous êtes"
+    },
+    {
+      "id": "ex_fr_etre_7",
+      "type": "translateThis",
+      "question": "Ils sont très gentils et accueillants",
+      "options": [],
+      "correctAnswer": "They are very kind and welcoming"
+    },
+    {
+      "id": "ex_fr_etre_8",
+      "type": "fillInBlank",
+      "question": "Nous ___ en vacances à Paris cette semaine.",
+      "options": [
+        "sommes",
+        "êtes",
+        "sont",
+        "suis"
+      ],
+      "correctAnswer": "sommes"
+    },
+    {
+      "id": "ex_fr_etre_9",
+      "type": "matchPairs",
+      "question": "Associez les formes du verbe être au présent",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Je suis",
+            "native": "I am"
+          },
+          {
+            "target": "Tu es",
+            "native": "You are"
+          },
+          {
+            "target": "Il / Elle est",
+            "native": "He / She is"
+          },
+          {
+            "target": "Ils / Elles sont",
+            "native": "They are"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_etre_10",
+      "type": "fillInBlank",
+      "question": "Tu ___ en retard pour la réunion.",
+      "options": [
+        "es",
+        "est",
+        "suis",
+        "êtes"
+      ],
+      "correctAnswer": "es"
+    },
+    {
+      "id": "ex_fr_etre_11",
+      "type": "translateThis",
+      "question": "Êtes-vous prêts pour le départ ?",
+      "options": [],
+      "correctAnswer": "Are you ready for the departure?"
     }
   ]
 }

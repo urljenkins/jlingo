@@ -1,59 +1,171 @@
 {
-    "id": "grammar_ser_estar",
-    "name": "Grammar: Ser & Estar",
-    "description": "Learn the two Spanish verbs for 'to be'",
-    "level": 7,
-    "exercises": [
-        {
-            "id": "ex_se_1",
-            "type": "multipleChoice",
-            "question": "Which verb do you use for permanent characteristics?",
-            "options": ["Ser", "Estar", "Tener", "Haber"],
-            "correctAnswer": "Ser"
-        },
-        {
-            "id": "ex_se_2",
-            "type": "fillInBlank",
-            "question": "Yo ___ español",
-            "options": ["soy", "estoy", "tengo", "hay"],
-            "correctAnswer": "soy"
-        },
-        {
-            "id": "ex_se_3",
-            "type": "fillInBlank",
-            "question": "María ___ cansada",
-            "options": ["está", "es", "tiene", "hay"],
-            "correctAnswer": "está"
-        },
-        {
-            "id": "ex_se_4",
-            "type": "matchPairs",
-            "question": "Match SER conjugations",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {"target": "Yo soy", "native": "I am"},
-                    {"target": "Tú eres", "native": "You are"},
-                    {"target": "Él/Ella es", "native": "He/She is"},
-                    {"target": "Nosotros somos", "native": "We are"},
-                    {"target": "Ellos son", "native": "They are"}
-                ]
-            }
-        },
-        {
-            "id": "ex_se_5",
-            "type": "multipleChoice",
-            "question": "La fiesta ___ en mi casa (location)",
-            "options": ["está", "es", "son", "están"],
-            "correctAnswer": "es"
-        },
-        {
-            "id": "ex_se_6",
-            "type": "translateThis",
-            "question": "Estoy en la oficina",
-            "options": [],
-            "correctAnswer": "I am at the office"
-        }
-    ]
+  "id": "grammar_ser_estar",
+  "name": "Grammar: Ser & Estar",
+  "description": "Learn the two Spanish verbs for 'to be'",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_se_1",
+      "type": "multipleChoice",
+      "question": "Which verb do you use for permanent characteristics?",
+      "options": [
+        "Ser",
+        "Estar",
+        "Tener",
+        "Haber"
+      ],
+      "correctAnswer": "Ser"
+    },
+    {
+      "id": "ex_se_2",
+      "type": "fillInBlank",
+      "question": "Yo ___ español",
+      "options": [
+        "soy",
+        "estoy",
+        "tengo",
+        "hay"
+      ],
+      "correctAnswer": "soy"
+    },
+    {
+      "id": "ex_se_3",
+      "type": "fillInBlank",
+      "question": "María ___ cansada",
+      "options": [
+        "está",
+        "es",
+        "tiene",
+        "hay"
+      ],
+      "correctAnswer": "está"
+    },
+    {
+      "id": "ex_se_4",
+      "type": "matchPairs",
+      "question": "Match SER conjugations",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Yo soy",
+            "native": "I am"
+          },
+          {
+            "target": "Tú eres",
+            "native": "You are"
+          },
+          {
+            "target": "Él/Ella es",
+            "native": "He/She is"
+          },
+          {
+            "target": "Nosotros somos",
+            "native": "We are"
+          },
+          {
+            "target": "Ellos son",
+            "native": "They are"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_se_5",
+      "type": "multipleChoice",
+      "question": "La fiesta ___ en mi casa (location)",
+      "options": [
+        "está",
+        "es",
+        "son",
+        "están"
+      ],
+      "correctAnswer": "es"
+    },
+    {
+      "id": "ex_se_6",
+      "type": "translateThis",
+      "question": "Estoy en la oficina",
+      "options": [],
+      "correctAnswer": "I am at the office"
+    },
+    {
+      "id": "ex_sp_se_7",
+      "type": "multipleChoice",
+      "question": "¿Qué verbo se usa en España para definir la profesión y el origen permanente?",
+      "options": [
+        "Ser (Soy profesor, somos de Madrid)",
+        "Estar",
+        "Haber",
+        "Tener"
+      ],
+      "correctAnswer": "Ser (Soy profesor, somos de Madrid)"
+    },
+    {
+      "id": "ex_sp_se_8",
+      "type": "translateThis",
+      "question": "Vosotros sois muy trabajadores y estáis siempre alegres",
+      "options": [],
+      "correctAnswer": "You all are very hard-working and are always cheerful"
+    },
+    {
+      "id": "ex_sp_se_9",
+      "type": "fillInBlank",
+      "question": "El concierto ___ en el teatro central a las ocho (evento/lugar de celebración).",
+      "options": [
+        "es",
+        "está",
+        "hay",
+        "tiene"
+      ],
+      "correctAnswer": "es"
+    },
+    {
+      "id": "ex_sp_se_10",
+      "type": "matchPairs",
+      "question": "Empareja los contrastes entre Ser y Estar en España",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Ser listo",
+            "native": "To be clever / intelligent"
+          },
+          {
+            "target": "Estar listo",
+            "native": "To be ready / finished"
+          },
+          {
+            "target": "Ser rico",
+            "native": "To be wealthy"
+          },
+          {
+            "target": "Estar rico",
+            "native": "To be delicious (food)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sp_se_11",
+      "type": "fillInBlank",
+      "question": "¿Dónde ___ la estación de Atocha?",
+      "options": [
+        "está",
+        "es",
+        "son",
+        "están"
+      ],
+      "correctAnswer": "está"
+    },
+    {
+      "id": "ex_sp_se_12",
+      "type": "translateThis",
+      "question": "La tortilla de patatas está riquísima",
+      "options": [],
+      "correctAnswer": "The potato omelette is extremely delicious"
+    }
+  ]
 }

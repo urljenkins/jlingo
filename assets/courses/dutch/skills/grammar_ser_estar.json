@@ -92,6 +92,83 @@
       "correctAnswer": "To become / passive voice marker",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_se_7",
+      "type": "multipleChoice",
+      "question": "Wat is de juiste vervoeging van \"zijn\" (to be) voor \"jullie\" in de tegenwoordige tijd?",
+      "options": [
+        "Jullie zijn",
+        "Jullie bent",
+        "Jullie is",
+        "Jullie wezen"
+      ],
+      "correctAnswer": "Jullie zijn"
+    },
+    {
+      "id": "ex_nl_se_8",
+      "type": "translateThis",
+      "question": "Wij zijn vandaag heel blij en dankbaar",
+      "options": [],
+      "correctAnswer": "We are very happy and grateful today"
+    },
+    {
+      "id": "ex_nl_se_9",
+      "type": "fillInBlank",
+      "question": "Waar ___ jij gisteren geweest?",
+      "options": [
+        "ben",
+        "is",
+        "bent",
+        "zijn"
+      ],
+      "correctAnswer": "ben"
+    },
+    {
+      "id": "ex_nl_se_10",
+      "type": "matchPairs",
+      "question": "Koppel het onderwerp aan de juiste vorm van \"zijn\"",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Ik",
+            "native": "ben"
+          },
+          {
+            "target": "Jij / Je",
+            "native": "bent (of \"ben je\" bij inversie)"
+          },
+          {
+            "target": "Hij / Zij / Het",
+            "native": "is"
+          },
+          {
+            "target": "Wij / Jullie / Zij",
+            "native": "zijn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_se_11",
+      "type": "fillInBlank",
+      "question": "Het museum ___ vandaag gesloten wegens onderhoud.",
+      "options": [
+        "is",
+        "bent",
+        "ben",
+        "zijn"
+      ],
+      "correctAnswer": "is"
+    },
+    {
+      "id": "ex_nl_se_12",
+      "type": "translateThis",
+      "question": "Ben je klaar om te vertrekken?",
+      "options": [],
+      "correctAnswer": "Are you ready to leave?"
     }
   ]
 }

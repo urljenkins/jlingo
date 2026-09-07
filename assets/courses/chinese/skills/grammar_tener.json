@@ -92,6 +92,83 @@
       "correctAnswer": "There are books on the table (existential 'yǒu')",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_you_7",
+      "type": "multipleChoice",
+      "question": "How is the verb \"有\" (yǒu - to have) negated in Chinese?",
+      "options": [
+        "没有 (méiyǒu) - never 不有",
+        "不有 (bùyǒu)",
+        "无有 (wúyǒu)",
+        "没是不 (méishìbù)"
+      ],
+      "correctAnswer": "没有 (méiyǒu) - never 不有"
+    },
+    {
+      "id": "ex_zh_you_8",
+      "type": "translateThis",
+      "question": "我有两个姐姐和一个哥哥",
+      "options": [],
+      "correctAnswer": "I have two older sisters and one older brother"
+    },
+    {
+      "id": "ex_zh_you_9",
+      "type": "fillInBlank",
+      "question": "我现在很忙，___ 时间跟你去逛街。(I am very busy now, I don't have time to go shopping with you.)",
+      "options": [
+        "没有",
+        "不有",
+        "不用",
+        "不是"
+      ],
+      "correctAnswer": "没有"
+    },
+    {
+      "id": "ex_zh_you_10",
+      "type": "matchPairs",
+      "question": "Match common expressions with 有",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "很有趣",
+            "native": "Very interesting"
+          },
+          {
+            "target": "有用",
+            "native": "Useful"
+          },
+          {
+            "target": "有名",
+            "native": "Famous"
+          },
+          {
+            "target": "有钱",
+            "native": "Rich / Wealthy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_you_11",
+      "type": "fillInBlank",
+      "question": "这家餐馆在当地非常 ___ 名。(This restaurant is very famous locally.)",
+      "options": [
+        "有",
+        "是",
+        "在",
+        "很"
+      ],
+      "correctAnswer": "有"
+    },
+    {
+      "id": "ex_zh_you_12",
+      "type": "translateThis",
+      "question": "你今天下午有空吗？",
+      "options": [],
+      "correctAnswer": "Do you have free time this afternoon?"
     }
   ]
 }

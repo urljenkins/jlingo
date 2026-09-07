@@ -82,6 +82,83 @@
       "correctAnswer": "今、日本語の文法を復習しています",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_pcont_6",
+      "type": "multipleChoice",
+      "question": "What does \"〜ています\" (te-imasu) indicate?",
+      "options": [
+        "Action in progress or resulting state",
+        "Hypothetical future only",
+        "Completed past event",
+        "A strong prohibition"
+      ],
+      "correctAnswer": "Action in progress or resulting state"
+    },
+    {
+      "id": "ex_ja_pcont_7",
+      "type": "translateThis",
+      "question": "いま にほんごの ほんを よんでいます",
+      "options": [],
+      "correctAnswer": "I am reading a Japanese book now"
+    },
+    {
+      "id": "ex_ja_pcont_8",
+      "type": "fillInBlank",
+      "question": "あめが ___ います。(It is raining.)",
+      "options": [
+        "ふって",
+        "ふり",
+        "ふった",
+        "ふる"
+      ],
+      "correctAnswer": "ふって"
+    },
+    {
+      "id": "ex_ja_pcont_9",
+      "type": "matchPairs",
+      "question": "Match continuous & state verbs in ~te imasu form",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "たべて います",
+            "native": "Is eating (action in progress)"
+          },
+          {
+            "target": "すんで います",
+            "native": "Lives / Resides (state)"
+          },
+          {
+            "target": "しって います",
+            "native": "Knows (state)"
+          },
+          {
+            "target": "まって います",
+            "native": "Is waiting (action in progress)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_pcont_10",
+      "type": "fillInBlank",
+      "question": "とうきょうに ___ います。(I live in Tokyo.)",
+      "options": [
+        "すんで",
+        "すむ",
+        "すみ",
+        "すんだ"
+      ],
+      "correctAnswer": "すんで"
+    },
+    {
+      "id": "ex_ja_pcont_11",
+      "type": "translateThis",
+      "question": "なにを して いますか",
+      "options": [],
+      "correctAnswer": "What are you doing?"
     }
   ]
 }

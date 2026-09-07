@@ -82,6 +82,83 @@
       "correctAnswer": "すみません、お会計をお願いします",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_rest_6",
+      "type": "multipleChoice",
+      "question": "What greeting do staff say when you enter a restaurant in Japan?",
+      "options": [
+        "いらっしゃいませ (Irasshaimase)",
+        "いただきます (Itadakimasu)",
+        "ごちそうさまでした (Gochisousama)",
+        "おじゃまします (Ojamashimasu)"
+      ],
+      "correctAnswer": "いらっしゃいませ (Irasshaimase)"
+    },
+    {
+      "id": "ex_ja_rest_7",
+      "type": "translateThis",
+      "question": "おかいけい を おねがいします",
+      "options": [],
+      "correctAnswer": "The bill, please"
+    },
+    {
+      "id": "ex_ja_rest_8",
+      "type": "fillInBlank",
+      "question": "ふたり です。___ は ありますか。(Two people. Do you have a table/seat?)",
+      "options": [
+        "せき",
+        "みず",
+        "おはし",
+        "サラ"
+      ],
+      "correctAnswer": "せき"
+    },
+    {
+      "id": "ex_ja_rest_9",
+      "type": "matchPairs",
+      "question": "Match Japanese dining customs",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "いただきます",
+            "native": "Humble phrase said before eating"
+          },
+          {
+            "target": "ごちそうさまでした",
+            "native": "Polite gratitude said after finishing a meal"
+          },
+          {
+            "target": "おひや (ohiya)",
+            "native": "Cold drinking water (in restaurant)"
+          },
+          {
+            "target": "おしぼり (oshibori)",
+            "native": "Wet towel for cleaning hands"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_rest_10",
+      "type": "fillInBlank",
+      "question": "ラーメン を ___ ひとつ ください。(One ramen, please.)",
+      "options": [
+        "ひとつ",
+        "ひとり",
+        "いち",
+        "いっぽん"
+      ],
+      "correctAnswer": "ひとつ"
+    },
+    {
+      "id": "ex_ja_rest_11",
+      "type": "translateThis",
+      "question": "メニュー を みせて ください",
+      "options": [],
+      "correctAnswer": "Please show me the menu"
     }
   ]
 }

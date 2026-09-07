@@ -82,6 +82,83 @@
       "correctAnswer": "Ce modèle est nettement plus performant",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_comp_6",
+      "type": "multipleChoice",
+      "question": "Quel est le comparatif de supériorité irrégulier de l'adjectif \"bon\"?",
+      "options": [
+        "Meilleur (e)",
+        "Plus bon",
+        "Mieux",
+        "Bien plus"
+      ],
+      "correctAnswer": "Meilleur (e)"
+    },
+    {
+      "id": "ex_fr_comp_7",
+      "type": "translateThis",
+      "question": "Le train est plus rapide que la voiture",
+      "options": [],
+      "correctAnswer": "The train is faster than the car"
+    },
+    {
+      "id": "ex_fr_comp_8",
+      "type": "fillInBlank",
+      "question": "Ce restaurant est ___ cher que l'autre, ils ont les mêmes prix.",
+      "options": [
+        "aussi",
+        "plus",
+        "moins",
+        "très"
+      ],
+      "correctAnswer": "aussi"
+    },
+    {
+      "id": "ex_fr_comp_9",
+      "type": "matchPairs",
+      "question": "Associez les structures comparatives",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Plus ... que",
+            "native": "More ... than (superiority)"
+          },
+          {
+            "target": "Moins ... que",
+            "native": "Less ... than (inferiority)"
+          },
+          {
+            "target": "Aussi ... que",
+            "native": "As ... as (equality)"
+          },
+          {
+            "target": "Mieux que",
+            "native": "Better than (adverb)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_comp_10",
+      "type": "fillInBlank",
+      "question": "Cette tarte aux pommes est ___ que celle d'hier (comparatif de bon).",
+      "options": [
+        "meilleure",
+        "plus bonne",
+        "mieux",
+        "bien"
+      ],
+      "correctAnswer": "meilleure"
+    },
+    {
+      "id": "ex_fr_comp_11",
+      "type": "translateThis",
+      "question": "Il parle français aussi bien que son professeur",
+      "options": [],
+      "correctAnswer": "He speaks French as well as his teacher"
     }
   ]
 }

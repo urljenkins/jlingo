@@ -92,6 +92,83 @@
       "correctAnswer": "even snel als",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_comp_7",
+      "type": "multipleChoice",
+      "question": "Hoe vorm je de vergrotende trap (comparative) van regelmatige bijvoeglijke naamwoorden?",
+      "options": [
+        "Stam + -er (groot -> groter, snel -> sneller)",
+        "Meer + adjectief altijd",
+        "Meest + adjectief",
+        "Stam + -st"
+      ],
+      "correctAnswer": "Stam + -er (groot -> groter, snel -> sneller)"
+    },
+    {
+      "id": "ex_nl_comp_8",
+      "type": "translateThis",
+      "question": "De trein is sneller dan de bus",
+      "options": [],
+      "correctAnswer": "The train is faster than the bus"
+    },
+    {
+      "id": "ex_nl_comp_9",
+      "type": "fillInBlank",
+      "question": "Dit boek is veel ___ dan die film (vergrotende trap van leuk).",
+      "options": [
+        "leuker",
+        "leukst",
+        "meer leuk",
+        "leuk"
+      ],
+      "correctAnswer": "leuker"
+    },
+    {
+      "id": "ex_nl_comp_10",
+      "type": "matchPairs",
+      "question": "Koppel onregelmatige trappen van vergelijking",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Goed -> beter",
+            "native": "Better"
+          },
+          {
+            "target": "Veel -> meer",
+            "native": "More"
+          },
+          {
+            "target": "Weinig -> minder",
+            "native": "Less"
+          },
+          {
+            "target": "Graag -> liever",
+            "native": "Rather / Prefer to"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_comp_11",
+      "type": "fillInBlank",
+      "question": "Ik drink ___ thee dan koffie (liever).",
+      "options": [
+        "liever",
+        "graag",
+        "beter",
+        "meer graag"
+      ],
+      "correctAnswer": "liever"
+    },
+    {
+      "id": "ex_nl_comp_12",
+      "type": "translateThis",
+      "question": "Hij is even oud als zijn broer",
+      "options": [],
+      "correctAnswer": "He is as old as his brother"
     }
   ]
 }

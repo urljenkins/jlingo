@@ -82,6 +82,83 @@
       "correctAnswer": "毎日日本語を熱心に勉強しています",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_pres_6",
+      "type": "multipleChoice",
+      "question": "How does the verb \"たべる\" (taberu - to eat) conjugate in polite non-past affirmative?",
+      "options": [
+        "たべます (tabemasu)",
+        "たべました (tabemashita)",
+        "たべません (tabemasen)",
+        "たべたい (tabetai)"
+      ],
+      "correctAnswer": "たべます (tabemasu)"
+    },
+    {
+      "id": "ex_ja_pres_7",
+      "type": "translateThis",
+      "question": "まいあさ ろくじに おきます",
+      "options": [],
+      "correctAnswer": "I wake up at six every morning"
+    },
+    {
+      "id": "ex_ja_pres_8",
+      "type": "fillInBlank",
+      "question": "あした ともだちに ___。(I will meet a friend tomorrow.)",
+      "options": [
+        "あいます",
+        "あいました",
+        "あわなくて",
+        "あうでした"
+      ],
+      "correctAnswer": "あいます"
+    },
+    {
+      "id": "ex_ja_pres_9",
+      "type": "matchPairs",
+      "question": "Match the verbs with their polite negative non-past forms",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "たべます (eat)",
+            "native": "たべません (do not eat)"
+          },
+          {
+            "target": "のみます (drink)",
+            "native": "のみません (do not drink)"
+          },
+          {
+            "target": "いきます (go)",
+            "native": "いきません (do not go)"
+          },
+          {
+            "target": "します (do)",
+            "native": "しません (do not do)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_pres_10",
+      "type": "fillInBlank",
+      "question": "にほんごを ___。(I study Japanese.)",
+      "options": [
+        "べんきょうします",
+        "べんきょうあります",
+        "べんきょうです",
+        "べんきょういます"
+      ],
+      "correctAnswer": "べんきょうします"
+    },
+    {
+      "id": "ex_ja_pres_11",
+      "type": "translateThis",
+      "question": "わたしは にくを たべません",
+      "options": [],
+      "correctAnswer": "I do not eat meat"
     }
   ]
 }

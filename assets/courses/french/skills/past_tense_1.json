@@ -82,6 +82,83 @@
       "correctAnswer": "J'ai passé une excellente semaine de vacances",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_pt1_6",
+      "type": "multipleChoice",
+      "question": "Quels verbes se conjuguent avec l'auxiliaire être au passé composé?",
+      "options": [
+        "Les verbes de mouvement/changement d'état (Dr & Mrs Vandertramp) et les verbes pronominaux",
+        "Tous les verbes transitifs directs",
+        "Seulement avoir et faire",
+        "Tous les verbes en -er"
+      ],
+      "correctAnswer": "Les verbes de mouvement/changement d'état (Dr & Mrs Vandertramp) et les verbes pronominaux"
+    },
+    {
+      "id": "ex_fr_pt1_7",
+      "type": "translateThis",
+      "question": "Hier, je suis allé au cinéma avec mes amis",
+      "options": [],
+      "correctAnswer": "Yesterday, I went to the cinema with my friends"
+    },
+    {
+      "id": "ex_fr_pt1_8",
+      "type": "fillInBlank",
+      "question": "Elle est ___ à la maison très tard hier soir (accord avec être).",
+      "options": [
+        "rentrée",
+        "rentré",
+        "rentrer",
+        "rentrent"
+      ],
+      "correctAnswer": "rentrée"
+    },
+    {
+      "id": "ex_fr_pt1_9",
+      "type": "matchPairs",
+      "question": "Associez les participes passés irréguliers",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Faire -> fait",
+            "native": "Done / Made"
+          },
+          {
+            "target": "Prendre -> pris",
+            "native": "Taken"
+          },
+          {
+            "target": "Voir -> vu",
+            "native": "Seen"
+          },
+          {
+            "target": "Mettre -> mis",
+            "native": "Put"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_pt1_10",
+      "type": "fillInBlank",
+      "question": "Nous avons ___ un excellent repas dans ce restaurant.",
+      "options": [
+        "mangé",
+        "manger",
+        "mangeait",
+        "mangeant"
+      ],
+      "correctAnswer": "mangé"
+    },
+    {
+      "id": "ex_fr_pt1_11",
+      "type": "translateThis",
+      "question": "As-tu reçu ma lettre ?",
+      "options": [],
+      "correctAnswer": "Did you receive my letter?"
     }
   ]
 }

@@ -255,6 +255,170 @@
             "options": [],
             "correctAnswer": "Una bebida fría, por favor",
             "id": "ex_drx3_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un cóctel sin alcohol",
+            "options": [],
+            "correctAnswer": "A non-alcoholic cocktail",
+            "id": "ex_drx4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'a straw' (for drinking)?",
+            "options": [
+                "Una pajita",
+                "Una taza",
+                "Un vaso",
+                "Una botella"
+            ],
+            "correctAnswer": "Una pajita",
+            "id": "ex_drx4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿Me puede dar una ___, por favor? (straw)",
+            "options": [
+                "pajita",
+                "taza",
+                "cuchara",
+                "servilleta"
+            ],
+            "correctAnswer": "pajita",
+            "id": "ex_drx4_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Un vaso con hielo, por favor",
+            "options": [],
+            "correctAnswer": "Un vaso con hielo, por favor",
+            "id": "ex_drx4_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Beber con moderación",
+            "options": [],
+            "correctAnswer": "To drink in moderation",
+            "id": "ex_drx5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'non-alcoholic'?",
+            "options": [
+                "Sin alcohol",
+                "Con alcohol",
+                "Sin hielo",
+                "Con hielo"
+            ],
+            "correctAnswer": "Sin alcohol",
+            "id": "ex_drx5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Prefiero las bebidas ___ alcohol (without)",
+            "options": [
+                "sin",
+                "con",
+                "de",
+                "por"
+            ],
+            "correctAnswer": "sin",
+            "id": "ex_drx5_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Una cerveza sin alcohol, por favor",
+            "options": [],
+            "correctAnswer": "Una cerveza sin alcohol, por favor",
+            "id": "ex_drx5_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Una bebida energética",
+            "options": [],
+            "correctAnswer": "An energy drink",
+            "id": "ex_drx6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'a soft drink' generally?",
+            "options": [
+                "Un refresco",
+                "Un licor",
+                "Un vino",
+                "Una cerveza"
+            ],
+            "correctAnswer": "Un refresco",
+            "id": "ex_drx6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿Quieres un ___ frío? (soft drink)",
+            "options": [
+                "refresco",
+                "licor",
+                "vino",
+                "café"
+            ],
+            "correctAnswer": "refresco",
+            "id": "ex_drx6_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "Una infusión de hierbas",
+            "options": [],
+            "correctAnswer": "An herbal tea/infusion",
+            "id": "ex_drx7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'herbal tea'?",
+            "options": [
+                "Infusión de hierbas",
+                "Té negro",
+                "Café con leche",
+                "Agua mineral"
+            ],
+            "correctAnswer": "Infusión de hierbas",
+            "id": "ex_drx7_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Servido bien frío",
+            "options": [],
+            "correctAnswer": "Served very cold",
+            "id": "ex_drx8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'room temperature' for a drink?",
+            "options": [
+                "Temperatura ambiente",
+                "Muy frío",
+                "Hirviendo",
+                "Congelado"
+            ],
+            "correctAnswer": "Temperatura ambiente",
+            "id": "ex_drx8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Una bebida refrescante",
+            "options": [],
+            "correctAnswer": "A refreshing drink",
+            "id": "ex_drx9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you describe a drink that cools you down?",
+            "options": [
+                "Refrescante",
+                "Caliente",
+                "Amargo",
+                "Pesado"
+            ],
+            "correctAnswer": "Refrescante",
+            "id": "ex_drx9_2"
         }
     ]
 }

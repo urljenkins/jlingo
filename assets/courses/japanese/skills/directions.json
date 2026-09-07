@@ -82,6 +82,83 @@
       "correctAnswer": "すみません、最寄りの駅はどちらですか？",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_dir_6",
+      "type": "multipleChoice",
+      "question": "How do you say \"Turn right at the intersection\" in Japanese?",
+      "options": [
+        "こうさてん を みぎ へ まがって ください",
+        "こうさてん を ひだり へ まがって ください",
+        "まっすぐ いって ください",
+        "はし を わたって ください"
+      ],
+      "correctAnswer": "こうさてん を みぎ へ まがって ください"
+    },
+    {
+      "id": "ex_ja_dir_7",
+      "type": "translateThis",
+      "question": "この みち を まっすぐ いって ください",
+      "options": [],
+      "correctAnswer": "Please go straight along this street"
+    },
+    {
+      "id": "ex_ja_dir_8",
+      "type": "fillInBlank",
+      "question": "えき は ゆうびんきょく の ___ に あります。(The station is next to the post office.)",
+      "options": [
+        "となり",
+        "うえ",
+        "した",
+        "なか"
+      ],
+      "correctAnswer": "となり"
+    },
+    {
+      "id": "ex_ja_dir_9",
+      "type": "matchPairs",
+      "question": "Match spatial and direction words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "みぎ (migi)",
+            "native": "Right"
+          },
+          {
+            "target": "ひだり (hidari)",
+            "native": "Left"
+          },
+          {
+            "target": "まえ (mae)",
+            "native": "In front of / Before"
+          },
+          {
+            "target": "うしろ (ushiro)",
+            "native": "Behind"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_dir_10",
+      "type": "fillInBlank",
+      "question": "ぎんこう は デパート の ___ に あります。(The bank is inside the department store.)",
+      "options": [
+        "なか",
+        "そと",
+        "あいだ",
+        "ちかく"
+      ],
+      "correctAnswer": "なか"
+    },
+    {
+      "id": "ex_ja_dir_11",
+      "type": "translateThis",
+      "question": "しんごう を ひだり に まがります",
+      "options": [],
+      "correctAnswer": "Turn left at the traffic light"
     }
   ]
 }

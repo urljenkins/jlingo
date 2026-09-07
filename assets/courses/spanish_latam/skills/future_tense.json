@@ -1,77 +1,154 @@
 {
-    "id": "future_tense",
-    "name": "Future Tense",
-    "description": "Learn to express future actions",
-    "level": 14,
-    "exercises": [
-        {
-            "id": "ex_fut_1",
-            "type": "multipleChoice",
-            "question": "What are the two ways to express future in Spanish?",
-            "options": [
-                "ir + a + infinitive AND simple future",
-                "ser + infinitive AND estar + gerund",
-                "haber + participle AND present tense",
-                "None of the above"
-            ],
-            "correctAnswer": "ir + a + infinitive AND simple future"
-        },
-        {
-            "id": "ex_fut_2",
-            "type": "matchPairs",
-            "question": "Match future tense conjugations (HABLAR)",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "Yo hablaré",
-                        "native": "I will speak"
-                    },
-                    {
-                        "target": "Tú hablarás",
-                        "native": "You will speak"
-                    },
-                    {
-                        "target": "Él hablará",
-                        "native": "He will speak"
-                    },
-                    {
-                        "target": "Nosotros hablaremos",
-                        "native": "We will speak"
-                    },
-                    {
-                        "target": "Ellos hablarán",
-                        "native": "They will speak"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "ex_fut_3",
-            "type": "translateThis",
-            "question": "Mañana iré al cine",
-            "options": [],
-            "correctAnswer": "Tomorrow I will go to the cinema"
-        },
-        {
-            "id": "ex_fut_4",
-            "type": "fillInBlank",
-            "question": "Voy ___ estudiar esta noche",
-            "options": [
-                "a",
-                "de",
-                "que",
-                "en"
-            ],
-            "correctAnswer": "a"
-        },
-        {
-            "id": "ex_fut_5",
-            "type": "speakThis",
-            "question": "El próximo año viajaré a España",
-            "options": [],
-            "correctAnswer": "El próximo año viajaré a España"
-        }
-    ]
+  "id": "future_tense",
+  "name": "Future Tense",
+  "description": "Learn to express future actions",
+  "level": 14,
+  "exercises": [
+    {
+      "id": "ex_fut_1",
+      "type": "multipleChoice",
+      "question": "What are the two ways to express future in Spanish?",
+      "options": [
+        "ir + a + infinitive AND simple future",
+        "ser + infinitive AND estar + gerund",
+        "haber + participle AND present tense",
+        "None of the above"
+      ],
+      "correctAnswer": "ir + a + infinitive AND simple future"
+    },
+    {
+      "id": "ex_fut_2",
+      "type": "matchPairs",
+      "question": "Match future tense conjugations (HABLAR)",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Yo hablaré",
+            "native": "I will speak"
+          },
+          {
+            "target": "Tú hablarás",
+            "native": "You will speak"
+          },
+          {
+            "target": "Él hablará",
+            "native": "He will speak"
+          },
+          {
+            "target": "Nosotros hablaremos",
+            "native": "We will speak"
+          },
+          {
+            "target": "Ellos hablarán",
+            "native": "They will speak"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fut_3",
+      "type": "translateThis",
+      "question": "Mañana iré al cine",
+      "options": [],
+      "correctAnswer": "Tomorrow I will go to the cinema"
+    },
+    {
+      "id": "ex_fut_4",
+      "type": "fillInBlank",
+      "question": "Voy ___ estudiar esta noche",
+      "options": [
+        "a",
+        "de",
+        "que",
+        "en"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": "ex_fut_5",
+      "type": "speakThis",
+      "question": "El próximo año viajaré a España",
+      "options": [],
+      "correctAnswer": "El próximo año viajaré a España"
+    },
+    {
+      "id": "ex_latam_fut_6",
+      "type": "multipleChoice",
+      "question": "En el habla cotidiana de América Latina, ¿cuál es la forma más natural y frecuente de expresar el futuro?",
+      "options": [
+        "El futuro perifrástico: Ir a + Infinitivo (Voy a salir, vamos a comer)",
+        "El futuro simple exclusivamente",
+        "El pretérito imperfecto",
+        "El subjuntivo presente"
+      ],
+      "correctAnswer": "El futuro perifrástico: Ir a + Infinitivo (Voy a salir, vamos a comer)"
+    },
+    {
+      "id": "ex_latam_fut_7",
+      "type": "translateThis",
+      "question": "El próximo mes voy a viajar a México con mi familia",
+      "options": [],
+      "correctAnswer": "Next month I am going to travel to Mexico with my family"
+    },
+    {
+      "id": "ex_latam_fut_8",
+      "type": "fillInBlank",
+      "question": "Mañana nosotros ___ a organizar una reunión por videollamada.",
+      "options": [
+        "vamos",
+        "va",
+        "van",
+        "fueron"
+      ],
+      "correctAnswer": "vamos"
+    },
+    {
+      "id": "ex_latam_fut_9",
+      "type": "matchPairs",
+      "question": "Empareja raíces irregulares del futuro simple",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Tener -> tendr-",
+            "native": "Tendré / Tendremos"
+          },
+          {
+            "target": "Hacer -> har-",
+            "native": "Haré / Haremos"
+          },
+          {
+            "target": "Poder -> podr-",
+            "native": "Podré / Podremos"
+          },
+          {
+            "target": "Poner -> pondr-",
+            "native": "Pondré / Pondremos"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_latam_fut_10",
+      "type": "fillInBlank",
+      "question": "¿Qué van a ___ ustedes el próximo fin de semana?",
+      "options": [
+        "hacer",
+        "hecho",
+        "hacemos",
+        "hicieron"
+      ],
+      "correctAnswer": "hacer"
+    },
+    {
+      "id": "ex_latam_fut_11",
+      "type": "translateThis",
+      "question": "Seguro que todo saldrá muy bien",
+      "options": [],
+      "correctAnswer": "Surely everything will turn out very well"
+    }
+  ]
 }

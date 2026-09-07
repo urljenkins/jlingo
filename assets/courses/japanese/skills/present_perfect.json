@@ -82,6 +82,83 @@
       "correctAnswer": "歌舞伎を劇場で一度鑑賞したことがあります",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_pp_6",
+      "type": "multipleChoice",
+      "question": "How is the experiential expression (\"have done something before\") constructed in Japanese?",
+      "options": [
+        "Verb [Ta-form] + ことが あります",
+        "Verb [Masu-form] + から です",
+        "Verb [Te-form] + は いけません",
+        "Verb [Dictionary form] + つもり です"
+      ],
+      "correctAnswer": "Verb [Ta-form] + ことが あります"
+    },
+    {
+      "id": "ex_ja_pp_7",
+      "type": "translateThis",
+      "question": "にほんへ いった ことが あります",
+      "options": [],
+      "correctAnswer": "I have been to Japan before"
+    },
+    {
+      "id": "ex_ja_pp_8",
+      "type": "fillInBlank",
+      "question": "すしを ___ ことが ありますか。(Have you eaten sushi before?)",
+      "options": [
+        "たべた",
+        "たべる",
+        "たべて",
+        "たべます"
+      ],
+      "correctAnswer": "たべた"
+    },
+    {
+      "id": "ex_ja_pp_9",
+      "type": "matchPairs",
+      "question": "Match experience sentences with translations",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "ふじさんに のぼった ことが あります",
+            "native": "I have climbed Mt. Fuji"
+          },
+          {
+            "target": "いちども みた ことが ありません",
+            "native": "I have never seen it even once"
+          },
+          {
+            "target": "さしみを たべた ことが あります",
+            "native": "I have eaten sashimi"
+          },
+          {
+            "target": "きもの（着物）を きた ことが あります",
+            "native": "I have worn a kimono"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_pp_10",
+      "type": "fillInBlank",
+      "question": "もう しゅくだいを ___ しまいました。(I have already completely finished homework.)",
+      "options": [
+        "やって",
+        "やる",
+        "やった",
+        "やります"
+      ],
+      "correctAnswer": "やって"
+    },
+    {
+      "id": "ex_ja_pp_11",
+      "type": "translateThis",
+      "question": "まだ ひるごはんを たべて いません",
+      "options": [],
+      "correctAnswer": "I have not eaten lunch yet"
     }
   ]
 }

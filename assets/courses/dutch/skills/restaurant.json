@@ -92,6 +92,83 @@
       "correctAnswer": "The waiter / waitress",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rest_7",
+      "type": "multipleChoice",
+      "question": "Hoe vraag je vriendelijk om de rekening in een café of restaurant?",
+      "options": [
+        "Mag ik de rekening, alstublieft?",
+        "Geef het geld nu",
+        "Ik wil betalen onmiddellijk",
+        "Waar is de rekeningkaart?"
+      ],
+      "correctAnswer": "Mag ik de rekening, alstublieft?"
+    },
+    {
+      "id": "ex_nl_rest_8",
+      "type": "translateThis",
+      "question": "Een tafel voor twee personen, alstublieft",
+      "options": [],
+      "correctAnswer": "A table for two people, please"
+    },
+    {
+      "id": "ex_nl_rest_9",
+      "type": "fillInBlank",
+      "question": "Wat wilt u graag ___ ? Een biertje of een wijntje?",
+      "options": [
+        "drinken",
+        "drank",
+        "gedronken",
+        "dronk"
+      ],
+      "correctAnswer": "drinken"
+    },
+    {
+      "id": "ex_nl_rest_10",
+      "type": "matchPairs",
+      "question": "Koppel de onderdelen van een diner in een restaurant",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Het voorgerecht",
+            "native": "Appetizer / Starter"
+          },
+          {
+            "target": "Het hoofdgerecht",
+            "native": "Main course"
+          },
+          {
+            "target": "Het nagerecht / toetje",
+            "native": "Dessert"
+          },
+          {
+            "target": "De fooi",
+            "native": "The tip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_rest_11",
+      "type": "fillInBlank",
+      "question": "Kan ik hier met de pinpas ___ ? (pinnen)",
+      "options": [
+        "betalen",
+        "betaald",
+        "betaalt",
+        "betaling"
+      ],
+      "correctAnswer": "betalen"
+    },
+    {
+      "id": "ex_nl_rest_12",
+      "type": "translateThis",
+      "question": "Het eten heeft heerlijk gesmaakt, dank u wel",
+      "options": [],
+      "correctAnswer": "The food tasted delicious, thank you very much"
     }
   ]
 }

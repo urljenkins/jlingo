@@ -1,53 +1,158 @@
 {
-    "id": "transportation",
-    "name": "Transportation",
-    "description": "Learn vocabulary for getting around",
-    "level": 9,
-    "exercises": [
-        {
-            "id": "ex_tr_1",
-            "type": "matchPairs",
-            "question": "Match transportation words",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {"target": "El autobús", "native": "The bus"},
-                    {"target": "El tren", "native": "The train"},
-                    {"target": "El avión", "native": "The airplane"},
-                    {"target": "El taxi", "native": "The taxi"},
-                    {"target": "El metro", "native": "The subway"},
-                    {"target": "El coche", "native": "The car"}
-                ]
-            }
-        },
-        {
-            "id": "ex_tr_2",
-            "type": "translateThis",
-            "question": "Un billete de ida y vuelta",
-            "options": [],
-            "correctAnswer": "A round-trip ticket"
-        },
-        {
-            "id": "ex_tr_3",
-            "type": "fillInBlank",
-            "question": "¿A qué hora ___ el tren?",
-            "options": ["sale", "llega", "viene", "va"],
-            "correctAnswer": "sale"
-        },
-        {
-            "id": "ex_tr_4",
-            "type": "multipleChoice",
-            "question": "How do you say 'platform' (at a train station)?",
-            "options": ["Andén", "Estación", "Parada", "Billete"],
-            "correctAnswer": "Andén"
-        },
-        {
-            "id": "ex_tr_5",
-            "type": "speakThis",
-            "question": "Quiero un billete para Madrid",
-            "options": [],
-            "correctAnswer": "Quiero un billete para Madrid"
-        }
-    ]
+  "id": "transportation",
+  "name": "Transportation",
+  "description": "Learn vocabulary for getting around",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_tr_1",
+      "type": "matchPairs",
+      "question": "Match transportation words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "El autobús",
+            "native": "The bus"
+          },
+          {
+            "target": "El tren",
+            "native": "The train"
+          },
+          {
+            "target": "El avión",
+            "native": "The airplane"
+          },
+          {
+            "target": "El taxi",
+            "native": "The taxi"
+          },
+          {
+            "target": "El metro",
+            "native": "The subway"
+          },
+          {
+            "target": "El coche",
+            "native": "The car"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_tr_2",
+      "type": "translateThis",
+      "question": "Un billete de ida y vuelta",
+      "options": [],
+      "correctAnswer": "A round-trip ticket"
+    },
+    {
+      "id": "ex_tr_3",
+      "type": "fillInBlank",
+      "question": "¿A qué hora ___ el tren?",
+      "options": [
+        "sale",
+        "llega",
+        "viene",
+        "va"
+      ],
+      "correctAnswer": "sale"
+    },
+    {
+      "id": "ex_tr_4",
+      "type": "multipleChoice",
+      "question": "How do you say 'platform' (at a train station)?",
+      "options": [
+        "Andén",
+        "Estación",
+        "Parada",
+        "Billete"
+      ],
+      "correctAnswer": "Andén"
+    },
+    {
+      "id": "ex_tr_5",
+      "type": "speakThis",
+      "question": "Quiero un billete para Madrid",
+      "options": [],
+      "correctAnswer": "Quiero un billete para Madrid"
+    },
+    {
+      "id": "ex_sp_trans_6",
+      "type": "multipleChoice",
+      "question": "¿Cuáles son los términos habituales en España para \"car\", \"ticket\" y \"mobile phone\"?",
+      "options": [
+        "Coche, billete y móvil",
+        "Carro, boleto y celular",
+        "Auto, pasaje y teléfono",
+        "Máquina, tique y aparato"
+      ],
+      "correctAnswer": "Coche, billete y móvil"
+    },
+    {
+      "id": "ex_sp_trans_7",
+      "type": "translateThis",
+      "question": "Voy a sacar un billete de ida y vuelta en la taquilla de la estación",
+      "options": [],
+      "correctAnswer": "I am going to get a round-trip ticket at the station ticket office"
+    },
+    {
+      "id": "ex_sp_trans_8",
+      "type": "fillInBlank",
+      "question": "El tren de cercanías sale por la vía ___ número cuatro.",
+      "options": [
+        "número",
+        "calle",
+        "parada",
+        "estación"
+      ],
+      "correctAnswer": "número"
+    },
+    {
+      "id": "ex_sp_trans_9",
+      "type": "matchPairs",
+      "question": "Empareja términos de transporte en España",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "El coche",
+            "native": "The car"
+          },
+          {
+            "target": "El autobús / autobús urbano",
+            "native": "The bus / city bus"
+          },
+          {
+            "target": "El andén / la vía",
+            "native": "Platform / Track"
+          },
+          {
+            "target": "Hacer transbordo",
+            "native": "To transfer / change lines"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sp_trans_10",
+      "type": "fillInBlank",
+      "question": "Tengo que validar mi abono de transporte antes de entrar al ___ .",
+      "options": [
+        "andén",
+        "coche",
+        "asiento",
+        "volante"
+      ],
+      "correctAnswer": "andén"
+    },
+    {
+      "id": "ex_sp_trans_11",
+      "type": "translateThis",
+      "question": "El metro de Madrid es muy puntual y limpio",
+      "options": [],
+      "correctAnswer": "The Madrid subway is very punctual and clean"
+    }
+  ]
 }

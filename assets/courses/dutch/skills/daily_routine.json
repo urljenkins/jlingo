@@ -92,6 +92,83 @@
       "correctAnswer": "Breakfast",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_rout_7",
+      "type": "multipleChoice",
+      "question": "Wat is een scheidbaar werkwoord (separable verb) in de dagelijkse routine?",
+      "options": [
+        "Opstaan (Ik sta om zeven uur op)",
+        "Slapen",
+        "Eten",
+        "Werken"
+      ],
+      "correctAnswer": "Opstaan (Ik sta om zeven uur op)"
+    },
+    {
+      "id": "ex_nl_rout_8",
+      "type": "translateThis",
+      "question": "Ik poets mijn tanden en neem een douche",
+      "options": [],
+      "correctAnswer": "I brush my teeth and take a shower"
+    },
+    {
+      "id": "ex_nl_rout_9",
+      "type": "fillInBlank",
+      "question": "Zij trekt haar jas ___ voordat ze vertrekt (aantrekken).",
+      "options": [
+        "aan",
+        "uit",
+        "op",
+        "af"
+      ],
+      "correctAnswer": "aan"
+    },
+    {
+      "id": "ex_nl_rout_10",
+      "type": "matchPairs",
+      "question": "Koppel scheidbare werkwoorden aan hun betekenis",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Opstaan (Ik sta op)",
+            "native": "To get up"
+          },
+          {
+            "target": "Aankleden (Ik kleed me aan)",
+            "native": "To get dressed"
+          },
+          {
+            "target": "Schoonmaken (Ik maak schoon)",
+            "native": "To clean up"
+          },
+          {
+            "target": "Inslapen (Ik val in slaap)",
+            "native": "To fall asleep"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_rout_11",
+      "type": "fillInBlank",
+      "question": "'s Avonds kijk ik een uurtje televisie en ga ik ___ bed.",
+      "options": [
+        "naar",
+        "in",
+        "op",
+        "bij"
+      ],
+      "correctAnswer": "naar"
+    },
+    {
+      "id": "ex_nl_rout_12",
+      "type": "translateThis",
+      "question": "Hoe laat word je meestal wakker?",
+      "options": [],
+      "correctAnswer": "What time do you usually wake up?"
     }
   ]
 }

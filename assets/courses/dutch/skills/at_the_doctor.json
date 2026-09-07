@@ -92,6 +92,83 @@
       "correctAnswer": "Beterschap!",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_doc_7",
+      "type": "multipleChoice",
+      "question": "Hoe noemt men de eerste arts waar men in Nederland naartoe gaat?",
+      "options": [
+        "De huisarts",
+        "De specialist direct",
+        "De chirurg",
+        "De tandarts"
+      ],
+      "correctAnswer": "De huisarts"
+    },
+    {
+      "id": "ex_nl_doc_8",
+      "type": "translateThis",
+      "question": "Ik heb al drie dagen hoge koorts en keelpijn",
+      "options": [],
+      "correctAnswer": "I have had a high fever and sore throat for three days"
+    },
+    {
+      "id": "ex_nl_doc_9",
+      "type": "fillInBlank",
+      "question": "De dokter schrijft een ___ voor de apotheek.",
+      "options": [
+        "recept",
+        "brief",
+        "rekening",
+        "krant"
+      ],
+      "correctAnswer": "recept"
+    },
+    {
+      "id": "ex_nl_doc_10",
+      "type": "matchPairs",
+      "question": "Koppel medische klachten en termen",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Pijn in mijn buik",
+            "native": "Stomach ache"
+          },
+          {
+            "target": "Verkoudheid / Griep",
+            "native": "Cold / Flu"
+          },
+          {
+            "target": "De bloeddruk",
+            "native": "Blood pressure"
+          },
+          {
+            "target": "De pijnstiller (paracetamol)",
+            "native": "Painkiller"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_doc_11",
+      "type": "fillInBlank",
+      "question": "U moet twee keer per dag een ___ innemen met water.",
+      "options": [
+        "tablet",
+        "recept",
+        "spuit",
+        "ziekenhuis"
+      ],
+      "correctAnswer": "tablet"
+    },
+    {
+      "id": "ex_nl_doc_12",
+      "type": "translateThis",
+      "question": "Beterschap en neem voldoende rust",
+      "options": [],
+      "correctAnswer": "Get well soon and get enough rest"
     }
   ]
 }

@@ -1,94 +1,171 @@
 {
-    "id": "grammar_ser_estar",
-    "name": "Grammar: Ser & Estar",
-    "description": "Learn the two Spanish verbs for 'to be'",
-    "level": 7,
-    "exercises": [
-        {
-            "id": "ex_se_1",
-            "type": "multipleChoice",
-            "question": "Which verb do you use for permanent characteristics?",
-            "options": [
-                "Ser",
-                "Estar",
-                "Tener",
-                "Haber"
-            ],
-            "correctAnswer": "Ser"
-        },
-        {
-            "id": "ex_se_2",
-            "type": "fillInBlank",
-            "question": "Yo ___ español",
-            "options": [
-                "soy",
-                "estoy",
-                "tengo",
-                "hay"
-            ],
-            "correctAnswer": "soy"
-        },
-        {
-            "id": "ex_se_3",
-            "type": "fillInBlank",
-            "question": "María ___ cansada",
-            "options": [
-                "está",
-                "es",
-                "tiene",
-                "hay"
-            ],
-            "correctAnswer": "está"
-        },
-        {
-            "id": "ex_se_4",
-            "type": "matchPairs",
-            "question": "Match SER conjugations",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "Yo soy",
-                        "native": "I am"
-                    },
-                    {
-                        "target": "Tú eres",
-                        "native": "You are"
-                    },
-                    {
-                        "target": "Él/Ella es",
-                        "native": "He/She is"
-                    },
-                    {
-                        "target": "Nosotros somos",
-                        "native": "We are"
-                    },
-                    {
-                        "target": "Ellos son",
-                        "native": "They are"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "ex_se_5",
-            "type": "multipleChoice",
-            "question": "La fiesta ___ en mi casa (location)",
-            "options": [
-                "está",
-                "es",
-                "son",
-                "están"
-            ],
-            "correctAnswer": "es"
-        },
-        {
-            "id": "ex_se_6",
-            "type": "translateThis",
-            "question": "Estoy en la oficina",
-            "options": [],
-            "correctAnswer": "I am at the office"
-        }
-    ]
+  "id": "grammar_ser_estar",
+  "name": "Grammar: Ser & Estar",
+  "description": "Learn the two Spanish verbs for 'to be'",
+  "level": 7,
+  "exercises": [
+    {
+      "id": "ex_se_1",
+      "type": "multipleChoice",
+      "question": "Which verb do you use for permanent characteristics?",
+      "options": [
+        "Ser",
+        "Estar",
+        "Tener",
+        "Haber"
+      ],
+      "correctAnswer": "Ser"
+    },
+    {
+      "id": "ex_se_2",
+      "type": "fillInBlank",
+      "question": "Yo ___ español",
+      "options": [
+        "soy",
+        "estoy",
+        "tengo",
+        "hay"
+      ],
+      "correctAnswer": "soy"
+    },
+    {
+      "id": "ex_se_3",
+      "type": "fillInBlank",
+      "question": "María ___ cansada",
+      "options": [
+        "está",
+        "es",
+        "tiene",
+        "hay"
+      ],
+      "correctAnswer": "está"
+    },
+    {
+      "id": "ex_se_4",
+      "type": "matchPairs",
+      "question": "Match SER conjugations",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Yo soy",
+            "native": "I am"
+          },
+          {
+            "target": "Tú eres",
+            "native": "You are"
+          },
+          {
+            "target": "Él/Ella es",
+            "native": "He/She is"
+          },
+          {
+            "target": "Nosotros somos",
+            "native": "We are"
+          },
+          {
+            "target": "Ellos son",
+            "native": "They are"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_se_5",
+      "type": "multipleChoice",
+      "question": "La fiesta ___ en mi casa (location)",
+      "options": [
+        "está",
+        "es",
+        "son",
+        "están"
+      ],
+      "correctAnswer": "es"
+    },
+    {
+      "id": "ex_se_6",
+      "type": "translateThis",
+      "question": "Estoy en la oficina",
+      "options": [],
+      "correctAnswer": "I am at the office"
+    },
+    {
+      "id": "ex_latam_se_7",
+      "type": "multipleChoice",
+      "question": "¿Qué verbo se usa para expresar ubicación geográfica y estados temporales?",
+      "options": [
+        "Estar (estoy en Bogotá, está cansado)",
+        "Ser",
+        "Haber",
+        "Tener"
+      ],
+      "correctAnswer": "Estar (estoy en Bogotá, está cansado)"
+    },
+    {
+      "id": "ex_latam_se_8",
+      "type": "translateThis",
+      "question": "Ustedes son muy amables y siempre están dispuestos a ayudar",
+      "options": [],
+      "correctAnswer": "You are very kind and always ready to help"
+    },
+    {
+      "id": "ex_latam_se_9",
+      "type": "fillInBlank",
+      "question": "La comida ___ deliciosa hoy (estado en este momento).",
+      "options": [
+        "está",
+        "es",
+        "son",
+        "están"
+      ],
+      "correctAnswer": "está"
+    },
+    {
+      "id": "ex_latam_se_10",
+      "type": "matchPairs",
+      "question": "Empareja los cambios de significado entre Ser y Estar",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Ser listo",
+            "native": "To be smart / clever"
+          },
+          {
+            "target": "Estar listo",
+            "native": "To be ready / prepared"
+          },
+          {
+            "target": "Ser aburrido",
+            "native": "To be boring (character)"
+          },
+          {
+            "target": "Estar aburrido",
+            "native": "To be bored (temporary state)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_latam_se_11",
+      "type": "fillInBlank",
+      "question": "Mis amigos ___ colombianos y ahora ___ en Ciudad de México.",
+      "options": [
+        "son / están",
+        "están / son",
+        "son / son",
+        "están / están"
+      ],
+      "correctAnswer": "son / están"
+    },
+    {
+      "id": "ex_latam_se_12",
+      "type": "translateThis",
+      "question": "¿Dónde está el carro estacionado?",
+      "options": [],
+      "correctAnswer": "Where is the car parked?"
+    }
+  ]
 }

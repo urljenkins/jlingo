@@ -1,77 +1,154 @@
 {
-    "id": "superlatives",
-    "name": "Superlatives",
-    "description": "Learn to express 'the most' and 'the least'",
-    "level": 15,
-    "exercises": [
-        {
-            "id": "ex_sup_1",
-            "type": "multipleChoice",
-            "question": "How do you say 'the tallest'?",
-            "options": [
-                "el más alto",
-                "más alto que",
-                "muy alto",
-                "tan alto como"
-            ],
-            "correctAnswer": "el más alto"
-        },
-        {
-            "id": "ex_sup_2",
-            "type": "matchPairs",
-            "question": "Match superlative forms",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "El mejor",
-                        "native": "The best"
-                    },
-                    {
-                        "target": "El peor",
-                        "native": "The worst"
-                    },
-                    {
-                        "target": "El mayor",
-                        "native": "The oldest/biggest"
-                    },
-                    {
-                        "target": "El menor",
-                        "native": "The youngest/smallest"
-                    },
-                    {
-                        "target": "El más grande",
-                        "native": "The biggest"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "ex_sup_3",
-            "type": "translateThis",
-            "question": "Es el libro más interesante del mundo",
-            "options": [],
-            "correctAnswer": "It's the most interesting book in the world"
-        },
-        {
-            "id": "ex_sup_4",
-            "type": "fillInBlank",
-            "question": "Este es el restaurante más caro ___ la ciudad",
-            "options": [
-                "de",
-                "en",
-                "a",
-                "con"
-            ],
-            "correctAnswer": "de"
-        },
-        {
-            "id": "ex_sup_5",
-            "type": "speakThis",
-            "question": "Mi hermana es la más inteligente de la familia",
-            "options": [],
-            "correctAnswer": "Mi hermana es la más inteligente de la familia"
-        }
-    ]
+  "id": "superlatives",
+  "name": "Superlatives",
+  "description": "Learn to express 'the most' and 'the least'",
+  "level": 15,
+  "exercises": [
+    {
+      "id": "ex_sup_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'the tallest'?",
+      "options": [
+        "el más alto",
+        "más alto que",
+        "muy alto",
+        "tan alto como"
+      ],
+      "correctAnswer": "el más alto"
+    },
+    {
+      "id": "ex_sup_2",
+      "type": "matchPairs",
+      "question": "Match superlative forms",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "El mejor",
+            "native": "The best"
+          },
+          {
+            "target": "El peor",
+            "native": "The worst"
+          },
+          {
+            "target": "El mayor",
+            "native": "The oldest/biggest"
+          },
+          {
+            "target": "El menor",
+            "native": "The youngest/smallest"
+          },
+          {
+            "target": "El más grande",
+            "native": "The biggest"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sup_3",
+      "type": "translateThis",
+      "question": "Es el libro más interesante del mundo",
+      "options": [],
+      "correctAnswer": "It's the most interesting book in the world"
+    },
+    {
+      "id": "ex_sup_4",
+      "type": "fillInBlank",
+      "question": "Este es el restaurante más caro ___ la ciudad",
+      "options": [
+        "de",
+        "en",
+        "a",
+        "con"
+      ],
+      "correctAnswer": "de"
+    },
+    {
+      "id": "ex_sup_5",
+      "type": "speakThis",
+      "question": "Mi hermana es la más inteligente de la familia",
+      "options": [],
+      "correctAnswer": "Mi hermana es la más inteligente de la familia"
+    },
+    {
+      "id": "ex_latam_sup_6",
+      "type": "multipleChoice",
+      "question": "¿Cómo se construye el superlativo relativo en español?",
+      "options": [
+        "Artículo definido (el/la/los/las) + más/menos + adjetivo + de...",
+        "Muy + adjetivo solamente",
+        "Solamente agregando -ísimo",
+        "Más que todos sin artículo"
+      ],
+      "correctAnswer": "Artículo definido (el/la/los/las) + más/menos + adjetivo + de..."
+    },
+    {
+      "id": "ex_latam_sup_7",
+      "type": "translateThis",
+      "question": "El Aconcagua es la montaña más alta de América",
+      "options": [],
+      "correctAnswer": "Aconcagua is the highest mountain in the Americas"
+    },
+    {
+      "id": "ex_latam_sup_8",
+      "type": "fillInBlank",
+      "question": "Este es el restaurante ___ recomendado de la ciudad.",
+      "options": [
+        "más",
+        "muy",
+        "tan",
+        "tanto"
+      ],
+      "correctAnswer": "más"
+    },
+    {
+      "id": "ex_latam_sup_9",
+      "type": "matchPairs",
+      "question": "Empareja los superlativos absolutos con -ísimo",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Grande -> grandísimo",
+            "native": "Extremely large"
+          },
+          {
+            "target": "Fácil -> facilísimo",
+            "native": "Extremely easy"
+          },
+          {
+            "target": "Rico -> riquísimo",
+            "native": "Extremely delicious / rich"
+          },
+          {
+            "target": "Bueno -> buenísimo (o óptimo)",
+            "native": "Extremely good"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_latam_sup_10",
+      "type": "fillInBlank",
+      "question": "El ceviche estuvo ___ delicioso (riquísimo).",
+      "options": [
+        "riquísimo",
+        "rico",
+        "más rico",
+        "tan rico"
+      ],
+      "correctAnswer": "riquísimo"
+    },
+    {
+      "id": "ex_latam_sup_11",
+      "type": "translateThis",
+      "question": "Es la decisión más importante de mi carrera",
+      "options": [],
+      "correctAnswer": "It is the most important decision of my career"
+    }
+  ]
 }

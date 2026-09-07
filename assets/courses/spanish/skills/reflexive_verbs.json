@@ -1,61 +1,178 @@
 {
-    "id": "reflexive_verbs",
-    "name": "Reflexive Verbs",
-    "description": "Learn verbs that reflect back to the subject",
-    "level": 8,
-    "exercises": [
-        {
-            "id": "ex_rv_1",
-            "type": "multipleChoice",
-            "question": "Which pronoun goes with 'yo' for reflexive verbs?",
-            "options": ["me", "te", "se", "nos"],
-            "correctAnswer": "me"
-        },
-        {
-            "id": "ex_rv_2",
-            "type": "matchPairs",
-            "question": "Match reflexive pronouns",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {"target": "Me", "native": "Myself (yo)"},
-                    {"target": "Te", "native": "Yourself (tú)"},
-                    {"target": "Se", "native": "Himself/Herself"},
-                    {"target": "Nos", "native": "Ourselves"},
-                    {"target": "Se", "native": "Themselves"}
-                ]
-            }
-        },
-        {
-            "id": "ex_rv_3",
-            "type": "translateThis",
-            "question": "Me lavo las manos",
-            "options": [],
-            "correctAnswer": "I wash my hands"
-        },
-        {
-            "id": "ex_rv_4",
-            "type": "fillInBlank",
-            "question": "Ella ___ peina el pelo",
-            "options": ["se", "me", "te", "nos"],
-            "correctAnswer": "se"
-        },
-        {
-            "id": "ex_rv_5",
-            "type": "matchPairs",
-            "question": "Match common reflexive verbs",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {"target": "Levantarse", "native": "To get up"},
-                    {"target": "Ducharse", "native": "To shower"},
-                    {"target": "Vestirse", "native": "To get dressed"},
-                    {"target": "Acostarse", "native": "To go to bed"},
-                    {"target": "Llamarse", "native": "To be called"}
-                ]
-            }
-        }
-    ]
+  "id": "reflexive_verbs",
+  "name": "Reflexive Verbs",
+  "description": "Learn verbs that reflect back to the subject",
+  "level": 8,
+  "exercises": [
+    {
+      "id": "ex_rv_1",
+      "type": "multipleChoice",
+      "question": "Which pronoun goes with 'yo' for reflexive verbs?",
+      "options": [
+        "me",
+        "te",
+        "se",
+        "nos"
+      ],
+      "correctAnswer": "me"
+    },
+    {
+      "id": "ex_rv_2",
+      "type": "matchPairs",
+      "question": "Match reflexive pronouns",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Me",
+            "native": "Myself (yo)"
+          },
+          {
+            "target": "Te",
+            "native": "Yourself (tú)"
+          },
+          {
+            "target": "Se",
+            "native": "Himself/Herself"
+          },
+          {
+            "target": "Nos",
+            "native": "Ourselves"
+          },
+          {
+            "target": "Se",
+            "native": "Themselves"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_rv_3",
+      "type": "translateThis",
+      "question": "Me lavo las manos",
+      "options": [],
+      "correctAnswer": "I wash my hands"
+    },
+    {
+      "id": "ex_rv_4",
+      "type": "fillInBlank",
+      "question": "Ella ___ peina el pelo",
+      "options": [
+        "se",
+        "me",
+        "te",
+        "nos"
+      ],
+      "correctAnswer": "se"
+    },
+    {
+      "id": "ex_rv_5",
+      "type": "matchPairs",
+      "question": "Match common reflexive verbs",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Levantarse",
+            "native": "To get up"
+          },
+          {
+            "target": "Ducharse",
+            "native": "To shower"
+          },
+          {
+            "target": "Vestirse",
+            "native": "To get dressed"
+          },
+          {
+            "target": "Acostarse",
+            "native": "To go to bed"
+          },
+          {
+            "target": "Llamarse",
+            "native": "To be called"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sp_refl_6",
+      "type": "multipleChoice",
+      "question": "¿Cuál es el pronombre reflexivo de segunda persona del plural (vosotros) en España?",
+      "options": [
+        "Os (ex: Os laváis, os levantáis)",
+        "Se",
+        "Nos",
+        "Te"
+      ],
+      "correctAnswer": "Os (ex: Os laváis, os levantáis)"
+    },
+    {
+      "id": "ex_sp_refl_7",
+      "type": "translateThis",
+      "question": "¿A qué hora os despertáis por las mañanas?",
+      "options": [],
+      "correctAnswer": "What time do you all wake up in the mornings?"
+    },
+    {
+      "id": "ex_sp_refl_8",
+      "type": "fillInBlank",
+      "question": "Vosotros tenéis que poner___ el abrigo porque hace frío en la calle.",
+      "options": [
+        "os",
+        "se",
+        "nos",
+        "te"
+      ],
+      "correctAnswer": "os"
+    },
+    {
+      "id": "ex_sp_refl_9",
+      "type": "matchPairs",
+      "question": "Empareja los pronombres reflexivos con vosotros",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Vosotros os llamáis",
+            "native": "Your names are"
+          },
+          {
+            "target": "Vosotros os sentáis",
+            "native": "You all sit down"
+          },
+          {
+            "target": "Vosotros os vais",
+            "native": "You all leave / go away"
+          },
+          {
+            "target": "Vosotros os acordáis",
+            "native": "You all remember"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sp_refl_10",
+      "type": "fillInBlank",
+      "question": "Nosotros nos ___ muy bien con todos los compañeros.",
+      "options": [
+        "llevamos",
+        "lleva",
+        "lleváis",
+        "llevo"
+      ],
+      "correctAnswer": "llevamos"
+    },
+    {
+      "id": "ex_sp_refl_11",
+      "type": "translateThis",
+      "question": "No os preocupéis por nada, yo me encargo",
+      "options": [],
+      "correctAnswer": "Don't worry about anything, I will take care of it"
+    }
+  ]
 }

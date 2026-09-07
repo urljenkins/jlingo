@@ -289,6 +289,170 @@
             "options": [],
             "correctAnswer": "El cerdo vive en la granja",
             "id": "ex_anx3_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "El animal doméstico",
+            "options": [],
+            "correctAnswer": "The domestic animal",
+            "id": "ex_anx4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is 'un animal salvaje'?",
+            "options": [
+                "A wild animal",
+                "A pet",
+                "A farm animal",
+                "A small animal"
+            ],
+            "correctAnswer": "A wild animal",
+            "id": "ex_anx4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El perro es un animal ___ (domestic)",
+            "options": [
+                "doméstico",
+                "salvaje",
+                "peligroso",
+                "extraño"
+            ],
+            "correctAnswer": "doméstico",
+            "id": "ex_anx4_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "El tigre es un animal salvaje",
+            "options": [],
+            "correctAnswer": "El tigre es un animal salvaje",
+            "id": "ex_anx4_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los animales de granja",
+            "options": [],
+            "correctAnswer": "Farm animals",
+            "id": "ex_anx5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which of these is a farm animal?",
+            "options": [
+                "Cerdo",
+                "León",
+                "Tigre",
+                "Elefante"
+            ],
+            "correctAnswer": "Cerdo",
+            "id": "ex_anx5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La ___ tiene plumas (hen)",
+            "options": [
+                "gallina",
+                "vaca",
+                "cerdo",
+                "oveja"
+            ],
+            "correctAnswer": "gallina",
+            "id": "ex_anx5_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Los animales de granja viven en el campo",
+            "options": [],
+            "correctAnswer": "Los animales de granja viven en el campo",
+            "id": "ex_anx5_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los animales acuáticos",
+            "options": [],
+            "correctAnswer": "Aquatic animals",
+            "id": "ex_anx6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which of these lives in water?",
+            "options": [
+                "Delfín",
+                "León",
+                "Águila",
+                "Camello"
+            ],
+            "correctAnswer": "Delfín",
+            "id": "ex_anx6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El ___ vive en el mar (dolphin)",
+            "options": [
+                "delfín",
+                "león",
+                "camello",
+                "águila"
+            ],
+            "correctAnswer": "delfín",
+            "id": "ex_anx6_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "Los animales en peligro de extinción",
+            "options": [],
+            "correctAnswer": "Endangered animals",
+            "id": "ex_anx7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'en peligro de extinción' mean?",
+            "options": [
+                "Endangered",
+                "Very common",
+                "Domesticated",
+                "Extinct already"
+            ],
+            "correctAnswer": "Endangered",
+            "id": "ex_anx7_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un animal nocturno",
+            "options": [],
+            "correctAnswer": "A nocturnal animal",
+            "id": "ex_anx8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which of these animals is typically nocturnal?",
+            "options": [
+                "Búho",
+                "Gallo",
+                "Loro",
+                "Paloma"
+            ],
+            "correctAnswer": "Búho",
+            "id": "ex_anx8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Animales en el zoológico",
+            "options": [],
+            "correctAnswer": "Animals at the zoo",
+            "id": "ex_anx9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Where would you typically see a lion in a city?",
+            "options": [
+                "En el zoológico",
+                "En la casa",
+                "En la escuela",
+                "En el supermercado"
+            ],
+            "correctAnswer": "En el zoológico",
+            "id": "ex_anx9_2"
         }
     ]
 }

@@ -92,6 +92,83 @@
       "correctAnswer": "在 (zài)",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_se_7",
+      "type": "multipleChoice",
+      "question": "When expressing location (\"at / in a place\"), which word functions as the verb of existence/location in Chinese?",
+      "options": [
+        "在 (zài)",
+        "是 (shì)",
+        "有 (yǒu)",
+        "做 (zuò)"
+      ],
+      "correctAnswer": "在 (zài)"
+    },
+    {
+      "id": "ex_zh_se_8",
+      "type": "translateThis",
+      "question": "爸爸现在在办公室工作",
+      "options": [],
+      "correctAnswer": "Dad is working in the office right now"
+    },
+    {
+      "id": "ex_zh_se_9",
+      "type": "fillInBlank",
+      "question": "李老师不 ___ 家，他去学校了。(Teacher Li is not at home; he went to school.)",
+      "options": [
+        "在",
+        "是",
+        "有",
+        "为"
+      ],
+      "correctAnswer": "在"
+    },
+    {
+      "id": "ex_zh_se_10",
+      "type": "matchPairs",
+      "question": "Match Chinese copula and location verbs with their roles",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "是 (shì)",
+            "native": "To be (identity / equivalence: A 是 B)"
+          },
+          {
+            "target": "在 (zài)",
+            "native": "To be located at / in (location)"
+          },
+          {
+            "target": "有 (yǒu)",
+            "native": "There is / are (existence in a place)"
+          },
+          {
+            "target": "不是 (bú shì)",
+            "native": "Is not (negation of identity)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_se_11",
+      "type": "fillInBlank",
+      "question": "北京 ___ 中国的首都。(Beijing is the capital of China.)",
+      "options": [
+        "是",
+        "在",
+        "有",
+        "去"
+      ],
+      "correctAnswer": "是"
+    },
+    {
+      "id": "ex_zh_se_12",
+      "type": "translateThis",
+      "question": "请问洗手间在哪里？",
+      "options": [],
+      "correctAnswer": "Excuse me, where is the restroom?"
     }
   ]
 }

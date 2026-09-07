@@ -92,6 +92,83 @@
       "correctAnswer": "常常 (chángcháng)",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pres_7",
+      "type": "multipleChoice",
+      "question": "What is the standard Chinese word order for a sentence with time and location?",
+      "options": [
+        "Subject + Time + Location + Verb + Object",
+        "Subject + Verb + Object + Location + Time",
+        "Location + Subject + Verb + Time",
+        "Time + Verb + Subject + Object"
+      ],
+      "correctAnswer": "Subject + Time + Location + Verb + Object"
+    },
+    {
+      "id": "ex_zh_pres_8",
+      "type": "translateThis",
+      "question": "我每天早上七点起床",
+      "options": [],
+      "correctAnswer": "I get up at seven o'clock every morning"
+    },
+    {
+      "id": "ex_zh_pres_9",
+      "type": "fillInBlank",
+      "question": "我们下午三点在图书馆 ___ 中文。(We study Chinese in the library at 3 PM.)",
+      "options": [
+        "学习",
+        "做",
+        "去",
+        "买"
+      ],
+      "correctAnswer": "学习"
+    },
+    {
+      "id": "ex_zh_pres_10",
+      "type": "matchPairs",
+      "question": "Match common time words in Chinese",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "今天 (jīntiān)",
+            "native": "Today"
+          },
+          {
+            "target": "昨天 (zuótiān)",
+            "native": "Yesterday"
+          },
+          {
+            "target": "明天 (míngtiān)",
+            "native": "Tomorrow"
+          },
+          {
+            "target": "每天 (měitiān)",
+            "native": "Every day"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pres_11",
+      "type": "fillInBlank",
+      "question": "你下课以后通常 ___ 什么？(What do you usually do after class?)",
+      "options": [
+        "做",
+        "在",
+        "是",
+        "有"
+      ],
+      "correctAnswer": "做"
+    },
+    {
+      "id": "ex_zh_pres_12",
+      "type": "translateThis",
+      "question": "他会说英语和一点儿汉语",
+      "options": [],
+      "correctAnswer": "He can speak English and a little Chinese"
     }
   ]
 }

@@ -379,6 +379,250 @@
             "options": [],
             "correctAnswer": "¿Puede escribirlo, por favor?",
             "id": "ex_b2x3_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Estoy de acuerdo",
+            "options": [],
+            "correctAnswer": "I agree",
+            "id": "ex_b2x4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'I disagree'?",
+            "options": [
+                "No estoy de acuerdo",
+                "Estoy de acuerdo",
+                "No sé nada",
+                "Es verdad"
+            ],
+            "correctAnswer": "No estoy de acuerdo",
+            "id": "ex_b2x4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ de acuerdo contigo (I am - agree)",
+            "options": [
+                "Estoy",
+                "Soy",
+                "Es",
+                "Son"
+            ],
+            "correctAnswer": "Estoy",
+            "id": "ex_b2x4_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match opinion phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Estoy de acuerdo",
+                        "native": "I agree"
+                    },
+                    {
+                        "target": "No estoy de acuerdo",
+                        "native": "I disagree"
+                    },
+                    {
+                        "target": "Tienes razón",
+                        "native": "You're right"
+                    },
+                    {
+                        "target": "Creo que sí",
+                        "native": "I think so"
+                    }
+                ]
+            },
+            "id": "ex_b2x4_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Tienes toda la razón",
+            "options": [],
+            "correctAnswer": "Tienes toda la razón",
+            "id": "ex_b2x4_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "Creo que sí, estoy de acuerdo",
+            "options": [],
+            "correctAnswer": "Creo que sí, estoy de acuerdo",
+            "id": "ex_b2x4_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Está usted seguro?",
+            "options": [],
+            "correctAnswer": "Are you sure?",
+            "id": "ex_b2x5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'I'm not sure'?",
+            "options": [
+                "No estoy seguro",
+                "Estoy seguro",
+                "Es seguro",
+                "Soy seguro"
+            ],
+            "correctAnswer": "No estoy seguro",
+            "id": "ex_b2x5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ seguro de la respuesta (I am not)",
+            "options": [
+                "No estoy",
+                "Estoy",
+                "No soy",
+                "Soy"
+            ],
+            "correctAnswer": "No estoy",
+            "id": "ex_b2x5_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match certainty phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Estoy seguro",
+                        "native": "I am sure"
+                    },
+                    {
+                        "target": "No estoy seguro",
+                        "native": "I'm not sure"
+                    },
+                    {
+                        "target": "Tal vez",
+                        "native": "Maybe"
+                    },
+                    {
+                        "target": "Definitivamente",
+                        "native": "Definitely"
+                    }
+                ]
+            },
+            "id": "ex_b2x5_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Tal vez, no estoy seguro",
+            "options": [],
+            "correctAnswer": "Tal vez, no estoy seguro",
+            "id": "ex_b2x5_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Depende de la situación",
+            "options": [],
+            "correctAnswer": "It depends on the situation",
+            "id": "ex_b2x6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'it depends'?",
+            "options": [
+                "Depende",
+                "Es cierto",
+                "Puede ser",
+                "No sé nada"
+            ],
+            "correctAnswer": "Depende",
+            "id": "ex_b2x6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ del día, puedo o no puedo (it depends)",
+            "options": [
+                "Depende",
+                "Depender",
+                "Dependo",
+                "Dependen"
+            ],
+            "correctAnswer": "Depende",
+            "id": "ex_b2x6_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Depende del clima",
+            "options": [],
+            "correctAnswer": "Depende del clima",
+            "id": "ex_b2x6_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Perdón, no escuché bien",
+            "options": [],
+            "correctAnswer": "Sorry, I didn't hear well",
+            "id": "ex_b2x7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you politely ask someone to repeat because you didn't hear?",
+            "options": [
+                "Perdón, no escuché bien",
+                "Cállate",
+                "No me importa",
+                "Habla tú"
+            ],
+            "correctAnswer": "Perdón, no escuché bien",
+            "id": "ex_b2x7_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Perdón, no ___ bien lo que dijo (I heard)",
+            "options": [
+                "escuché",
+                "escucho",
+                "escuchas",
+                "escucha"
+            ],
+            "correctAnswer": "escuché",
+            "id": "ex_b2x7_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "Con calma, por favor",
+            "options": [],
+            "correctAnswer": "Calmly, please / take it easy",
+            "id": "ex_b2x8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you ask someone to calm down politely?",
+            "options": [
+                "Con calma, por favor",
+                "¡Cállate!",
+                "No me hables",
+                "Vete ya"
+            ],
+            "correctAnswer": "Con calma, por favor",
+            "id": "ex_b2x8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Como usted diga",
+            "options": [],
+            "correctAnswer": "As you say / whatever you say (formal)",
+            "id": "ex_b2x9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you defer politely to someone formal?",
+            "options": [
+                "Como usted diga",
+                "Como yo digo",
+                "No me importa",
+                "Haz lo que quieras"
+            ],
+            "correctAnswer": "Como usted diga",
+            "id": "ex_b2x9_2"
         }
     ]
 }

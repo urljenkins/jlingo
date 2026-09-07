@@ -82,6 +82,83 @@
       "correctAnswer": "京都で古いお寺をたくさん見学しました",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_pt1_6",
+      "type": "multipleChoice",
+      "question": "How does polite \"〜ました\" (mashita) compare to informal plain past \"〜た\" (ta)?",
+      "options": [
+        "〜ました is polite; 〜た is casual/plain past",
+        "〜ました is future; 〜た is past",
+        "Both are past negative",
+        "〜た is only for questions"
+      ],
+      "correctAnswer": "〜ました is polite; 〜た is casual/plain past"
+    },
+    {
+      "id": "ex_ja_pt1_7",
+      "type": "translateThis",
+      "question": "きのう えいがを みました",
+      "options": [],
+      "correctAnswer": "Yesterday I watched a movie"
+    },
+    {
+      "id": "ex_ja_pt1_8",
+      "type": "fillInBlank",
+      "question": "きょうの あさ、パンを ___。(This morning, I ate bread.)",
+      "options": [
+        "たべました",
+        "たべます",
+        "たべません",
+        "たべたい"
+      ],
+      "correctAnswer": "たべました"
+    },
+    {
+      "id": "ex_ja_pt1_9",
+      "type": "matchPairs",
+      "question": "Match polite past affirmative and negative pairs",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "いきました (went)",
+            "native": "いきませんでした (did not go)"
+          },
+          {
+            "target": "のみました (drank)",
+            "native": "のみませんでした (did not drink)"
+          },
+          {
+            "target": "かいました (bought)",
+            "native": "かいませんでした (did not buy)"
+          },
+          {
+            "target": "しました (did)",
+            "native": "しませんでした (did not do)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_pt1_10",
+      "type": "fillInBlank",
+      "question": "せんしゅう きょうとへ ___。(Last week I went to Kyoto.)",
+      "options": [
+        "いきました",
+        "いきます",
+        "いきましょう",
+        "いけば"
+      ],
+      "correctAnswer": "いきました"
+    },
+    {
+      "id": "ex_ja_pt1_11",
+      "type": "translateThis",
+      "question": "どこへも いきませんでした",
+      "options": [],
+      "correctAnswer": "I did not go anywhere"
     }
   ]
 }

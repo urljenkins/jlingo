@@ -1,82 +1,159 @@
 {
-    "id": "comparatives",
-    "name": "Comparatives",
-    "description": "Learn to compare things using más, menos, tan",
-    "level": 15,
-    "exercises": [
-        {
-            "id": "ex_comp_1",
-            "type": "multipleChoice",
-            "question": "How do you say 'bigger than'?",
-            "options": [
-                "más grande que",
-                "tan grande como",
-                "muy grande",
-                "el más grande"
-            ],
-            "correctAnswer": "más grande que"
-        },
-        {
-            "id": "ex_comp_2",
-            "type": "matchPairs",
-            "question": "Match comparative structures",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "Más...que",
-                        "native": "More...than"
-                    },
-                    {
-                        "target": "Menos...que",
-                        "native": "Less...than"
-                    },
-                    {
-                        "target": "Tan...como",
-                        "native": "As...as"
-                    },
-                    {
-                        "target": "Tanto como",
-                        "native": "As much as"
-                    },
-                    {
-                        "target": "Mejor que",
-                        "native": "Better than"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "ex_comp_3",
-            "type": "translateThis",
-            "question": "María es más alta que Juan",
-            "options": [],
-            "correctAnswer": "María is taller than Juan"
-        },
-        {
-            "id": "ex_comp_4",
-            "type": "fillInBlank",
-            "question": "Este libro es ___ interesante que ese",
-            "options": [
-                "más",
-                "muy",
-                "mucho",
-                "tan"
-            ],
-            "correctAnswer": "más"
-        },
-        {
-            "id": "ex_comp_5",
-            "type": "multipleChoice",
-            "question": "What is the comparative of 'bueno'?",
-            "options": [
-                "Mejor",
-                "Más bueno",
-                "Muy bueno",
-                "Buenísimo"
-            ],
-            "correctAnswer": "Mejor"
-        }
-    ]
+  "id": "comparatives",
+  "name": "Comparatives",
+  "description": "Learn to compare things using más, menos, tan",
+  "level": 15,
+  "exercises": [
+    {
+      "id": "ex_comp_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'bigger than'?",
+      "options": [
+        "más grande que",
+        "tan grande como",
+        "muy grande",
+        "el más grande"
+      ],
+      "correctAnswer": "más grande que"
+    },
+    {
+      "id": "ex_comp_2",
+      "type": "matchPairs",
+      "question": "Match comparative structures",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Más...que",
+            "native": "More...than"
+          },
+          {
+            "target": "Menos...que",
+            "native": "Less...than"
+          },
+          {
+            "target": "Tan...como",
+            "native": "As...as"
+          },
+          {
+            "target": "Tanto como",
+            "native": "As much as"
+          },
+          {
+            "target": "Mejor que",
+            "native": "Better than"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_comp_3",
+      "type": "translateThis",
+      "question": "María es más alta que Juan",
+      "options": [],
+      "correctAnswer": "María is taller than Juan"
+    },
+    {
+      "id": "ex_comp_4",
+      "type": "fillInBlank",
+      "question": "Este libro es ___ interesante que ese",
+      "options": [
+        "más",
+        "muy",
+        "mucho",
+        "tan"
+      ],
+      "correctAnswer": "más"
+    },
+    {
+      "id": "ex_comp_5",
+      "type": "multipleChoice",
+      "question": "What is the comparative of 'bueno'?",
+      "options": [
+        "Mejor",
+        "Más bueno",
+        "Muy bueno",
+        "Buenísimo"
+      ],
+      "correctAnswer": "Mejor"
+    },
+    {
+      "id": "ex_latam_comp_6",
+      "type": "multipleChoice",
+      "question": "¿Cuál es el comparativo irregular correcto de \"bueno\" y \"malo\"?",
+      "options": [
+        "Mejor y Peor (nunca \"más bueno\" ni \"más malo\") ",
+        "Más bueno y más malo",
+        "Mayor y menor",
+        "Buenísimo y malísimo"
+      ],
+      "correctAnswer": "Mejor y Peor (nunca \"más bueno\" ni \"más malo\") "
+    },
+    {
+      "id": "ex_latam_comp_7",
+      "type": "translateThis",
+      "question": "Este carro es más rápido y económico que el anterior",
+      "options": [],
+      "correctAnswer": "This car is faster and more economical than the previous one"
+    },
+    {
+      "id": "ex_latam_comp_8",
+      "type": "fillInBlank",
+      "question": "Ella habla inglés ___ fluido como su profesora.",
+      "options": [
+        "tan",
+        "tanto",
+        "más",
+        "menos"
+      ],
+      "correctAnswer": "tan"
+    },
+    {
+      "id": "ex_latam_comp_9",
+      "type": "matchPairs",
+      "question": "Empareja las estructuras comparativas",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Más ... que",
+            "native": "More ... than (superiority)"
+          },
+          {
+            "target": "Menos ... que",
+            "native": "Less ... than (inferiority)"
+          },
+          {
+            "target": "Tan + adjetivo + como",
+            "native": "As ... as (equality with adjective)"
+          },
+          {
+            "target": "Tanto + sustantivo + como",
+            "native": "As much/many ... as (noun equality)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_latam_comp_10",
+      "type": "fillInBlank",
+      "question": "Mi hermano mayor tiene dos años ___ que yo.",
+      "options": [
+        "más",
+        "menos",
+        "tan",
+        "tanto"
+      ],
+      "correctAnswer": "más"
+    },
+    {
+      "id": "ex_latam_comp_11",
+      "type": "translateThis",
+      "question": "La comida casera es mucho mejor que la comida rápida",
+      "options": [],
+      "correctAnswer": "Homemade food is much better than fast food"
+    }
+  ]
 }

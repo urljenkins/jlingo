@@ -318,6 +318,243 @@
             "options": [],
             "correctAnswer": "El libro es del profesor",
             "id": "ex_artx3_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Sin artículo",
+            "options": [],
+            "correctAnswer": "Without an article",
+            "id": "ex_artx4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which sentence correctly omits the article before a profession?",
+            "options": [
+                "Soy profesor",
+                "Soy un profesor siempre",
+                "Soy el profesor de todos",
+                "Soy profesor un"
+            ],
+            "correctAnswer": "Soy profesor",
+            "id": "ex_artx4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Ella es ___ (doctora, no article needed)",
+            "options": [
+                "doctora",
+                "una doctora",
+                "la doctora",
+                "esa doctora"
+            ],
+            "correctAnswer": "doctora",
+            "id": "ex_artx4_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match article usage rules",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Soy profesor",
+                        "native": "No article needed for professions"
+                    },
+                    {
+                        "target": "El profesor llegó",
+                        "native": "Article needed with a specific noun"
+                    },
+                    {
+                        "target": "Es un buen profesor",
+                        "native": "Article needed with an adjective"
+                    },
+                    {
+                        "target": "Hablo español",
+                        "native": "No article before language names"
+                    }
+                ]
+            },
+            "id": "ex_artx4_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Hablo español e inglés",
+            "options": [],
+            "correctAnswer": "Hablo español e inglés",
+            "id": "ex_artx4_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Lo bueno de esto",
+            "options": [],
+            "correctAnswer": "The good thing about this",
+            "id": "ex_artx5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does the neuter article 'lo' do?",
+            "options": [
+                "Turns an adjective into a noun/concept",
+                "Marks masculine gender",
+                "Marks feminine gender",
+                "Marks plural"
+            ],
+            "correctAnswer": "Turns an adjective into a noun/concept",
+            "id": "ex_artx5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ importante es estudiar (the important thing)",
+            "options": [
+                "Lo",
+                "El",
+                "La",
+                "Los"
+            ],
+            "correctAnswer": "Lo",
+            "id": "ex_artx5_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match neuter 'lo' expressions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Lo bueno",
+                        "native": "The good thing"
+                    },
+                    {
+                        "target": "Lo malo",
+                        "native": "The bad thing"
+                    },
+                    {
+                        "target": "Lo mejor",
+                        "native": "The best thing"
+                    },
+                    {
+                        "target": "Lo importante",
+                        "native": "The important thing"
+                    }
+                ]
+            },
+            "id": "ex_artx5_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Lo mejor de todo es la comida",
+            "options": [],
+            "correctAnswer": "Lo mejor de todo es la comida",
+            "id": "ex_artx5_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un poco de paciencia",
+            "options": [],
+            "correctAnswer": "A little patience",
+            "id": "ex_artx6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'a little of' something uncountable?",
+            "options": [
+                "Un poco de",
+                "Unos pocos",
+                "Algunos",
+                "Muchos"
+            ],
+            "correctAnswer": "Un poco de",
+            "id": "ex_artx6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Necesito ___ poco de tiempo (a little)",
+            "options": [
+                "un",
+                "una",
+                "el",
+                "algo"
+            ],
+            "correctAnswer": "un",
+            "id": "ex_artx6_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Solo necesito un poco de ayuda",
+            "options": [],
+            "correctAnswer": "Solo necesito un poco de ayuda",
+            "id": "ex_artx6_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Cada uno de nosotros",
+            "options": [],
+            "correctAnswer": "Each one of us",
+            "id": "ex_artx7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'each' (singular indefinite)?",
+            "options": [
+                "Cada",
+                "Todos",
+                "Algunos",
+                "Ningún"
+            ],
+            "correctAnswer": "Cada",
+            "id": "ex_artx7_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ estudiante tiene un libro (each)",
+            "options": [
+                "Cada",
+                "Todos",
+                "Algún",
+                "Un"
+            ],
+            "correctAnswer": "Cada",
+            "id": "ex_artx7_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "Todo el mundo lo sabe",
+            "options": [],
+            "correctAnswer": "Everybody knows it",
+            "id": "ex_artx8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'todo el mundo' mean?",
+            "options": [
+                "Everybody",
+                "The whole world literally",
+                "Nobody",
+                "Some people"
+            ],
+            "correctAnswer": "Everybody",
+            "id": "ex_artx8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Ni un solo día",
+            "options": [],
+            "correctAnswer": "Not a single day",
+            "id": "ex_artx9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you emphasize 'not even one'?",
+            "options": [
+                "Ni un solo",
+                "Un solo",
+                "Solo un",
+                "Ningún solo"
+            ],
+            "correctAnswer": "Ni un solo",
+            "id": "ex_artx9_2"
         }
     ]
 }

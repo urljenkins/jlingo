@@ -92,6 +92,83 @@
       "correctAnswer": "Opposite / across from",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_dir_7",
+      "type": "multipleChoice",
+      "question": "How do you say \"Go straight ahead and turn right at the traffic light\" in Chinese?",
+      "options": [
+        "一直往前走，在红绿灯往右拐",
+        "往左拐，在路口往后走",
+        "别去红绿灯",
+        "过马路再往左拐"
+      ],
+      "correctAnswer": "一直往前走，在红绿灯往右拐"
+    },
+    {
+      "id": "ex_zh_dir_8",
+      "type": "translateThis",
+      "question": "请问地铁站在哪里？",
+      "options": [],
+      "correctAnswer": "Excuse me, where is the subway station?"
+    },
+    {
+      "id": "ex_zh_dir_9",
+      "type": "fillInBlank",
+      "question": "银行在邮局的 ___ 边，紧挨着超市。(The bank is next to the post office, right adjacent to the supermarket.)",
+      "options": [
+        "旁",
+        "前",
+        "后",
+        "上"
+      ],
+      "correctAnswer": "旁"
+    },
+    {
+      "id": "ex_zh_dir_10",
+      "type": "matchPairs",
+      "question": "Match direction and spatial words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "向前走 (xiàng qián zǒu)",
+            "native": "Walk forward"
+          },
+          {
+            "target": "往左拐 (wǎng zuǒ guǎi)",
+            "native": "Turn left"
+          },
+          {
+            "target": "往右拐 (wǎng yòu guǎi)",
+            "native": "Turn right"
+          },
+          {
+            "target": "在对面 (zài duìmiàn)",
+            "native": "On the opposite side"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_dir_11",
+      "type": "fillInBlank",
+      "question": "过两个十字路口就 ___ 了。(After crossing two intersections, you will arrive.)",
+      "options": [
+        "到",
+        "走",
+        "去",
+        "回"
+      ],
+      "correctAnswer": "到"
+    },
+    {
+      "id": "ex_zh_dir_12",
+      "type": "translateThis",
+      "question": "中国银行就在前方两百米处",
+      "options": [],
+      "correctAnswer": "The Bank of China is right two hundred meters ahead"
     }
   ]
 }

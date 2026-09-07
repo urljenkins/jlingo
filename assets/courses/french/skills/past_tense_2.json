@@ -82,6 +82,83 @@
       "correctAnswer": "Chaque dimanche, ma grand-mère préparait un gâteau",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_pt2_6",
+      "type": "multipleChoice",
+      "question": "Dans quelle situation emploie-t-on l'imparfait plutôt que le passé composé?",
+      "options": [
+        "Pour décrire un état, le décor, le climat ou une habitude passée",
+        "Pour une action soudaine, unique et délimitée dans le temps",
+        "Pour exprimer un ordre impératif",
+        "Pour une action future certaine"
+      ],
+      "correctAnswer": "Pour décrire un état, le décor, le climat ou une habitude passée"
+    },
+    {
+      "id": "ex_fr_pt2_7",
+      "type": "translateThis",
+      "question": "Quand j'étais petit, nous habitions à la campagne",
+      "options": [],
+      "correctAnswer": "When I was little, we used to live in the countryside"
+    },
+    {
+      "id": "ex_fr_pt2_8",
+      "type": "fillInBlank",
+      "question": "Il faisait beau et les oiseaux ___ dans les arbres.",
+      "options": [
+        "chantaient",
+        "ont chanté",
+        "chante",
+        "chanteront"
+      ],
+      "correctAnswer": "chantaient"
+    },
+    {
+      "id": "ex_fr_pt2_9",
+      "type": "matchPairs",
+      "question": "Associez les terminaisons de l'imparfait",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Je / Tu",
+            "native": "-ais"
+          },
+          {
+            "target": "Il / Elle / On",
+            "native": "-ait"
+          },
+          {
+            "target": "Nous",
+            "native": "-ions"
+          },
+          {
+            "target": "Ils / Elles",
+            "native": "-aient"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_pt2_10",
+      "type": "fillInBlank",
+      "question": "Pendant que je lisais, le téléphone a ___ .",
+      "options": [
+        "sonné",
+        "sonnait",
+        "sonne",
+        "sonnera"
+      ],
+      "correctAnswer": "sonné"
+    },
+    {
+      "id": "ex_fr_pt2_11",
+      "type": "translateThis",
+      "question": "Tous les étés, nous allions à la plage",
+      "options": [],
+      "correctAnswer": "Every summer, we used to go to the beach"
     }
   ]
 }

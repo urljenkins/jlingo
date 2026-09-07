@@ -92,6 +92,83 @@
       "correctAnswer": "The -t ending drops off (stam only)",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pres_7",
+      "type": "multipleChoice",
+      "question": "Wat gebeurt er met de persoonsvorm bij inversie met \"je/jij\" (bijvoorbeeld in een vraag)?",
+      "options": [
+        "De -t valt weg (Loop jij? Werkt hij -> Werk je?)",
+        "Er komt een extra -t bij",
+        "De stam verandert in verleden tijd",
+        "Er verandert helemaal niets"
+      ],
+      "correctAnswer": "De -t valt weg (Loop jij? Werkt hij -> Werk je?)"
+    },
+    {
+      "id": "ex_nl_pres_8",
+      "type": "translateThis",
+      "question": "Waar werk je en wat doe je precies?",
+      "options": [],
+      "correctAnswer": "Where do you work and what do you do exactly?"
+    },
+    {
+      "id": "ex_nl_pres_9",
+      "type": "fillInBlank",
+      "question": "Vandaag ___ ik naar kantoor met de fiets (inversie na tijdsbepaling).",
+      "options": [
+        "ga",
+        "gaat",
+        "gaan",
+        "ging"
+      ],
+      "correctAnswer": "ga"
+    },
+    {
+      "id": "ex_nl_pres_10",
+      "type": "matchPairs",
+      "question": "Koppel de Nederlandse werkwoordsvervoeging (o.t.t.)",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Ik werk",
+            "native": "Stam (stem)"
+          },
+          {
+            "target": "Jij werkt / Hij werkt",
+            "native": "Stam + t"
+          },
+          {
+            "target": "Werk jij?",
+            "native": "Stam (t drops upon inversion with jij)"
+          },
+          {
+            "target": "Wij werken",
+            "native": "Infinitief (plural)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pres_11",
+      "type": "fillInBlank",
+      "question": "Zij ___ elke zaterdagochtend in het park.",
+      "options": [
+        "hardlopen",
+        "hardloopt",
+        "hardloop",
+        "hardliep"
+      ],
+      "correctAnswer": "hardlopen"
+    },
+    {
+      "id": "ex_nl_pres_12",
+      "type": "translateThis",
+      "question": "Wij leren Nederlands omdat we in Amsterdam wonen",
+      "options": [],
+      "correctAnswer": "We learn Dutch because we live in Amsterdam"
     }
   ]
 }

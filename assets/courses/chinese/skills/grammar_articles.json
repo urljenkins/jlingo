@@ -92,6 +92,83 @@
       "correctAnswer": "个 (gè)",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_art_7",
+      "type": "multipleChoice",
+      "question": "Which measure word (量词) is used for flat objects like paper, tickets, or tables?",
+      "options": [
+        "张 (zhāng)",
+        "本 (běn)",
+        "条 (tiáo)",
+        "只 (zhī)"
+      ],
+      "correctAnswer": "张 (zhāng)"
+    },
+    {
+      "id": "ex_zh_art_8",
+      "type": "translateThis",
+      "question": "我买了两张电影票",
+      "options": [],
+      "correctAnswer": "I bought two movie tickets"
+    },
+    {
+      "id": "ex_zh_art_9",
+      "type": "fillInBlank",
+      "question": "桌子上有一 ___ 汉语书。(There is a Chinese book on the table.)",
+      "options": [
+        "本",
+        "张",
+        "个",
+        "条"
+      ],
+      "correctAnswer": "本"
+    },
+    {
+      "id": "ex_zh_art_10",
+      "type": "matchPairs",
+      "question": "Match the nouns with their correct measure words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "一本书",
+            "native": "A book (běn)"
+          },
+          {
+            "target": "一张桌子",
+            "native": "A table (zhāng)"
+          },
+          {
+            "target": "一条鱼",
+            "native": "A fish (tiáo - long/flexible)"
+          },
+          {
+            "target": "一只猫",
+            "native": "A cat (zhī - small animals)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_art_11",
+      "type": "fillInBlank",
+      "question": "请给我一 ___ 咖啡。(Please give me a cup of coffee.)",
+      "options": [
+        "杯",
+        "本",
+        "张",
+        "条"
+      ],
+      "correctAnswer": "杯"
+    },
+    {
+      "id": "ex_zh_art_12",
+      "type": "translateThis",
+      "question": "这条裤子太长了",
+      "options": [],
+      "correctAnswer": "These pants are too long"
     }
   ]
 }

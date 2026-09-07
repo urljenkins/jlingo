@@ -92,6 +92,83 @@
       "correctAnswer": "没 (méi) + Verb (drop 'le')",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt1_7",
+      "type": "multipleChoice",
+      "question": "What does the aspect particle \"了\" (le) directly after a verb signify?",
+      "options": [
+        "Completion or realization of an action (perfective aspect)",
+        "Future certainty only",
+        "Continuous repetition indefinitely",
+        "Negation of past events"
+      ],
+      "correctAnswer": "Completion or realization of an action (perfective aspect)"
+    },
+    {
+      "id": "ex_zh_pt1_8",
+      "type": "translateThis",
+      "question": "昨天我买了一件新毛衣",
+      "options": [],
+      "correctAnswer": "Yesterday I bought a new sweater"
+    },
+    {
+      "id": "ex_zh_pt1_9",
+      "type": "fillInBlank",
+      "question": "我喝 ___ 三杯茶，现在不渴了。(I drank three cups of tea; now I am not thirsty.)",
+      "options": [
+        "了",
+        "过",
+        "着",
+        "在"
+      ],
+      "correctAnswer": "了"
+    },
+    {
+      "id": "ex_zh_pt1_10",
+      "type": "matchPairs",
+      "question": "Match aspect particle \"了\" uses",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "吃了饭 (verb + 了)",
+            "native": "Completed eating (aspectual)"
+          },
+          {
+            "target": "下雨了 (sentence-final 了)",
+            "native": "It started raining / change of state"
+          },
+          {
+            "target": "没吃 (past negative)",
+            "native": "Did not eat (drop 了 when negated with 没)"
+          },
+          {
+            "target": "太贵了",
+            "native": "Too expensive! (modal 了)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pt1_11",
+      "type": "fillInBlank",
+      "question": "昨天的会议，你参加 ___ 吗？(Did you participate in yesterday's meeting?)",
+      "options": [
+        "了",
+        "过",
+        "着",
+        "正"
+      ],
+      "correctAnswer": "了"
+    },
+    {
+      "id": "ex_zh_pt1_12",
+      "type": "translateThis",
+      "question": "我们已经到了火车站",
+      "options": [],
+      "correctAnswer": "We have already arrived at the train station"
     }
   ]
 }

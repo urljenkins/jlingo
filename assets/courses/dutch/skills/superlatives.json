@@ -92,6 +92,83 @@
       "correctAnswer": "aller- (het allerbeste)",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_sup_7",
+      "type": "multipleChoice",
+      "question": "Hoe vorm je de overtreffende trap (superlative) in het Nederlands?",
+      "options": [
+        "Stam + -st (het snelst, het mooist, het grootst)",
+        "Meest + adjectief altijd",
+        "Beter + -e",
+        "Stam + -er"
+      ],
+      "correctAnswer": "Stam + -st (het snelst, het mooist, het grootst)"
+    },
+    {
+      "id": "ex_nl_sup_8",
+      "type": "translateThis",
+      "question": "Dit is het mooiste museum van Nederland",
+      "options": [],
+      "correctAnswer": "This is the most beautiful museum in the Netherlands"
+    },
+    {
+      "id": "ex_nl_sup_9",
+      "type": "fillInBlank",
+      "question": "Welke berg is het ___ ter wereld? (hoog)",
+      "options": [
+        "hoogst",
+        "hoger",
+        "hoogste",
+        "meest hoog"
+      ],
+      "correctAnswer": "hoogst"
+    },
+    {
+      "id": "ex_nl_sup_10",
+      "type": "matchPairs",
+      "question": "Koppel overtreffende trappen (superlatieven)",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Het best / De beste",
+            "native": "The best (van goed)"
+          },
+          {
+            "target": "Het meest",
+            "native": "The most (van veel)"
+          },
+          {
+            "target": "Het minst",
+            "native": "The least (van weinig)"
+          },
+          {
+            "target": "Het liefst",
+            "native": "Most preferably (van graag)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_sup_11",
+      "type": "fillInBlank",
+      "question": "Zij spreekt het ___ Nederlands van de hele klas.",
+      "options": [
+        "beste",
+        "beter",
+        "goedst",
+        "meest goed"
+      ],
+      "correctAnswer": "beste"
+    },
+    {
+      "id": "ex_nl_sup_12",
+      "type": "translateThis",
+      "question": "Wat doe je het liefst in je vrije tijd?",
+      "options": [],
+      "correctAnswer": "What do you like doing most in your free time?"
     }
   ]
 }

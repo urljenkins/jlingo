@@ -324,6 +324,170 @@
             "options": [],
             "correctAnswer": "Prefiero comer sano",
             "id": "ex_fx3_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Comida rápida",
+            "options": [],
+            "correctAnswer": "Fast food",
+            "id": "ex_fx4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'homemade food'?",
+            "options": [
+                "Comida casera",
+                "Comida rápida",
+                "Comida chatarra",
+                "Comida congelada"
+            ],
+            "correctAnswer": "Comida casera",
+            "id": "ex_fx4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Prefiero la comida ___ a la comida rápida (homemade)",
+            "options": [
+                "casera",
+                "rápida",
+                "chatarra",
+                "congelada"
+            ],
+            "correctAnswer": "casera",
+            "id": "ex_fx4_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Me gusta la comida casera de mi abuela",
+            "options": [],
+            "correctAnswer": "Me gusta la comida casera de mi abuela",
+            "id": "ex_fx4_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Una dieta equilibrada",
+            "options": [],
+            "correctAnswer": "A balanced diet",
+            "id": "ex_fx5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'to be on a diet'?",
+            "options": [
+                "Estar a dieta",
+                "Comer mucho",
+                "Tener hambre",
+                "Tener sed"
+            ],
+            "correctAnswer": "Estar a dieta",
+            "id": "ex_fx5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Estoy ___ dieta (on a diet)",
+            "options": [
+                "a",
+                "en",
+                "con",
+                "de"
+            ],
+            "correctAnswer": "a",
+            "id": "ex_fx5_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Estoy a dieta desde enero",
+            "options": [],
+            "correctAnswer": "Estoy a dieta desde enero",
+            "id": "ex_fx5_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Tengo mucha hambre",
+            "options": [],
+            "correctAnswer": "I am very hungry",
+            "id": "ex_fx6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'I am thirsty'?",
+            "options": [
+                "Tengo sed",
+                "Tengo hambre",
+                "Tengo frío",
+                "Tengo calor"
+            ],
+            "correctAnswer": "Tengo sed",
+            "id": "ex_fx6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ mucha hambre, vamos a comer (I have)",
+            "options": [
+                "Tengo",
+                "Soy",
+                "Estoy",
+                "Hay"
+            ],
+            "correctAnswer": "Tengo",
+            "id": "ex_fx6_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un plato típico",
+            "options": [],
+            "correctAnswer": "A typical/traditional dish",
+            "id": "ex_fx7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'traditional food'?",
+            "options": [
+                "Comida típica",
+                "Comida rápida",
+                "Comida nueva",
+                "Comida extraña"
+            ],
+            "correctAnswer": "Comida típica",
+            "id": "ex_fx7_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un ingrediente secreto",
+            "options": [],
+            "correctAnswer": "A secret ingredient",
+            "id": "ex_fx8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'secret recipe'?",
+            "options": [
+                "Receta secreta",
+                "Receta pública",
+                "Receta nueva",
+                "Receta vieja"
+            ],
+            "correctAnswer": "Receta secreta",
+            "id": "ex_fx8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un sabor único",
+            "options": [],
+            "correctAnswer": "A unique flavor",
+            "id": "ex_fx9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'delicious flavor'?",
+            "options": [
+                "Sabor delicioso",
+                "Sabor feo",
+                "Sabor extraño",
+                "Sin sabor"
+            ],
+            "correctAnswer": "Sabor delicioso",
+            "id": "ex_fx9_2"
         }
     ]
 }

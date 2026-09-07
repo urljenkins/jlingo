@@ -611,6 +611,390 @@
             ],
             "correctAnswer": "sílabas",
             "id": "ex_alp3_20"
+        },
+        {
+            "type": "translateThis",
+            "question": "La letra doble u",
+            "options": [],
+            "correctAnswer": "The letter W",
+            "id": "ex_alp4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "In which type of words does 'W' most often appear in Spanish?",
+            "options": [
+                "Foreign loanwords",
+                "Native Spanish words",
+                "Verb endings",
+                "Plural nouns"
+            ],
+            "correctAnswer": "Foreign loanwords",
+            "id": "ex_alp4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La palabra 'kilo' empieza con ___",
+            "options": [
+                "ka",
+                "ce",
+                "que",
+                "cu"
+            ],
+            "correctAnswer": "ka",
+            "id": "ex_alp4_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Whisky se escribe con doble u",
+            "options": [],
+            "correctAnswer": "Whisky se escribe con doble u",
+            "id": "ex_alp4_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Kilómetro empieza con ka",
+            "options": [],
+            "correctAnswer": "Kilómetro empieza con ka",
+            "id": "ex_alp4_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Palabra aguda",
+            "options": [],
+            "correctAnswer": "Word stressed on the last syllable",
+            "id": "ex_alp4_6"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which type of word is 'canción' (stress on last syllable ending in n, s, or vowel)?",
+            "options": [
+                "Aguda",
+                "Grave",
+                "Esdrújula",
+                "Llana"
+            ],
+            "correctAnswer": "Aguda",
+            "id": "ex_alp4_7"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La palabra 'música' es ___ (stressed on third-to-last syllable)",
+            "options": [
+                "esdrújula",
+                "aguda",
+                "grave",
+                "llana"
+            ],
+            "correctAnswer": "esdrújula",
+            "id": "ex_alp4_8"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Ca-mión es una palabra aguda",
+            "options": [],
+            "correctAnswer": "Ca-mión es una palabra aguda",
+            "id": "ex_alp4_9"
+        },
+        {
+            "type": "speakThis",
+            "question": "Rá-pi-do es esdrújula",
+            "options": [],
+            "correctAnswer": "Rá-pi-do es esdrújula",
+            "id": "ex_alp4_10"
+        },
+        {
+            "type": "translateThis",
+            "question": "La tilde",
+            "options": [],
+            "correctAnswer": "The accent mark (tilde)",
+            "id": "ex_alp4_11"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is another word for 'acento' (written accent)?",
+            "options": [
+                "Tilde",
+                "Punto",
+                "Coma",
+                "Guion"
+            ],
+            "correctAnswer": "Tilde",
+            "id": "ex_alp4_12"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Camión lleva ___ en la o",
+            "options": [
+                "tilde",
+                "punto",
+                "coma",
+                "guion"
+            ],
+            "correctAnswer": "tilde",
+            "id": "ex_alp4_13"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Corazón lleva tilde",
+            "options": [],
+            "correctAnswer": "Corazón lleva tilde",
+            "id": "ex_alp4_14"
+        },
+        {
+            "type": "translateThis",
+            "question": "Palabra llana",
+            "options": [],
+            "correctAnswer": "Word stressed on second-to-last syllable",
+            "id": "ex_alp5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which is a 'palabra llana' (stress on second-to-last syllable)?",
+            "options": [
+                "Mesa",
+                "Camión",
+                "Música",
+                "Café"
+            ],
+            "correctAnswer": "Mesa",
+            "id": "ex_alp5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La mayoría de palabras en español son ___ (llanas)",
+            "options": [
+                "llanas",
+                "agudas",
+                "esdrújulas",
+                "sobresdrújulas"
+            ],
+            "correctAnswer": "llanas",
+            "id": "ex_alp5_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Me-sa es una palabra llana",
+            "options": [],
+            "correctAnswer": "Me-sa es una palabra llana",
+            "id": "ex_alp5_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Ca-sa, me-sa, li-bro son llanas",
+            "options": [],
+            "correctAnswer": "Ca-sa, me-sa, li-bro son llanas",
+            "id": "ex_alp5_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "El guion",
+            "options": [],
+            "correctAnswer": "The hyphen",
+            "id": "ex_alp5_6"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What punctuation mark introduces dialogue in Spanish literature?",
+            "options": [
+                "Guion largo (—)",
+                "Comillas",
+                "Punto",
+                "Coma"
+            ],
+            "correctAnswer": "Guion largo (—)",
+            "id": "ex_alp5_7"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Los signos de ___ abren y cierran preguntas (¿?)",
+            "options": [
+                "interrogación",
+                "exclamación",
+                "puntuación",
+                "acentuación"
+            ],
+            "correctAnswer": "interrogación",
+            "id": "ex_alp5_8"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "¿Cómo estás? ¡Muy bien!",
+            "options": [],
+            "correctAnswer": "¿Cómo estás? ¡Muy bien!",
+            "id": "ex_alp5_9"
+        },
+        {
+            "type": "speakThis",
+            "question": "¡Qué bonito día!",
+            "options": [],
+            "correctAnswer": "¡Qué bonito día!",
+            "id": "ex_alp5_10"
+        },
+        {
+            "type": "translateThis",
+            "question": "Sobresdrújula",
+            "options": [],
+            "correctAnswer": "Word stressed before the antepenultimate syllable",
+            "id": "ex_alp6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which type is 'dígamelo' (stress before third-to-last syllable)?",
+            "options": [
+                "Sobresdrújula",
+                "Aguda",
+                "Grave",
+                "Llana"
+            ],
+            "correctAnswer": "Sobresdrújula",
+            "id": "ex_alp6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "La ortografía estudia las reglas de ___ (spelling)",
+            "options": [
+                "escritura",
+                "pronunciación",
+                "gramática",
+                "lectura"
+            ],
+            "correctAnswer": "escritura",
+            "id": "ex_alp6_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "La ortografía es importante",
+            "options": [],
+            "correctAnswer": "La ortografía es importante",
+            "id": "ex_alp6_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Estudio la ortografía todos los días",
+            "options": [],
+            "correctAnswer": "Estudio la ortografía todos los días",
+            "id": "ex_alp6_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "El punto y coma",
+            "options": [],
+            "correctAnswer": "The semicolon",
+            "id": "ex_alp6_6"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is 'los dos puntos' in English?",
+            "options": [
+                "The colon",
+                "The comma",
+                "The period",
+                "The semicolon"
+            ],
+            "correctAnswer": "The colon",
+            "id": "ex_alp6_7"
+        },
+        {
+            "type": "translateThis",
+            "question": "Homófonas",
+            "options": [],
+            "correctAnswer": "Homophones",
+            "id": "ex_alp7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which pair are homophones (sound the same, spelled differently)?",
+            "options": [
+                "Tuvo / tubo",
+                "Casa / mesa",
+                "Perro / gato",
+                "Libro / mesa"
+            ],
+            "correctAnswer": "Tuvo / tubo",
+            "id": "ex_alp7_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "'Vaca' y 'baca' son palabras ___ (homophones)",
+            "options": [
+                "homófonas",
+                "sinónimas",
+                "antónimas",
+                "compuestas"
+            ],
+            "correctAnswer": "homófonas",
+            "id": "ex_alp7_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Hola y ola suenan igual",
+            "options": [],
+            "correctAnswer": "Hola y ola suenan igual",
+            "id": "ex_alp7_4"
+        },
+        {
+            "type": "speakThis",
+            "question": "Baca y vaca son homófonas",
+            "options": [],
+            "correctAnswer": "Baca y vaca son homófonas",
+            "id": "ex_alp7_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Palabra compuesta",
+            "options": [],
+            "correctAnswer": "Compound word",
+            "id": "ex_alp7_6"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which is a compound word in Spanish?",
+            "options": [
+                "Paraguas",
+                "Mesa",
+                "Gato",
+                "Casa"
+            ],
+            "correctAnswer": "Paraguas",
+            "id": "ex_alp7_7"
+        },
+        {
+            "type": "translateThis",
+            "question": "Palabra grave",
+            "options": [],
+            "correctAnswer": "Word stressed on the second-to-last syllable (formal term)",
+            "id": "ex_alp8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which accent rule applies to words ending in a consonant other than n/s?",
+            "options": [
+                "Stress falls on the last syllable by default",
+                "Stress always needs a written accent",
+                "Stress falls on the first syllable",
+                "There is no rule"
+            ],
+            "correctAnswer": "Stress falls on the last syllable by default",
+            "id": "ex_alp8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Letra minúscula y mayúscula",
+            "options": [],
+            "correctAnswer": "Lowercase and uppercase letter",
+            "id": "ex_alp9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which is written with a capital letter?",
+            "options": [
+                "El nombre de una persona",
+                "Los días de la semana",
+                "Los meses del año",
+                "Los idiomas"
+            ],
+            "correctAnswer": "El nombre de una persona",
+            "id": "ex_alp9_2"
         }
     ]
 }

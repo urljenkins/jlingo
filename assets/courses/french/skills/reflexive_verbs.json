@@ -82,6 +82,83 @@
       "correctAnswer": "Dépêchez-vous, nous allons être en retard",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_refl_6",
+      "type": "multipleChoice",
+      "question": "À la forme négative, où se place le pronom réfléchi avec \"ne... pas\"?",
+      "options": [
+        "Entre ne et le verbe (ex: Je ne me lève pas)",
+        "Après pas (ex: Je ne lève pas me)",
+        "Devant ne (ex: Me je ne lève pas)",
+        "À la fin de la phrase"
+      ],
+      "correctAnswer": "Entre ne et le verbe (ex: Je ne me lève pas)"
+    },
+    {
+      "id": "ex_fr_refl_7",
+      "type": "translateThis",
+      "question": "Comment vous appelez-vous ?",
+      "options": [],
+      "correctAnswer": "What is your name?"
+    },
+    {
+      "id": "ex_fr_refl_8",
+      "type": "fillInBlank",
+      "question": "Tu te ___ bien aujourd'hui ?",
+      "options": [
+        "sens",
+        "sent",
+        "sentir",
+        "sentent"
+      ],
+      "correctAnswer": "sens"
+    },
+    {
+      "id": "ex_fr_refl_9",
+      "type": "matchPairs",
+      "question": "Associez les pronoms réfléchis avec les sujets",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Je -> me / m'",
+            "native": "Myself"
+          },
+          {
+            "target": "Tu -> te / t'",
+            "native": "Yourself"
+          },
+          {
+            "target": "Il / Elle -> se / s'",
+            "native": "Himself / Herself"
+          },
+          {
+            "target": "Nous -> nous",
+            "native": "Ourselves"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_refl_10",
+      "type": "fillInBlank",
+      "question": "Ils se ___ souvent dans ce café.",
+      "options": [
+        "rencontrent",
+        "rencontre",
+        "rencontres",
+        "rencontrons"
+      ],
+      "correctAnswer": "rencontrent"
+    },
+    {
+      "id": "ex_fr_refl_11",
+      "type": "translateThis",
+      "question": "Nous nous souvenons de ce beau voyage",
+      "options": [],
+      "correctAnswer": "We remember that beautiful trip"
     }
   ]
 }

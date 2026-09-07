@@ -82,6 +82,83 @@
       "correctAnswer": "J'ai vingt-cinq ans et j'ai deux enfants",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_avoir_6",
+      "type": "multipleChoice",
+      "question": "Comment dit-on \"I am hungry\" et \"I am cold\" en français?",
+      "options": [
+        "J'ai faim et j'ai froid (avec avoir)",
+        "Je suis faim et je suis froid",
+        "Je fais faim et froid",
+        "J'ai la faim et le froid"
+      ],
+      "correctAnswer": "J'ai faim et j'ai froid (avec avoir)"
+    },
+    {
+      "id": "ex_fr_avoir_7",
+      "type": "translateThis",
+      "question": "Quel âge as-tu ? J'ai trente ans.",
+      "options": [],
+      "correctAnswer": "How old are you? I am thirty years old."
+    },
+    {
+      "id": "ex_fr_avoir_8",
+      "type": "fillInBlank",
+      "question": "Ils ___ besoin d'aide pour déménager.",
+      "options": [
+        "ont",
+        "sont",
+        "font",
+        "avons"
+      ],
+      "correctAnswer": "ont"
+    },
+    {
+      "id": "ex_fr_avoir_9",
+      "type": "matchPairs",
+      "question": "Associez les expressions idiomatiques avec avoir",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Avoir soif",
+            "native": "To be thirsty"
+          },
+          {
+            "target": "Avoir sommeil",
+            "native": "To be sleepy"
+          },
+          {
+            "target": "Avoir raison",
+            "native": "To be right"
+          },
+          {
+            "target": "Avoir peur",
+            "native": "To be afraid"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_avoir_10",
+      "type": "fillInBlank",
+      "question": "Nous ___ beaucoup d'amis en France.",
+      "options": [
+        "avons",
+        "avez",
+        "ont",
+        "sommes"
+      ],
+      "correctAnswer": "avons"
+    },
+    {
+      "id": "ex_fr_avoir_11",
+      "type": "translateThis",
+      "question": "Avez-vous le temps de m'aider ?",
+      "options": [],
+      "correctAnswer": "Do you have time to help me?"
     }
   ]
 }

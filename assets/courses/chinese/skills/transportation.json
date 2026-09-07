@@ -92,6 +92,83 @@
       "correctAnswer": "Airport",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_trans_7",
+      "type": "multipleChoice",
+      "question": "Which verb is used for riding / taking wheeled vehicles (bus, train, plane) as a passenger in Chinese?",
+      "options": [
+        "坐 (zuò) - e.g. 坐火车, 坐飞机",
+        "骑 (qí) - for bicycles/horses",
+        "开 (kāi) - for driving",
+        "打 (dǎ)"
+      ],
+      "correctAnswer": "坐 (zuò) - e.g. 坐火车, 坐飞机"
+    },
+    {
+      "id": "ex_zh_trans_8",
+      "type": "translateThis",
+      "question": "我每天骑自行车去大学上课",
+      "options": [],
+      "correctAnswer": "I ride a bicycle to the university for class every day"
+    },
+    {
+      "id": "ex_zh_trans_9",
+      "type": "fillInBlank",
+      "question": "下雨天在路边不好 ___ 车，我们坐地铁吧。(It is hard to hail a taxi on rainy days; let's take the subway.)",
+      "options": [
+        "打",
+        "坐",
+        "骑",
+        "开"
+      ],
+      "correctAnswer": "打"
+    },
+    {
+      "id": "ex_zh_trans_10",
+      "type": "matchPairs",
+      "question": "Match verbs with transportation types in Chinese",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "坐地铁 (zuò dìtiě)",
+            "native": "Take the subway"
+          },
+          {
+            "target": "骑自行车 (qí zìxíngchē)",
+            "native": "Ride a bicycle"
+          },
+          {
+            "target": "打出租车 (dǎ chūzūchē)",
+            "native": "Hail a taxi"
+          },
+          {
+            "target": "开轿车 (kāi jiàochē)",
+            "native": "Drive a car"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_trans_11",
+      "type": "fillInBlank",
+      "question": "去机场坐高速 ___ 只要二十分钟。(Taking the airport express to the airport only takes twenty minutes.)",
+      "options": [
+        "铁",
+        "车",
+        "机",
+        "船"
+      ],
+      "correctAnswer": "铁"
+    },
+    {
+      "id": "ex_zh_trans_12",
+      "type": "translateThis",
+      "question": "这趟高铁准时出发了吗？",
+      "options": [],
+      "correctAnswer": "Did this high-speed train depart on time?"
     }
   ]
 }

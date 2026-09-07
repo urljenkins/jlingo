@@ -1,57 +1,154 @@
 {
-    "id": "daily_routine",
-    "name": "Daily Routine",
-    "description": "Talk about daily habits, waking up, and work schedules in French",
-    "level": 5,
-    "exercises": [
-        {
-            "id": "ex_fr_dr_1",
-            "type": "translateThis",
-            "question": "Je me réveille à sept heures",
-            "options": [],
-            "correctAnswer": "I wake up at seven o'clock"
-        },
-        {
-            "id": "ex_fr_dr_2",
-            "type": "fillInBlank",
-            "question": "Tous les matins, je prends ma ___ avant de partir.",
-            "options": ["douche", "gare", "voiture", "table"],
-            "correctAnswer": "douche"
-        },
-        {
-            "id": "ex_fr_dr_3",
-            "type": "matchPairs",
-            "question": "Match daily activities with their English meanings",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {"target": "se lever", "native": "to get up"},
-                    {"target": "s'habiller", "native": "to get dressed"},
-                    {"target": "prendre le petit déjeuner", "native": "to have breakfast"},
-                    {"target": "se coucher", "native": "to go to bed"},
-                    {"target": "travailler", "native": "to work"}
-                ]
-            }
-        },
-        {
-            "id": "ex_fr_dr_4",
-            "type": "multipleChoice",
-            "question": "What does 'À quelle heure tu commences?' mean?",
-            "options": [
-                "What time do you start?",
-                "Where are you going?",
-                "How are you doing?",
-                "What are you eating?"
-            ],
-            "correctAnswer": "What time do you start?"
-        },
-        {
-            "id": "ex_fr_dr_5",
-            "type": "speakThis",
-            "question": "Je termine ma journée de travail à dix-huit heures",
-            "options": [],
-            "correctAnswer": "Je termine ma journée de travail à dix-huit heures"
-        }
-    ]
+  "id": "daily_routine",
+  "name": "Daily Routine",
+  "description": "Talk about daily habits, waking up, and work schedules in French",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_fr_dr_1",
+      "type": "translateThis",
+      "question": "Je me réveille à sept heures",
+      "options": [],
+      "correctAnswer": "I wake up at seven o'clock"
+    },
+    {
+      "id": "ex_fr_dr_2",
+      "type": "fillInBlank",
+      "question": "Tous les matins, je prends ma ___ avant de partir.",
+      "options": [
+        "douche",
+        "gare",
+        "voiture",
+        "table"
+      ],
+      "correctAnswer": "douche"
+    },
+    {
+      "id": "ex_fr_dr_3",
+      "type": "matchPairs",
+      "question": "Match daily activities with their English meanings",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "se lever",
+            "native": "to get up"
+          },
+          {
+            "target": "s'habiller",
+            "native": "to get dressed"
+          },
+          {
+            "target": "prendre le petit déjeuner",
+            "native": "to have breakfast"
+          },
+          {
+            "target": "se coucher",
+            "native": "to go to bed"
+          },
+          {
+            "target": "travailler",
+            "native": "to work"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_dr_4",
+      "type": "multipleChoice",
+      "question": "What does 'À quelle heure tu commences?' mean?",
+      "options": [
+        "What time do you start?",
+        "Where are you going?",
+        "How are you doing?",
+        "What are you eating?"
+      ],
+      "correctAnswer": "What time do you start?"
+    },
+    {
+      "id": "ex_fr_dr_5",
+      "type": "speakThis",
+      "question": "Je termine ma journée de travail à dix-huit heures",
+      "options": [],
+      "correctAnswer": "Je termine ma journée de travail à dix-huit heures"
+    },
+    {
+      "id": "ex_fr_rout_6",
+      "type": "multipleChoice",
+      "question": "Quelle phrase décrit correctement la routine matinale?",
+      "options": [
+        "Je me réveille à sept heures et je prends ma douche",
+        "Je réveille moi à sept heures",
+        "Je me dors à sept heures",
+        "Je prends sept heures pour réveiller"
+      ],
+      "correctAnswer": "Je me réveille à sept heures et je prends ma douche"
+    },
+    {
+      "id": "ex_fr_rout_7",
+      "type": "translateThis",
+      "question": "Je me brosse les dents après le petit-déjeuner",
+      "options": [],
+      "correctAnswer": "I brush my teeth after breakfast"
+    },
+    {
+      "id": "ex_fr_rout_8",
+      "type": "fillInBlank",
+      "question": "Le soir, elle se ___ vers vingt-deux heures trente.",
+      "options": [
+        "couche",
+        "lève",
+        "réveille",
+        "habille"
+      ],
+      "correctAnswer": "couche"
+    },
+    {
+      "id": "ex_fr_rout_9",
+      "type": "matchPairs",
+      "question": "Associez les verbes de la routine quotidienne",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Se lever",
+            "native": "To get up"
+          },
+          {
+            "target": "S'habiller",
+            "native": "To get dressed"
+          },
+          {
+            "target": "Se coiffer",
+            "native": "To do one's hair"
+          },
+          {
+            "target": "Se coucher",
+            "native": "To go to bed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_rout_10",
+      "type": "fillInBlank",
+      "question": "Nous nous ___ rapidement avant de partir au travail.",
+      "options": [
+        "préparons",
+        "prépare",
+        "prépares",
+        "préparent"
+      ],
+      "correctAnswer": "préparons"
+    },
+    {
+      "id": "ex_fr_rout_11",
+      "type": "translateThis",
+      "question": "À quelle heure pars-tu de la maison ?",
+      "options": [],
+      "correctAnswer": "What time do you leave home?"
+    }
+  ]
 }

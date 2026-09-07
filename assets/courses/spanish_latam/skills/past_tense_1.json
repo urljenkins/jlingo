@@ -1,82 +1,159 @@
 {
-    "id": "past_tense_1",
-    "name": "Past Tense: Preterite",
-    "description": "Learn the simple past tense for completed actions",
-    "level": 12,
-    "exercises": [
-        {
-            "id": "ex_pret_1",
-            "type": "multipleChoice",
-            "question": "When do we use the preterite tense?",
-            "options": [
-                "For completed actions in the past",
-                "For ongoing past actions",
-                "For future plans",
-                "For habitual actions"
-            ],
-            "correctAnswer": "For completed actions in the past"
-        },
-        {
-            "id": "ex_pret_2",
-            "type": "matchPairs",
-            "question": "Match HABLAR preterite conjugations",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "Yo hablé",
-                        "native": "I spoke"
-                    },
-                    {
-                        "target": "Tú hablaste",
-                        "native": "You spoke"
-                    },
-                    {
-                        "target": "Él habló",
-                        "native": "He spoke"
-                    },
-                    {
-                        "target": "Nosotros hablamos",
-                        "native": "We spoke"
-                    },
-                    {
-                        "target": "Ellos hablaron",
-                        "native": "They spoke"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "ex_pret_3",
-            "type": "translateThis",
-            "question": "Ayer comí en un restaurante",
-            "options": [],
-            "correctAnswer": "Yesterday I ate at a restaurant"
-        },
-        {
-            "id": "ex_pret_4",
-            "type": "fillInBlank",
-            "question": "Ella ___ a España el año pasado",
-            "options": [
-                "viajó",
-                "viaja",
-                "viajaba",
-                "viajará"
-            ],
-            "correctAnswer": "viajó"
-        },
-        {
-            "id": "ex_pret_5",
-            "type": "multipleChoice",
-            "question": "What is the preterite of 'ir' (to go) for 'yo'?",
-            "options": [
-                "Fui",
-                "Iba",
-                "Voy",
-                "Iré"
-            ],
-            "correctAnswer": "Fui"
-        }
-    ]
+  "id": "past_tense_1",
+  "name": "Past Tense: Preterite",
+  "description": "Learn the simple past tense for completed actions",
+  "level": 12,
+  "exercises": [
+    {
+      "id": "ex_pret_1",
+      "type": "multipleChoice",
+      "question": "When do we use the preterite tense?",
+      "options": [
+        "For completed actions in the past",
+        "For ongoing past actions",
+        "For future plans",
+        "For habitual actions"
+      ],
+      "correctAnswer": "For completed actions in the past"
+    },
+    {
+      "id": "ex_pret_2",
+      "type": "matchPairs",
+      "question": "Match HABLAR preterite conjugations",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Yo hablé",
+            "native": "I spoke"
+          },
+          {
+            "target": "Tú hablaste",
+            "native": "You spoke"
+          },
+          {
+            "target": "Él habló",
+            "native": "He spoke"
+          },
+          {
+            "target": "Nosotros hablamos",
+            "native": "We spoke"
+          },
+          {
+            "target": "Ellos hablaron",
+            "native": "They spoke"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_pret_3",
+      "type": "translateThis",
+      "question": "Ayer comí en un restaurante",
+      "options": [],
+      "correctAnswer": "Yesterday I ate at a restaurant"
+    },
+    {
+      "id": "ex_pret_4",
+      "type": "fillInBlank",
+      "question": "Ella ___ a España el año pasado",
+      "options": [
+        "viajó",
+        "viaja",
+        "viajaba",
+        "viajará"
+      ],
+      "correctAnswer": "viajó"
+    },
+    {
+      "id": "ex_pret_5",
+      "type": "multipleChoice",
+      "question": "What is the preterite of 'ir' (to go) for 'yo'?",
+      "options": [
+        "Fui",
+        "Iba",
+        "Voy",
+        "Iré"
+      ],
+      "correctAnswer": "Fui"
+    },
+    {
+      "id": "ex_latam_pt1_6",
+      "type": "multipleChoice",
+      "question": "En casi toda América Latina, para acciones pasadas puntuales y terminadas (incluso ocurridas hoy), se usa predominantemente:",
+      "options": [
+        "El pretérito indefinido / perfecto simple (Hoy fui al médico)",
+        "El pretérito perfecto compuesto (Hoy he ido)",
+        "El imperfecto solamente",
+        "El futuro perifrástico"
+      ],
+      "correctAnswer": "El pretérito indefinido / perfecto simple (Hoy fui al médico)"
+    },
+    {
+      "id": "ex_latam_pt1_7",
+      "type": "translateThis",
+      "question": "Ayer compré un celular nuevo en el centro comercial",
+      "options": [],
+      "correctAnswer": "Yesterday I bought a new cell phone at the shopping mall"
+    },
+    {
+      "id": "ex_latam_pt1_8",
+      "type": "fillInBlank",
+      "question": "Anoche nosotros ___ en un restaurante mexicano delicioso.",
+      "options": [
+        "cenamos",
+        "cenábamos",
+        "cenar",
+        "cenaron"
+      ],
+      "correctAnswer": "cenamos"
+    },
+    {
+      "id": "ex_latam_pt1_9",
+      "type": "matchPairs",
+      "question": "Empareja los verbos irregulares en pretérito indefinido",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Hacer -> Yo hice",
+            "native": "I did / made"
+          },
+          {
+            "target": "Tener -> Yo tuve",
+            "native": "I had"
+          },
+          {
+            "target": "Estar -> Yo estuve",
+            "native": "I was (located/state)"
+          },
+          {
+            "target": "Decir -> Yo dije",
+            "native": "I said / told"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_latam_pt1_10",
+      "type": "fillInBlank",
+      "question": "¿A qué hora ___ ustedes a la fiesta anoche? (llegar)",
+      "options": [
+        "llegaron",
+        "llegasteis",
+        "llegaron-se",
+        "llegaronse"
+      ],
+      "correctAnswer": "llegaron"
+    },
+    {
+      "id": "ex_latam_pt1_11",
+      "type": "translateThis",
+      "question": "No pude encontrar mis llaves esta mañana",
+      "options": [],
+      "correctAnswer": "I could not find my keys this morning"
+    }
+  ]
 }

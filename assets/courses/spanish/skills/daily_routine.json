@@ -1,118 +1,137 @@
 {
-    "id": "daily_routine",
-    "name": "Daily Routine",
-    "description": "Learn to talk about your daily activities and reflexive verbs",
-    "level": 5,
-    "exercises": [
-        {
-            "id": "ex_dr_1",
-            "type": "multipleChoice",
-            "question": "How do you say 'I wake up' in Spanish?",
-            "options": [
-                "Me despierto",
-                "Yo despierto",
-                "Se despierta",
-                "Te despiertas"
-            ],
-            "correctAnswer": "Me despierto"
-        },
-        {
-            "id": "ex_dr_2",
-            "type": "translateThis",
-            "question": "Me ducho por la mañana",
-            "options": [],
-            "correctAnswer": "I shower in the morning"
-        },
-        {
-            "id": "ex_dr_3",
-            "type": "fillInBlank",
-            "question": "Ella ___ a las ocho",
-            "options": [
-                "se levanta",
-                "me levanto",
-                "te levantas",
-                "nos levantamos"
-            ],
-            "correctAnswer": "se levanta"
-        },
-        {
-            "id": "ex_dr_4",
-            "type": "matchPairs",
-            "question": "Match the routine verbs",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "Acostarse",
-                        "native": "To go to bed"
-                    },
-                    {
-                        "target": "Dormir",
-                        "native": "To sleep"
-                    },
-                    {
-                        "target": "Comer",
-                        "native": "To eat"
-                    },
-                    {
-                        "target": "Trabajar",
-                        "native": "To work"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "ex_dr_5",
-            "type": "multipleChoice",
-            "question": "How do you say \"I wake up\" in Spanish?",
-            "options": [
-                "Me despierto",
-                "Me acuesto",
-                "Me ducho",
-                "Desayuno"
-            ],
-            "correctAnswer": "Me despierto"
-        },
-        {
-            "id": "ex_dr_6",
-            "type": "speakThis",
-            "question": "Me levanto temprano todos los días",
-            "options": [],
-            "correctAnswer": "Me levanto temprano todos los días"
-        },
-        {
-            "id": "ex_dr_7",
-            "type": "listeningComprehension",
-            "question": "Me ducho por la mañana",
-            "options": [],
-            "correctAnswer": "Me ducho por la mañana"
-        },
-        {
-            "id": "ex_dr_8",
-            "type": "fillInBlank",
-            "question": "Por la noche me ___ a las diez",
-            "options": [
-                "acuesto",
-                "despierto",
-                "desayuno",
-                "trabajo"
-            ],
-            "correctAnswer": "acuesto"
-        },
-        {
-            "id": "ex_dr_9",
-            "type": "translateThis",
-            "question": "Tomo un café caliente",
-            "options": [],
-            "correctAnswer": "I have a hot coffee"
-        },
-        {
-            "id": "ex_dr_10",
-            "type": "listeningComprehension",
-            "question": "Cepillarse los dientes",
-            "options": [],
-            "correctAnswer": "Cepillarse los dientes"
-        }
-    ]
+  "id": "daily_routine",
+  "name": "Daily Routine",
+  "description": "Learn to talk about your daily activities and reflexive verbs",
+  "level": 5,
+  "exercises": [
+    {
+      "id": "ex_dr_1",
+      "type": "multipleChoice",
+      "question": "How do you say 'I wake up' in Spanish?",
+      "options": [
+        "Me despierto",
+        "Yo despierto",
+        "Se despierta",
+        "Te despiertas"
+      ],
+      "correctAnswer": "Me despierto"
+    },
+    {
+      "id": "ex_dr_2",
+      "type": "translateThis",
+      "question": "Me ducho por la mañana",
+      "options": [],
+      "correctAnswer": "I shower in the morning"
+    },
+    {
+      "id": "ex_dr_3",
+      "type": "fillInBlank",
+      "question": "Ella ___ a las ocho",
+      "options": [
+        "se levanta",
+        "me levanto",
+        "te levantas",
+        "nos levantamos"
+      ],
+      "correctAnswer": "se levanta"
+    },
+    {
+      "id": "ex_dr_4",
+      "type": "matchPairs",
+      "question": "Match the routine verbs",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Acostarse",
+            "native": "To go to bed"
+          },
+          {
+            "target": "Dormir",
+            "native": "To sleep"
+          },
+          {
+            "target": "Comer",
+            "native": "To eat"
+          },
+          {
+            "target": "Trabajar",
+            "native": "To work"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_dr_5",
+      "type": "multipleChoice",
+      "question": "How do you say \"I wake up\" in Spanish?",
+      "options": [
+        "Me despierto",
+        "Me acuesto",
+        "Me ducho",
+        "Desayuno"
+      ],
+      "correctAnswer": "Me despierto"
+    },
+    {
+      "id": "ex_dr_6",
+      "type": "speakThis",
+      "question": "Me levanto temprano todos los días",
+      "options": [],
+      "correctAnswer": "Me levanto temprano todos los días"
+    },
+    {
+      "id": "ex_dr_7",
+      "type": "listeningComprehension",
+      "question": "Me ducho por la mañana",
+      "options": [],
+      "correctAnswer": "Me ducho por la mañana"
+    },
+    {
+      "id": "ex_dr_8",
+      "type": "fillInBlank",
+      "question": "Por la noche me ___ a las diez",
+      "options": [
+        "acuesto",
+        "despierto",
+        "desayuno",
+        "trabajo"
+      ],
+      "correctAnswer": "acuesto"
+    },
+    {
+      "id": "ex_dr_9",
+      "type": "translateThis",
+      "question": "Tomo un café caliente",
+      "options": [],
+      "correctAnswer": "I have a hot coffee"
+    },
+    {
+      "id": "ex_dr_10",
+      "type": "listeningComprehension",
+      "question": "Cepillarse los dientes",
+      "options": [],
+      "correctAnswer": "Cepillarse los dientes"
+    },
+    {
+      "id": "ex_sp_rout_11",
+      "type": "multipleChoice",
+      "question": "¿Cómo se dice en España la acción de descansar un rato después de almorzar?",
+      "options": [
+        "Dormir la siesta / Echarse la siesta",
+        "Tomar el desayuno",
+        "Hacer merienda",
+        "Cenar temprano"
+      ],
+      "correctAnswer": "Dormir la siesta / Echarse la siesta"
+    },
+    {
+      "id": "ex_sp_rout_12",
+      "type": "translateThis",
+      "question": "Me ducho, desayuno unas tostadas con tomate y salgo hacia el metro",
+      "options": [],
+      "correctAnswer": "I take a shower, have toast with tomato for breakfast and leave for the subway"
+    }
+  ]
 }

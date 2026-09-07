@@ -364,6 +364,243 @@
             "options": [],
             "correctAnswer": "Él es mi hermano y ella es mi hermana",
             "id": "ex_g1x3_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Mi, tu, su (possessives)",
+            "options": [],
+            "correctAnswer": "My, your, his/her",
+            "id": "ex_g1x4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which possessive means 'our'?",
+            "options": [
+                "Nuestro",
+                "Mi",
+                "Su",
+                "Tu"
+            ],
+            "correctAnswer": "Nuestro",
+            "id": "ex_g1x4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ casa es grande (our)",
+            "options": [
+                "Nuestra",
+                "Nuestro",
+                "Mi",
+                "Su"
+            ],
+            "correctAnswer": "Nuestra",
+            "id": "ex_g1x4_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match possessive adjectives",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Mi",
+                        "native": "My"
+                    },
+                    {
+                        "target": "Tu",
+                        "native": "Your (informal)"
+                    },
+                    {
+                        "target": "Su",
+                        "native": "His/her/your (formal)"
+                    },
+                    {
+                        "target": "Nuestro",
+                        "native": "Our"
+                    }
+                ]
+            },
+            "id": "ex_g1x4_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Nuestra familia es grande",
+            "options": [],
+            "correctAnswer": "Nuestra familia es grande",
+            "id": "ex_g1x4_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "A mí me gusta, a ti te gusta",
+            "options": [],
+            "correctAnswer": "I like it, you like it",
+            "id": "ex_g1x5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which indirect object pronoun corresponds to 'yo'?",
+            "options": [
+                "Me",
+                "Te",
+                "Le",
+                "Nos"
+            ],
+            "correctAnswer": "Me",
+            "id": "ex_g1x5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "A ella ___ gusta el café (to her)",
+            "options": [
+                "le",
+                "me",
+                "te",
+                "nos"
+            ],
+            "correctAnswer": "le",
+            "id": "ex_g1x5_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match indirect object pronouns",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Me",
+                        "native": "To me"
+                    },
+                    {
+                        "target": "Te",
+                        "native": "To you"
+                    },
+                    {
+                        "target": "Le",
+                        "native": "To him/her/you formal"
+                    },
+                    {
+                        "target": "Nos",
+                        "native": "To us"
+                    }
+                ]
+            },
+            "id": "ex_g1x5_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "A nosotros nos gusta viajar",
+            "options": [],
+            "correctAnswer": "A nosotros nos gusta viajar",
+            "id": "ex_g1x5_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Este, ese, aquel",
+            "options": [],
+            "correctAnswer": "This, that, that (over there)",
+            "id": "ex_g1x6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which demonstrative means something far from both speakers?",
+            "options": [
+                "Aquel",
+                "Este",
+                "Ese",
+                "Esto"
+            ],
+            "correctAnswer": "Aquel",
+            "id": "ex_g1x6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ libro (over there) es de la biblioteca",
+            "options": [
+                "Aquel",
+                "Este",
+                "Ese",
+                "Esta"
+            ],
+            "correctAnswer": "Aquel",
+            "id": "ex_g1x6_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Aquel edificio es muy antiguo",
+            "options": [],
+            "correctAnswer": "Aquel edificio es muy antiguo",
+            "id": "ex_g1x6_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Este es el mío, ese es el tuyo",
+            "options": [],
+            "correctAnswer": "This one is mine, that one is yours",
+            "id": "ex_g1x7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which possessive pronoun means 'mine'?",
+            "options": [
+                "El mío",
+                "El tuyo",
+                "El suyo",
+                "El nuestro"
+            ],
+            "correctAnswer": "El mío",
+            "id": "ex_g1x7_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Ese libro es el ___ (yours)",
+            "options": [
+                "tuyo",
+                "mío",
+                "suyo",
+                "nuestro"
+            ],
+            "correctAnswer": "tuyo",
+            "id": "ex_g1x7_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "Aquellos días felices",
+            "options": [],
+            "correctAnswer": "Those happy days (far past)",
+            "id": "ex_g1x8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which demonstrative refers to something distant in time or space?",
+            "options": [
+                "Aquellos",
+                "Estos",
+                "Esos",
+                "Este"
+            ],
+            "correctAnswer": "Aquellos",
+            "id": "ex_g1x8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Cada quien con lo suyo",
+            "options": [],
+            "correctAnswer": "To each their own",
+            "id": "ex_g1x9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which pronoun expresses possession for 'his/hers/theirs' formally?",
+            "options": [
+                "Suyo",
+                "Mío",
+                "Tuyo",
+                "Nuestro"
+            ],
+            "correctAnswer": "Suyo",
+            "id": "ex_g1x9_2"
         }
     ]
 }

@@ -507,6 +507,310 @@
             "options": [],
             "correctAnswer": "Have a good day",
             "id": "ex_b1x3_10"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Me puede ayudar?",
+            "options": [],
+            "correctAnswer": "Can you help me?",
+            "id": "ex_b1x4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you ask for help politely?",
+            "options": [
+                "¿Me puede ayudar?",
+                "¡Ayuda!",
+                "No puedo",
+                "Necesito"
+            ],
+            "correctAnswer": "¿Me puede ayudar?",
+            "id": "ex_b1x4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "¿Me ___ ayudar, por favor?",
+            "options": [
+                "puede",
+                "puedo",
+                "puedes",
+                "pueden"
+            ],
+            "correctAnswer": "puede",
+            "id": "ex_b1x4_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match requests for help",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "¿Me puede ayudar?",
+                        "native": "Can you help me?"
+                    },
+                    {
+                        "target": "Necesito ayuda",
+                        "native": "I need help"
+                    },
+                    {
+                        "target": "¿Podría explicarme?",
+                        "native": "Could you explain to me?"
+                    },
+                    {
+                        "target": "No entiendo bien",
+                        "native": "I don't understand well"
+                    }
+                ]
+            },
+            "id": "ex_b1x4_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Necesito ayuda, por favor",
+            "options": [],
+            "correctAnswer": "Necesito ayuda, por favor",
+            "id": "ex_b1x4_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "¿Podría explicarme esto, por favor?",
+            "options": [],
+            "correctAnswer": "¿Podría explicarme esto, por favor?",
+            "id": "ex_b1x4_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "Gracias por su ayuda",
+            "options": [],
+            "correctAnswer": "Thank you for your help",
+            "id": "ex_b1x4_7"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Thank you for your help'?",
+            "options": [
+                "Gracias por su ayuda",
+                "Gracias por nada",
+                "De nada por ayuda",
+                "Ayuda gracias"
+            ],
+            "correctAnswer": "Gracias por su ayuda",
+            "id": "ex_b1x4_8"
+        },
+        {
+            "type": "translateThis",
+            "question": "Hasta la vista",
+            "options": [],
+            "correctAnswer": "See you around / goodbye",
+            "id": "ex_b1x5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which farewell means 'until we meet again'?",
+            "options": [
+                "Hasta la vista",
+                "Buenos días",
+                "Por favor",
+                "De nada"
+            ],
+            "correctAnswer": "Hasta la vista",
+            "id": "ex_b1x5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ la vista, amigo",
+            "options": [
+                "Hasta",
+                "Hacia",
+                "Desde",
+                "Para"
+            ],
+            "correctAnswer": "Hasta",
+            "id": "ex_b1x5_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match more farewells",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Hasta la vista",
+                        "native": "See you around"
+                    },
+                    {
+                        "target": "Nos vemos luego",
+                        "native": "See you later"
+                    },
+                    {
+                        "target": "Cuídate mucho",
+                        "native": "Take good care"
+                    },
+                    {
+                        "target": "Vaya con Dios",
+                        "native": "Go with God (farewell)"
+                    }
+                ]
+            },
+            "id": "ex_b1x5_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Vaya con Dios",
+            "options": [],
+            "correctAnswer": "Vaya con Dios",
+            "id": "ex_b1x5_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "Nos vemos luego, cuídate mucho",
+            "options": [],
+            "correctAnswer": "Nos vemos luego, cuídate mucho",
+            "id": "ex_b1x5_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "No pasa nada",
+            "options": [],
+            "correctAnswer": "It's fine / no worries",
+            "id": "ex_b1x6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'No pasa nada' mean?",
+            "options": [
+                "It's fine, no worries",
+                "Nothing happens ever",
+                "It doesn't matter to me",
+                "Something happened"
+            ],
+            "correctAnswer": "It's fine, no worries",
+            "id": "ex_b1x6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ pasa nada, tranquilo",
+            "options": [
+                "No",
+                "Sí",
+                "Ya",
+                "Muy"
+            ],
+            "correctAnswer": "No",
+            "id": "ex_b1x6_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match reassurance phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "No pasa nada",
+                        "native": "No worries"
+                    },
+                    {
+                        "target": "Tranquilo/a",
+                        "native": "Calm down / relax"
+                    },
+                    {
+                        "target": "No te preocupes",
+                        "native": "Don't worry"
+                    },
+                    {
+                        "target": "Todo está bien",
+                        "native": "Everything is fine"
+                    }
+                ]
+            },
+            "id": "ex_b1x6_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Tranquilo, no pasa nada",
+            "options": [],
+            "correctAnswer": "Tranquilo, no pasa nada",
+            "id": "ex_b1x6_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Con mucho gusto",
+            "options": [],
+            "correctAnswer": "With great pleasure",
+            "id": "ex_b1x7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you respond warmly to a request?",
+            "options": [
+                "Con mucho gusto",
+                "No puedo",
+                "Tal vez luego",
+                "No sé"
+            ],
+            "correctAnswer": "Con mucho gusto",
+            "id": "ex_b1x7_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ mucho gusto te ayudo (with)",
+            "options": [
+                "Con",
+                "Sin",
+                "Por",
+                "De"
+            ],
+            "correctAnswer": "Con",
+            "id": "ex_b1x7_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Con mucho gusto le ayudo, señor",
+            "options": [],
+            "correctAnswer": "Con mucho gusto le ayudo, señor",
+            "id": "ex_b1x7_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un placer saludarte",
+            "options": [],
+            "correctAnswer": "A pleasure to greet you",
+            "id": "ex_b1x8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which is the most casual way to say hi to a friend?",
+            "options": [
+                "¡Qué tal!",
+                "Buenos días, señor",
+                "Un placer conocerle",
+                "Buenas tardes, señora"
+            ],
+            "correctAnswer": "¡Qué tal!",
+            "id": "ex_b1x8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Sin ningún problema",
+            "options": [],
+            "correctAnswer": "Without any problem",
+            "id": "ex_b1x9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'no problem at all'?",
+            "options": [
+                "Sin ningún problema",
+                "Con muchos problemas",
+                "Es un problema",
+                "Hay problemas"
+            ],
+            "correctAnswer": "Sin ningún problema",
+            "id": "ex_b1x9_2"
         }
     ]
 }

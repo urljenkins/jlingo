@@ -92,6 +92,83 @@
       "correctAnswer": "de",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_art_7",
+      "type": "multipleChoice",
+      "question": "Welk lidwoord gebruik je voor alle meervoudsvormen in het Nederlands?",
+      "options": [
+        "De (altijd de in het meervoud)",
+        "Het",
+        "Een",
+        "Geen"
+      ],
+      "correctAnswer": "De (altijd de in het meervoud)"
+    },
+    {
+      "id": "ex_nl_art_8",
+      "type": "translateThis",
+      "question": "Het huis is groot en de tuin is groen",
+      "options": [],
+      "correctAnswer": "The house is big and the garden is green"
+    },
+    {
+      "id": "ex_nl_art_9",
+      "type": "fillInBlank",
+      "question": "Alle verkleinwoorden (zoals kindje, kopje, broodje) krijgen altijd het lidwoord ___ .",
+      "options": [
+        "het",
+        "de",
+        "een",
+        "der"
+      ],
+      "correctAnswer": "het"
+    },
+    {
+      "id": "ex_nl_art_10",
+      "type": "matchPairs",
+      "question": "Koppel de woorden aan het juiste lidwoord",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "De man / De vrouw",
+            "native": "De (common gender)"
+          },
+          {
+            "target": "Het kind / Het boek",
+            "native": "Het (neuter)"
+          },
+          {
+            "target": "De boeken",
+            "native": "De (plural is always de)"
+          },
+          {
+            "target": "Het kopje koffie",
+            "native": "Het (diminutives are always het)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_art_11",
+      "type": "fillInBlank",
+      "question": "Ik drink graag een kopje thee in ___ ochtend.",
+      "options": [
+        "de",
+        "het",
+        "een",
+        "geen"
+      ],
+      "correctAnswer": "de"
+    },
+    {
+      "id": "ex_nl_art_12",
+      "type": "translateThis",
+      "question": "Het meisje leest de krant",
+      "options": [],
+      "correctAnswer": "The girl reads the newspaper"
     }
   ]
 }

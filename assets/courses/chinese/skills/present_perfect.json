@@ -92,6 +92,83 @@
       "correctAnswer": "还没 (hái méi)",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pp_7",
+      "type": "multipleChoice",
+      "question": "Which construction indicates that an action is currently underway (progressive / continuous)?",
+      "options": [
+        "正在...呢 (zhèngzài... ne) or 在 (zài)",
+        "已经...了 (yǐjīng... le)",
+        "从来没 (cónglái méi)",
+        "快要...了 (kuàiyào... le)"
+      ],
+      "correctAnswer": "正在...呢 (zhèngzài... ne) or 在 (zài)"
+    },
+    {
+      "id": "ex_zh_pp_8",
+      "type": "translateThis",
+      "question": "妈妈正在厨房做晚饭呢",
+      "options": [],
+      "correctAnswer": "Mom is making dinner in the kitchen right now"
+    },
+    {
+      "id": "ex_zh_pp_9",
+      "type": "fillInBlank",
+      "question": "外面正 ___ 下大雪呢。(It is snowing heavily outside right now.)",
+      "options": [
+        "在",
+        "了",
+        "过",
+        "被"
+      ],
+      "correctAnswer": "在"
+    },
+    {
+      "id": "ex_zh_pp_10",
+      "type": "matchPairs",
+      "question": "Match continuous aspect patterns",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "门开着 (着 / zhe)",
+            "native": "The door is open (continuous state)"
+          },
+          {
+            "target": "正听着音乐",
+            "native": "Listening to music right now"
+          },
+          {
+            "target": "站着 (zhànzhe)",
+            "native": "Standing (postural state)"
+          },
+          {
+            "target": "穿着红衣服",
+            "native": "Wearing red clothes (state)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pp_11",
+      "type": "fillInBlank",
+      "question": "老师坐 ___ 讲课。(The teacher is sitting while lecturing.)",
+      "options": [
+        "着",
+        "了",
+        "过",
+        "在"
+      ],
+      "correctAnswer": "着"
+    },
+    {
+      "id": "ex_zh_pp_12",
+      "type": "translateThis",
+      "question": "你正在看什么电视节目？",
+      "options": [],
+      "correctAnswer": "What TV show are you watching right now?"
     }
   ]
 }

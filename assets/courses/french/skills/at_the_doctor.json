@@ -82,6 +82,83 @@
       "correctAnswer": "Respirez profondément et toussez doucement",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_doc_6",
+      "type": "multipleChoice",
+      "question": "Comment exprime-t-on la douleur physique en français?",
+      "options": [
+        "Avoir mal à + partie du corps (ex: J'ai mal à la tête)",
+        "Être mal de tête",
+        "Faire mal la tête",
+        "Avoir la douleur sur la tête"
+      ],
+      "correctAnswer": "Avoir mal à + partie du corps (ex: J'ai mal à la tête)"
+    },
+    {
+      "id": "ex_fr_doc_7",
+      "type": "translateThis",
+      "question": "J'ai de la fièvre et une forte toux depuis deux jours",
+      "options": [],
+      "correctAnswer": "I have a fever and a bad cough since two days"
+    },
+    {
+      "id": "ex_fr_doc_8",
+      "type": "fillInBlank",
+      "question": "Le médecin m'a rédigé une ___ pour chercher les médicaments à la pharmacie.",
+      "options": [
+        "ordonnance",
+        "addition",
+        "recette",
+        "carte"
+      ],
+      "correctAnswer": "ordonnance"
+    },
+    {
+      "id": "ex_fr_doc_9",
+      "type": "matchPairs",
+      "question": "Associez les expressions de santé",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Avoir mal au ventre",
+            "native": "Stomach ache"
+          },
+          {
+            "target": "Avoir mal à la gorge",
+            "native": "Sore throat"
+          },
+          {
+            "target": "Être enrhumé",
+            "native": "To have a cold"
+          },
+          {
+            "target": "Prendre un comprimé",
+            "native": "To take a pill / tablet"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_doc_10",
+      "type": "fillInBlank",
+      "question": "Prenez ce sirop trois fois par ___ après chaque repas.",
+      "options": [
+        "jour",
+        "an",
+        "siècle",
+        "heure"
+      ],
+      "correctAnswer": "jour"
+    },
+    {
+      "id": "ex_fr_doc_11",
+      "type": "translateThis",
+      "question": "Où avez-vous mal exactement ?",
+      "options": [],
+      "correctAnswer": "Where does it hurt exactly?"
     }
   ]
 }

@@ -92,6 +92,83 @@
       "correctAnswer": "Hospital",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_doc_7",
+      "type": "multipleChoice",
+      "question": "How do you say \"I caught a cold, have a cough and fever\" in Chinese?",
+      "options": [
+        "我感冒了，咳嗽还发烧 (wǒ gǎnmào le, késou hái fāshāo)",
+        "我肚子疼不发烧",
+        "我很饿想吃药",
+        "我没病不用看医生"
+      ],
+      "correctAnswer": "我感冒了，咳嗽还发烧 (wǒ gǎnmào le, késou hái fāshāo)"
+    },
+    {
+      "id": "ex_zh_doc_8",
+      "type": "translateThis",
+      "question": "医生，我头疼得厉害，晚上睡不着",
+      "options": [],
+      "correctAnswer": "Doctor, I have a severe headache and can't sleep at night"
+    },
+    {
+      "id": "ex_zh_doc_9",
+      "type": "fillInBlank",
+      "question": "这种感冒药一天吃三 ___ ，饭后服用。(Take this cold medicine three times a day, after meals.)",
+      "options": [
+        "次",
+        "本",
+        "杯",
+        "条"
+      ],
+      "correctAnswer": "次"
+    },
+    {
+      "id": "ex_zh_doc_10",
+      "type": "matchPairs",
+      "question": "Match symptoms and clinic vocabulary in Chinese",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "发烧 (fāshāo)",
+            "native": "Have a fever"
+          },
+          {
+            "target": "头疼 (tóuténg)",
+            "native": "Headache"
+          },
+          {
+            "target": "肚子疼 (dùzi téng)",
+            "native": "Stomach ache"
+          },
+          {
+            "target": "量体温 (liáng tǐwēn)",
+            "native": "Take body temperature"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_doc_11",
+      "type": "fillInBlank",
+      "question": "医生建议我多喝热水，好好 ___ 几天。(The doctor advised me to drink plenty of hot water and rest properly for a few days.)",
+      "options": [
+        "休息",
+        "工作",
+        "跑步",
+        "学习"
+      ],
+      "correctAnswer": "休息"
+    },
+    {
+      "id": "ex_zh_doc_12",
+      "type": "translateThis",
+      "question": "祝你早日康复！",
+      "options": [],
+      "correctAnswer": "Wishing you a speedy recovery!"
     }
   ]
 }

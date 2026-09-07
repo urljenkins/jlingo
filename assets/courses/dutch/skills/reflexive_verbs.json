@@ -92,6 +92,83 @@
       "correctAnswer": "To remember",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_refl_7",
+      "type": "multipleChoice",
+      "question": "Welk wederkerend voornaamwoord hoort bij \"hij / zij / zij (meervoud)\"?",
+      "options": [
+        "Zich",
+        "Haar",
+        "Zijn",
+        "Me"
+      ],
+      "correctAnswer": "Zich"
+    },
+    {
+      "id": "ex_nl_refl_8",
+      "type": "translateThis",
+      "question": "Wij voelen ons vandaag uitstekend",
+      "options": [],
+      "correctAnswer": "We feel excellent today"
+    },
+    {
+      "id": "ex_nl_refl_9",
+      "type": "fillInBlank",
+      "question": "Herinner jij ___ die vakantie in Spanje nog?",
+      "options": [
+        "je",
+        "zich",
+        "me",
+        "ons"
+      ],
+      "correctAnswer": "je"
+    },
+    {
+      "id": "ex_nl_refl_10",
+      "type": "matchPairs",
+      "question": "Koppel wederkerende voornaamwoorden aan onderwerpen",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Ik was...",
+            "native": "me (myself)"
+          },
+          {
+            "target": "Jij wast...",
+            "native": "je (yourself)"
+          },
+          {
+            "target": "Hij wast...",
+            "native": "zich (himself)"
+          },
+          {
+            "target": "Wij wassen...",
+            "native": "ons (ourselves)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_refl_11",
+      "type": "fillInBlank",
+      "question": "Zij verheugen ___ op het feest van komend weekend.",
+      "options": [
+        "zich",
+        "ons",
+        "je",
+        "me"
+      ],
+      "correctAnswer": "zich"
+    },
+    {
+      "id": "ex_nl_refl_12",
+      "type": "translateThis",
+      "question": "Maak je geen zorgen, alles komt goed",
+      "options": [],
+      "correctAnswer": "Don't worry, everything will be fine"
     }
   ]
 }

@@ -10,7 +10,10 @@
       "question": "いち",
       "options": [],
       "correctAnswer": "One",
-      "acceptableAnswers": ["One", "1"],
+      "acceptableAnswers": [
+        "One",
+        "1"
+      ],
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
     },
@@ -18,7 +21,12 @@
       "id": "ex_16",
       "type": "multipleChoice",
       "question": "What number is 'ご'?",
-      "options": ["5", "3", "7", "9"],
+      "options": [
+        "5",
+        "3",
+        "7",
+        "9"
+      ],
       "correctAnswer": "5",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
@@ -27,7 +35,12 @@
       "id": "ex_17",
       "type": "fillInBlank",
       "question": "に たす に は ___",
-      "options": ["よん", "さん", "ご", "ろく"],
+      "options": [
+        "よん",
+        "さん",
+        "ご",
+        "ろく"
+      ],
       "correctAnswer": "よん",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
@@ -42,10 +55,22 @@
       "nativeLanguage": "en-US",
       "metadata": {
         "pairs": [
-          {"target": "いち", "native": "One"},
-          {"target": "に", "native": "Two"},
-          {"target": "さん", "native": "Three"},
-          {"target": "よん", "native": "Four"}
+          {
+            "target": "いち",
+            "native": "One"
+          },
+          {
+            "target": "に",
+            "native": "Two"
+          },
+          {
+            "target": "さん",
+            "native": "Three"
+          },
+          {
+            "target": "よん",
+            "native": "Four"
+          }
         ]
       }
     },
@@ -57,6 +82,83 @@
       "correctAnswer": "ご",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_num_6",
+      "type": "multipleChoice",
+      "question": "Which counter is used for flat, thin objects (paper, tickets, shirts)?",
+      "options": [
+        "枚 (まい / mai)",
+        "本 (ほん / hon)",
+        "冊 (さつ / satsu)",
+        "匹 (ひき / hiki)"
+      ],
+      "correctAnswer": "枚 (まい / mai)"
+    },
+    {
+      "id": "ex_ja_num_7",
+      "type": "translateThis",
+      "question": "きっぷ を にまい かいました",
+      "options": [],
+      "correctAnswer": "I bought two tickets"
+    },
+    {
+      "id": "ex_ja_num_8",
+      "type": "fillInBlank",
+      "question": "ほん を ___ にさつ よみました。(I read two books.)",
+      "options": [
+        "にさつ",
+        "にほん",
+        "にまい",
+        "にこ"
+      ],
+      "correctAnswer": "にさつ"
+    },
+    {
+      "id": "ex_ja_num_9",
+      "type": "matchPairs",
+      "question": "Match common Japanese counters to categories",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "人 (にん / nin)",
+            "native": "People counter (一人, 二人, 三人...)"
+          },
+          {
+            "target": "本 (ほん / hon)",
+            "native": "Long, cylindrical items (bottles, pens)"
+          },
+          {
+            "target": "冊 (さつ / satsu)",
+            "native": "Bound volumes (books, notebooks)"
+          },
+          {
+            "target": "匹 (ひき / hiki)",
+            "native": "Small animals (cats, dogs, fish)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_num_10",
+      "type": "fillInBlank",
+      "question": "ビール を ___ にほん ください。(Two bottles/cans of beer, please.)",
+      "options": [
+        "にほん",
+        "にまい",
+        "にさつ",
+        "にだい"
+      ],
+      "correctAnswer": "にほん"
+    },
+    {
+      "id": "ex_ja_num_11",
+      "type": "translateThis",
+      "question": "りんご を みっつ ください",
+      "options": [],
+      "correctAnswer": "Please give me three apples"
     }
   ]
 }

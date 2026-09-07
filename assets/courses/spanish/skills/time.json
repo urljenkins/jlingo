@@ -259,6 +259,170 @@
             "options": [],
             "correctAnswer": "Dentro de media hora",
             "id": "ex_timex3_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "De vez en cuando",
+            "options": [],
+            "correctAnswer": "From time to time",
+            "id": "ex_timex4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'always'?",
+            "options": [
+                "Siempre",
+                "Nunca",
+                "A veces",
+                "Rara vez"
+            ],
+            "correctAnswer": "Siempre",
+            "id": "ex_timex4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ llego tarde al trabajo (never)",
+            "options": [
+                "Nunca",
+                "Siempre",
+                "A veces",
+                "Casi"
+            ],
+            "correctAnswer": "Nunca",
+            "id": "ex_timex4_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "A veces llego temprano",
+            "options": [],
+            "correctAnswer": "A veces llego temprano",
+            "id": "ex_timex4_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Todo el tiempo",
+            "options": [],
+            "correctAnswer": "All the time",
+            "id": "ex_timex5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'once in a while'?",
+            "options": [
+                "De vez en cuando",
+                "Todo el tiempo",
+                "Nunca jamás",
+                "Todos los días"
+            ],
+            "correctAnswer": "De vez en cuando",
+            "id": "ex_timex5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Como pizza ___ (once in a while)",
+            "options": [
+                "de vez en cuando",
+                "todo el tiempo",
+                "nunca",
+                "siempre"
+            ],
+            "correctAnswer": "de vez en cuando",
+            "id": "ex_timex5_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "De vez en cuando salgo a caminar",
+            "options": [],
+            "correctAnswer": "De vez en cuando salgo a caminar",
+            "id": "ex_timex5_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "A tiempo",
+            "options": [],
+            "correctAnswer": "On time",
+            "id": "ex_timex6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'to be late'?",
+            "options": [
+                "Llegar tarde",
+                "Llegar a tiempo",
+                "Llegar temprano",
+                "Llegar rápido"
+            ],
+            "correctAnswer": "Llegar tarde",
+            "id": "ex_timex6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Siempre llego ___ a mis citas (on time)",
+            "options": [
+                "a tiempo",
+                "tarde",
+                "pronto",
+                "lento"
+            ],
+            "correctAnswer": "a tiempo",
+            "id": "ex_timex6_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "Falta poco tiempo",
+            "options": [],
+            "correctAnswer": "There's not much time left",
+            "id": "ex_timex7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'there's plenty of time'?",
+            "options": [
+                "Sobra tiempo",
+                "Falta tiempo",
+                "No hay tiempo",
+                "El tiempo pasó"
+            ],
+            "correctAnswer": "Sobra tiempo",
+            "id": "ex_timex7_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Justo a tiempo",
+            "options": [],
+            "correctAnswer": "Just in time",
+            "id": "ex_timex8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'right on time'?",
+            "options": [
+                "Justo a tiempo",
+                "Casi tarde",
+                "Muy temprano",
+                "Fuera de tiempo"
+            ],
+            "correctAnswer": "Justo a tiempo",
+            "id": "ex_timex8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Cada hora en punto",
+            "options": [],
+            "correctAnswer": "Every hour on the dot",
+            "id": "ex_timex9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'every hour'?",
+            "options": [
+                "Cada hora",
+                "Una hora",
+                "Media hora",
+                "Toda hora"
+            ],
+            "correctAnswer": "Cada hora",
+            "id": "ex_timex9_2"
         }
     ]
 }

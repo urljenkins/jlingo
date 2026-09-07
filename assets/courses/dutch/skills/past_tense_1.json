@@ -92,6 +92,83 @@
       "correctAnswer": "ging",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt1_7",
+      "type": "multipleChoice",
+      "question": "Wat is de regel van 't kofschip / 't fokschaap voor de verleden tijd van regelmatige werkwoorden?",
+      "options": [
+        "Eindigt de stam op t, k, f, s, ch, p, dan krijgt de verleden tijd -te(n); anders -de(n)",
+        "Alle werkwoorden krijgen -ten in het meervoud",
+        "Het bepaalt of je \"hebben\" of \"zijn\" gebruikt",
+        "Het geldt alleen voor sterke werkwoorden"
+      ],
+      "correctAnswer": "Eindigt de stam op t, k, f, s, ch, p, dan krijgt de verleden tijd -te(n); anders -de(n)"
+    },
+    {
+      "id": "ex_nl_pt1_8",
+      "type": "translateThis",
+      "question": "Gisteren werkte ik de hele dag thuis",
+      "options": [],
+      "correctAnswer": "Yesterday I worked from home all day"
+    },
+    {
+      "id": "ex_nl_pt1_9",
+      "type": "fillInBlank",
+      "question": "Wij ___ vorige week in Rotterdam (verleden tijd van wonen).",
+      "options": [
+        "woonden",
+        "woonten",
+        "woonde",
+        "woont"
+      ],
+      "correctAnswer": "woonden"
+    },
+    {
+      "id": "ex_nl_pt1_10",
+      "type": "matchPairs",
+      "question": "Koppel onregelmatige sterke werkwoorden in de verleden tijd (o.v.t.)",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Gaan -> ging / gingen",
+            "native": "Went"
+          },
+          {
+            "target": "Kopen -> kocht / kochten",
+            "native": "Bought"
+          },
+          {
+            "target": "Zien -> zag / zagen",
+            "native": "Saw"
+          },
+          {
+            "target": "Doen -> deed / deden",
+            "native": "Did"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pt1_11",
+      "type": "fillInBlank",
+      "question": "Hij ___ een interessante film op televisie (sterk werkwoord zien).",
+      "options": [
+        "zag",
+        "zagte",
+        "zagde",
+        "gezien"
+      ],
+      "correctAnswer": "zag"
+    },
+    {
+      "id": "ex_nl_pt1_12",
+      "type": "translateThis",
+      "question": "Vorig jaar reisden we met de trein door Europa",
+      "options": [],
+      "correctAnswer": "Last year we traveled by train through Europe"
     }
   ]
 }

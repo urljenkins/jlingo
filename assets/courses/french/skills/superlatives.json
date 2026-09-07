@@ -82,6 +82,83 @@
       "correctAnswer": "C'est la décision la plus sage dans cette situation",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_sup_6",
+      "type": "multipleChoice",
+      "question": "Comment forme-t-on le superlatif en français?",
+      "options": [
+        "L'article défini (le/la/les) + plus/moins + adjectif",
+        "Seulement le mot \"très\"",
+        "En ajoutant le suffixe -issime",
+        "Plus + adjectif sans article"
+      ],
+      "correctAnswer": "L'article défini (le/la/les) + plus/moins + adjectif"
+    },
+    {
+      "id": "ex_fr_sup_7",
+      "type": "translateThis",
+      "question": "La tour Eiffel est le monument le plus célèbre de Paris",
+      "options": [],
+      "correctAnswer": "The Eiffel Tower is the most famous monument in Paris"
+    },
+    {
+      "id": "ex_fr_sup_8",
+      "type": "fillInBlank",
+      "question": "C'est la ___ belle vue de toute la région.",
+      "options": [
+        "plus",
+        "beaucoup",
+        "très",
+        "trop"
+      ],
+      "correctAnswer": "plus"
+    },
+    {
+      "id": "ex_fr_sup_9",
+      "type": "matchPairs",
+      "question": "Associez les superlatifs réguliers et irréguliers",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Le meilleur / La meilleure",
+            "native": "The best (adjective)"
+          },
+          {
+            "target": "Le pire / La pire",
+            "native": "The worst (adjective)"
+          },
+          {
+            "target": "Le mieux",
+            "native": "The best (adverb)"
+          },
+          {
+            "target": "Le plus grand",
+            "native": "The largest / tallest"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_sup_10",
+      "type": "fillInBlank",
+      "question": "C'est l'hôtel le ___ cher de la ville (le moins coûteux).",
+      "options": [
+        "moins",
+        "plus",
+        "pire",
+        "mieux"
+      ],
+      "correctAnswer": "moins"
+    },
+    {
+      "id": "ex_fr_sup_11",
+      "type": "translateThis",
+      "question": "Ce sont les meilleurs croissants du quartier",
+      "options": [],
+      "correctAnswer": "These are the best croissants in the neighborhood"
     }
   ]
 }

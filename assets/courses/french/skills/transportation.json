@@ -82,6 +82,83 @@
       "correctAnswer": "Attention à la fermeture des portes",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_trans_6",
+      "type": "multipleChoice",
+      "question": "Quelle préposition utilise-t-on pour monter à l'intérieur d'un véhicule fermé (train, voiture, avion)?",
+      "options": [
+        "En (en train, en voiture, en avion)",
+        "À (à train)",
+        "Par (par voiture)",
+        "Sur (sur avion)"
+      ],
+      "correctAnswer": "En (en train, en voiture, en avion)"
+    },
+    {
+      "id": "ex_fr_trans_7",
+      "type": "translateThis",
+      "question": "Je prends le bus tous les matins pour aller travailler",
+      "options": [],
+      "correctAnswer": "I take the bus every morning to go to work"
+    },
+    {
+      "id": "ex_fr_trans_8",
+      "type": "fillInBlank",
+      "question": "Il aime faire du ___ le long de la Seine (deux roues sans moteur).",
+      "options": [
+        "vélo",
+        "train",
+        "bateau",
+        "taxi"
+      ],
+      "correctAnswer": "vélo"
+    },
+    {
+      "id": "ex_fr_trans_9",
+      "type": "matchPairs",
+      "question": "Associez les moyens de transport et prépositions",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "À pied",
+            "native": "On foot"
+          },
+          {
+            "target": "À vélo / À moto",
+            "native": "By bicycle / motorbike"
+          },
+          {
+            "target": "En TGV",
+            "native": "By high-speed train"
+          },
+          {
+            "target": "En métro",
+            "native": "By subway"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_trans_10",
+      "type": "fillInBlank",
+      "question": "N'oubliez pas de ___ votre billet avant de monter dans le train.",
+      "options": [
+        "composter (ou valider)",
+        "manger",
+        "perdre",
+        "déchirer"
+      ],
+      "correctAnswer": "composter (ou valider)"
+    },
+    {
+      "id": "ex_fr_trans_11",
+      "type": "translateThis",
+      "question": "Le train part de la voie numéro trois",
+      "options": [],
+      "correctAnswer": "The train leaves from track number three"
     }
   ]
 }

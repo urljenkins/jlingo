@@ -1,81 +1,158 @@
 {
-    "id": "transportation",
-    "name": "Transportation",
-    "description": "Learn vocabulary for getting around",
-    "level": 9,
-    "exercises": [
-        {
-            "id": "ex_tr_1",
-            "type": "matchPairs",
-            "question": "Match transportation words",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "El autobús",
-                        "native": "The bus"
-                    },
-                    {
-                        "target": "El tren",
-                        "native": "The train"
-                    },
-                    {
-                        "target": "El avión",
-                        "native": "The airplane"
-                    },
-                    {
-                        "target": "El taxi",
-                        "native": "The taxi"
-                    },
-                    {
-                        "target": "El metro",
-                        "native": "The subway"
-                    },
-                    {
-                        "target": "El carro",
-                        "native": "The car"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "ex_tr_2",
-            "type": "translateThis",
-            "question": "Un boleto de ida y vuelta",
-            "options": [],
-            "correctAnswer": "A round-trip ticket"
-        },
-        {
-            "id": "ex_tr_3",
-            "type": "fillInBlank",
-            "question": "¿A qué hora ___ el tren?",
-            "options": [
-                "sale",
-                "llega",
-                "viene",
-                "va"
-            ],
-            "correctAnswer": "sale"
-        },
-        {
-            "id": "ex_tr_4",
-            "type": "multipleChoice",
-            "question": "How do you say 'platform' (at a train station)?",
-            "options": [
-                "Andén",
-                "Estación",
-                "Parada",
-                "Billete"
-            ],
-            "correctAnswer": "Andén"
-        },
-        {
-            "id": "ex_tr_5",
-            "type": "speakThis",
-            "question": "Quiero un billete para Madrid",
-            "options": [],
-            "correctAnswer": "Quiero un billete para Madrid"
-        }
-    ]
+  "id": "transportation",
+  "name": "Transportation",
+  "description": "Learn vocabulary for getting around",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_tr_1",
+      "type": "matchPairs",
+      "question": "Match transportation words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "El autobús",
+            "native": "The bus"
+          },
+          {
+            "target": "El tren",
+            "native": "The train"
+          },
+          {
+            "target": "El avión",
+            "native": "The airplane"
+          },
+          {
+            "target": "El taxi",
+            "native": "The taxi"
+          },
+          {
+            "target": "El metro",
+            "native": "The subway"
+          },
+          {
+            "target": "El carro",
+            "native": "The car"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_tr_2",
+      "type": "translateThis",
+      "question": "Un boleto de ida y vuelta",
+      "options": [],
+      "correctAnswer": "A round-trip ticket"
+    },
+    {
+      "id": "ex_tr_3",
+      "type": "fillInBlank",
+      "question": "¿A qué hora ___ el tren?",
+      "options": [
+        "sale",
+        "llega",
+        "viene",
+        "va"
+      ],
+      "correctAnswer": "sale"
+    },
+    {
+      "id": "ex_tr_4",
+      "type": "multipleChoice",
+      "question": "How do you say 'platform' (at a train station)?",
+      "options": [
+        "Andén",
+        "Estación",
+        "Parada",
+        "Billete"
+      ],
+      "correctAnswer": "Andén"
+    },
+    {
+      "id": "ex_tr_5",
+      "type": "speakThis",
+      "question": "Quiero un billete para Madrid",
+      "options": [],
+      "correctAnswer": "Quiero un billete para Madrid"
+    },
+    {
+      "id": "ex_latam_trans_6",
+      "type": "multipleChoice",
+      "question": "¿Cuáles son términos habituales para \"car\" y \"bus\" en Latinoamérica (a diferencia de España)?",
+      "options": [
+        "Carro / auto y colectivo / camión / guagua / micro / bus",
+        "Coche y autobús únicamente",
+        "Vagón y tranvía",
+        "Carroza y furgón"
+      ],
+      "correctAnswer": "Carro / auto y colectivo / camión / guagua / micro / bus"
+    },
+    {
+      "id": "ex_latam_trans_7",
+      "type": "translateThis",
+      "question": "Manejo mi carro todos los días para ir a la oficina",
+      "options": [],
+      "correctAnswer": "I drive my car every day to go to the office"
+    },
+    {
+      "id": "ex_latam_trans_8",
+      "type": "fillInBlank",
+      "question": "Voy a pedir un ___ para regresar a casa porque es muy tarde.",
+      "options": [
+        "taxi",
+        "avión",
+        "tren",
+        "barco"
+      ],
+      "correctAnswer": "taxi"
+    },
+    {
+      "id": "ex_latam_trans_9",
+      "type": "matchPairs",
+      "question": "Empareja términos de transporte latinoamericanos",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Manejar (conducir)",
+            "native": "To drive"
+          },
+          {
+            "target": "El boleto / pasaje",
+            "native": "The ticket"
+          },
+          {
+            "target": "La parada del autobús",
+            "native": "The bus stop"
+          },
+          {
+            "target": "El celular (móvil)",
+            "native": "Mobile phone"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_latam_trans_10",
+      "type": "fillInBlank",
+      "question": "Compré dos ___ de avión para viajar a Santiago de Chile.",
+      "options": [
+        "boletos (o pasajes)",
+        "cuadras",
+        "esquinas",
+        "carros"
+      ],
+      "correctAnswer": "boletos (o pasajes)"
+    },
+    {
+      "id": "ex_latam_trans_11",
+      "type": "translateThis",
+      "question": "El metro de la ciudad es muy rápido y económico",
+      "options": [],
+      "correctAnswer": "The city subway is very fast and economical"
+    }
+  ]
 }

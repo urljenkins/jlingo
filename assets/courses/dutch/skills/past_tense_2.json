@@ -92,6 +92,83 @@
       "correctAnswer": "toen",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_pt2_7",
+      "type": "multipleChoice",
+      "question": "Wanneer gebruiken Nederlanders de onvoltooid verleden tijd (o.v.t. - werkte, sliep) in plaats van de voltooide tijd?",
+      "options": [
+        "Voor langere verhalen, achtergrondbeschrijvingen en vaste gewoontes in het verleden",
+        "Alleen voor dingen die vijf minuten geleden gebeurden",
+        "Nooit, de o.v.t. bestaat niet meer",
+        "Alleen in formele brieven"
+      ],
+      "correctAnswer": "Voor langere verhalen, achtergrondbeschrijvingen en vaste gewoontes in het verleden"
+    },
+    {
+      "id": "ex_nl_pt2_8",
+      "type": "translateThis",
+      "question": "Toen ik kind was, speelde ik altijd buiten op straat",
+      "options": [],
+      "correctAnswer": "When I was a child, I always played outside on the street"
+    },
+    {
+      "id": "ex_nl_pt2_9",
+      "type": "fillInBlank",
+      "question": "Het weer ___ prachtig en de zon scheen volop.",
+      "options": [
+        "was",
+        "waren",
+        "is",
+        "geweest"
+      ],
+      "correctAnswer": "was"
+    },
+    {
+      "id": "ex_nl_pt2_10",
+      "type": "matchPairs",
+      "question": "Koppel verledentijdsvormen van modale werkwoorden",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Kunnen -> kon / konden",
+            "native": "Could / Was able to"
+          },
+          {
+            "target": "Moeten -> moest / moesten",
+            "native": "Had to"
+          },
+          {
+            "target": "Willen -> wilde (wou) / wilden",
+            "native": "Wanted to"
+          },
+          {
+            "target": "Mogen -> mocht / mochten",
+            "native": "Was allowed to"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_pt2_11",
+      "type": "fillInBlank",
+      "question": "Ik ___ gisteren niet komen omdat ik ziek was.",
+      "options": [
+        "kon",
+        "konden",
+        "kan",
+        "gekund"
+      ],
+      "correctAnswer": "kon"
+    },
+    {
+      "id": "ex_nl_pt2_12",
+      "type": "translateThis",
+      "question": "Vroeger hadden mensen geen mobiele telefoons",
+      "options": [],
+      "correctAnswer": "In the past people didn't have mobile phones"
     }
   ]
 }

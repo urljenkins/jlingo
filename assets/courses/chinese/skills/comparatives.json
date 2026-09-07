@@ -92,6 +92,83 @@
       "correctAnswer": "更 (gèng)",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_comp_7",
+      "type": "multipleChoice",
+      "question": "What is the correct structure for comparative sentences using \"比\" (bǐ)?",
+      "options": [
+        "A + 比 + B + Adjective (e.g. 飞机比火车快)",
+        "A + 比 + Adjective + B",
+        "比 + A + B + Adjective",
+        "A + 和 + B + 比 + Adjective"
+      ],
+      "correctAnswer": "A + 比 + B + Adjective (e.g. 飞机比火车快)"
+    },
+    {
+      "id": "ex_zh_comp_8",
+      "type": "translateThis",
+      "question": "今天比昨天冷多了",
+      "options": [],
+      "correctAnswer": "Today is much colder than yesterday"
+    },
+    {
+      "id": "ex_zh_comp_9",
+      "type": "fillInBlank",
+      "question": "哥哥比弟弟高十 ___ 。(Older brother is ten centimeters taller than younger brother.)",
+      "options": [
+        "厘米",
+        "个",
+        "斤",
+        "本"
+      ],
+      "correctAnswer": "厘米"
+    },
+    {
+      "id": "ex_zh_comp_10",
+      "type": "matchPairs",
+      "question": "Match comparative patterns in Chinese",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "A 比 B + 漂亮",
+            "native": "A is prettier than B"
+          },
+          {
+            "target": "A 没有 B + 贵",
+            "native": "A is not as expensive as B"
+          },
+          {
+            "target": "A 和 B 一样大",
+            "native": "A and B are the same age/size"
+          },
+          {
+            "target": "更 (gèng) + 便宜",
+            "native": "Even cheaper"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_comp_11",
+      "type": "fillInBlank",
+      "question": "这个西瓜没有那个 ___ 。(This watermelon is not as sweet as that one.)",
+      "options": [
+        "甜",
+        "比",
+        "更",
+        "太"
+      ],
+      "correctAnswer": "甜"
+    },
+    {
+      "id": "ex_zh_comp_12",
+      "type": "translateThis",
+      "question": "坐高铁比坐大巴舒服得多",
+      "options": [],
+      "correctAnswer": "Taking high-speed rail is much more comfortable than taking a bus"
     }
   ]
 }

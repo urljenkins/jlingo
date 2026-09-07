@@ -92,6 +92,83 @@
       "correctAnswer": "Retour",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_trans_7",
+      "type": "multipleChoice",
+      "question": "Welk openbaarvervoersmiddel is wereldberoemd in Nederland naast de trein?",
+      "options": [
+        "De fiets (en het fietspad)",
+        "De kabelbaan",
+        "De gondel",
+        "De skelter"
+      ],
+      "correctAnswer": "De fiets (en het fietspad)"
+    },
+    {
+      "id": "ex_nl_trans_8",
+      "type": "translateThis",
+      "question": "Ik check in met mijn OV-chipkaart op het perron",
+      "options": [],
+      "correctAnswer": "I check in with my public transport card on the platform"
+    },
+    {
+      "id": "ex_nl_trans_9",
+      "type": "fillInBlank",
+      "question": "De intercity naar Rotterdam vertrekt van ___ vier (perron/spoor).",
+      "options": [
+        "spoor",
+        "straat",
+        "haven",
+        "halte"
+      ],
+      "correctAnswer": "spoor"
+    },
+    {
+      "id": "ex_nl_trans_10",
+      "type": "matchPairs",
+      "question": "Koppel Nederlandse vervoersbegrippen",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Het spoor / Het perron",
+            "native": "Track / Platform"
+          },
+          {
+            "target": "De vertraging",
+            "native": "The delay"
+          },
+          {
+            "target": "Overstappen",
+            "native": "To transfer / change trains"
+          },
+          {
+            "target": "Inchecken / Uitchecken",
+            "native": "Check in / Check out"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_trans_11",
+      "type": "fillInBlank",
+      "question": "Heeft de trein naar Utrecht ___ ? (is hij te laat?)",
+      "options": [
+        "vertraging",
+        "overstap",
+        "kaartje",
+        "spoor"
+      ],
+      "correctAnswer": "vertraging"
+    },
+    {
+      "id": "ex_nl_trans_12",
+      "type": "translateThis",
+      "question": "Waar kan ik overstappen op de tram?",
+      "options": [],
+      "correctAnswer": "Where can I transfer to the tram?"
     }
   ]
 }

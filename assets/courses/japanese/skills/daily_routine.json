@@ -17,7 +17,12 @@
       "id": "ex_ja_dr_2",
       "type": "fillInBlank",
       "question": "朝ご飯を___、学校へ行きます。",
-      "options": ["食べて", "食べる", "食べた", "食べます"],
+      "options": [
+        "食べて",
+        "食べる",
+        "食べた",
+        "食べます"
+      ],
       "correctAnswer": "食べて",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
@@ -32,11 +37,26 @@
       "nativeLanguage": "en-US",
       "metadata": {
         "pairs": [
-          {"target": "起きる", "native": "to wake up"},
-          {"target": "寝る", "native": "to go to sleep"},
-          {"target": "顔を洗う", "native": "to wash face"},
-          {"target": "お風呂に入る", "native": "to take a bath"},
-          {"target": "歯を磨く", "native": "to brush teeth"}
+          {
+            "target": "起きる",
+            "native": "to wake up"
+          },
+          {
+            "target": "寝る",
+            "native": "to go to sleep"
+          },
+          {
+            "target": "顔を洗う",
+            "native": "to wash face"
+          },
+          {
+            "target": "お風呂に入る",
+            "native": "to take a bath"
+          },
+          {
+            "target": "歯を磨く",
+            "native": "to brush teeth"
+          }
         ]
       }
     },
@@ -62,6 +82,83 @@
       "correctAnswer": "今日も一日頑張りましょう",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_rout_6",
+      "type": "multipleChoice",
+      "question": "How is the Te-form used when connecting sequential actions in daily routine?",
+      "options": [
+        "Combines actions sequentially (e.g. eat and then leave)",
+        "Marks future negative",
+        "Marks past polite only",
+        "Changes verb to noun only"
+      ],
+      "correctAnswer": "Combines actions sequentially (e.g. eat and then leave)"
+    },
+    {
+      "id": "ex_ja_rout_7",
+      "type": "translateThis",
+      "question": "あさごはんを たべて、がっこうへ いきます",
+      "options": [],
+      "correctAnswer": "I eat breakfast and go to school"
+    },
+    {
+      "id": "ex_ja_rout_8",
+      "type": "fillInBlank",
+      "question": "おきて、かおを ___。(I wake up and wash my face.)",
+      "options": [
+        "あらって",
+        "あらう",
+        "あらいます",
+        "あらいた"
+      ],
+      "correctAnswer": "あらって"
+    },
+    {
+      "id": "ex_ja_rout_9",
+      "type": "matchPairs",
+      "question": "Match the dictionary form to its Te-form",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "いく (go)",
+            "native": "いって"
+          },
+          {
+            "target": "のむ (drink)",
+            "native": "のんで"
+          },
+          {
+            "target": "かう (buy)",
+            "native": "かって"
+          },
+          {
+            "target": "する (do)",
+            "native": "して"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_rout_10",
+      "type": "fillInBlank",
+      "question": "よる じゅういちじに ___。(I go to bed at eleven at night.)",
+      "options": [
+        "ねます",
+        "おきます",
+        "いきます",
+        "たべます"
+      ],
+      "correctAnswer": "ねます"
+    },
+    {
+      "id": "ex_ja_rout_11",
+      "type": "translateThis",
+      "question": "シャワーを あびてから ねます",
+      "options": [],
+      "correctAnswer": "I take a shower and then sleep"
     }
   ]
 }

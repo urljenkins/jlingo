@@ -323,6 +323,170 @@
             "options": [],
             "correctAnswer": "El próximo año voy a viajar mucho",
             "id": "ex_dmx3_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "A principios de mes",
+            "options": [],
+            "correctAnswer": "At the beginning of the month",
+            "id": "ex_dmx4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'at the end of the year'?",
+            "options": [
+                "A fin de año",
+                "A principio de año",
+                "En medio del año",
+                "Durante el año"
+            ],
+            "correctAnswer": "A fin de año",
+            "id": "ex_dmx4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Nos vemos a ___ de mes (beginning)",
+            "options": [
+                "principios",
+                "finales",
+                "mediados",
+                "fin"
+            ],
+            "correctAnswer": "principios",
+            "id": "ex_dmx4_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "A finales de mes recibo mi pago",
+            "options": [],
+            "correctAnswer": "A finales de mes recibo mi pago",
+            "id": "ex_dmx4_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Cada dos semanas",
+            "options": [],
+            "correctAnswer": "Every two weeks",
+            "id": "ex_dmx5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'twice a month'?",
+            "options": [
+                "Dos veces al mes",
+                "Cada dos meses",
+                "Dos meses seguidos",
+                "Mes doble"
+            ],
+            "correctAnswer": "Dos veces al mes",
+            "id": "ex_dmx5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Voy al gimnasio ___ veces por semana (three)",
+            "options": [
+                "tres",
+                "dos",
+                "cuatro",
+                "cinco"
+            ],
+            "correctAnswer": "tres",
+            "id": "ex_dmx5_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Tres veces por semana",
+            "options": [],
+            "correctAnswer": "Tres veces por semana",
+            "id": "ex_dmx5_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "El calendario escolar",
+            "options": [],
+            "correctAnswer": "The school calendar",
+            "id": "ex_dmx6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'school year'?",
+            "options": [
+                "Año escolar",
+                "Año nuevo",
+                "Año pasado",
+                "Año que viene"
+            ],
+            "correctAnswer": "Año escolar",
+            "id": "ex_dmx6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "El año ___ empieza en septiembre (school)",
+            "options": [
+                "escolar",
+                "nuevo",
+                "viejo",
+                "pasado"
+            ],
+            "correctAnswer": "escolar",
+            "id": "ex_dmx6_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "El primer día del año",
+            "options": [],
+            "correctAnswer": "The first day of the year",
+            "id": "ex_dmx7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'New Year's Day'?",
+            "options": [
+                "El primer día del año",
+                "El último día del año",
+                "El día de descanso",
+                "El día festivo"
+            ],
+            "correctAnswer": "El primer día del año",
+            "id": "ex_dmx7_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un día festivo",
+            "options": [],
+            "correctAnswer": "A holiday",
+            "id": "ex_dmx8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'public holiday'?",
+            "options": [
+                "Día festivo",
+                "Día laboral",
+                "Día normal",
+                "Día escolar"
+            ],
+            "correctAnswer": "Día festivo",
+            "id": "ex_dmx8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Un mes completo",
+            "options": [],
+            "correctAnswer": "A whole month",
+            "id": "ex_dmx9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'the whole month'?",
+            "options": [
+                "Todo el mes",
+                "Medio mes",
+                "Un día del mes",
+                "Parte del mes"
+            ],
+            "correctAnswer": "Todo el mes",
+            "id": "ex_dmx9_2"
         }
     ]
 }

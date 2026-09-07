@@ -1,52 +1,154 @@
 {
-    "id": "directions",
-    "name": "Directions",
-    "description": "Learn to ask for and give directions",
-    "level": 9,
-    "exercises": [
-        {
-            "id": "ex_dir_1",
-            "type": "multipleChoice",
-            "question": "How do you ask 'Where is the bank?'",
-            "options": ["¿Dónde está el banco?", "¿Qué es el banco?", "¿Cómo es el banco?", "¿Cuál es el banco?"],
-            "correctAnswer": "¿Dónde está el banco?"
-        },
-        {
-            "id": "ex_dir_2",
-            "type": "matchPairs",
-            "question": "Match direction words",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {"target": "A la derecha", "native": "To the right"},
-                    {"target": "A la izquierda", "native": "To the left"},
-                    {"target": "Todo recto", "native": "Straight ahead"},
-                    {"target": "En la esquina", "native": "On the corner"},
-                    {"target": "Al lado de", "native": "Next to"}
-                ]
-            }
-        },
-        {
-            "id": "ex_dir_3",
-            "type": "translateThis",
-            "question": "Gira a la derecha",
-            "options": [],
-            "correctAnswer": "Turn right"
-        },
-        {
-            "id": "ex_dir_4",
-            "type": "fillInBlank",
-            "question": "El museo está ___ del parque",
-            "options": ["cerca", "lejos", "dentro", "fuera"],
-            "correctAnswer": "cerca"
-        },
-        {
-            "id": "ex_dir_5",
-            "type": "speakThis",
-            "question": "Sigue todo recto y luego gira a la izquierda",
-            "options": [],
-            "correctAnswer": "Sigue todo recto y luego gira a la izquierda"
-        }
-    ]
+  "id": "directions",
+  "name": "Directions",
+  "description": "Learn to ask for and give directions",
+  "level": 9,
+  "exercises": [
+    {
+      "id": "ex_dir_1",
+      "type": "multipleChoice",
+      "question": "How do you ask 'Where is the bank?'",
+      "options": [
+        "¿Dónde está el banco?",
+        "¿Qué es el banco?",
+        "¿Cómo es el banco?",
+        "¿Cuál es el banco?"
+      ],
+      "correctAnswer": "¿Dónde está el banco?"
+    },
+    {
+      "id": "ex_dir_2",
+      "type": "matchPairs",
+      "question": "Match direction words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "A la derecha",
+            "native": "To the right"
+          },
+          {
+            "target": "A la izquierda",
+            "native": "To the left"
+          },
+          {
+            "target": "Todo recto",
+            "native": "Straight ahead"
+          },
+          {
+            "target": "En la esquina",
+            "native": "On the corner"
+          },
+          {
+            "target": "Al lado de",
+            "native": "Next to"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_dir_3",
+      "type": "translateThis",
+      "question": "Gira a la derecha",
+      "options": [],
+      "correctAnswer": "Turn right"
+    },
+    {
+      "id": "ex_dir_4",
+      "type": "fillInBlank",
+      "question": "El museo está ___ del parque",
+      "options": [
+        "cerca",
+        "lejos",
+        "dentro",
+        "fuera"
+      ],
+      "correctAnswer": "cerca"
+    },
+    {
+      "id": "ex_dir_5",
+      "type": "speakThis",
+      "question": "Sigue todo recto y luego gira a la izquierda",
+      "options": [],
+      "correctAnswer": "Sigue todo recto y luego gira a la izquierda"
+    },
+    {
+      "id": "ex_sp_dir_6",
+      "type": "multipleChoice",
+      "question": "¿Cómo se pide una indicación de dirección de forma cortés en España?",
+      "options": [
+        "Perdone, ¿para ir a la Plaza Mayor, por favor?",
+        "Dígame la calle ahora",
+        "¿Dónde vais?",
+        "A qué calle voy"
+      ],
+      "correctAnswer": "Perdone, ¿para ir a la Plaza Mayor, por favor?"
+    },
+    {
+      "id": "ex_sp_dir_7",
+      "type": "translateThis",
+      "question": "Siga todo recto y gire a la izquierda en la siguiente glorieta",
+      "options": [],
+      "correctAnswer": "Go straight ahead and turn left at the next roundabout"
+    },
+    {
+      "id": "ex_sp_dir_8",
+      "type": "fillInBlank",
+      "question": "La parada de metro está justo al ___ de la calle.",
+      "options": [
+        "final",
+        "recto",
+        "gira",
+        "cruce"
+      ],
+      "correctAnswer": "final"
+    },
+    {
+      "id": "ex_sp_dir_9",
+      "type": "matchPairs",
+      "question": "Empareja términos de orientación en España",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Todo recto",
+            "native": "Straight ahead"
+          },
+          {
+            "target": "Girar a la derecha",
+            "native": "Turn right"
+          },
+          {
+            "target": "La glorieta / rotonda",
+            "native": "Roundabout"
+          },
+          {
+            "target": "La manzana",
+            "native": "City block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_sp_dir_10",
+      "type": "fillInBlank",
+      "question": "Cruce el paso de peatones y verá el ayuntamiento a mano ___ .",
+      "options": [
+        "derecha",
+        "recto",
+        "delante",
+        "lado"
+      ],
+      "correctAnswer": "derecha"
+    },
+    {
+      "id": "ex_sp_dir_11",
+      "type": "translateThis",
+      "question": "Disculpe, ¿sabe si hay una farmacia cerca de aquí?",
+      "options": [],
+      "correctAnswer": "Excuse me, do you know if there is a pharmacy near here?"
+    }
+  ]
 }

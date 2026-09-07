@@ -82,6 +82,83 @@
       "correctAnswer": "部屋の中に誰かいますか？",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_gse_6",
+      "type": "multipleChoice",
+      "question": "Which existence verb is used for animate beings (people, pets)?",
+      "options": [
+        "います (iru)",
+        "あります (aru)",
+        "します (suru)",
+        "きます (kuru)"
+      ],
+      "correctAnswer": "います (iru)"
+    },
+    {
+      "id": "ex_ja_gse_7",
+      "type": "fillInBlank",
+      "question": "へやに ねこが ___。(There is a cat in the room.)",
+      "options": [
+        "います",
+        "あります",
+        "です",
+        "します"
+      ],
+      "correctAnswer": "います"
+    },
+    {
+      "id": "ex_ja_gse_8",
+      "type": "translateThis",
+      "question": "つくえの うえに ほんが あります",
+      "options": [],
+      "correctAnswer": "There is a book on the desk"
+    },
+    {
+      "id": "ex_ja_gse_9",
+      "type": "matchPairs",
+      "question": "Match the entity with the correct existence verb",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "いぬ (dog)",
+            "native": "います (animate)"
+          },
+          {
+            "target": "せんせい (teacher)",
+            "native": "います (animate)"
+          },
+          {
+            "target": "くるま (car)",
+            "native": "あります (inanimate)"
+          },
+          {
+            "target": "き (tree / plant)",
+            "native": "あります (inanimate)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_gse_10",
+      "type": "fillInBlank",
+      "question": "ぎんこうは どこに ___ か。(Where is the bank?)",
+      "options": [
+        "あります",
+        "います",
+        "おきます",
+        "きます"
+      ],
+      "correctAnswer": "あります"
+    },
+    {
+      "id": "ex_ja_gse_11",
+      "type": "translateThis",
+      "question": "いま じかんが ありません",
+      "options": [],
+      "correctAnswer": "I do not have time now"
     }
   ]
 }

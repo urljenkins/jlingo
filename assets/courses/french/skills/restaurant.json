@@ -82,6 +82,83 @@
       "correctAnswer": "L'addition, s'il vous plaît, nous étions deux",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_rest_6",
+      "type": "multipleChoice",
+      "question": "Comment demande-t-on l'addition poliment à la fin du repas?",
+      "options": [
+        "L'addition, s'il vous plaît",
+        "La carte, s'il vous plaît",
+        "Le menu, s'il vous plaît",
+        "Les couverts, s'il vous plaît"
+      ],
+      "correctAnswer": "L'addition, s'il vous plaît"
+    },
+    {
+      "id": "ex_fr_rest_7",
+      "type": "translateThis",
+      "question": "Une table pour deux personnes à l'intérieur, s'il vous plaît",
+      "options": [],
+      "correctAnswer": "A table for two people inside, please"
+    },
+    {
+      "id": "ex_fr_rest_8",
+      "type": "fillInBlank",
+      "question": "Comme plat principal, je vais ___ le saumon grillé.",
+      "options": [
+        "prendre",
+        "pris",
+        "prends",
+        "prenez"
+      ],
+      "correctAnswer": "prendre"
+    },
+    {
+      "id": "ex_fr_rest_9",
+      "type": "matchPairs",
+      "question": "Associez les parties du repas au restaurant",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "L'entrée",
+            "native": "Starter / Appetizer"
+          },
+          {
+            "target": "Le plat principal",
+            "native": "Main course"
+          },
+          {
+            "target": "Le fromage ou dessert",
+            "native": "Cheese or dessert"
+          },
+          {
+            "target": "Une carafe d'eau",
+            "native": "A jug of tap water (free)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_rest_10",
+      "type": "fillInBlank",
+      "question": "Acceptez-vous les paiements par ___ bancaire ?",
+      "options": [
+        "carte",
+        "billet",
+        "chèque",
+        "lettre"
+      ],
+      "correctAnswer": "carte"
+    },
+    {
+      "id": "ex_fr_rest_11",
+      "type": "translateThis",
+      "question": "C'était délicieux, merci beaucoup !",
+      "options": [],
+      "correctAnswer": "It was delicious, thank you very much!"
     }
   ]
 }

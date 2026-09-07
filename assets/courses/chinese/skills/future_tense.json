@@ -92,6 +92,83 @@
       "correctAnswer": "Class is about to end soon",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_fut_7",
+      "type": "multipleChoice",
+      "question": "Which phrase indicates an imminent future action (\"about to happen / going to\") in Chinese?",
+      "options": [
+        "快要...了 (kuài yào... le)",
+        "以前 (yǐqián)",
+        "刚刚 (gānggāng)",
+        "经常 (jīngcháng)"
+      ],
+      "correctAnswer": "快要...了 (kuài yào... le)"
+    },
+    {
+      "id": "ex_zh_fut_8",
+      "type": "translateThis",
+      "question": "火车快要开了，大家快上车吧",
+      "options": [],
+      "correctAnswer": "The train is about to depart; everyone hurry up and board"
+    },
+    {
+      "id": "ex_zh_fut_9",
+      "type": "fillInBlank",
+      "question": "明年夏天我们打算 ___ 中国旅行。(Next summer we plan to travel to China.)",
+      "options": [
+        "去",
+        "在",
+        "来",
+        "有"
+      ],
+      "correctAnswer": "去"
+    },
+    {
+      "id": "ex_zh_fut_10",
+      "type": "matchPairs",
+      "question": "Match expressions of future intention and imminence",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "打算 (dǎsuan)",
+            "native": "To plan / intend to"
+          },
+          {
+            "target": "快要...了",
+            "native": "About to / soon going to..."
+          },
+          {
+            "target": "将来 (jiānglái)",
+            "native": "In the future"
+          },
+          {
+            "target": "下个月 (xià gè yuè)",
+            "native": "Next month"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_fut_11",
+      "type": "fillInBlank",
+      "question": "天阴了，马上就 ___ 下雨了。(The sky turned overcast; it is going to rain immediately.)",
+      "options": [
+        "要",
+        "过",
+        "没",
+        "不"
+      ],
+      "correctAnswer": "要"
+    },
+    {
+      "id": "ex_zh_fut_12",
+      "type": "translateThis",
+      "question": "我明天一定会按时到",
+      "options": [],
+      "correctAnswer": "I will definitely arrive on time tomorrow"
     }
   ]
 }

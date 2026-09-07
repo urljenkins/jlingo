@@ -92,6 +92,83 @@
       "correctAnswer": "以前 (yǐqián)",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_pt2_7",
+      "type": "multipleChoice",
+      "question": "How does the particle \"过\" (guo) differ from \"了\" (le)?",
+      "options": [
+        "\"过\" denotes an experience that happened in the past, meaning \"have had the experience of\"",
+        "\"过\" is for future actions only",
+        "\"过\" means the action is currently happening right now",
+        "They are completely identical"
+      ],
+      "correctAnswer": "\"过\" denotes an experience that happened in the past, meaning \"have had the experience of\""
+    },
+    {
+      "id": "ex_zh_pt2_8",
+      "type": "translateThis",
+      "question": "你去过北京长城吗？",
+      "options": [],
+      "correctAnswer": "Have you been to the Great Wall of Beijing?"
+    },
+    {
+      "id": "ex_zh_pt2_9",
+      "type": "fillInBlank",
+      "question": "我以前从没吃 ___ 烤鸭。(I had never eaten roast duck before.)",
+      "options": [
+        "过",
+        "了",
+        "着",
+        "在"
+      ],
+      "correctAnswer": "过"
+    },
+    {
+      "id": "ex_zh_pt2_10",
+      "type": "matchPairs",
+      "question": "Match experiential \"过\" phrases",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "看过这部电影",
+            "native": "Have seen this movie"
+          },
+          {
+            "target": "听过这首歌",
+            "native": "Have heard this song"
+          },
+          {
+            "target": "学过一年法语",
+            "native": "Have studied French for a year"
+          },
+          {
+            "target": "去过很多国家",
+            "native": "Have been to many countries"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_pt2_11",
+      "type": "fillInBlank",
+      "question": "你以前学 ___ 汉语吗？(Did you learn Chinese in the past?)",
+      "options": [
+        "过",
+        "着",
+        "了",
+        "向"
+      ],
+      "correctAnswer": "过"
+    },
+    {
+      "id": "ex_zh_pt2_12",
+      "type": "translateThis",
+      "question": "我从来没见过他",
+      "options": [],
+      "correctAnswer": "I have never seen him before"
     }
   ]
 }

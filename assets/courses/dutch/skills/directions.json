@@ -92,6 +92,83 @@
       "correctAnswer": "Traffic light",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_dir_7",
+      "type": "multipleChoice",
+      "question": "Hoe vraag je de weg in het Nederlands?",
+      "options": [
+        "Pardon, mag ik u vragen waar het station is?",
+        "Waar ben de weg?",
+        "Wie is het station?",
+        "Hoeveel kost de straat?"
+      ],
+      "correctAnswer": "Pardon, mag ik u vragen waar het station is?"
+    },
+    {
+      "id": "ex_nl_dir_8",
+      "type": "translateThis",
+      "question": "Ga rechtdoor en sla bij het stoplicht linksaf",
+      "options": [],
+      "correctAnswer": "Go straight ahead and turn left at the traffic light"
+    },
+    {
+      "id": "ex_nl_dir_9",
+      "type": "fillInBlank",
+      "question": "De supermarkt is aan de ___ overkant van de gracht.",
+      "options": [
+        "overkant",
+        "rechtdoor",
+        "linksaf",
+        "rechtsaf"
+      ],
+      "correctAnswer": "overkant"
+    },
+    {
+      "id": "ex_nl_dir_10",
+      "type": "matchPairs",
+      "question": "Koppel richtingen en plaatsbepalingen",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Rechtdoor",
+            "native": "Straight ahead"
+          },
+          {
+            "target": "Linksaf / Rechtsaf",
+            "native": "Turn left / Turn right"
+          },
+          {
+            "target": "Op de hoek",
+            "native": "On the corner"
+          },
+          {
+            "target": "Naast de kerk",
+            "native": "Next to the church"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_dir_11",
+      "type": "fillInBlank",
+      "question": "Neem de tweede straat naar ___ (naar de rechterkant).",
+      "options": [
+        "rechts",
+        "links",
+        "rechtdoor",
+        "boven"
+      ],
+      "correctAnswer": "rechts"
+    },
+    {
+      "id": "ex_nl_dir_12",
+      "type": "translateThis",
+      "question": "Het museum bevindt zich aan het einde van de straat",
+      "options": [],
+      "correctAnswer": "The museum is located at the end of the street"
     }
   ]
 }

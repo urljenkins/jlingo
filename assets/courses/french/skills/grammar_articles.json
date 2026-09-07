@@ -81,6 +81,83 @@
       "correctAnswer": "Je veux de l'eau s'il vous plaît",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_art_6",
+      "type": "multipleChoice",
+      "question": "Quel article partitif utilise-t-on devant un mot masculin singulier commençant par une consonne (ex: pain)?",
+      "options": [
+        "Du",
+        "De la",
+        "Des",
+        "De l'"
+      ],
+      "correctAnswer": "Du"
+    },
+    {
+      "id": "ex_fr_art_7",
+      "type": "fillInBlank",
+      "question": "Je bois ___ eau fraîche tous les matins.",
+      "options": [
+        "de l'",
+        "du",
+        "de la",
+        "des"
+      ],
+      "correctAnswer": "de l'"
+    },
+    {
+      "id": "ex_fr_art_8",
+      "type": "translateThis",
+      "question": "Elle mange de la salade et du fromage",
+      "options": [],
+      "correctAnswer": "She eats salad and cheese"
+    },
+    {
+      "id": "ex_fr_art_9",
+      "type": "matchPairs",
+      "question": "Associez les articles partitifs et contractés",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "À + le",
+            "native": "Au (au cinéma)"
+          },
+          {
+            "target": "À + les",
+            "native": "Aux (aux toilettes)"
+          },
+          {
+            "target": "De + le",
+            "native": "Du (du pain)"
+          },
+          {
+            "target": "De + les",
+            "native": "Des (des pommes)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_art_10",
+      "type": "fillInBlank",
+      "question": "À la forme négative, \"du\" et \"de la\" deviennent simplement ___ : \"Je ne mange pas ___ viande.\"",
+      "options": [
+        "de",
+        "du",
+        "des",
+        "la"
+      ],
+      "correctAnswer": "de"
+    },
+    {
+      "id": "ex_fr_art_11",
+      "type": "translateThis",
+      "question": "Nous allons au musée le samedi",
+      "options": [],
+      "correctAnswer": "We go to the museum on Saturdays"
     }
   ]
 }

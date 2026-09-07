@@ -92,6 +92,83 @@
       "correctAnswer": "Do it oneself / hands-on",
       "targetLanguage": "zh-CN",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_refl_7",
+      "type": "multipleChoice",
+      "question": "How does Chinese express reflexivity (\"oneself\")?",
+      "options": [
+        "Using \"自己\" (zìjǐ) - e.g. 我自己 (myself)",
+        "Using reflexive verb endings like -se",
+        "Adding -ing to verbs",
+        "Reflexive actions do not exist"
+      ],
+      "correctAnswer": "Using \"自己\" (zìjǐ) - e.g. 我自己 (myself)"
+    },
+    {
+      "id": "ex_zh_refl_8",
+      "type": "translateThis",
+      "question": "这道菜是我自己做的",
+      "options": [],
+      "correctAnswer": "This dish was made by myself"
+    },
+    {
+      "id": "ex_zh_refl_9",
+      "type": "fillInBlank",
+      "question": "出门在外，你要照顾好你 ___ 。(When away from home, you must take good care of yourself.)",
+      "options": [
+        "自己",
+        "别人",
+        "我们",
+        "他们"
+      ],
+      "correctAnswer": "自己"
+    },
+    {
+      "id": "ex_zh_refl_10",
+      "type": "matchPairs",
+      "question": "Match reflexive and reciprocal structures",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "我自己",
+            "native": "Myself"
+          },
+          {
+            "target": "你自己",
+            "native": "Yourself"
+          },
+          {
+            "target": "互相帮助",
+            "native": "Help each other (mutual)"
+          },
+          {
+            "target": "互相学习",
+            "native": "Learn from each other"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_zh_refl_11",
+      "type": "fillInBlank",
+      "question": "这是我们 ___ 的事情，不需要别人帮忙。(This is our own affair; we don't need others to help.)",
+      "options": [
+        "自己",
+        "人家",
+        "谁",
+        "什么"
+      ],
+      "correctAnswer": "自己"
+    },
+    {
+      "id": "ex_zh_refl_12",
+      "type": "translateThis",
+      "question": "我相信你自己的判断",
+      "options": [],
+      "correctAnswer": "I trust your own judgment"
     }
   ]
 }

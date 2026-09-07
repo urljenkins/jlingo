@@ -92,6 +92,83 @@
       "correctAnswer": "Ik heb het koud",
       "targetLanguage": "nl-NL",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_heb_7",
+      "type": "multipleChoice",
+      "question": "Hoe zeg je \"I am hungry\" en \"I am thirsty\" in natuurlijk Nederlands?",
+      "options": [
+        "Ik heb honger en ik heb dorst (met hebben)",
+        "Ik ben hongerig en dorstig",
+        "Ik maak honger",
+        "Ik doe dorst"
+      ],
+      "correctAnswer": "Ik heb honger en ik heb dorst (met hebben)"
+    },
+    {
+      "id": "ex_nl_heb_8",
+      "type": "translateThis",
+      "question": "Zij hebben twee honden en een kat",
+      "options": [],
+      "correctAnswer": "They have two dogs and a cat"
+    },
+    {
+      "id": "ex_nl_heb_9",
+      "type": "fillInBlank",
+      "question": "Hebben jullie tijd om ons vanmiddag te ___ ?",
+      "options": [
+        "helpen",
+        "helpt",
+        "hielp",
+        "geholpen"
+      ],
+      "correctAnswer": "helpen"
+    },
+    {
+      "id": "ex_nl_heb_10",
+      "type": "matchPairs",
+      "question": "Koppel vaste uitdrukkingen met \"hebben\"",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Gelijk hebben",
+            "native": "To be right"
+          },
+          {
+            "target": "Haast hebben",
+            "native": "To be in a hurry"
+          },
+          {
+            "target": "Zin hebben in...",
+            "native": "To fancy / feel like having..."
+          },
+          {
+            "target": "Pech hebben",
+            "native": "To be out of luck"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_nl_heb_11",
+      "type": "fillInBlank",
+      "question": "Ik heb geen ___ om vanavond te koken, laten we pizza bestellen.",
+      "options": [
+        "zin",
+        "haast",
+        "gelijk",
+        "pech"
+      ],
+      "correctAnswer": "zin"
+    },
+    {
+      "id": "ex_nl_heb_12",
+      "type": "translateThis",
+      "question": "Je hebt helemaal gelijk over dit plan",
+      "options": [],
+      "correctAnswer": "You are completely right about this plan"
     }
   ]
 }

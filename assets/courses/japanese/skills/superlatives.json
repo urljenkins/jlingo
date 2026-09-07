@@ -82,6 +82,83 @@
       "correctAnswer": "健康が何よりも一番大切です",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_sup_6",
+      "type": "multipleChoice",
+      "question": "Which word indicates \"the most / number one\" in Japanese superlatives?",
+      "options": [
+        "一番 (いちばん / ichiban)",
+        "とても (totemo)",
+        "すこし (sukoshi)",
+        "だいたい (daitai)"
+      ],
+      "correctAnswer": "一番 (いちばん / ichiban)"
+    },
+    {
+      "id": "ex_ja_sup_7",
+      "type": "translateThis",
+      "question": "ふじさん は にほん で いちばん たかい やま です",
+      "options": [],
+      "correctAnswer": "Mt. Fuji is the tallest mountain in Japan"
+    },
+    {
+      "id": "ex_ja_sup_8",
+      "type": "fillInBlank",
+      "question": "くだもの の なか で、りんご が ___ すき です。(Among fruits, I like apples the best.)",
+      "options": [
+        "いちばん",
+        "あまり",
+        "ぜんぜん",
+        "すこし"
+      ],
+      "correctAnswer": "いちばん"
+    },
+    {
+      "id": "ex_ja_sup_9",
+      "type": "matchPairs",
+      "question": "Match superlative categories",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "せかい で いちばん",
+            "native": "In the world the most"
+          },
+          {
+            "target": "いちばん すき な たべもの",
+            "native": "Favorite food of all"
+          },
+          {
+            "target": "クラス で いちばん",
+            "native": "In the class the most"
+          },
+          {
+            "target": "いちばん はやい",
+            "native": "The fastest"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_ja_sup_10",
+      "type": "fillInBlank",
+      "question": "いちねん の なか で、___ が いちばん さむい ですか。(Which month is the coldest in a year?)",
+      "options": [
+        "なんがつ",
+        "だれ",
+        "どこ",
+        "なんじ"
+      ],
+      "correctAnswer": "なんがつ"
+    },
+    {
+      "id": "ex_ja_sup_11",
+      "type": "translateThis",
+      "question": "すし が いちばん おいしい です",
+      "options": [],
+      "correctAnswer": "Sushi is the most delicious"
     }
   ]
 }

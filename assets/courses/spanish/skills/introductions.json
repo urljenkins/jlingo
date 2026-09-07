@@ -360,6 +360,250 @@
             "options": [],
             "correctAnswer": "I am still learning",
             "id": "ex_introx3_7"
+        },
+        {
+            "type": "translateThis",
+            "question": "Te presento a mi amiga",
+            "options": [],
+            "correctAnswer": "Let me introduce you to my friend",
+            "id": "ex_introx4_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you introduce a friend to someone?",
+            "options": [
+                "Te presento a mi amiga",
+                "Ella es mi amiga sí",
+                "Amiga presento",
+                "Te mi amiga"
+            ],
+            "correctAnswer": "Te presento a mi amiga",
+            "id": "ex_introx4_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ presento a mi hermano (I introduce to you)",
+            "options": [
+                "Te",
+                "Se",
+                "Le",
+                "Me"
+            ],
+            "correctAnswer": "Te",
+            "id": "ex_introx4_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match formal introduction phrases",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Le presento a",
+                        "native": "Let me introduce you to (formal)"
+                    },
+                    {
+                        "target": "Quisiera presentarle a",
+                        "native": "I would like to introduce you to"
+                    },
+                    {
+                        "target": "Es un placer",
+                        "native": "It's a pleasure"
+                    },
+                    {
+                        "target": "El gusto es mío",
+                        "native": "The pleasure is mine"
+                    }
+                ]
+            },
+            "id": "ex_introx4_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Le presento a mi jefe",
+            "options": [],
+            "correctAnswer": "Le presento a mi jefe",
+            "id": "ex_introx4_5"
+        },
+        {
+            "type": "speakThis",
+            "question": "El gusto es mío",
+            "options": [],
+            "correctAnswer": "El gusto es mío",
+            "id": "ex_introx4_6"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Estás casado o soltero?",
+            "options": [],
+            "correctAnswer": "Are you married or single?",
+            "id": "ex_introx5_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'I am single'?",
+            "options": [
+                "Soy soltero",
+                "Soy casado",
+                "Estoy divorciado",
+                "Soy viudo"
+            ],
+            "correctAnswer": "Soy soltero",
+            "id": "ex_introx5_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Ella está ___ (married)",
+            "options": [
+                "casada",
+                "casado",
+                "soltera",
+                "soltero"
+            ],
+            "correctAnswer": "casada",
+            "id": "ex_introx5_3"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match marital status vocabulary",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Soltero/a",
+                        "native": "Single"
+                    },
+                    {
+                        "target": "Casado/a",
+                        "native": "Married"
+                    },
+                    {
+                        "target": "Divorciado/a",
+                        "native": "Divorced"
+                    },
+                    {
+                        "target": "Viudo/a",
+                        "native": "Widowed"
+                    }
+                ]
+            },
+            "id": "ex_introx5_4"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Estoy soltero, sin hijos",
+            "options": [],
+            "correctAnswer": "Estoy soltero, sin hijos",
+            "id": "ex_introx5_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Permíteme presentarme",
+            "options": [],
+            "correctAnswer": "Allow me to introduce myself",
+            "id": "ex_introx6_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you formally say 'Allow me to introduce myself'?",
+            "options": [
+                "Permítame presentarme",
+                "Yo soy yo",
+                "Preséntame",
+                "Conóceme"
+            ],
+            "correctAnswer": "Permítame presentarme",
+            "id": "ex_introx6_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ presentarme, soy el nuevo gerente (allow me)",
+            "options": [
+                "Permítame",
+                "Déjeme",
+                "Puedo",
+                "Quiero"
+            ],
+            "correctAnswer": "Permítame",
+            "id": "ex_introx6_3"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Permítame presentarme, soy Ana",
+            "options": [],
+            "correctAnswer": "Permítame presentarme, soy Ana",
+            "id": "ex_introx6_4"
+        },
+        {
+            "type": "translateThis",
+            "question": "Nos conocimos el año pasado",
+            "options": [],
+            "correctAnswer": "We met last year",
+            "id": "ex_introx7_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'We already know each other'?",
+            "options": [
+                "Ya nos conocemos",
+                "Nos vamos a conocer",
+                "No nos conocemos",
+                "Nunca nos conocimos"
+            ],
+            "correctAnswer": "Ya nos conocemos",
+            "id": "ex_introx7_2"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Creo que ya ___ conocemos (we)",
+            "options": [
+                "nos",
+                "se",
+                "les",
+                "me"
+            ],
+            "correctAnswer": "nos",
+            "id": "ex_introx7_3"
+        },
+        {
+            "type": "translateThis",
+            "question": "Soy nuevo en la ciudad",
+            "options": [],
+            "correctAnswer": "I am new in the city",
+            "id": "ex_introx8_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'I just moved here'?",
+            "options": [
+                "Me acabo de mudar aquí",
+                "Vivo aquí siempre",
+                "Soy de aquí",
+                "Nunca vivo aquí"
+            ],
+            "correctAnswer": "Me acabo de mudar aquí",
+            "id": "ex_introx8_2"
+        },
+        {
+            "type": "translateThis",
+            "question": "Encantada de conocerlo",
+            "options": [],
+            "correctAnswer": "Pleased to meet you (formal, female speaker)",
+            "id": "ex_introx9_1"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which form would a woman use to say 'pleased to meet you'?",
+            "options": [
+                "Encantada",
+                "Encantado",
+                "Encanto",
+                "Encante"
+            ],
+            "correctAnswer": "Encantada",
+            "id": "ex_introx9_2"
         }
     ]
 }

@@ -81,6 +81,83 @@
       "correctAnswer": "Nous habitons dans le centre de Paris",
       "targetLanguage": "fr-FR",
       "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_pres_6",
+      "type": "multipleChoice",
+      "question": "Quelle est la terminaison des verbes réguliers en -er à la 1re personne du pluriel (nous)?",
+      "options": [
+        "-ons",
+        "-ez",
+        "-ent",
+        "-es"
+      ],
+      "correctAnswer": "-ons"
+    },
+    {
+      "id": "ex_fr_pres_7",
+      "type": "translateThis",
+      "question": "Nous habitons dans un grand appartement",
+      "options": [],
+      "correctAnswer": "We live in a large apartment"
+    },
+    {
+      "id": "ex_fr_pres_8",
+      "type": "fillInBlank",
+      "question": "Les enfants ___ leurs devoirs après l'école.",
+      "options": [
+        "finissent",
+        "finis",
+        "finit",
+        "finissons"
+      ],
+      "correctAnswer": "finissent"
+    },
+    {
+      "id": "ex_fr_pres_9",
+      "type": "matchPairs",
+      "question": "Associez les verbes du troisième groupe au présent",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Je prends",
+            "native": "I take"
+          },
+          {
+            "target": "Tu veux",
+            "native": "You want"
+          },
+          {
+            "target": "Il peut",
+            "native": "He can"
+          },
+          {
+            "target": "Nous faisons",
+            "native": "We do / make"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fr_pres_10",
+      "type": "fillInBlank",
+      "question": "Est-ce que vous ___ le français couramment ?",
+      "options": [
+        "parlez",
+        "parlons",
+        "parlent",
+        "parles"
+      ],
+      "correctAnswer": "parlez"
+    },
+    {
+      "id": "ex_fr_pres_11",
+      "type": "translateThis",
+      "question": "Je pars au travail à huit heures",
+      "options": [],
+      "correctAnswer": "I leave for work at eight o'clock"
     }
   ]
 }
