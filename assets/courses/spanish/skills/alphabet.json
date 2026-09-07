@@ -330,37 +330,6 @@
             "id": "ex_alp22_8"
         },
         {
-            "type": "matchPairs",
-            "question": "Match letters Q-Z",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "Q",
-                        "native": "Cu"
-                    },
-                    {
-                        "target": "R",
-                        "native": "Ere"
-                    },
-                    {
-                        "target": "S",
-                        "native": "Ese"
-                    },
-                    {
-                        "target": "T",
-                        "native": "Te"
-                    },
-                    {
-                        "target": "V",
-                        "native": "Uve"
-                    }
-                ]
-            },
-            "id": "ex_alp22_9"
-        },
-        {
             "type": "fillInBlank",
             "question": "W se llama ___ doble",
             "options": [
