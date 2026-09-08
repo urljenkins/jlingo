@@ -481,9 +481,20 @@ void main() {
     });
 
     test('a manifest without sections still parses', () {
-      final japanese = _manifestFor('japanese');
-      expect(japanese.skills, isNotEmpty);
-      expect(japanese.skills.every((s) => s.section == null), isTrue);
+      final manifestWithoutSections = CourseManifest.fromJson({
+        'id': 'test_no_sec',
+        'name': 'No Sections',
+        'targetLanguage': 'ja-JP',
+        'nativeLanguage': 'en-US',
+        'skills': [
+          {'id': 's1', 'name': 'One', 'level': 1},
+        ],
+      });
+      expect(manifestWithoutSections.skills, isNotEmpty);
+      expect(
+        manifestWithoutSections.skills.every((s) => s.section == null),
+        isTrue,
+      );
     });
   });
 

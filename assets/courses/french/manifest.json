@@ -1,422 +1,422 @@
 {
-    "id": "french_en",
-    "name": "French for English Speakers",
-    "targetLanguage": "fr-FR",
-    "nativeLanguage": "en-US",
-    "skills": [
-        {
-            "id": "alphabet",
-            "name": "Alphabet & Sons",
-            "level": 1,
-            "section": "foundational"
-        },
-        {
-            "id": "basics_1",
-            "name": "Basics 1",
-            "level": 1,
-            "section": "foundational"
-        },
-        {
-            "id": "greetings_2",
-            "name": "Salutations 2",
-            "level": 1,
-            "section": "foundational"
-        },
-        {
-            "id": "introductions",
-            "name": "Présentations",
-            "level": 1,
-            "section": "foundational"
-        },
-        {
-            "id": "basics_2",
-            "name": "Basics 2",
-            "level": 2,
-            "section": "foundational"
-        },
-        {
-            "id": "travel_1",
-            "name": "Travel",
-            "level": 2,
-            "section": "travel"
-        },
-        {
-            "id": "listening_pronunciation",
-            "name": "Écoute & Prononciation",
-            "level": 2,
-            "section": "foundational"
-        },
-        {
-            "id": "family_1",
-            "name": "La Famille",
-            "level": 2,
-            "section": "foundational"
-        },
-        {
-            "id": "grammar_1",
-            "name": "Grammaire: Pronoms",
-            "level": 2,
-            "section": "foundational"
-        },
-        {
-            "id": "grammar_articles",
-            "name": "Grammaire: Articles",
-            "level": 2,
-            "section": "foundational"
-        },
-        {
-            "id": "numbers",
-            "name": "Nombres 1-10",
-            "level": 3,
-            "section": "foundational"
-        },
-        {
-            "id": "numbers_2",
-            "name": "Nombres 11-100",
-            "level": 3,
-            "section": "foundational"
-        },
-        {
-            "id": "ordinal_numbers",
-            "name": "Nombres Ordinaux",
-            "level": 3,
-            "section": "foundational"
-        },
-        {
-            "id": "colors",
-            "name": "Les Couleurs",
-            "level": 4,
-            "section": "foundational"
-        },
-        {
-            "id": "days_months",
-            "name": "Jours & Mois",
-            "level": 4,
-            "section": "foundational"
-        },
-        {
-            "id": "time",
-            "name": "L'Heure",
-            "level": 4,
-            "section": "foundational"
-        },
-        {
-            "id": "food",
-            "name": "La Nourriture",
-            "level": 5,
-            "section": "foundational"
-        },
-        {
-            "id": "drinks",
-            "name": "Les Boissons",
-            "level": 5,
-            "section": "foundational"
-        },
-        {
-            "id": "animals",
-            "name": "Les Animaux",
-            "level": 5,
-            "section": "foundational"
-        },
-        {
-            "id": "reading_writing",
-            "name": "Lecture & Écriture",
-            "level": 5,
-            "section": "foundational"
-        },
-        {
-            "id": "clothing",
-            "name": "Les Vêtements",
-            "level": 6,
-            "section": "foundational"
-        },
-        {
-            "id": "weather",
-            "name": "La Météo",
-            "level": 6,
-            "section": "foundational"
-        },
-        {
-            "id": "adjectives_1",
-            "name": "Adjectifs Courants",
-            "level": 6,
-            "section": "foundational"
-        },
-        {
-            "id": "grammar_ser_estar",
-            "name": "Grammaire: Être",
-            "level": 7,
-            "section": "foundational"
-        },
-        {
-            "id": "grammar_tener",
-            "name": "Grammaire: Avoir",
-            "level": 7,
-            "section": "foundational"
-        },
-        {
-            "id": "present_tense",
-            "name": "Présent de l'Indicatif",
-            "level": 7,
-            "section": "foundational"
-        },
-        {
-            "id": "daily_routine",
-            "name": "Routine Quotidienne",
-            "level": 8,
-            "section": "intermediate"
-        },
-        {
-            "id": "reflexive_verbs",
-            "name": "Verbes Pronominaux",
-            "level": 8,
-            "section": "intermediate"
-        },
-        {
-            "id": "getting_around",
-            "name": "Se Déplacer",
-            "level": 9,
-            "section": "intermediate"
-        },
-        {
-            "id": "directions",
-            "name": "Directions",
-            "level": 9,
-            "section": "intermediate"
-        },
-        {
-            "id": "transportation",
-            "name": "Les Transports",
-            "level": 9,
-            "section": "intermediate"
-        },
-        {
-            "id": "shopping",
-            "name": "Faire les Magasins",
-            "level": 10,
-            "section": "intermediate"
-        },
-        {
-            "id": "at_the_market",
-            "name": "Au Marché",
-            "level": 10,
-            "section": "intermediate"
-        },
-        {
-            "id": "services",
-            "name": "Services & Démarches",
-            "level": 10,
-            "section": "intermediate"
-        },
-        {
-            "id": "restaurant",
-            "name": "Au Restaurant",
-            "level": 11,
-            "section": "intermediate"
-        },
-        {
-            "id": "ordering_food",
-            "name": "Commander à Manger",
-            "level": 11,
-            "section": "intermediate"
-        },
-        {
-            "id": "present_continuous",
-            "name": "Être en Train De",
-            "level": 12,
-            "section": "intermediate"
-        },
-        {
-            "id": "past_tense_1",
-            "name": "Passé Composé",
-            "level": 12,
-            "section": "intermediate"
-        },
-        {
-            "id": "past_tense_2",
-            "name": "L'Imparfait",
-            "level": 13,
-            "section": "intermediate"
-        },
-        {
-            "id": "present_perfect",
-            "name": "Passé Récent",
-            "level": 13,
-            "section": "intermediate"
-        },
-        {
-            "id": "future_tense",
-            "name": "Le Futur Simple",
-            "level": 14,
-            "section": "intermediate"
-        },
-        {
-            "id": "making_plans",
-            "name": "Faire des Projets",
-            "level": 14,
-            "section": "intermediate"
-        },
-        {
-            "id": "appointments",
-            "name": "Rendez-vous",
-            "level": 14,
-            "section": "intermediate"
-        },
-        {
-            "id": "comparatives",
-            "name": "Le Comparatif",
-            "level": 15,
-            "section": "intermediate"
-        },
-        {
-            "id": "superlatives",
-            "name": "Le Superlatif",
-            "level": 15,
-            "section": "intermediate"
-        },
-        {
-            "id": "health_body",
-            "name": "Corps & Santé",
-            "level": 16,
-            "section": "intermediate"
-        },
-        {
-            "id": "at_the_doctor",
-            "name": "Chez le Médecin",
-            "level": 16,
-            "section": "intermediate"
-        },
-        {
-            "id": "hotel",
-            "name": "À l'Hôtel",
-            "level": 17,
-            "section": "advanced"
-        },
-        {
-            "id": "sightseeing",
-            "name": "Visites Touristiques",
-            "level": 17,
-            "section": "advanced"
-        },
-        {
-            "id": "hobbies",
-            "name": "Loisirs & Passions",
-            "level": 18,
-            "section": "advanced"
-        },
-        {
-            "id": "sports",
-            "name": "Les Sports",
-            "level": 18,
-            "section": "advanced"
-        },
-        {
-            "id": "music_movies",
-            "name": "Musique & Cinéma",
-            "level": 18,
-            "section": "advanced"
-        },
-        {
-            "id": "work",
-            "name": "Travail & Carrière",
-            "level": 19,
-            "section": "advanced"
-        },
-        {
-            "id": "office",
-            "name": "Vie de Bureau",
-            "level": 19,
-            "section": "advanced"
-        },
-        {
-            "id": "technology",
-            "name": "Technologie & Appareils",
-            "level": 20,
-            "section": "advanced"
-        },
-        {
-            "id": "internet",
-            "name": "Internet & Réseaux Sociaux",
-            "level": 20,
-            "section": "advanced"
-        },
-        {
-            "id": "emotions",
-            "name": "Émotions & Sentiments",
-            "level": 21,
-            "section": "advanced"
-        },
-        {
-            "id": "opinions",
-            "name": "Donner son Avis",
-            "level": 21,
-            "section": "advanced"
-        },
-        {
-            "id": "debating",
-            "name": "Débattre & Argumenter",
-            "level": 21,
-            "section": "advanced"
-        },
-        {
-            "id": "conditional",
-            "name": "Le Conditionnel",
-            "level": 22,
-            "section": "advanced"
-        },
-        {
-            "id": "subjunctive",
-            "name": "Le Subjonctif",
-            "level": 22,
-            "section": "advanced"
-        },
-        {
-            "id": "passive_voice",
-            "name": "La Voix Passive",
-            "level": 23,
-            "section": "advanced"
-        },
-        {
-            "id": "phrasal_expressions",
-            "name": "Locutions Verbales",
-            "level": 23,
-            "section": "advanced"
-        },
-        {
-            "id": "idioms",
-            "name": "Expressions Idiomatiques",
-            "level": 24,
-            "section": "advanced"
-        },
-        {
-            "id": "slang",
-            "name": "Argot & Langage Familier",
-            "level": 24,
-            "section": "advanced"
-        },
-        {
-            "id": "culture",
-            "name": "Culture & Traditions",
-            "level": 25,
-            "section": "advanced"
-        },
-        {
-            "id": "current_events",
-            "name": "Actualités & Société",
-            "level": 25,
-            "section": "advanced"
-        },
-        {
-            "id": "c_level_mastery",
-            "name": "C1/C2 Mastery Capstone",
-            "level": 26,
-            "section": "mastery"
-        },
-        {
-            "id": "litterature_philosophie",
-            "name": "Littérature & Philosophie",
-            "level": 27,
-            "section": "mastery"
-        }
-    ]
+  "id": "french_en",
+  "name": "French for English Speakers",
+  "targetLanguage": "fr-FR",
+  "nativeLanguage": "en-US",
+  "skills": [
+    {
+      "id": "alphabet",
+      "name": "Alphabet & Sons",
+      "level": 1,
+      "section": "foundational"
+    },
+    {
+      "id": "basics_1",
+      "name": "Basics 1",
+      "level": 1,
+      "section": "foundational"
+    },
+    {
+      "id": "greetings_2",
+      "name": "Salutations 2",
+      "level": 1,
+      "section": "foundational"
+    },
+    {
+      "id": "introductions",
+      "name": "Présentations",
+      "level": 1,
+      "section": "foundational"
+    },
+    {
+      "id": "basics_2",
+      "name": "Basics 2",
+      "level": 2,
+      "section": "foundational"
+    },
+    {
+      "id": "travel_1",
+      "name": "Travel",
+      "level": 2,
+      "section": "foundational"
+    },
+    {
+      "id": "listening_pronunciation",
+      "name": "Écoute & Prononciation",
+      "level": 2,
+      "section": "foundational"
+    },
+    {
+      "id": "family_1",
+      "name": "La Famille",
+      "level": 2,
+      "section": "foundational"
+    },
+    {
+      "id": "grammar_1",
+      "name": "Grammaire: Pronoms",
+      "level": 2,
+      "section": "foundational"
+    },
+    {
+      "id": "grammar_articles",
+      "name": "Grammaire: Articles",
+      "level": 2,
+      "section": "foundational"
+    },
+    {
+      "id": "numbers",
+      "name": "Nombres 1-10",
+      "level": 3,
+      "section": "foundational"
+    },
+    {
+      "id": "numbers_2",
+      "name": "Nombres 11-100",
+      "level": 3,
+      "section": "foundational"
+    },
+    {
+      "id": "ordinal_numbers",
+      "name": "Nombres Ordinaux",
+      "level": 3,
+      "section": "foundational"
+    },
+    {
+      "id": "colors",
+      "name": "Les Couleurs",
+      "level": 4,
+      "section": "foundational"
+    },
+    {
+      "id": "days_months",
+      "name": "Jours & Mois",
+      "level": 4,
+      "section": "foundational"
+    },
+    {
+      "id": "time",
+      "name": "L'Heure",
+      "level": 4,
+      "section": "foundational"
+    },
+    {
+      "id": "food",
+      "name": "La Nourriture",
+      "level": 5,
+      "section": "foundational"
+    },
+    {
+      "id": "drinks",
+      "name": "Les Boissons",
+      "level": 5,
+      "section": "foundational"
+    },
+    {
+      "id": "animals",
+      "name": "Les Animaux",
+      "level": 5,
+      "section": "foundational"
+    },
+    {
+      "id": "reading_writing",
+      "name": "Lecture & Écriture",
+      "level": 5,
+      "section": "foundational"
+    },
+    {
+      "id": "clothing",
+      "name": "Les Vêtements",
+      "level": 6,
+      "section": "foundational"
+    },
+    {
+      "id": "weather",
+      "name": "La Météo",
+      "level": 6,
+      "section": "foundational"
+    },
+    {
+      "id": "adjectives_1",
+      "name": "Adjectifs Courants",
+      "level": 6,
+      "section": "foundational"
+    },
+    {
+      "id": "grammar_ser_estar",
+      "name": "Grammaire: Être",
+      "level": 7,
+      "section": "foundational"
+    },
+    {
+      "id": "grammar_tener",
+      "name": "Grammaire: Avoir",
+      "level": 7,
+      "section": "foundational"
+    },
+    {
+      "id": "present_tense",
+      "name": "Présent de l'Indicatif",
+      "level": 7,
+      "section": "foundational"
+    },
+    {
+      "id": "daily_routine",
+      "name": "Routine Quotidienne",
+      "level": 8,
+      "section": "intermediate"
+    },
+    {
+      "id": "reflexive_verbs",
+      "name": "Verbes Pronominaux",
+      "level": 8,
+      "section": "intermediate"
+    },
+    {
+      "id": "getting_around",
+      "name": "Se Déplacer",
+      "level": 9,
+      "section": "intermediate"
+    },
+    {
+      "id": "directions",
+      "name": "Directions",
+      "level": 9,
+      "section": "intermediate"
+    },
+    {
+      "id": "transportation",
+      "name": "Les Transports",
+      "level": 9,
+      "section": "intermediate"
+    },
+    {
+      "id": "shopping",
+      "name": "Faire les Magasins",
+      "level": 10,
+      "section": "intermediate"
+    },
+    {
+      "id": "at_the_market",
+      "name": "Au Marché",
+      "level": 10,
+      "section": "intermediate"
+    },
+    {
+      "id": "services",
+      "name": "Services & Démarches",
+      "level": 10,
+      "section": "intermediate"
+    },
+    {
+      "id": "restaurant",
+      "name": "Au Restaurant",
+      "level": 11,
+      "section": "intermediate"
+    },
+    {
+      "id": "ordering_food",
+      "name": "Commander à Manger",
+      "level": 11,
+      "section": "intermediate"
+    },
+    {
+      "id": "present_continuous",
+      "name": "Être en Train De",
+      "level": 12,
+      "section": "intermediate"
+    },
+    {
+      "id": "past_tense_1",
+      "name": "Passé Composé",
+      "level": 12,
+      "section": "intermediate"
+    },
+    {
+      "id": "past_tense_2",
+      "name": "L'Imparfait",
+      "level": 13,
+      "section": "intermediate"
+    },
+    {
+      "id": "present_perfect",
+      "name": "Passé Récent",
+      "level": 13,
+      "section": "intermediate"
+    },
+    {
+      "id": "future_tense",
+      "name": "Le Futur Simple",
+      "level": 14,
+      "section": "intermediate"
+    },
+    {
+      "id": "making_plans",
+      "name": "Faire des Projets",
+      "level": 14,
+      "section": "intermediate"
+    },
+    {
+      "id": "appointments",
+      "name": "Rendez-vous",
+      "level": 14,
+      "section": "intermediate"
+    },
+    {
+      "id": "comparatives",
+      "name": "Le Comparatif",
+      "level": 15,
+      "section": "intermediate"
+    },
+    {
+      "id": "superlatives",
+      "name": "Le Superlatif",
+      "level": 15,
+      "section": "intermediate"
+    },
+    {
+      "id": "health_body",
+      "name": "Corps & Santé",
+      "level": 16,
+      "section": "intermediate"
+    },
+    {
+      "id": "at_the_doctor",
+      "name": "Chez le Médecin",
+      "level": 16,
+      "section": "intermediate"
+    },
+    {
+      "id": "hotel",
+      "name": "À l'Hôtel",
+      "level": 17,
+      "section": "advanced"
+    },
+    {
+      "id": "sightseeing",
+      "name": "Visites Touristiques",
+      "level": 17,
+      "section": "advanced"
+    },
+    {
+      "id": "hobbies",
+      "name": "Loisirs & Passions",
+      "level": 18,
+      "section": "advanced"
+    },
+    {
+      "id": "sports",
+      "name": "Les Sports",
+      "level": 18,
+      "section": "advanced"
+    },
+    {
+      "id": "music_movies",
+      "name": "Musique & Cinéma",
+      "level": 18,
+      "section": "advanced"
+    },
+    {
+      "id": "work",
+      "name": "Travail & Carrière",
+      "level": 19,
+      "section": "advanced"
+    },
+    {
+      "id": "office",
+      "name": "Vie de Bureau",
+      "level": 19,
+      "section": "advanced"
+    },
+    {
+      "id": "technology",
+      "name": "Technologie & Appareils",
+      "level": 20,
+      "section": "advanced"
+    },
+    {
+      "id": "internet",
+      "name": "Internet & Réseaux Sociaux",
+      "level": 20,
+      "section": "advanced"
+    },
+    {
+      "id": "emotions",
+      "name": "Émotions & Sentiments",
+      "level": 21,
+      "section": "advanced"
+    },
+    {
+      "id": "opinions",
+      "name": "Donner son Avis",
+      "level": 21,
+      "section": "advanced"
+    },
+    {
+      "id": "debating",
+      "name": "Débattre & Argumenter",
+      "level": 21,
+      "section": "advanced"
+    },
+    {
+      "id": "conditional",
+      "name": "Le Conditionnel",
+      "level": 22,
+      "section": "advanced"
+    },
+    {
+      "id": "subjunctive",
+      "name": "Le Subjonctif",
+      "level": 22,
+      "section": "advanced"
+    },
+    {
+      "id": "passive_voice",
+      "name": "La Voix Passive",
+      "level": 23,
+      "section": "advanced"
+    },
+    {
+      "id": "phrasal_expressions",
+      "name": "Locutions Verbales",
+      "level": 23,
+      "section": "advanced"
+    },
+    {
+      "id": "idioms",
+      "name": "Expressions Idiomatiques",
+      "level": 24,
+      "section": "advanced"
+    },
+    {
+      "id": "slang",
+      "name": "Argot & Langage Familier",
+      "level": 24,
+      "section": "advanced"
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Traditions",
+      "level": 25,
+      "section": "advanced"
+    },
+    {
+      "id": "current_events",
+      "name": "Actualités & Société",
+      "level": 25,
+      "section": "advanced"
+    },
+    {
+      "id": "c_level_mastery",
+      "name": "C1/C2 Mastery Capstone",
+      "level": 26,
+      "section": "mastery"
+    },
+    {
+      "id": "litterature_philosophie",
+      "name": "Littérature & Philosophie",
+      "level": 27,
+      "section": "mastery"
+    }
+  ]
 }
