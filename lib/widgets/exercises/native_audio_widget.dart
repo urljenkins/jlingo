@@ -44,6 +44,7 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
   void initState() {
     super.initState();
     unawaited(_initialize());
+    WidgetsBinding.instance.addPostFrameCallback((_) => _playAudio());
   }
 
   Future<void> _initialize() async {
@@ -287,36 +288,44 @@ class _NativeAudioWidgetState extends State<NativeAudioWidget> {
 
                 // Speed control
                 const SizedBox(height: 8),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text(
-                      'Speed:',
-                      style: TextStyle(
-                          fontSize: 12, color: AppColors.textSecondary),
-                    ),
-                    const SizedBox(width: 8),
-                    _SpeedButton(
-                      label: '0.5x',
-                      isSelected: _speechRate == 0.25,
-                      onTap: () => _changeSpeechRate(0.25),
-                    ),
-                    _SpeedButton(
-                      label: '0.75x',
-                      isSelected: _speechRate == 0.5,
-                      onTap: () => _changeSpeechRate(0.5),
-                    ),
-                    _SpeedButton(
-                      label: '1x',
-                      isSelected: _speechRate == 0.75,
-                      onTap: () => _changeSpeechRate(0.75),
-                    ),
-                    _SpeedButton(
-                      label: '1.5x',
-                      isSelected: _speechRate == 1.0,
-                      onTap: () => _changeSpeechRate(1.0),
-                    ),
-                  ],
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        'Speed:',
+                        style: TextStyle(
+                            fontSize: 12, color: AppColors.textSecondary),
+                      ),
+                      const SizedBox(width: 8),
+                      _SpeedButton(
+                        label: '0.25x',
+                        isSelected: _speechRate == 0.125,
+                        onTap: () => _changeSpeechRate(0.125),
+                      ),
+                      _SpeedButton(
+                        label: '0.5x',
+                        isSelected: _speechRate == 0.25,
+                        onTap: () => _changeSpeechRate(0.25),
+                      ),
+                      _SpeedButton(
+                        label: '0.75x',
+                        isSelected: _speechRate == 0.5,
+                        onTap: () => _changeSpeechRate(0.5),
+                      ),
+                      _SpeedButton(
+                        label: '1x',
+                        isSelected: _speechRate == 0.75,
+                        onTap: () => _changeSpeechRate(0.75),
+                      ),
+                      _SpeedButton(
+                        label: '1.5x',
+                        isSelected: _speechRate == 1.0,
+                        onTap: () => _changeSpeechRate(1.0),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -456,8 +465,8 @@ class _SpeedButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-        margin: const EdgeInsets.symmetric(horizontal: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        margin: const EdgeInsets.symmetric(horizontal: 2),
         decoration: BoxDecoration(
           color: isSelected ? AppColors.textPrimary : AppColors.surfaceRaised,
           borderRadius: BorderRadius.circular(16),

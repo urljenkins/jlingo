@@ -48,16 +48,19 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
       widget.exercise.audioPath != null &&
       widget.exercise.audioPath!.isNotEmpty;
 
+  double _speechRate = 0.5;
+
   @override
   void initState() {
     super.initState();
     unawaited(_initialize());
     _parseMetadata();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _playDialogue());
   }
 
   Future<void> _initialize() async {
     await _tts.setLanguage(widget.exercise.targetLanguage ?? 'es-ES');
-    await _tts.setSpeechRate(0.5);
+    await _tts.setSpeechRate(_speechRate);
     await _tts.setVolume(1.0);
 
     _tts.setCompletionHandler(_playNextLine);
@@ -70,6 +73,15 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
           _showQuestion = true;
         });
       });
+    }
+  }
+
+  Future<void> _changeSpeechRate(double rate) async {
+    setState(() => _speechRate = rate);
+    if (_hasNativeAudio) {
+      await _audioPlayer.setPlaybackRate(rate * 2);
+    } else {
+      await _tts.setSpeechRate(rate);
     }
   }
 
@@ -240,13 +252,16 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
             children: [
               Icon(_dialogueIcon, color: AppColors.textPrimary, size: 20),
               const SizedBox(width: 8),
-              Text(
-                'Listening Comprehension - $_dialogueLabel',
-                style: const TextStyle(
-                    fontSize: 14, color: AppColors.textSecondary),
+              Expanded(
+                child: Text(
+                  'Listening Comprehension - $_dialogueLabel',
+                  style: const TextStyle(
+                      fontSize: 14, color: AppColors.textSecondary),
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
-              const Spacer(),
-              if (_playCount > 0)
+              if (_playCount > 0) ...[
+                const SizedBox(width: 8),
                 Container(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -268,6 +283,7 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
                     ],
                   ),
                 ),
+              ],
             ],
           ),
           const SizedBox(height: 16),
@@ -314,7 +330,47 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
             ),
           ),
 
-          const SizedBox(height: 16),
+          const SizedBox(height: 12),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Speed:',
+                  style:
+                      TextStyle(fontSize: 12, color: AppColors.textSecondary),
+                ),
+                const SizedBox(width: 8),
+                _DialogueSpeedButton(
+                  label: '0.25x',
+                  isSelected: _speechRate == 0.125,
+                  onTap: () => _changeSpeechRate(0.125),
+                ),
+                _DialogueSpeedButton(
+                  label: '0.5x',
+                  isSelected: _speechRate == 0.25,
+                  onTap: () => _changeSpeechRate(0.25),
+                ),
+                _DialogueSpeedButton(
+                  label: '0.75x',
+                  isSelected: _speechRate == 0.5,
+                  onTap: () => _changeSpeechRate(0.5),
+                ),
+                _DialogueSpeedButton(
+                  label: '1x',
+                  isSelected: _speechRate == 0.75,
+                  onTap: () => _changeSpeechRate(0.75),
+                ),
+                _DialogueSpeedButton(
+                  label: '1.5x',
+                  isSelected: _speechRate == 1.0,
+                  onTap: () => _changeSpeechRate(1.0),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
 
           // Bottom action
           if (!_showQuestion)
@@ -630,4 +686,39 @@ class _DialogueLine {
     required this.text,
     this.translation,
   });
+}
+
+class _DialogueSpeedButton extends StatelessWidget {
+  final String label;
+  final bool isSelected;
+  final VoidCallback onTap;
+
+  const _DialogueSpeedButton({
+    required this.label,
+    required this.isSelected,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        margin: const EdgeInsets.symmetric(horizontal: 2),
+        decoration: BoxDecoration(
+          color: isSelected ? AppColors.textPrimary : AppColors.surfaceRaised,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            fontSize: 12,
+            color: isSelected ? Colors.black : AppColors.textSecondary,
+            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+          ),
+        ),
+      ),
+    );
+  }
 }

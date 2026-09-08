@@ -50,6 +50,8 @@ class _SongFillWidgetState extends State<SongFillWidget>
       widget.exercise.audioPath != null &&
       widget.exercise.audioPath!.isNotEmpty;
 
+  double _speechRate = 0.5;
+
   @override
   void initState() {
     super.initState();
@@ -59,11 +61,12 @@ class _SongFillWidgetState extends State<SongFillWidget>
       vsync: this,
       duration: const Duration(milliseconds: 500),
     );
+    WidgetsBinding.instance.addPostFrameCallback((_) => _play());
   }
 
   Future<void> _initialize() async {
     await _tts.setLanguage(widget.exercise.targetLanguage ?? 'es-ES');
-    await _tts.setSpeechRate(0.5);
+    await _tts.setSpeechRate(_speechRate);
     await _tts.setVolume(1.0);
 
     if (_hasNativeAudio) {
@@ -88,6 +91,15 @@ class _SongFillWidgetState extends State<SongFillWidget>
           });
         }
       });
+    }
+  }
+
+  Future<void> _changeSpeechRate(double rate) async {
+    setState(() => _speechRate = rate);
+    if (_hasNativeAudio) {
+      await _audioPlayer.setPlaybackRate(rate * 2);
+    } else {
+      await _tts.setSpeechRate(rate);
     }
   }
 
@@ -308,12 +320,16 @@ class _SongFillWidgetState extends State<SongFillWidget>
               const Icon(Icons.music_note,
                   color: AppColors.textSecondary, size: 20),
               const SizedBox(width: 8),
-              const Text(
-                'Song Fill Exercise',
-                style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
+              const Expanded(
+                child: Text(
+                  'Song Fill Exercise',
+                  style:
+                      TextStyle(fontSize: 14, color: AppColors.textSecondary),
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
-              const Spacer(),
-              if (_playCount > 0)
+              if (_playCount > 0) ...[
+                const SizedBox(width: 8),
                 Container(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -335,6 +351,7 @@ class _SongFillWidgetState extends State<SongFillWidget>
                     ],
                   ),
                 ),
+              ],
             ],
           ),
           const SizedBox(height: 16),
@@ -463,6 +480,46 @@ class _SongFillWidgetState extends State<SongFillWidget>
                           color: AppColors.textSecondary),
                     ),
                   ],
+                ),
+                const SizedBox(height: 8),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        'Speed:',
+                        style: TextStyle(
+                            fontSize: 12, color: AppColors.textSecondary),
+                      ),
+                      const SizedBox(width: 8),
+                      _SongSpeedButton(
+                        label: '0.25x',
+                        isSelected: _speechRate == 0.125,
+                        onTap: () => _changeSpeechRate(0.125),
+                      ),
+                      _SongSpeedButton(
+                        label: '0.5x',
+                        isSelected: _speechRate == 0.25,
+                        onTap: () => _changeSpeechRate(0.25),
+                      ),
+                      _SongSpeedButton(
+                        label: '0.75x',
+                        isSelected: _speechRate == 0.5,
+                        onTap: () => _changeSpeechRate(0.5),
+                      ),
+                      _SongSpeedButton(
+                        label: '1x',
+                        isSelected: _speechRate == 0.75,
+                        onTap: () => _changeSpeechRate(0.75),
+                      ),
+                      _SongSpeedButton(
+                        label: '1.5x',
+                        isSelected: _speechRate == 1.0,
+                        onTap: () => _changeSpeechRate(1.0),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -727,4 +784,39 @@ class _BlankWord {
     this.hint,
     this.options,
   });
+}
+
+class _SongSpeedButton extends StatelessWidget {
+  final String label;
+  final bool isSelected;
+  final VoidCallback onTap;
+
+  const _SongSpeedButton({
+    required this.label,
+    required this.isSelected,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        margin: const EdgeInsets.symmetric(horizontal: 2),
+        decoration: BoxDecoration(
+          color: isSelected ? AppColors.textSecondary : AppColors.surfaceRaised,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            fontSize: 12,
+            color: isSelected ? Colors.white : AppColors.textSecondary,
+            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+          ),
+        ),
+      ),
+    );
+  }
 }

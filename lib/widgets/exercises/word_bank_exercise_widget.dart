@@ -37,10 +37,10 @@ class _WordBankExerciseWidgetState extends State<WordBankExerciseWidget> {
   bool _showFeedback = false;
   bool _isCorrect = false;
 
-  /// Normal and slow playback, mirroring the two speaker buttons Duolingo
-  /// shows. Slow is what makes a run-together phrase separate into words.
+  /// Normal, slow (half), and quarter-speed playback.
   static const double _normalRate = 0.5;
   static const double _slowRate = 0.25;
+  static const double _quarterRate = 0.125;
 
   @override
   void initState() {
@@ -81,7 +81,8 @@ class _WordBankExerciseWidgetState extends State<WordBankExerciseWidget> {
 
     // Compared on collapsed whitespace and case: the learner assembled the
     // tiles, so spacing is an artefact of assembly rather than an error.
-    String normalise(String s) => s.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+    String normalise(String s) =>
+        s.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
 
     setState(() {
       _isCorrect =
@@ -143,22 +144,31 @@ class _WordBankExerciseWidgetState extends State<WordBankExerciseWidget> {
       );
     }
 
-    // Two speakers, normal and slow — the phrase itself stays hidden until
-    // the answer is in, so this trains the ear rather than reading.
-    return Row(
-      children: [
-        _AudioButton(
-          icon: Icons.volume_up,
-          label: 'Play',
-          onTap: _play,
-        ),
-        const SizedBox(width: 12),
-        _AudioButton(
-          icon: Icons.slow_motion_video,
-          label: 'Slow',
-          onTap: () => _play(rate: _slowRate),
-        ),
-      ],
+    // Three speakers: normal, half, and quarter speed — the phrase itself
+    // stays hidden until the answer is in, so this trains the ear rather than reading.
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          _AudioButton(
+            icon: Icons.volume_up,
+            label: 'Play',
+            onTap: _play,
+          ),
+          const SizedBox(width: 8),
+          _AudioButton(
+            icon: Icons.slow_motion_video,
+            label: 'Slow',
+            onTap: () => _play(rate: _slowRate),
+          ),
+          const SizedBox(width: 8),
+          _AudioButton(
+            icon: Icons.speed,
+            label: '0.25x',
+            onTap: () => _play(rate: _quarterRate),
+          ),
+        ],
+      ),
     );
   }
 
@@ -207,7 +217,12 @@ class _AudioButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedButton.icon(
       onPressed: onTap,
-      icon: Icon(icon, size: 20),
+      style: OutlinedButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+        minimumSize: Size.zero,
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      ),
+      icon: Icon(icon, size: 18),
       label: Text(label),
     );
   }
