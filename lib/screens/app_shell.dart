@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -23,15 +24,16 @@ import 'vocabulary_screen.dart';
 /// Top-level destinations. Each is a tab rather than a pushed route, so the
 /// navigation stays on screen and every tab keeps its own scroll position.
 enum AppTab {
-  learn(Icons.school_outlined, 'Learn'),
-  practice(Icons.style_outlined, 'Practice'),
-  read(Icons.menu_book_outlined, 'Read'),
-  words(Icons.translate_outlined, 'Words'),
-  settings(Icons.settings_outlined, 'Settings');
+  learn(Icons.school_outlined, Icons.school, 'Learn'),
+  practice(Icons.style_outlined, Icons.style, 'Practice'),
+  read(Icons.menu_book_outlined, Icons.menu_book, 'Read'),
+  words(Icons.translate_outlined, Icons.translate, 'Words'),
+  settings(Icons.settings_outlined, Icons.settings, 'Settings');
 
-  const AppTab(this.icon, this.label);
+  const AppTab(this.icon, this.activeIcon, this.label);
 
   final IconData icon;
+  final IconData activeIcon;
   final String label;
 }
 
@@ -198,26 +200,50 @@ class _BottomNav extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: const BoxDecoration(
-        color: AppColors.surfaceSunken,
-        border: Border(top: BorderSide(color: AppColors.border)),
+    final bottomInset = MediaQuery.viewPaddingOf(context).bottom;
+
+    return SafeArea(
+      top: false,
+      minimum: EdgeInsets.only(
+        left: AppSpacing.lg,
+        right: AppSpacing.lg,
+        bottom: bottomInset > 0 ? AppSpacing.sm : AppSpacing.md,
       ),
-      child: SafeArea(
-        top: false,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm),
-          child: Row(
-            children: [
-              for (final tab in AppTab.values)
-                Expanded(
-                  child: _NavItem(
-                    tab: tab,
-                    isActive: tab == current,
-                    onTap: () => onSelect(tab),
-                  ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppRadius.card + 8),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+          child: Container(
+            decoration: BoxDecoration(
+              color: const Color(0xE0121214), // translucent dark surface
+              borderRadius: BorderRadius.circular(AppRadius.card + 8),
+              border: Border.all(
+                color: Colors.white.withValues(alpha: 0.08),
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.45),
+                  blurRadius: 24,
+                  offset: const Offset(0, 8),
                 ),
-            ],
+              ],
+            ),
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.xs,
+              vertical: AppSpacing.sm,
+            ),
+            child: Row(
+              children: [
+                for (final tab in AppTab.values)
+                  Expanded(
+                    child: _NavItem(
+                      tab: tab,
+                      isActive: tab == current,
+                      onTap: () => onSelect(tab),
+                    ),
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -238,26 +264,57 @@ class _NavItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = isActive ? AppColors.textPrimary : AppColors.textMuted;
-
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(AppRadius.sm),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(tab.icon, size: 22, color: color),
-            const SizedBox(height: AppSpacing.xs),
-            Text(
-              tab.label,
-              style: AppTypography.caption.copyWith(
-                color: color,
-                fontWeight: isActive ? FontWeight.w600 : FontWeight.w400,
-              ),
+    return Semantics(
+      button: true,
+      selected: isActive,
+      label: tab.label,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(AppRadius.card),
+          splashColor: Colors.white.withValues(alpha: 0.06),
+          highlightColor: Colors.transparent,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  curve: Curves.easeOutCubic,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 14,
+                    vertical: 4,
+                  ),
+                  decoration: BoxDecoration(
+                    color: isActive
+                        ? Colors.white.withValues(alpha: 0.12)
+                        : Colors.transparent,
+                    borderRadius: BorderRadius.circular(AppRadius.pill),
+                  ),
+                  child: Icon(
+                    isActive ? tab.activeIcon : tab.icon,
+                    size: 20,
+                    color:
+                        isActive ? AppColors.textPrimary : AppColors.textMuted,
+                  ),
+                ),
+                const SizedBox(height: 3),
+                AnimatedDefaultTextStyle(
+                  duration: const Duration(milliseconds: 200),
+                  style: AppTypography.caption.copyWith(
+                    fontSize: 11,
+                    letterSpacing: -0.2,
+                    color:
+                        isActive ? AppColors.textPrimary : AppColors.textMuted,
+                    fontWeight: isActive ? FontWeight.w600 : FontWeight.w400,
+                  ),
+                  child: Text(tab.label),
+                ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
@@ -314,7 +371,8 @@ class _SideNavTile extends StatelessWidget {
     final color = isActive ? AppColors.textPrimary : AppColors.textMuted;
 
     return ListTile(
-      leading: Icon(tab.icon, color: color, size: 20),
+      leading:
+          Icon(isActive ? tab.activeIcon : tab.icon, color: color, size: 20),
       title: Text(
         tab.label,
         style: AppTypography.body.copyWith(

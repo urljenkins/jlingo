@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 /// Translation Exercise Widget
 /// Handles sentence and paragraph translation exercises in both directions
@@ -171,7 +172,10 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
     final isParagraph = _difficulty == 'paragraph';
 
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -417,7 +421,6 @@ class _TranslationExerciseWidgetState extends State<TranslationExerciseWidget> {
           // Submit button
           SizedBox(
             width: double.infinity,
-            height: 50,
             child: ElevatedButton(
               onPressed: _controller.text.isNotEmpty && !_showFeedback
                   ? _checkAnswer

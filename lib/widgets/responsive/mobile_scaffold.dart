@@ -16,8 +16,10 @@ class MobileScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        // The nav draws its own bottom inset, so it sits outside this one.
-        bottom: false,
+        // A nav draws its own bottom inset, so it sits outside this one.
+        // Without one, the body is what meets the gesture bar and keyboard,
+        // and has to keep clear of them itself.
+        bottom: bottomNav == null,
         child: Column(
           children: [
             if (topBar != null) topBar!,

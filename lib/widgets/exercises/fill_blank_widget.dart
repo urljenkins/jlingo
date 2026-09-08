@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 class FillBlankWidget extends StatefulWidget {
   final Exercise exercise;
@@ -68,7 +69,10 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
     final parts = widget.exercise.question.split('___');
 
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -219,7 +223,6 @@ class _FillBlankWidgetState extends State<FillBlankWidget> {
           const Spacer(),
           SizedBox(
             width: double.infinity,
-            height: 50,
             child: ElevatedButton(
               onPressed:
                   _showFeedback || (_useWordBank && _selectedWord == null)

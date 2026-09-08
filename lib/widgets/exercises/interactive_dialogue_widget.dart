@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 /// Interactive Dialogue Widget
 /// Displays short conversations on various topics where users
@@ -153,7 +154,10 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
     final topic = widget.exercise.metadata?['topic'] ?? 'Conversation';
 
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -245,7 +249,6 @@ class _InteractiveDialogueWidgetState extends State<InteractiveDialogueWidget> {
             const SizedBox(height: 16),
             SizedBox(
               width: double.infinity,
-              height: 50,
               child: ElevatedButton(
                 onPressed: _selectedResponse != null && !_showFeedback
                     ? _submitResponse

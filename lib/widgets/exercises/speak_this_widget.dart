@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import '../../models/exercise.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 class SpeakThisWidget extends StatefulWidget {
   final Exercise exercise;
@@ -25,6 +26,10 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
   bool _isCorrect = false;
   String _recognizedText = '';
 
+  /// Set once the answer has been graded so a late final result from the
+  /// recognizer cannot grade the same attempt twice.
+  bool _graded = false;
+
   /// Null while [_initializeSpeech] is still running, then true/false once the
   /// recognizer has reported whether it can be used on this device.
   bool? _speechAvailable;
@@ -32,16 +37,34 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
   @override
   void initState() {
     super.initState();
-    _initializeSpeech();
+    unawaited(_initializeSpeech());
   }
 
   Future<void> _initializeSpeech() async {
     // initialize() returns false when the device has no recognizer or the
     // microphone permission was denied; both mean the exercise can only be
     // skipped.
-    final available = await _speech.initialize();
+    final available = await _speech.initialize(
+      onStatus: _onSpeechStatus,
+      onError: (_) {
+        // An error ends the session; drop back to idle so the mic can be
+        // started again rather than leaving the button stuck on "Listening".
+        if (mounted) setState(() => _isListening = false);
+      },
+    );
     if (!mounted) return;
     setState(() => _speechAvailable = available);
+  }
+
+  /// The recognizer stops on its own when it hears a long enough pause, so the
+  /// UI has to follow its status rather than assume a button release ended it.
+  void _onSpeechStatus(String status) {
+    if (!mounted) return;
+    final listening = status == SpeechToText.listeningStatus;
+    if (_isListening != listening) {
+      setState(() => _isListening = listening);
+    }
+    if (!listening) _grade();
   }
 
   @override
@@ -52,57 +75,54 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
     super.dispose();
   }
 
-  Future<void> _startListening() async {
+  Future<void> _toggleListening() async {
     if (_speechAvailable != true) return;
+    if (_isListening) {
+      await _speech.stop();
+      return;
+    }
 
     setState(() {
       _isListening = true;
       _recognizedText = '';
+      _showFeedback = false;
+      _graded = false;
     });
 
     await _speech.listen(
       onResult: (result) {
         if (!mounted) return;
-        setState(() {
-          _recognizedText = result.recognizedWords;
-        });
+        setState(() => _recognizedText = result.recognizedWords);
+        // The final transcript is the one worth grading, and it can land after
+        // the mic has already been released.
+        if (result.finalResult) _grade();
       },
       localeId: widget.exercise.targetLanguage ?? 'es-ES',
+      // Keep the mic open until the learner has clearly finished, instead of
+      // cutting them off mid-phrase.
+      listenFor: const Duration(seconds: 30),
+      pauseFor: const Duration(seconds: 3),
     );
-
-    // Auto-stop after 3 seconds
-    unawaited(Future<void>.delayed(const Duration(seconds: 3), () {
-      if (mounted && _isListening) {
-        unawaited(_stopListening());
-      }
-    }));
   }
 
-  Future<void> _stopListening() async {
-    await _speech.stop();
-    if (!mounted) return;
-    setState(() => _isListening = false);
+  /// Scores whatever was heard. Safe to call more than once per attempt.
+  void _grade() {
+    if (_graded || _recognizedText.trim().isEmpty) return;
+    _graded = true;
 
-    if (_recognizedText.isNotEmpty) {
-      _checkAnswer();
-    }
-  }
-
-  void _checkAnswer() {
     final userAnswer = _recognizedText.trim().toLowerCase();
     final correctAnswer = widget.exercise.correctAnswer.toLowerCase();
 
-    // Simple similarity check (in production, use a proper similarity algorithm)
     final similarity = _calculateSimilarity(userAnswer, correctAnswer);
     _isCorrect = similarity > 0.7; // 70% similarity threshold
 
     setState(() => _showFeedback = true);
 
-    unawaited(Future<void>.delayed(const Duration(milliseconds: 1200), () {
-      if (mounted) {
-        widget.onAnswer(_isCorrect);
-      }
-    }));
+    if (_isCorrect) {
+      unawaited(Future<void>.delayed(const Duration(milliseconds: 1200), () {
+        if (mounted) widget.onAnswer(true);
+      }));
+    }
   }
 
   double _calculateSimilarity(String a, String b) {
@@ -142,6 +162,14 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
     return matrix[a.length][b.length];
   }
 
+  void _tryAgain() {
+    setState(() {
+      _showFeedback = false;
+      _recognizedText = '';
+      _graded = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final unavailable = _speechAvailable == false;
@@ -149,7 +177,10 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
     const disabledColor = AppColors.textDisabled;
 
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -165,8 +196,7 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
           const SizedBox(height: 40),
           Center(
             child: GestureDetector(
-              onTapDown: enabled ? (_) => _startListening() : null,
-              onTapUp: enabled ? (_) => _stopListening() : null,
+              onTap: enabled ? _toggleListening : null,
               child: Container(
                 width: 100,
                 height: 100,
@@ -210,8 +240,8 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
                   : _speechAvailable == null
                       ? 'Checking microphone...'
                       : _isListening
-                          ? 'Listening...'
-                          : 'Tap and hold to speak',
+                          ? 'Listening — tap to stop'
+                          : 'Tap to speak',
               style: TextStyle(
                 fontSize: 16,
                 color: unavailable ? disabledColor : AppColors.textSecondary,
@@ -253,7 +283,7 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
                 ),
                 const SizedBox(width: 8),
                 Text(
-                  _isCorrect ? 'Good!' : 'Try again',
+                  _isCorrect ? 'Good!' : 'Not quite',
                   style: TextStyle(
                     fontSize: 16,
                     color: _isCorrect ? AppColors.correct : AppColors.incorrect,
@@ -263,26 +293,81 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
             ),
           ],
           const Spacer(),
+          // There is always a way forward, whether or not the recognizer
+          // heard anything usable.
           if (unavailable)
-            SizedBox(
-              width: double.infinity,
-              height: 50,
-              child: ElevatedButton(
-                onPressed: () => widget.onAnswer(true),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.surfaceRaised,
-                  foregroundColor: AppColors.textSecondary,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
+            _bottomButton(
+              label: 'Skip - Speech not available',
+              onPressed: () => widget.onAnswer(true),
+            )
+          else if (_showFeedback && !_isCorrect)
+            Row(
+              children: [
+                Expanded(
+                  child: OutlinedButton(
+                    onPressed: () => widget.onAnswer(false),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: AppColors.textSecondary,
+                      side: const BorderSide(color: AppColors.border),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    child: const Text('Continue'),
                   ),
                 ),
-                child: const Text(
-                  'Skip - Speech not available',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                const SizedBox(width: 12),
+                Expanded(
+                  flex: 2,
+                  child: ElevatedButton(
+                    onPressed: _tryAgain,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.textPrimary,
+                      foregroundColor: AppColors.onAccent,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    child: const Text(
+                      'Try Again',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
+                  ),
                 ),
-              ),
+              ],
+            )
+          else if (!_isListening)
+            _bottomButton(
+              label: 'Skip',
+              onPressed: () => widget.onAnswer(false),
             ),
         ],
+      ),
+    );
+  }
+
+  Widget _bottomButton({
+    required String label,
+    required VoidCallback onPressed,
+  }) {
+    return SizedBox(
+      width: double.infinity,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.surfaceRaised,
+          foregroundColor: AppColors.textSecondary,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+        ),
+        child: Text(
+          label,
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }

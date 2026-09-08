@@ -4,6 +4,7 @@ import 'package:speech_to_text/speech_to_text.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import '../../models/exercise.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 /// Enhanced pronunciation practice widget with detailed feedback
 /// Provides word-by-word analysis, accuracy scores, and suggestions
@@ -35,6 +36,10 @@ class _PronunciationPracticeWidgetState
   List<_WordAnalysis> _wordAnalysis = [];
   int _attempts = 0;
   double _overallScore = 0.0;
+
+  /// Set once the answer has been graded so a late final result from the
+  /// recognizer cannot grade the same attempt twice.
+  bool _graded = false;
 
   /// Null while [_initializeSpeech] is still running, then true/false once the
   /// recognizer has reported whether it can be used on this device.
@@ -72,10 +77,11 @@ class _PronunciationPracticeWidgetState
     // microphone permission was denied; both mean the exercise can only be
     // skipped.
     final available = await _speech.initialize(
-      onStatus: (status) {
-        if (status == 'done' && _isListening) {
-          _stopListening();
-        }
+      onStatus: _onSpeechStatus,
+      onError: (_) {
+        // An error ends the session; drop back to idle so the mic can be
+        // started again rather than leaving the button stuck on "Listening".
+        if (mounted) _setListening(false);
       },
     );
     if (!mounted) return;
@@ -92,14 +98,39 @@ class _PronunciationPracticeWidgetState
     await _tts.speak(widget.exercise.question);
   }
 
-  Future<void> _startListening() async {
+  /// The recognizer stops on its own when it hears a long enough pause, so the
+  /// UI has to follow its status rather than assume a button release ended it.
+  void _onSpeechStatus(String status) {
+    if (!mounted) return;
+    _setListening(status == SpeechToText.listeningStatus);
+  }
+
+  void _setListening(bool listening) {
+    if (_isListening != listening) {
+      setState(() => _isListening = listening);
+    }
+    if (listening) {
+      unawaited(_pulseController.repeat(reverse: true));
+    } else {
+      _pulseController.stop();
+      _pulseController.reset();
+      _analyzePronounciation();
+    }
+  }
+
+  Future<void> _toggleListening() async {
     if (_speechAvailable != true) return;
+    if (_isListening) {
+      await _speech.stop();
+      return;
+    }
 
     setState(() {
       _isListening = true;
       _recognizedText = '';
       _wordAnalysis = [];
       _showFeedback = false;
+      _graded = false;
     });
 
     unawaited(_pulseController.repeat(reverse: true));
@@ -111,27 +142,22 @@ class _PronunciationPracticeWidgetState
           _recognizedText = result.recognizedWords;
           _confidence = result.confidence;
         });
+        // The final transcript is the one worth grading, and it can land after
+        // the mic has already been released.
+        if (result.finalResult) _analyzePronounciation();
       },
       localeId: widget.exercise.targetLanguage ?? 'es-ES',
-      listenFor: const Duration(seconds: 10),
+      // Keep the mic open until the learner has clearly finished, instead of
+      // cutting them off mid-phrase.
+      listenFor: const Duration(seconds: 30),
       pauseFor: const Duration(seconds: 3),
     );
   }
 
-  Future<void> _stopListening() async {
-    _pulseController.stop();
-    _pulseController.reset();
-
-    await _speech.stop();
-    if (!mounted) return;
-    setState(() => _isListening = false);
-
-    if (_recognizedText.isNotEmpty) {
-      _analyzePronounciation();
-    }
-  }
-
+  /// Scores whatever was heard. Safe to call more than once per attempt.
   void _analyzePronounciation() {
+    if (_graded || _recognizedText.trim().isEmpty) return;
+    _graded = true;
     _attempts++;
     final targetWords = _normalizeText(widget.exercise.correctAnswer)
         .split(' ')
@@ -275,6 +301,7 @@ class _PronunciationPracticeWidgetState
       _showFeedback = false;
       _recognizedText = '';
       _wordAnalysis = [];
+      _graded = false;
     });
   }
 
@@ -298,7 +325,10 @@ class _PronunciationPracticeWidgetState
     const disabledColor = AppColors.textDisabled;
 
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -374,9 +404,7 @@ class _PronunciationPracticeWidgetState
           // Microphone button
           Center(
             child: GestureDetector(
-              onTapDown: enabled ? (_) => _startListening() : null,
-              onTapUp: enabled ? (_) => _stopListening() : null,
-              onTapCancel: enabled ? _stopListening : null,
+              onTap: enabled ? _toggleListening : null,
               child: AnimatedBuilder(
                 animation: _pulseAnimation,
                 builder: (context, child) {
@@ -443,8 +471,8 @@ class _PronunciationPracticeWidgetState
                   : _speechAvailable == null
                       ? 'Checking microphone...'
                       : _isListening
-                          ? 'Listening... Release to stop'
-                          : 'Hold to speak',
+                          ? 'Listening — tap to stop'
+                          : 'Tap to speak',
               style: TextStyle(
                 fontSize: 16,
                 color: unavailable ? disabledColor : AppColors.textSecondary,
@@ -505,6 +533,25 @@ class _PronunciationPracticeWidgetState
                 ),
               ),
             )
+          else if (!_showFeedback && !_isListening)
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: _skip,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.surfaceRaised,
+                  foregroundColor: AppColors.textSecondary,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                child: const Text(
+                  'Skip',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
+            )
           else if (_showFeedback && !_isCorrect)
             Row(
               children: [
@@ -519,7 +566,7 @@ class _PronunciationPracticeWidgetState
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    child: const Text('Skip'),
+                    child: const Text('Continue'),
                   ),
                 ),
                 const SizedBox(width: 12),

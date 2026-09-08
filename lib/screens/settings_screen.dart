@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../models/cefr_level.dart';
+import '../models/exercise.dart';
 import '../models/user_profile.dart';
 import '../providers/course_provider.dart';
 import '../providers/onboarding_provider.dart';
 import '../providers/settings_provider.dart';
+import 'exercise_types_screen.dart';
 import 'onboarding/level_quiz_screen.dart';
 import '../utils/build_info.dart';
 import '../theme/app_colors.dart';
@@ -32,6 +34,8 @@ class SettingsScreen extends StatelessWidget {
             children: [
               _buildSectionHeader('Learning & Habits'),
               _buildLevelCard(context),
+              const SizedBox(height: 12),
+              _buildExerciseTypesCard(context, settings),
               const SizedBox(height: 12),
               Card(
                 color: AppColors.surface,
@@ -212,6 +216,54 @@ class SettingsScreen extends StatelessWidget {
             ],
           );
         },
+      ),
+    );
+  }
+
+  /// Way in to the exercise catalogue: what each type does, and whether it
+  /// appears. Summarised here so the count is visible without opening it.
+  Widget _buildExerciseTypesCard(
+      BuildContext context, SettingsProvider settings) {
+    final language = context.watch<CourseProvider>().currentLanguageCode;
+    final enabled =
+        ExerciseType.values.length - settings.disabledTypesFor(language).length;
+    final total = ExerciseType.values.length;
+    final perCourse = settings.hasLanguageOverride(language);
+
+    return Card(
+      color: AppColors.surface,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.card),
+        side: const BorderSide(color: AppColors.border),
+      ),
+      child: ListTile(
+        leading: Container(
+          padding: const EdgeInsets.all(AppSpacing.sm),
+          decoration: BoxDecoration(
+            color: AppColors.surfaceRaised,
+            borderRadius: BorderRadius.circular(AppRadius.sm),
+          ),
+          child: const Icon(Icons.tune, color: AppColors.textSecondary),
+        ),
+        title: const Text(
+          'Exercise types',
+          style: TextStyle(fontWeight: FontWeight.w600),
+        ),
+        subtitle: Text(
+          enabled == total
+              ? 'All $total kinds are on. See how each one works, or switch '
+                  'off the ones that do not suit how you study.'
+              : '$enabled of $total on'
+                  '${perCourse ? ' for this course' : ''}. Switched-off types '
+                  'stay out of lessons; nothing is lost.',
+          style: AppTypography.caption,
+        ),
+        trailing: const Icon(Icons.chevron_right, color: AppColors.textMuted),
+        onTap: () => unawaited(Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (_) => const ExerciseTypesScreen(),
+          ),
+        )),
       ),
     );
   }

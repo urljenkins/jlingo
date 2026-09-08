@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 /// Story Lesson Widget
 /// Displays graded readers (stories written for specific language levels)
@@ -164,7 +165,10 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -371,7 +375,6 @@ class _StoryLessonWidgetState extends State<StoryLessonWidget> {
           // Submit button
           SizedBox(
             width: double.infinity,
-            height: 50,
             child: ElevatedButton(
               onPressed: _selectedAnswer != null && !_showFeedback
                   ? _checkAnswer

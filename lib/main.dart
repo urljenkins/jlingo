@@ -11,6 +11,7 @@ import 'providers/vocabulary_provider.dart';
 import 'providers/gamification_provider.dart';
 import 'providers/book_provider.dart';
 import 'providers/onboarding_provider.dart';
+import 'providers/word_knowledge_provider.dart';
 import 'providers/settings_provider.dart';
 import 'theme/app_theme.dart';
 
@@ -45,6 +46,7 @@ class _LinguaSprintAppState extends State<LinguaSprintApp> {
         ChangeNotifierProvider(create: (_) => GamificationProvider()),
         ChangeNotifierProvider(create: (_) => BookProvider()),
         ChangeNotifierProvider(create: (_) => OnboardingProvider()),
+        ChangeNotifierProvider(create: (_) => WordKnowledgeProvider()),
         ChangeNotifierProvider(
           create: (_) {
             final settings = SettingsProvider();

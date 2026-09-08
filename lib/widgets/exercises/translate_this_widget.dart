@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 class TranslateThisWidget extends StatefulWidget {
   final Exercise exercise;
@@ -46,7 +47,10 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -56,7 +60,8 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
           ),
           const SizedBox(height: 16),
           Container(
-            padding: const EdgeInsets.all(12.0),
+            width: double.infinity,
+            padding: const EdgeInsets.all(AppSpacing.lg),
             decoration: BoxDecoration(
               color: AppColors.surfaceRaised,
               borderRadius: BorderRadius.circular(8),
@@ -139,12 +144,14 @@ class _TranslateThisWidgetState extends State<TranslateThisWidget> {
           const Spacer(),
           SizedBox(
             width: double.infinity,
-            height: 50,
             child: ElevatedButton(
               onPressed: _showFeedback ? null : _checkAnswer,
               child: const Text('Check'),
             ),
           ),
+          // The keyboard sits right under this button; the scaffold covers
+          // the safe-area inset, this is the breathing room on top of it.
+          const SizedBox(height: AppSpacing.lg),
         ],
       ),
     );

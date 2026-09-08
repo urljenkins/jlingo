@@ -14,6 +14,9 @@ import 'native_audio_widget.dart';
 import 'pronunciation_practice_widget.dart';
 import 'dialogue_listening_widget.dart';
 import 'song_fill_widget.dart';
+import 'word_bank_exercise_widget.dart';
+import 'select_image_widget.dart';
+import 'complete_the_chat_widget.dart';
 
 typedef ExerciseRenderer = Widget Function({
   required Exercise exercise,
@@ -56,6 +59,17 @@ class ExerciseRendererRegistry {
         DialogueListeningWidget(exercise: exercise, onAnswer: onAnswer),
     ExerciseType.songFill: ({required exercise, required onAnswer}) =>
         SongFillWidget(exercise: exercise, onAnswer: onAnswer),
+    // Tap-to-assemble and visual types.
+    ExerciseType.wordBankTranslate: ({required exercise, required onAnswer}) =>
+        WordBankExerciseWidget(
+            exercise: exercise, onAnswer: onAnswer, listening: false),
+    ExerciseType.tapWhatYouHear: ({required exercise, required onAnswer}) =>
+        WordBankExerciseWidget(
+            exercise: exercise, onAnswer: onAnswer, listening: true),
+    ExerciseType.selectImage: ({required exercise, required onAnswer}) =>
+        SelectImageWidget(exercise: exercise, onAnswer: onAnswer),
+    ExerciseType.completeTheChat: ({required exercise, required onAnswer}) =>
+        CompleteTheChatWidget(exercise: exercise, onAnswer: onAnswer),
   };
 
   static Widget render({

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 /// Cloze Test (Fill-in-the-blank) Widget
 /// Displays sentences or paragraphs with multiple blanks to fill in.
@@ -190,7 +191,10 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
         : <String>[];
 
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -406,7 +410,6 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
           // Submit button
           SizedBox(
             width: double.infinity,
-            height: 50,
             child: ElevatedButton(
               onPressed:
                   _allBlanksFilled && !_showFeedback ? _checkAnswers : null,

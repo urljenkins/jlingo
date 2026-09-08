@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../models/exercise.dart';
 import '../hover_card.dart';
 import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
 
 class MatchPairsWidget extends StatefulWidget {
   final Exercise exercise;
@@ -108,7 +109,10 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenInset,
+        vertical: AppSpacing.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

@@ -19,6 +19,13 @@ enum ExerciseType {
   storyLesson, // Graded readers (stories for specific language levels)
   translationExercise, // Translate sentences/paragraphs (both ways)
   clozeTest, // Fill-in-the-blank with multiple blanks in context
+  // Tap-to-assemble and visual types. These use a word bank or pictures
+  // instead of a text field, which is a gentler input on a phone and keeps
+  // the exercise about meaning rather than spelling.
+  wordBankTranslate, // Assemble a translation from shuffled word tiles
+  tapWhatYouHear, // Hear a phrase and rebuild it from word tiles
+  selectImage, // Hear or read a word and pick the picture it names
+  completeTheChat, // Fill the learner's turn in a short conversation
 }
 
 @JsonSerializable()

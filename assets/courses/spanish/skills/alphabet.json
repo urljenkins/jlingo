@@ -146,30 +146,30 @@
         },
         {
             "type": "matchPairs",
-            "question": "Match the letters with their names",
+            "question": "Match each letter with the sound it makes",
             "options": [],
             "correctAnswer": "",
             "metadata": {
                 "pairs": [
                     {
-                        "target": "B",
-                        "native": "Be"
-                    },
-                    {
-                        "target": "C",
-                        "native": "Ce"
-                    },
-                    {
-                        "target": "G",
-                        "native": "Ge"
+                        "target": "J",
+                        "native": "Strong H sound (jamón)"
                     },
                     {
                         "target": "H",
-                        "native": "Hache"
+                        "native": "Silent (hola)"
                     },
                     {
-                        "target": "J",
-                        "native": "Jota"
+                        "target": "Ñ",
+                        "native": "'ny' sound (niño)"
+                    },
+                    {
+                        "target": "LL",
+                        "native": "'ly' sound (lluvia)"
+                    },
+                    {
+                        "target": "RR",
+                        "native": "Rolled r (perro)"
                     }
                 ]
             },
@@ -460,20 +460,20 @@
             "metadata": {
                 "pairs": [
                     {
+                        "target": "C (before e, i)",
+                        "native": "'th' sound (cielo)"
+                    },
+                    {
+                        "target": "G (before e, i)",
+                        "native": "Strong H sound (gente)"
+                    },
+                    {
+                        "target": "QU",
+                        "native": "'k' sound (queso)"
+                    },
+                    {
                         "target": "Z",
-                        "native": "Zeta"
-                    },
-                    {
-                        "target": "Y",
-                        "native": "Ye/i griega"
-                    },
-                    {
-                        "target": "Ll",
-                        "native": "Elle"
-                    },
-                    {
-                        "target": "Ñ",
-                        "native": "Eñe"
+                        "native": "'th' sound (zapato)"
                     }
                 ]
             },
