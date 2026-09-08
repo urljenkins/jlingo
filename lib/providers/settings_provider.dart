@@ -5,6 +5,26 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/exercise.dart';
 
+/// How many word bubbles the bubble-match drill keeps on screen.
+enum BubbleFieldSize {
+  /// Eight pairs — dense but readable on a phone.
+  cosy('Cosy', 8, false, '16 bubbles'),
+
+  /// Twelve pairs — small text, tight packing, the busy end of the range.
+  packed('Packed', 12, false, '24 bubbles'),
+
+  /// Starts at eight pairs and tops back up as pairs clear, like the
+  /// waterfall drill — the field never empties until the pool does.
+  endless('Endless', 8, true, 'Refills as you clear');
+
+  const BubbleFieldSize(this.label, this.pairCount, this.refills, this.blurb);
+
+  final String label;
+  final int pairCount;
+  final bool refills;
+  final String blurb;
+}
+
 /// Provider for managing application settings
 class SettingsProvider extends ChangeNotifier {
   /// Gates every form of progress tracking: streaks, XP, levels, daily
@@ -31,15 +51,36 @@ class SettingsProvider extends ChangeNotifier {
   static const String _languageDisabledTypesKey =
       'settings_disabled_exercise_types_by_language';
 
+  /// Per-topic overrides: `{skillId: [enum names]}`. Set by long-pressing a
+  /// topic on the Learn tab. A skill present here replaces whatever the
+  /// language/global set would have given for that one topic only; tapping the
+  /// topic (rather than long-pressing) leaves it on the default and never
+  /// creates an entry here.
+  static const String _skillDisabledTypesKey =
+      'settings_disabled_exercise_types_by_skill';
+
+  /// Per-topic drill length overrides: `{skillId: int}`. Set by long-pressing
+  /// a topic on the Learn tab to customize how many exercises to drill (up to 100).
+  static const String _skillDrillLengthKey = 'settings_drill_length_by_skill';
+
+  /// Default drill length if not explicitly customized.
+  static const int defaultDrillLength = 12;
+
   /// Whether the learner has seen the walkthrough of the exercise catalogue.
   static const String _exerciseTourSeenKey = 'settings_exercise_tour_seen';
+
+  /// How the bubble-match drill sizes its field, stored as an enum name.
+  static const String _bubbleFieldSizeKey = 'settings_bubble_field_size';
 
   bool _progressTrackingEnabled = false;
   bool _notificationsEnabled = true;
   double _speechRate = 0.5;
   Set<ExerciseType> _disabledTypes = {};
   Map<String, Set<ExerciseType>> _disabledTypesByLanguage = {};
+  Map<String, Set<ExerciseType>> _disabledTypesBySkill = {};
+  Map<String, int> _drillLengthBySkill = {};
   bool _exerciseTourSeen = false;
+  BubbleFieldSize _bubbleFieldSize = BubbleFieldSize.cosy;
   bool _isLoading = true;
 
   bool get progressTrackingEnabled => _progressTrackingEnabled;
@@ -54,7 +95,42 @@ class SettingsProvider extends ChangeNotifier {
   Map<String, Set<ExerciseType>> get disabledTypesByLanguage =>
       Map.unmodifiable(_disabledTypesByLanguage);
 
+  /// Topics that carry their own list, and what it is.
+  Map<String, Set<ExerciseType>> get disabledTypesBySkill =>
+      Map.unmodifiable(_disabledTypesBySkill);
+
+  /// True when [skillId] keeps its own list or custom drill length rather than
+  /// following the language/global one. Drives the "configured" mark on the topic row
+  /// and the "Reset to default" action in the per-topic sheet.
+  bool hasSkillOverride(String skillId) =>
+      _disabledTypesBySkill.containsKey(skillId) ||
+      _drillLengthBySkill.containsKey(skillId);
+
+  /// Target number of exercises to drill for [skillId] (clamped 5..100).
+  int drillLengthForSkill(String skillId) =>
+      _drillLengthBySkill[skillId] ?? defaultDrillLength;
+
+  /// Sets the custom drill length for [skillId] (up to 100 exercises).
+  Future<void> setDrillLengthForSkill(String skillId, int count) async {
+    final clamped = count.clamp(5, 100);
+    if (_drillLengthBySkill[skillId] == clamped) return;
+    _drillLengthBySkill[skillId] = clamped;
+    notifyListeners();
+    await _persistSkillDrillLengths();
+  }
+
+  /// The set in force for one topic: its own list if it has been configured,
+  /// otherwise whatever [disabledTypesFor] gives for the course. This is what
+  /// a lesson started from that topic should consult.
+  Set<ExerciseType> disabledTypesForSkill(String skillId, {String? language}) {
+    final override = _disabledTypesBySkill[skillId];
+    if (override != null) return Set.unmodifiable(override);
+    return disabledTypesFor(language);
+  }
+
   bool get exerciseTourSeen => _exerciseTourSeen;
+
+  BubbleFieldSize get bubbleFieldSize => _bubbleFieldSize;
 
   /// True when [language] keeps its own list instead of following the global
   /// one. Drives the "Use the global setting" toggle on the course tab.
@@ -93,7 +169,14 @@ class SettingsProvider extends ChangeNotifier {
       _disabledTypes = _decodeTypes(prefs.getString(_disabledTypesKey));
       _disabledTypesByLanguage =
           _decodeTypesByLanguage(prefs.getString(_languageDisabledTypesKey));
+      _disabledTypesBySkill =
+          _decodeTypesByLanguage(prefs.getString(_skillDisabledTypesKey));
+      _drillLengthBySkill =
+          _decodeSkillDrillLengths(prefs.getString(_skillDrillLengthKey));
       _exerciseTourSeen = prefs.getBool(_exerciseTourSeenKey) ?? false;
+      _bubbleFieldSize = _decodeBubbleFieldSize(
+        prefs.getString(_bubbleFieldSizeKey),
+      );
     } catch (e) {
       debugPrint('Error loading settings: $e');
     }
@@ -241,13 +324,79 @@ class SettingsProvider extends ChangeNotifier {
     await _persistLanguageDisabledTypes();
   }
 
-  /// Turns everything back on, globally and for every course.
+  // -------------------------------------------------------------------
+  // Per-topic overrides
+  // -------------------------------------------------------------------
+
+  /// Switches a type on or off for one topic only.
+  ///
+  /// The first call for a topic seeds its list from whatever the course would
+  /// otherwise use, so flipping a single type does not quietly re-enable
+  /// everything else. Returns false, changing nothing, if this would leave the
+  /// topic with no type to draw from.
+  Future<bool> setTypeEnabledForSkill(
+    String skillId,
+    ExerciseType type,
+    bool enabled, {
+    String? language,
+  }) async {
+    final current =
+        _disabledTypesBySkill[skillId] ?? {...disabledTypesFor(language)};
+
+    if (!enabled && _wouldDisableEverything(current, type)) {
+      return false;
+    }
+
+    if (enabled) {
+      current.remove(type);
+    } else {
+      current.add(type);
+    }
+    _disabledTypesBySkill[skillId] = current;
+
+    notifyListeners();
+    await _persistSkillDisabledTypes();
+    return true;
+  }
+
+  /// Drops a topic's own list and custom drill length so it follows the course default again — the
+  /// "tap for default" side of the long-press config.
+  Future<void> clearSkillOverride(String skillId) async {
+    final removedTypes = _disabledTypesBySkill.remove(skillId) != null;
+    final removedDrillLength = _drillLengthBySkill.remove(skillId) != null;
+    if (!removedTypes && !removedDrillLength) return;
+    notifyListeners();
+    if (removedTypes) await _persistSkillDisabledTypes();
+    if (removedDrillLength) await _persistSkillDrillLengths();
+  }
+
+  /// Turns everything back on, globally and for every course and topic.
   Future<void> resetExerciseTypes() async {
     _disabledTypes = {};
     _disabledTypesByLanguage = {};
+    _disabledTypesBySkill = {};
+    _drillLengthBySkill = {};
     notifyListeners();
     await _persistDisabledTypes();
     await _persistLanguageDisabledTypes();
+    await _persistSkillDisabledTypes();
+    await _persistSkillDrillLengths();
+  }
+
+  Future<void> setBubbleFieldSize(BubbleFieldSize size) async {
+    if (_bubbleFieldSize == size) return;
+    _bubbleFieldSize = size;
+    notifyListeners();
+
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_bubbleFieldSizeKey, size.name);
+  }
+
+  static BubbleFieldSize _decodeBubbleFieldSize(String? raw) {
+    for (final size in BubbleFieldSize.values) {
+      if (size.name == raw) return size;
+    }
+    return BubbleFieldSize.cosy;
   }
 
   Future<void> setExerciseTourSeen(bool seen) async {
@@ -278,6 +427,41 @@ class SettingsProvider extends ChangeNotifier {
           entry.key: entry.value.map((t) => t.name).toList(),
       }),
     );
+  }
+
+  Future<void> _persistSkillDisabledTypes() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(
+      _skillDisabledTypesKey,
+      jsonEncode({
+        for (final entry in _disabledTypesBySkill.entries)
+          entry.key: entry.value.map((t) => t.name).toList(),
+      }),
+    );
+  }
+
+  Future<void> _persistSkillDrillLengths() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(
+      _skillDrillLengthKey,
+      jsonEncode(_drillLengthBySkill),
+    );
+  }
+
+  static Map<String, int> _decodeSkillDrillLengths(String? raw) {
+    if (raw == null || raw.isEmpty) return {};
+    try {
+      final decoded = jsonDecode(raw);
+      if (decoded is! Map) return {};
+      return {
+        for (final entry in decoded.entries)
+          if (entry.value is int)
+            entry.key as String: (entry.value as int).clamp(5, 100),
+      };
+    } catch (e) {
+      debugPrint('Error decoding skill drill lengths: $e');
+      return {};
+    }
   }
 
   static String _encodeTypes(Set<ExerciseType> types) =>

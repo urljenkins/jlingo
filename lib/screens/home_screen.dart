@@ -22,6 +22,7 @@ import '../theme/app_typography.dart';
 import '../utils/language_display.dart';
 import '../widgets/gamification/xp_widgets.dart';
 import '../widgets/responsive/mobile_scaffold.dart';
+import '../widgets/skill_exercise_types_sheet.dart';
 import '../widgets/skill_preview_sheet.dart';
 import 'language_selection_screen.dart';
 import 'syllabus_screen.dart';
@@ -64,6 +65,18 @@ class _HomeScreenState extends State<HomeScreen> {
     await _startLesson(skillId);
   }
 
+  /// Long-press on a topic: pick which exercise types run for that one topic.
+  /// A plain tap starts it on the course default and leaves this untouched.
+  void _configureSkill(String skillId, String skillName) {
+    HapticFeedback.mediumImpact();
+    unawaited(SkillExerciseTypesSheet.show(
+      context,
+      skillId: skillId,
+      skillName: skillName,
+      language: context.read<CourseProvider>().currentLanguageCode,
+    ));
+  }
+
   Future<void> _startLesson(String skillId) async {
     setState(() => _isLoading = true);
     final skill = await context.read<CourseProvider>().loadSkill(skillId);
@@ -101,7 +114,9 @@ class _HomeScreenState extends State<HomeScreen> {
         builder: (context) => LessonScreen(
           skill: skill,
           filterType: filter,
-          disabledTypes: settings.disabledTypesFor(language),
+          disabledTypes:
+              settings.disabledTypesForSkill(skillId, language: language),
+          drillLength: settings.drillLengthForSkill(skillId),
         ),
       ),
     ));
@@ -543,10 +558,16 @@ class _HomeScreenState extends State<HomeScreen> {
                 isCompleted: completed.contains(skill.id),
                 isCurrent: skill.id == currentSkillId,
                 isUnlocked: unlocked,
+                isConfigured: context
+                    .watch<SettingsProvider>()
+                    .hasSkillOverride(skill.id),
                 previousSkillName:
                     position > 0 ? manifest.skills[position - 1].name : null,
                 onTap: unlocked ? () => _startLesson(skill.id) : null,
                 onPreview: unlocked ? () => _previewSkill(skill.id) : null,
+                onConfigure: unlocked
+                    ? () => _configureSkill(skill.id, skill.name)
+                    : null,
               );
             }),
           ],
@@ -689,15 +710,21 @@ class _SkillRow extends StatelessWidget {
     required this.isCompleted,
     required this.isCurrent,
     required this.isUnlocked,
+    required this.isConfigured,
     required this.previousSkillName,
     this.onTap,
     this.onPreview,
+    this.onConfigure,
   });
 
   final String name;
   final bool isCompleted;
   final bool isCurrent;
   final bool isUnlocked;
+
+  /// True when this topic carries its own exercise-type list (set via
+  /// [onConfigure]). Drives the tune mark on the row.
+  final bool isConfigured;
   final String? previousSkillName;
   final VoidCallback? onTap;
 
@@ -705,6 +732,9 @@ class _SkillRow extends StatelessWidget {
   /// straight to the lesson — the summary is there when it is wanted, not
   /// in the way when it is not.
   final VoidCallback? onPreview;
+
+  /// Long-press: configure which exercise types run for this topic.
+  final VoidCallback? onConfigure;
 
   @override
   Widget build(BuildContext context) {
@@ -725,6 +755,7 @@ class _SkillRow extends StatelessWidget {
         ),
         child: InkWell(
           onTap: onTap,
+          onLongPress: onConfigure,
           child: Padding(
             padding: const EdgeInsets.all(AppSpacing.lg),
             child: Row(
@@ -748,6 +779,14 @@ class _SkillRow extends StatelessWidget {
                     ],
                   ),
                 ),
+                if (isUnlocked && isConfigured)
+                  IconButton(
+                    onPressed: onConfigure,
+                    icon: const Icon(Icons.tune, size: 20),
+                    color: AppColors.textSecondary,
+                    tooltip: 'Exercise types for this topic',
+                    visualDensity: VisualDensity.compact,
+                  ),
                 if (isUnlocked && onPreview != null)
                   IconButton(
                     onPressed: onPreview,
@@ -776,6 +815,7 @@ class _SkillRow extends StatelessWidget {
           ? 'Locked'
           : 'Unlocks after $previousSkillName';
     }
+    if (isConfigured) return 'Custom exercise types · long-press to change';
     if (isCurrent) return 'Continue where you left off';
     if (isCompleted) return 'Finished · tap to revisit';
     return null;

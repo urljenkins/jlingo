@@ -30,11 +30,15 @@ class LessonScreen extends StatefulWidget {
   /// than presenting an empty screen.
   final Set<ExerciseType> disabledTypes;
 
+  /// Target number of exercises for this drill session.
+  final int drillLength;
+
   const LessonScreen({
     super.key,
     required this.skill,
     this.filterType,
     this.disabledTypes = const {},
+    this.drillLength = LessonTopUp.targetLength,
   });
 
   @override
@@ -47,6 +51,16 @@ class _LessonScreenState extends State<LessonScreen> {
   int _totalAnswers = 0;
   int _totalXPEarned = 0;
   List<Exercise> _exercises = [];
+
+  /// Indices the learner has already answered. Going back to review one of
+  /// these must not score it again, and the exercise renders in a resolved,
+  /// non-interactive state.
+  final Set<int> _answeredIndices = {};
+
+  /// Indices the learner skipped without answering. Tracked so the completion
+  /// summary can report them, and so re-skipping the same one doesn't count
+  /// twice.
+  final Set<int> _skippedIndices = {};
 
   @override
   void initState() {
@@ -67,9 +81,12 @@ class _LessonScreenState extends State<LessonScreen> {
     if (widget.filterType != null) {
       // An explicit filter is the learner asking for that type right now, so
       // it outranks the disabled list.
-      _exercises = widget.skill.exercises
+      final filtered = widget.skill.exercises
           .where((e) => e.type == widget.filterType)
           .toList();
+      _exercises = filtered.length > widget.drillLength
+          ? filtered.sublist(0, widget.drillLength)
+          : filtered;
       return;
     }
 
@@ -80,30 +97,50 @@ class _LessonScreenState extends State<LessonScreen> {
     // A skill built entirely from switched-off types would otherwise be
     // unreachable, blocking the course. Fall back to the full set and say so.
     _includedDisabledTypes = allowed.isEmpty && all.isNotEmpty;
-    final authored = LessonOrder.arrange(
-      _includedDisabledTypes ? all : allowed,
-    );
+    final source = _includedDisabledTypes ? all : allowed;
+    final authored = LessonOrder.arrange(source);
 
-    // Most skills carry only five exercises, which is over in a minute and
-    // identical on the next visit. Top the lesson up from the course
-    // vocabulary so a short skill still runs a full session, and runs a
-    // different one each time.
+    // If we have more authored exercises than the target drill length (e.g. 100
+    // exercises in a deep skill), sample a fresh window rotating by current timestamp
+    // so repeat visits cycle through different exercises without seeing the same pool.
+    List<Exercise> baseAuthored = authored;
+    if (authored.length > widget.drillLength) {
+      final seed = DateTime.now().millisecondsSinceEpoch ~/ 1000;
+      // Preserve introduction/teaching groups if possible by selecting a contiguous
+      // rotating slice across the ordered exercises.
+      final offset = seed % authored.length;
+      final rotated = [
+        ...authored.sublist(offset),
+        ...authored.sublist(0, offset),
+      ];
+      baseAuthored =
+          LessonOrder.arrange(rotated.sublist(0, widget.drillLength));
+    }
+
+    // Top the lesson up from the course vocabulary if fewer than drillLength.
     final pool = WordPool.build(
       deck: context.read<FlashcardProvider>().currentDeck,
       skill: widget.skill,
     );
     final extended = LessonTopUp.extend(
-      authored: authored,
+      authored: baseAuthored,
       pool: pool.excludingKnown(context.read<WordKnowledgeProvider>()),
-      // The visit count is what makes a repeat visit a different lesson.
       seed: DateTime.now().millisecondsSinceEpoch ~/ 1000,
+      targetLength: widget.drillLength,
     );
 
-    _generatedCount = extended.length - authored.length;
+    _generatedCount = extended.length - baseAuthored.length;
     _exercises = extended;
   }
 
   Future<void> _onAnswer(bool isCorrect) async {
+    // Reviewing an exercise that was already answered (the learner stepped
+    // back to it). The widget is wrapped in an IgnorePointer while reviewing,
+    // so this shouldn't fire — but guard anyway and never re-score.
+    if (_answeredIndices.contains(_currentExerciseIndex)) {
+      return;
+    }
+
     final gamificationProvider = context.read<GamificationProvider>();
     final courseProvider = context.read<CourseProvider>();
     final trackingEnabled =
@@ -112,6 +149,8 @@ class _LessonScreenState extends State<LessonScreen> {
 
     setState(() {
       _totalAnswers++;
+      _answeredIndices.add(_currentExerciseIndex);
+      _skippedIndices.remove(_currentExerciseIndex);
     });
 
     if (isCorrect) {
@@ -143,14 +182,42 @@ class _LessonScreenState extends State<LessonScreen> {
       }
     }
 
-    // Move to next exercise
+    await _advanceOrFinish();
+  }
+
+  /// Advance to the next exercise, or finish the lesson if this was the last
+  /// one. Used both after an answer and by the skip button.
+  Future<void> _advanceOrFinish() async {
     if (_currentExerciseIndex < _exercises.length - 1) {
-      setState(() {
-        _currentExerciseIndex++;
-      });
+      _goToNext();
     } else {
       await _finishLesson();
     }
+  }
+
+  void _goToNext() {
+    if (_currentExerciseIndex >= _exercises.length - 1) return;
+    setState(() {
+      _currentExerciseIndex++;
+    });
+  }
+
+  void _goToPrevious() {
+    if (_currentExerciseIndex == 0) return;
+    setState(() {
+      _currentExerciseIndex--;
+    });
+  }
+
+  /// Move past the current exercise without answering it. It stays unanswered,
+  /// so stepping back to it later still lets the learner attempt it.
+  Future<void> _skipExercise() async {
+    if (!_answeredIndices.contains(_currentExerciseIndex)) {
+      setState(() {
+        _skippedIndices.add(_currentExerciseIndex);
+      });
+    }
+    await _advanceOrFinish();
   }
 
   void _showLevelUpCelebration(int newLevel) {
@@ -208,8 +275,9 @@ class _LessonScreenState extends State<LessonScreen> {
 
       _totalXPEarned += completionResult.totalXP;
 
-      final masteryGain =
-          (_correctAnswers / _totalAnswers) * 20; // Up to 20% per session
+      final masteryGain = _totalAnswers > 0
+          ? (_correctAnswers / _totalAnswers) * 20 // Up to 20% per session
+          : 0.0;
       final currentMastery =
           progressProvider.progress?.skillMastery[widget.skill.id] ?? 0.0;
       final newMastery = (currentMastery + masteryGain).clamp(0.0, 100.0);
@@ -230,8 +298,12 @@ class _LessonScreenState extends State<LessonScreen> {
   }
 
   Widget _buildCompletionDialog() {
-    final accuracy = (_correctAnswers / _totalAnswers * 100).round();
+    final accuracy =
+        _totalAnswers > 0 ? (_correctAnswers / _totalAnswers * 100).round() : 0;
     final isPerfect = _correctAnswers == _totalAnswers && _totalAnswers > 0;
+    final skipped = _skippedIndices.length;
+    final trackingEnabled =
+        context.read<SettingsProvider>().progressTrackingEnabled;
     final gamificationProvider = context.read<GamificationProvider>();
     final userLevel = gamificationProvider.userLevel;
 
@@ -274,80 +346,93 @@ class _LessonScreenState extends State<LessonScreen> {
                   label: 'Correct',
                   color: AppColors.textSecondary,
                 ),
-                _buildStatColumn(
-                  icon: Icons.speed,
-                  value: '$accuracy%',
-                  label: 'Accuracy',
-                  color: accuracy >= 80 ? AppColors.textPrimary : Colors.orange,
-                ),
+                if (trackingEnabled)
+                  _buildStatColumn(
+                    icon: Icons.speed,
+                    value: '$accuracy%',
+                    label: 'Accuracy',
+                    color:
+                        accuracy >= 80 ? AppColors.textPrimary : Colors.orange,
+                  ),
+                if (skipped > 0)
+                  _buildStatColumn(
+                    icon: Icons.skip_next,
+                    value: '$skipped',
+                    label: 'Skipped',
+                    color: AppColors.textMuted,
+                  ),
               ],
             ),
             const SizedBox(height: 20),
 
-            // XP earned
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    AppColors.textPrimary.withValues(alpha: 0.2),
-                    AppColors.textSecondary.withValues(alpha: 0.2),
+            // XP and level progress are only meaningful when progress
+            // tracking is on; with it off, scoring never ran.
+            if (trackingEnabled) ...[
+              // XP earned
+              Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      AppColors.textPrimary.withValues(alpha: 0.2),
+                      AppColors.textSecondary.withValues(alpha: 0.2),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(Icons.star,
+                        color: AppColors.textPrimary, size: 28),
+                    const SizedBox(width: 8),
+                    Text(
+                      '+$_totalXPEarned XP',
+                      style: const TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
                   ],
                 ),
-                borderRadius: BorderRadius.circular(12),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              const SizedBox(height: 16),
+
+              // Level progress
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.star,
-                      color: AppColors.textPrimary, size: 28),
-                  const SizedBox(width: 8),
-                  Text(
-                    '+$_totalXPEarned XP',
-                    style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.textPrimary,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Level ${userLevel.level} - ${userLevel.title}',
+                        style: const TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.textSecondary,
+                        ),
+                      ),
+                      Text(
+                        '${LevelConfig.getXPToNextLevel(userLevel.currentXP)} XP to next',
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: AppColors.textMuted,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  XPProgressBar(
+                    userLevel: userLevel,
+                    showLabel: false,
+                    height: 8,
                   ),
                 ],
               ),
-            ),
-            const SizedBox(height: 16),
-
-            // Level progress
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Level ${userLevel.level} - ${userLevel.title}',
-                      style: const TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.textSecondary,
-                      ),
-                    ),
-                    Text(
-                      '${LevelConfig.getXPToNextLevel(userLevel.currentXP)} XP to next',
-                      style: const TextStyle(
-                        fontSize: 12,
-                        color: AppColors.textMuted,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                XPProgressBar(
-                  userLevel: userLevel,
-                  showLabel: false,
-                  height: 8,
-                ),
-              ],
-            ),
-            const SizedBox(height: 24),
+              const SizedBox(height: 24),
+            ],
 
             // Continue button
             SizedBox(
@@ -438,7 +523,12 @@ class _LessonScreenState extends State<LessonScreen> {
     }
 
     final exercise = _exercises[_currentExerciseIndex];
-    final progress = _currentExerciseIndex / _exercises.length;
+    final total = _exercises.length;
+    // Fill the bar by exercises resolved (answered or skipped), so it reflects
+    // how much of the lesson is behind the learner rather than just position.
+    final resolved = _answeredIndices.length + _skippedIndices.length;
+    final progress = resolved / total;
+    final alreadyAnswered = _answeredIndices.contains(_currentExerciseIndex);
 
     final topBar = AppBar(
       backgroundColor: Colors.transparent,
@@ -447,10 +537,21 @@ class _LessonScreenState extends State<LessonScreen> {
         icon: const Icon(Icons.close),
         onPressed: () => Navigator.of(context).pop(),
       ),
-      title: LinearProgressIndicator(
-        value: progress,
-        backgroundColor: AppColors.surfaceRaised,
-        valueColor: const AlwaysStoppedAnimation<Color>(AppColors.textPrimary),
+      title: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          LinearProgressIndicator(
+            value: progress,
+            backgroundColor: AppColors.surfaceRaised,
+            valueColor:
+                const AlwaysStoppedAnimation<Color>(AppColors.textPrimary),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            '${_currentExerciseIndex + 1} of $total',
+            style: const TextStyle(fontSize: 11, color: AppColors.textMuted),
+          ),
+        ],
       ),
     );
 
@@ -458,7 +559,21 @@ class _LessonScreenState extends State<LessonScreen> {
       children: [
         if (_includedDisabledTypes) _buildFallbackNotice(),
         if (_isGeneratedExercise) _buildExtraPracticeNotice(),
-        Expanded(child: _buildExerciseWidget(exercise)),
+        if (alreadyAnswered) _buildReviewNotice(),
+        Expanded(
+          child: alreadyAnswered
+              // Locked review: the outcome is already recorded, so the
+              // learner can look but not re-answer (which would show fresh
+              // "correct" feedback and mislead).
+              ? IgnorePointer(
+                  child: Opacity(
+                    opacity: 0.6,
+                    child: _buildExerciseWidget(exercise),
+                  ),
+                )
+              : _buildExerciseWidget(exercise),
+        ),
+        _buildNavBar(alreadyAnswered),
       ],
     );
 
@@ -509,6 +624,52 @@ class _LessonScreenState extends State<LessonScreen> {
         'This lesson only has exercise types you switched off, so they are '
         'included here.',
         style: TextStyle(fontSize: 12, color: AppColors.textMuted),
+      ),
+    );
+  }
+
+  /// Shown when the learner has stepped back onto an exercise they already
+  /// answered. Its outcome is locked in; attempting it again won't re-score.
+  Widget _buildReviewNotice() {
+    return Container(
+      width: double.infinity,
+      color: AppColors.surfaceRaised,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      child: const Text(
+        'Reviewing — you already answered this one, so it won\'t be scored '
+        'again.',
+        style: TextStyle(fontSize: 12, color: AppColors.textMuted),
+      ),
+    );
+  }
+
+  /// Back / Skip controls beneath the exercise. Back steps to the previous
+  /// exercise without undoing any score; Skip moves past the current one
+  /// without answering it.
+  Widget _buildNavBar(bool alreadyAnswered) {
+    final atStart = _currentExerciseIndex == 0;
+    final isLast = _currentExerciseIndex == _exercises.length - 1;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      child: Row(
+        children: [
+          TextButton.icon(
+            onPressed: atStart ? null : _goToPrevious,
+            icon: const Icon(Icons.arrow_back),
+            label: const Text('Back'),
+          ),
+          const Spacer(),
+          TextButton.icon(
+            onPressed: alreadyAnswered ? _advanceOrFinish : _skipExercise,
+            icon: Icon(alreadyAnswered
+                ? (isLast ? Icons.check : Icons.arrow_forward)
+                : Icons.skip_next),
+            label: Text(
+              alreadyAnswered ? (isLast ? 'Finish' : 'Next') : 'Skip',
+            ),
+          ),
+        ],
       ),
     );
   }

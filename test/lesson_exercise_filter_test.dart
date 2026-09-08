@@ -168,4 +168,39 @@ void main() {
       {'Question a', 'Question b', 'Question c'},
     );
   });
+
+  testWidgets('custom drillLength limits or extends exercises as requested',
+      (tester) async {
+    final exercises = List.generate(
+      30,
+      (i) => _exercise('item_$i', ExerciseType.multipleChoice),
+    );
+
+    // Pump with drillLength = 8
+    SharedPreferences.setMockInitialValues({});
+    final settings = SettingsProvider();
+    await settings.loadSettings();
+
+    await tester.pumpWidget(MultiProvider(
+      providers: [
+        ChangeNotifierProvider.value(value: settings),
+        ChangeNotifierProvider(create: (_) => CourseProvider()),
+        ChangeNotifierProvider(create: (_) => ProgressProvider()),
+        ChangeNotifierProvider(create: (_) => GamificationProvider()),
+        ChangeNotifierProvider(create: (_) => FlashcardProvider()),
+        ChangeNotifierProvider(create: (_) => WordKnowledgeProvider()),
+      ],
+      child: MaterialApp(
+        theme: AppTheme.build(),
+        home: LessonScreen(
+          skill: _skill(exercises),
+          drillLength: 8,
+        ),
+      ),
+    ));
+    await tester.pump();
+
+    // Verify indicator shows "1 of 8"
+    expect(find.text('1 of 8'), findsOneWidget);
+  });
 }

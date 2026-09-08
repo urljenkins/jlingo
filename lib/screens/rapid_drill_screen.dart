@@ -5,9 +5,11 @@ import '../models/skill.dart';
 import '../models/word_pair.dart';
 import '../providers/course_provider.dart';
 import '../providers/flashcard_provider.dart';
+import '../providers/settings_provider.dart';
 import '../providers/word_knowledge_provider.dart';
 import '../services/word_pool.dart';
 import '../theme/app_colors.dart';
+import '../widgets/drills/bubble_match_drill.dart';
 import '../widgets/drills/waterfall_match_drill.dart';
 import '../widgets/drills/word_flash_drill.dart';
 
@@ -19,7 +21,11 @@ enum RapidDrillMode {
 
   /// A continuously refilling column of pairs to match.
   waterfall('Waterfall', Icons.waterfall_chart,
-      'A scrolling list of pairs that refills as you clear it.');
+      'A scrolling list of pairs that refills as you clear it.'),
+
+  /// The same pairs thrown across the screen as drifting bubbles to hunt for.
+  bubbles('Bubbles', Icons.bubble_chart_outlined,
+      'A field of drifting word bubbles — tap a word, then its match.');
 
   const RapidDrillMode(this.label, this.icon, this.blurb);
 
@@ -189,6 +195,15 @@ class _RapidDrillScreenState extends State<RapidDrillScreen> {
         return WaterfallMatchDrill(
           key: key,
           pool: active,
+          onAnswer: _recordAnswer,
+          onDeclareKnown: _declareKnown,
+          onFinished: _finish,
+        );
+      case RapidDrillMode.bubbles:
+        return BubbleMatchDrill(
+          key: key,
+          pool: active,
+          fieldSize: context.watch<SettingsProvider>().bubbleFieldSize,
           onAnswer: _recordAnswer,
           onDeclareKnown: _declareKnown,
           onFinished: _finish,

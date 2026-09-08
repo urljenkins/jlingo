@@ -43,13 +43,6 @@
             "correctAnswer": "Y sound"
         },
         {
-            "id": "ex_alp_5",
-            "type": "translateThis",
-            "question": "El niño",
-            "options": [],
-            "correctAnswer": "The boy"
-        },
-        {
             "type": "multipleChoice",
             "question": "Which letter comes after 'M' in the Spanish alphabet?",
             "options": [

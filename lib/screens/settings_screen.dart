@@ -72,6 +72,9 @@ class SettingsScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 24),
+              _buildSectionHeader('Rapid Drills'),
+              _buildBubbleFieldSizeCard(context, settings),
+              const SizedBox(height: 24),
               _buildSectionHeader('Audio & Pronunciation'),
               Card(
                 color: AppColors.surface,
@@ -216,6 +219,78 @@ class SettingsScreen extends StatelessWidget {
             ],
           );
         },
+      ),
+    );
+  }
+
+  /// How the Bubbles drill sizes its field. Cosy and Packed are fixed
+  /// screenfuls; Endless refills as pairs clear.
+  Widget _buildBubbleFieldSizeCard(
+      BuildContext context, SettingsProvider settings) {
+    return Card(
+      color: AppColors.surface,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.card),
+        side: const BorderSide(color: AppColors.border),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppColors.surfaceRaised,
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
+                  ),
+                  child: const Icon(
+                    Icons.bubble_chart_outlined,
+                    color: AppColors.textSecondary,
+                  ),
+                ),
+                const SizedBox(width: 12),
+                const Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Bubble field size',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 16,
+                        ),
+                      ),
+                      SizedBox(height: 2),
+                      Text(
+                        'How many word bubbles the Bubbles drill keeps on '
+                        'screen.',
+                        style: AppTypography.caption,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            for (final size in BubbleFieldSize.values)
+              RadioListTile<BubbleFieldSize>(
+                contentPadding: EdgeInsets.zero,
+                dense: true,
+                title: Text(size.label),
+                subtitle: Text(size.blurb, style: AppTypography.caption),
+                value: size,
+                groupValue: settings.bubbleFieldSize,
+                onChanged: (value) {
+                  if (value != null) {
+                    unawaited(settings.setBubbleFieldSize(value));
+                  }
+                },
+              ),
+          ],
+        ),
       ),
     );
   }
