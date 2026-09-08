@@ -5,13 +5,14 @@ A hyper-efficient language learning app for busy individuals focused on rapid, e
 ## Features
 
 - **Fast-paced Learning**: Complete maximum exercises in minimum time with instant transitions and no animations
-- **Multiple Exercise Types**:
-  - Translate This: Type translations of words/phrases
-  - Match Pairs: Match words in native and target language
-  - Multiple Choice: Quick answer selection
-  - Listening Comprehension: Type what you hear
-  - Speak This: Practice pronunciation with speech recognition
-  - Fill in the Blank: Complete sentences
+- **18 Exercise Types**: typing, tap-to-assemble word banks, matching,
+  multiple choice, listening, speaking, picture selection, cloze and story
+  reading — see `ExerciseType` in `lib/models/exercise.dart` for the full list.
+  Any type can be switched off globally or per course in settings.
+- **Alphabet & Sounds**: a per-course letter chart with phonetic spelling,
+  tap any letter to hear it
+- **Rapid Drills**: high-volume word flash and match drills built from the
+  course vocabulary
 - **Simple Progress Tracking**: Streak counter, points, and skill mastery percentages
 - **Minimal UI**: Clean, high-contrast dark mode interface
 - **Offline-First**: All core learning available offline
@@ -25,21 +26,22 @@ Currently, Lingua Sprint supports the following languages:
 |---|---|---|
 | 🇪🇸 Spanish | 69 | A1–C2 |
 | 🇲🇽 Spanish (Latin America) | 69 | A1–C2 |
+| 🇫🇷 French | 69 | A1–C2 |
 | 🇳🇱 Dutch | 69 | A1–C2 |
+| 🇵🇹 Portuguese (European) | 69 | A1–C2 |
+| 🇧🇷 Portuguese (Brazilian) | 69 | A1–C2 |
+| 🇯🇵 Japanese | 69 | A1–C2 |
 | 🇨🇳 Chinese | 69 | A1–C2 |
-| 🇵🇹 Portuguese | 25 | A1–C2 |
-| 🇯🇵 Japanese | 14 | A1–C2 |
-| 🇫🇷 French | 11 | A1–C2 |
 
 Courses cover greetings, common phrases and numbers through to grammar,
 listening, and C-level rhetoric and literature, using the exercise types
 listed above.
 
-Every course reaches C2, but the density between A1 and C2 varies a great
-deal — Japanese and French have few mid-tier skills, so a learner entering
-at B1 or B2 there is placed at the nearest content below their level rather
-than skipped ahead. `assets/courses/portuguese/planned_skills.json` tracks
-skills that are outlined but not yet authored.
+Every course runs the full A1–C2 range at 69 skills. Where a course lacks
+content in a tier a learner selects, they are placed at the nearest content
+below it rather than skipped ahead.
+`assets/courses/portuguese/planned_skills.json` tracks skills that are
+outlined but not yet authored.
 
 Learners pick a CEFR level when they start, or change it any time in
 settings. The level decides where the course opens; everything below it
@@ -60,29 +62,59 @@ Lingua Sprint strips away all non-essential elements found in traditional langua
 
 - Flutter SDK 3.0 or higher
 - Dart SDK
+- For macOS builds: macOS 11.0 or later (the `speech_to_text` plugin sets
+  this floor)
 
 ### Installation
 
-1. Clone the repository:
 ```bash
 git clone <repository-url>
 cd jlingo
-```
-
-2. Install dependencies:
-```bash
 flutter pub get
+dart run build_runner build --delete-conflicting-outputs
 ```
 
-3. Generate model files:
+The generator step is required, not optional. Model serialization lives in
+`.g.dart` files that are gitignored rather than committed, so a fresh clone
+has none and the project will not compile until you run it. Re-run it
+whenever you change a model class.
+
+### Running
+
 ```bash
-flutter pub run build_runner build
+flutter run                 # default device
+flutter run -d macos        # macOS desktop
+flutter run -d chrome       # web
+flutter run --release       # no debug banner
 ```
 
-4. Run the app:
+For macOS and web you may need to enable the platform once:
+
 ```bash
-flutter run
+flutter config --enable-macos-desktop
+flutter config --enable-web
 ```
+
+### Troubleshooting
+
+**Build errors, or `uri_has_not_been_generated`** — the generated model files
+are missing or stale:
+
+```bash
+flutter clean
+flutter pub get
+dart run build_runner build --delete-conflicting-outputs
+```
+
+**Flutter's demo counter app appears instead of Lingua Sprint** — the build
+picked up a stale `lib/main.dart`. Run `flutter clean` and rebuild.
+
+**"Error loading lesson content" on every lesson** — a course's `skills/`
+subdirectory is missing from `pubspec.yaml`. Asset directories are not
+recursive; see [Adding New Languages](#adding-new-languages).
+
+**No devices found** — open the iOS Simulator first, or enable the desktop
+and web platforms with the `flutter config` commands above.
 
 ## Course Content
 
@@ -163,77 +195,23 @@ See `assets/courses/spanish/` for a complete example.
 
 ```
 lib/
-├── models/
-│   ├── book.dart
-│   ├── course_manifest.dart
-│   ├── exercise.dart
-│   ├── flashcard.dart
-│   ├── gamification.dart
-│   ├── picture_dictionary.dart
-│   ├── progress.dart
-│   ├── skill.dart
-│   ├── user_profile.dart
-│   └── word_of_day.dart
-├── providers/
-│   ├── book_provider.dart
-│   ├── course_provider.dart
-│   ├── flashcard_provider.dart
-│   ├── gamification_provider.dart
-│   ├── onboarding_provider.dart
-│   ├── progress_provider.dart
-│   ├── settings_provider.dart
-│   └── vocabulary_provider.dart
-├── screens/
-│   ├── onboarding/
-│   │   ├── goals_screen.dart
-│   │   ├── level_quiz_screen.dart
-│   │   ├── onboarding_complete_screen.dart
-│   │   └── welcome_screen.dart
-│   ├── book_library_screen.dart
-│   ├── book_reader_screen.dart
-│   ├── flashcard_screen.dart
-│   ├── home_screen.dart
-│   ├── language_selection_screen.dart
-│   ├── lesson_screen.dart
-│   ├── picture_dictionary_screen.dart
-│   ├── settings_screen.dart
-│   ├── vocabulary_screen.dart
-│   └── word_of_day_screen.dart
-├── services/
-│   ├── audio_service.dart
-│   ├── course_bootstrap.dart
-│   └── notification_service.dart
-├── utils/
-│   └── language_display.dart
-├── widgets/
-│   ├── exercises/
-│   │   ├── cloze_test_widget.dart
-│   │   ├── dialogue_listening_widget.dart
-│   │   ├── exercise_renderer_registry.dart
-│   │   ├── fill_blank_widget.dart
-│   │   ├── interactive_dialogue_widget.dart
-│   │   ├── listening_widget.dart
-│   │   ├── match_pairs_widget.dart
-│   │   ├── multiple_choice_widget.dart
-│   │   ├── native_audio_widget.dart
-│   │   ├── pronunciation_practice_widget.dart
-│   │   ├── song_fill_widget.dart
-│   │   ├── speak_this_widget.dart
-│   │   ├── story_lesson_widget.dart
-│   │   ├── translate_this_widget.dart
-│   │   └── translation_exercise_widget.dart
-│   ├── gamification/
-│   │   ├── gamification_widgets.dart
-│   │   ├── level_widgets.dart
-│   │   ├── streak_widgets.dart
-│   │   └── xp_widgets.dart
-│   ├── responsive/
-│   │   ├── desktop_scaffold.dart
-│   │   ├── mobile_scaffold.dart
-│   │   └── responsive_layout.dart
-│   └── hover_card.dart
+├── models/       Data classes; each has a gitignored .g.dart counterpart
+├── providers/    ChangeNotifier state (course, progress, settings, ...)
+├── screens/      Top-level screens, plus onboarding/
+├── services/     Audio, course bootstrap, lesson ordering, word pool
+├── theme/        Colours, spacing and typography tokens
+├── utils/        Small helpers
+├── widgets/      exercises/ · drills/ · gamification/ · responsive/
 └── main.dart
+
+assets/
+├── courses/      One directory per course (manifest + skills/)
+├── vocabulary/   Flashcard decks, word of the day, picture dictionary
+└── books/        Graded readers
 ```
+
+`agents.md` holds a fuller map along with the project's conventions and
+gotchas.
 
 ## Building for Release
 
@@ -273,8 +251,47 @@ Release builds are minified and resource-shrunk; see
 
 ### macOS
 
-Requires macOS 11.0 or later (`speech_to_text` sets this floor). Signing and
-notarization are configured in Xcode against your Apple developer account.
+Requires macOS 11.0 or later — the `speech_to_text` plugin sets this floor,
+and the Flutter template default of 10.15 makes `pod install` fail. This is
+already set in `macos/Podfile` (`platform :osx, '11.0'`) and in
+`MACOSX_DEPLOYMENT_TARGET` in the Xcode project.
+
+```bash
+flutter build macos --release
+# App is at: build/macos/Build/Products/Release/Lingua Sprint.app
+```
+
+Signing and notarization are configured in Xcode against your Apple
+developer account.
+
+> **Do not run `flutter create .` on this project.** The `macos/`, `web/` and
+> `ios/` directories already exist and are configured; regenerating the
+> platform wrappers would overwrite the settings below.
+
+| Setting | Value | Where |
+|---|---|---|
+| Product name | `Lingua Sprint` | `macos/Runner/Configs/AppInfo.xcconfig` |
+| Bundle id | `com.linguasprint.app` | `macos/Runner/Configs/AppInfo.xcconfig` |
+| Deployment target | `11.0` | `macos/Podfile`, Xcode project |
+| Microphone access | `NSMicrophoneUsageDescription` | `macos/Runner/Info.plist` |
+| Speech recognition | `NSSpeechRecognitionUsageDescription` | `macos/Runner/Info.plist` |
+| Audio input entitlement | `com.apple.security.device.audio-input` | both `.entitlements` files |
+
+The microphone strings and the audio-input entitlement are required for the
+speaking and pronunciation exercises. Without them macOS terminates the app
+when speech recognition starts.
+
+## Tests
+
+```bash
+flutter test          # full suite
+flutter analyze       # static analysis
+```
+
+`test/asset_integrity_test.dart` is the one to watch when editing course
+content: it verifies every manifest, skill file, `pubspec.yaml` asset
+declaration and exercise type, so a malformed course fails here rather than
+at runtime in a lesson.
 
 ## Technologies Used
 
@@ -283,7 +300,8 @@ notarization are configured in Xcode against your Apple developer account.
 - **SharedPreferences**: Local data persistence
 - **flutter_tts**: Text-to-speech functionality
 - **speech_to_text**: Speech recognition
-- **json_serializable**: JSON serialization
+- **audioplayers**: Native audio playback
+- **json_serializable**: JSON serialization (via `build_runner`)
 
 ## License
 

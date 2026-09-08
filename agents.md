@@ -85,7 +85,7 @@ lib/
   those fields to an asset is not required, but removing the stamping breaks decoding.
 - `GamificationProvider` owns streaks and XP. `ProgressProvider` no longer tracks
   either — pass the streak into `checkAndUnlockAchievements(currentStreak:)`.
-- Don't run `flutter create .` — it overwrites platform config (see `MACOS_SETUP.md`).
+- Don't run `flutter create .` — it overwrites platform config (see the macOS section of `README.md`).
 - macOS requires deployment target 11.0 (`speech_to_text`).
 
 ## Tests
