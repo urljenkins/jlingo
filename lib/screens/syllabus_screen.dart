@@ -11,7 +11,6 @@ import '../services/alphabet_data.dart';
 import '../services/skill_coverage.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
-import '../widgets/skill_preview_sheet.dart';
 import 'alphabet_screen.dart';
 import 'lesson_screen.dart';
 
@@ -60,10 +59,10 @@ class _SyllabusScreenState extends State<SyllabusScreen> {
     });
   }
 
+  /// Starts the lesson directly. The expanded row already shows what the
+  /// topic covers, so putting the summary sheet in front of it would be
+  /// asking the learner to read the same thing twice.
   Future<void> _start(Skill skill) async {
-    final started = await SkillPreviewSheet.show(context, skill);
-    if (!started || !mounted) return;
-
     await Navigator.of(context).push(
       MaterialPageRoute<void>(builder: (_) => LessonScreen(skill: skill)),
     );
@@ -390,7 +389,7 @@ class _SyllabusScreenState extends State<SyllabusScreen> {
             const Spacer(),
             TextButton(
               onPressed: () => _start(skill),
-              child: const Text('View & start'),
+              child: const Text('Start'),
             ),
           ],
         ),

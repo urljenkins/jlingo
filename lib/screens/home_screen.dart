@@ -43,6 +43,27 @@ class _HomeScreenState extends State<HomeScreen> {
   /// Restricts a lesson to a single exercise type. Null means "All".
   ExerciseType? _selectedFilter;
 
+  /// Shows what a topic covers, and starts it only if the learner asks from
+  /// the sheet. Reached from the eye button, never from tapping the row.
+  Future<void> _previewSkill(String skillId) async {
+    setState(() => _isLoading = true);
+    final skill = await context.read<CourseProvider>().loadSkill(skillId);
+    if (!mounted) return;
+    setState(() => _isLoading = false);
+
+    if (skill == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Error loading lesson content')),
+      );
+      return;
+    }
+
+    final started = await SkillPreviewSheet.show(context, skill);
+    if (!started || !mounted) return;
+
+    await _startLesson(skillId);
+  }
+
   Future<void> _startLesson(String skillId) async {
     setState(() => _isLoading = true);
     final skill = await context.read<CourseProvider>().loadSkill(skillId);
@@ -70,14 +91,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       );
       return;
-    }
-
-    // A filtered tap is the learner asking for one exercise type right now;
-    // the preview would only stand between them and it. An unfiltered tap is
-    // "what is in this topic?", which is exactly what the sheet answers.
-    if (filter == null) {
-      final started = await SkillPreviewSheet.show(context, skill);
-      if (!started || !mounted) return;
     }
 
     final settings = context.read<SettingsProvider>();
@@ -533,6 +546,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 previousSkillName:
                     position > 0 ? manifest.skills[position - 1].name : null,
                 onTap: unlocked ? () => _startLesson(skill.id) : null,
+                onPreview: unlocked ? () => _previewSkill(skill.id) : null,
               );
             }),
           ],
@@ -677,6 +691,7 @@ class _SkillRow extends StatelessWidget {
     required this.isUnlocked,
     required this.previousSkillName,
     this.onTap,
+    this.onPreview,
   });
 
   final String name;
@@ -685,6 +700,11 @@ class _SkillRow extends StatelessWidget {
   final bool isUnlocked;
   final String? previousSkillName;
   final VoidCallback? onTap;
+
+  /// Opens the topic summary. Separate from [onTap] so the row itself goes
+  /// straight to the lesson — the summary is there when it is wanted, not
+  /// in the way when it is not.
+  final VoidCallback? onPreview;
 
   @override
   Widget build(BuildContext context) {
@@ -728,7 +748,15 @@ class _SkillRow extends StatelessWidget {
                     ],
                   ),
                 ),
-                if (isUnlocked)
+                if (isUnlocked && onPreview != null)
+                  IconButton(
+                    onPressed: onPreview,
+                    icon: const Icon(Icons.visibility_outlined, size: 20),
+                    color: AppColors.textMuted,
+                    tooltip: 'What this covers',
+                    visualDensity: VisualDensity.compact,
+                  )
+                else if (isUnlocked)
                   Icon(
                     isCompleted ? Icons.refresh : Icons.chevron_right,
                     size: 20,
