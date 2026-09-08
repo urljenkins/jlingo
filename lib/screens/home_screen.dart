@@ -7,6 +7,7 @@ import '../models/cefr_level.dart';
 import '../models/user_profile.dart';
 import '../models/course_manifest.dart';
 import '../models/exercise.dart';
+import '../models/exercise_type_info.dart';
 import '../models/gamification.dart';
 import '../providers/course_provider.dart';
 import '../providers/flashcard_provider.dart';
@@ -21,8 +22,11 @@ import '../theme/app_typography.dart';
 import '../utils/language_display.dart';
 import '../widgets/gamification/xp_widgets.dart';
 import '../widgets/responsive/mobile_scaffold.dart';
+import '../widgets/skill_preview_sheet.dart';
 import 'language_selection_screen.dart';
+import 'syllabus_screen.dart';
 import 'lesson_screen.dart';
+import 'rapid_drill_screen.dart';
 import 'vocabulary_screen.dart';
 import 'word_of_day_screen.dart';
 
@@ -68,9 +72,24 @@ class _HomeScreenState extends State<HomeScreen> {
       return;
     }
 
+    // A filtered tap is the learner asking for one exercise type right now;
+    // the preview would only stand between them and it. An unfiltered tap is
+    // "what is in this topic?", which is exactly what the sheet answers.
+    if (filter == null) {
+      final started = await SkillPreviewSheet.show(context, skill);
+      if (!started || !mounted) return;
+    }
+
+    final settings = context.read<SettingsProvider>();
+    final language = context.read<CourseProvider>().currentLanguageCode;
+
     unawaited(Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (context) => LessonScreen(skill: skill, filterType: filter),
+        builder: (context) => LessonScreen(
+          skill: skill,
+          filterType: filter,
+          disabledTypes: settings.disabledTypesFor(language),
+        ),
       ),
     ));
   }
@@ -110,6 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
             else
               _buildWordOfDayCard(),
             _buildContinueButton(manifest, currentSkillIndex),
+            _buildDrillButton(),
             _buildFilterBar(),
             Expanded(child: _buildSkillList(manifest, progressProvider)),
           ],
@@ -144,12 +164,28 @@ class _HomeScreenState extends State<HomeScreen> {
   // navigation with it.
   void _navigateToLanguageSelection() => _push(const LanguageSelectionScreen());
 
+  void _navigateToSyllabus() => _push(const SyllabusScreen());
+
   // ---------------------------------------------------------------------
   // Exercise type filter
   // ---------------------------------------------------------------------
 
   /// Horizontal chip row restricting lessons to one exercise type.
   Widget _buildFilterBar() {
+    final settings = context.watch<SettingsProvider>();
+    final language = context.watch<CourseProvider>().currentLanguageCode;
+    // Switched-off types are not offered here either — the chip row should
+    // agree with what a lesson would actually give you.
+    final types = settings.enabledTypesFor(language);
+
+    // A filter can outlive the type being switched off in settings; drop it
+    // rather than leaving a lesson pinned to a type that is no longer listed.
+    if (_selectedFilter != null && !types.contains(_selectedFilter)) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) setState(() => _selectedFilter = null);
+      });
+    }
+
     return SizedBox(
       height: 32 + AppSpacing.md,
       child: ListView.separated(
@@ -158,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
           horizontal: AppSpacing.md,
           vertical: AppSpacing.sm,
         ),
-        itemCount: ExerciseType.values.length + 1,
+        itemCount: types.length + 1,
         separatorBuilder: (_, __) => const SizedBox(width: AppSpacing.sm),
         itemBuilder: (context, index) {
           if (index == 0) {
@@ -168,7 +204,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onTap: () => setState(() => _selectedFilter = null),
             );
           }
-          final type = ExerciseType.values[index - 1];
+          final type = types[index - 1];
           return _FilterChip(
             label: _formatExerciseType(type),
             selected: _selectedFilter == type,
@@ -183,38 +219,8 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  String _formatExerciseType(ExerciseType type) {
-    switch (type) {
-      case ExerciseType.translateThis:
-        return 'Translate';
-      case ExerciseType.matchPairs:
-        return 'Match';
-      case ExerciseType.multipleChoice:
-        return 'Multiple Choice';
-      case ExerciseType.listeningComprehension:
-        return 'Listening';
-      case ExerciseType.speakThis:
-        return 'Speaking';
-      case ExerciseType.fillInBlank:
-        return 'Fill Blank';
-      case ExerciseType.nativeAudio:
-        return 'Native Audio';
-      case ExerciseType.pronunciationPractice:
-        return 'Pronunciation';
-      case ExerciseType.dialogueListening:
-        return 'Dialogue';
-      case ExerciseType.songFill:
-        return 'Song Fill';
-      case ExerciseType.interactiveDialogue:
-        return 'Interactive';
-      case ExerciseType.storyLesson:
-        return 'Story';
-      case ExerciseType.translationExercise:
-        return 'Translation';
-      case ExerciseType.clozeTest:
-        return 'Cloze Test';
-    }
-  }
+  String _formatExerciseType(ExerciseType type) =>
+      ExerciseTypeInfo.labelOf(type);
 
   // ---------------------------------------------------------------------
   // Top bar
@@ -242,6 +248,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     : _libraryChips(vocabulary),
               ),
             ),
+          ),
+          const SizedBox(width: AppSpacing.sm),
+          _Chip(
+            icon: Icons.list_alt_outlined,
+            label: 'Contents',
+            onTap: _navigateToSyllabus,
           ),
           const SizedBox(width: AppSpacing.sm),
           _buildLanguageChip(manifest),
@@ -414,6 +426,29 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+
+  /// Secondary entry to the high-volume drills.
+  ///
+  /// Deliberately quieter than Continue: the drills are for clearing known
+  /// vocabulary fast, not the main path through the course.
+  Widget _buildDrillButton() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.screenInset,
+        8,
+        AppSpacing.screenInset,
+        0,
+      ),
+      child: SizedBox(
+        width: double.infinity,
+        child: OutlinedButton.icon(
+          onPressed: () => _push(const RapidDrillScreen()),
+          icon: const Icon(Icons.bolt_outlined, size: 18),
+          label: const Text('Rapid drill'),
         ),
       ),
     );

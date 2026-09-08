@@ -8,7 +8,12 @@ import '../providers/progress_provider.dart';
 import '../providers/gamification_provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/settings_provider.dart';
+import '../providers/flashcard_provider.dart';
+import '../providers/word_knowledge_provider.dart';
 import 'package:flutter/services.dart';
+import '../services/lesson_order.dart';
+import '../services/lesson_topup.dart';
+import '../services/word_pool.dart';
 import '../widgets/exercises/exercise_renderer_registry.dart';
 import '../widgets/responsive/responsive_layout.dart';
 import '../widgets/responsive/desktop_scaffold.dart';
@@ -20,10 +25,16 @@ class LessonScreen extends StatefulWidget {
   final Skill skill;
   final ExerciseType? filterType;
 
+  /// Types the learner has switched off. Excluded from the lesson unless the
+  /// skill has nothing else, in which case the lesson runs unfiltered rather
+  /// than presenting an empty screen.
+  final Set<ExerciseType> disabledTypes;
+
   const LessonScreen({
     super.key,
     required this.skill,
     this.filterType,
+    this.disabledTypes = const {},
   });
 
   @override
@@ -43,14 +54,53 @@ class _LessonScreenState extends State<LessonScreen> {
     _prepareExercises();
   }
 
+  /// True when the lesson had to include types the learner switched off,
+  /// because honouring the preference would have left nothing to practise.
+  bool _includedDisabledTypes = false;
+
+  /// How many of [_exercises] were generated to top up a short skill, as
+  /// opposed to authored in the skill file. Drives the notice that tells the
+  /// learner where the extra practice came from.
+  int _generatedCount = 0;
+
   void _prepareExercises() {
     if (widget.filterType != null) {
+      // An explicit filter is the learner asking for that type right now, so
+      // it outranks the disabled list.
       _exercises = widget.skill.exercises
           .where((e) => e.type == widget.filterType)
           .toList();
-    } else {
-      _exercises = List.from(widget.skill.exercises)..shuffle();
+      return;
     }
+
+    final all = widget.skill.exercises;
+    final allowed =
+        all.where((e) => !widget.disabledTypes.contains(e.type)).toList();
+
+    // A skill built entirely from switched-off types would otherwise be
+    // unreachable, blocking the course. Fall back to the full set and say so.
+    _includedDisabledTypes = allowed.isEmpty && all.isNotEmpty;
+    final authored = LessonOrder.arrange(
+      _includedDisabledTypes ? all : allowed,
+    );
+
+    // Most skills carry only five exercises, which is over in a minute and
+    // identical on the next visit. Top the lesson up from the course
+    // vocabulary so a short skill still runs a full session, and runs a
+    // different one each time.
+    final pool = WordPool.build(
+      deck: context.read<FlashcardProvider>().currentDeck,
+      skill: widget.skill,
+    );
+    final extended = LessonTopUp.extend(
+      authored: authored,
+      pool: pool.excludingKnown(context.read<WordKnowledgeProvider>()),
+      // The visit count is what makes a repeat visit a different lesson.
+      seed: DateTime.now().millisecondsSinceEpoch ~/ 1000,
+    );
+
+    _generatedCount = extended.length - authored.length;
+    _exercises = extended;
   }
 
   Future<void> _onAnswer(bool isCorrect) async {
@@ -402,30 +452,63 @@ class _LessonScreenState extends State<LessonScreen> {
         backgroundColor: AppColors.surfaceRaised,
         valueColor: const AlwaysStoppedAnimation<Color>(AppColors.textPrimary),
       ),
-      actions: [
-        Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: Text(
-            '${_currentExerciseIndex + 1}/${_exercises.length}',
-            style: const TextStyle(fontSize: 16),
-          ),
-        ),
+    );
+
+    final body = Column(
+      children: [
+        if (_includedDisabledTypes) _buildFallbackNotice(),
+        if (_isGeneratedExercise) _buildExtraPracticeNotice(),
+        Expanded(child: _buildExerciseWidget(exercise)),
       ],
     );
 
     return ResponsiveLayout(
-      mobileScaffold: MobileScaffold(
-        topBar: topBar,
-        body: _buildExerciseWidget(exercise),
-      ),
+      mobileScaffold: MobileScaffold(topBar: topBar, body: body),
       desktopScaffold: DesktopScaffold(
         topBar: topBar,
         body: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 800),
-            child: _buildExerciseWidget(exercise),
+            child: body,
           ),
         ),
+      ),
+    );
+  }
+
+  /// True once the lesson has run past its authored exercises into the ones
+  /// generated to top it up.
+  bool get _isGeneratedExercise =>
+      _generatedCount > 0 &&
+      _currentExerciseIndex >= _exercises.length - _generatedCount;
+
+  /// Says plainly that the skill's own exercises are done and the rest is
+  /// extra practice from the course vocabulary — otherwise a learner would
+  /// reasonably think these words were part of the topic they picked.
+  Widget _buildExtraPracticeNotice() {
+    return Container(
+      width: double.infinity,
+      color: AppColors.surfaceRaised,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      child: const Text(
+        'Extra practice — this topic\'s own exercises are done, so these come '
+        'from your course vocabulary.',
+        style: TextStyle(fontSize: 12, color: AppColors.textMuted),
+      ),
+    );
+  }
+
+  /// Explains why exercise types the learner switched off are showing up,
+  /// rather than leaving the preference looking broken.
+  Widget _buildFallbackNotice() {
+    return Container(
+      width: double.infinity,
+      color: AppColors.surfaceRaised,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      child: const Text(
+        'This lesson only has exercise types you switched off, so they are '
+        'included here.',
+        style: TextStyle(fontSize: 12, color: AppColors.textMuted),
       ),
     );
   }
