@@ -31,30 +31,6 @@
             "correctAnswer": "E"
         },
         {
-            "type": "multipleChoice",
-            "question": "Which letter comes after 'M' in the Spanish alphabet?",
-            "options": [
-                "N",
-                "Ñ",
-                "O",
-                "L"
-            ],
-            "correctAnswer": "N",
-            "id": "ex_alp_6"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "How many vowels are there in Spanish?",
-            "options": [
-                "5",
-                "6",
-                "4",
-                "7"
-            ],
-            "correctAnswer": "5",
-            "id": "ex_alp_7"
-        },
-        {
             "type": "listeningComprehension",
             "question": "O",
             "options": [],
@@ -172,30 +148,6 @@
             "id": "ex_alp_20"
         },
         {
-            "type": "multipleChoice",
-            "question": "How do you spell 'casa' out loud?",
-            "options": [
-                "Ce-a-ese-a",
-                "Ka-a-se-a",
-                "Ce-ah-se-ah",
-                "Ka-ah-se-ah"
-            ],
-            "correctAnswer": "Ce-a-ese-a",
-            "id": "ex_alp22_2"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "La letra ___ sigue a la 'ñ'",
-            "options": [
-                "o",
-                "p",
-                "n",
-                "m"
-            ],
-            "correctAnswer": "o",
-            "id": "ex_alp22_3"
-        },
-        {
             "type": "speakThis",
             "question": "calle",
             "options": [],
@@ -213,18 +165,6 @@
             ],
             "correctAnswer": "W",
             "id": "ex_alp3_3"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "La palabra 'zapato' empieza con la letra ___",
-            "options": [
-                "zeta",
-                "ese",
-                "equis",
-                "ce"
-            ],
-            "correctAnswer": "zeta",
-            "id": "ex_alp3_4"
         },
         {
             "type": "speakThis",
@@ -294,83 +234,11 @@
             "id": "ex_alp3_9_z"
         },
         {
-            "type": "fillInBlank",
-            "question": "¿Cómo se ___ tu apellido? (spell)",
-            "options": [
-                "deletrea",
-                "escribe",
-                "dice",
-                "habla"
-            ],
-            "correctAnswer": "deletrea",
-            "id": "ex_alp3_10"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "In which type of words does 'W' most often appear in Spanish?",
-            "options": [
-                "Foreign loanwords",
-                "Native Spanish words",
-                "Verb endings",
-                "Plural nouns"
-            ],
-            "correctAnswer": "Foreign loanwords",
-            "id": "ex_alp4_2"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "La palabra 'kilo' empieza con ___",
-            "options": [
-                "ka",
-                "ce",
-                "que",
-                "cu"
-            ],
-            "correctAnswer": "ka",
-            "id": "ex_alp4_3"
-        },
-        {
             "type": "speakThis",
             "question": "kilo",
             "options": [],
             "correctAnswer": "kilo",
             "id": "ex_alp4_5"
-        },
-        {
-            "id": "ex_alp_n1",
-            "type": "multipleChoice",
-            "question": "How many letters are in the modern Spanish alphabet?",
-            "options": [
-                "27",
-                "26",
-                "28",
-                "30"
-            ],
-            "correctAnswer": "27"
-        },
-        {
-            "id": "ex_alp_n2",
-            "type": "multipleChoice",
-            "question": "Which letter is the Spanish alphabet's own, added after N?",
-            "options": [
-                "Ñ",
-                "LL",
-                "CH",
-                "RR"
-            ],
-            "correctAnswer": "Ñ"
-        },
-        {
-            "id": "ex_alp_n3",
-            "type": "multipleChoice",
-            "question": "Are CH and LL still counted as single letters of the alphabet today?",
-            "options": [
-                "No, they were dropped in 2010",
-                "Yes, they always have been",
-                "Only CH is",
-                "Only LL is"
-            ],
-            "correctAnswer": "No, they were dropped in 2010"
         },
         {
             "id": "ex_alp_n4",
@@ -461,12 +329,12 @@
             "type": "multipleChoice",
             "question": "What is the Spanish name for the letter 'Y'?",
             "options": [
-                "i griega (or 'ye')",
-                "ye griega",
+                "i griega",
                 "doble i",
+                "ye griega",
                 "yod"
             ],
-            "correctAnswer": "i griega (or 'ye')"
+            "correctAnswer": "i griega"
         },
         {
             "id": "ex_alp_n12",
@@ -577,52 +445,16 @@
             "correctAnswer": "U"
         },
         {
-            "id": "ex_alp_n21",
-            "type": "fillInBlank",
-            "question": "El alfabeto español tiene ___ letras",
-            "options": [
-                "27",
-                "26",
-                "28",
-                "30"
-            ],
-            "correctAnswer": "27"
-        },
-        {
-            "id": "ex_alp_n22",
-            "type": "fillInBlank",
-            "question": "La letra H es ___ (no suena)",
-            "options": [
-                "muda",
-                "fuerte",
-                "vocal",
-                "doble"
-            ],
-            "correctAnswer": "muda"
-        },
-        {
-            "id": "ex_alp_n23",
-            "type": "fillInBlank",
-            "question": "La palabra 'gato' empieza con la letra ___",
-            "options": [
-                "ge",
-                "jota",
-                "ka",
-                "ce"
-            ],
-            "correctAnswer": "ge"
-        },
-        {
             "id": "ex_alp_n24",
             "type": "fillInBlank",
-            "question": "La palabra 'llave' empieza con ___",
+            "question": "En 'llave', las dos eles juntas suenan como ___",
             "options": [
-                "elle",
-                "ele",
-                "ye",
-                "doble ele"
+                "una y (yes)",
+                "dos eles",
+                "una ele",
+                "una i"
             ],
-            "correctAnswer": "elle"
+            "correctAnswer": "una y (yes)"
         },
         {
             "id": "ex_alp_n25",
@@ -653,9 +485,9 @@
         {
             "id": "ex_alp_n28",
             "type": "speakThis",
-            "question": "año",
+            "question": "niño",
             "options": [],
-            "correctAnswer": "año"
+            "correctAnswer": "niño"
         },
         {
             "id": "ex_alp_n29",
@@ -670,6 +502,162 @@
             "question": "no",
             "options": [],
             "correctAnswer": "no"
+        },
+        {
+            "id": "ex_alp_r1",
+            "type": "multipleChoice",
+            "question": "How is the Spanish vowel 'O' pronounced?",
+            "options": [
+                "A short, pure 'oh', like in 'more'",
+                "Like 'o' in 'hot'",
+                "Like 'ow' in 'go' with a glide",
+                "Like 'oo' in 'moon'"
+            ],
+            "correctAnswer": "A short, pure 'oh', like in 'more'"
+        },
+        {
+            "id": "ex_alp_r2",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the letter 'W' in Latin America?",
+            "options": [
+                "doble ve",
+                "uve simple",
+                "ve corta",
+                "doble be"
+            ],
+            "correctAnswer": "doble ve"
+        },
+        {
+            "id": "ex_alp_r3",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the letter 'Z'?",
+            "options": [
+                "zeta",
+                "ceta",
+                "zed",
+                "ese"
+            ],
+            "correctAnswer": "zeta"
+        },
+        {
+            "id": "ex_alp_r4",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the letter 'X'?",
+            "options": [
+                "equis",
+                "ex",
+                "ex-i",
+                "iks"
+            ],
+            "correctAnswer": "equis"
+        },
+        {
+            "id": "ex_alp_r5",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the letter 'G'?",
+            "options": [
+                "ge",
+                "ye",
+                "je",
+                "gu"
+            ],
+            "correctAnswer": "ge"
+        },
+        {
+            "id": "ex_alp_r6",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the letter 'B'?",
+            "options": [
+                "be",
+                "ve",
+                "equis",
+                "efe"
+            ],
+            "correctAnswer": "be"
+        },
+        {
+            "id": "ex_alp_r7",
+            "type": "fillInBlank",
+            "question": "La letra K se llama ___",
+            "options": [
+                "ka",
+                "ca",
+                "que",
+                "ke"
+            ],
+            "correctAnswer": "ka"
+        },
+        {
+            "id": "ex_alp_r8",
+            "type": "fillInBlank",
+            "question": "La letra C se llama ___",
+            "options": [
+                "ce",
+                "ka",
+                "ese",
+                "se"
+            ],
+            "correctAnswer": "ce"
+        },
+        {
+            "id": "ex_alp_r9",
+            "type": "fillInBlank",
+            "question": "La doble R (RR) se llama ___",
+            "options": [
+                "doble erre",
+                "erre",
+                "ere",
+                "doble ele"
+            ],
+            "correctAnswer": "doble erre"
+        },
+        {
+            "id": "ex_alp_r10",
+            "type": "fillInBlank",
+            "question": "La letra J se llama ___",
+            "options": [
+                "jota",
+                "ge",
+                "ye",
+                "hache"
+            ],
+            "correctAnswer": "jota"
+        },
+        {
+            "id": "ex_alp_r11",
+            "type": "multipleChoice",
+            "question": "How is the letter 'S' pronounced in Spanish?",
+            "options": [
+                "Always like 's' in 'sun'",
+                "Sometimes like 'z' in 'zoo'",
+                "Like 'sh'",
+                "Silent at the end of words"
+            ],
+            "correctAnswer": "Always like 's' in 'sun'"
+        },
+        {
+            "id": "ex_alp_r12",
+            "type": "multipleChoice",
+            "question": "How is the letter 'V' pronounced at the start of a word (as in 'vaca')?",
+            "options": [
+                "Like a 'b', as in 'boy'",
+                "Like English 'v'",
+                "Like 'f'",
+                "Silent"
+            ],
+            "correctAnswer": "Like a 'b', as in 'boy'"
+        },
+        {
+            "id": "ex_alp_r13",
+            "type": "multipleChoice",
+            "question": "How is the letter 'Y' pronounced when it stands alone (the word 'y')?",
+            "options": [
+                "Like 'ee', the same as 'i'",
+                "Like English 'y' in 'yes'",
+                "Like 'j'",
+                "Silent"
+            ],
+            "correctAnswer": "Like 'ee', the same as 'i'"
         }
     ]
 }
