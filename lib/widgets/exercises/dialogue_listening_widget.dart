@@ -109,8 +109,11 @@ class _DialogueListeningWidgetState extends State<DialogueListeningWidget> {
     }
 
     // Parse question and options
-    _question =
-        metadata['comprehensionQuestion'] as String? ?? 'What did you hear?';
+    _question = (metadata['comprehensionQuestion'] as String?) ??
+        (metadata['question'] as String?) ??
+        (widget.exercise.question.isNotEmpty
+            ? widget.exercise.question
+            : 'What did you hear?');
     _answerOptions = (metadata['options'] as List<dynamic>?)
             ?.map((o) => o.toString())
             .toList() ??

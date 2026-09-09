@@ -113,6 +113,127 @@
             "question": "El desayuno es delicioso",
             "options": [],
             "correctAnswer": "El desayuno es delicioso"
+        },
+        {
+            "type": "translateThis",
+            "question": "Arroz",
+            "options": [],
+            "correctAnswer": "Rice",
+            "id": "ex_f_11"
+        },
+        {
+            "type": "translateThis",
+            "question": "Carne",
+            "options": [],
+            "correctAnswer": "Meat",
+            "id": "ex_f_12"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'Fish' (as food) in Spanish?",
+            "options": [
+                "Pescado",
+                "Pez",
+                "Pollo",
+                "Carne"
+            ],
+            "correctAnswer": "Pescado",
+            "id": "ex_f_13"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Me gusta comer ___ (rice)",
+            "options": [
+                "arroz",
+                "carne",
+                "pan",
+                "pescado"
+            ],
+            "correctAnswer": "arroz",
+            "id": "ex_f_14"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match more foods",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Pollo",
+                        "native": "Chicken"
+                    },
+                    {
+                        "target": "Pescado",
+                        "native": "Fish"
+                    },
+                    {
+                        "target": "Verduras",
+                        "native": "Vegetables"
+                    },
+                    {
+                        "target": "Frutas",
+                        "native": "Fruits"
+                    },
+                    {
+                        "target": "Ensalada",
+                        "native": "Salad"
+                    }
+                ]
+            },
+            "id": "ex_f_15"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Una ensalada fresca",
+            "options": [],
+            "correctAnswer": "Una ensalada fresca",
+            "id": "ex_f_16"
+        },
+        {
+            "type": "speakThis",
+            "question": "Quiero pollo con arroz, por favor",
+            "options": [],
+            "correctAnswer": "Quiero pollo con arroz, por favor",
+            "id": "ex_f_17"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What does 'Verduras' mean?",
+            "options": [
+                "Vegetables",
+                "Fruits",
+                "Meats",
+                "Desserts"
+            ],
+            "correctAnswer": "Vegetables",
+            "id": "ex_f_18"
+        },
+        {
+            "type": "translateThis",
+            "question": "El postre está delicioso",
+            "options": [],
+            "correctAnswer": "The dessert is delicious",
+            "id": "ex_f_19"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "De ___ quiero fruta (dessert)",
+            "options": [
+                "postre",
+                "entrada",
+                "plato",
+                "comida"
+            ],
+            "correctAnswer": "postre",
+            "id": "ex_f_20"
+        },
+        {
+            "type": "translateThis",
+            "question": "Sopa de verduras",
+            "options": [],
+            "correctAnswer": "Vegetable soup",
+            "id": "ex_f_21"
         }
     ]
 }

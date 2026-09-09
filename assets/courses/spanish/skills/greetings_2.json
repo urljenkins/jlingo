@@ -9,7 +9,7 @@
             "type": "translateThis",
             "question": "Encantado",
             "options": [],
-            "correctAnswer": "Pleased to meet you"
+            "correctAnswer": "Pleased to meet you / Nice to meet you / Delighted"
         },
         {
             "id": "ex_g2_2",
@@ -26,7 +26,7 @@
         {
             "id": "ex_g2_3",
             "type": "fillInBlank",
-            "question": "___ luego",
+            "question": "___ luego (See you later)",
             "options": [
                 "Hasta",
                 "Hola",
@@ -105,7 +105,7 @@
             "type": "translateThis",
             "question": "Lo siento mucho",
             "options": [],
-            "correctAnswer": "I am very sorry"
+            "correctAnswer": "I am very sorry / I'm very sorry / I am so sorry / I'm so sorry"
         },
         {
             "id": "ex_g2_10",

@@ -43,18 +43,22 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
         (blanks as List).map((e) => Map<String, dynamic>.from(e as Map)),
       );
     }
-    // Fallback to single blank using exercise options/correctAnswer
+    // Fallback to single blank using missingWord or correctAnswer
+    final answer = (widget.exercise.metadata?['missingWord'] as String?) ??
+        widget.exercise.correctAnswer;
     return [
       {
         'index': 0,
-        'answer': widget.exercise.correctAnswer,
+        'answer': answer,
         'options': widget.exercise.options,
       }
     ];
   }
 
   String get _context =>
-      (widget.exercise.metadata?['context'] as String?) ?? '';
+      (widget.exercise.metadata?['context'] as String?) ??
+      (widget.exercise.metadata?['translation'] as String?) ??
+      '';
 
   void _selectAnswer(int blankIndex, String answer) {
     if (_showFeedback) return;
@@ -94,7 +98,10 @@ class _ClozeTestWidgetState extends State<ClozeTestWidget> {
   bool get _allBlanksFilled => _selectedAnswers.length == _blanks.length;
 
   List<Widget> _buildTextWithBlanks() {
-    final text = widget.exercise.question;
+    final metadataText = widget.exercise.metadata?['text'] as String?;
+    final text = (metadataText != null && metadataText.contains('___'))
+        ? metadataText
+        : widget.exercise.question;
     final parts = text.split('___');
     final List<Widget> widgets = [];
 

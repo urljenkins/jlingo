@@ -61,6 +61,120 @@
                     }
                 ]
             }
+        },
+        {
+            "type": "translateThis",
+            "question": "Dieciséis",
+            "options": [],
+            "correctAnswer": "Sixteen",
+            "id": "ex_n2_5"
+        },
+        {
+            "type": "translateThis",
+            "question": "Diecisiete",
+            "options": [],
+            "correctAnswer": "Seventeen",
+            "id": "ex_n2_6"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What is 'Dieciocho'?",
+            "options": [
+                "18",
+                "16",
+                "19",
+                "17"
+            ],
+            "correctAnswer": "18",
+            "id": "ex_n2_7"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Once más ocho es ___",
+            "options": [
+                "diecinueve",
+                "veinte",
+                "dieciocho",
+                "dieciséis"
+            ],
+            "correctAnswer": "diecinueve",
+            "id": "ex_n2_8"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match numbers 16-20",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Dieciséis",
+                        "native": "Sixteen"
+                    },
+                    {
+                        "target": "Diecisiete",
+                        "native": "Seventeen"
+                    },
+                    {
+                        "target": "Dieciocho",
+                        "native": "Eighteen"
+                    },
+                    {
+                        "target": "Diecinueve",
+                        "native": "Nineteen"
+                    },
+                    {
+                        "target": "Veinte",
+                        "native": "Twenty"
+                    }
+                ]
+            },
+            "id": "ex_n2_9"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Diecinueve",
+            "options": [],
+            "correctAnswer": "Diecinueve",
+            "id": "ex_n2_10"
+        },
+        {
+            "type": "speakThis",
+            "question": "Once, doce, trece, catorce, quince",
+            "options": [],
+            "correctAnswer": "Once, doce, trece, catorce, quince",
+            "id": "ex_n2_11"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What number is 'Trece'?",
+            "options": [
+                "13",
+                "14",
+                "12",
+                "11"
+            ],
+            "correctAnswer": "13",
+            "id": "ex_n2_12"
+        },
+        {
+            "type": "translateThis",
+            "question": "Catorce años",
+            "options": [],
+            "correctAnswer": "Fourteen years old",
+            "id": "ex_n2_13"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Tengo ___ años (seventeen)",
+            "options": [
+                "diecisiete",
+                "dieciséis",
+                "dieciocho",
+                "quince"
+            ],
+            "correctAnswer": "diecisiete",
+            "id": "ex_n2_14"
         }
     ]
 }

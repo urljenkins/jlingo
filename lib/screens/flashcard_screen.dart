@@ -65,12 +65,8 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   Widget _buildDeckList(FlashcardProvider provider) {
     return ListView.builder(
       padding: const EdgeInsets.all(16),
-      itemCount: provider.decks.length + 1, // +1 for the create button
+      itemCount: provider.decks.length,
       itemBuilder: (context, index) {
-        if (index == provider.decks.length) {
-          return _buildCreateDeckButton();
-        }
-
         final deck = provider.decks[index];
         final stats = deck.stats;
 
@@ -201,38 +197,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             style: TextStyle(color: color, fontSize: 12),
           ),
         ],
-      ),
-    );
-  }
-
-  Widget _buildCreateDeckButton() {
-    return Card(
-      margin: const EdgeInsets.only(bottom: 16),
-      color: Colors.transparent,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-        side: const BorderSide(color: AppColors.border, width: 2),
-      ),
-      child: InkWell(
-        onTap: () => _showCreateDeckDialog(context),
-        borderRadius: BorderRadius.circular(12),
-        child: const Padding(
-          padding: EdgeInsets.all(24),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.add, color: AppColors.textMuted),
-              SizedBox(width: 8),
-              Text(
-                'Create New Deck',
-                style: TextStyle(
-                  color: AppColors.textMuted,
-                  fontSize: 16,
-                ),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }
@@ -651,67 +615,5 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         ),
       ],
     );
-  }
-
-  void _showCreateDeckDialog(BuildContext context) {
-    final nameController = TextEditingController();
-    final descController = TextEditingController();
-
-    unawaited(showDialog<void>(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          backgroundColor: AppColors.surface,
-          title: const Text('Create New Deck'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: nameController,
-                decoration: const InputDecoration(
-                  labelText: 'Deck Name',
-                  border: OutlineInputBorder(),
-                ),
-              ),
-              const SizedBox(height: 16),
-              TextField(
-                controller: descController,
-                decoration: const InputDecoration(
-                  labelText: 'Description',
-                  border: OutlineInputBorder(),
-                ),
-                maxLines: 2,
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                final manifest = context.read<CourseProvider>().currentManifest;
-                if (nameController.text.isNotEmpty && manifest != null) {
-                  unawaited(context.read<FlashcardProvider>().createDeck(
-                        courseId: manifest.id,
-                        name: nameController.text,
-                        description: descController.text,
-                        targetLanguage: manifest.targetLanguage,
-                        nativeLanguage: manifest.nativeLanguage,
-                      ));
-                  Navigator.pop(context);
-                }
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.textPrimary,
-                foregroundColor: Colors.black,
-              ),
-              child: const Text('Create'),
-            ),
-          ],
-        );
-      },
-    ));
   }
 }

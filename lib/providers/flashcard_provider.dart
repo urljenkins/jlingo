@@ -194,58 +194,6 @@ class FlashcardProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<FlashcardDeck> createDeck({
-    required String courseId,
-    required String name,
-    required String description,
-    required String targetLanguage,
-    required String nativeLanguage,
-  }) async {
-    final deck = FlashcardDeck(
-      id: 'deck_${DateTime.now().millisecondsSinceEpoch}',
-      name: name,
-      description: description,
-      targetLanguage: targetLanguage,
-      nativeLanguage: nativeLanguage,
-      cards: [],
-      createdAt: DateTime.now(),
-    );
-
-    _decks.add(deck);
-    await _saveDecks(courseId);
-    notifyListeners();
-    return deck;
-  }
-
-  Future<void> addCardToDeck({
-    required String courseId,
-    required String deckId,
-    required Flashcard card,
-  }) async {
-    final deckIndex = _decks.indexWhere((d) => d.id == deckId);
-    if (deckIndex == -1) return;
-
-    final deck = _decks[deckIndex];
-    final updatedCards = [...deck.cards, card];
-    _decks[deckIndex] = deck.copyWith(cards: updatedCards);
-
-    if (_currentDeck?.id == deckId) {
-      _currentDeck = _decks[deckIndex];
-    }
-
-    await _saveDecks(courseId);
-    notifyListeners();
-  }
-
-  Future<void> deleteDeck(String courseId, String deckId) async {
-    _decks.removeWhere((d) => d.id == deckId);
-    if (_currentDeck?.id == deckId) {
-      _currentDeck = _decks.isNotEmpty ? _decks.first : null;
-    }
-    await _saveDecks(courseId);
-    notifyListeners();
-  }
-
   void updateSettings({int? newCardsPerDay, int? reviewCardsPerDay}) {
     if (newCardsPerDay != null) _newCardsPerDay = newCardsPerDay;
     if (reviewCardsPerDay != null) _reviewCardsPerDay = reviewCardsPerDay;

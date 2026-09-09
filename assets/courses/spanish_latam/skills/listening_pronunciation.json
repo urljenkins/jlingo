@@ -10,7 +10,7 @@
             "question": "Buenos días, ¿cómo está usted?",
             "options": [],
             "correctAnswer": "Buenos días, ¿cómo está usted?",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "audioPath": null,
             "metadata": {
                 "speaker": "Native Speaker - María",
@@ -22,10 +22,10 @@
         {
             "id": "lp_ex_2",
             "type": "pronunciationPractice",
-            "question": "Me llamo Juan y soy de España",
+            "question": "Me llamo Juan y soy de México",
             "options": [],
-            "correctAnswer": "Me llamo Juan y soy de España",
-            "targetLanguage": "es-419",
+            "correctAnswer": "Me llamo Juan y soy de México",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "phonetics": "meh YAH-moh HWAHN ee soy deh es-PAH-nyah",
                 "focus": "The 'll' sound and the 'ñ' pronunciation"
@@ -42,7 +42,7 @@
                 "He ordered juice"
             ],
             "correctAnswer": "He ordered coffee",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "type": "dialogue",
                 "context": "A customer ordering at a café in Madrid",
@@ -83,7 +83,7 @@
             "question": "Despacito",
             "options": [],
             "correctAnswer": "corazón,suave,beso",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "songTitle": "Despacito",
                 "artist": "Luis Fonsi",
@@ -138,7 +138,7 @@
             "question": "Tengo treinta y tres años",
             "options": [],
             "correctAnswer": "Tengo treinta y tres años",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "phonetics": "TEN-goh TRAYN-tah ee TRES AH-nyos",
                 "focus": "Rolling 'r' sound in 'treinta' and 'tres'"
@@ -155,7 +155,7 @@
                 "Strong winds tonight"
             ],
             "correctAnswer": "Rain expected tomorrow",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "type": "news",
                 "context": "Weather forecast from Spanish national television",
@@ -191,7 +191,7 @@
             "question": "¿Dónde está la estación de tren?",
             "options": [],
             "correctAnswer": "¿Dónde está la estación de tren?",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "speaker": "Native Speaker - Carlos",
                 "difficulty": "intermediate"
@@ -203,7 +203,7 @@
             "question": "El perro corre rápido por el parque",
             "options": [],
             "correctAnswer": "El perro corre rápido por el parque",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "phonetics": "el PEH-roh KOH-reh RAH-pee-doh por el PAR-keh",
                 "focus": "Double 'rr' sound in 'perro' and 'corre'"
@@ -220,7 +220,7 @@
                 "The old man was young"
             ],
             "correctAnswer": "The old man lived alone",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "type": "story",
                 "context": "A short tale about an old man in a small village",
@@ -256,7 +256,7 @@
             "question": "La Bamba",
             "options": [],
             "correctAnswer": "bailar,arriba,capitán",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "songTitle": "La Bamba",
                 "artist": "Ritchie Valens",
@@ -321,7 +321,7 @@
             "question": "La ciudad tiene muchos edificios altos",
             "options": [],
             "correctAnswer": "La ciudad tiene muchos edificios altos",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "phonetics": "lah see-oo-DAHD tee-EH-neh MOO-chos eh-dee-FEE-see-os AHL-tos",
                 "focus": "The soft 'd' sound in 'ciudad' and 'edificios'"
@@ -333,11 +333,186 @@
             "question": "Quisiera reservar una mesa para cuatro personas",
             "options": [],
             "correctAnswer": "Quisiera reservar una mesa para cuatro personas",
-            "targetLanguage": "es-419",
+            "targetLanguage": "es-ES",
             "metadata": {
                 "speaker": "Native Speaker - Elena",
                 "difficulty": "intermediate"
             }
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Buenas noches, que descanses",
+            "options": [],
+            "correctAnswer": "Buenas noches, que descanses",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "BWEH-nas NOH-ches keh des-KAHN-ses",
+                "focus": "Soft 'ch' and 'que' pronunciation"
+            },
+            "id": "lp_ex_13"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "¿Cuánto cuesta esto?",
+            "options": [],
+            "correctAnswer": "¿Cuánto cuesta esto?",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "KWAN-toh KWES-tah ES-toh",
+                "focus": "The 'cu' combination sound"
+            },
+            "id": "lp_ex_14"
+        },
+        {
+            "type": "dialogueListening",
+            "question": "Listen to the conversation at a shop",
+            "options": [
+                "10 euros",
+                "5 euros",
+                "15 euros",
+                "20 euros"
+            ],
+            "correctAnswer": "10 euros",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "type": "dialogue",
+                "context": "A customer asking the price of an item in a shop",
+                "dialogue": [
+                    {
+                        "speaker": "Cliente",
+                        "text": "Buenos días, ¿cuánto cuesta esta camisa?",
+                        "translation": "Good morning, how much does this shirt cost?"
+                    },
+                    {
+                        "speaker": "Vendedor",
+                        "text": "Cuesta diez euros.",
+                        "translation": "It costs ten euros."
+                    },
+                    {
+                        "speaker": "Cliente",
+                        "text": "Perfecto, me la llevo.",
+                        "translation": "Perfect, I'll take it."
+                    }
+                ],
+                "comprehensionQuestion": "How much did the shirt cost?",
+                "correctOptionIndex": 0
+            },
+            "id": "lp_ex_15"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Quisiera un vaso de agua, por favor",
+            "options": [],
+            "correctAnswer": "Quisiera un vaso de agua, por favor",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "kee-see-EH-rah oon VAH-so deh AH-gwah",
+                "focus": "The soft 'qu' sound in 'quisiera'"
+            },
+            "id": "lp_ex_16"
+        },
+        {
+            "type": "dialogueListening",
+            "question": "Listen to the phone conversation",
+            "options": [
+                "She will call back later",
+                "She hung up",
+                "She is busy all day",
+                "She wants to meet now"
+            ],
+            "correctAnswer": "She will call back later",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "type": "dialogue",
+                "context": "A phone call between two friends",
+                "dialogue": [
+                    {
+                        "speaker": "Ana",
+                        "text": "Hola, ¿está Carlos?",
+                        "translation": "Hello, is Carlos there?"
+                    },
+                    {
+                        "speaker": "Madre",
+                        "text": "No, no está. ¿Quieres dejar un mensaje?",
+                        "translation": "No, he's not here. Do you want to leave a message?"
+                    },
+                    {
+                        "speaker": "Ana",
+                        "text": "No, gracias. Le llamo más tarde.",
+                        "translation": "No, thanks. I'll call him later."
+                    }
+                ],
+                "comprehensionQuestion": "What will Ana do?",
+                "correctOptionIndex": 0
+            },
+            "id": "lp_ex_17"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "El niño juega en el jardín",
+            "options": [],
+            "correctAnswer": "El niño juega en el jardín",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "el NEE-nyoh HWEH-gah en el har-DEEN",
+                "focus": "The 'ñ' and soft 'j' sounds"
+            },
+            "id": "lp_ex_18"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Mi cumpleaños es en mayo",
+            "options": [],
+            "correctAnswer": "Mi cumpleaños es en mayo",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "mee koom-pleh-AH-nyos es en MAH-yoh",
+                "focus": "The 'ñ' sound in 'cumpleaños'"
+            },
+            "id": "lp_ex_19"
+        },
+        {
+            "type": "dialogueListening",
+            "question": "Listen to the morning routine description",
+            "options": [
+                "She wakes up at 7am",
+                "She wakes up at 6am",
+                "She wakes up at 8am",
+                "She doesn't wake up early"
+            ],
+            "correctAnswer": "She wakes up at 7am",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "type": "dialogue",
+                "context": "A description of a daily routine",
+                "dialogue": [
+                    {
+                        "speaker": "Narrator",
+                        "text": "Laura se despierta a las siete de la mañana.",
+                        "translation": "Laura wakes up at seven in the morning."
+                    },
+                    {
+                        "speaker": "Narrator",
+                        "text": "Se ducha y desayuna antes de ir al trabajo.",
+                        "translation": "She showers and has breakfast before going to work."
+                    }
+                ],
+                "comprehensionQuestion": "What time does Laura wake up?",
+                "correctOptionIndex": 0
+            },
+            "id": "lp_ex_20"
+        },
+        {
+            "type": "pronunciationPractice",
+            "question": "Buenas tardes, ¿qué desea comer?",
+            "options": [],
+            "correctAnswer": "Buenas tardes, ¿qué desea comer?",
+            "targetLanguage": "es-ES",
+            "metadata": {
+                "phonetics": "BWEH-nas TAR-des keh deh-SEH-ah koh-MEHR",
+                "focus": "Linking words smoothly in a question"
+            },
+            "id": "lp_ex_21"
         }
     ]
 }

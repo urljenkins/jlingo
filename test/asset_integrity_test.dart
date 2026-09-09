@@ -404,5 +404,85 @@ void main() {
         }
       }
     });
+
+    test('exercise ids are unique within each skill', () {
+      for (final (language, id, file) in allSkillFiles()) {
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        final ids = skill.exercises.map((e) => e.id).toList();
+        expect(ids.toSet().length, ids.length,
+            reason: '$language/$id.json contains duplicate exercise ids');
+      }
+    });
+
+    test('every clozeTest exercise has valid blanks or text metadata', () {
+      for (final (language, id, file) in allSkillFiles()) {
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        for (final exercise in skill.exercises) {
+          if (exercise.type != ExerciseType.clozeTest) continue;
+          final blanks = exercise.metadata?['blanks'] as List<dynamic>?;
+          final metadataText = exercise.metadata?['text'] as String?;
+          final hasBlanks = (blanks != null && blanks.isNotEmpty) ||
+              (metadataText != null && metadataText.contains('___')) ||
+              exercise.question.contains('___');
+          expect(hasBlanks, isTrue,
+              reason: '${exercise.id} in $language/$id.json is clozeTest but '
+                  'has neither metadata["blanks"] nor a blank "___" in text/question');
+        }
+      }
+    });
+
+    test('every storyLesson exercise has story content', () {
+      for (final (language, id, file) in allSkillFiles()) {
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        for (final exercise in skill.exercises) {
+          if (exercise.type != ExerciseType.storyLesson) continue;
+          final story = exercise.metadata?['story'] as String?;
+          final hasStory = (story != null && story.isNotEmpty) ||
+              exercise.question.isNotEmpty;
+          expect(hasStory, isTrue,
+              reason: '${exercise.id} in $language/$id.json is storyLesson but '
+                  'has no story content');
+        }
+      }
+    });
+
+    test('every interactiveDialogue exercise has dialogue turns', () {
+      for (final (language, id, file) in allSkillFiles()) {
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        for (final exercise in skill.exercises) {
+          if (exercise.type != ExerciseType.interactiveDialogue) continue;
+          final dialogue = exercise.metadata?['dialogue'] as List<dynamic>?;
+          expect(dialogue, isNotNull,
+              reason:
+                  '${exercise.id} in $language/$id.json is interactiveDialogue '
+                  'but has no metadata["dialogue"]');
+          expect(dialogue, isNotEmpty,
+              reason: '${exercise.id} in $language/$id.json has an empty '
+                  'dialogue list');
+        }
+      }
+    });
+
+    test('every dialogueListening exercise has dialogue content', () {
+      for (final (language, id, file) in allSkillFiles()) {
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        for (final exercise in skill.exercises) {
+          if (exercise.type != ExerciseType.dialogueListening) continue;
+          final dialogue = (exercise.metadata?['dialogue'] ??
+              exercise.metadata?['dialogueLines']) as List<dynamic>?;
+          final hasContent = (dialogue != null && dialogue.isNotEmpty) ||
+              exercise.question.isNotEmpty;
+          expect(hasContent, isTrue,
+              reason:
+                  '${exercise.id} in $language/$id.json is dialogueListening '
+                  'but has no dialogue lines');
+        }
+      }
+    });
   });
 }

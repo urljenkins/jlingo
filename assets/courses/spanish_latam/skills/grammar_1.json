@@ -113,6 +113,120 @@
             "question": "Usted es bienvenido",
             "options": [],
             "correctAnswer": "Usted es bienvenido"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How do you say 'They' (feminine) in Spanish?",
+            "options": [
+                "Ellas",
+                "Ellos",
+                "Nosotras",
+                "Vosotras"
+            ],
+            "correctAnswer": "Ellas",
+            "id": "ex_g1_11"
+        },
+        {
+            "type": "translateThis",
+            "question": "Ustedes son",
+            "options": [],
+            "correctAnswer": "You all are",
+            "id": "ex_g1_12"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "Yo ___ feliz (I am - feeling)",
+            "options": [
+                "estoy",
+                "soy",
+                "es",
+                "son"
+            ],
+            "correctAnswer": "estoy",
+            "id": "ex_g1_13"
+        },
+        {
+            "type": "matchPairs",
+            "question": "Match pronouns with meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Yo",
+                        "native": "I"
+                    },
+                    {
+                        "target": "Tú",
+                        "native": "You (informal)"
+                    },
+                    {
+                        "target": "Usted",
+                        "native": "You (formal)"
+                    },
+                    {
+                        "target": "Nosotras",
+                        "native": "We (feminine)"
+                    },
+                    {
+                        "target": "Vosotros",
+                        "native": "You all (Spain)"
+                    }
+                ]
+            },
+            "id": "ex_g1_14"
+        },
+        {
+            "type": "listeningComprehension",
+            "question": "Ustedes son mis amigos",
+            "options": [],
+            "correctAnswer": "Ustedes son mis amigos",
+            "id": "ex_g1_15"
+        },
+        {
+            "type": "translateThis",
+            "question": "Ellas son hermanas",
+            "options": [],
+            "correctAnswer": "They (fem.) are sisters",
+            "id": "ex_g1_16"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "Which pronoun is used for formal 'you'?",
+            "options": [
+                "Usted",
+                "Tú",
+                "Vos",
+                "Vosotros"
+            ],
+            "correctAnswer": "Usted",
+            "id": "ex_g1_17"
+        },
+        {
+            "type": "fillInBlank",
+            "question": "___ somos estudiantes (We - fem.)",
+            "options": [
+                "Nosotras",
+                "Nosotros",
+                "Ellos",
+                "Vosotros"
+            ],
+            "correctAnswer": "Nosotras",
+            "id": "ex_g1_18"
+        },
+        {
+            "type": "speakThis",
+            "question": "Usted es muy amable",
+            "options": [],
+            "correctAnswer": "Usted es muy amable",
+            "id": "ex_g1_19"
+        },
+        {
+            "type": "translateThis",
+            "question": "¿Y ustedes?",
+            "options": [],
+            "correctAnswer": "And you all?",
+            "id": "ex_g1_20"
         }
     ]
 }

@@ -1,0 +1,217 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://jlingo.app/schemas/skill.schema.json",
+  "title": "Skill",
+  "description": "Schema for a jlingo course skill containing a list of exercises",
+  "type": "object",
+  "required": ["id", "name", "description", "level", "exercises"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this skill (matches filename without .json)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display title of the skill"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short summary of what this skill teaches"
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Difficulty level of this skill (e.g. 1 to 5)"
+    },
+    "exercises": {
+      "type": "array",
+      "description": "List of exercises in this skill",
+      "items": {
+        "$ref": "#/definitions/exercise"
+      }
+    }
+  },
+  "definitions": {
+    "exerciseType": {
+      "type": "string",
+      "enum": [
+        "translateThis",
+        "matchPairs",
+        "multipleChoice",
+        "listeningComprehension",
+        "speakThis",
+        "fillInBlank",
+        "nativeAudio",
+        "pronunciationPractice",
+        "dialogueListening",
+        "songFill",
+        "interactiveDialogue",
+        "storyLesson",
+        "translationExercise",
+        "clozeTest",
+        "wordBankTranslate",
+        "tapWhatYouHear",
+        "selectImage",
+        "completeTheChat"
+      ]
+    },
+    "exercise": {
+      "type": "object",
+      "required": ["id", "type", "question", "options", "correctAnswer"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique ID for this exercise within the skill"
+        },
+        "type": {
+          "$ref": "#/definitions/exerciseType"
+        },
+        "question": {
+          "type": "string",
+          "description": "The prompt, source sentence, or question text"
+        },
+        "audioPath": {
+          "type": ["string", "null"],
+          "description": "Optional relative path inside assets/ to pre-recorded audio file"
+        },
+        "options": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Multiple choice choices, distractor word tiles, or empty list"
+        },
+        "correctAnswer": {
+          "type": "string",
+          "description": "Expected answer string (leave empty string for matchPairs)"
+        },
+        "targetLanguage": {
+          "type": ["string", "null"],
+          "description": "BCP-47 language tag (e.g. 'es-ES', 'ja-JP'). Stamped by course loader if omitted."
+        },
+        "nativeLanguage": {
+          "type": ["string", "null"],
+          "description": "BCP-47 language tag for learner's native language (e.g. 'en-US'). Stamped by course loader if omitted."
+        },
+        "difficultyRating": {
+          "type": ["number", "null"],
+          "description": "Optional difficulty rating"
+        },
+        "isFlashcardEligible": {
+          "type": "boolean",
+          "default": false
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Payload specific to complex exercise types",
+          "properties": {
+            "pairs": {
+              "type": "array",
+              "description": "Used by matchPairs",
+              "items": {
+                "type": "object",
+                "required": ["target", "native"],
+                "properties": {
+                  "target": { "type": "string" },
+                  "native": { "type": "string" }
+                }
+              }
+            },
+            "blanks": {
+              "type": "array",
+              "description": "Used by clozeTest and songFill",
+              "items": {
+                "type": "object",
+                "required": ["answer"],
+                "properties": {
+                  "index": { "type": "integer" },
+                  "answer": { "type": "string" },
+                  "options": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "context": {
+              "type": "string",
+              "description": "Context or instructions shown above exercise"
+            },
+            "story": {
+              "type": "string",
+              "description": "Story reading text for storyLesson"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title for storyLesson"
+            },
+            "vocabulary": {
+              "type": "array",
+              "description": "Optional vocabulary list for storyLesson",
+              "items": {
+                "type": "object",
+                "required": ["word", "translation"],
+                "properties": {
+                  "word": { "type": "string" },
+                  "translation": { "type": "string" }
+                }
+              }
+            },
+            "dialogue": {
+              "type": "array",
+              "description": "Dialogue lines for interactiveDialogue or dialogueListening",
+              "items": {
+                "type": "object",
+                "required": ["speaker"],
+                "properties": {
+                  "speaker": { "type": "string" },
+                  "text": { "type": "string" },
+                  "isUserTurn": { "type": "boolean" },
+                  "options": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "answer": { "type": "string" }
+                }
+              }
+            },
+            "comprehensionQuestion": {
+              "type": "string",
+              "description": "Question asked after dialogue playback in dialogueListening"
+            },
+            "lyrics": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Song lyrics lines for songFill"
+            },
+            "hints": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Hints for translationExercise"
+            },
+            "emoji": {
+              "type": "object",
+              "additionalProperties": { "type": "string" },
+              "description": "Emoji glyph per option for selectImage"
+            },
+            "images": {
+              "type": "object",
+              "additionalProperties": { "type": "string" },
+              "description": "Image asset path/URL per option for selectImage"
+            },
+            "lines": {
+              "type": "array",
+              "description": "Conversation turns for completeTheChat",
+              "items": {
+                "type": "object",
+                "required": ["text"],
+                "properties": {
+                  "text": { "type": "string" },
+                  "isLearner": { "type": "boolean" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
