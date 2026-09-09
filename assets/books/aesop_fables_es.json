@@ -1,0 +1,154 @@
+{
+  "id": "aesop_fables_es",
+  "title": "Fábulas de Esopo / Aesop's Fables",
+  "author": "Esopo (Adaptado)",
+  "originalLanguage": "spanish",
+  "translatedLanguage": "english",
+  "category": "literature",
+  "description": "Timeless beginner tales including The Tortoise and the Hare, The Boy Who Cried Wolf, and The Lion and the Mouse.",
+  "difficulty": "beginner",
+  "totalWords": 490,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "La Liebre y la Tortuga / The Tortoise and the Hare",
+      "translatedTitle": "The Tortoise and the Hare",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText": "Había una vez una liebre muy veloz y orgullosa que siempre se burlaba de la lentitud de la tortuga. \"¡Caminas tan despacio que nunca llegarás a ninguna parte!\", le decía riendo entre las flores del campo.",
+          "translatedText": "Once upon a time, there was a very swift and proud hare who always mocked the slowness of the tortoise. \"You walk so slowly that you will never get anywhere!\" he told her, laughing among the wildflowers.",
+          "vocabularyWords": [
+            "liebre",
+            "veloz",
+            "orgullosa",
+            "lentitud",
+            "despacio"
+          ]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText": "La tortuga, tranquila y con una sonrisa amable, le respondió: \"¿Por qué no hacemos una carrera hasta el gran roble al final del prado? Veremos quién llega primero\". La liebre aceptó encantada, segura de su victoria.",
+          "translatedText": "The tortoise, calm and with a friendly smile, replied: \"Why don't we have a race to the big oak tree at the end of the meadow? We will see who arrives first.\" The hare gladly accepted, confident of his victory.",
+          "vocabularyWords": [
+            "tranquila",
+            "carrera",
+            "roble",
+            "prado",
+            "victoria"
+          ]
+        },
+        {
+          "id": "ch1_p3",
+          "originalText": "Al comenzar la carrera, la liebre salió corriendo como una flecha. Al ver que la tortuga quedaba muy atrás, decidió descansar bajo un árbol frondoso y se quedó profundamente dormida.",
+          "translatedText": "When the race began, the hare dashed off like an arrow. Seeing that the tortoise was left far behind, he decided to rest under a shady tree and fell fast asleep.",
+          "vocabularyWords": [
+            "comenzar",
+            "flecha",
+            "descansar",
+            "frondoso",
+            "dormida"
+          ]
+        },
+        {
+          "id": "ch1_p4",
+          "originalText": "Paso a paso, sin detenerse ni un momento, la tortuga continuó avanzando con constancia. Cuando la liebre despertó asustada, vio a la tortuga cruzando la línea de meta. Moraleja: La paciencia y la perseverancia superan la prisa y la arrogancia.",
+          "translatedText": "Step by step, without stopping for a single moment, the tortoise continued moving forward with perseverance. When the hare awoke in fright, he saw the tortoise crossing the finish line. Moral: Patience and perseverance overcome haste and arrogance.",
+          "vocabularyWords": [
+            "detenerse",
+            "constancia",
+            "meta",
+            "paciencia",
+            "perseverancia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "El Pastorcillo Mentiroso / The Boy Who Cried Wolf",
+      "translatedTitle": "The Boy Who Cried Wolf",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText": "En lo alto de una colina verde, un joven pastor cuidaba el rebaño de ovejas de su aldea. Pasaba muchas horas en silencio y un día se sintió tan aburrido que decidió gastar una broma a los vecinos.",
+          "translatedText": "At the top of a green hill, a young shepherd watched over his village's flock of sheep. He spent many hours in silence, and one day he felt so bored that he decided to play a prank on the neighbors.",
+          "vocabularyWords": [
+            "pastor",
+            "rebaño",
+            "ovejas",
+            "aburrido",
+            "broma"
+          ]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText": "\"¡Socorro! ¡Viene el lobo! ¡El lobo ataca las ovejas!\", gritó con todas sus fuerzas. Los aldeanos corrieron rápidamente con palos para ayudarle, pero al llegar encontraron al muchacho riéndose a carcajadas de su engaño.",
+          "translatedText": "\"Help! The wolf is coming! The wolf is attacking the sheep!\" he shouted with all his might. The villagers rushed quickly with sticks to help him, but upon arriving they found the boy laughing out loud at his deception.",
+          "vocabularyWords": [
+            "socorro",
+            "lobo",
+            "aldeanos",
+            "carcajadas",
+            "engaño"
+          ]
+        },
+        {
+          "id": "ch2_p3",
+          "originalText": "Pocos días después, un lobo verdadero salió de la espesura del bosque. El pastor gritó desesperado: \"¡Auxilio, esta vez es verdad!\". Pero los aldeanos pensaron que mentía otra vez y nadie acudió. Moraleja: En boca del mentiroso, lo cierto se hace dudoso.",
+          "translatedText": "A few days later, a real wolf emerged from the thick woods. The shepherd cried in despair: \"Help, this time it is real!\". But the villagers thought he was lying again, and nobody came. Moral: Even when a liar speaks the truth, no one will believe them.",
+          "vocabularyWords": [
+            "verdadero",
+            "espesura",
+            "desesperado",
+            "mentiroso",
+            "dudoso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "El León y el Ratón / The Lion and the Mouse",
+      "translatedTitle": "The Lion and the Mouse",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText": "Un león dormía plácidamente bajo el sol cuando un diminuto ratón de campo pasó corriendo por su hocico y lo despertó. El rey de la selva atrapó al ratoncito bajo su enorme garra.",
+          "translatedText": "A lion was sleeping peacefully under the sun when a tiny field mouse dashed across his snout and woke him. The king of the jungle caught the little mouse beneath his huge paw.",
+          "vocabularyWords": [
+            "plácidamente",
+            "diminuto",
+            "hocico",
+            "selva",
+            "garra"
+          ]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText": "\"Por favor, majestuoso león, perdóname la vida\", suplicó el ratón temblando. \"Si me dejas ir, algún día te devolveré el favor\". El león sonrió ante la idea de que un animal tan pequeño pudiera ayudarle, pero fue generoso y lo liberó.",
+          "translatedText": "\"Please, majestic lion, spare my life,\" pleaded the mouse, trembling. \"If you let me go, someday I will return the favor.\" The lion smiled at the thought that such a small creature could help him, but was generous and set him free.",
+          "vocabularyWords": [
+            "suplicó",
+            "temblando",
+            "devolver",
+            "generoso",
+            "liberó"
+          ]
+        },
+        {
+          "id": "ch3_p3",
+          "originalText": "Tiempo después, unos cazadores capturaron al león y lo ataron fuertemente con gruesas cuerdas. El ratoncito escuchó sus rugidos de auxilio, corrió hacia él y royó las cuerdas con sus afilados dientes hasta dejarlo libre. Moraleja: Ningún acto de bondad es en vano.",
+          "translatedText": "Some time later, hunters captured the lion and tied him tightly with heavy ropes. The little mouse heard his roars for help, ran to him, and gnawed through the ropes with sharp teeth until setting him free. Moral: No act of kindness is ever wasted.",
+          "vocabularyWords": [
+            "cazadores",
+            "cuerdas",
+            "rugidos",
+            "royó",
+            "bondad"
+          ]
+        }
+      ]
+    }
+  ]
+}

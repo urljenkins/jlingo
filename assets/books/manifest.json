@@ -6,6 +6,7 @@
       "author": "Antoine de Saint-Exupéry",
       "originalLanguage": "spanish",
       "translatedLanguage": "english",
+      "category": "literature",
       "translationIds": {
         "spanish": null,
         "french": null,
@@ -26,6 +27,7 @@
       "author": "Miguel de Cervantes",
       "originalLanguage": "spanish",
       "translatedLanguage": "english",
+      "category": "literature",
       "translationIds": {
         "spanish": null,
         "french": null,
@@ -46,6 +48,7 @@
       "author": "Alexandre Dumas",
       "originalLanguage": "french",
       "translatedLanguage": "english",
+      "category": "literature",
       "translationIds": {
         "spanish": null,
         "french": null,
@@ -66,6 +69,7 @@
       "author": "Franz Kafka",
       "originalLanguage": "german",
       "translatedLanguage": "english",
+      "category": "literature",
       "translationIds": {
         "spanish": null,
         "french": null,
@@ -86,6 +90,7 @@
       "author": "Lewis Carroll",
       "originalLanguage": "english",
       "translatedLanguage": "spanish",
+      "category": "literature",
       "translationIds": {
         "spanish": null,
         "french": null,
@@ -106,6 +111,7 @@
       "author": "Jane Austen",
       "originalLanguage": "english",
       "translatedLanguage": "spanish",
+      "category": "literature",
       "translationIds": {
         "spanish": null,
         "french": null,
@@ -126,6 +132,7 @@
       "author": "Arthur Conan Doyle",
       "originalLanguage": "english",
       "translatedLanguage": "spanish",
+      "category": "literature",
       "translationIds": {
         "spanish": null,
         "french": null,
@@ -146,6 +153,7 @@
       "author": "Charles Dickens",
       "originalLanguage": "english",
       "translatedLanguage": "spanish",
+      "category": "literature",
       "translationIds": {
         "spanish": null,
         "french": null,
@@ -159,7 +167,66 @@
       "difficulty": "intermediate",
       "totalWords": 1540,
       "chapterCount": 3
+    },
+    {
+      "id": "bank_statement_es",
+      "title": "Monthly Bank Statement",
+      "author": "Banco Continental",
+      "originalLanguage": "spanish",
+      "translatedLanguage": "english",
+      "category": "document",
+      "description": "An authentic bilingual bank statement showing account summary, monthly income and debits, card transactions, and banking conditions.",
+      "difficulty": "beginner",
+      "totalWords": 480,
+      "chapterCount": 3
+    },
+    {
+      "id": "city_registration_es",
+      "title": "Municipal Registration Notice",
+      "author": "Ayuntamiento de Madrid (Oficina de Padrón)",
+      "originalLanguage": "spanish",
+      "translatedLanguage": "english",
+      "category": "document",
+      "description": "An official bilingual municipal registration notice confirming residential registration, citizen rights, validity, and renewal procedures.",
+      "difficulty": "beginner",
+      "totalWords": 440,
+      "chapterCount": 3
+    },
+    {
+      "id": "lease_agreement_es",
+      "title": "Residential Tenancy Summary",
+      "author": "Servicio Legal de Vivienda",
+      "originalLanguage": "spanish",
+      "translatedLanguage": "english",
+      "category": "document",
+      "description": "An authentic bilingual tenancy agreement extract covering rental clauses, security deposits, utility responsibilities, and termination notices.",
+      "difficulty": "intermediate",
+      "totalWords": 520,
+      "chapterCount": 3
+    },
+    {
+      "id": "aesop_fables_es",
+      "title": "Aesop's Fables",
+      "author": "Esopo (Adaptado)",
+      "originalLanguage": "spanish",
+      "translatedLanguage": "english",
+      "category": "literature",
+      "description": "Timeless beginner tales including The Tortoise and the Hare, The Boy Who Cried Wolf, and The Lion and the Mouse.",
+      "difficulty": "beginner",
+      "totalWords": 490,
+      "chapterCount": 3
+    },
+    {
+      "id": "little_red_riding_hood_fr",
+      "title": "Le Petit Chaperon Rouge / Little Red Riding Hood",
+      "author": "Charles Perrault (Adapté)",
+      "originalLanguage": "french",
+      "translatedLanguage": "english",
+      "category": "literature",
+      "description": "A delightful French beginner fairy tale about a little girl, her grandmother's cottage, and a cunning wolf.",
+      "difficulty": "beginner",
+      "totalWords": 460,
+      "chapterCount": 3
     }
   ]
 }
-

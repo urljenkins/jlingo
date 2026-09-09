@@ -1,0 +1,106 @@
+{
+  "id": "lease_agreement_es",
+  "title": "Contrato de Arrendamiento / Residential Tenancy Summary",
+  "author": "Servicio Legal de Vivienda",
+  "originalLanguage": "spanish",
+  "translatedLanguage": "english",
+  "category": "document",
+  "description": "An authentic bilingual tenancy agreement extract covering rental clauses, security deposits, utility responsibilities, and termination notices.",
+  "difficulty": "intermediate",
+  "totalWords": 520,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Partes y Vivienda Arrendada / Parties and Premises",
+      "translatedTitle": "Parties and Premises",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText": "Contrato de Arrendamiento de Vivienda Urbana. De una parte, Dña. Mercedes Navarro, mayor de edad, en concepto de Arrendadora. De otra parte, D. Javier Solís, mayor de edad, en concepto de Arrendatario. Ambas partes se reconocen mutuamente capacidad jurídica para formalizar el presente contrato.",
+          "translatedText": "Urban Residential Lease Agreement. On the one part, Ms. Mercedes Navarro, of legal age, acting as Landlord. On the other part, Mr. Javier Solís, of legal age, acting as Tenant. Both parties mutually recognize each other's legal capacity to enter into this agreement.",
+          "vocabularyWords": [
+            "arrendamiento",
+            "arrendadora",
+            "arrendatario",
+            "capacidad jurídica",
+            "formalizar"
+          ]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText": "Objeto del contrato: La Arrendadora cede en régimen de arrendamiento la vivienda situada en Avenida de América 18, 4º C, amueblada y equipada con electrodomésticos, según inventario firmado como anexo. El Arrendatario recibe las llaves y se compromete a destinar el inmueble exclusivamente a residencia habitual.",
+          "translatedText": "Subject of agreement: The Landlord leases the residential property located at 18 Avenida de América, 4th Floor Apt C, furnished and equipped with electrical appliances according to the inventory signed as an appendix. The Tenant receives the keys and commits to using the premises exclusively as a primary residence.",
+          "vocabularyWords": [
+            "cede",
+            "amueblada",
+            "electrodomésticos",
+            "inventario",
+            "inmueble"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "Renta y Fianza / Rent and Security Deposit",
+      "translatedTitle": "Rent and Security Deposit",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText": "Precio de la renta: Se fija como importe de la renta mensual la cantidad de 850,00 euros. El pago se efectuará por meses anticipados dentro de los cinco primeros días de cada mes mediante transferencia bancaria al número de cuenta designado por la parte Arrendadora.",
+          "translatedText": "Rental price: The monthly rent amount is set at the sum of 850.00 euros. Payment shall be made monthly in advance within the first five days of each month via bank transfer to the account number designated by the Landlord.",
+          "vocabularyWords": [
+            "renta mensual",
+            "meses anticipados",
+            "transferencia bancaria",
+            "designado",
+            "fija"
+          ]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText": "Fianza legal obligatoria: En este acto, el Arrendatario hace entrega a la Arrendadora de una mensualidad de renta en concepto de fianza legal por importe de 850 euros. Dicha cantidad queda depositada en el organismo público competente como garantía del cumplimiento de las obligaciones contractuales.",
+          "translatedText": "Mandatory legal deposit: In this act, the Tenant delivers to the Landlord one month's rent as a legal security deposit in the amount of 850 euros. Said sum remains deposited in the competent public agency as a guarantee of compliance with contractual obligations.",
+          "vocabularyWords": [
+            "fianza legal",
+            "mensualidad",
+            "organismo público",
+            "garantía",
+            "cumplimiento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Suministros y Rescisión / Utilities and Termination",
+      "translatedTitle": "Utilities and Termination",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText": "Gastos y suministros: Los consumos de electricidad, gas, agua e internet serán por cuenta exclusiva del Arrendatario mediante domiciliación a su nombre. Los gastos de comunidad ordinarios y el Impuesto sobre Bienes Inmuebles (IBI) corresponden a la Arrendadora.",
+          "translatedText": "Expenses and utilities: Consumptions of electricity, gas, water, and internet shall be the exclusive responsibility of the Tenant through direct debit under their name. Ordinary building community expenses and real estate property tax (IBI) correspond to the Landlord.",
+          "vocabularyWords": [
+            "suministros",
+            "por cuenta",
+            "gastos de comunidad",
+            "impuesto",
+            "consumos"
+          ]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText": "Plazo de preaviso y desistimiento: El Arrendatario podrá desistir del contrato transcurridos seis meses desde la firma, siempre que lo comunique a la Arrendadora con una antelación mínima de treinta días mediante notificación fehaciente o correo burofax.",
+          "translatedText": "Notice period and termination: The Tenant may terminate the contract once six months have elapsed from signing, provided they notify the Landlord with a minimum advance notice of thirty days by certified notification or recorded delivery mail.",
+          "vocabularyWords": [
+            "preaviso",
+            "desistimiento",
+            "antelación",
+            "fehaciente",
+            "transcurridos"
+          ]
+        }
+      ]
+    }
+  ]
+}

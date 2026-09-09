@@ -1,0 +1,106 @@
+{
+  "id": "city_registration_es",
+  "title": "Certificado de Empadronamiento / Municipal Registration Notice",
+  "author": "Ayuntamiento de Madrid (Oficina de Padrón)",
+  "originalLanguage": "spanish",
+  "translatedLanguage": "english",
+  "category": "document",
+  "description": "An official bilingual municipal registration notice confirming residential registration, citizen rights, validity, and renewal procedures.",
+  "difficulty": "beginner",
+  "totalWords": 440,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Notificación de Inscripción / Registration Notice",
+      "translatedTitle": "Registration Notice",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText": "Ayuntamiento de Madrid — Dirección General de Estadística y Padrón. Se certifica que, con fecha 12 de abril de 2026, ha quedado formalizada la inscripción en el Padrón Municipal de Habitantes de la persona cuyos datos se detallan a continuación.",
+          "translatedText": "City Hall of Madrid — General Directorate of Statistics and Population Registry. It is certified that, on April 12th, 2026, the enrollment in the Municipal Registry of Residents was formalized for the person whose details appear below.",
+          "vocabularyWords": [
+            "ayuntamiento",
+            "padrón municipal",
+            "inscripción",
+            "habitantes",
+            "certifica"
+          ]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText": "Datos del interesado: Nombre y apellidos: Elena Gómez Blanco. Documento de identidad / NIE: Y-9876543-K. Nacionalidad: Colombiana. Domicilio habitual registrado: Calle Mayor número 42, piso 3º B, Código Postal 28013, Madrid.",
+          "translatedText": "Applicant details: First name and surname: Elena Gómez Blanco. Identity document / Foreigner ID: Y-9876543-K. Nationality: Colombian. Registered primary residence: 42 Calle Mayor, 3rd Floor Apt B, Postal Code 28013, Madrid.",
+          "vocabularyWords": [
+            "interesado",
+            "documento de identidad",
+            "domicilio habitual",
+            "código postal",
+            "nacionalidad"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "Efectos y Derechos / Rights and Legal Effects",
+      "translatedTitle": "Rights and Legal Effects",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText": "Efectos administrativos: El presente certificado constituye documento público y fehaciente para acreditar la residencia y el domicilio habitual en el municipio. Es preceptivo para la asignación de médico de familia en el centro de salud y la escolarización en centros educativos públicos.",
+          "translatedText": "Administrative effects: This certificate constitutes a public and authentic document to prove residence and primary domicile within the municipality. It is mandatory for primary care physician assignment at the community health center and enrollment in public schools.",
+          "vocabularyWords": [
+            "fehaciente",
+            "acreditar",
+            "residencia",
+            "preceptivo",
+            "centro de salud"
+          ]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText": "Validez del volante: La presente certificación tiene una validez de tres meses a contar desde el día de su expedición. La autenticidad de este documento puede cotejarse mediante el Código Seguro de Verificación (CSV) disponible en la sede electrónica municipal.",
+          "translatedText": "Certificate validity: This certification is valid for three months starting from its date of issuance. The authenticity of this document may be verified using the Secure Verification Code (CSV) accessible on the municipal electronic portal.",
+          "vocabularyWords": [
+            "validez",
+            "expedición",
+            "autenticidad",
+            "código seguro de verificación",
+            "sede electrónica"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Obligaciones y Renovación / Obligations and Renewal",
+      "translatedTitle": "Obligations and Renewal",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText": "Obligación de comunicación de cambios: Los ciudadanos inscritos están obligados a comunicar cualquier variación en sus circunstancias personales o traslado de domicilio en el plazo máximo de un mes desde que dicho cambio se produzca.",
+          "translatedText": "Obligation to notify changes: Registered citizens are required to report any change in their personal circumstances or change of address within a maximum period of one month from when such change takes place.",
+          "vocabularyWords": [
+            "obligados",
+            "comunicar",
+            "variación",
+            "traslado de domicilio",
+            "plazo máximo"
+          ]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText": "Renovación periódica: Los ciudadanos extranjeros no comunitarios sin autorización de residencia permanente deben renovar expresamente su inscripción patronal cada dos años para evitar la baja de oficio por caducidad.",
+          "translatedText": "Periodic renewal: Non-EU foreign nationals without permanent residence permits must explicitly renew their municipal registry listing every two years to avoid automatic administrative cancellation due to expiration.",
+          "vocabularyWords": [
+            "renovación periódica",
+            "extranjeros",
+            "residencia permanente",
+            "baja de oficio",
+            "caducidad"
+          ]
+        }
+      ]
+    }
+  ]
+}

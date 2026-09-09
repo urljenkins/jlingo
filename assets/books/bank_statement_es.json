@@ -1,0 +1,130 @@
+{
+  "id": "bank_statement_es",
+  "title": "Extracto Bancario Mensual / Monthly Bank Statement",
+  "author": "Banco Continental",
+  "originalLanguage": "spanish",
+  "translatedLanguage": "english",
+  "category": "document",
+  "description": "An authentic bilingual bank statement showing account summary, monthly income and debits, card transactions, and banking conditions.",
+  "difficulty": "beginner",
+  "totalWords": 480,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Resumen de Cuenta / Account Summary",
+      "translatedTitle": "Account Summary",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText": "Banco Continental — Extracto Mensual de Cuenta Corriente. Periodo de liquidación: del 1 al 31 de mayo. Titular de la cuenta: Carlos Mendoza Ruiz. Número de cuenta IBAN: ES91 2100 0418 4502 0005 1234. Código BIC/SWIFT: BCONESMMXXX.",
+          "translatedText": "Continental Bank — Monthly Checking Account Statement. Settlement period: May 1st to May 31st. Account holder: Carlos Mendoza Ruiz. Account IBAN number: ES91 2100 0418 4502 0005 1234. BIC/SWIFT code: BCONESMMXXX.",
+          "vocabularyWords": [
+            "extracto",
+            "cuenta corriente",
+            "periodo de liquidación",
+            "titular",
+            "número de cuenta"
+          ]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText": "Resumen de saldos: Saldo inicial al 1 de mayo: 1.450,00 €. Total de ingresos del mes: 2.100,00 €. Total de cargos y recibos: 1.625,50 €. Saldo disponible al 31 de mayo: 1.924,50 €.",
+          "translatedText": "Balance summary: Starting balance on May 1st: €1,450.00. Total monthly deposits: €2,100.00. Total charges and debits: €1,625.50. Available balance on May 31st: €1,924.50.",
+          "vocabularyWords": [
+            "saldo inicial",
+            "ingresos",
+            "cargos",
+            "recibos",
+            "saldo disponible"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "Movimientos y Transacciones / Activity and Transactions",
+      "translatedTitle": "Activity and Transactions",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText": "03/05/2026 — Transferencia recibida por concepto de nómina mensual de Tecnología Global S.L. Importe acreditado: +2.100,00 €. Saldo resultante: 3.550,00 €.",
+          "translatedText": "05/03/2026 — Incoming transfer for monthly payroll from Global Technology Ltd. Credited amount: +€2,100.00. Resulting balance: €3,550.00.",
+          "vocabularyWords": [
+            "transferencia",
+            "concepto",
+            "nómina",
+            "importe",
+            "acreditado"
+          ]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText": "08/05/2026 — Cargo por domiciliación bancaria: Factura de electricidad Energía Verde. Referencia de adeudo SEPA: EV-847291. Importe: -78,40 €. Saldo resultante: 3.471,60 €.",
+          "translatedText": "05/08/2026 — Direct debit charge: Green Energy electricity bill. SEPA direct debit reference: EV-847291. Amount: -€78.40. Resulting balance: €3,471.60.",
+          "vocabularyWords": [
+            "domiciliación bancaria",
+            "factura",
+            "adeudo",
+            "electricidad",
+            "referencia"
+          ]
+        },
+        {
+          "id": "ch2_p3",
+          "originalText": "15/05/2026 — Pago con tarjeta de débito en Supermercado Central. Operación autorizada con código PIN en terminal punto de venta. Importe: -64,25 €. Saldo resultante: 3.407,35 €.",
+          "translatedText": "05/15/2026 — Debit card payment at Central Supermarket. Operation authorized with PIN code at point-of-sale terminal. Amount: -€64.25. Resulting balance: €3,407.35.",
+          "vocabularyWords": [
+            "tarjeta de débito",
+            "pago",
+            "autorizada",
+            "punto de venta",
+            "operación"
+          ]
+        },
+        {
+          "id": "ch2_p4",
+          "originalText": "22/05/2026 — Reintegro de efectivo en cajero automático de la red Servired. Sin comisión por retirada de fondos con tarjeta de la entidad. Importe retirado: -150,00 €. Saldo resultante: 3.257,35 €.",
+          "translatedText": "05/22/2026 — Cash withdrawal at Servired network ATM. No commission for fund withdrawal using bank card. Withdrawn amount: -€150.00. Resulting balance: €3,257.35.",
+          "vocabularyWords": [
+            "reintegro",
+            "efectivo",
+            "cajero automático",
+            "comisión",
+            "retirada de fondos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Condiciones y Atención / Terms and Assistance",
+      "translatedTitle": "Terms and Assistance",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText": "Condiciones de mantenimiento: Esta cuenta corriente está exenta de comisiones de mantenimiento y administración al mantener domiciliada una nómina mensual superior a 600 euros. En caso de descubierto bancario imprevisto, se devengarán intereses según la tarifa vigente comunicada.",
+          "translatedText": "Maintenance conditions: This checking account is exempt from maintenance and administration fees by maintaining a direct payroll deposit exceeding 600 euros monthly. In the event of an unplanned overdraft, interest will accrue according to the communicated fee schedule.",
+          "vocabularyWords": [
+            "exenta",
+            "mantenimiento",
+            "descubierto bancario",
+            "intereses",
+            "tarifa"
+          ]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText": "Atención al cliente y reclamaciones: Para cualquier duda o disconformidad sobre los movimientos reflejados, dispone de un plazo de treinta días desde la emisión de este extracto. Puede comunicarse con su sucursal habitual o llamar al teléfono gratuito 900 100 200.",
+          "translatedText": "Customer support and claims: For any question or discrepancy regarding recorded transactions, you have a period of thirty days from the issuance of this statement. You may contact your regular branch or call the toll-free number 900 100 200.",
+          "vocabularyWords": [
+            "atención al cliente",
+            "disconformidad",
+            "plazo",
+            "emisión",
+            "sucursal"
+          ]
+        }
+      ]
+    }
+  ]
+}

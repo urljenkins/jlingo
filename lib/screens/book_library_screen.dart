@@ -15,6 +15,7 @@ class BookLibraryScreen extends StatefulWidget {
 
 class _BookLibraryScreenState extends State<BookLibraryScreen> {
   String? _selectedDifficulty;
+  String? _selectedCategory;
   final Map<String, double> _bookProgress = {};
 
   @override
@@ -27,7 +28,9 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
 
   Future<void> _loadBooks() async {
     final provider = context.read<BookProvider>();
-    await provider.loadAvailableBooks();
+    if (provider.availableBooks.isEmpty) {
+      await provider.loadAvailableBooks();
+    }
     await _loadAllProgress();
   }
 
@@ -44,8 +47,18 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
   }
 
   List<BookManifestEntry> _getFilteredBooks(List<BookManifestEntry> books) {
-    if (_selectedDifficulty == null) return books;
-    return books.where((b) => b.difficulty == _selectedDifficulty).toList();
+    return books.where((b) {
+      if (_selectedDifficulty != null && b.difficulty != _selectedDifficulty) {
+        return false;
+      }
+      if (_selectedCategory != null) {
+        final cat = b.category ?? 'literature';
+        if (cat != _selectedCategory) {
+          return false;
+        }
+      }
+      return true;
+    }).toList();
   }
 
   Future<void> _openBook(BookManifestEntry entry) async {
@@ -124,19 +137,62 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
   }
 
   Widget _buildFilterBar() {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      child: Row(
-        children: [
-          _buildFilterChip('All', null),
-          const SizedBox(width: 8),
-          _buildFilterChip('Beginner', 'beginner'),
-          const SizedBox(width: 8),
-          _buildFilterChip('Intermediate', 'intermediate'),
-          const SizedBox(width: 8),
-          _buildFilterChip('Advanced', 'advanced'),
-        ],
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
+          child: Row(
+            children: [
+              _buildCategoryChip('All Types', null, Icons.auto_stories),
+              const SizedBox(width: 8),
+              _buildCategoryChip(
+                  'Stories & Fables', 'literature', Icons.menu_book),
+              const SizedBox(width: 8),
+              _buildCategoryChip(
+                  'Official Documents', 'document', Icons.description_outlined),
+            ],
+          ),
+        ),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          padding: const EdgeInsets.fromLTRB(16, 4, 16, 10),
+          child: Row(
+            children: [
+              _buildFilterChip('All Levels', null),
+              const SizedBox(width: 8),
+              _buildFilterChip('Beginner', 'beginner'),
+              const SizedBox(width: 8),
+              _buildFilterChip('Intermediate', 'intermediate'),
+              const SizedBox(width: 8),
+              _buildFilterChip('Advanced', 'advanced'),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildCategoryChip(String label, String? category, IconData icon) {
+    final isSelected = _selectedCategory == category;
+    return FilterChip(
+      avatar: Icon(
+        icon,
+        size: 16,
+        color: isSelected ? Colors.black : AppColors.textSecondary,
+      ),
+      label: Text(label),
+      selected: isSelected,
+      onSelected: (selected) {
+        setState(() {
+          _selectedCategory = selected ? category : null;
+        });
+      },
+      selectedColor: AppColors.textPrimary,
+      labelStyle: TextStyle(
+        color: isSelected ? Colors.black : Colors.white,
+        fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
       ),
     );
   }
@@ -187,6 +243,7 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
   Widget _buildBookCard(BookManifestEntry book) {
     final progress = _bookProgress[book.id] ?? 0.0;
     final hasProgress = progress > 0;
+    final isDocument = book.category == 'document';
 
     return GestureDetector(
       onTap: () => _openBook(book),
@@ -215,7 +272,9 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
                   children: [
                     Center(
                       child: Icon(
-                        Icons.menu_book,
+                        isDocument
+                            ? Icons.description_outlined
+                            : Icons.menu_book,
                         size: 48,
                         color: _getDifficultyColor(book.difficulty),
                       ),
@@ -252,6 +311,28 @@ class _BookLibraryScreenState extends State<BookLibraryScreen> {
                             color: Colors.black,
                             fontSize: 10,
                             fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    // Category badge
+                    Positioned(
+                      bottom: 8,
+                      left: 8,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 6, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: Colors.black.withValues(alpha: 0.6),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Text(
+                          isDocument ? 'DOCUMENT' : 'STORY',
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 9,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 0.5,
                           ),
                         ),
                       ),

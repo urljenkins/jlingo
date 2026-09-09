@@ -85,6 +85,7 @@ class BilingualBook {
   final String? coverImage;
   final String difficulty; // beginner, intermediate, advanced
   final int totalWords;
+  final String? category; // literature, document
   final List<BookChapter> chapters;
 
   BilingualBook({
@@ -97,6 +98,7 @@ class BilingualBook {
     this.coverImage,
     required this.difficulty,
     required this.totalWords,
+    this.category,
     required this.chapters,
   });
 
@@ -161,6 +163,7 @@ class BookManifestEntry {
   final String difficulty;
   final int totalWords;
   final int chapterCount;
+  final String? category; // literature, document
 
   BookManifestEntry({
     required this.id,
@@ -173,6 +176,7 @@ class BookManifestEntry {
     required this.difficulty,
     required this.totalWords,
     required this.chapterCount,
+    this.category,
   });
 
   factory BookManifestEntry.fromJson(Map<String, dynamic> json) =>

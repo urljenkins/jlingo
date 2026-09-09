@@ -1,0 +1,118 @@
+{
+  "id": "little_red_riding_hood_fr",
+  "title": "Le Petit Chaperon Rouge / Little Red Riding Hood",
+  "author": "Charles Perrault (Adapté)",
+  "originalLanguage": "french",
+  "translatedLanguage": "english",
+  "category": "literature",
+  "description": "A delightful French beginner fairy tale about a little girl, her grandmother's cottage, and a cunning wolf.",
+  "difficulty": "beginner",
+  "totalWords": 460,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Le Départ dans la Forêt / Leaving into the Forest",
+      "translatedTitle": "Leaving into the Forest",
+      "paragraphs": [
+        {
+          "id": "ch1_p1",
+          "originalText": "Il était une fois une petite fille de village, la plus jolie qu'on eût su voir. Sa mère en était folle, et sa grand-mère plus folle encore. Cette bonne femme lui fit faire un petit chaperon rouge qui lui seyait si bien qu'on l'appelait partout le Petit Chaperon Rouge.",
+          "translatedText": "Once upon a time, there was a little village girl, the prettiest one could ever see. Her mother adored her, and her grandmother adored her even more. This good woman had a little red riding hood made for her, which suited her so well that everywhere she was called Little Red Riding Hood.",
+          "vocabularyWords": [
+            "petite fille",
+            "village",
+            "chaperon rouge",
+            "jolie",
+            "partout"
+          ]
+        },
+        {
+          "id": "ch1_p2",
+          "originalText": "Un jour, sa mère ayant cuit des galettes, lui dit: \"Va voir comment se porte ta mère-grand, car on m'a dit qu'elle était malade. Porte-lui une galette et ce petit pot de beurre. Ne quitte pas le sentier et sois prudente dans les bois.\"",
+          "translatedText": "One day, having baked some cakes, her mother said: \"Go see how your grandmother is doing, for I was told she was ill. Take her a cake and this little pot of butter. Do not leave the path, and be careful in the woods.\"",
+          "vocabularyWords": [
+            "galettes",
+            "mère-grand",
+            "malade",
+            "sentier",
+            "prudente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "La Rencontre avec le Loup / Meeting the Wolf",
+      "translatedTitle": "Meeting the Wolf",
+      "paragraphs": [
+        {
+          "id": "ch2_p1",
+          "originalText": "Le Petit Chaperon Rouge partit aussitôt pour aller chez sa grand-mère, qui demeurait dans un autre village. En passant dans le bois, elle rencontra compère le loup, qui eut bien envie de la manger, mais il n'osa pas à cause de quelques bûcherons qui travaillaient dans la forêt.",
+          "translatedText": "Little Red Riding Hood set out immediately to go to her grandmother's house, who lived in another village. Passing through the woods, she met neighbor wolf, who was very eager to eat her, but did not dare because of some woodcutters working in the forest.",
+          "vocabularyWords": [
+            "aussitôt",
+            "demeurait",
+            "rencontra",
+            "loup",
+            "bûcherons"
+          ]
+        },
+        {
+          "id": "ch2_p2",
+          "originalText": "Le loup lui demanda où elle allait. La pauvre enfant lui dit: \"Je vais voir ma grand-mère et lui porter une galette avec un petit pot de beurre\". Le loup lui dit alors: \"Regarde ces belles fleurs parfumées, fais-en un joli bouquet pour ta grand-mère!\"",
+          "translatedText": "The wolf asked her where she was going. The innocent child told him: \"I am going to see my grandmother and bring her a cake with a little pot of butter\". The wolf then said to her: \"Look at these lovely fragrant flowers, make a pretty bouquet for your grandmother!\"",
+          "vocabularyWords": [
+            "demanda",
+            "enfant",
+            "fleurs",
+            "parfumées",
+            "bouquet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "La Maisonnette et le Dénouement / The Cottage and Resolution",
+      "translatedTitle": "The Cottage and Resolution",
+      "paragraphs": [
+        {
+          "id": "ch3_p1",
+          "originalText": "Le loup courut à toutes jambes par le chemin le plus court, arriva à la maisonnette de la grand-mère et frappa doucement à la porte. \"Tirez la chevillette, la bobinette cherra!\", cria la vieille dame. Le loup entra et se cacha sous les couvertures du lit.",
+          "translatedText": "The wolf ran at full speed taking the shortest path, arrived at the grandmother's cottage, and knocked gently at the door. \"Pull the bobbin, and the latch will go up!\" called the old lady. The wolf went in and hid under the bed blankets.",
+          "vocabularyWords": [
+            "courut",
+            "chemin",
+            "maisonnette",
+            "frappa",
+            "couvertures"
+          ]
+        },
+        {
+          "id": "ch3_p2",
+          "originalText": "Le Petit Chaperon Rouge arriva enfin et s'approcha du lit: \"Grand-mère, que vous avez de grands yeux! — C'est pour mieux te voir, mon enfant. — Grand-mère, que vous avez de grandes dents! — C'est pour mieux te manger!\".",
+          "translatedText": "Little Red Riding Hood finally arrived and approached the bed: \"Grandmother, what big eyes you have! — All the better to see you with, my child. — Grandmother, what big teeth you have! — All the better to eat you with!\".",
+          "vocabularyWords": [
+            "enfin",
+            "approcha",
+            "yeux",
+            "mieux",
+            "dents"
+          ]
+        },
+        {
+          "id": "ch3_p3",
+          "originalText": "À ce moment, un brave chasseur qui passait près de là entendit les cris de surprise. Il entra promptement dans la maisonnette, chassa le loup loin dans la forêt profonde et sauva la fillette et sa grand-mère. Dès lors, le Petit Chaperon Rouge promit de toujours écouter les conseils de sa mère.",
+          "translatedText": "At that moment, a brave huntsman passing nearby heard the cries of surprise. He entered promptly into the cottage, chased the wolf far into the deep forest, and saved the young girl and her grandmother. From that day on, Little Red Riding Hood promised to always listen to her mother's advice.",
+          "vocabularyWords": [
+            "chasseur",
+            "cris",
+            "promptement",
+            "sauva",
+            "conseils"
+          ]
+        }
+      ]
+    }
+  ]
+}

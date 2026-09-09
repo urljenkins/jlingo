@@ -68,6 +68,15 @@ class BookProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  String? _filterCategory;
+  String? get filterCategory => _filterCategory;
+
+  /// Filter books by category ('literature', 'document', or null for all)
+  void setCategoryFilter(String? category) {
+    _filterCategory = category;
+    notifyListeners();
+  }
+
   /// Filter books by target language
   void setLanguageFilter(String? language) {
     _filterLanguage = language;
@@ -75,12 +84,18 @@ class BookProvider extends ChangeNotifier {
   }
 
   List<BookManifestEntry> get filteredBooks {
-    if (_filterLanguage == null) return _availableBooks;
-    return _availableBooks
-        .where((book) =>
-            book.originalLanguage == _filterLanguage ||
-            book.translatedLanguage == _filterLanguage)
-        .toList();
+    return _availableBooks.where((book) {
+      if (_filterLanguage != null) {
+        final matchesLanguage = book.originalLanguage == _filterLanguage ||
+            book.translatedLanguage == _filterLanguage;
+        if (!matchesLanguage) return false;
+      }
+      if (_filterCategory != null) {
+        final bookCategory = book.category ?? 'literature';
+        if (bookCategory != _filterCategory) return false;
+      }
+      return true;
+    }).toList();
   }
 
   /// Load a specific book by ID
