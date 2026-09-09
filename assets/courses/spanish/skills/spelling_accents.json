@@ -1,0 +1,576 @@
+{
+    "id": "spelling_accents",
+    "name": "Spelling & Accents",
+    "description": "How Spanish words are stressed and accented, plus punctuation and spelling patterns.",
+    "level": 3,
+    "exercises": [
+        {
+            "id": "ex_spa_1",
+            "type": "multipleChoice",
+            "question": "What is \"una sílaba\" in Spanish?",
+            "options": [
+                "A syllable",
+                "A sentence",
+                "A letter",
+                "An accent mark"
+            ],
+            "correctAnswer": "A syllable"
+        },
+        {
+            "id": "ex_spa_2",
+            "type": "fillInBlank",
+            "question": "Ca-fé tiene dos ___ (syllables)",
+            "options": [
+                "sílabas",
+                "letras",
+                "acentos",
+                "vocales"
+            ],
+            "correctAnswer": "sílabas"
+        },
+        {
+            "id": "ex_spa_3",
+            "type": "multipleChoice",
+            "question": "In Spanish phonetics, which are the open vowels (vocales abiertas)?",
+            "options": [
+                "A, E, O",
+                "I, U",
+                "Only A",
+                "E, I"
+            ],
+            "correctAnswer": "A, E, O"
+        },
+        {
+            "id": "ex_spa_4",
+            "type": "multipleChoice",
+            "question": "What is \"un diptongo\" in Spanish?",
+            "options": [
+                "Two vowels pronounced together in one syllable",
+                "A word with two accent marks",
+                "A silent consonant",
+                "A double consonant like RR"
+            ],
+            "correctAnswer": "Two vowels pronounced together in one syllable"
+        },
+        {
+            "id": "ex_spa_5",
+            "type": "multipleChoice",
+            "question": "Which pair of vowels forms a diphthong in \"ciudad\"?",
+            "options": [
+                "iu",
+                "ci",
+                "da",
+                "ud"
+            ],
+            "correctAnswer": "iu"
+        },
+        {
+            "id": "ex_spa_6",
+            "type": "multipleChoice",
+            "question": "What does \"el acento\" refer to in Spanish?",
+            "options": [
+                "Syllable stress or a written accent mark",
+                "Only the tone of your voice",
+                "A punctuation mark like a comma",
+                "A silent vowel"
+            ],
+            "correctAnswer": "Syllable stress or a written accent mark"
+        },
+        {
+            "id": "ex_spa_7",
+            "type": "multipleChoice",
+            "question": "What is \"la tilde\" in Spanish?",
+            "options": [
+                "The written accent mark (´)",
+                "The question mark",
+                "The exclamation mark",
+                "The letter Ñ"
+            ],
+            "correctAnswer": "The written accent mark (´)"
+        },
+        {
+            "id": "ex_spa_8",
+            "type": "multipleChoice",
+            "question": "What does \"sin acento\" mean?",
+            "options": [
+                "Without an accent mark",
+                "With an accent mark",
+                "Spelled wrong",
+                "Silent"
+            ],
+            "correctAnswer": "Without an accent mark"
+        },
+        {
+            "id": "ex_spa_9",
+            "type": "fillInBlank",
+            "question": "La palabra tiene un ___ (accent mark)",
+            "options": [
+                "acento",
+                "signo",
+                "punto",
+                "guion"
+            ],
+            "correctAnswer": "acento"
+        },
+        {
+            "id": "ex_spa_10",
+            "type": "fillInBlank",
+            "question": "Camión lleva ___ en la o",
+            "options": [
+                "tilde",
+                "punto",
+                "coma",
+                "guion"
+            ],
+            "correctAnswer": "tilde"
+        },
+        {
+            "id": "ex_spa_11",
+            "type": "listeningComprehension",
+            "question": "Corazón lleva tilde",
+            "options": [],
+            "correctAnswer": "Corazón lleva tilde"
+        },
+        {
+            "id": "ex_spa_12",
+            "type": "listeningComprehension",
+            "question": "Sí, café y árbol llevan acento",
+            "options": [],
+            "correctAnswer": "Sí, café y árbol llevan acento"
+        },
+        {
+            "id": "ex_spa_13",
+            "type": "multipleChoice",
+            "question": "What is a \"palabra aguda\" in Spanish?",
+            "options": [
+                "A word stressed on the last syllable",
+                "A word stressed on the second-to-last syllable",
+                "A word stressed on the third-to-last syllable",
+                "A word with no vowels"
+            ],
+            "correctAnswer": "A word stressed on the last syllable"
+        },
+        {
+            "id": "ex_spa_14",
+            "type": "multipleChoice",
+            "question": "Which type of word is \"canción\" (stress on the last syllable)?",
+            "options": [
+                "Aguda",
+                "Llana",
+                "Esdrújula",
+                "Sobresdrújula"
+            ],
+            "correctAnswer": "Aguda"
+        },
+        {
+            "id": "ex_spa_15",
+            "type": "multipleChoice",
+            "question": "When does a \"palabra aguda\" carry a written accent (tilde)?",
+            "options": [
+                "When it ends in a vowel, N, or S",
+                "When it ends in any consonant except N or S",
+                "Always, without exception",
+                "Never"
+            ],
+            "correctAnswer": "When it ends in a vowel, N, or S"
+        },
+        {
+            "id": "ex_spa_16",
+            "type": "listeningComprehension",
+            "question": "Ca-mión es una palabra aguda",
+            "options": [],
+            "correctAnswer": "Ca-mión es una palabra aguda"
+        },
+        {
+            "id": "ex_spa_17",
+            "type": "multipleChoice",
+            "question": "What is a \"palabra llana\" (also called \"grave\")?",
+            "options": [
+                "A word stressed on the second-to-last syllable",
+                "A word stressed on the last syllable",
+                "A word stressed on the third-to-last syllable",
+                "A one-syllable word"
+            ],
+            "correctAnswer": "A word stressed on the second-to-last syllable"
+        },
+        {
+            "id": "ex_spa_18",
+            "type": "multipleChoice",
+            "question": "Which of these is a \"palabra llana\"?",
+            "options": [
+                "Mesa",
+                "Camión",
+                "Música",
+                "Café"
+            ],
+            "correctAnswer": "Mesa"
+        },
+        {
+            "id": "ex_spa_19",
+            "type": "fillInBlank",
+            "question": "La mayoría de palabras en español son ___ (llanas)",
+            "options": [
+                "llanas",
+                "agudas",
+                "esdrújulas",
+                "sobresdrújulas"
+            ],
+            "correctAnswer": "llanas"
+        },
+        {
+            "id": "ex_spa_20",
+            "type": "listeningComprehension",
+            "question": "Me-sa es una palabra llana",
+            "options": [],
+            "correctAnswer": "Me-sa es una palabra llana"
+        },
+        {
+            "id": "ex_spa_21",
+            "type": "multipleChoice",
+            "question": "What is a \"palabra esdrújula\"?",
+            "options": [
+                "A word stressed on the third-to-last syllable",
+                "A word stressed on the last syllable",
+                "A word stressed on the second-to-last syllable",
+                "A word without any accent"
+            ],
+            "correctAnswer": "A word stressed on the third-to-last syllable"
+        },
+        {
+            "id": "ex_spa_22",
+            "type": "fillInBlank",
+            "question": "La palabra \"música\" es ___ (stressed on third-to-last syllable)",
+            "options": [
+                "esdrújula",
+                "aguda",
+                "llana",
+                "grave"
+            ],
+            "correctAnswer": "esdrújula"
+        },
+        {
+            "id": "ex_spa_23",
+            "type": "listeningComprehension",
+            "question": "Mú-si-ca tiene acento en la primera sílaba",
+            "options": [],
+            "correctAnswer": "Mú-si-ca tiene acento en la primera sílaba"
+        },
+        {
+            "id": "ex_spa_24",
+            "type": "listeningComprehension",
+            "question": "Rá-pi-do es una palabra esdrújula",
+            "options": [],
+            "correctAnswer": "Rá-pi-do es una palabra esdrújula"
+        },
+        {
+            "id": "ex_spa_25",
+            "type": "multipleChoice",
+            "question": "What is a \"palabra sobresdrújula\"?",
+            "options": [
+                "A word stressed before the third-to-last syllable",
+                "A word stressed on the last syllable",
+                "A word stressed on the second-to-last syllable",
+                "A word with two syllables"
+            ],
+            "correctAnswer": "A word stressed before the third-to-last syllable"
+        },
+        {
+            "id": "ex_spa_26",
+            "type": "multipleChoice",
+            "question": "Which type is \"dígamelo\" (stress before the third-to-last syllable)?",
+            "options": [
+                "Sobresdrújula",
+                "Aguda",
+                "Grave",
+                "Llana"
+            ],
+            "correctAnswer": "Sobresdrújula"
+        },
+        {
+            "id": "ex_spa_27",
+            "type": "multipleChoice",
+            "question": "What is \"el signo de interrogación\"?",
+            "options": [
+                "Question mark",
+                "Exclamation mark",
+                "Comma",
+                "Period"
+            ],
+            "correctAnswer": "Question mark"
+        },
+        {
+            "id": "ex_spa_28",
+            "type": "multipleChoice",
+            "question": "Spanish uses an upside-down question mark at the start of a question.",
+            "options": [
+                "True (¿)",
+                "False",
+                "Only in books",
+                "Only in questions with \"por qué\""
+            ],
+            "correctAnswer": "True (¿)"
+        },
+        {
+            "id": "ex_spa_29",
+            "type": "fillInBlank",
+            "question": "Los signos de ___ abren y cierran preguntas (¿?)",
+            "options": [
+                "interrogación",
+                "exclamación",
+                "puntuación",
+                "acentuación"
+            ],
+            "correctAnswer": "interrogación"
+        },
+        {
+            "id": "ex_spa_30",
+            "type": "listeningComprehension",
+            "question": "¿Cómo estás? ¡Muy bien!",
+            "options": [],
+            "correctAnswer": "¿Cómo estás? ¡Muy bien!"
+        },
+        {
+            "id": "ex_spa_31",
+            "type": "speakThis",
+            "question": "¡Qué bonito día!",
+            "options": [],
+            "correctAnswer": "¡Qué bonito día!"
+        },
+        {
+            "id": "ex_spa_32",
+            "type": "multipleChoice",
+            "question": "What is \"el guion\" in Spanish?",
+            "options": [
+                "The hyphen (-)",
+                "The question mark",
+                "The colon",
+                "The period"
+            ],
+            "correctAnswer": "The hyphen (-)"
+        },
+        {
+            "id": "ex_spa_33",
+            "type": "multipleChoice",
+            "question": "What punctuation mark introduces dialogue in Spanish literature?",
+            "options": [
+                "Guion largo (—)",
+                "Comillas",
+                "Punto",
+                "Coma"
+            ],
+            "correctAnswer": "Guion largo (—)"
+        },
+        {
+            "id": "ex_spa_34",
+            "type": "multipleChoice",
+            "question": "What is \"el punto y coma\" in Spanish?",
+            "options": [
+                "The semicolon (;)",
+                "The colon (:)",
+                "The comma (,)",
+                "The period (.)"
+            ],
+            "correctAnswer": "The semicolon (;)"
+        },
+        {
+            "id": "ex_spa_35",
+            "type": "multipleChoice",
+            "question": "What is \"los dos puntos\" in English?",
+            "options": [
+                "The colon (:)",
+                "The comma",
+                "The period",
+                "The semicolon"
+            ],
+            "correctAnswer": "The colon (:)"
+        },
+        {
+            "id": "ex_spa_36",
+            "type": "multipleChoice",
+            "question": "What are \"palabras homófonas\" in Spanish?",
+            "options": [
+                "Words that sound the same but are spelled differently",
+                "Words that mean the exact opposite",
+                "Words with the same spelling and meaning",
+                "Words with two syllables"
+            ],
+            "correctAnswer": "Words that sound the same but are spelled differently"
+        },
+        {
+            "id": "ex_spa_37",
+            "type": "matchPairs",
+            "question": "Match the homophone pairs with their meanings",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "vaca",
+                        "native": "cow"
+                    },
+                    {
+                        "target": "baca",
+                        "native": "roof rack"
+                    },
+                    {
+                        "target": "tuvo",
+                        "native": "he/she had"
+                    },
+                    {
+                        "target": "tubo",
+                        "native": "tube / pipe"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_spa_38",
+            "type": "fillInBlank",
+            "question": "'Vaca' y 'baca' son palabras ___ (homophones)",
+            "options": [
+                "homófonas",
+                "sinónimas",
+                "antónimas",
+                "compuestas"
+            ],
+            "correctAnswer": "homófonas"
+        },
+        {
+            "id": "ex_spa_39",
+            "type": "listeningComprehension",
+            "question": "Hola y ola suenan igual",
+            "options": [],
+            "correctAnswer": "Hola y ola suenan igual"
+        },
+        {
+            "id": "ex_spa_40",
+            "type": "multipleChoice",
+            "question": "What is a \"palabra compuesta\" in Spanish?",
+            "options": [
+                "A compound word formed by combining two words",
+                "A word that has an accent mark",
+                "A word borrowed from English",
+                "A word with more than four syllables"
+            ],
+            "correctAnswer": "A compound word formed by combining two words"
+        },
+        {
+            "id": "ex_spa_41",
+            "type": "multipleChoice",
+            "question": "Which is a compound word in Spanish?",
+            "options": [
+                "Paraguas",
+                "Mesa",
+                "Gato",
+                "Casa"
+            ],
+            "correctAnswer": "Paraguas"
+        },
+        {
+            "id": "ex_spa_42",
+            "type": "multipleChoice",
+            "question": "What does \"letra mayúscula y minúscula\" mean?",
+            "options": [
+                "Uppercase and lowercase letter",
+                "Vowel and consonant",
+                "First and last letter",
+                "Accented and unaccented letter"
+            ],
+            "correctAnswer": "Uppercase and lowercase letter"
+        },
+        {
+            "id": "ex_spa_43",
+            "type": "multipleChoice",
+            "question": "Which is written with a capital letter in Spanish?",
+            "options": [
+                "El nombre de una persona",
+                "Los días de la semana",
+                "Los meses del año",
+                "Los idiomas"
+            ],
+            "correctAnswer": "El nombre de una persona"
+        },
+        {
+            "id": "ex_spa_44",
+            "type": "fillInBlank",
+            "question": "¿Cómo se ___ tu apellido? (spell)",
+            "options": [
+                "deletrea",
+                "llama",
+                "escribe",
+                "pronuncia"
+            ],
+            "correctAnswer": "deletrea"
+        },
+        {
+            "id": "ex_spa_45",
+            "type": "listeningComprehension",
+            "question": "¿Puede deletrear su nombre?",
+            "options": [],
+            "correctAnswer": "¿Puede deletrear su nombre?"
+        },
+        {
+            "type": "translateThis",
+            "question": "Vocal",
+            "options": [],
+            "correctAnswer": "Vowel",
+            "id": "ex_spa_46"
+        },
+        {
+            "type": "translateThis",
+            "question": "Consonante",
+            "options": [],
+            "correctAnswer": "Consonant",
+            "id": "ex_spa_47"
+        },
+        {
+            "type": "translateThis",
+            "question": "El abecedario",
+            "options": [],
+            "correctAnswer": "The alphabet",
+            "id": "ex_spa_48"
+        },
+        {
+            "type": "translateThis",
+            "question": "Deletrear",
+            "options": [],
+            "correctAnswer": "To spell",
+            "id": "ex_spa_49"
+        },
+        {
+            "type": "translateThis",
+            "question": "Mayúscula",
+            "options": [],
+            "correctAnswer": "Uppercase/capital letter",
+            "id": "ex_spa_50"
+        },
+        {
+            "type": "translateThis",
+            "question": "Minúscula",
+            "options": [],
+            "correctAnswer": "Lowercase letter",
+            "id": "ex_spa_51"
+        },
+        {
+            "type": "translateThis",
+            "question": "La letra be",
+            "options": [],
+            "correctAnswer": "The letter B",
+            "id": "ex_spa_52"
+        },
+        {
+            "type": "translateThis",
+            "question": "La letra ka",
+            "options": [],
+            "correctAnswer": "The letter K",
+            "id": "ex_spa_53"
+        },
+        {
+            "type": "translateThis",
+            "question": "La letra uve doble",
+            "options": [],
+            "correctAnswer": "The letter W",
+            "id": "ex_spa_54"
+        }
+    ]
+}

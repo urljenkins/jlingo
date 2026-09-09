@@ -33,33 +33,60 @@
       "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_fr_alpha_3",
-      "type": "matchPairs",
-      "question": "Match French letters and sounds with examples",
-      "options": [],
-      "correctAnswer": "",
+      "id": "ex_fr_alpha_3_c",
+      "type": "multipleChoice",
+      "question": "How is the French letter 'ç' (cédille) pronounced?",
+      "options": [
+        "Soft s sound (façade)",
+        "Closed e (café)",
+        "Oo sound (vous)",
+        "Open e (mère)"
+      ],
+      "correctAnswer": "Soft s sound (façade)",
       "targetLanguage": "fr-FR",
-      "nativeLanguage": "en-US",
-      "metadata": {
-        "pairs": [
-          {
-            "target": "ç",
-            "native": "Soft s sound (façade)"
-          },
-          {
-            "target": "é",
-            "native": "Closed e (café)"
-          },
-          {
-            "target": "è",
-            "native": "Open e (mère)"
-          },
-          {
-            "target": "ou",
-            "native": "Oo sound (vous)"
-          }
-        ]
-      }
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_alpha_3_e_aigu",
+      "type": "multipleChoice",
+      "question": "What sound does 'é' (e accent aigu) make in French?",
+      "options": [
+        "Open e (mère)",
+        "Closed e (café)",
+        "Soft s sound (façade)",
+        "Oo sound (vous)"
+      ],
+      "correctAnswer": "Closed e (café)",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_alpha_3_e_grave",
+      "type": "multipleChoice",
+      "question": "What sound does 'è' (e accent grave) make in French?",
+      "options": [
+        "Oo sound (vous)",
+        "Soft s sound (façade)",
+        "Open e (mère)",
+        "Closed e (café)"
+      ],
+      "correctAnswer": "Open e (mère)",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_fr_alpha_3_ou",
+      "type": "multipleChoice",
+      "question": "How is the French vowel combination 'ou' pronounced?",
+      "options": [
+        "Closed e (café)",
+        "Open e (mère)",
+        "Oo sound (vous)",
+        "Soft s sound (façade)"
+      ],
+      "correctAnswer": "Oo sound (vous)",
+      "targetLanguage": "fr-FR",
+      "nativeLanguage": "en-US"
     },
     {
       "id": "ex_fr_alpha_4",

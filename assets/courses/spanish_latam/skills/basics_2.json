@@ -26,7 +26,7 @@
         {
             "id": "ex_11",
             "type": "fillInBlank",
-            "question": "Me ___ Juan",
+            "question": "Me ___ Juan (My name is Juan)",
             "options": [
                 "llamo",
                 "como",
@@ -40,7 +40,7 @@
             "type": "translateThis",
             "question": "Mucho gusto",
             "options": [],
-            "correctAnswer": "Nice to meet you"
+            "correctAnswer": "Nice to meet you / Pleased to meet you"
         },
         {
             "id": "ex_13",
@@ -57,9 +57,9 @@
         {
             "id": "ex_b2_14",
             "type": "speakThis",
-            "question": "Yo soy de España",
+            "question": "Yo soy de México",
             "options": [],
-            "correctAnswer": "Yo soy de España"
+            "correctAnswer": "Yo soy de México"
         },
         {
             "id": "ex_b2_15",
@@ -93,7 +93,7 @@
             "type": "translateThis",
             "question": "Lo siento",
             "options": [],
-            "correctAnswer": "I'm sorry"
+            "correctAnswer": "I'm sorry / I am sorry"
         },
         {
             "id": "ex_b2_17",
@@ -110,7 +110,7 @@
         {
             "id": "ex_b2_18",
             "type": "fillInBlank",
-            "question": "Soy ___ Estados Unidos",
+            "question": "Soy ___ Estados Unidos (from)",
             "options": [
                 "de",
                 "en",
@@ -118,6 +118,116 @@
                 "para"
             ],
             "correctAnswer": "de"
+        },
+        {
+            "id": "ex_b2_1",
+            "type": "translateThis",
+            "question": "Estoy bien, gracias",
+            "options": [],
+            "correctAnswer": "I am fine, thank you / I'm fine, thank you / I'm fine, thanks / I am fine, thanks"
+        },
+        {
+            "id": "ex_b2_2",
+            "type": "multipleChoice",
+            "question": "How do you say 'And you?' informally?",
+            "options": [
+                "¿Y tú?",
+                "¿Y usted?",
+                "¿Qué tal?",
+                "¿Cómo?"
+            ],
+            "correctAnswer": "¿Y tú?"
+        },
+        {
+            "id": "ex_b2_3",
+            "type": "fillInBlank",
+            "question": "Yo ___ bien (I am/feel)",
+            "options": [
+                "estoy",
+                "soy",
+                "es",
+                "eres"
+            ],
+            "correctAnswer": "estoy"
+        },
+        {
+            "id": "ex_b2_4",
+            "type": "matchPairs",
+            "question": "Match the subject pronouns",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Nosotros",
+                        "native": "We"
+                    },
+                    {
+                        "target": "Ustedes",
+                        "native": "You all"
+                    },
+                    {
+                        "target": "Ellos",
+                        "native": "They (masc.)"
+                    },
+                    {
+                        "target": "Ellas",
+                        "native": "They (fem.)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_b2_5",
+            "type": "listeningComprehension",
+            "question": "¿Y usted, cómo está?",
+            "options": [],
+            "correctAnswer": "¿Y usted, cómo está?"
+        },
+        {
+            "id": "ex_b2_6",
+            "type": "translateThis",
+            "question": "Más o menos",
+            "options": [],
+            "correctAnswer": "So-so / more or less / So so"
+        },
+        {
+            "id": "ex_b2_7",
+            "type": "multipleChoice",
+            "question": "What does 'Todo bien' mean?",
+            "options": [
+                "Everything's good",
+                "Nothing's wrong",
+                "Goodbye",
+                "See you soon"
+            ],
+            "correctAnswer": "Everything's good"
+        },
+        {
+            "id": "ex_b2_8",
+            "type": "fillInBlank",
+            "question": "Ella ___ mi amiga (She is my friend)",
+            "options": [
+                "es",
+                "soy",
+                "eres",
+                "somos"
+            ],
+            "correctAnswer": "es"
+        },
+        {
+            "id": "ex_b2_9",
+            "type": "speakThis",
+            "question": "Yo estoy muy bien, gracias",
+            "options": [],
+            "correctAnswer": "Yo estoy muy bien, gracias"
+        },
+        {
+            "id": "ex_b2_10",
+            "type": "translateThis",
+            "question": "¿Y tú, cómo estás?",
+            "options": [],
+            "correctAnswer": "And you, how are you? / And you, how are you doing?"
         }
     ]
 }

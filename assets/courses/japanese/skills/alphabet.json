@@ -46,33 +46,60 @@
       "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_ja_alphabet_4",
-      "type": "matchPairs",
-      "question": "Match basic Hiragana characters with their romaji sounds",
-      "options": [],
-      "correctAnswer": "",
+      "id": "ex_ja_alphabet_4_a",
+      "type": "multipleChoice",
+      "question": "Which romaji sound does 'あ' represent?",
+      "options": [
+        "a",
+        "ka",
+        "sa",
+        "ta"
+      ],
+      "correctAnswer": "a",
       "targetLanguage": "ja-JP",
-      "nativeLanguage": "en-US",
-      "metadata": {
-        "pairs": [
-          {
-            "target": "あ",
-            "native": "a"
-          },
-          {
-            "target": "か",
-            "native": "ka"
-          },
-          {
-            "target": "さ",
-            "native": "sa"
-          },
-          {
-            "target": "た",
-            "native": "ta"
-          }
-        ]
-      }
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_alphabet_4_ka",
+      "type": "multipleChoice",
+      "question": "Which romaji sound does 'か' represent?",
+      "options": [
+        "sa",
+        "ka",
+        "ta",
+        "a"
+      ],
+      "correctAnswer": "ka",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_alphabet_4_sa",
+      "type": "multipleChoice",
+      "question": "Which romaji sound does 'さ' represent?",
+      "options": [
+        "ta",
+        "a",
+        "sa",
+        "ka"
+      ],
+      "correctAnswer": "sa",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_ja_alphabet_4_ta",
+      "type": "multipleChoice",
+      "question": "Which romaji sound does 'た' represent?",
+      "options": [
+        "ka",
+        "ta",
+        "a",
+        "sa"
+      ],
+      "correctAnswer": "ta",
+      "targetLanguage": "ja-JP",
+      "nativeLanguage": "en-US"
     },
     {
       "id": "ex_ja_alphabet_5",
@@ -115,31 +142,52 @@
       "correctAnswer": "ga"
     },
     {
-      "id": "ex_ja_alph_9",
-      "type": "matchPairs",
-      "question": "Match the katakana characters to their romaji sounds",
-      "options": [],
-      "correctAnswer": "",
-      "metadata": {
-        "pairs": [
-          {
-            "target": "ア",
-            "native": "a"
-          },
-          {
-            "target": "カ",
-            "native": "ka"
-          },
-          {
-            "target": "サ",
-            "native": "sa"
-          },
-          {
-            "target": "タ",
-            "native": "ta"
-          }
-        ]
-      }
+      "id": "ex_ja_alph_9_a",
+      "type": "multipleChoice",
+      "question": "Which romaji sound does 'ア' represent?",
+      "options": [
+        "ta",
+        "a",
+        "ka",
+        "sa"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": "ex_ja_alph_9_ka",
+      "type": "multipleChoice",
+      "question": "Which romaji sound does 'カ' represent?",
+      "options": [
+        "a",
+        "ka",
+        "sa",
+        "ta"
+      ],
+      "correctAnswer": "ka"
+    },
+    {
+      "id": "ex_ja_alph_9_sa",
+      "type": "multipleChoice",
+      "question": "Which romaji sound does 'サ' represent?",
+      "options": [
+        "ka",
+        "ta",
+        "sa",
+        "a"
+      ],
+      "correctAnswer": "sa"
+    },
+    {
+      "id": "ex_ja_alph_9_ta",
+      "type": "multipleChoice",
+      "question": "Which romaji sound does 'タ' represent?",
+      "options": [
+        "sa",
+        "ta",
+        "a",
+        "ka"
+      ],
+      "correctAnswer": "ta"
     },
     {
       "id": "ex_ja_alph_10",

@@ -43,33 +43,60 @@
       "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_nl_alp_4",
-      "type": "matchPairs",
-      "question": "Match the Dutch vowel sounds with example words",
-      "options": [],
-      "correctAnswer": "",
+      "id": "ex_nl_alp_4_ui",
+      "type": "multipleChoice",
+      "question": "How is the Dutch vowel combination 'ui' pronounced?",
+      "options": [
+        "Like 'ow' but with rounded lips — no English equivalent",
+        "Like 'oo' in 'boot'",
+        "Like 'ay' in 'day'",
+        "Like the 'eu' in French 'deux' (or 'er' in 'her')"
+      ],
+      "correctAnswer": "Like 'ow' but with rounded lips — no English equivalent",
       "targetLanguage": "nl-NL",
-      "nativeLanguage": "en-US",
-      "metadata": {
-        "pairs": [
-          {
-            "target": "ui",
-            "native": "huis (house)"
-          },
-          {
-            "target": "oe",
-            "native": "boek (book)"
-          },
-          {
-            "target": "ij",
-            "native": "ijs (ice/ice cream)"
-          },
-          {
-            "target": "eu",
-            "native": "leuk (nice/fun)"
-          }
-        ]
-      }
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_alp_4_oe",
+      "type": "multipleChoice",
+      "question": "How is the Dutch vowel combination 'oe' pronounced?",
+      "options": [
+        "Like 'ay' in 'day'",
+        "Like 'oo' in 'boot'",
+        "Like 'ow' but with rounded lips — no English equivalent",
+        "Like the 'eu' in French 'deux' (or 'er' in 'her')"
+      ],
+      "correctAnswer": "Like 'oo' in 'boot'",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_alp_4_ij",
+      "type": "multipleChoice",
+      "question": "How is the Dutch vowel combination 'ij' pronounced?",
+      "options": [
+        "Like the 'eu' in French 'deux' (or 'er' in 'her')",
+        "Like 'ow' but with rounded lips — no English equivalent",
+        "Like 'ay' in 'day'",
+        "Like 'oo' in 'boot'"
+      ],
+      "correctAnswer": "Like 'ay' in 'day'",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_nl_alp_4_eu",
+      "type": "multipleChoice",
+      "question": "How is the Dutch vowel combination 'eu' pronounced?",
+      "options": [
+        "Like 'oo' in 'boot'",
+        "Like the 'eu' in French 'deux' (or 'er' in 'her')",
+        "Like 'ow' but with rounded lips — no English equivalent",
+        "Like 'ay' in 'day'"
+      ],
+      "correctAnswer": "Like the 'eu' in French 'deux' (or 'er' in 'her')",
+      "targetLanguage": "nl-NL",
+      "nativeLanguage": "en-US"
     },
     {
       "id": "ex_nl_alp_5",

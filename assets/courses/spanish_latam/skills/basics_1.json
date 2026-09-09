@@ -9,7 +9,7 @@
             "type": "translateThis",
             "question": "Hola",
             "options": [],
-            "correctAnswer": "Hello"
+            "correctAnswer": "Hello / Hi"
         },
         {
             "id": "ex_2",
@@ -26,7 +26,7 @@
         {
             "id": "ex_3",
             "type": "fillInBlank",
-            "question": "Buenos ___",
+            "question": "Buenos ___ (Good morning)",
             "options": [
                 "días",
                 "noches",
@@ -40,7 +40,7 @@
             "type": "translateThis",
             "question": "Adiós",
             "options": [],
-            "correctAnswer": "Goodbye"
+            "correctAnswer": "Goodbye / Bye"
         },
         {
             "id": "ex_5",
@@ -117,7 +117,7 @@
         {
             "id": "ex_b1_11",
             "type": "fillInBlank",
-            "question": "De ___",
+            "question": "De ___ (You're welcome)",
             "options": [
                 "nada",
                 "todo",

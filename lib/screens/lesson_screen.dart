@@ -62,6 +62,11 @@ class _LessonScreenState extends State<LessonScreen> {
   /// twice.
   final Set<int> _skippedIndices = {};
 
+  /// Indices whose answer the learner has asked to see (via the Reveal button,
+  /// or by skipping). Kept so stepping back onto a skipped exercise still shows
+  /// its answer, as a learner would expect.
+  final Set<int> _revealedIndices = {};
+
   @override
   void initState() {
     super.initState();
@@ -151,6 +156,7 @@ class _LessonScreenState extends State<LessonScreen> {
       _totalAnswers++;
       _answeredIndices.add(_currentExerciseIndex);
       _skippedIndices.remove(_currentExerciseIndex);
+      _revealedIndices.remove(_currentExerciseIndex);
     });
 
     if (isCorrect) {
@@ -210,14 +216,45 @@ class _LessonScreenState extends State<LessonScreen> {
   }
 
   /// Move past the current exercise without answering it. It stays unanswered,
-  /// so stepping back to it later still lets the learner attempt it.
+  /// so stepping back to it later still lets the learner attempt it — but its
+  /// answer is revealed, so stepping back shows what it was.
   Future<void> _skipExercise() async {
     if (!_answeredIndices.contains(_currentExerciseIndex)) {
       setState(() {
         _skippedIndices.add(_currentExerciseIndex);
+        _revealedIndices.add(_currentExerciseIndex);
       });
     }
     await _advanceOrFinish();
+  }
+
+  /// Toggle the answer banner for the current exercise.
+  void _toggleReveal() {
+    setState(() {
+      if (!_revealedIndices.remove(_currentExerciseIndex)) {
+        _revealedIndices.add(_currentExerciseIndex);
+      }
+    });
+  }
+
+  /// A readable form of the exercise's expected answer, for the reveal banner.
+  /// Most exercises carry it in [Exercise.correctAnswer]; matchPairs keep the
+  /// pairing in metadata instead.
+  String _answerText(Exercise exercise) {
+    if (exercise.correctAnswer.trim().isNotEmpty) {
+      return exercise.correctAnswer;
+    }
+    final pairs = exercise.metadata?['pairs'];
+    if (pairs is List) {
+      final lines = <String>[];
+      for (final pair in pairs) {
+        if (pair is Map) {
+          lines.add('${pair['target']} → ${pair['native']}');
+        }
+      }
+      if (lines.isNotEmpty) return lines.join('\n');
+    }
+    return '—';
   }
 
   void _showLevelUpCelebration(int newLevel) {
@@ -529,6 +566,8 @@ class _LessonScreenState extends State<LessonScreen> {
     final resolved = _answeredIndices.length + _skippedIndices.length;
     final progress = resolved / total;
     final alreadyAnswered = _answeredIndices.contains(_currentExerciseIndex);
+    final answerRevealed =
+        !alreadyAnswered && _revealedIndices.contains(_currentExerciseIndex);
 
     final topBar = AppBar(
       backgroundColor: Colors.transparent,
@@ -540,6 +579,16 @@ class _LessonScreenState extends State<LessonScreen> {
       title: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          Text(
+            widget.skill.name,
+            style: const TextStyle(
+              fontSize: 13,
+              fontWeight: FontWeight.w600,
+              color: AppColors.textSecondary,
+            ),
+            overflow: TextOverflow.ellipsis,
+          ),
+          const SizedBox(height: 6),
           LinearProgressIndicator(
             value: progress,
             backgroundColor: AppColors.surfaceRaised,
@@ -560,6 +609,7 @@ class _LessonScreenState extends State<LessonScreen> {
         if (_includedDisabledTypes) _buildFallbackNotice(),
         if (_isGeneratedExercise) _buildExtraPracticeNotice(),
         if (alreadyAnswered) _buildReviewNotice(),
+        if (answerRevealed) _buildAnswerBanner(exercise),
         Expanded(
           child: alreadyAnswered
               // Locked review: the outcome is already recorded, so the
@@ -573,7 +623,7 @@ class _LessonScreenState extends State<LessonScreen> {
                 )
               : _buildExerciseWidget(exercise),
         ),
-        _buildNavBar(alreadyAnswered),
+        _buildNavBar(alreadyAnswered, answerRevealed),
       ],
     );
 
@@ -643,10 +693,34 @@ class _LessonScreenState extends State<LessonScreen> {
     );
   }
 
-  /// Back / Skip controls beneath the exercise. Back steps to the previous
-  /// exercise without undoing any score; Skip moves past the current one
-  /// without answering it.
-  Widget _buildNavBar(bool alreadyAnswered) {
+  /// Shows the expected answer for the current exercise, either because the
+  /// learner asked to see it or because they skipped and stepped back.
+  Widget _buildAnswerBanner(Exercise exercise) {
+    return Container(
+      width: double.infinity,
+      color: AppColors.surfaceRaised,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Answer',
+            style: TextStyle(fontSize: 11, color: AppColors.textMuted),
+          ),
+          const SizedBox(height: 2),
+          Text(
+            _answerText(exercise),
+            style: const TextStyle(fontSize: 15, color: AppColors.textPrimary),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Back / Reveal / Skip controls beneath the exercise. Back steps to the
+  /// previous exercise without undoing any score; Reveal shows the answer for
+  /// the current one; Skip moves past it without answering.
+  Widget _buildNavBar(bool alreadyAnswered, bool answerRevealed) {
     final atStart = _currentExerciseIndex == 0;
     final isLast = _currentExerciseIndex == _exercises.length - 1;
 
@@ -659,6 +733,15 @@ class _LessonScreenState extends State<LessonScreen> {
             icon: const Icon(Icons.arrow_back),
             label: const Text('Back'),
           ),
+          const Spacer(),
+          if (!alreadyAnswered)
+            TextButton.icon(
+              onPressed: _toggleReveal,
+              icon: Icon(answerRevealed
+                  ? Icons.visibility_off_outlined
+                  : Icons.visibility_outlined),
+              label: Text(answerRevealed ? 'Hide' : 'Reveal'),
+            ),
           const Spacer(),
           TextButton.icon(
             onPressed: alreadyAnswered ? _advanceOrFinish : _skipExercise,

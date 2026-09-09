@@ -11,8 +11,8 @@
             "options": [
                 "Ñ",
                 "N",
-                "RR",
-                "LL"
+                "M",
+                "G"
             ],
             "correctAnswer": "Ñ"
         },
@@ -29,18 +29,6 @@
             "question": "E",
             "options": [],
             "correctAnswer": "E"
-        },
-        {
-            "id": "ex_alp_4",
-            "type": "multipleChoice",
-            "question": "How do you pronounce double 'L' (LL)?",
-            "options": [
-                "Y sound",
-                "L sound",
-                "R sound",
-                "S sound"
-            ],
-            "correctAnswer": "Y sound"
         },
         {
             "type": "multipleChoice",
@@ -65,25 +53,6 @@
             ],
             "correctAnswer": "5",
             "id": "ex_alp_7"
-        },
-        {
-            "type": "translateThis",
-            "question": "Vocal",
-            "options": [],
-            "correctAnswer": "Vowel",
-            "id": "ex_alp_8"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "What sound does 'J' make in Spanish?",
-            "options": [
-                "A strong H sound",
-                "A J sound like in English",
-                "A Y sound",
-                "A soft G sound"
-            ],
-            "correctAnswer": "A strong H sound",
-            "id": "ex_alp_9"
         },
         {
             "type": "listeningComprehension",
@@ -112,8 +81,8 @@
             "options": [
                 "It is silent",
                 "Like an English H",
-                "Like a J",
-                "Like a G"
+                "Like a strong H",
+                "Like an S"
             ],
             "correctAnswer": "It is silent",
             "id": "ex_alp_13"
@@ -131,49 +100,52 @@
             "id": "ex_alp_14"
         },
         {
-            "type": "translateThis",
-            "question": "La eñe",
-            "options": [],
-            "correctAnswer": "The ñ (letter)",
-            "id": "ex_alp_15"
+            "type": "multipleChoice",
+            "question": "What sound does 'J' make in Spanish?",
+            "options": [
+                "A strong H sound, like the h in hope",
+                "A soft J sound, like in jump",
+                "A rolled, trilled r",
+                "It is silent"
+            ],
+            "correctAnswer": "A strong H sound, like the h in hope",
+            "id": "ex_alp_16_j"
         },
         {
-            "type": "matchPairs",
-            "question": "Match each letter with the sound it makes",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "J",
-                        "native": "Strong H sound (jamón)"
-                    },
-                    {
-                        "target": "H",
-                        "native": "Silent (hola)"
-                    },
-                    {
-                        "target": "Ñ",
-                        "native": "'ny' sound (niño)"
-                    },
-                    {
-                        "target": "LL",
-                        "native": "'ly' sound (lluvia)"
-                    },
-                    {
-                        "target": "RR",
-                        "native": "Rolled r (perro)"
-                    }
-                ]
-            },
-            "id": "ex_alp_16"
+            "type": "multipleChoice",
+            "question": "How is 'Ñ' pronounced in Spanish?",
+            "options": [
+                "A 'ny' sound, like in canyon",
+                "A plain n sound",
+                "A 'y' sound, like in yes",
+                "A strong H sound"
+            ],
+            "correctAnswer": "A 'ny' sound, like in canyon",
+            "id": "ex_alp_16_ny"
         },
         {
-            "type": "speakThis",
-            "question": "Ele, eme, ene, eñe",
-            "options": [],
-            "correctAnswer": "Ele, eme, ene, eñe",
-            "id": "ex_alp_17"
+            "type": "multipleChoice",
+            "question": "What sound does 'LL' make in Latin American Spanish?",
+            "options": [
+                "A 'y' sound, like in yes",
+                "A doubled l sound",
+                "A 'ny' sound, like in canyon",
+                "It is silent"
+            ],
+            "correctAnswer": "A 'y' sound, like in yes",
+            "id": "ex_alp_16_ll"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "How is 'RR' pronounced in Spanish?",
+            "options": [
+                "A rolled, trilled r",
+                "A single soft r",
+                "A strong H sound",
+                "It is silent"
+            ],
+            "correctAnswer": "A rolled, trilled r",
+            "id": "ex_alp_16_rr"
         },
         {
             "type": "multipleChoice",
@@ -188,13 +160,6 @@
             "id": "ex_alp_18"
         },
         {
-            "type": "translateThis",
-            "question": "Consonante",
-            "options": [],
-            "correctAnswer": "Consonant",
-            "id": "ex_alp_19"
-        },
-        {
             "type": "fillInBlank",
             "question": "La letra ___ suena como 'k' antes de 'a, o, u'",
             "options": [
@@ -207,60 +172,8 @@
             "id": "ex_alp_20"
         },
         {
-            "type": "listeningComprehension",
-            "question": "Doble ere",
-            "options": [],
-            "correctAnswer": "Doble ere",
-            "id": "ex_alp_21"
-        },
-        {
             "type": "multipleChoice",
-            "question": "How do you pronounce the double 'RR'?",
-            "options": [
-                "A strong rolled R",
-                "Like a single R",
-                "Silent",
-                "Like a D"
-            ],
-            "correctAnswer": "A strong rolled R",
-            "id": "ex_alp_22"
-        },
-        {
-            "type": "speakThis",
-            "question": "Perro, carro, ferrocarril",
-            "options": [],
-            "correctAnswer": "Perro, carro, ferrocarril",
-            "id": "ex_alp_23"
-        },
-        {
-            "type": "translateThis",
-            "question": "El abecedario",
-            "options": [],
-            "correctAnswer": "The alphabet",
-            "id": "ex_alp_24"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which letter is unique to the Spanish alphabet and not found in English?",
-            "options": [
-                "Ñ",
-                "K",
-                "W",
-                "X"
-            ],
-            "correctAnswer": "Ñ",
-            "id": "ex_alp_25"
-        },
-        {
-            "type": "translateThis",
-            "question": "Deletrear",
-            "options": [],
-            "correctAnswer": "To spell",
-            "id": "ex_alp22_1"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "How do you spell 'casa' out loud starting?",
+            "question": "How do you spell 'casa' out loud?",
             "options": [
                 "Ce-a-ese-a",
                 "Ka-a-se-a",
@@ -283,114 +196,15 @@
             "id": "ex_alp22_3"
         },
         {
-            "type": "listeningComprehension",
-            "question": "¿Cómo se escribe tu nombre?",
-            "options": [],
-            "correctAnswer": "¿Cómo se escribe tu nombre?",
-            "id": "ex_alp22_4"
-        },
-        {
             "type": "speakThis",
-            "question": "Se escribe con doble ele",
+            "question": "calle",
             "options": [],
-            "correctAnswer": "Se escribe con doble ele",
+            "correctAnswer": "calle",
             "id": "ex_alp22_5"
         },
         {
-            "type": "translateThis",
-            "question": "Mayúscula",
-            "options": [],
-            "correctAnswer": "Uppercase/capital letter",
-            "id": "ex_alp22_6"
-        },
-        {
-            "type": "translateThis",
-            "question": "Minúscula",
-            "options": [],
-            "correctAnswer": "Lowercase letter",
-            "id": "ex_alp22_7"
-        },
-        {
             "type": "multipleChoice",
-            "question": "Which letter never appears at the start of a Spanish word?",
-            "options": [
-                "Ñ",
-                "A",
-                "B",
-                "C"
-            ],
-            "correctAnswer": "Ñ",
-            "id": "ex_alp22_8"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "W se llama ___ doble (en España) o doble ve",
-            "options": [
-                "uve",
-                "ve",
-                "u",
-                "doble u"
-            ],
-            "correctAnswer": "uve",
-            "id": "ex_alp22_10"
-        },
-        {
-            "type": "listeningComprehension",
-            "question": "X, Y, Z",
-            "options": [],
-            "correctAnswer": "X, Y, Z",
-            "id": "ex_alp22_11"
-        },
-        {
-            "type": "translateThis",
-            "question": "El signo de interrogación",
-            "options": [],
-            "correctAnswer": "The question mark",
-            "id": "ex_alp22_12"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Spanish uses an upside-down question mark at the start of a question. What is it called?",
-            "options": [
-                "Signo de apertura",
-                "Signo de cierre",
-                "Acento",
-                "Diéresis"
-            ],
-            "correctAnswer": "Signo de apertura",
-            "id": "ex_alp22_13"
-        },
-        {
-            "type": "speakThis",
-            "question": "¿Cómo se llama esta letra?",
-            "options": [],
-            "correctAnswer": "¿Cómo se llama esta letra?",
-            "id": "ex_alp22_14"
-        },
-        {
-            "type": "translateThis",
-            "question": "El acento",
-            "options": [],
-            "correctAnswer": "The accent mark",
-            "id": "ex_alp22_15"
-        },
-        {
-            "type": "translateThis",
-            "question": "La letra be",
-            "options": [],
-            "correctAnswer": "The letter B",
-            "id": "ex_alp3_1"
-        },
-        {
-            "type": "translateThis",
-            "question": "La letra ka",
-            "options": [],
-            "correctAnswer": "The letter K",
-            "id": "ex_alp3_2"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which letter is pronounced 'doble ve' in some countries?",
+            "question": "In Latin America, which letter is called 'doble ve'?",
             "options": [
                 "W",
                 "V",
@@ -413,25 +227,11 @@
             "id": "ex_alp3_4"
         },
         {
-            "type": "listeningComprehension",
-            "question": "Zeta, equis, ye",
-            "options": [],
-            "correctAnswer": "Zeta, equis, ye",
-            "id": "ex_alp3_5"
-        },
-        {
             "type": "speakThis",
-            "question": "La zeta suena como 'ese' en Latinoamérica",
+            "question": "zapato",
             "options": [],
-            "correctAnswer": "La zeta suena como 'ese' en Latinoamérica",
+            "correctAnswer": "zapato",
             "id": "ex_alp3_6"
-        },
-        {
-            "type": "translateThis",
-            "question": "Vocal abierta",
-            "options": [],
-            "correctAnswer": "Open vowel",
-            "id": "ex_alp3_7"
         },
         {
             "type": "multipleChoice",
@@ -446,31 +246,52 @@
             "id": "ex_alp3_8"
         },
         {
-            "type": "matchPairs",
-            "question": "Match tricky letter sounds",
-            "options": [],
-            "correctAnswer": "",
-            "metadata": {
-                "pairs": [
-                    {
-                        "target": "C (before e, i)",
-                        "native": "'s' sound (cielo)"
-                    },
-                    {
-                        "target": "G (before e, i)",
-                        "native": "Strong H sound (gente)"
-                    },
-                    {
-                        "target": "QU",
-                        "native": "'k' sound (queso)"
-                    },
-                    {
-                        "target": "Z",
-                        "native": "'s' sound (zapato)"
-                    }
-                ]
-            },
-            "id": "ex_alp3_9"
+            "type": "multipleChoice",
+            "question": "What sound does 'C' make before 'e' or 'i' in Latin American Spanish?",
+            "options": [
+                "An 's' sound, like in sun",
+                "A 'k' sound, like in kite",
+                "A strong H sound",
+                "It is silent"
+            ],
+            "correctAnswer": "An 's' sound, like in sun",
+            "id": "ex_alp3_9_c"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What sound does 'G' make before 'e' or 'i' in Spanish?",
+            "options": [
+                "A strong H sound, like the h in hope",
+                "A hard G sound, like in go",
+                "An 's' sound, like in sun",
+                "It is silent"
+            ],
+            "correctAnswer": "A strong H sound, like the h in hope",
+            "id": "ex_alp3_9_g"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What sound does 'QU' make in Spanish?",
+            "options": [
+                "A 'k' sound, like in kite",
+                "A 'kw' sound, like in quick",
+                "A strong H sound",
+                "It is silent"
+            ],
+            "correctAnswer": "A 'k' sound, like in kite",
+            "id": "ex_alp3_9_qu"
+        },
+        {
+            "type": "multipleChoice",
+            "question": "What sound does 'Z' make in Latin American Spanish?",
+            "options": [
+                "An 's' sound, like in sun",
+                "A 'z' sound, like in zoo",
+                "A strong H sound",
+                "It is silent"
+            ],
+            "correctAnswer": "An 's' sound, like in sun",
+            "id": "ex_alp3_9_z"
         },
         {
             "type": "fillInBlank",
@@ -483,103 +304,6 @@
             ],
             "correctAnswer": "deletrea",
             "id": "ex_alp3_10"
-        },
-        {
-            "type": "listeningComprehension",
-            "question": "¿Puede deletrear su nombre?",
-            "options": [],
-            "correctAnswer": "¿Puede deletrear su nombre?",
-            "id": "ex_alp3_11"
-        },
-        {
-            "type": "speakThis",
-            "question": "G-A-R-C-Í-A",
-            "options": [],
-            "correctAnswer": "G-A-R-C-Í-A",
-            "id": "ex_alp3_12"
-        },
-        {
-            "type": "translateThis",
-            "question": "El diptongo",
-            "options": [],
-            "correctAnswer": "The diphthong",
-            "id": "ex_alp3_13"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which pair of vowels forms a diphthong in 'ciudad'?",
-            "options": [
-                "iu",
-                "ci",
-                "da",
-                "ud"
-            ],
-            "correctAnswer": "iu",
-            "id": "ex_alp3_14"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "La palabra tiene un ___ (accent mark)",
-            "options": [
-                "acento",
-                "punto",
-                "signo",
-                "guion"
-            ],
-            "correctAnswer": "acento",
-            "id": "ex_alp3_15"
-        },
-        {
-            "type": "listeningComprehension",
-            "question": "Mú-si-ca tiene acento en la primera sílaba",
-            "options": [],
-            "correctAnswer": "Mú-si-ca tiene acento en la primera sílaba",
-            "id": "ex_alp3_16"
-        },
-        {
-            "type": "speakThis",
-            "question": "Sí, café, and árbol all have accent marks",
-            "options": [],
-            "correctAnswer": "Sí, café, and árbol all have accent marks",
-            "id": "ex_alp3_17"
-        },
-        {
-            "type": "translateThis",
-            "question": "Sin acento",
-            "options": [],
-            "correctAnswer": "Without an accent mark",
-            "id": "ex_alp3_18"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "What is 'sílaba' in English?",
-            "options": [
-                "Syllable",
-                "Sentence",
-                "Word",
-                "Letter"
-            ],
-            "correctAnswer": "Syllable",
-            "id": "ex_alp3_19"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "Ca-fé tiene dos ___ (syllables)",
-            "options": [
-                "sílabas",
-                "letras",
-                "acentos",
-                "palabras"
-            ],
-            "correctAnswer": "sílabas",
-            "id": "ex_alp3_20"
-        },
-        {
-            "type": "translateThis",
-            "question": "La letra doble u",
-            "options": [],
-            "correctAnswer": "The letter W",
-            "id": "ex_alp4_1"
         },
         {
             "type": "multipleChoice",
@@ -606,357 +330,346 @@
             "id": "ex_alp4_3"
         },
         {
-            "type": "listeningComprehension",
-            "question": "Whisky se escribe con doble u",
-            "options": [],
-            "correctAnswer": "Whisky se escribe con doble u",
-            "id": "ex_alp4_4"
-        },
-        {
             "type": "speakThis",
-            "question": "Kilómetro empieza con ka",
+            "question": "kilo",
             "options": [],
-            "correctAnswer": "Kilómetro empieza con ka",
+            "correctAnswer": "kilo",
             "id": "ex_alp4_5"
         },
         {
-            "type": "translateThis",
-            "question": "Palabra aguda",
-            "options": [],
-            "correctAnswer": "Word stressed on the last syllable",
-            "id": "ex_alp4_6"
-        },
-        {
+            "id": "ex_alp_n1",
             "type": "multipleChoice",
-            "question": "Which type of word is 'canción' (stress on last syllable ending in n, s, or vowel)?",
+            "question": "How many letters are in the modern Spanish alphabet?",
             "options": [
-                "Aguda",
-                "Grave",
-                "Esdrújula",
-                "Llana"
+                "27",
+                "26",
+                "28",
+                "30"
             ],
-            "correctAnswer": "Aguda",
-            "id": "ex_alp4_7"
+            "correctAnswer": "27"
         },
         {
+            "id": "ex_alp_n2",
+            "type": "multipleChoice",
+            "question": "Which letter is the Spanish alphabet's own, added after N?",
+            "options": [
+                "Ñ",
+                "LL",
+                "CH",
+                "RR"
+            ],
+            "correctAnswer": "Ñ"
+        },
+        {
+            "id": "ex_alp_n3",
+            "type": "multipleChoice",
+            "question": "Are CH and LL still counted as single letters of the alphabet today?",
+            "options": [
+                "No, they were dropped in 2010",
+                "Yes, they always have been",
+                "Only CH is",
+                "Only LL is"
+            ],
+            "correctAnswer": "No, they were dropped in 2010"
+        },
+        {
+            "id": "ex_alp_n4",
+            "type": "multipleChoice",
+            "question": "How is the Spanish vowel 'A' pronounced?",
+            "options": [
+                "A short, pure 'ah', like in 'father'",
+                "Like the 'a' in 'cat'",
+                "Like the 'a' in 'cake'",
+                "Like the 'a' in 'call'"
+            ],
+            "correctAnswer": "A short, pure 'ah', like in 'father'"
+        },
+        {
+            "id": "ex_alp_n5",
+            "type": "multipleChoice",
+            "question": "How is the Spanish vowel 'E' pronounced?",
+            "options": [
+                "A short 'eh', like in 'bed'",
+                "Like 'ee' in 'see'",
+                "Like 'ay' in 'day' with a glide",
+                "Like 'e' in 'her'"
+            ],
+            "correctAnswer": "A short 'eh', like in 'bed'"
+        },
+        {
+            "id": "ex_alp_n6",
+            "type": "multipleChoice",
+            "question": "How is the Spanish vowel 'I' pronounced?",
+            "options": [
+                "Like 'ee' in 'see'",
+                "Like 'i' in 'sit'",
+                "Like 'i' in 'ice'",
+                "Like 'i' in 'bird'"
+            ],
+            "correctAnswer": "Like 'ee' in 'see'"
+        },
+        {
+            "id": "ex_alp_n7",
+            "type": "multipleChoice",
+            "question": "How is the Spanish vowel 'U' pronounced?",
+            "options": [
+                "Like 'oo' in 'moon'",
+                "Like 'u' in 'cup'",
+                "Like 'u' in 'music'",
+                "Silent"
+            ],
+            "correctAnswer": "Like 'oo' in 'moon'"
+        },
+        {
+            "id": "ex_alp_n8",
+            "type": "multipleChoice",
+            "question": "Do Spanish vowels change sound depending on the word, like English vowels do?",
+            "options": [
+                "No, each vowel has one steady sound",
+                "Yes, just like English",
+                "Only A and E change",
+                "Only in questions"
+            ],
+            "correctAnswer": "No, each vowel has one steady sound"
+        },
+        {
+            "id": "ex_alp_n9",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the letter 'J'?",
+            "options": [
+                "jota",
+                "ge",
+                "ye",
+                "hache"
+            ],
+            "correctAnswer": "jota"
+        },
+        {
+            "id": "ex_alp_n10",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the letter 'H'?",
+            "options": [
+                "hache",
+                "ache",
+                "haga",
+                "jota"
+            ],
+            "correctAnswer": "hache"
+        },
+        {
+            "id": "ex_alp_n11",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the letter 'Y'?",
+            "options": [
+                "i griega (or 'ye')",
+                "ye griega",
+                "doble i",
+                "yod"
+            ],
+            "correctAnswer": "i griega (or 'ye')"
+        },
+        {
+            "id": "ex_alp_n12",
+            "type": "multipleChoice",
+            "question": "What is the Spanish name for the single letter 'R'?",
+            "options": [
+                "erre",
+                "ere doble",
+                "rr",
+                "re"
+            ],
+            "correctAnswer": "erre"
+        },
+        {
+            "id": "ex_alp_n13",
             "type": "fillInBlank",
-            "question": "La palabra 'música' es ___ (stressed on third-to-last syllable)",
+            "question": "La letra Ñ se llama ___",
             "options": [
-                "esdrújula",
-                "aguda",
-                "grave",
-                "llana"
+                "eñe",
+                "ene",
+                "enye",
+                "eñ"
             ],
-            "correctAnswer": "esdrújula",
-            "id": "ex_alp4_8"
+            "correctAnswer": "eñe"
         },
         {
-            "type": "listeningComprehension",
-            "question": "Ca-mión es una palabra aguda",
-            "options": [],
-            "correctAnswer": "Ca-mión es una palabra aguda",
-            "id": "ex_alp4_9"
+            "id": "ex_alp_n14",
+            "type": "fillInBlank",
+            "question": "La letra V se llama ___",
+            "options": [
+                "uve",
+                "ve",
+                "be",
+                "efe"
+            ],
+            "correctAnswer": "uve"
         },
         {
+            "id": "ex_alp_n15",
+            "type": "multipleChoice",
+            "question": "In Spanish, how do 'B' and 'V' sound compared to each other?",
+            "options": [
+                "They sound the same",
+                "B is harder, V is softer",
+                "V sounds like English 'v'",
+                "B is silent"
+            ],
+            "correctAnswer": "They sound the same"
+        },
+        {
+            "id": "ex_alp_n16",
+            "type": "multipleChoice",
+            "question": "How is a single 'R' between vowels pronounced (as in 'pero')?",
+            "options": [
+                "A quick single tap",
+                "A long rolled trill",
+                "Like English 'r'",
+                "Silent"
+            ],
+            "correctAnswer": "A quick single tap"
+        },
+        {
+            "id": "ex_alp_n17",
+            "type": "multipleChoice",
+            "question": "How is 'G' pronounced before 'a', 'o', or 'u' (as in 'gato')?",
+            "options": [
+                "A hard G, like in 'go'",
+                "A strong H sound",
+                "A soft J sound",
+                "Silent"
+            ],
+            "correctAnswer": "A hard G, like in 'go'"
+        },
+        {
+            "id": "ex_alp_n18",
+            "type": "multipleChoice",
+            "question": "In the combination 'gue' / 'gui', what happens to the 'u'?",
+            "options": [
+                "It is silent; it just keeps the G hard",
+                "It sounds like 'w'",
+                "It sounds like 'oo'",
+                "The G becomes soft"
+            ],
+            "correctAnswer": "It is silent; it just keeps the G hard"
+        },
+        {
+            "id": "ex_alp_n19",
+            "type": "multipleChoice",
+            "question": "How is the letter 'D' pronounced between vowels (as in 'nada')?",
+            "options": [
+                "Soft, like 'th' in 'this'",
+                "A hard English 'd'",
+                "Silent",
+                "Like a 't'"
+            ],
+            "correctAnswer": "Soft, like 'th' in 'this'"
+        },
+        {
+            "id": "ex_alp_n20",
+            "type": "multipleChoice",
+            "question": "Which of these is a Spanish vowel?",
+            "options": [
+                "U",
+                "W",
+                "Y",
+                "H"
+            ],
+            "correctAnswer": "U"
+        },
+        {
+            "id": "ex_alp_n21",
+            "type": "fillInBlank",
+            "question": "El alfabeto español tiene ___ letras",
+            "options": [
+                "27",
+                "26",
+                "28",
+                "30"
+            ],
+            "correctAnswer": "27"
+        },
+        {
+            "id": "ex_alp_n22",
+            "type": "fillInBlank",
+            "question": "La letra H es ___ (no suena)",
+            "options": [
+                "muda",
+                "fuerte",
+                "vocal",
+                "doble"
+            ],
+            "correctAnswer": "muda"
+        },
+        {
+            "id": "ex_alp_n23",
+            "type": "fillInBlank",
+            "question": "La palabra 'gato' empieza con la letra ___",
+            "options": [
+                "ge",
+                "jota",
+                "ka",
+                "ce"
+            ],
+            "correctAnswer": "ge"
+        },
+        {
+            "id": "ex_alp_n24",
+            "type": "fillInBlank",
+            "question": "La palabra 'llave' empieza con ___",
+            "options": [
+                "elle",
+                "ele",
+                "ye",
+                "doble ele"
+            ],
+            "correctAnswer": "elle"
+        },
+        {
+            "id": "ex_alp_n25",
+            "type": "fillInBlank",
+            "question": "Las vocales del español son a, e, i, o, ___",
+            "options": [
+                "u",
+                "y",
+                "w",
+                "h"
+            ],
+            "correctAnswer": "u"
+        },
+        {
+            "id": "ex_alp_n26",
             "type": "speakThis",
-            "question": "Rá-pi-do es esdrújula",
+            "question": "jamón",
             "options": [],
-            "correctAnswer": "Rá-pi-do es esdrújula",
-            "id": "ex_alp4_10"
+            "correctAnswer": "jamón"
         },
         {
-            "type": "translateThis",
-            "question": "La tilde",
-            "options": [],
-            "correctAnswer": "The accent mark (tilde)",
-            "id": "ex_alp4_11"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "What is another word for 'acento' (written accent)?",
-            "options": [
-                "Tilde",
-                "Punto",
-                "Coma",
-                "Guion"
-            ],
-            "correctAnswer": "Tilde",
-            "id": "ex_alp4_12"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "Camión lleva ___ en la o",
-            "options": [
-                "tilde",
-                "punto",
-                "coma",
-                "guion"
-            ],
-            "correctAnswer": "tilde",
-            "id": "ex_alp4_13"
-        },
-        {
-            "type": "listeningComprehension",
-            "question": "Corazón lleva tilde",
-            "options": [],
-            "correctAnswer": "Corazón lleva tilde",
-            "id": "ex_alp4_14"
-        },
-        {
-            "type": "translateThis",
-            "question": "Palabra llana",
-            "options": [],
-            "correctAnswer": "Word stressed on second-to-last syllable",
-            "id": "ex_alp5_1"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which is a 'palabra llana' (stress on second-to-last syllable)?",
-            "options": [
-                "Mesa",
-                "Camión",
-                "Música",
-                "Café"
-            ],
-            "correctAnswer": "Mesa",
-            "id": "ex_alp5_2"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "La mayoría de palabras en español son ___ (llanas)",
-            "options": [
-                "llanas",
-                "agudas",
-                "esdrújulas",
-                "sobresdrújulas"
-            ],
-            "correctAnswer": "llanas",
-            "id": "ex_alp5_3"
-        },
-        {
-            "type": "listeningComprehension",
-            "question": "Me-sa es una palabra llana",
-            "options": [],
-            "correctAnswer": "Me-sa es una palabra llana",
-            "id": "ex_alp5_4"
-        },
-        {
+            "id": "ex_alp_n27",
             "type": "speakThis",
-            "question": "Ca-sa, me-sa, li-bro son llanas",
+            "question": "perro",
             "options": [],
-            "correctAnswer": "Ca-sa, me-sa, li-bro son llanas",
-            "id": "ex_alp5_5"
+            "correctAnswer": "perro"
         },
         {
-            "type": "translateThis",
-            "question": "El guion",
-            "options": [],
-            "correctAnswer": "The hyphen",
-            "id": "ex_alp5_6"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "What punctuation mark introduces dialogue in Spanish literature?",
-            "options": [
-                "Guion largo (—)",
-                "Comillas",
-                "Punto",
-                "Coma"
-            ],
-            "correctAnswer": "Guion largo (—)",
-            "id": "ex_alp5_7"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "Los signos de ___ abren y cierran preguntas (¿?)",
-            "options": [
-                "interrogación",
-                "exclamación",
-                "puntuación",
-                "acentuación"
-            ],
-            "correctAnswer": "interrogación",
-            "id": "ex_alp5_8"
-        },
-        {
-            "type": "listeningComprehension",
-            "question": "¿Cómo estás? ¡Muy bien!",
-            "options": [],
-            "correctAnswer": "¿Cómo estás? ¡Muy bien!",
-            "id": "ex_alp5_9"
-        },
-        {
+            "id": "ex_alp_n28",
             "type": "speakThis",
-            "question": "¡Qué bonito día!",
+            "question": "año",
             "options": [],
-            "correctAnswer": "¡Qué bonito día!",
-            "id": "ex_alp5_10"
+            "correctAnswer": "año"
         },
         {
-            "type": "translateThis",
-            "question": "Sobresdrújula",
-            "options": [],
-            "correctAnswer": "Word stressed before the antepenultimate syllable",
-            "id": "ex_alp6_1"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which type is 'dígamelo' (stress before third-to-last syllable)?",
-            "options": [
-                "Sobresdrújula",
-                "Aguda",
-                "Grave",
-                "Llana"
-            ],
-            "correctAnswer": "Sobresdrújula",
-            "id": "ex_alp6_2"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "La ortografía estudia las reglas de ___ (spelling)",
-            "options": [
-                "escritura",
-                "pronunciación",
-                "gramática",
-                "lectura"
-            ],
-            "correctAnswer": "escritura",
-            "id": "ex_alp6_3"
-        },
-        {
+            "id": "ex_alp_n29",
             "type": "listeningComprehension",
-            "question": "La ortografía es importante",
+            "question": "sí",
             "options": [],
-            "correctAnswer": "La ortografía es importante",
-            "id": "ex_alp6_4"
+            "correctAnswer": "sí"
         },
         {
-            "type": "speakThis",
-            "question": "Estudio la ortografía todos los días",
-            "options": [],
-            "correctAnswer": "Estudio la ortografía todos los días",
-            "id": "ex_alp6_5"
-        },
-        {
-            "type": "translateThis",
-            "question": "El punto y coma",
-            "options": [],
-            "correctAnswer": "The semicolon",
-            "id": "ex_alp6_6"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "What is 'los dos puntos' in English?",
-            "options": [
-                "The colon",
-                "The comma",
-                "The period",
-                "The semicolon"
-            ],
-            "correctAnswer": "The colon",
-            "id": "ex_alp6_7"
-        },
-        {
-            "type": "translateThis",
-            "question": "Homófonas",
-            "options": [],
-            "correctAnswer": "Homophones",
-            "id": "ex_alp7_1"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which pair are homophones (sound the same, spelled differently)?",
-            "options": [
-                "Tuvo / tubo",
-                "Casa / mesa",
-                "Perro / gato",
-                "Libro / mesa"
-            ],
-            "correctAnswer": "Tuvo / tubo",
-            "id": "ex_alp7_2"
-        },
-        {
-            "type": "fillInBlank",
-            "question": "'Vaca' y 'baca' son palabras ___ (homophones)",
-            "options": [
-                "homófonas",
-                "sinónimas",
-                "antónimas",
-                "compuestas"
-            ],
-            "correctAnswer": "homófonas",
-            "id": "ex_alp7_3"
-        },
-        {
+            "id": "ex_alp_n30",
             "type": "listeningComprehension",
-            "question": "Hola y ola suenan igual",
+            "question": "no",
             "options": [],
-            "correctAnswer": "Hola y ola suenan igual",
-            "id": "ex_alp7_4"
-        },
-        {
-            "type": "speakThis",
-            "question": "Baca y vaca son homófonas",
-            "options": [],
-            "correctAnswer": "Baca y vaca son homófonas",
-            "id": "ex_alp7_5"
-        },
-        {
-            "type": "translateThis",
-            "question": "Palabra compuesta",
-            "options": [],
-            "correctAnswer": "Compound word",
-            "id": "ex_alp7_6"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which is a compound word in Spanish?",
-            "options": [
-                "Paraguas",
-                "Mesa",
-                "Gato",
-                "Casa"
-            ],
-            "correctAnswer": "Paraguas",
-            "id": "ex_alp7_7"
-        },
-        {
-            "type": "translateThis",
-            "question": "Palabra grave",
-            "options": [],
-            "correctAnswer": "Word stressed on the second-to-last syllable (formal term)",
-            "id": "ex_alp8_1"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which accent rule applies to words ending in a consonant other than n/s?",
-            "options": [
-                "Stress falls on the last syllable by default",
-                "Stress always needs a written accent",
-                "Stress falls on the first syllable",
-                "There is no rule"
-            ],
-            "correctAnswer": "Stress falls on the last syllable by default",
-            "id": "ex_alp8_2"
-        },
-        {
-            "type": "translateThis",
-            "question": "Letra minúscula y mayúscula",
-            "options": [],
-            "correctAnswer": "Lowercase and uppercase letter",
-            "id": "ex_alp9_1"
-        },
-        {
-            "type": "multipleChoice",
-            "question": "Which is written with a capital letter?",
-            "options": [
-                "El nombre de una persona",
-                "Los días de la semana",
-                "Los meses del año",
-                "Los idiomas"
-            ],
-            "correctAnswer": "El nombre de una persona",
-            "id": "ex_alp9_2"
+            "correctAnswer": "no"
         }
     ]
 }

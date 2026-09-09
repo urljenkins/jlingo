@@ -65,11 +65,11 @@ class _ListeningWidgetState extends State<ListeningWidget> {
   }
 
   void _checkAnswer() {
-    final userAnswer = _controller.text.trim().toLowerCase();
-    final correctAnswer = widget.exercise.correctAnswer.toLowerCase();
-
     setState(() {
-      _isCorrect = userAnswer == correctAnswer;
+      _isCorrect = _matches(
+        _controller.text,
+        widget.exercise.correctAnswer,
+      );
       _showFeedback = true;
     });
 
@@ -78,6 +78,25 @@ class _ListeningWidgetState extends State<ListeningWidget> {
         widget.onAnswer(_isCorrect);
       }
     });
+  }
+
+  /// The typed answer counts as correct when it matches once punctuation,
+  /// casing and accents (which a learner may not type, and which the on-screen
+  /// keyboard may not offer) are set aside.
+  bool _matches(String typed, String expected) {
+    String normalize(String s) {
+      const accents = 'áàäâãéèëêíìïîóòöôõúùüûñç';
+      const plain = 'aaaaaeeeeiiiiooooouuuunc';
+      final buffer = StringBuffer();
+      for (final rune in s.trim().toLowerCase().runes) {
+        final ch = String.fromCharCode(rune);
+        final idx = accents.indexOf(ch);
+        buffer.write(idx >= 0 ? plain[idx] : ch);
+      }
+      return buffer.toString().replaceAll(RegExp(r'[^a-z0-9]'), '');
+    }
+
+    return normalize(typed) == normalize(expected);
   }
 
   @override

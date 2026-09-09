@@ -1,73 +1,73 @@
 {
-  "id": "introductions",
-  "name": "Apresentações",
-  "description": "Aprende a apresentar-te e a perguntar sobre os outros",
-  "level": 1,
-  "exercises": [
-    {
-      "id": "ex_intro_1",
-      "type": "translateThis",
-      "question": "Chamo-me Maria",
-      "options": [],
-      "correctAnswer": "My name is María"
-    },
-    {
-      "id": "ex_intro_2",
-      "type": "multipleChoice",
-      "question": "Como se pergunta 'Qual é o seu nome?' formalmente?",
-      "options": [
-        "Como se chama?",
-        "Como te chamas?",
-        "Como vai?",
-        "De onde é?"
-      ],
-      "correctAnswer": "Como se chama?"
-    },
-    {
-      "id": "ex_intro_3",
-      "type": "fillInBlank",
-      "question": "Sou ___ dos Estados Unidos",
-      "options": [
-        "dos",
-        "em",
-        "a",
-        "com"
-      ],
-      "correctAnswer": "dos"
-    },
-    {
-      "id": "ex_intro_4",
-      "type": "matchPairs",
-      "question": "Associe as apresentações",
-      "options": [],
-      "correctAnswer": "",
-      "metadata": {
-        "pairs": [
-          {
-            "target": "Chamo-me",
-            "native": "My name is"
-          },
-          {
-            "target": "Sou de",
-            "native": "I am from"
-          },
-          {
-            "target": "Muito prazer",
-            "native": "Nice to meet you"
-          },
-          {
-            "target": "Prazer",
-            "native": "Pleased to meet you"
-          }
-        ]
-      }
-    },
-    {
-      "id": "ex_intro_5",
-      "type": "speakThis",
-      "question": "Muito prazer",
-      "options": [],
-      "correctAnswer": "Muito prazer"
-    }
-  ]
+    "id": "introductions",
+    "name": "Apresentações",
+    "description": "Aprende a apresentar-te e a perguntar sobre os outros",
+    "level": 1,
+    "exercises": [
+        {
+            "id": "ex_intro_1",
+            "type": "translateThis",
+            "question": "Chamo-me Maria",
+            "options": [],
+            "correctAnswer": "My name is María"
+        },
+        {
+            "id": "ex_intro_2",
+            "type": "multipleChoice",
+            "question": "How do you ask \"What is your name?\" formally in Portuguese?",
+            "options": [
+                "Como se chama?",
+                "Como te chamas?",
+                "Como vai?",
+                "De onde é?"
+            ],
+            "correctAnswer": "Como se chama?"
+        },
+        {
+            "id": "ex_intro_3",
+            "type": "fillInBlank",
+            "question": "Sou ___ dos Estados Unidos",
+            "options": [
+                "dos",
+                "em",
+                "a",
+                "com"
+            ],
+            "correctAnswer": "dos"
+        },
+        {
+            "id": "ex_intro_4",
+            "type": "matchPairs",
+            "question": "Match the introductions",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Chamo-me",
+                        "native": "My name is"
+                    },
+                    {
+                        "target": "Sou de",
+                        "native": "I am from"
+                    },
+                    {
+                        "target": "Muito prazer",
+                        "native": "Nice to meet you"
+                    },
+                    {
+                        "target": "Prazer",
+                        "native": "Pleased to meet you"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_intro_5",
+            "type": "speakThis",
+            "question": "Muito prazer",
+            "options": [],
+            "correctAnswer": "Muito prazer"
+        }
+    ]
 }

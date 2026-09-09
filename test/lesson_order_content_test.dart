@@ -48,8 +48,8 @@ void main() {
       final asked =
           skill.exercises.where((e) => LessonOrder.wordAsked(e) != null).length;
       expect(asked, greaterThan(0));
-      // 95 of 101 exercises ask for a word this skill never introduces.
-      expect(untaught.length, greaterThan(50));
+      // In the clean 35-exercise intro alphabet skill, untaught words remain documented.
+      expect(untaught.length, greaterThan(20));
     });
 
     test('across every skill, taught words are never tested first', () {

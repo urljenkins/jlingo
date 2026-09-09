@@ -77,6 +77,12 @@
             "section": "foundational"
         },
         {
+            "id": "spelling_accents",
+            "name": "Spelling & Accents",
+            "level": 3,
+            "section": "foundational"
+        },
+        {
             "id": "colors",
             "name": "Colors",
             "level": 4,

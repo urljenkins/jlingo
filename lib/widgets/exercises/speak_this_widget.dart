@@ -110,10 +110,10 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
     if (_graded || _recognizedText.trim().isEmpty) return;
     _graded = true;
 
-    final userAnswer = _recognizedText.trim().toLowerCase();
-    final correctAnswer = widget.exercise.correctAnswer.toLowerCase();
-
-    final similarity = _calculateSimilarity(userAnswer, correctAnswer);
+    final similarity = spokenSimilarity(
+      _recognizedText,
+      widget.exercise.correctAnswer,
+    );
     _isCorrect = similarity > 0.7; // 70% similarity threshold
 
     setState(() => _showFeedback = true);
@@ -123,43 +123,6 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
         if (mounted) widget.onAnswer(true);
       }));
     }
-  }
-
-  double _calculateSimilarity(String a, String b) {
-    if (a == b) return 1.0;
-    if (a.isEmpty || b.isEmpty) return 0.0;
-
-    // Simple Levenshtein-based similarity
-    final distance = _levenshteinDistance(a, b);
-    final maxLength = a.length > b.length ? a.length : b.length;
-    return 1.0 - (distance / maxLength);
-  }
-
-  int _levenshteinDistance(String a, String b) {
-    final matrix = List.generate(
-      a.length + 1,
-      (i) => List.filled(b.length + 1, 0),
-    );
-
-    for (var i = 0; i <= a.length; i++) {
-      matrix[i][0] = i;
-    }
-    for (var j = 0; j <= b.length; j++) {
-      matrix[0][j] = j;
-    }
-
-    for (var i = 1; i <= a.length; i++) {
-      for (var j = 1; j <= b.length; j++) {
-        final cost = a[i - 1] == b[j - 1] ? 0 : 1;
-        matrix[i][j] = [
-          matrix[i - 1][j] + 1,
-          matrix[i][j - 1] + 1,
-          matrix[i - 1][j - 1] + cost,
-        ].reduce((a, b) => a < b ? a : b);
-      }
-    }
-
-    return matrix[a.length][b.length];
   }
 
   void _tryAgain() {
@@ -293,11 +256,13 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
             ),
           ],
           const Spacer(),
-          // There is always a way forward, whether or not the recognizer
-          // heard anything usable.
+          // The lesson's nav bar already carries a Skip for every exercise, so
+          // this widget only adds a control where it has something extra to
+          // say — that the recognizer cannot be used at all — or something
+          // extra to do, like retrying after a wrong attempt.
           if (unavailable)
             _bottomButton(
-              label: 'Skip - Speech not available',
+              label: 'Speech not available — use Skip below',
               onPressed: () => widget.onAnswer(true),
             )
           else if (_showFeedback && !_isCorrect)
@@ -338,11 +303,6 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
                   ),
                 ),
               ],
-            )
-          else if (!_isListening)
-            _bottomButton(
-              label: 'Skip',
-              onPressed: () => widget.onAnswer(false),
             ),
         ],
       ),
@@ -371,4 +331,81 @@ class _SpeakThisWidgetState extends State<SpeakThisWidget> {
       ),
     );
   }
+}
+
+/// How close a spoken attempt is to the target phrase, 0..1.
+///
+/// Speech recognition is noisy in ways that should not fail a good attempt:
+/// it drops accents and punctuation, and it sometimes repeats or reorders
+/// words. So both sides are normalised (lowercased, accent- and
+/// punctuation-stripped) and compared as an unordered set of distinct words,
+/// each target word scored against its closest spoken word.
+double spokenSimilarity(String spoken, String target) {
+  final targetWords = _normalizeWords(target);
+  final spokenWords = _normalizeWords(spoken).toSet();
+  if (targetWords.isEmpty) return spokenWords.isEmpty ? 1.0 : 0.0;
+  if (spokenWords.isEmpty) return 0.0;
+
+  var total = 0.0;
+  for (final want in targetWords) {
+    var best = 0.0;
+    for (final got in spokenWords) {
+      final distance = _levenshteinDistance(want, got);
+      final maxLength = want.length > got.length ? want.length : got.length;
+      final wordScore = 1.0 - (distance / maxLength);
+      if (wordScore > best) best = wordScore;
+    }
+    total += best;
+  }
+  return total / targetWords.length;
+}
+
+/// Lowercase, strip accents and punctuation, split on whitespace.
+List<String> _normalizeWords(String text) {
+  const accents = 'áàäâãéèëêíìïîóòöôõúùüûñç';
+  const plain = 'aaaaaeeeeiiiiooooouuuunc';
+  final buffer = StringBuffer();
+  for (final rune in text.toLowerCase().runes) {
+    final ch = String.fromCharCode(rune);
+    final idx = accents.indexOf(ch);
+    if (idx >= 0) {
+      buffer.write(plain[idx]);
+    } else if (RegExp(r'[a-z0-9\s]').hasMatch(ch)) {
+      buffer.write(ch);
+    } else {
+      buffer.write(' ');
+    }
+  }
+  return buffer
+      .toString()
+      .split(RegExp(r'\s+'))
+      .where((w) => w.isNotEmpty)
+      .toList();
+}
+
+int _levenshteinDistance(String a, String b) {
+  final matrix = List.generate(
+    a.length + 1,
+    (i) => List.filled(b.length + 1, 0),
+  );
+
+  for (var i = 0; i <= a.length; i++) {
+    matrix[i][0] = i;
+  }
+  for (var j = 0; j <= b.length; j++) {
+    matrix[0][j] = j;
+  }
+
+  for (var i = 1; i <= a.length; i++) {
+    for (var j = 1; j <= b.length; j++) {
+      final cost = a[i - 1] == b[j - 1] ? 0 : 1;
+      matrix[i][j] = [
+        matrix[i - 1][j] + 1,
+        matrix[i][j - 1] + 1,
+        matrix[i - 1][j - 1] + cost,
+      ].reduce((a, b) => a < b ? a : b);
+    }
+  }
+
+  return matrix[a.length][b.length];
 }

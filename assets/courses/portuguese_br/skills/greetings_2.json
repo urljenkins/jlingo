@@ -7,7 +7,7 @@
     {
       "id": "ex_pt_greet2_1",
       "type": "multipleChoice",
-      "question": "Como se deseja uma boa noite ao chegar a um local?",
+      "question": "How do you wish someone a good evening when arriving?",
       "options": [
         "Boa noite",
         "Bom dia",
@@ -38,7 +38,7 @@
     {
       "id": "ex_pt_greet2_4",
       "type": "matchPairs",
-      "question": "Relacione cumprimentos formais e informais",
+      "question": "Match the greetings and polite expressions",
       "options": [],
       "correctAnswer": "",
       "metadata": {
@@ -72,7 +72,7 @@
     {
       "id": "ex_pt_greet2_6",
       "type": "multipleChoice",
-      "question": "Qual é a resposta mais comum a \"Como vai?\"",
+      "question": "What is the most common response to \"Como vai?\"",
       "options": [
         "Tudo bem, obrigado",
         "Adeus",

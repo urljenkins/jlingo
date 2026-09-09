@@ -7,14 +7,14 @@
     {
       "id": "ex_pt_alph_1",
       "type": "multipleChoice",
-      "question": "Qual o som do til (~) em português em palavras como \"pão\" e \"mão\"?",
+      "question": "What sound does the tilde (~) make in Portuguese in words like \"pão\" and \"mão\"?",
       "options": [
-        "Vogal nasal",
-        "Vogal muda",
-        "Consoante oclusiva",
-        "Semivogal aberta"
+        "Nasal vowel",
+        "Silent vowel",
+        "Stop consonant",
+        "Open semivowel"
       ],
-      "correctAnswer": "Vogal nasal"
+      "correctAnswer": "Nasal vowel"
     },
     {
       "id": "ex_pt_alph_2",
@@ -36,43 +36,64 @@
       "correctAnswer": "-ão"
     },
     {
-      "id": "ex_pt_alph_4",
-      "type": "matchPairs",
-      "question": "Relacione os caracteres e suas pronúncias",
-      "options": [],
-      "correctAnswer": "",
-      "metadata": {
-        "pairs": [
-          {
-            "target": "ç (cê-cedilha)",
-            "native": "Soft \"s\" sound before a, o, u"
-          },
-          {
-            "target": "lh",
-            "native": "Like \"lli\" in million"
-          },
-          {
-            "target": "nh",
-            "native": "Nasal like \"ni\" in onion"
-          },
-          {
-            "target": "rr",
-            "native": "Guttural or strong rolled r"
-          }
-        ]
-      }
+      "id": "ex_pt_alph_4_c",
+      "type": "multipleChoice",
+      "question": "How is the Portuguese letter 'ç' (cê-cedilha) pronounced?",
+      "options": [
+        "Soft \"s\" sound before a, o, u",
+        "Like \"lli\" in million",
+        "Nasal like \"ni\" in onion",
+        "Guttural or strong rolled r"
+      ],
+      "correctAnswer": "Soft \"s\" sound before a, o, u"
+    },
+    {
+      "id": "ex_pt_alph_4_lh",
+      "type": "multipleChoice",
+      "question": "How is the Portuguese combination 'lh' pronounced?",
+      "options": [
+        "Guttural or strong rolled r",
+        "Like \"lli\" in million",
+        "Soft \"s\" sound before a, o, u",
+        "Nasal like \"ni\" in onion"
+      ],
+      "correctAnswer": "Like \"lli\" in million"
+    },
+    {
+      "id": "ex_pt_alph_4_nh",
+      "type": "multipleChoice",
+      "question": "How is the Portuguese combination 'nh' pronounced?",
+      "options": [
+        "Like \"lli\" in million",
+        "Guttural or strong rolled r",
+        "Nasal like \"ni\" in onion",
+        "Soft \"s\" sound before a, o, u"
+      ],
+      "correctAnswer": "Nasal like \"ni\" in onion"
+    },
+    {
+      "id": "ex_pt_alph_4_rr",
+      "type": "multipleChoice",
+      "question": "How is the Portuguese combination 'rr' pronounced?",
+      "options": [
+        "Nasal like \"ni\" in onion",
+        "Soft \"s\" sound before a, o, u",
+        "Like \"lli\" in million",
+        "Guttural or strong rolled r"
+      ],
+      "correctAnswer": "Guttural or strong rolled r"
     },
     {
       "id": "ex_pt_alph_5",
       "type": "multipleChoice",
-      "question": "Como se pronuncia a letra \"j\" em português (ex: \"janela\", \"jogo\")?",
+      "question": "How is the letter \"j\" pronounced in Portuguese (e.g. \"janela\", \"jogo\")?",
       "options": [
-        "Como \"s\" em measure ou \"zh\"",
-        "Como \"h\" aspirado em inglês",
-        "Como \"y\" em yes",
-        "Como som mudo"
+        "Like \"s\" in measure or \"zh\"",
+        "Like an aspirated \"h\" in English",
+        "Like \"y\" in yes",
+        "Silent"
       ],
-      "correctAnswer": "Como \"s\" em measure ou \"zh\""
+      "correctAnswer": "Like \"s\" in measure or \"zh\""
     },
     {
       "id": "ex_pt_alph_6",

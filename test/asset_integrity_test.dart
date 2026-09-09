@@ -387,5 +387,22 @@ void main() {
         }
       }
     });
+
+    test('no alphabet skill contains a matchPairs exercise', () {
+      for (final (language, id, file) in allSkillFiles()) {
+        if (id != 'alphabet') continue;
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        for (final exercise in skill.exercises) {
+          expect(
+            exercise.type,
+            isNot(ExerciseType.matchPairs),
+            reason: '${exercise.id} in $language/alphabet.json is a matchPairs '
+                'exercise. Alphabet skills must use multipleChoice for letter/sound '
+                'teaching rather than matchPairs.',
+          );
+        }
+      }
+    });
   });
 }

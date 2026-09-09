@@ -33,33 +33,60 @@
       "nativeLanguage": "en-US"
     },
     {
-      "id": "ex_zh_alp_3",
-      "type": "matchPairs",
-      "question": "Match the Pinyin tones with their descriptions",
-      "options": [],
-      "correctAnswer": "",
+      "id": "ex_zh_alp_3_1",
+      "type": "multipleChoice",
+      "question": "Which description matches the 1st tone (mā)?",
+      "options": [
+        "High and level (mother)",
+        "Rising (hemp)",
+        "Sharp falling (scold)",
+        "Falling and rising (horse)"
+      ],
+      "correctAnswer": "High and level (mother)",
       "targetLanguage": "zh-CN",
-      "nativeLanguage": "en-US",
-      "metadata": {
-        "pairs": [
-          {
-            "target": "mā (1st tone)",
-            "native": "High and level (mother)"
-          },
-          {
-            "target": "má (2nd tone)",
-            "native": "Rising (hemp)"
-          },
-          {
-            "target": "mǎ (3rd tone)",
-            "native": "Falling and rising (horse)"
-          },
-          {
-            "target": "mà (4th tone)",
-            "native": "Sharp falling (scold)"
-          }
-        ]
-      }
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_alp_3_2",
+      "type": "multipleChoice",
+      "question": "Which description matches the 2nd tone (má)?",
+      "options": [
+        "Falling and rising (horse)",
+        "Rising (hemp)",
+        "High and level (mother)",
+        "Sharp falling (scold)"
+      ],
+      "correctAnswer": "Rising (hemp)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_alp_3_3",
+      "type": "multipleChoice",
+      "question": "Which description matches the 3rd tone (mǎ)?",
+      "options": [
+        "Sharp falling (scold)",
+        "High and level (mother)",
+        "Falling and rising (horse)",
+        "Rising (hemp)"
+      ],
+      "correctAnswer": "Falling and rising (horse)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
+    },
+    {
+      "id": "ex_zh_alp_3_4",
+      "type": "multipleChoice",
+      "question": "Which description matches the 4th tone (mà)?",
+      "options": [
+        "Rising (hemp)",
+        "Sharp falling (scold)",
+        "Falling and rising (horse)",
+        "High and level (mother)"
+      ],
+      "correctAnswer": "Sharp falling (scold)",
+      "targetLanguage": "zh-CN",
+      "nativeLanguage": "en-US"
     },
     {
       "id": "ex_zh_alp_4",

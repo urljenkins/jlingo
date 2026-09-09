@@ -20,9 +20,11 @@ class MatchPairsWidget extends StatefulWidget {
 
 class _MatchPairsWidgetState extends State<MatchPairsWidget> {
   final List<String> _selectedTiles = [];
+  final Set<String> _wrongTiles = {};
   final Map<String, String> _matchedPairs = {};
   late List<MatchPair> _pairs;
-  late List<String> _allTiles;
+  late List<String> _targetTiles;
+  late List<String> _nativeTiles;
 
   @override
   void initState() {
@@ -38,17 +40,13 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
         .map((p) => MatchPair.fromJson(p as Map<String, dynamic>))
         .toList();
 
-    // Create shuffled list of all tiles
-    _allTiles = [];
-    for (final pair in _pairs) {
-      _allTiles.add('target:${pair.target}');
-      _allTiles.add('native:${pair.native}');
-    }
-    _allTiles.shuffle();
+    // Create independently shuffled lists of target and native tiles
+    _targetTiles = _pairs.map((p) => 'target:${p.target}').toList()..shuffle();
+    _nativeTiles = _pairs.map((p) => 'native:${p.native}').toList()..shuffle();
   }
 
   void _onTileTap(String tile) {
-    if (_matchedPairs.containsKey(tile)) return;
+    if (_matchedPairs.containsKey(tile) || _wrongTiles.isNotEmpty) return;
     if (_selectedTiles.contains(tile)) {
       setState(() => _selectedTiles.remove(tile));
       return;
@@ -88,16 +86,22 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
           _selectedTiles.clear();
 
           // Check if all pairs are matched
-          if (_matchedPairs.length == _allTiles.length) {
+          if (_matchedPairs.length == _pairs.length * 2) {
             Future.delayed(const Duration(milliseconds: 500), () {
               if (mounted) widget.onAnswer(true);
             });
           }
         });
       } else {
+        setState(() {
+          _wrongTiles.addAll([tile1, tile2]);
+        });
         Future.delayed(const Duration(milliseconds: 500), () {
           if (mounted) {
-            setState(_selectedTiles.clear);
+            setState(() {
+              _wrongTiles.clear();
+              _selectedTiles.clear();
+            });
           }
         });
       }
@@ -125,17 +129,48 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
             widget.exercise.question,
             style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 8),
+          const Text(
+            'Tap a tile on the left, then its match on the right. Correct pairs lock in place; a wrong pair flashes red and clears.',
+            style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
+          ),
+          const SizedBox(height: 24),
           Expanded(
-            child: GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                crossAxisSpacing: 12,
-                mainAxisSpacing: 12,
-                childAspectRatio: 2,
+            child: SingleChildScrollView(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        for (final tile in _targetTiles)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 12),
+                            child: SizedBox(
+                              height: 64,
+                              child: _buildTile(tile),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        for (final tile in _nativeTiles)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 12),
+                            child: SizedBox(
+                              height: 64,
+                              child: _buildTile(tile),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-              itemCount: _allTiles.length,
-              itemBuilder: (context, index) => _buildTile(_allTiles[index]),
             ),
           ),
         ],
@@ -144,8 +179,9 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
   }
 
   Widget _buildTile(String tile) {
-    final isSelected = _selectedTiles.contains(tile);
+    final isWrong = _wrongTiles.contains(tile);
     final isMatched = _matchedPairs.containsKey(tile);
+    final isSelected = _selectedTiles.contains(tile);
     final value = tile.split(':')[1];
 
     Color backgroundColor = AppColors.surfaceRaised;
@@ -154,6 +190,9 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
     if (isMatched) {
       backgroundColor = AppColors.correct.withValues(alpha: 0.2);
       borderColor = AppColors.correct;
+    } else if (isWrong) {
+      backgroundColor = AppColors.incorrect.withValues(alpha: 0.2);
+      borderColor = AppColors.incorrect;
     } else if (isSelected) {
       backgroundColor = AppColors.textPrimary.withValues(alpha: 0.2);
       borderColor = AppColors.textPrimary;
@@ -161,8 +200,9 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
 
     return HoverCard(
       baseColor: backgroundColor,
-      hoverColor:
-          isMatched || isSelected ? backgroundColor : AppColors.surfaceRaised,
+      hoverColor: isMatched || isWrong || isSelected
+          ? backgroundColor
+          : AppColors.surfaceRaised,
       onTap: () => _onTileTap(tile),
       child: DecoratedBox(
         decoration: BoxDecoration(
@@ -170,10 +210,13 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
           border: Border.all(color: borderColor, width: 2),
         ),
         child: Center(
-          child: Text(
-            value,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 16),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Text(
+              value,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 16),
+            ),
           ),
         ),
       ),
