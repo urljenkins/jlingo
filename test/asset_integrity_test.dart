@@ -415,6 +415,26 @@ void main() {
       }
     });
 
+    test('matchPairs tiles are unique within each exercise', () {
+      // The widget keys tiles by their text, so two identical tiles collapse
+      // into one and the exercise can never be completed.
+      for (final (language, id, file) in allSkillFiles()) {
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        for (final exercise in skill.exercises) {
+          if (exercise.type != ExerciseType.matchPairs) continue;
+          final pairs = (exercise.metadata?['pairs'] as List<dynamic>? ?? [])
+              .cast<Map<String, dynamic>>();
+          for (final side in ['target', 'native']) {
+            final values = pairs.map((p) => p[side]).toList();
+            expect(values.toSet().length, values.length,
+                reason: '${exercise.id} in $language/$id.json repeats a '
+                    '$side tile');
+          }
+        }
+      }
+    });
+
     test('every clozeTest exercise has valid blanks or text metadata', () {
       for (final (language, id, file) in allSkillFiles()) {
         final skill = Skill.fromJson(

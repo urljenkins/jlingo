@@ -124,7 +124,7 @@
             "highlight": true
           }
         ],
-        "question": "¿Qué vio María en el parque?"
+        "question": "O que a Maria viu no parque?"
       }
     },
     {
@@ -171,27 +171,27 @@
             "highlight": true
           }
         ],
-        "question": "¿Dónde trabaja Pedro?"
+        "question": "Onde trabalha o Pedro?"
       }
     },
     {
       "id": "rw_translation_1",
       "type": "translationExercise",
-      "question": "Gosto muito de ler livros em espanhol.",
+      "question": "Gosto muito de ler livros em português.",
       "options": [],
-      "correctAnswer": "I really like to read books in Spanish.",
+      "correctAnswer": "I really like to read books in Portuguese.",
       "targetLanguage": "pt-BR",
       "nativeLanguage": "en-US",
       "metadata": {
         "direction": "toNative",
-        "sourceText": "Gosto muito de ler livros em espanhol.",
+        "sourceText": "Gosto muito de ler livros em português.",
         "hints": [
-          "'Me gusta' means 'I like'",
-          "'mucho' emphasizes 'a lot' or 'really'"
+          "'Gosto de' means 'I like'",
+          "'muito' emphasizes 'a lot' or 'really'"
         ],
         "acceptableAnswers": [
-          "I like reading books in Spanish a lot",
-          "I really enjoy reading books in Spanish"
+          "I like reading books in Portuguese a lot",
+          "I really enjoy reading books in Portuguese"
         ],
         "difficulty": "sentence"
       }
@@ -208,8 +208,8 @@
         "direction": "toTarget",
         "sourceText": "The weather is beautiful today.",
         "hints": [
-          "'weather' can be 'clima' or 'tiempo'",
-          "'beautiful' = 'hermoso' or 'bonito'"
+          "'weather' can be 'tempo' or 'clima'",
+          "'beautiful' = 'lindo' or 'bonito'"
         ],
         "acceptableAnswers": [
           "Faz bom tempo hoje",
@@ -222,16 +222,16 @@
     {
       "id": "rw_translation_3",
       "type": "translationExercise",
-      "question": "Ontem fui ao supermercado com a minha mãe. Comprámos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
+      "question": "Ontem fui ao supermercado com a minha mãe. Compramos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
       "options": [],
       "correctAnswer": "Yesterday I went to the supermarket with my mother. We bought many fruits and vegetables. My favorite is the red apple.",
       "targetLanguage": "pt-BR",
       "nativeLanguage": "en-US",
       "metadata": {
         "direction": "toNative",
-        "sourceText": "Ontem fui ao supermercado com a minha mãe. Comprámos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
+        "sourceText": "Ontem fui ao supermercado com a minha mãe. Compramos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
         "hints": [
-          "'Ayer' means 'yesterday'",
+          "'Ontem' means 'yesterday'",
           "'fui' is past tense of 'ir' (to go)",
           "'compramos' = 'we bought'"
         ],

@@ -12,7 +12,7 @@
                 "Agua",
                 "Leche",
                 "Café",
-                "Jugo"
+                "Zumo"
             ],
             "correctAnswer": "Agua"
         },
@@ -41,7 +41,7 @@
                         "native": "Tea"
                     },
                     {
-                        "target": "Jugo",
+                        "target": "Zumo",
                         "native": "Juice"
                     },
                     {
@@ -63,12 +63,12 @@
             "type": "fillInBlank",
             "question": "Quiero un ___ de naranja",
             "options": [
-                "jugo",
+                "zumo",
                 "agua",
                 "leche",
                 "café"
             ],
-            "correctAnswer": "jugo"
+            "correctAnswer": "zumo"
         },
         {
             "id": "ex_dr_5",
@@ -90,7 +90,7 @@
             "options": [
                 "Vino",
                 "Cerveza",
-                "Jugo",
+                "Zumo",
                 "Agua"
             ],
             "correctAnswer": "Vino",

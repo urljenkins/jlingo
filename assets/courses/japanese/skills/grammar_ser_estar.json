@@ -48,7 +48,7 @@
     {
       "id": "ex_ja_grammar_ser_estar_4",
       "type": "matchPairs",
-      "question": "Match subjects with appropriate existence verbs",
+      "question": "Match the います / あります sentences",
       "options": [],
       "correctAnswer": "",
       "targetLanguage": "ja-JP",
@@ -56,20 +56,20 @@
       "metadata": {
         "pairs": [
           {
-            "target": "先生",
-            "native": "います (living)"
+            "target": "先生 が います",
+            "native": "There is a teacher"
           },
           {
-            "target": "かばん",
-            "native": "あります (inanimate)"
+            "target": "かばん が あります",
+            "native": "There is a bag"
           },
           {
-            "target": "友だち",
-            "native": "います (living)"
+            "target": "友だち が います",
+            "native": "There is a friend"
           },
           {
-            "target": "ビル",
-            "native": "あります (inanimate)"
+            "target": "ビル が あります",
+            "native": "There is a building"
           }
         ]
       }
@@ -117,26 +117,26 @@
     {
       "id": "ex_ja_gse_9",
       "type": "matchPairs",
-      "question": "Match the entity with the correct existence verb",
+      "question": "Match the います / あります sentences",
       "options": [],
       "correctAnswer": "",
       "metadata": {
         "pairs": [
           {
-            "target": "いぬ (dog)",
-            "native": "います (animate)"
+            "target": "いぬ が います",
+            "native": "There is a dog"
           },
           {
-            "target": "せんせい (teacher)",
-            "native": "います (animate)"
+            "target": "せんせい が います",
+            "native": "There is a teacher"
           },
           {
-            "target": "くるま (car)",
-            "native": "あります (inanimate)"
+            "target": "くるま が あります",
+            "native": "There is a car"
           },
           {
-            "target": "き (tree / plant)",
-            "native": "あります (inanimate)"
+            "target": "き が あります",
+            "native": "There is a tree"
           }
         ]
       }

@@ -17,7 +17,7 @@
                     {"target": "El vuelo", "native": "Flight"},
                     {"target": "La maleta", "native": "Suitcase"},
                     {"target": "El aeropuerto", "native": "Airport"},
-                    {"target": "El boleto", "native": "Ticket"}
+                    {"target": "El billete", "native": "Ticket"}
                 ]
             }
         },

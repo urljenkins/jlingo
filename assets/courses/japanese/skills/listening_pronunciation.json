@@ -16,7 +16,7 @@
         {
             "id": "lp_2",
             "type": "pronunciationPractice",
-            "question": "Repeat: こんばんは",
+            "question": "こんばんは",
             "options": [],
             "correctAnswer": "こんばんは",
             "targetLanguage": "ja-JP",

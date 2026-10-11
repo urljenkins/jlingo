@@ -13,7 +13,7 @@
             "metadata": {
                 "pairs": [
                     {"target": "El teléfono móvil", "native": "Cell phone"},
-                    {"target": "La computadora", "native": "Computer"},
+                    {"target": "El ordenador", "native": "Computer"},
                     {"target": "La tableta", "native": "Tablet"},
                     {"target": "La pantalla", "native": "Screen"},
                     {"target": "El teclado", "native": "Keyboard"},

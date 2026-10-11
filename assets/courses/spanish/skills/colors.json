@@ -73,9 +73,9 @@
         {
             "id": "ex_col_5",
             "type": "speakThis",
-            "question": "El carro rojo",
+            "question": "El coche rojo",
             "options": [],
-            "correctAnswer": "El carro rojo"
+            "correctAnswer": "El coche rojo"
         },
         {
             "type": "translateThis",

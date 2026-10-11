@@ -73,9 +73,9 @@
     {
       "id": "ex_sp_5",
       "type": "speakThis",
-      "question": "A minha equipa favorita é o Sporting CP",
+      "question": "Meu time favorito é o Flamengo",
       "options": [],
-      "correctAnswer": "A minha equipa favorita é o Sporting CP"
+      "correctAnswer": "Meu time favorito é o Flamengo"
     }
   ]
 }

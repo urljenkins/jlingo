@@ -53,9 +53,9 @@
         {
             "id": "ex_sl_5",
             "type": "speakThis",
-            "question": "No mames, eso está muy padre",
+            "question": "¡Qué padre! Eso está muy chido",
             "options": [],
-            "correctAnswer": "No mames, eso está muy padre"
+            "correctAnswer": "¡Qué padre! Eso está muy chido"
         }
     ]
 }

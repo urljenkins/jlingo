@@ -66,16 +66,16 @@
         "Andén",
         "Estación",
         "Parada",
-        "Billete"
+        "Boleto"
       ],
       "correctAnswer": "Andén"
     },
     {
       "id": "ex_tr_5",
       "type": "speakThis",
-      "question": "Quiero un billete para Madrid",
+      "question": "Quiero un boleto para Monterrey",
       "options": [],
-      "correctAnswer": "Quiero un billete para Madrid"
+      "correctAnswer": "Quiero un boleto para Monterrey"
     },
     {
       "id": "ex_latam_trans_6",

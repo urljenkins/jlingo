@@ -96,13 +96,6 @@
       "correctAnswer": "Venir de + Infinitif (ex: Je viens de manger)"
     },
     {
-      "id": "ex_fr_pp_7",
-      "type": "translateThis",
-      "question": "Le train vient d'arriver en gare",
-      "options": [],
-      "correctAnswer": "The train has just arrived at the station"
-    },
-    {
       "id": "ex_fr_pp_8",
       "type": "fillInBlank",
       "question": "Nous venons ___ terminer notre travail.",

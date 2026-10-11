@@ -61,17 +61,19 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
     });
   }
 
+  // Tiles are "<type>:<value>"; split on the first colon only so values
+  // such as "よじ (4:00)" survive intact.
+  static String _tileType(String tile) => tile.substring(0, tile.indexOf(':'));
+  static String _tileValue(String tile) => tile.substring(tile.indexOf(':') + 1);
+
   void _checkMatch() {
     final tile1 = _selectedTiles[0];
     final tile2 = _selectedTiles[1];
 
-    final parts1 = tile1.split(':');
-    final parts2 = tile2.split(':');
-
-    final type1 = parts1[0];
-    final value1 = parts1[1];
-    final type2 = parts2[0];
-    final value2 = parts2[1];
+    final type1 = _tileType(tile1);
+    final value1 = _tileValue(tile1);
+    final type2 = _tileType(tile2);
+    final value2 = _tileValue(tile2);
 
     // Check if they're different types and form a valid pair
     if (type1 != type2) {
@@ -182,7 +184,7 @@ class _MatchPairsWidgetState extends State<MatchPairsWidget> {
     final isWrong = _wrongTiles.contains(tile);
     final isMatched = _matchedPairs.containsKey(tile);
     final isSelected = _selectedTiles.contains(tile);
-    final value = tile.split(':')[1];
+    final value = _tileValue(tile);
 
     Color backgroundColor = AppColors.surfaceRaised;
     Color borderColor = Colors.transparent;

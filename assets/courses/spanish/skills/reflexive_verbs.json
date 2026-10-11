@@ -34,15 +34,15 @@
           },
           {
             "target": "Se",
-            "native": "Himself/Herself"
+            "native": "Himself/Herself/Themselves"
           },
           {
             "target": "Nos",
             "native": "Ourselves"
           },
           {
-            "target": "Se",
-            "native": "Themselves"
+            "target": "Os",
+            "native": "Yourselves (vosotros)"
           }
         ]
       }
