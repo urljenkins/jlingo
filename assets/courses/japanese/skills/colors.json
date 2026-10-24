@@ -37,6 +37,91 @@
           {"target": "しろ", "native": "White"}
         ]
       }
+    },
+    {
+      "id": "ex_c4",
+      "type": "matchPairs",
+      "question": "Match more colors",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "くろ",
+            "native": "Black"
+          },
+          {
+            "target": "みどり",
+            "native": "Green"
+          },
+          {
+            "target": "ちゃいろ",
+            "native": "Brown"
+          },
+          {
+            "target": "ピンク",
+            "native": "Pink"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_c5",
+      "type": "multipleChoice",
+      "question": "What color is 'あお'?",
+      "options": [
+        "Blue",
+        "Red",
+        "Black",
+        "White"
+      ],
+      "correctAnswer": "Blue"
+    },
+    {
+      "id": "ex_c6",
+      "type": "multipleChoice",
+      "question": "How do you say 'black' in Japanese?",
+      "options": [
+        "くろ",
+        "しろ",
+        "あか",
+        "あお"
+      ],
+      "correctAnswer": "くろ"
+    },
+    {
+      "id": "ex_c7",
+      "type": "translateThis",
+      "question": "しろ",
+      "options": [],
+      "correctAnswer": "White"
+    },
+    {
+      "id": "ex_c8",
+      "type": "selectImage",
+      "question": "きいろ",
+      "options": [
+        "yellow",
+        "red",
+        "blue",
+        "green"
+      ],
+      "correctAnswer": "yellow",
+      "metadata": {
+        "emoji": {
+          "yellow": "🟡",
+          "red": "🔴",
+          "blue": "🔵",
+          "green": "🟢"
+        }
+      }
+    },
+    {
+      "id": "ex_c9",
+      "type": "speakThis",
+      "question": "あか、あお、きいろ",
+      "options": [],
+      "correctAnswer": "あか、あお、きいろ"
     }
   ]
 }

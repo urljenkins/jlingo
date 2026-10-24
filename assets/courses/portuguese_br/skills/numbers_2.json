@@ -1,7 +1,7 @@
 {
   "id": "numbers_2",
   "name": "Números 2",
-  "description": "Aprende os números 11-20",
+  "description": "Aprenda os números 11-20",
   "level": 3,
   "exercises": [
     {
@@ -52,7 +52,7 @@
             "native": "Thirteen"
           },
           {
-            "target": "Catorze",
+            "target": "Quatorze",
             "native": "Fourteen"
           },
           {
@@ -61,6 +61,94 @@
           }
         ]
       }
+    },
+    {
+      "id": "ex_n2_5",
+      "type": "matchPairs",
+      "question": "Associe os números",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Dezesseis",
+            "native": "Sixteen"
+          },
+          {
+            "target": "Dezessete",
+            "native": "Seventeen"
+          },
+          {
+            "target": "Dezoito",
+            "native": "Eighteen"
+          },
+          {
+            "target": "Dezenove",
+            "native": "Nineteen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_n2_6",
+      "type": "matchPairs",
+      "question": "Associe mais números",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Onze",
+            "native": "Eleven"
+          },
+          {
+            "target": "Quinze",
+            "native": "Fifteen"
+          },
+          {
+            "target": "Dez",
+            "native": "Ten"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_n2_7",
+      "type": "multipleChoice",
+      "question": "Como se diz 'eighteen' em português?",
+      "options": [
+        "Dezoito",
+        "Dezessete",
+        "Oito",
+        "Oitenta"
+      ],
+      "correctAnswer": "Dezoito"
+    },
+    {
+      "id": "ex_n2_8",
+      "type": "fillInBlank",
+      "question": "Dez mais seis é ___",
+      "options": [
+        "dezesseis",
+        "dezessete",
+        "quinze",
+        "seis"
+      ],
+      "correctAnswer": "dezesseis"
+    },
+    {
+      "id": "ex_n2_9",
+      "type": "translateThis",
+      "question": "Dezenove",
+      "options": [],
+      "correctAnswer": "Nineteen"
+    },
+    {
+      "id": "ex_n2_10",
+      "type": "speakThis",
+      "question": "Onze, doze, treze, quatorze, quinze",
+      "options": [],
+      "correctAnswer": "Onze, doze, treze, quatorze, quinze"
     }
   ]
 }

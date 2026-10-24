@@ -37,6 +37,87 @@
           {"target": "おにいさん", "native": "Older brother"}
         ]
       }
+    },
+    {
+      "id": "ex_fam4",
+      "type": "matchPairs",
+      "question": "Match more family members",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "おじいさん",
+            "native": "Grandfather"
+          },
+          {
+            "target": "おばあさん",
+            "native": "Grandmother"
+          },
+          {
+            "target": "いもうと",
+            "native": "Younger sister"
+          },
+          {
+            "target": "おとうと",
+            "native": "Younger brother"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_fam5",
+      "type": "multipleChoice",
+      "question": "How do you say 'Older brother' in Japanese?",
+      "options": [
+        "おにいさん",
+        "おとうと",
+        "おとうさん",
+        "おじいさん"
+      ],
+      "correctAnswer": "おにいさん"
+    },
+    {
+      "id": "ex_fam6",
+      "type": "translateThis",
+      "question": "おばあさん",
+      "options": [],
+      "correctAnswer": "Grandmother",
+      "acceptableAnswers": [
+        "Grandmother",
+        "Grandma"
+      ]
+    },
+    {
+      "id": "ex_fam7",
+      "type": "multipleChoice",
+      "question": "What does 'いもうと' mean?",
+      "options": [
+        "Younger sister",
+        "Older sister",
+        "Mother",
+        "Younger brother"
+      ],
+      "correctAnswer": "Younger sister"
+    },
+    {
+      "id": "ex_fam8",
+      "type": "fillInBlank",
+      "question": "わたし の ___ は がくせい です。(My younger brother is a student.)",
+      "options": [
+        "おとうと",
+        "いもうと",
+        "おにいさん",
+        "おじいさん"
+      ],
+      "correctAnswer": "おとうと"
+    },
+    {
+      "id": "ex_fam9",
+      "type": "speakThis",
+      "question": "おかあさん、おとうさん",
+      "options": [],
+      "correctAnswer": "おかあさん、おとうさん"
     }
   ]
 }

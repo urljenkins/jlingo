@@ -316,3 +316,40 @@ Sentence translation with vocabulary hints.
   }
 }
 ```
+
+---
+
+## 3. Content Standards
+
+These rules come from a review of every course. `test/asset_integrity_test.dart` enforces the mechanical ones.
+
+### Audience and topics
+Lingua Sprint is written for adult learners. Everyday adult topics are fine where a traveller or resident needs them: ordering wine or beer in a restaurant skill, politics and current-events vocabulary at B2 and above, "terror" as a film genre.
+
+- **No profanity or vulgar slang as a prompt.** A slang skill may mention a crude expression only if it labels the register, and it must never ask the learner to say, type or translate it (e.g. Mexican "no mames" was removed from a `speakThis`).
+- No sexual content, slurs, graphic violence, or national/ethnic stereotypes.
+- Religion and politics appear only as neutral vocabulary, never as opinions the learner is asked to produce.
+
+### Level
+Grammar must not run ahead of the skill tree. Before the past-tense skills (level 12–13 in the Spanish and Portuguese courses), stories, dialogues and translations stay in the present tense. A story's `metadata.level` must match the skill it sits in.
+
+### One variety per course
+Each course teaches one variety. Use its vocabulary in prompts, answers *and* distractors:
+
+| Course | Use | Not |
+|---|---|---|
+| `spanish` (Spain) | coche, zumo, ordenador, móvil, billete, todo recto | carro, jugo, computadora, celular, boleto |
+| `spanish_latam` | carro, jugo, computadora, celular, boleto, todo derecho, agarrar | coche, zumo, ordenador, móvil, billete, *coger* (vulgar in much of Latin America) |
+| `portuguese` (Portugal) | autocarro, pequeno-almoço, telemóvel, equipa, estou a fazer, tu | ônibus, café da manhã, celular, time, estou fazendo |
+| `portuguese_br` | ônibus, café da manhã, celular, time/equipe, cachorro, estou fazendo, você | autocarro, pequeno-almoço, telemóvel, equipa, cão, estou a fazer |
+
+Both Portuguese courses follow the 1990 spelling agreement (adjetivos, direção, atualidade, ação). Exercises that contrast the two varieties are fine as long as they say which is which, e.g. "Match slang expressions (Spain)".
+
+### No leftovers from another course
+When you port a skill from one course to another, translate everything: titles, hints, `metadata.question`, story vocabulary and cultural details (paella belongs in Spain, not in a Portuguese restaurant story).
+
+### Mechanics
+- The `correctAnswer` of every choice-type exercise must be one of its `options`.
+- `matchPairs` tiles must be unique on each side. The widget identifies tiles by their text, so a repeated tile (two "Se", two "います") makes the exercise impossible to finish.
+- Introduce words with a `matchPairs` (or a word→meaning multiple choice) before testing them, and give every skill enough exercises to fill a lesson (aim for at least 6).
+- Don't put instructions such as "Repeat:" inside a `speakThis`/`pronunciationPractice` question: the target-language voice reads it aloud and the learner is scored against it.

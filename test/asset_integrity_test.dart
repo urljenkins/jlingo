@@ -435,6 +435,30 @@ void main() {
       }
     });
 
+    test('choice exercises list their correct answer among the options', () {
+      // An answer missing from the options can never be picked, so the
+      // learner fails the exercise whatever they choose.
+      const choiceTypes = {
+        ExerciseType.multipleChoice,
+        ExerciseType.fillInBlank,
+        ExerciseType.listeningComprehension,
+        ExerciseType.storyLesson,
+        ExerciseType.dialogueListening,
+        ExerciseType.interactiveDialogue,
+        ExerciseType.selectImage,
+      };
+      for (final (language, id, file) in allSkillFiles()) {
+        final skill = Skill.fromJson(
+            jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+        for (final exercise in skill.exercises) {
+          if (!choiceTypes.contains(exercise.type)) continue;
+          if (exercise.options.isEmpty) continue;
+          expect(exercise.options, contains(exercise.correctAnswer),
+              reason: '${exercise.id} in $language/$id.json');
+        }
+      }
+    });
+
     test('every clozeTest exercise has valid blanks or text metadata', () {
       for (final (language, id, file) in allSkillFiles()) {
         final skill = Skill.fromJson(

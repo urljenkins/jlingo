@@ -199,13 +199,13 @@
     {
       "id": "lp_ex_8",
       "type": "pronunciationPractice",
-      "question": "O cão corre rápido pelo parque",
+      "question": "O pão do cachorro está no chão",
       "options": [],
-      "correctAnswer": "O cão corre rápido pelo parque",
+      "correctAnswer": "O pão do cachorro está no chão",
       "targetLanguage": "pt-BR",
       "metadata": {
-        "phonetics": "oo KOWN KOH-reh HAH-pee-doo PEH-lo PAR-keh",
-        "focus": "Som nasal em 'cão' e o 'r' vibrante"
+        "phonetics": "oo POWN doo kah-SHOH-hoo ehs-TAH noo SHOWN",
+        "focus": "Som nasal em 'pão' e 'chão' e o 'rr' de 'cachorro'"
       }
     },
     {

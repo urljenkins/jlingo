@@ -61,6 +61,84 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "ex_g1_5",
+            "type": "matchPairs",
+            "question": "Associe os pronomes",
+            "options": [],
+            "correctAnswer": "",
+            "metadata": {
+                "pairs": [
+                    {
+                        "target": "Eu",
+                        "native": "I"
+                    },
+                    {
+                        "target": "Tu",
+                        "native": "You (informal)"
+                    },
+                    {
+                        "target": "Você",
+                        "native": "You (polite)"
+                    },
+                    {
+                        "target": "Ela",
+                        "native": "She"
+                    },
+                    {
+                        "target": "Nós",
+                        "native": "We"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ex_g1_6",
+            "type": "multipleChoice",
+            "question": "Como se diz 'We are' em português?",
+            "options": [
+                "Nós somos",
+                "Eles são",
+                "Eu sou",
+                "Tu és"
+            ],
+            "correctAnswer": "Nós somos"
+        },
+        {
+            "id": "ex_g1_7",
+            "type": "fillInBlank",
+            "question": "Eu ___ português.",
+            "options": [
+                "sou",
+                "é",
+                "são",
+                "somos"
+            ],
+            "correctAnswer": "sou"
+        },
+        {
+            "id": "ex_g1_8",
+            "type": "fillInBlank",
+            "question": "Elas ___ amigas.",
+            "options": [
+                "são",
+                "é",
+                "somos",
+                "sou"
+            ],
+            "correctAnswer": "são"
+        },
+        {
+            "id": "ex_g1_9",
+            "type": "translateThis",
+            "question": "Ela é professora",
+            "options": [],
+            "correctAnswer": "She is a teacher",
+            "acceptableAnswers": [
+                "She is a teacher",
+                "She's a teacher"
+            ]
         }
     ]
 }

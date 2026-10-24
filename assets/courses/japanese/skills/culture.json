@@ -7,9 +7,14 @@
     {
       "id": "cul_1",
       "type": "multipleChoice",
-      "question": "What is the Japanese custom of resting in the afternoon called?",
-      "options": ["Siesta", "Obon", "Hanami", "None of the above"],
-      "correctAnswer": "None of the above"
+      "question": "What do people say in Japan before they start eating?",
+      "options": [
+        "いただきます",
+        "ごちそうさま",
+        "おやすみなさい",
+        "いってきます"
+      ],
+      "correctAnswer": "いただきます"
     },
     {
       "id": "cul_2",
@@ -36,6 +41,81 @@
           {"target": "祭り", "native": "Local festival"}
         ]
       }
+    },
+    {
+      "id": "cul_4",
+      "type": "matchPairs",
+      "question": "Match everyday set phrases with when they are said",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "いただきます",
+            "native": "Before eating"
+          },
+          {
+            "target": "ごちそうさま",
+            "native": "After eating"
+          },
+          {
+            "target": "いってきます",
+            "native": "When leaving home"
+          },
+          {
+            "target": "ただいま",
+            "native": "When coming home"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cul_5",
+      "type": "multipleChoice",
+      "question": "What do you take off before entering a Japanese home?",
+      "options": [
+        "Shoes",
+        "Glasses",
+        "Watch",
+        "Bag"
+      ],
+      "correctAnswer": "Shoes"
+    },
+    {
+      "id": "cul_6",
+      "type": "translateThis",
+      "question": "お正月",
+      "options": [],
+      "correctAnswer": "New Year",
+      "acceptableAnswers": [
+        "New Year",
+        "Japanese New Year",
+        "New Year's"
+      ]
+    },
+    {
+      "id": "cul_7",
+      "type": "multipleChoice",
+      "question": "In which season is 花見 (hanami) held?",
+      "options": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ],
+      "correctAnswer": "Spring"
+    },
+    {
+      "id": "cul_8",
+      "type": "multipleChoice",
+      "question": "What does 'ただいま' mean?",
+      "options": [
+        "I'm home",
+        "Goodbye",
+        "Thank you for the meal",
+        "Good night"
+      ],
+      "correctAnswer": "I'm home"
     }
   ]
 }

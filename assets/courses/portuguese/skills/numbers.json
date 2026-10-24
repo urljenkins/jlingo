@@ -61,6 +61,94 @@
           }
         ]
       }
+    },
+    {
+      "id": "ex_19",
+      "type": "matchPairs",
+      "question": "Match more numbers",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Cinco",
+            "native": "Five"
+          },
+          {
+            "target": "Seis",
+            "native": "Six"
+          },
+          {
+            "target": "Sete",
+            "native": "Seven"
+          },
+          {
+            "target": "Oito",
+            "native": "Eight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_20",
+      "type": "matchPairs",
+      "question": "Match the numbers up to ten",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Nove",
+            "native": "Nine"
+          },
+          {
+            "target": "Dez",
+            "native": "Ten"
+          },
+          {
+            "target": "Zero",
+            "native": "Zero"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_21",
+      "type": "multipleChoice",
+      "question": "How do you say 'seven' in Portuguese?",
+      "options": [
+        "Sete",
+        "Seis",
+        "Oito",
+        "Nove"
+      ],
+      "correctAnswer": "Sete"
+    },
+    {
+      "id": "ex_22",
+      "type": "fillInBlank",
+      "question": "Três mais três é ___",
+      "options": [
+        "seis",
+        "sete",
+        "oito",
+        "nove"
+      ],
+      "correctAnswer": "seis"
+    },
+    {
+      "id": "ex_23",
+      "type": "translateThis",
+      "question": "Oito",
+      "options": [],
+      "correctAnswer": "Eight"
+    },
+    {
+      "id": "ex_24",
+      "type": "speakThis",
+      "question": "Um, dois, três, quatro, cinco",
+      "options": [],
+      "correctAnswer": "Um, dois, três, quatro, cinco"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
     "id": "adjectives_1",
-    "name": "Adjectivos Comuns",
-    "description": "Aprende adjectivos básicos para descrever coisas",
+    "name": "Adjetivos Comuns",
+    "description": "Aprende adjetivos básicos para descrever coisas",
     "level": 6,
     "exercises": [
         {
             "id": "ex_adj_1",
             "type": "matchPairs",
-            "question": "Associe os adjectivos",
+            "question": "Associe os adjetivos",
             "options": [],
             "correctAnswer": "",
             "metadata": {
@@ -45,7 +45,7 @@
         {
             "id": "ex_adj_5",
             "type": "matchPairs",
-            "question": "Associe mais adjectivos",
+            "question": "Associe mais adjetivos",
             "options": [],
             "correctAnswer": "",
             "metadata": {

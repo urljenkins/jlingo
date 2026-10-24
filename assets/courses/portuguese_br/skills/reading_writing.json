@@ -83,10 +83,10 @@
     {
       "id": "rw_story_1",
       "type": "storyLesson",
-      "question": "O que a Maria viu no parque?",
+      "question": "O que a Maria vê no parque?",
       "options": [
         "Um gato preto",
-        "Um cão grande",
+        "Um cachorro grande",
         "Um pássaro azul",
         "Uma borboleta"
       ],
@@ -94,18 +94,18 @@
       "targetLanguage": "pt-BR",
       "nativeLanguage": "en-US",
       "metadata": {
-        "title": "El Gato del Parque",
+        "title": "O Gato do Parque",
         "level": "A1",
-        "story": "A Maria caminhava pelo parque num dia ensolarado. Os pássaros cantavam nas árvores e o vento era suave. De repente, viu um gato preto sentado num banco. O gato tinha olhos verdes muito brilhantes. A Maria aproximou-se lentamente e o gato começou a ronronar. Desde esse dia, a Maria visita o parque todos os dias para ver o seu novo amigo.",
+        "story": "A Maria passeia no parque. Faz sol e os pássaros cantam nas árvores. Em um banco tem um gato preto. O gato tem olhos verdes. A Maria vai devagar até o banco e o gato ronrona. Agora a Maria visita o parque todos os dias para ver seu novo amigo.",
         "vocabulary": [
           {
-            "word": "caminhava",
-            "translation": "was walking",
+            "word": "passeia",
+            "translation": "strolls",
             "highlight": true
           },
           {
-            "word": "ensolarado",
-            "translation": "sunny",
+            "word": "faz sol",
+            "translation": "it's sunny",
             "highlight": true
           },
           {
@@ -119,12 +119,12 @@
             "highlight": true
           },
           {
-            "word": "ronronar",
-            "translation": "to purr",
+            "word": "ronrona",
+            "translation": "purrs",
             "highlight": true
           }
         ],
-        "question": "O que a Maria viu no parque?"
+        "question": "O que a Maria vê no parque?"
       }
     },
     {
@@ -141,9 +141,9 @@
       "targetLanguage": "pt-BR",
       "nativeLanguage": "en-US",
       "metadata": {
-        "title": "El Trabajo de Pedro",
+        "title": "O Trabalho do Pedro",
         "level": "A1",
-        "story": "O Pedro trabalha num pequeno restaurante no centro da cidade. Ele é o cozinheiro principal. Todos os dias, o Pedro chega muito cedo para preparar ingredientes frescos. Os seus pratos favoritos são a paella e as tapas. Os clientes dizem sempre que a comida do Pedro é deliciosa.",
+        "story": "O Pedro trabalha num pequeno restaurante no centro da cidade. Ele é o cozinheiro principal. Todos os dias, o Pedro chega muito cedo para preparar ingredientes frescos. Os seus pratos favoritos são a feijoada e a moqueca. Os clientes dizem sempre que a comida do Pedro é deliciosa.",
         "vocabulary": [
           {
             "word": "trabalha",
@@ -222,21 +222,23 @@
     {
       "id": "rw_translation_3",
       "type": "translationExercise",
-      "question": "Ontem fui ao supermercado com a minha mãe. Compramos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
+      "question": "Hoje vou ao supermercado com minha mãe. Compramos muitas frutas e verduras. Minha favorita é a maçã vermelha.",
       "options": [],
-      "correctAnswer": "Yesterday I went to the supermarket with my mother. We bought many fruits and vegetables. My favorite is the red apple.",
+      "correctAnswer": "Today I am going to the supermarket with my mother. We buy many fruits and vegetables. My favorite is the red apple.",
       "targetLanguage": "pt-BR",
       "nativeLanguage": "en-US",
       "metadata": {
         "direction": "toNative",
-        "sourceText": "Ontem fui ao supermercado com a minha mãe. Compramos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
+        "sourceText": "Hoje vou ao supermercado com minha mãe. Compramos muitas frutas e verduras. Minha favorita é a maçã vermelha.",
         "hints": [
-          "'Ontem' means 'yesterday'",
-          "'fui' is past tense of 'ir' (to go)",
-          "'compramos' = 'we bought'"
+          "'Hoje' means 'today'",
+          "'vou' is from 'ir' (to go)",
+          "'compramos' = 'we buy'"
         ],
         "acceptableAnswers": [
-          "Yesterday I went to the supermarket with my mom. We bought a lot of fruits and vegetables. My favorite is the red apple."
+          "Today I go to the supermarket with my mother. We buy many fruits and vegetables. My favorite is the red apple.",
+          "Today I'm going to the supermarket with my mom. We buy a lot of fruits and vegetables. My favorite is the red apple.",
+          "Today I am going to the supermarket with my mom. We are buying a lot of fruit and vegetables. My favorite is the red apple."
         ],
         "difficulty": "paragraph"
       }
@@ -249,7 +251,7 @@
         "peixe",
         "vive",
         "corre",
-        "cão"
+        "cachorro"
       ],
       "correctAnswer": "peixe,vive",
       "targetLanguage": "pt-BR",
@@ -261,7 +263,7 @@
             "answer": "peixe",
             "options": [
               "peixe",
-              "cão",
+              "cachorro",
               "gato"
             ]
           },
@@ -347,7 +349,7 @@
             "options": [
               "vendedores",
               "crianças",
-              "cães"
+              "cachorros"
             ]
           },
           {
@@ -404,24 +406,24 @@
     {
       "id": "rw_story_3",
       "type": "storyLesson",
-      "question": "Que tempo fazia quando a Ana saiu de casa?",
+      "question": "Que tempo faz hoje?",
       "options": [
-        "Estava a chover",
-        "Estava sol",
-        "Estava a nevar",
-        "Estava vento"
+        "Está chovendo",
+        "Está fazendo sol",
+        "Está nevando",
+        "Está ventando"
       ],
-      "correctAnswer": "Estava chovendo",
+      "correctAnswer": "Está chovendo",
       "targetLanguage": "pt-BR",
       "nativeLanguage": "en-US",
       "metadata": {
-        "title": "Un Día de Lluvia",
-        "level": "A2",
-        "story": "A Ana acordou-se cedo de manhã. Quando olhou pela janela, viu que estava chovendo muito. Decidiu levar o seu guarda-chuva azul. Caminhou até o ponto de ônibus enquanto ouvia a chuva caindo. No ônibus, conheceu uma senhora idosa que tinha esquecido o seu guarda-chuva. A Ana, sendo muito simpática, dividiu o seu guarda-chuva com ela até a parada seguinte.",
+        "title": "Um Dia de Chuva",
+        "level": "A1",
+        "story": "Hoje a Ana olha pela janela: está chovendo muito. A Ana leva seu guarda-chuva azul e vai a pé até o ponto de ônibus. No ônibus tem uma senhora idosa. A senhora não tem guarda-chuva. A Ana é muito simpática e divide o guarda-chuva com ela.",
         "vocabulary": [
           {
-            "word": "a chover",
-            "translation": "raining",
+            "word": "está chovendo",
+            "translation": "it's raining",
             "highlight": true
           },
           {
@@ -430,8 +432,8 @@
             "highlight": true
           },
           {
-            "word": "parada",
-            "translation": "stop/station",
+            "word": "ponto de ônibus",
+            "translation": "bus stop",
             "highlight": true
           },
           {
@@ -440,12 +442,12 @@
             "highlight": true
           },
           {
-            "word": "dividiu",
-            "translation": "shared",
+            "word": "divide",
+            "translation": "shares",
             "highlight": true
           }
         ],
-        "question": "Que tempo fazia quando a Ana saiu de casa?"
+        "question": "Que tempo faz hoje?"
       }
     }
   ]

@@ -39,6 +39,87 @@
           {"target": "パン", "native": "Bread"}
         ]
       }
+    },
+    {
+      "id": "ex_f4",
+      "type": "matchPairs",
+      "question": "Match more food words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "にく",
+            "native": "Meat"
+          },
+          {
+            "target": "やさい",
+            "native": "Vegetables"
+          },
+          {
+            "target": "たまご",
+            "native": "Egg"
+          },
+          {
+            "target": "くだもの",
+            "native": "Fruit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_f5",
+      "type": "multipleChoice",
+      "question": "How do you say 'fish' in Japanese?",
+      "options": [
+        "さかな",
+        "にく",
+        "たまご",
+        "ごはん"
+      ],
+      "correctAnswer": "さかな"
+    },
+    {
+      "id": "ex_f6",
+      "type": "translateThis",
+      "question": "たまご",
+      "options": [],
+      "correctAnswer": "Egg",
+      "acceptableAnswers": [
+        "Egg",
+        "Eggs"
+      ]
+    },
+    {
+      "id": "ex_f7",
+      "type": "multipleChoice",
+      "question": "What does 'やさい' mean?",
+      "options": [
+        "Vegetables",
+        "Meat",
+        "Fruit",
+        "Bread"
+      ],
+      "correctAnswer": "Vegetables"
+    },
+    {
+      "id": "ex_f8",
+      "type": "fillInBlank",
+      "question": "___ を ください。(Water, please.)",
+      "options": [
+        "みず",
+        "パン",
+        "にく",
+        "さかな"
+      ],
+      "correctAnswer": "みず"
+    },
+    {
+      "id": "ex_f9",
+      "type": "speakThis",
+      "question": "ごはん を ください",
+      "options": [],
+      "correctAnswer": "ごはん を ください"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "directions",
-  "name": "Direcções",
-  "description": "Aprende a pedir e dar direcções",
+  "name": "Direções",
+  "description": "Aprenda a pedir e dar direções",
   "level": 9,
   "exercises": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "ex_dir_2",
       "type": "matchPairs",
-      "question": "Associe as palavras de direcção",
+      "question": "Associe as palavras de direção",
       "options": [],
       "correctAnswer": "",
       "metadata": {

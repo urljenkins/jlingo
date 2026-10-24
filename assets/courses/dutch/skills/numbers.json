@@ -39,6 +39,105 @@
           {"target": "Vier", "native": "Four"}
         ]
       }
+    },
+    {
+      "id": "ex_19",
+      "type": "matchPairs",
+      "question": "Match more numbers",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Vijf",
+            "native": "Five"
+          },
+          {
+            "target": "Zes",
+            "native": "Six"
+          },
+          {
+            "target": "Zeven",
+            "native": "Seven"
+          },
+          {
+            "target": "Acht",
+            "native": "Eight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_20",
+      "type": "matchPairs",
+      "question": "Match the numbers up to ten",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "Negen",
+            "native": "Nine"
+          },
+          {
+            "target": "Tien",
+            "native": "Ten"
+          },
+          {
+            "target": "Nul",
+            "native": "Zero"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ex_21",
+      "type": "multipleChoice",
+      "question": "How do you say 'eight' in Dutch?",
+      "options": [
+        "Acht",
+        "Negen",
+        "Zes",
+        "Zeven"
+      ],
+      "correctAnswer": "Acht"
+    },
+    {
+      "id": "ex_22",
+      "type": "fillInBlank",
+      "question": "Drie plus drie is ___",
+      "options": [
+        "zes",
+        "zeven",
+        "acht",
+        "negen"
+      ],
+      "correctAnswer": "zes"
+    },
+    {
+      "id": "ex_23",
+      "type": "translateThis",
+      "question": "Zeven",
+      "options": [],
+      "correctAnswer": "Seven"
+    },
+    {
+      "id": "ex_24",
+      "type": "listeningComprehension",
+      "question": "Negen",
+      "options": [
+        "Negen",
+        "Tien",
+        "Zeven"
+      ],
+      "correctAnswer": "Negen"
+    },
+    {
+      "id": "ex_25",
+      "type": "speakThis",
+      "question": "Een, twee, drie, vier, vijf",
+      "options": [],
+      "correctAnswer": "Een, twee, drie, vier, vijf"
     }
   ]
 }

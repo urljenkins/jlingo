@@ -27,6 +27,103 @@
       "question": "What is 'ticket' in Japanese?",
       "options": ["きっぷ", "くつ", "ドア", "かぎ"],
       "correctAnswer": "きっぷ"
+    },
+    {
+      "id": "tr_4",
+      "type": "matchPairs",
+      "question": "Match transport words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "駅",
+            "native": "Station"
+          },
+          {
+            "target": "きっぷ",
+            "native": "Ticket"
+          },
+          {
+            "target": "でんしゃ",
+            "native": "Train"
+          },
+          {
+            "target": "バス",
+            "native": "Bus"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tr_5",
+      "type": "matchPairs",
+      "question": "Match direction words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "みぎ",
+            "native": "Right"
+          },
+          {
+            "target": "ひだり",
+            "native": "Left"
+          },
+          {
+            "target": "まっすぐ",
+            "native": "Straight ahead"
+          },
+          {
+            "target": "ここ",
+            "native": "Here"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tr_6",
+      "type": "multipleChoice",
+      "question": "How do you say 'left' in Japanese?",
+      "options": [
+        "ひだり",
+        "みぎ",
+        "まっすぐ",
+        "ここ"
+      ],
+      "correctAnswer": "ひだり"
+    },
+    {
+      "id": "tr_7",
+      "type": "fillInBlank",
+      "question": "___ は どこ ですか。(Where is the station?)",
+      "options": [
+        "駅",
+        "きっぷ",
+        "みぎ",
+        "バス"
+      ],
+      "correctAnswer": "駅"
+    },
+    {
+      "id": "tr_8",
+      "type": "translateThis",
+      "question": "まっすぐ いって ください",
+      "options": [],
+      "correctAnswer": "Please go straight",
+      "acceptableAnswers": [
+        "Please go straight",
+        "Go straight please",
+        "Go straight ahead, please"
+      ]
+    },
+    {
+      "id": "tr_9",
+      "type": "speakThis",
+      "question": "トイレ は どこ ですか",
+      "options": [],
+      "correctAnswer": "トイレ は どこ ですか"
     }
   ]
 }

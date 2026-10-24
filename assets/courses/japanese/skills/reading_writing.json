@@ -17,8 +17,12 @@
     {
       "id": "rw_2",
       "type": "clozeTest",
-      "question": "今日は___です。 (weather)",
-      "options": ["はれ", "あめ", "ゆき"],
+      "question": "今日は___です。 (sunny)",
+      "options": [
+        "はれ",
+        "あめ",
+        "ゆき"
+      ],
       "correctAnswer": "はれ",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US"
@@ -26,24 +30,126 @@
     {
       "id": "rw_3",
       "type": "storyLesson",
-      "question": "公園で何を見ましたか？",
-      "options": ["黒い猫", "大きな犬", "青い鳥", "蝶"],
-      "correctAnswer": "黒い猫",
+      "question": "ベンチ の うえ に なに が いますか？",
+      "options": [
+        "くろい ねこ",
+        "おおきい いぬ",
+        "あおい とり",
+        "ちいさい さかな"
+      ],
+      "correctAnswer": "くろい ねこ",
       "targetLanguage": "ja-JP",
       "nativeLanguage": "en-US",
       "metadata": {
-        "title": "公園での散歩",
+        "title": "こうえん の ねこ",
         "level": "A1",
-        "story": "今日は晴れた日で、さくらが咲く公園を歩きました。ベンチの上に小さな黒い猫が座っていて、静かに目を閉じていました。鳥が近くでさえずり、子どもたちが遊んでいました。猫はとてもかわいくて、私はしばらく見ていました。",
+        "story": "きょう は はれ です。わたし は こうえん に います。ベンチ の うえ に くろい ねこ が います。ねこ は とても かわいい です。き の うえ に とり も います。",
         "vocabulary": [
-          {"word": "公園", "translation": "park", "highlight": true},
-          {"word": "猫", "translation": "cat", "highlight": true},
-          {"word": "ベンチ", "translation": "bench", "highlight": true},
-          {"word": "さくら", "translation": "cherry blossoms", "highlight": true}
+          {
+            "word": "こうえん",
+            "translation": "park",
+            "highlight": true
+          },
+          {
+            "word": "ねこ",
+            "translation": "cat",
+            "highlight": true
+          },
+          {
+            "word": "ベンチ",
+            "translation": "bench",
+            "highlight": true
+          },
+          {
+            "word": "くろい",
+            "translation": "black",
+            "highlight": true
+          },
+          {
+            "word": "かわいい",
+            "translation": "cute",
+            "highlight": true
+          }
         ],
-        "question": "公園で何を見ましたか？",
-        "acceptableAnswers": ["A black cat", "I saw a black cat"]
+        "question": "ベンチ の うえ に なに が いますか？",
+        "acceptableAnswers": [
+          "A black cat",
+          "A black cat is on the bench"
+        ]
       }
+    },
+    {
+      "id": "rw_4",
+      "type": "matchPairs",
+      "question": "Match the weather words",
+      "options": [],
+      "correctAnswer": "",
+      "metadata": {
+        "pairs": [
+          {
+            "target": "はれ",
+            "native": "Sunny"
+          },
+          {
+            "target": "あめ",
+            "native": "Rain"
+          },
+          {
+            "target": "ゆき",
+            "native": "Snow"
+          },
+          {
+            "target": "くもり",
+            "native": "Cloudy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rw_5",
+      "type": "translateThis",
+      "question": "これ は ほん です。",
+      "options": [],
+      "correctAnswer": "This is a book.",
+      "acceptableAnswers": [
+        "This is a book",
+        "It's a book"
+      ]
+    },
+    {
+      "id": "rw_6",
+      "type": "multipleChoice",
+      "question": "Which word is written in katakana?",
+      "options": [
+        "パン",
+        "ごはん",
+        "みず",
+        "さかな"
+      ],
+      "correctAnswer": "パン"
+    },
+    {
+      "id": "rw_7",
+      "type": "multipleChoice",
+      "question": "What does '日本' mean?",
+      "options": [
+        "Japan",
+        "China",
+        "Book",
+        "Sun"
+      ],
+      "correctAnswer": "Japan"
+    },
+    {
+      "id": "rw_8",
+      "type": "translateThis",
+      "question": "わたし の なまえ は たなか です。",
+      "options": [],
+      "correctAnswer": "My name is Tanaka.",
+      "acceptableAnswers": [
+        "My name is Tanaka",
+        "I'm Tanaka"
+      ]
     }
   ]
 }

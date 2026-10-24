@@ -41,43 +41,93 @@
         {
             "id": "rw_story_1",
             "type": "storyLesson",
-            "question": "O que a Maria viu no parque?",
-            "options": ["Um gato preto", "Um cão grande", "Um pássaro azul", "Uma borboleta"],
+            "question": "O que a Maria vê no parque?",
+            "options": [
+                "Um gato preto",
+                "Um cão grande",
+                "Um pássaro azul",
+                "Uma borboleta"
+            ],
             "correctAnswer": "Um gato preto",
             "targetLanguage": "pt-PT",
             "nativeLanguage": "en-US",
             "metadata": {
-                "title": "El Gato del Parque",
+                "title": "O Gato do Parque",
                 "level": "A1",
-                "story": "A Maria caminhava pelo parque num dia ensolarado. Os pássaros cantavam nas árvores e o vento era suave. De repente, viu um gato preto sentado num banco. O gato tinha olhos verdes muito brilhantes. A Maria aproximou-se lentamente e o gato começou a ronronar. Desde esse dia, a Maria visita o parque todos os dias para ver o seu novo amigo.",
+                "story": "A Maria passeia no parque. Está sol e os pássaros cantam nas árvores. Num banco está um gato preto. O gato tem olhos verdes. A Maria vai devagar até ao banco e o gato ronrona. Agora a Maria visita o parque todos os dias para ver o seu novo amigo.",
                 "vocabulary": [
-                    {"word": "caminhava", "translation": "was walking", "highlight": true},
-                    {"word": "ensolarado", "translation": "sunny", "highlight": true},
-                    {"word": "gato", "translation": "cat", "highlight": true},
-                    {"word": "olhos", "translation": "eyes", "highlight": true},
-                    {"word": "ronronar", "translation": "to purr", "highlight": true}
+                    {
+                        "word": "passeia",
+                        "translation": "strolls",
+                        "highlight": true
+                    },
+                    {
+                        "word": "está sol",
+                        "translation": "it's sunny",
+                        "highlight": true
+                    },
+                    {
+                        "word": "gato",
+                        "translation": "cat",
+                        "highlight": true
+                    },
+                    {
+                        "word": "olhos",
+                        "translation": "eyes",
+                        "highlight": true
+                    },
+                    {
+                        "word": "ronrona",
+                        "translation": "purrs",
+                        "highlight": true
+                    }
                 ],
-                "question": "O que a Maria viu no parque?"
+                "question": "O que a Maria vê no parque?"
             }
         },
         {
             "id": "rw_story_2",
             "type": "storyLesson",
             "question": "Onde trabalha o Pedro?",
-            "options": ["Num restaurante", "Numa clínica", "Numa escola", "Numa loja"],
+            "options": [
+                "Num restaurante",
+                "Numa clínica",
+                "Numa escola",
+                "Numa loja"
+            ],
             "correctAnswer": "Num restaurante",
             "targetLanguage": "pt-PT",
             "nativeLanguage": "en-US",
             "metadata": {
-                "title": "El Trabajo de Pedro",
+                "title": "O Trabalho do Pedro",
                 "level": "A1",
-                "story": "O Pedro trabalha num pequeno restaurante no centro da cidade. Ele é o cozinheiro principal. Todos os dias, o Pedro chega muito cedo para preparar ingredientes frescos. Os seus pratos favoritos são a paella e as tapas. Os clientes dizem sempre que a comida do Pedro é deliciosa.",
+                "story": "O Pedro trabalha num pequeno restaurante no centro da cidade. Ele é o cozinheiro principal. Todos os dias, o Pedro chega muito cedo para preparar ingredientes frescos. Os seus pratos favoritos são o bacalhau com natas e o caldo verde. Os clientes dizem sempre que a comida do Pedro é deliciosa.",
                 "vocabulary": [
-                    {"word": "trabalha", "translation": "works", "highlight": true},
-                    {"word": "restaurante", "translation": "restaurant", "highlight": true},
-                    {"word": "cozinheiro", "translation": "cook/chef", "highlight": true},
-                    {"word": "cedo", "translation": "early", "highlight": true},
-                    {"word": "deliciosa", "translation": "delicious", "highlight": true}
+                    {
+                        "word": "trabalha",
+                        "translation": "works",
+                        "highlight": true
+                    },
+                    {
+                        "word": "restaurante",
+                        "translation": "restaurant",
+                        "highlight": true
+                    },
+                    {
+                        "word": "cozinheiro",
+                        "translation": "cook/chef",
+                        "highlight": true
+                    },
+                    {
+                        "word": "cedo",
+                        "translation": "early",
+                        "highlight": true
+                    },
+                    {
+                        "word": "deliciosa",
+                        "translation": "delicious",
+                        "highlight": true
+                    }
                 ],
                 "question": "Onde trabalha o Pedro?"
             }
@@ -117,16 +167,24 @@
         {
             "id": "rw_translation_3",
             "type": "translationExercise",
-            "question": "Ontem fui ao supermercado com a minha mãe. Comprámos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
+            "question": "Hoje vou ao supermercado com a minha mãe. Compramos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
             "options": [],
-            "correctAnswer": "Yesterday I went to the supermarket with my mother. We bought many fruits and vegetables. My favorite is the red apple.",
+            "correctAnswer": "Today I am going to the supermarket with my mother. We buy many fruits and vegetables. My favorite is the red apple.",
             "targetLanguage": "pt-PT",
             "nativeLanguage": "en-US",
             "metadata": {
                 "direction": "toNative",
-                "sourceText": "Ontem fui ao supermercado com a minha mãe. Comprámos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
-                "hints": ["'Ontem' means 'yesterday'", "'fui' is past tense of 'ir' (to go)", "'compramos' = 'we bought'"],
-                "acceptableAnswers": ["Yesterday I went to the supermarket with my mom. We bought a lot of fruits and vegetables. My favorite is the red apple."],
+                "sourceText": "Hoje vou ao supermercado com a minha mãe. Compramos muitas frutas e legumes. A minha favorita é a maçã vermelha.",
+                "hints": [
+                    "'Hoje' means 'today'",
+                    "'vou' is from 'ir' (to go)",
+                    "'compramos' = 'we buy'"
+                ],
+                "acceptableAnswers": [
+                    "Today I go to the supermarket with my mother. We buy many fruits and vegetables. My favorite is the red apple.",
+                    "Today I'm going to the supermarket with my mom. We buy a lot of fruits and vegetables. My favorite is the red apple.",
+                    "Today I am going to the supermarket with my mom. We are buying a lot of fruit and vegetables. My favorite is the red apple."
+                ],
                 "difficulty": "paragraph"
             }
         },
@@ -199,23 +257,48 @@
         {
             "id": "rw_story_3",
             "type": "storyLesson",
-            "question": "Que tempo fazia quando a Ana saiu de casa?",
-            "options": ["Estava a chover", "Estava sol", "Estava a nevar", "Estava vento"],
-            "correctAnswer": "Estava a chover",
+            "question": "Que tempo faz hoje?",
+            "options": [
+                "Está a chover",
+                "Está sol",
+                "Está a nevar",
+                "Está vento"
+            ],
+            "correctAnswer": "Está a chover",
             "targetLanguage": "pt-PT",
             "nativeLanguage": "en-US",
             "metadata": {
-                "title": "Un Día de Lluvia",
-                "level": "A2",
-                "story": "A Ana acordou-se cedo de manhã. Quando olhou pela janela, viu que estava a chover muito. Decidiu levar o seu guarda-chuva azul. Caminhou até à paragem do autocarro enquanto ouvia a chuva a cair. No autocarro, conheceu uma senhora idosa que tinha esquecido o seu guarda-chuva. A Ana, sendo muito simpática, partilhou o seu guarda-chuva com ela até à paragem seguinte.",
+                "title": "Um Dia de Chuva",
+                "level": "A1",
+                "story": "Hoje a Ana olha pela janela: está a chover muito. A Ana leva o seu guarda-chuva azul e vai a pé até à paragem do autocarro. No autocarro está uma senhora idosa. A senhora não tem guarda-chuva. A Ana é muito simpática e partilha o guarda-chuva com ela.",
                 "vocabulary": [
-                    {"word": "a chover", "translation": "raining", "highlight": true},
-                    {"word": "guarda-chuva", "translation": "umbrella", "highlight": true},
-                    {"word": "paragem", "translation": "stop/station", "highlight": true},
-                    {"word": "senhora", "translation": "lady/woman", "highlight": true},
-                    {"word": "partilhou", "translation": "shared", "highlight": true}
+                    {
+                        "word": "está a chover",
+                        "translation": "it's raining",
+                        "highlight": true
+                    },
+                    {
+                        "word": "guarda-chuva",
+                        "translation": "umbrella",
+                        "highlight": true
+                    },
+                    {
+                        "word": "paragem",
+                        "translation": "stop/station",
+                        "highlight": true
+                    },
+                    {
+                        "word": "senhora",
+                        "translation": "lady/woman",
+                        "highlight": true
+                    },
+                    {
+                        "word": "partilha",
+                        "translation": "shares",
+                        "highlight": true
+                    }
                 ],
-                "question": "Que tempo fazia quando a Ana saiu de casa?"
+                "question": "Que tempo faz hoje?"
             }
         }
     ]

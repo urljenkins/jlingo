@@ -177,5 +177,35 @@ void main() {
       await tester.pump(const Duration(milliseconds: 550));
       expect(answered, isTrue);
     });
+
+    testWidgets('tiles whose text contains a colon still match',
+        (tester) async {
+      await _usePhoneViewport(tester);
+      bool? answered;
+      await tester.pumpWidget(_host(MatchPairsWidget(
+        exercise: _exercise(pairs: const [
+          {'target': 'よじ (4:00)', 'native': "Four o'clock"},
+          {'target': 'はん', 'native': 'Half past (:30)'},
+          {'target': 'くじ (9:00)', 'native': "Nine o'clock"},
+        ]),
+        onAnswer: (correct) => answered = correct,
+      )));
+      await tester.pump();
+
+      expect(find.text('よじ (4:00)'), findsOneWidget);
+      for (final (target, native) in [
+        ('よじ (4:00)', "Four o'clock"),
+        ('はん', 'Half past (:30)'),
+        ('くじ (9:00)', "Nine o'clock"),
+      ]) {
+        await tester.tap(find.text(target));
+        await tester.pump();
+        await tester.tap(find.text(native));
+        await tester.pump();
+      }
+
+      await tester.pump(const Duration(milliseconds: 550));
+      expect(answered, isTrue);
+    });
   });
 }
